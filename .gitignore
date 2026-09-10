@@ -1,0 +1,64 @@
+# ============================================
+# QBank Medicina Perú - .gitignore
+# ============================================
+
+# ----- macOS -----
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# ----- Windows -----
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ----- Linux -----
+*~
+.directory
+
+# ----- Editores / IDEs -----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ----- Logs y temporales -----
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# ----- Dependencias (si algún día usas npm) -----
+node_modules/
+package-lock.json
+yarn.lock
+
+# ----- Entorno / secretos -----
+.env
+.env.local
+.env.*.local
+
+# ----- Vercel -----
+.vercel
+
+# ============================================
+# IMPORTANTE: NO ignorar la carpeta DATA ni sus JSON
+# ============================================
+# Las siguientes líneas están comentadas a propósito
+# para dejar claro que NO se deben activar:
+#
+# *.json
+# DATA/
+# data/
+# Examen_25A.json

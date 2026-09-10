@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QBank Medicina Perú - CONAREME</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div id="app">
+        <!-- Barra superior común -->
+        <header>
+            <div class="header-left">
+                <h1>📘 QBank Medicina Perú</h1>
+                <div class="header-info">
+                    <span id="totalQuestions">0</span> preguntas cargadas
+                </div>
+            </div>
+        </header>
+
+        <!-- ================================================ -->
+        <!-- PANTALLA 1: CONFIGURACIÓN                        -->
+        <!-- ================================================ -->
+        <section id="screenSetup" class="screen active">
+            <div class="setup-container">
+                <div class="setup-hero">
+                    <h2>Configura tu sesión de estudio</h2>
+                    <p>Elige el modo, los filtros y cuántas preguntas deseas resolver.</p>
+                </div>
+
+                <div class="setup-grid">
+                    <!-- Modo -->
+                    <div class="setup-card">
+                        <h3>🎯 Modo de estudio</h3>
+                        <div class="mode-selector">
+                            <button class="mode-btn active" data-mode="practice" id="setupModePractice">
+                                📝 Práctica
+                            </button>
+                            <button class="mode-btn" data-mode="simulacro" id="setupModeSimulacro">
+                                🎯 Simulacro
+                            </button>
+                        </div>
+                        <p class="setup-help" id="modeHelp">
+                            En práctica, ves la explicación inmediatamente al responder.
+                        </p>
+                    </div>
+
+                    <!-- Filtros -->
+                    <div class="setup-card">
+                        <h3>🔍 Filtros</h3>
+                        <div class="filter-grid">
+                            <div class="filter-group">
+                                <label>Área</label>
+                                <select id="filterArea"><option value="all">Todas</option></select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Especialidad</label>
+                                <select id="filterEspecialidad"><option value="all">Todas</option></select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Tema</label>
+                                <select id="filterTema"><option value="all">Todos</option></select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Dificultad</label>
+                                <select id="filterDificultad">
+                                    <option value="all">Todas</option>
+                                    <option value="Baja">Baja</option>
+                                    <option value="Media">Media</option>
+                                    <option value="Alta">Alta</option>
+                                </select>
+                            </div>
+                            <div class="filter-group">
+                                <label>Estado</label>
+                                <select id="filterEstado">
+                                    <option value="all">Todos</option>
+                                    <option value="activa">Activa</option>
+                                    <option value="inactiva">Inactiva</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button id="resetFilters" class="btn-secondary">🔄 Limpiar filtros</button>
+                    </div>
+
+                    <!-- Número de preguntas -->
+                    <div class="setup-card">
+                        <h3>🔢 Número de preguntas</h3>
+                        <div class="count-selector">
+                            <button class="count-btn" data-count="5">5</button>
+                            <button class="count-btn" data-count="10">10</button>
+                            <button class="count-btn active" data-count="20">20</button>
+                            <button class="count-btn" data-count="50">50</button>
+                            <button class="count-btn" data-count="all">Todas</button>
+                        </div>
+                        <div class="count-custom">
+                            <label for="customCount">O escribe un número:</label>
+                            <input
+                                type="number"
+                                id="customCount"
+                                min="1"
+                                step="1"
+                                placeholder="Ej: 35"
+                            />
+                        </div>
+                        <label class="checkbox-row">
+                            <input type="checkbox" id="shuffleQuestions" checked />
+                            <span>Barajar preguntas</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Resumen y botón de inicio -->
+                <div class="setup-footer">
+                    <div class="setup-summary">
+                        <div class="summary-line">
+                            <span class="summary-label">Modo:</span>
+                            <span id="summaryMode" class="summary-value">Práctica</span>
+                        </div>
+                        <div class="summary-line">
+                            <span class="summary-label">Filtros:</span>
+                            <span id="summaryFilters" class="summary-value">Todas</span>
+                        </div>
+                        <div class="summary-line">
+                            <span class="summary-label">Preguntas disponibles:</span>
+                            <span id="summaryAvailable" class="summary-value">0</span>
+                        </div>
+                        <div class="summary-line">
+                            <span class="summary-label">Vas a resolver:</span>
+                            <span id="summaryCount" class="summary-value highlight">0</span>
+                        </div>
+                    </div>
+                    <button id="startSession" class="btn-primary btn-large">
+                        ▶ Iniciar cuestionario
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================ -->
+        <!-- PANTALLA 2: CUESTIONARIO                         -->
+        <!-- ================================================ -->
+        <section id="screenQuiz" class="screen">
+            <!-- Barra superior del cuestionario -->
+            <div class="quiz-topbar">
+                <button id="backToSetup" class="btn-back">
+                    ← Volver
+                </button>
+                <div class="quiz-topbar-center">
+                    <span id="quizModeLabel" class="quiz-mode-label">Práctica</span>
+                    <span id="questionPosition" class="quiz-position">0 / 0</span>
+                </div>
+                <div class="quiz-topbar-right">
+                    <button id="resetSimulacro" class="btn-secondary" style="display:none;">
+                        🔄 Reiniciar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Barra de progreso -->
+            <div id="progressBarContainer">
+                <div id="progressBarFill"></div>
+            </div>
+
+            <!-- Info simulacro (solo visible en modo simulacro) -->
+            <div id="simulacroInfo" class="simulacro-info" style="display:none;">
+                <div class="sim-stat">
+                    <span class="sim-stat-label">Respondidas</span>
+                    <span class="sim-stat-value"><span id="simAnswered">0</span> / <span id="simTotal">0</span></span>
+                </div>
+                <div class="sim-stat">
+                    <span class="sim-stat-label">Correctas</span>
+                    <span class="sim-stat-value correct" id="simCorrect">0</span>
+                </div>
+                <div class="sim-stat">
+                    <span class="sim-stat-label">Incorrectas</span>
+                    <span class="sim-stat-value incorrect" id="simIncorrect">0</span>
+                </div>
+            </div>
+
+            <!-- Contenedor de la pregunta -->
+            <div id="questionContainer"></div>
+
+            <!-- Barra de "Continuar" (aparece solo al llegar al final del bloque) -->
+            <div id="continueBar" class="continue-bar" style="display:none;">
+                <div class="continue-info">
+                    <span id="continueInfoText">Has llegado al final de este bloque.</span>
+                </div>
+                <button id="continueBtn" class="btn-primary btn-large">
+                    ➕ Continuar con más preguntas
+                </button>
+            </div>
+
+            <!-- Navegación inferior -->
+            <div id="navigation">
+                <button id="prevQuestion" class="nav-btn">
+                    <span class="nav-icon">◀</span>
+                    <span class="nav-text">Anterior</span>
+                </button>
+                <div class="nav-hint">
+                    💡 <strong>A-E</strong> responder · <strong>← →</strong> navegar · <strong>⌫</strong> volver
+                </div>
+                <button id="nextQuestion" class="nav-btn primary">
+                    <span class="nav-text">Siguiente</span>
+                    <span class="nav-icon">▶</span>
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================================================ -->
+    <!-- MODAL: Agregar más preguntas                     -->
+    <!-- ================================================ -->
+    <div id="continueModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>➕ Agregar más preguntas</h3>
+                <button id="closeModalBtn" class="modal-close" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-info">
+                    Quedan <strong id="modalRemaining">0</strong> preguntas disponibles con los filtros actuales.
+                </p>
+
+                <label class="modal-label">¿Cuántas quieres agregar?</label>
+                <div class="count-selector" id="modalCountSelector">
+                    <button class="count-btn" data-count="5">5</button>
+                    <button class="count-btn active" data-count="10">10</button>
+                    <button class="count-btn" data-count="20">20</button>
+                    <button class="count-btn" data-count="50">50</button>
+                    <button class="count-btn" data-count="all">Todas</button>
+                </div>
+
+                <div class="count-custom">
+                    <label for="modalCustomCount">O escribe un número:</label>
+                    <input
+                        type="number"
+                        id="modalCustomCount"
+                        min="1"
+                        step="1"
+                        placeholder="Ej: 15"
+                    />
+                </div>
+
+                <label class="checkbox-row">
+                    <input type="checkbox" id="modalShuffle" checked />
+                    <span>Barajar las nuevas preguntas</span>
+                </label>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelModalBtn" class="btn-secondary">Cancelar</button>
+                <button id="confirmModalBtn" class="btn-primary">➕ Agregar y continuar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

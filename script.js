@@ -13,7 +13,7 @@
     // ============================================================
     // 1. CONSTANTES
     // ============================================================
-    const DATA_URL = 'DATA/Examen_25A.json';
+    const DATA_URL = 'data/Examen_25A.json';
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 

@@ -1279,6 +1279,12 @@ header {
     margin-top: var(--space-2);
 }
 
+/* En el quiz, la navegación ahora va arriba de la barra de acciones */
+#screenQuiz #navigation {
+    margin-top: var(--space-2);
+    margin-bottom: 0;
+}
+
 .nav-btn {
     padding: 8px 18px;
     border-radius: var(--radius);
@@ -1340,7 +1346,7 @@ header {
     align-items: center;
     gap: var(--space-3);
     padding: var(--space-3) var(--space-4);
-    margin-top: var(--space-2);
+    margin-top: var(--space-3);
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-lg);
@@ -2247,4 +2253,5 @@ header {
     .review-dominio { flex-direction: column; align-items: stretch; }
     .review-dominio-actions { justify-content: stretch; }
     .review-dominio-actions button { flex: 1; justify-content: center; }
+
 }

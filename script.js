@@ -1233,10 +1233,6 @@
             `;
         }).join('');
 
-        const statusHint = selected
-            ? `<div class="sim-answer-hint">${ICONS.pencil} Marcaste <strong>${selected}</strong>. Puedes cambiarla antes de finalizar.</div>`
-            : `<div class="sim-answer-hint sim-answer-hint-empty">${ICONS.square} Aún no has respondido esta pregunta.</div>`;
-
         const flagBtnHtml = `
             <button
                 class="flag-btn ${isFlagged ? 'flagged' : ''}"
@@ -1253,7 +1249,6 @@
                 ${buildQuestionHeader(p, false, idx)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
-                ${statusHint}
                 <div class="sim-card-actions">
                     ${flagBtnHtml}
                 </div>

@@ -1114,7 +1114,21 @@
         updateNavigation();
     }
 
-    function buildQuestionHeader(p) {
+    /**
+     * Construye el encabezado de la pregunta.
+     * @param {Object} p - Pregunta
+     * @param {boolean} mostrarTags - Si true, muestra área/especialidad/tema/dificultad/estado.
+     *                                Si false (simulacro), solo muestra el número.
+     */
+    function buildQuestionHeader(p, mostrarTags = true) {
+        if (!mostrarTags) {
+            return `
+                <div class="question-header">
+                    <span class="question-number">#${p.numero}</span>
+                </div>
+            `;
+        }
+
         const difClass = `dificultad-${p.dificultad}`;
         const estadoClass = `estado-${p.estado}`;
         return `
@@ -1178,7 +1192,7 @@
 
         return `
             <div class="${cardClass}">
-                ${buildQuestionHeader(p)}
+                ${buildQuestionHeader(p, true)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${feedbackHtml}
@@ -1224,7 +1238,7 @@
 
         return `
             <div class="question-card">
-                ${buildQuestionHeader(p)}
+                ${buildQuestionHeader(p, false)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${statusHint}
@@ -1655,7 +1669,7 @@
 
         reviewContainer.innerHTML = `
             <div class="question-card ${isBlank ? '' : (isCorrect ? 'correct-answered' : 'wrong-answered')}">
-                ${buildQuestionHeader(p)}
+                ${buildQuestionHeader(p, true)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${statusHtml}

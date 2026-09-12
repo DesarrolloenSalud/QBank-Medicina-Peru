@@ -150,15 +150,30 @@ select:focus-visible {
     display: none;
 }
 
+/* ============================================================
+   IMPORTANTE: en quiz y review NO forzamos altura mínima ni
+   estiramos las pantallas. Así el contenido fluye naturalmente
+   y los botones quedan pegados justo debajo de la pregunta.
+   ============================================================ */
 .view-quiz #app,
 .view-review #app {
     padding: var(--space-3) var(--space-5);
-    min-height: calc(100vh - var(--space-2) * 2);
+    min-height: auto;             /* ← ya no forzamos 100vh */
 }
 
 .view-quiz #app::before,
 .view-review #app::before {
     height: 2px;
+}
+
+.view-quiz .screen,
+.view-review .screen {
+    flex: 0 0 auto;               /* ← no estirar el screen */
+}
+
+#screenQuiz,
+#screenReview {
+    flex: 0 0 auto;               /* refuerzo explícito */
 }
 
 header {
@@ -760,7 +775,6 @@ header {
 
 .btn-map-text { display: inline; }
 
-/* Barra de stats compacta: inline, no bloque */
 .quiz-toolbar .simulacro-info {
     display: flex;
     gap: var(--space-3);
@@ -774,7 +788,6 @@ header {
     margin: 0;
 }
 
-/* Stat: label + value en línea */
 .quiz-toolbar .sim-stat {
     flex-direction: row;
     align-items: baseline;
@@ -1007,12 +1020,15 @@ header {
     75% { transform: translateX(3px); }
 }
 
+/* ============================================================
+   CONTENEDOR DE PREGUNTA
+   Sin flex:1 → la tarjeta ocupa solo su altura natural.
+   ============================================================ */
 #questionContainer {
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
-    flex: 1;
-    min-height: 120px;
+    min-height: 0;
 }
 
 .question-card {
@@ -1268,6 +1284,11 @@ header {
     font-weight: 700;
 }
 
+/* ============================================================
+   NAVEGACIÓN + BARRA DE ACCIONES
+   Flujo normal: sin margin-top:auto. Ahora el hueco desaparece
+   porque #app y .screen ya no fuerzan altura de viewport.
+   ============================================================ */
 #navigation,
 #reviewNavigation {
     display: flex;
@@ -1279,7 +1300,6 @@ header {
     margin-top: var(--space-2);
 }
 
-/* En el quiz, la navegación ahora va arriba de la barra de acciones */
 #screenQuiz #navigation {
     margin-top: var(--space-2);
     margin-bottom: 0;
@@ -2009,7 +2029,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
-    flex: 1;
     min-height: 200px;
     margin-top: var(--space-3);
 }
@@ -2142,8 +2161,6 @@ header {
 
 /* ============================================================
    PANEL DE PROGRESO — VISIBILIDAD POR MODO
-   Práctica:   correctas / incorrectas / en blanco
-   Simulacro:  respondidas / marcadas  (sin spoilers)
    ============================================================ */
 
 /* --- Modo PRÁCTICA --- */
@@ -2264,6 +2281,7 @@ header {
     gap: var(--space-2);
     flex-wrap: wrap;
     justify-content: flex-end;
+    min-width: 0;
 }
 
 .copy-btn {

@@ -3,16 +3,37 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e4a6e" />
     <title>QBank Medicina Perú - CONAREME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="view-setup">
     <div id="app">
         <header>
             <div class="header-left">
-                <h1>📘 QBank Medicina Perú</h1>
+                <div class="brand-mark" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        <path d="M12 7v6"></path>
+                        <path d="M9 10h6"></path>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>QBank Medicina Perú</h1>
+                    <p class="brand-subtitle">Preparación CONAREME · Essalud</p>
+                </div>
+            </div>
+            <div class="header-right">
                 <div class="header-info">
-                    <span id="totalQuestions">0</span> preguntas cargadas
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <span><span id="totalQuestions">0</span> preguntas</span>
                 </div>
             </div>
         </header>
@@ -22,17 +43,30 @@
                 <div class="setup-grid">
                     <!-- Filtros (incluye modo) -->
                     <div class="setup-card">
-                        <h3>🔍 Filtros</h3>
+                        <div class="card-title-row">
+                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                            </svg>
+                            <h3>Filtros</h3>
+                        </div>
 
-                        <!-- Selector de modo (dentro de Filtros) -->
                         <div class="mode-block">
                             <label class="mode-block-label">Modo de estudio</label>
                             <div class="mode-selector">
                                 <button class="mode-btn active" data-mode="practice" id="setupModePractice">
-                                    📝 Práctica
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M12 20h9"></path>
+                                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                    </svg>
+                                    Práctica
                                 </button>
                                 <button class="mode-btn" data-mode="simulacro" id="setupModeSimulacro">
-                                    🎯 Simulacro
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                    Simulacro
                                 </button>
                             </div>
                             <p class="setup-help" id="modeHelp" style="margin-top:8px;">
@@ -73,12 +107,25 @@
                                 </select>
                             </div>
                         </div>
-                        <button id="resetFilters" class="btn-secondary">🔄 Limpiar filtros</button>
+                        <button id="resetFilters" class="btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                                <path d="M3 3v5h5"></path>
+                            </svg>
+                            Limpiar filtros
+                        </button>
                     </div>
 
-                    <!-- Número de preguntas + Tiempo límite integrado -->
                     <div class="setup-card">
-                        <h3>🔢 Número de preguntas</h3>
+                        <div class="card-title-row">
+                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="4" y1="9" x2="20" y2="9"></line>
+                                <line x1="4" y1="15" x2="20" y2="15"></line>
+                                <line x1="10" y1="3" x2="8" y2="21"></line>
+                                <line x1="16" y1="3" x2="14" y2="21"></line>
+                            </svg>
+                            <h3>Número de preguntas</h3>
+                        </div>
                         <div class="count-selector">
                             <button class="count-btn" data-count="5">5</button>
                             <button class="count-btn" data-count="10">10</button>
@@ -101,10 +148,15 @@
                             <span>Barajar preguntas</span>
                         </label>
 
-                        <!-- Bloque de tiempo (solo visible en modo Simulacro) -->
                         <div id="timeBlock" class="time-block" style="display:none;">
                             <div class="time-block-divider"></div>
-                            <h4 class="time-block-title">⏱️ Tiempo límite</h4>
+                            <div class="card-title-row compact">
+                                <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <h4 class="time-block-title">Tiempo límite</h4>
+                            </div>
                             <div class="count-custom" style="margin-bottom:0;">
                                 <label for="customTime">Minutos:</label>
                                 <input
@@ -118,32 +170,56 @@
                         </div>
                     </div>
 
-                    <!-- Enfoque de estudio -->
                     <div class="setup-card setup-card-enfoque" id="enfoqueCard">
-                        <h3>🎯 Enfoque de estudio</h3>
+                        <div class="card-title-row">
+                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                            <h3>Enfoque de estudio</h3>
+                        </div>
                         <p class="setup-help" style="margin-top:0;margin-bottom:12px;">
                             Filtra según tu perfil de aprendizaje acumulado.
                             <strong>Dominadas</strong> no vuelven a salir.
                         </p>
                         <div class="enfoque-selector" id="enfoqueSelector">
                             <button class="enfoque-btn active" data-enfoque="all">
-                                📚 Todas
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                                Todas
                             </button>
                             <button class="enfoque-btn" data-enfoque="no-dominadas">
-                                🎯 No dominadas
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                                No dominadas
                             </button>
                             <button class="enfoque-btn" data-enfoque="falladas">
-                                🔴 Solo falladas
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg>
+                                Solo falladas
                             </button>
                             <button class="enfoque-btn" data-enfoque="dudosas">
-                                🟡 Solo dudosas
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                </svg>
+                                Solo dudosas
                             </button>
                         </div>
                         <div class="perfil-resumen" id="perfilResumen"></div>
                     </div>
                 </div>
 
-                <!-- Resumen y botón de inicio -->
                 <div class="setup-footer">
                     <div class="setup-summary">
                         <div class="summary-line">
@@ -168,7 +244,10 @@
                         </div>
                     </div>
                     <button id="startSession" class="btn-primary btn-large">
-                        ▶ Iniciar cuestionario
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Iniciar cuestionario
                     </button>
                 </div>
             </div>
@@ -176,56 +255,52 @@
 
         <!-- PANTALLA 2: CUESTIONARIO -->
         <section id="screenQuiz" class="screen">
-            <div class="quiz-topbar">
-                <button id="backToSetup" class="btn-back">
-                    ← Volver
+            <!-- Barra única: Volver + Mode/Pos + Stats + Timer + Acciones -->
+            <div class="quiz-toolbar">
+                <button id="backToSetup" class="btn-back btn-back-compact" title="Volver (⌫)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span class="btn-back-text">Volver</span>
                 </button>
-                <div class="quiz-topbar-right">
-                    <span id="simTimer" class="sim-timer" style="display:none;">⏱️ 00:00</span>
-                    <button id="resetSimulacro" class="btn-secondary" style="display:none;">
-                        🔄 Reiniciar
-                    </button>
-                </div>
-            </div>
 
-            <div id="progressBarContainer">
-                <div id="progressBarFill"></div>
-            </div>
-
-            <div id="simulacroInfo" class="simulacro-info" style="display:none;">
-                <div class="sim-header">
+                <div class="quiz-toolbar-center">
                     <span id="quizModeLabel" class="quiz-mode-label">Práctica</span>
                     <span id="questionPosition" class="quiz-position">0 / 0</span>
                 </div>
 
-                <div class="sim-divider"></div>
+                <div id="simulacroInfo" class="simulacro-info" style="display:none;">
+                    <div class="sim-stat sim-stat-answered">
+                        <span class="sim-stat-label">Resp.</span>
+                        <span class="sim-stat-value"><span id="simAnswered">0</span>/<span id="simTotal">0</span></span>
+                    </div>
+                    <div class="sim-stat sim-stat-correct">
+                        <span class="sim-stat-label">OK</span>
+                        <span class="sim-stat-value correct" id="simCorrect">0</span>
+                    </div>
+                    <div class="sim-stat sim-stat-incorrect">
+                        <span class="sim-stat-label">Mal</span>
+                        <span class="sim-stat-value incorrect" id="simIncorrect">0</span>
+                    </div>
+                    <div class="sim-stat sim-stat-blank">
+                        <span class="sim-stat-label">Blanco</span>
+                        <span class="sim-stat-value" id="simBlank">0</span>
+                    </div>
+                    <div class="sim-stat sim-stat-flagged">
+                        <span class="sim-stat-label">Marc.</span>
+                        <span class="sim-stat-value flagged" id="simFlagged">0</span>
+                    </div>
 
-                <div class="sim-stat sim-stat-answered" style="display:none;">
-                    <span class="sim-stat-label">Respondidas</span>
-                    <span class="sim-stat-value"><span id="simAnswered">0</span> / <span id="simTotal">0</span></span>
-                </div>
-
-                <div class="sim-stat sim-stat-correct">
-                    <span class="sim-stat-label">Correctas</span>
-                    <span class="sim-stat-value correct" id="simCorrect">0</span>
-                </div>
-                <div class="sim-stat sim-stat-incorrect">
-                    <span class="sim-stat-label">Incorrectas</span>
-                    <span class="sim-stat-value incorrect" id="simIncorrect">0</span>
-                </div>
-                <div class="sim-stat sim-stat-blank">
-                    <span class="sim-stat-label">En blanco</span>
-                    <span class="sim-stat-value" id="simBlank">0</span>
-                </div>
-                <div class="sim-stat sim-stat-flagged" style="display:none;">
-                    <span class="sim-stat-label">Marcadas</span>
-                    <span class="sim-stat-value flagged" id="simFlagged">0</span>
-                </div>
-                <div class="sim-actions-sim" style="display:none;">
-                    <button id="openMapBtn" class="btn-map" title="Abrir mapa de preguntas (G)">
-                        🗺️ Mapa
-                    </button>
-                    <div class="go-to-wrap">
+                    <div class="sim-actions-sim">
+                        <button id="openMapBtn" class="btn-map" title="Mapa de preguntas (G)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                                <line x1="8" y1="2" x2="8" y2="18"></line>
+                                <line x1="16" y1="6" x2="16" y2="22"></line>
+                            </svg>
+                            <span class="btn-map-text">Mapa</span>
+                        </button>
                         <input
                             type="number"
                             id="goToQuestionInput"
@@ -237,36 +312,69 @@
                         />
                     </div>
                 </div>
+
+                <div class="quiz-toolbar-right">
+                    <span id="simTimer" class="sim-timer" style="display:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span id="simTimerText">00:00</span>
+                    </span>
+                    <button id="resetSimulacro" class="btn-secondary btn-icon-only" style="display:none;" title="Reiniciar simulacro">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="progressBarContainer">
+                <div id="progressBarFill"></div>
             </div>
 
             <div id="questionContainer"></div>
 
-            <!-- Barra inferior unificada: info + Continuar + Finalizar -->
             <div id="bottomActionBar" class="bottom-action-bar" style="display:none;">
                 <div id="continueInfoWrap" class="continue-info-wrap" style="display:none;">
                     <span id="continueInfoText">Has llegado al final de este bloque.</span>
                 </div>
                 <div class="bottom-action-buttons">
                     <button id="continueBtn" class="btn-primary btn-large" style="display:none;">
-                        ➕ Continuar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        Continuar
                     </button>
                     <button id="finishSimulacroBtn" class="btn-finish btn-large" style="display:none;">
-                        🏁 Finalizar
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                            <line x1="4" y1="22" x2="4" y2="15"></line>
+                        </svg>
+                        Finalizar
                     </button>
                 </div>
             </div>
 
             <div id="navigation">
                 <button id="prevQuestion" class="nav-btn">
-                    <span class="nav-icon">◀</span>
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
                     <span class="nav-text">Anterior</span>
                 </button>
                 <div class="nav-hint">
-                    💡 <strong>A-E</strong> responder · <strong>← →</strong> navegar · <strong>⌫</strong> volver
+                    <strong>A-E</strong> responder · <strong>← →</strong> navegar · <strong>⌫</strong> volver
                 </div>
                 <button id="nextQuestion" class="nav-btn primary">
                     <span class="nav-text">Siguiente</span>
-                    <span class="nav-icon">▶</span>
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </button>
             </div>
         </section>
@@ -317,24 +425,52 @@
                 </div>
 
                 <div class="results-section">
-                    <h3 class="results-section-title">📊 Desglose por área</h3>
+                    <div class="card-title-row compact">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        <h3 class="results-section-title">Desglose por área</h3>
+                    </div>
                     <div id="resultsByArea" class="results-bars"></div>
                 </div>
 
                 <div class="results-section">
-                    <h3 class="results-section-title">📋 Desglose por especialidad</h3>
+                    <div class="card-title-row compact">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        <h3 class="results-section-title">Desglose por especialidad</h3>
+                    </div>
                     <div id="resultsByEspecialidad" class="results-bars"></div>
                 </div>
 
                 <div class="results-actions">
                     <button id="reviewAnswersBtn" class="btn-primary btn-large">
-                        🔍 Revisar respuestas
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        Revisar respuestas
                     </button>
                     <button id="backToSetupFromResults" class="btn-secondary">
-                        🏠 Volver al inicio
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        Volver al inicio
                     </button>
                     <button id="retrySimulacroBtn" class="btn-secondary">
-                        🔄 Repetir simulacro
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                        </svg>
+                        Repetir simulacro
                     </button>
                 </div>
             </div>
@@ -343,7 +479,13 @@
         <!-- PANTALLA 4: REVISIÓN -->
         <section id="screenReview" class="screen">
             <div class="review-topbar">
-                <button id="backToResults" class="btn-back">← Resultados</button>
+                <button id="backToResults" class="btn-back">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Resultados
+                </button>
                 <div class="review-topbar-center">
                     <span class="quiz-mode-label">Revisión</span>
                     <span id="reviewPosition" class="quiz-position">0 / 0</span>
@@ -363,13 +505,19 @@
 
             <div id="reviewNavigation">
                 <button id="reviewPrev" class="nav-btn">
-                    <span class="nav-icon">◀</span>
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
                     <span class="nav-text">Anterior</span>
                 </button>
                 <div class="nav-hint" id="reviewCounter">0 / 0</div>
                 <button id="reviewNext" class="nav-btn primary">
                     <span class="nav-text">Siguiente</span>
-                    <span class="nav-icon">▶</span>
+                    <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
                 </button>
             </div>
         </section>
@@ -379,8 +527,22 @@
     <div id="answerMapModal" class="modal-overlay" style="display:none;">
         <div class="modal-content modal-map">
             <div class="modal-header">
-                <h3>🗺️ Mapa de preguntas</h3>
-                <button id="closeAnswerMapBtn" class="modal-close" aria-label="Cerrar">✕</button>
+                <div class="modal-title-row">
+                    <div class="modal-icon-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                            <line x1="8" y1="2" x2="8" y2="18"></line>
+                            <line x1="16" y1="6" x2="16" y2="22"></line>
+                        </svg>
+                    </div>
+                    <h3>Mapa de preguntas</h3>
+                </div>
+                <button id="closeAnswerMapBtn" class="modal-close" aria-label="Cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
             <div class="modal-body">
                 <div class="map-legend">
@@ -401,30 +563,62 @@
     <div id="resumeModal" class="modal-overlay" style="display:none;">
         <div class="modal-content" style="max-width: 480px;">
             <div class="modal-header">
-                <h3>💾 Simulacro en curso</h3>
+                <div class="modal-title-row">
+                    <div class="modal-icon-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                            <polyline points="7 3 7 8 15 8"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Simulacro en curso</h3>
+                </div>
             </div>
             <div class="modal-body">
-                <p class="modal-info" style="background:#e8f0fe;border-left-color:#4a90d9;color:var(--primary);">
+                <p class="modal-info">
                     Detectamos un simulacro que no finalizaste. ¿Quieres continuar donde lo dejaste?
                 </p>
                 <div class="resume-summary" id="resumeSummary"></div>
-                <p style="font-size:12.5px;color:var(--gray-500);line-height:1.5;">
+                <p style="font-size:12.5px;color:var(--text-secondary);line-height:1.5;">
                     Si eliges <strong>Descartar</strong>, se borrará el progreso guardado.
                 </p>
             </div>
             <div class="modal-footer">
-                <button id="discardResumeBtn" class="btn-secondary">🗑️ Descartar</button>
-                <button id="resumeContinueBtn" class="btn-primary">▶ Continuar simulacro</button>
+                <button id="discardResumeBtn" class="btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="3 6 5 6 21 6"></polyline>
+                        <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                    Descartar
+                </button>
+                <button id="resumeContinueBtn" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Continuar simulacro
+                </button>
             </div>
         </div>
     </div>
 
-    <!-- MODAL: Agregar más preguntas (con tiempo para el nuevo bloque) -->
     <div id="continueModal" class="modal-overlay" style="display:none;">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>➕ Continuar con más preguntas</h3>
-                <button id="closeModalBtn" class="modal-close" aria-label="Cerrar">✕</button>
+                <div class="modal-title-row">
+                    <div class="modal-icon-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Continuar con más preguntas</h3>
+                </div>
+                <button id="closeModalBtn" class="modal-close" aria-label="Cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
             <div class="modal-body">
                 <p class="modal-info">
@@ -445,10 +639,9 @@
                     <input type="number" id="modalCustomCount" min="1" step="1" placeholder="Ej: 15" />
                 </div>
 
-                <!-- Bloque de tiempo: solo visible en modo Simulacro -->
                 <div id="modalTimeBlock" style="display:none;">
                     <label class="modal-label" style="margin-top:4px;">
-                        ⏱️ Tiempo para el nuevo bloque (min)
+                        Tiempo para el nuevo bloque (min)
                     </label>
                     <div class="count-custom" style="margin-bottom:8px;">
                         <input
@@ -460,7 +653,7 @@
                         />
                     </div>
                     <p class="modal-warning">
-                        ⚠️ El tiempo sobrante del bloque actual se descartará. El nuevo bloque arrancará con el tiempo que indiques.
+                        El tiempo sobrante del bloque actual se descartará. El nuevo bloque arrancará con el tiempo que indiques.
                     </p>
                 </div>
 
@@ -471,7 +664,13 @@
             </div>
             <div class="modal-footer">
                 <button id="cancelModalBtn" class="btn-secondary">Cancelar</button>
-                <button id="confirmModalBtn" class="btn-primary">➕ Agregar y continuar</button>
+                <button id="confirmModalBtn" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                    Agregar y continuar
+                </button>
             </div>
         </div>
     </div>
@@ -479,8 +678,21 @@
     <div id="finishModal" class="modal-overlay" style="display:none;">
         <div class="modal-content" style="max-width: 460px;">
             <div class="modal-header">
-                <h3>🏁 Finalizar simulacro</h3>
-                <button id="closeFinishModalBtn" class="modal-close" aria-label="Cerrar">✕</button>
+                <div class="modal-title-row">
+                    <div class="modal-icon-badge danger">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                            <line x1="4" y1="22" x2="4" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Finalizar simulacro</h3>
+                </div>
+                <button id="closeFinishModalBtn" class="modal-close" aria-label="Cerrar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
             </div>
             <div class="modal-body">
                 <p class="modal-info">
@@ -489,29 +701,43 @@
                 </p>
                 <div class="finish-stats" id="finishStats">
                     <div class="finish-stat">
-                        <span class="finish-stat-icon">✅</span>
+                        <svg class="finish-stat-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
                         <span class="finish-stat-label">Respondidas</span>
                         <span class="finish-stat-value" id="finishStatAnswered">0</span>
                     </div>
                     <div class="finish-stat">
-                        <span class="finish-stat-icon">🚩</span>
+                        <svg class="finish-stat-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                            <line x1="4" y1="22" x2="4" y2="15"></line>
+                        </svg>
                         <span class="finish-stat-label">Marcadas</span>
                         <span class="finish-stat-value" id="finishStatFlagged">0</span>
                     </div>
                     <div class="finish-stat">
-                        <span class="finish-stat-icon">⬜</span>
+                        <svg class="finish-stat-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        </svg>
                         <span class="finish-stat-label">En blanco</span>
                         <span class="finish-stat-value" id="finishStatBlank">0</span>
                     </div>
                 </div>
-                <p id="finishWarning" style="font-size:13px;color:var(--gray-600);line-height:1.5;">
+                <p id="finishWarning" style="font-size:13px;color:var(--text-secondary);line-height:1.5;">
                     Al finalizar, verás tu puntaje y el desglose por área.
                     Las preguntas sin responder quedarán como "en blanco".
                 </p>
             </div>
             <div class="modal-footer">
                 <button id="cancelFinishBtn" class="btn-secondary">Seguir revisando</button>
-                <button id="confirmFinishBtn" class="btn-primary">🏁 Finalizar y ver resultados</button>
+                <button id="confirmFinishBtn" class="btn-finish">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                        <line x1="4" y1="22" x2="4" y2="15"></line>
+                    </svg>
+                    Finalizar y ver resultados
+                </button>
             </div>
         </div>
     </div>
@@ -519,23 +745,38 @@
     <div id="timeUpModal" class="modal-overlay" style="display:none;">
         <div class="modal-content" style="max-width: 440px;">
             <div class="modal-header">
-                <h3>⏰ ¡Se agotó el tiempo!</h3>
+                <div class="modal-title-row">
+                    <div class="modal-icon-badge warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3>¡Se agotó el tiempo!</h3>
+                </div>
             </div>
             <div class="modal-body">
-                <p class="modal-info" style="background:#fff3cd;border-left-color:#ffc107;color:#856404;">
+                <p class="modal-info warning">
                     El tiempo límite del simulacro ha finalizado.
                 </p>
-                <p style="font-size:13.5px;color:var(--gray-700);line-height:1.5;">
+                <p style="font-size:13.5px;color:var(--text-primary);line-height:1.55;">
                     Has respondido <strong id="timeUpAnswered">0</strong> de
                     <strong id="timeUpTotal">0</strong> preguntas.<br>
                     Las preguntas sin responder se contarán como <strong>en blanco</strong>.
                 </p>
-                <p style="font-size:13px;color:var(--gray-500);margin-top:4px;">
+                <p style="font-size:13px;color:var(--text-tertiary);margin-top:4px;">
                     Pulsa "Ver resultados" para continuar.
                 </p>
             </div>
             <div class="modal-footer">
-                <button id="confirmTimeUpBtn" class="btn-primary">📊 Ver resultados</button>
+                <button id="confirmTimeUpBtn" class="btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="20" x2="18" y2="10"></line>
+                        <line x1="12" y1="20" x2="12" y2="4"></line>
+                        <line x1="6" y1="20" x2="6" y2="14"></line>
+                    </svg>
+                    Ver resultados
+                </button>
             </div>
         </div>
     </div>

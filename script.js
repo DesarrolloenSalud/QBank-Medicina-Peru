@@ -2,35 +2,34 @@
 // ============================================================
 // QBank Medicina Perú - Lógica principal
 // ============================================================
-// Pantallas:
-//   1. Setup    (configuración de la sesión)
-//   2. Quiz     (cuestionario)
-//   3. Results  (resultados del simulacro)
-//   4. Review   (revisión de respuestas)
-//
-// Persistencia:
-//   - M5: El estado del simulacro se guarda automáticamente en localStorage.
-//   - P1: El perfil de dominio por pregunta vive en dominio.js.
-// ============================================================
 
 (function () {
     'use strict';
 
-    // ============================================================
-    // 1. CONSTANTES
-    // ============================================================
     const DATA_URL = 'data/Examen_25A.json';
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 
-    // Alertas de tiempo restante (segundos)
     const WARN_THRESHOLD_1 = 15 * 60;
     const WARN_THRESHOLD_2 = 5 * 60;
     const WARN_THRESHOLD_3 = 60;
 
-    // M5: Clave de almacenamiento y caducidad
     const STORAGE_KEY = 'qbank_simulacro_v1';
     const STORAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+
+    // ------------------------------------------------------------
+    // Iconos SVG reutilizables (stroke 2, currentColor)
+    // ------------------------------------------------------------
+    const ICONS = {
+        check: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><polyline points="20 6 9 17 4 12"/></svg>',
+        x: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>',
+        flag: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>',
+        square: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>',
+        pencil: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',
+        bulb: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>',
+        bookOpen: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+        refresh: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>'
+    };
 
     // ============================================================
     // 2. ESTADO GLOBAL
@@ -42,18 +41,13 @@
     let currentMode = MODE_PRACTICE;
     let selectedCount = 20;
 
-    // P1/P3: enfoque de estudio
     let currentEnfoque = 'all';
-
-    // Tiempo límite manual configurado en el setup.
     let selectedTimeLimitMin = null;
 
-    // Estado del modo práctica
     let practiceAnswers = {};
     let practiceFeedback = {};
     let practiceRevealed = {};
 
-    // Estado del modo simulacro
     let simulacroState = {
         answers: {},
         flagged: new Set(),
@@ -79,6 +73,8 @@
     // ============================================================
     // 3. REFERENCIAS AL DOM
     // ============================================================
+    const body = document.body;
+
     const screenSetup = document.getElementById('screenSetup');
     const screenQuiz = document.getElementById('screenQuiz');
     const screenResults = document.getElementById('screenResults');
@@ -129,8 +125,8 @@
     const simFlagged = document.getElementById('simFlagged');
     const resetSimulacroBtn = document.getElementById('resetSimulacro');
     const simTimer = document.getElementById('simTimer');
+    const simTimerText = document.getElementById('simTimerText');
 
-    // 🔧 NUEVO: botón Finalizar vive en la barra inferior, no en el topbar.
     const finishSimulacroBtn = document.getElementById('finishSimulacroBtn');
     const bottomActionBar = document.getElementById('bottomActionBar');
     const continueInfoWrap = document.getElementById('continueInfoWrap');
@@ -276,7 +272,7 @@
     }
 
     // ============================================================
-    // 5. PERSISTENCIA (M5)
+    // 5. PERSISTENCIA
     // ============================================================
     function saveSimulacroState() {
         if (currentMode !== MODE_SIMULACRO) return;
@@ -401,8 +397,8 @@
                 </div>
             </div>
             <div class="resume-meta">
-                <div class="resume-meta-line"><span>⏱️ Tiempo restante</span><strong>${timeInfo}</strong></div>
-                <div class="resume-meta-line"><span>📅 Guardado</span><strong>${fechaTxt}</strong></div>
+                <div class="resume-meta-line"><span>Tiempo restante</span><strong>${timeInfo}</strong></div>
+                <div class="resume-meta-line"><span>Guardado</span><strong>${fechaTxt}</strong></div>
             </div>
         `;
 
@@ -532,10 +528,10 @@
             .catch(err => {
                 console.error('Error al cargar los datos:', err);
                 container.innerHTML = `
-                    <div style="padding:40px;text-align:center;color:#b12a2a;background:#fde8e8;border-radius:16px;">
-                        <h3>❌ Error al cargar los datos</h3>
+                    <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
+                        <h3 style="color:#991b1b;">Error al cargar los datos</h3>
                         <p style="margin-top:8px;">Verifica que el archivo <strong>${DATA_URL}</strong> exista.</p>
-                        <p style="font-size:13px;color:#666;margin-top:4px;">${err.message}</p>
+                        <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
                     </div>
                 `;
             });
@@ -706,9 +702,9 @@
 
         const mapEnfoque = {
             'all': null,
-            'no-dominadas': '🎯 No dominadas',
-            'falladas': '🔴 Solo falladas',
-            'dudosas': '🟡 Solo dudosas'
+            'no-dominadas': 'No dominadas',
+            'falladas': 'Solo falladas',
+            'dudosas': 'Solo dudosas'
         };
         const enfTxt = mapEnfoque[currentEnfoque];
         if (enfTxt) activos.push(enfTxt);
@@ -728,9 +724,9 @@
             return;
         }
         perfilResumen.innerHTML = `
-            <span class="perfil-chip perfil-dominada">🟢 ${r.dominadas} dominadas</span>
-            <span class="perfil-chip perfil-dudosa">🟡 ${r.dudosas} dudosas</span>
-            <span class="perfil-chip perfil-fallada">🔴 ${r.falladas} falladas</span>
+            <span class="perfil-chip perfil-dominada">${r.dominadas} dominadas</span>
+            <span class="perfil-chip perfil-dudosa">${r.dudosas} dudosas</span>
+            <span class="perfil-chip perfil-fallada">${r.falladas} falladas</span>
             <span class="perfil-chip perfil-total">Total: ${r.total}</span>
         `;
     }
@@ -793,13 +789,16 @@
     // 9. NAVEGACIÓN ENTRE PANTALLAS
     // ============================================================
     function showScreen(name) {
+        // Actualizar clase del body (usada por CSS para ocultar header en quiz)
+        body.classList.remove('view-setup', 'view-quiz', 'view-results', 'view-review');
+        body.classList.add('view-' + name);
+
         [screenSetup, screenQuiz, screenResults, screenReview].forEach(s => {
             if (s) s.classList.remove('active');
         });
 
         if (name === 'setup') {
             screenSetup.classList.add('active');
-            // 🔧 FIX: ocultamos la barra inferior completa, no el contenedor viejo.
             if (bottomActionBar) bottomActionBar.style.display = 'none';
             stopSimTimer();
         } else if (name === 'quiz') {
@@ -812,19 +811,13 @@
         }
     }
 
-    // 🔧 FIX: helper centralizado para volver al setup SIEMPRE recalculando
-    // los filtros y el perfil. Antes, `filteredIds` quedaba con el snapshot
-    // viejo y las preguntas respondidas en bloques posteriores no se
-    // descontaban del contador "disponibles".
     function volverAlSetup() {
         showScreen('setup');
-        applyFilters();          // recalcula filteredIds según el perfil actual
+        applyFilters();
         updatePerfilResumen();
         updateSetupSummary();
     }
 
-    // 🔧 FIX: actualiza la visibilidad de la barra inferior unificada
-    // según qué botones (Continuar / Finalizar) estén activos.
     function actualizarBottomActionBar() {
         if (!bottomActionBar) return;
         const hayFinalizar = finishSimulacroBtn && finishSimulacroBtn.style.display !== 'none';
@@ -846,8 +839,6 @@
         resetSimulacroBtn.style.display = currentMode === MODE_SIMULACRO ? 'inline-flex' : 'none';
         simTimer.style.display = currentMode === MODE_SIMULACRO ? 'inline-flex' : 'none';
 
-        // 🔧 FIX: el botón Finalizar vive abajo. Visible siempre en simulacro
-        // mientras no se haya revelado el resultado.
         const mostrarFinalizar = (currentMode === MODE_SIMULACRO) && !simulacroState.revealed;
         if (finishSimulacroBtn) {
             finishSimulacroBtn.style.display = mostrarFinalizar ? 'inline-flex' : 'none';
@@ -897,8 +888,9 @@
     }
 
     function updateSimTimerDisplay() {
+        const target = simTimerText || simTimer;
         if (!simulacroState.startTime) {
-            simTimer.textContent = '⏱️ 00:00';
+            if (target) target.textContent = '00:00';
             return;
         }
 
@@ -906,7 +898,7 @@
 
         if (!simulacroState.timeLimit) {
             simTimer.classList.remove('warning', 'danger');
-            simTimer.textContent = `⏱️ ${formatTime(elapsed)}`;
+            if (target) target.textContent = formatTime(elapsed);
             return;
         }
 
@@ -916,7 +908,7 @@
         simTimer.classList.toggle('warning', remaining <= WARN_THRESHOLD_2 && remaining > WARN_THRESHOLD_3);
         simTimer.classList.toggle('danger', remaining <= WARN_THRESHOLD_3);
 
-        simTimer.textContent = `⏱️ ${formatTime(remaining)} restantes`;
+        if (target) target.textContent = `${formatTime(remaining)} restantes`;
 
         let nuevoNivel = 0;
         if (remaining <= WARN_THRESHOLD_3) nuevoNivel = 3;
@@ -925,22 +917,12 @@
 
         if (nuevoNivel > simulacroState.warnLevel) {
             simulacroState.warnLevel = nuevoNivel;
-            notifyTimeAlert(nuevoNivel, remaining);
         }
 
         if (remaining === 0) {
             stopSimTimer();
             handleTimeUp();
         }
-    }
-
-    function notifyTimeAlert(nivel, remaining) {
-        const textos = {
-            1: `⏳ Quedan 15 minutos.`,
-            2: `⚠️ Quedan 5 minutos.`,
-            3: `🚨 ¡Queda 1 minuto!`
-        };
-        console.log(textos[nivel], `(restante: ${formatTime(remaining)})`);
     }
 
     function handleTimeUp() {
@@ -970,9 +952,6 @@
         return filteredIds.filter(id => !usedSessionIds.has(id));
     }
 
-    // 🔧 FIX: la barra inferior ahora controla DOS botones (Continuar y
-    // Finalizar). Este método decide si el botón Continuar debe mostrarse
-    // y, en consecuencia, actualiza la barra inferior completa.
     function updateContinueBar() {
         if (!continueBtn) return;
 
@@ -1083,10 +1062,7 @@
             }
         }
 
-        if (esSimulacro
-            && minutosNuevos != null
-            && !simulacroState.revealed) {
-
+        if (esSimulacro && minutosNuevos != null && !simulacroState.revealed) {
             if (simulacroState.startTime) {
                 const elapsedBloque = Math.max(
                     0,
@@ -1120,7 +1096,7 @@
     // ============================================================
     function renderPage() {
         if (sessionIds.length === 0) {
-            container.innerHTML = `<p style="padding:40px;text-align:center;color:#5b6f87;">No hay preguntas para mostrar.</p>`;
+            container.innerHTML = `<p style="padding:40px;text-align:center;color:var(--text-tertiary);">No hay preguntas para mostrar.</p>`;
             updateNavigation();
             return;
         }
@@ -1177,7 +1153,7 @@
 
             return `
                 <div class="${classes}" ${onclick}>
-                    <span class="letter">${letra}.</span>
+                    <span class="letter">${letra}</span>
                     <span class="option-text">${texto}</span>
                 </div>
             `;
@@ -1191,13 +1167,13 @@
         const feedbackHtml = isRevealed
             ? `<div class="feedback ${feedback}">
                    ${feedback === 'correct'
-                       ? '✅ ¡Correcto!'
-                       : `❌ Incorrecto. La respuesta correcta era ${p.respuesta}`}
+                       ? `${ICONS.check} ¡Correcto!`
+                       : `${ICONS.x} Incorrecto. La respuesta correcta era ${p.respuesta}`}
                </div>`
             : '';
 
         const explanationHtml = isRevealed
-            ? `<div class="explanation"><strong>💡 Explicación:</strong> ${p.explicacion}</div>`
+            ? `<div class="explanation"><strong>${ICONS.bulb} Explicación:</strong> ${p.explicacion}</div>`
             : '';
 
         return `
@@ -1225,15 +1201,15 @@
 
             return `
                 <div class="${classes}" ${onclick}>
-                    <span class="letter">${letra}.</span>
+                    <span class="letter">${letra}</span>
                     <span class="option-text">${texto}</span>
                 </div>
             `;
         }).join('');
 
         const statusHint = selected
-            ? `<div class="sim-answer-hint">✏️ Marcaste <strong>${selected}</strong>. Puedes cambiarla antes de finalizar.</div>`
-            : `<div class="sim-answer-hint sim-answer-hint-empty">⬜ Aún no has respondido esta pregunta.</div>`;
+            ? `<div class="sim-answer-hint">${ICONS.pencil} Marcaste <strong>${selected}</strong>. Puedes cambiarla antes de finalizar.</div>`
+            : `<div class="sim-answer-hint sim-answer-hint-empty">${ICONS.square} Aún no has respondido esta pregunta.</div>`;
 
         const flagBtnHtml = `
             <button
@@ -1241,7 +1217,8 @@
                 onclick="window.toggleFlag(${idx})"
                 title="${isFlagged ? 'Quitar marca' : 'Marcar para revisar'} (M)"
             >
-                ${isFlagged ? '🚩 Marcada' : '🏳️ Marcar'}
+                ${ICONS.flag}
+                ${isFlagged ? 'Marcada' : 'Marcar'}
             </button>
         `;
 
@@ -1373,8 +1350,6 @@
         if (simFlagged) simFlagged.textContent = s.flagged || 0;
     }
 
-    const updateSimulacroInfo = updateQuizInfoPanel;
-
     function resetSimulacro() {
         if (!confirm('¿Estás seguro de reiniciar el simulacro? Se perderá todo el progreso.')) return;
 
@@ -1395,7 +1370,6 @@
         currentIndex = 0;
         updateQuizInfoPanel();
         startSimTimer();
-        // 🔧 FIX: refrescar visibilidad de la barra inferior
         updateQuizModeLabel();
         renderPage();
         saveSimulacroState();
@@ -1415,12 +1389,12 @@
 
         if (s.blank > 0 || s.flagged > 0) {
             let msg = '';
-            if (s.blank > 0) msg += `⚠️ Tienes <strong>${s.blank}</strong> pregunta(s) sin responder. `;
-            if (s.flagged > 0) msg += `🚩 Tienes <strong>${s.flagged}</strong> marcada(s) para revisar. `;
+            if (s.blank > 0) msg += `Tienes <strong>${s.blank}</strong> pregunta(s) sin responder. `;
+            if (s.flagged > 0) msg += `Tienes <strong>${s.flagged}</strong> marcada(s) para revisar. `;
             msg += `¿Seguro que quieres finalizar?`;
             finishWarning.innerHTML = msg;
         } else {
-            finishWarning.innerHTML = `✅ Has respondido todas las preguntas. ¡Listo para ver tu puntaje!`;
+            finishWarning.innerHTML = `Has respondido todas las preguntas. ¡Listo para ver tu puntaje!`;
         }
 
         finishModal.style.display = 'flex';
@@ -1492,10 +1466,10 @@
         resultsIncorrect.textContent = s.incorrect;
         resultsBlank.textContent = s.blank;
 
-        let color = '#dc3545';
-        if (pct >= 70) color = '#28a745';
-        else if (pct >= 50) color = '#ffc107';
-        scoreCircle.style.background = `conic-gradient(${color} 0% ${pct}%, var(--gray-200) ${pct}% 100%)`;
+        let color = 'var(--danger)';
+        if (pct >= 70) color = 'var(--success)';
+        else if (pct >= 50) color = 'var(--warning)';
+        scoreCircle.style.background = `conic-gradient(${color} 0% ${pct}%, var(--border) ${pct}% 100%)`;
 
         simulacroState.elapsedPrevios = simulacroState.elapsedPrevios || 0;
         const elapsedSec = simulacroState.elapsedPrevios
@@ -1532,7 +1506,7 @@
         });
 
         if (entries.length === 0) {
-            contenedor.innerHTML = `<p style="color:var(--gray-500);font-size:13px;">Sin datos.</p>`;
+            contenedor.innerHTML = `<p style="color:var(--text-tertiary);font-size:13px;">Sin datos.</p>`;
             return;
         }
 
@@ -1555,9 +1529,9 @@
                         <div class="breakdown-bar-fill ${barClass}" style="width:${pct}%"></div>
                     </div>
                     <div class="breakdown-meta">
-                        <span class="meta-correct">✅ ${g.correct}</span>
-                        <span class="meta-incorrect">❌ ${g.incorrect}</span>
-                        <span class="meta-blank">⬜ ${g.blank}</span>
+                        <span class="meta-correct">${g.correct} correctas</span>
+                        <span class="meta-incorrect">${g.incorrect} incorrectas</span>
+                        <span class="meta-blank">${g.blank} en blanco</span>
                     </div>
                 </div>
             `;
@@ -1592,7 +1566,7 @@
         if (total === 0) {
             reviewContainer.innerHTML = `
                 <div class="review-empty">
-                    <p>🎉 No hay preguntas en esta categoría.</p>
+                    <p>No hay preguntas en esta categoría.</p>
                 </div>
             `;
             reviewPosition.textContent = `0 / 0`;
@@ -1622,21 +1596,21 @@
 
             return `
                 <div class="${classes}">
-                    <span class="letter">${letra}.</span>
+                    <span class="letter">${letra}</span>
                     <span class="option-text">${texto}</span>
-                    ${letra === p.respuesta ? '<span class="badge-correct">✓ Correcta</span>' : ''}
-                    ${letra === sel && letra !== p.respuesta ? '<span class="badge-wrong">✗ Tu respuesta</span>' : ''}
+                    ${letra === p.respuesta ? '<span class="badge-correct">Correcta</span>' : ''}
+                    ${letra === sel && letra !== p.respuesta ? '<span class="badge-wrong">Tu respuesta</span>' : ''}
                 </div>
             `;
         }).join('');
 
         let statusHtml = '';
         if (isBlank) {
-            statusHtml = `<div class="feedback" style="background:var(--gray-100);color:var(--gray-700);border-left:4px solid var(--gray-400);">⬜ No respondiste esta pregunta. La correcta era <strong>${p.respuesta}</strong>.</div>`;
+            statusHtml = `<div class="feedback" style="background:var(--surface-3);color:var(--text-secondary);border-left-color:var(--border-strong);">No respondiste esta pregunta. La correcta era <strong>${p.respuesta}</strong>.</div>`;
         } else if (isCorrect) {
-            statusHtml = `<div class="feedback correct">✅ ¡Correcto!</div>`;
+            statusHtml = `<div class="feedback correct">${ICONS.check} ¡Correcto!</div>`;
         } else {
-            statusHtml = `<div class="feedback wrong">❌ Incorrecto. La respuesta correcta era <strong>${p.respuesta}</strong>.</div>`;
+            statusHtml = `<div class="feedback wrong">${ICONS.x} Incorrecto. La respuesta correcta era <strong>${p.respuesta}</strong>.</div>`;
         }
 
         const idPreg = getPreguntaId(p);
@@ -1644,9 +1618,9 @@
         const estadoDom = infoDom ? infoDom.estado : null;
 
         const estadoLabel = {
-            dominada: '🟢 Dominada',
-            dudosa:   '🟡 Dudosa',
-            fallada:  '🔴 Fallada'
+            dominada: 'Dominada',
+            dudosa:   'Dudosa',
+            fallada:  'Fallada'
         };
         const estadoClase = {
             dominada: 'dom-dominada',
@@ -1662,17 +1636,17 @@
                         <span class="review-dominio-label">Estado actual:</span>
                         <span class="review-dominio-badge ${estadoClase[estadoDom]}">${estadoLabel[estadoDom]}</span>
                         <span class="review-dominio-meta">
-                            ✅ ${infoDom.aciertos || 0} ·
-                            ❌ ${infoDom.fallos || 0} ·
-                            🚩 ${infoDom.dudas || 0}
+                            ${infoDom.aciertos || 0} aciertos ·
+                            ${infoDom.fallos || 0} fallos ·
+                            ${infoDom.dudas || 0} dudas
                         </span>
                     </div>
                     <div class="review-dominio-actions">
                         <button class="btn-dom-ok" onclick="window.marcarYaEntiendo(${idx})">
-                            ✅ Ya la entiendo
+                            ${ICONS.check} Ya la entiendo
                         </button>
                         <button class="btn-dom-duda" onclick="window.marcarAunDudo(${idx})">
-                            🔁 Aún dudo
+                            ${ICONS.refresh} Aún dudo
                         </button>
                     </div>
                 </div>
@@ -1685,7 +1659,7 @@
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${statusHtml}
-                <div class="explanation"><strong>💡 Explicación:</strong> ${p.explicacion}</div>
+                <div class="explanation"><strong>${ICONS.bulb} Explicación:</strong> ${p.explicacion}</div>
                 ${dominioHtml}
             </div>
         `;
@@ -1730,7 +1704,7 @@
     }
 
     // ============================================================
-    // 18. M1: MAPA DE PREGUNTAS
+    // 18. MAPA DE PREGUNTAS
     // ============================================================
     function openAnswerMap() {
         if (currentMode !== MODE_SIMULACRO) return;
@@ -1760,10 +1734,10 @@
         const s = computeSimulacroStats();
         if (answerMapSummary) {
             answerMapSummary.innerHTML = `
-                <span class="map-sum-item">📋 Total: <strong>${total}</strong></span>
-                <span class="map-sum-item">✅ Respondidas: <strong>${s.answered}</strong></span>
-                <span class="map-sum-item">🚩 Marcadas: <strong>${s.flagged}</strong></span>
-                <span class="map-sum-item">⬜ En blanco: <strong>${s.blank}</strong></span>
+                <span class="map-sum-item">Total: <strong>${total}</strong></span>
+                <span class="map-sum-item">Respondidas: <strong>${s.answered}</strong></span>
+                <span class="map-sum-item">Marcadas: <strong>${s.flagged}</strong></span>
+                <span class="map-sum-item">En blanco: <strong>${s.blank}</strong></span>
             `;
         }
     }
@@ -1898,7 +1872,6 @@
     nextBtn.addEventListener('click', goToNext);
     resetSimulacroBtn.addEventListener('click', resetSimulacro);
 
-    // 🔧 FIX: listener del botón Finalizar ahora apunta al botón inferior.
     if (finishSimulacroBtn) {
         finishSimulacroBtn.addEventListener('click', () => {
             window.openFinishModal();
@@ -2007,7 +1980,6 @@
         currentIndex = 0;
         updateQuizInfoPanel();
         showScreen('quiz');
-        // 🔧 FIX: refrescar visibilidad de la barra inferior
         updateQuizModeLabel();
         startSimTimer();
         renderPage();

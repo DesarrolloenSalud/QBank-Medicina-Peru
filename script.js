@@ -28,7 +28,8 @@
         pencil: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>',
         bulb: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>',
         bookOpen: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
-        refresh: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>'
+        refresh: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>',
+        copy: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>'
     };
 
     // ============================================================
@@ -1119,27 +1120,38 @@
      * @param {Object} p - Pregunta
      * @param {boolean} mostrarTags - Si true, muestra área/especialidad/tema/dificultad/estado.
      *                                Si false (simulacro), solo muestra el número.
+     * @param {number|string} idx - Índice interno de la pregunta en `preguntas[]`
+     *                              (necesario para el botón de copiar).
      */
-    function buildQuestionHeader(p, mostrarTags = true) {
-        if (!mostrarTags) {
-            return `
-                <div class="question-header">
-                    <span class="question-number">#${p.numero}</span>
-                </div>
-            `;
-        }
+    function buildQuestionHeader(p, mostrarTags = true, idx = null) {
+        const tagsHtml = mostrarTags ? `
+            <div class="question-tags">
+                <span class="tag">${p.area}</span>
+                <span class="tag">${p.especialidad}</span>
+                <span class="tag">${p.tema}</span>
+                <span class="tag dificultad-${p.dificultad}">${p.dificultad}</span>
+                <span class="tag estado-${p.estado}">${p.estado}</span>
+            </div>
+        ` : '';
 
-        const difClass = `dificultad-${p.dificultad}`;
-        const estadoClass = `estado-${p.estado}`;
+        const copyBtnHtml = (idx !== null && idx !== undefined) ? `
+            <button
+                type="button"
+                class="copy-btn"
+                onclick="window.copyQuestion(${idx}, this)"
+                title="Copiar enunciado y alternativas"
+                aria-label="Copiar enunciado y alternativas"
+            >
+                ${ICONS.copy}
+            </button>
+        ` : '';
+
         return `
             <div class="question-header">
                 <span class="question-number">#${p.numero}</span>
-                <div class="question-tags">
-                    <span class="tag">${p.area}</span>
-                    <span class="tag">${p.especialidad}</span>
-                    <span class="tag">${p.tema}</span>
-                    <span class="tag ${difClass}">${p.dificultad}</span>
-                    <span class="tag ${estadoClass}">${p.estado}</span>
+                <div class="question-header-right">
+                    ${tagsHtml}
+                    ${copyBtnHtml}
                 </div>
             </div>
         `;
@@ -1192,7 +1204,7 @@
 
         return `
             <div class="${cardClass}">
-                ${buildQuestionHeader(p, true)}
+                ${buildQuestionHeader(p, true, idx)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${feedbackHtml}
@@ -1238,7 +1250,7 @@
 
         return `
             <div class="question-card">
-                ${buildQuestionHeader(p, false)}
+                ${buildQuestionHeader(p, false, idx)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${statusHint}
@@ -1319,6 +1331,75 @@
         }
         renderReviewPage();
         updatePerfilResumen();
+    };
+
+    // ------------------------------------------------------------
+    // COPIAR ENUNCIADO + ALTERNATIVAS AL PORTAPAPELES
+    // ------------------------------------------------------------
+    function buildQuestionPlainText(p) {
+        const letras = getLetras(p);
+        const lineas = [];
+
+        lineas.push(`#${p.numero}`);
+        lineas.push('');
+        lineas.push(String(p.enunciado || '').trim());
+        lineas.push('');
+
+        letras.forEach(letra => {
+            const texto = (p.opciones && p.opciones[letra]) ? String(p.opciones[letra]).trim() : '';
+            lineas.push(`${letra}. ${texto}`);
+        });
+
+        return lineas.join('\n');
+    }
+
+    function copiarAlPortapapeles(texto) {
+        if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+            return navigator.clipboard.writeText(texto);
+        }
+
+        // Fallback para contextos sin Clipboard API (http, iframes, etc.)
+        return new Promise((resolve, reject) => {
+            try {
+                const ta = document.createElement('textarea');
+                ta.value = texto;
+                ta.setAttribute('readonly', '');
+                ta.style.position = 'fixed';
+                ta.style.top = '-1000px';
+                ta.style.left = '-1000px';
+                document.body.appendChild(ta);
+                ta.select();
+                ta.setSelectionRange(0, ta.value.length);
+                const ok = document.execCommand('copy');
+                document.body.removeChild(ta);
+                ok ? resolve() : reject(new Error('execCommand copy falló'));
+            } catch (err) {
+                reject(err);
+            }
+        });
+    }
+
+    window.copyQuestion = function (idx, btn) {
+        const p = preguntas[idx];
+        if (!p) return;
+
+        const texto = buildQuestionPlainText(p);
+
+        copiarAlPortapapeles(texto)
+            .then(() => {
+                if (btn) {
+                    btn.classList.add('copied');
+                    // Evitar acumulación de timeouts si se hace clic varias veces rápido
+                    if (btn._copyTimeout) clearTimeout(btn._copyTimeout);
+                    btn._copyTimeout = setTimeout(() => {
+                        btn.classList.remove('copied');
+                        btn._copyTimeout = null;
+                    }, 1200);
+                }
+            })
+            .catch(err => {
+                console.warn('[Copiar] No se pudo copiar al portapapeles:', err);
+            });
     };
 
     // ============================================================
@@ -1669,7 +1750,7 @@
 
         reviewContainer.innerHTML = `
             <div class="question-card ${isBlank ? '' : (isCorrect ? 'correct-answered' : 'wrong-answered')}">
-                ${buildQuestionHeader(p, true)}
+                ${buildQuestionHeader(p, true, idx)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
                 ${statusHtml}

@@ -3,8 +3,14 @@
 // QBank Medicina Perú - Lógica principal
 // ============================================================
 // Pantallas:
-//   1. Setup (configuración de la sesión)
-//   2. Quiz (cuestionario)
+//   1. Setup    (configuración de la sesión)
+//   2. Quiz     (cuestionario)
+//   3. Results  (resultados del simulacro)
+//   4. Review   (revisión de respuestas)
+//
+// Persistencia:
+//   - M5: El estado del simulacro se guarda automáticamente en localStorage.
+//   - P1: El perfil de dominio por pregunta vive en dominio.js.
 // ============================================================
 
 (function () {
@@ -17,44 +23,67 @@
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 
+    // Alertas de tiempo restante (segundos)
+    const WARN_THRESHOLD_1 = 15 * 60;
+    const WARN_THRESHOLD_2 = 5 * 60;
+    const WARN_THRESHOLD_3 = 60;
+
+    // M5: Clave de almacenamiento y caducidad
+    const STORAGE_KEY = 'qbank_simulacro_v1';
+    const STORAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+
     // ============================================================
     // 2. ESTADO GLOBAL
     // ============================================================
-    let preguntas = [];              // Todas las preguntas cargadas
-    let filteredIds = [];            // Índices de preguntas que pasan los filtros
-    let sessionIds = [];             // Índices de la sesión actual (a resolver)
-    let currentIndex = 0;            // Posición actual dentro de sessionIds
-    let currentMode = MODE_PRACTICE; // Modo actual: 'practice' | 'simulacro'
-    let selectedCount = 20;          // Número de preguntas elegido (o 'all')
+    let preguntas = [];
+    let filteredIds = [];
+    let sessionIds = [];
+    let currentIndex = 0;
+    let currentMode = MODE_PRACTICE;
+    let selectedCount = 20;
+
+    // P1/P3: enfoque de estudio
+    let currentEnfoque = 'all';
+
+    // Tiempo límite manual configurado en el setup.
+    let selectedTimeLimitMin = null;
 
     // Estado del modo práctica
-    let practiceAnswers = {};        // { idx: letra_elegida }
-    let practiceFeedback = {};       // { idx: 'correct' | 'wrong' }
-    let practiceRevealed = {};       // { idx: true | false }
+    let practiceAnswers = {};
+    let practiceFeedback = {};
+    let practiceRevealed = {};
 
     // Estado del modo simulacro
     let simulacroState = {
         answers: {},
-        isLocked: {},
-        correct: 0,
-        incorrect: 0,
-        answered: 0
+        flagged: new Set(),
+        revealed: false,
+        startTime: null,
+        endTime: null,
+        timeLimit: null,
+        remaining: null,
+        elapsedPrevios: 0,
+        timeUp: false,
+        warnLevel: 0
     };
 
-    // Preguntas ya mostradas en la sesión (para no repetir al agregar más)
     let usedSessionIds = new Set();
-
-    // Selección de cantidad en el modal
     let modalSelectedCount = 10;
+
+    let reviewFilter = 'all';
+    let reviewIds = [];
+    let reviewIndex = 0;
+
+    let pendingResumeData = null;
 
     // ============================================================
     // 3. REFERENCIAS AL DOM
     // ============================================================
-    // Pantallas
     const screenSetup = document.getElementById('screenSetup');
     const screenQuiz = document.getElementById('screenQuiz');
+    const screenResults = document.getElementById('screenResults');
+    const screenReview = document.getElementById('screenReview');
 
-    // Setup
     const setupModePractice = document.getElementById('setupModePractice');
     const setupModeSimulacro = document.getElementById('setupModeSimulacro');
     const modeHelp = document.getElementById('modeHelp');
@@ -63,11 +92,18 @@
     const summaryFilters = document.getElementById('summaryFilters');
     const summaryAvailable = document.getElementById('summaryAvailable');
     const summaryCount = document.getElementById('summaryCount');
-    const countButtons = document.querySelectorAll('.count-btn');
+    const summaryTimeLine = document.getElementById('summaryTimeLine');
+    const summaryTime = document.getElementById('summaryTime');
+    const countButtons = document.querySelectorAll('.count-btn:not(.time-btn)');
     const customCountInput = document.getElementById('customCount');
     const shuffleCheckbox = document.getElementById('shuffleQuestions');
 
-    // Filtros
+    const enfoqueBtns = document.querySelectorAll('.enfoque-btn');
+    const perfilResumen = document.getElementById('perfilResumen');
+
+    const timeBlock = document.getElementById('timeBlock');
+    const customTimeInput = document.getElementById('customTime');
+
     const filterArea = document.getElementById('filterArea');
     const filterEspecialidad = document.getElementById('filterEspecialidad');
     const filterTema = document.getElementById('filterTema');
@@ -76,7 +112,6 @@
     const resetBtn = document.getElementById('resetFilters');
     const totalSpan = document.getElementById('totalQuestions');
 
-    // Quiz
     const backToSetupBtn = document.getElementById('backToSetup');
     const quizModeLabel = document.getElementById('quizModeLabel');
     const progressBarFill = document.getElementById('progressBarFill');
@@ -85,18 +120,48 @@
     const prevBtn = document.getElementById('prevQuestion');
     const nextBtn = document.getElementById('nextQuestion');
 
-    // Simulacro info
     const simulacroInfo = document.getElementById('simulacroInfo');
     const simAnswered = document.getElementById('simAnswered');
     const simTotal = document.getElementById('simTotal');
     const simCorrect = document.getElementById('simCorrect');
     const simIncorrect = document.getElementById('simIncorrect');
+    const simBlank = document.getElementById('simBlank');
+    const simFlagged = document.getElementById('simFlagged');
     const resetSimulacroBtn = document.getElementById('resetSimulacro');
+    const simTimer = document.getElementById('simTimer');
 
-    // Continuar / modal
-    const continueBar = document.getElementById('continueBar');
+    // 🔧 NUEVO: botón Finalizar vive en la barra inferior, no en el topbar.
+    const finishSimulacroBtn = document.getElementById('finishSimulacroBtn');
+    const bottomActionBar = document.getElementById('bottomActionBar');
+    const continueInfoWrap = document.getElementById('continueInfoWrap');
     const continueBtn = document.getElementById('continueBtn');
     const continueInfoText = document.getElementById('continueInfoText');
+
+    const openMapBtn = document.getElementById('openMapBtn');
+    const answerMapModal = document.getElementById('answerMapModal');
+    const closeAnswerMapBtn = document.getElementById('closeAnswerMapBtn');
+    const closeAnswerMapFooterBtn = document.getElementById('closeAnswerMapFooterBtn');
+    const answerMapGrid = document.getElementById('answerMapGrid');
+    const answerMapSummary = document.getElementById('answerMapSummary');
+
+    const goToQuestionInput = document.getElementById('goToQuestionInput');
+
+    const resumeModal = document.getElementById('resumeModal');
+    const resumeSummary = document.getElementById('resumeSummary');
+    const resumeContinueBtn = document.getElementById('resumeContinueBtn');
+    const discardResumeBtn = document.getElementById('discardResumeBtn');
+
+    const finishModal = document.getElementById('finishModal');
+    const closeFinishModalBtn = document.getElementById('closeFinishModalBtn');
+    const cancelFinishBtn = document.getElementById('cancelFinishBtn');
+    const confirmFinishBtn = document.getElementById('confirmFinishBtn');
+    const finishAnswered = document.getElementById('finishAnswered');
+    const finishTotal = document.getElementById('finishTotal');
+    const finishWarning = document.getElementById('finishWarning');
+    const finishStatAnswered = document.getElementById('finishStatAnswered');
+    const finishStatFlagged = document.getElementById('finishStatFlagged');
+    const finishStatBlank = document.getElementById('finishStatBlank');
+
     const continueModal = document.getElementById('continueModal');
     const closeModalBtn = document.getElementById('closeModalBtn');
     const cancelModalBtn = document.getElementById('cancelModalBtn');
@@ -105,6 +170,38 @@
     const modalCountSelector = document.getElementById('modalCountSelector');
     const modalCustomCount = document.getElementById('modalCustomCount');
     const modalShuffle = document.getElementById('modalShuffle');
+    const modalTimeBlock = document.getElementById('modalTimeBlock');
+    const modalTimeInput = document.getElementById('modalTime');
+
+    const timeUpModal = document.getElementById('timeUpModal');
+    const timeUpAnswered = document.getElementById('timeUpAnswered');
+    const timeUpTotal = document.getElementById('timeUpTotal');
+    const confirmTimeUpBtn = document.getElementById('confirmTimeUpBtn');
+
+    const resultsHeroIcon = document.getElementById('resultsHeroIcon');
+    const resultsTitle = document.getElementById('resultsTitle');
+    const resultsSubtitle = document.getElementById('resultsSubtitle');
+    const scoreCircle = document.getElementById('scoreCircle');
+    const resultsPercent = document.getElementById('resultsPercent');
+    const resultsCorrect = document.getElementById('resultsCorrect');
+    const resultsIncorrect = document.getElementById('resultsIncorrect');
+    const resultsBlank = document.getElementById('resultsBlank');
+    const resultsTime = document.getElementById('resultsTime');
+    const resultsAvg = document.getElementById('resultsAvg');
+    const resultsByArea = document.getElementById('resultsByArea');
+    const resultsByEspecialidad = document.getElementById('resultsByEspecialidad');
+    const reviewAnswersBtn = document.getElementById('reviewAnswersBtn');
+    const backToSetupFromResults = document.getElementById('backToSetupFromResults');
+    const retrySimulacroBtn = document.getElementById('retrySimulacroBtn');
+
+    const backToResultsBtn = document.getElementById('backToResults');
+    const reviewPosition = document.getElementById('reviewPosition');
+    const reviewContainer = document.getElementById('reviewContainer');
+    const reviewPrev = document.getElementById('reviewPrev');
+    const reviewNext = document.getElementById('reviewNext');
+    const reviewCounter = document.getElementById('reviewCounter');
+    const reviewFilterBtns = document.querySelectorAll('.review-filter-btn');
+    const progressBarFillReview = document.getElementById('progressBarFillReview');
 
     // ============================================================
     // 4. UTILIDADES
@@ -113,7 +210,6 @@
         return Object.keys(pregunta.opciones || {}).sort();
     }
 
-    /** Fisher-Yates shuffle */
     function shuffle(array) {
         const arr = [...array];
         for (let i = arr.length - 1; i > 0; i--) {
@@ -123,8 +219,296 @@
         return arr;
     }
 
+    function formatTime(seconds) {
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+    }
+
+    function getPreguntaId(p) {
+        return String(p.numero);
+    }
+
+    function getCantidadResolver() {
+        const disponible = filteredIds.length;
+        return selectedCount === 'all'
+            ? disponible
+            : Math.min(selectedCount, disponible);
+    }
+
+    function getAutoTimeLimit() {
+        return getCantidadResolver();
+    }
+
+    function getEffectiveTimeLimitMin() {
+        if (selectedTimeLimitMin != null && selectedTimeLimitMin > 0) {
+            return selectedTimeLimitMin;
+        }
+        return getAutoTimeLimit();
+    }
+
+    function syncTimeInput() {
+        if (!customTimeInput) return;
+        const auto = getAutoTimeLimit();
+        customTimeInput.placeholder = String(auto);
+        if (selectedTimeLimitMin != null && selectedTimeLimitMin > 0) {
+            customTimeInput.value = String(selectedTimeLimitMin);
+        } else {
+            customTimeInput.value = '';
+        }
+    }
+
+    function getCantidadSugeridaModal() {
+        const disponible = getRemainingIds().length;
+        if (modalSelectedCount === 'all') return Math.max(disponible, 1);
+        const n = parseInt(modalSelectedCount, 10);
+        if (isNaN(n) || n < 1) return 1;
+        return Math.max(Math.min(n, disponible), 1);
+    }
+
+    function getTiempoSugeridoModal() {
+        return getCantidadSugeridaModal();
+    }
+
+    function syncModalTimeInput() {
+        if (!modalTimeInput) return;
+        modalTimeInput.placeholder = String(getTiempoSugeridoModal());
+    }
+
     // ============================================================
-    // 5. CARGA DE DATOS
+    // 5. PERSISTENCIA (M5)
+    // ============================================================
+    function saveSimulacroState() {
+        if (currentMode !== MODE_SIMULACRO) return;
+        if (simulacroState.revealed) return;
+        if (sessionIds.length === 0) return;
+
+        try {
+            const snapshot = {
+                version: 1,
+                timestamp: Date.now(),
+                sessionIds: [...sessionIds],
+                currentIndex,
+                answers: { ...simulacroState.answers },
+                flagged: Array.from(simulacroState.flagged),
+                startTime: simulacroState.startTime,
+                timeLimit: simulacroState.timeLimit,
+                elapsedPrevios: simulacroState.elapsedPrevios || 0,
+                warnLevel: simulacroState.warnLevel,
+                usedSessionIds: Array.from(usedSessionIds),
+                filteredIds: [...filteredIds],
+                selectedTimeLimitMin,
+                selectedCount,
+                enfoque: currentEnfoque,
+                filters: {
+                    area: filterArea.value,
+                    especialidad: filterEspecialidad.value,
+                    tema: filterTema.value,
+                    dificultad: filterDificultad.value,
+                    estado: filterEstado.value
+                }
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
+        } catch (err) {
+            console.warn('No se pudo guardar el simulacro:', err);
+        }
+    }
+
+    function loadSavedSimulacroState() {
+        let raw;
+        try {
+            raw = localStorage.getItem(STORAGE_KEY);
+        } catch (err) {
+            return null;
+        }
+        if (!raw) return null;
+
+        let data;
+        try {
+            data = JSON.parse(raw);
+        } catch (err) {
+            console.warn('Simulacro guardado corrupto, se descarta.');
+            clearSavedSimulacroState();
+            return null;
+        }
+
+        if (!data || data.version !== 1) {
+            clearSavedSimulacroState();
+            return null;
+        }
+        if (!Array.isArray(data.sessionIds) || data.sessionIds.length === 0) {
+            clearSavedSimulacroState();
+            return null;
+        }
+        if (!data.timestamp || (Date.now() - data.timestamp) > STORAGE_MAX_AGE_MS) {
+            console.info('Simulacro guardado caducó.');
+            clearSavedSimulacroState();
+            return null;
+        }
+        const valid = data.sessionIds.every(id => typeof id === 'number' && id >= 0 && id < preguntas.length);
+        if (!valid) {
+            clearSavedSimulacroState();
+            return null;
+        }
+
+        return data;
+    }
+
+    function clearSavedSimulacroState() {
+        try {
+            localStorage.removeItem(STORAGE_KEY);
+        } catch (err) { /* noop */ }
+    }
+
+    function showResumeModal(data) {
+        pendingResumeData = data;
+
+        const total = data.sessionIds.length;
+        const answered = Object.keys(data.answers).length;
+        const flagged = data.flagged.length;
+        const blank = total - answered;
+
+        let timeInfo = 'Sin límite';
+        if (data.timeLimit && data.startTime) {
+            const elapsed = Math.floor((Date.now() - data.startTime) / 1000);
+            const remaining = Math.max(0, data.timeLimit - elapsed);
+            timeInfo = remaining > 0 ? formatTime(remaining) + ' restantes' : 'Agotado';
+        }
+
+        const fecha = new Date(data.timestamp);
+        const fechaTxt = fecha.toLocaleString('es-PE', {
+            day: '2-digit', month: '2-digit', year: 'numeric',
+            hour: '2-digit', minute: '2-digit'
+        });
+
+        resumeSummary.innerHTML = `
+            <div class="resume-stats">
+                <div class="resume-stat">
+                    <span class="resume-stat-label">Total</span>
+                    <span class="resume-stat-value">${total}</span>
+                </div>
+                <div class="resume-stat">
+                    <span class="resume-stat-label">Respondidas</span>
+                    <span class="resume-stat-value resume-ok">${answered}</span>
+                </div>
+                <div class="resume-stat">
+                    <span class="resume-stat-label">Marcadas</span>
+                    <span class="resume-stat-value resume-warn">${flagged}</span>
+                </div>
+                <div class="resume-stat">
+                    <span class="resume-stat-label">En blanco</span>
+                    <span class="resume-stat-value">${blank}</span>
+                </div>
+            </div>
+            <div class="resume-meta">
+                <div class="resume-meta-line"><span>⏱️ Tiempo restante</span><strong>${timeInfo}</strong></div>
+                <div class="resume-meta-line"><span>📅 Guardado</span><strong>${fechaTxt}</strong></div>
+            </div>
+        `;
+
+        resumeModal.style.display = 'flex';
+    }
+
+    function hideResumeModal() {
+        resumeModal.style.display = 'none';
+    }
+
+    function resumeSimulacroFromStorage() {
+        const data = pendingResumeData;
+        if (!data) {
+            hideResumeModal();
+            return;
+        }
+
+        sessionIds = [...data.sessionIds];
+        currentIndex = Math.min(Math.max(0, data.currentIndex || 0), sessionIds.length - 1);
+        currentMode = MODE_SIMULACRO;
+
+        usedSessionIds = new Set(data.usedSessionIds || sessionIds);
+        filteredIds = Array.isArray(data.filteredIds) && data.filteredIds.length > 0
+            ? [...data.filteredIds]
+            : [...sessionIds];
+
+        simulacroState = {
+            answers: { ...(data.answers || {}) },
+            flagged: new Set(data.flagged || []),
+            revealed: false,
+            startTime: data.startTime || Date.now(),
+            endTime: null,
+            timeLimit: data.timeLimit || null,
+            remaining: null,
+            elapsedPrevios: data.elapsedPrevios || 0,
+            timeUp: false,
+            warnLevel: data.warnLevel || 0
+        };
+
+        selectedTimeLimitMin = (data.selectedTimeLimitMin != null && data.selectedTimeLimitMin > 0)
+            ? data.selectedTimeLimitMin
+            : null;
+
+        if (data.selectedCount != null) {
+            selectedCount = data.selectedCount;
+        }
+        if (data.enfoque) {
+            currentEnfoque = data.enfoque;
+            enfoqueBtns.forEach(b => {
+                b.classList.toggle('active', b.dataset.enfoque === currentEnfoque);
+            });
+        }
+
+        if (data.filters) {
+            filterArea.value = data.filters.area || 'all';
+            updateDependentFilters();
+            filterEspecialidad.value = data.filters.especialidad || 'all';
+            updateDependentFilters();
+            filterTema.value = data.filters.tema || 'all';
+            filterDificultad.value = data.filters.dificultad || 'all';
+            filterEstado.value = data.filters.estado || 'all';
+        }
+
+        setupModePractice.classList.remove('active');
+        setupModeSimulacro.classList.add('active');
+        modeHelp.textContent = 'En simulacro, respondes todas las preguntas y ves resultados al finalizar (estilo CONAREME).';
+
+        updateSetupSummary();
+        updatePerfilResumen();
+
+        showScreen('quiz');
+        updateQuizModeLabel();
+        updateQuizInfoPanel();
+
+        if (simulacroState.timeLimit) {
+            const elapsed = Math.floor((Date.now() - simulacroState.startTime) / 1000);
+            const remaining = simulacroState.timeLimit - elapsed;
+            if (remaining <= 0) {
+                simulacroState.revealed = true;
+                simulacroState.timeUp = true;
+                simulacroState.endTime = Date.now();
+                hideResumeModal();
+                clearSavedSimulacroState();
+                showResults();
+                return;
+            }
+            startSimTimer();
+        } else {
+            stopSimTimer();
+        }
+
+        renderPage();
+
+        hideResumeModal();
+        clearSavedSimulacroState();
+        pendingResumeData = null;
+    }
+
+    function discardSavedSimulacro() {
+        clearSavedSimulacroState();
+        pendingResumeData = null;
+        hideResumeModal();
+    }
+
+    // ============================================================
+    // 6. CARGA DE DATOS
     // ============================================================
     function loadData() {
         fetch(DATA_URL)
@@ -137,7 +521,13 @@
                 console.log(`✅ ${preguntas.length} preguntas cargadas desde ${DATA_URL}`);
                 totalSpan.textContent = preguntas.length;
                 populateAllFilters();
+                updatePerfilResumen();
                 applyFilters();
+
+                const saved = loadSavedSimulacroState();
+                if (saved) {
+                    showResumeModal(saved);
+                }
             })
             .catch(err => {
                 console.error('Error al cargar los datos:', err);
@@ -152,7 +542,7 @@
     }
 
     // ============================================================
-    // 6. FILTROS
+    // 7. FILTROS
     // ============================================================
     function populateAllFilters() {
         const areas = getUniqueValues('area');
@@ -222,7 +612,32 @@
         }
     }
 
-    /** Aplica filtros y actualiza el resumen del setup. */
+    function cumpleEnfoque(p) {
+        if (currentEnfoque === 'all') return true;
+
+        const id = getPreguntaId(p);
+        const estado = window.Dominio ? window.Dominio.getEstado(id) : null;
+
+        if (currentEnfoque === 'no-dominadas') {
+            return estado !== 'dominada';
+        }
+        if (currentEnfoque === 'falladas') {
+            return estado === 'fallada';
+        }
+        if (currentEnfoque === 'dudosas') {
+            return estado === 'dudosa';
+        }
+        return true;
+    }
+
+    function pesoEnfoque(p) {
+        if (!window.Dominio) return 0;
+        const id = getPreguntaId(p);
+        const info = window.Dominio.getInfo(id);
+        if (!info) return 0;
+        return (info.fallos || 0) * 1000 + (info.dudas || 0) * 10;
+    }
+
     function applyFilters() {
         const filtros = {
             area: filterArea.value,
@@ -232,10 +647,16 @@
             estado: filterEstado.value
         };
 
-        filteredIds = preguntas
+        let candidatas = preguntas
             .map((p, idx) => ({ ...p, idx }))
             .filter(p => cumpleFiltros(p, filtros))
-            .map(p => p.idx);
+            .filter(p => cumpleEnfoque(p));
+
+        if (currentEnfoque !== 'all') {
+            candidatas.sort((a, b) => pesoEnfoque(b) - pesoEnfoque(a));
+        }
+
+        filteredIds = candidatas.map(p => p.idx);
 
         updateSetupSummary();
     }
@@ -248,20 +669,31 @@
     }
 
     // ============================================================
-    // 7. SETUP: RESUMEN Y ARRANQUE DE SESIÓN
+    // 8. SETUP
     // ============================================================
     function updateSetupSummary() {
         const disponible = filteredIds.length;
-        const aResolver = selectedCount === 'all'
-            ? disponible
-            : Math.min(selectedCount, disponible);
+        const aResolver = getCantidadResolver();
 
         summaryMode.textContent = currentMode === MODE_PRACTICE ? 'Práctica' : 'Simulacro';
         summaryFilters.textContent = buildFilterLabel();
         summaryAvailable.textContent = disponible;
         summaryCount.textContent = aResolver;
 
+        const esSimulacro = currentMode === MODE_SIMULACRO;
+        if (timeBlock) {
+            timeBlock.style.display = esSimulacro ? 'block' : 'none';
+        }
+
+        const minutosEfectivos = getEffectiveTimeLimitMin();
+        summaryTimeLine.style.display = (esSimulacro && minutosEfectivos > 0) ? 'flex' : 'none';
+        if (esSimulacro && minutosEfectivos > 0) {
+            summaryTime.textContent = `${minutosEfectivos} min`;
+        }
+
         startSessionBtn.disabled = disponible === 0;
+
+        syncTimeInput();
     }
 
     function buildFilterLabel() {
@@ -271,14 +703,41 @@
         if (filterTema.value !== 'all') activos.push(filterTema.value);
         if (filterDificultad.value !== 'all') activos.push(filterDificultad.value);
         if (filterEstado.value !== 'all') activos.push(filterEstado.value);
+
+        const mapEnfoque = {
+            'all': null,
+            'no-dominadas': '🎯 No dominadas',
+            'falladas': '🔴 Solo falladas',
+            'dudosas': '🟡 Solo dudosas'
+        };
+        const enfTxt = mapEnfoque[currentEnfoque];
+        if (enfTxt) activos.push(enfTxt);
+
         return activos.length ? activos.join(' · ') : 'Todas';
     }
 
-    /** Prepara sessionIds y arranca el cuestionario. */
+    function updatePerfilResumen() {
+        if (!perfilResumen) return;
+        if (!window.Dominio) {
+            perfilResumen.textContent = '';
+            return;
+        }
+        const r = window.Dominio.getResumen();
+        if (r.total === 0) {
+            perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos. Empieza a practicar para construir tu perfil.</span>`;
+            return;
+        }
+        perfilResumen.innerHTML = `
+            <span class="perfil-chip perfil-dominada">🟢 ${r.dominadas} dominadas</span>
+            <span class="perfil-chip perfil-dudosa">🟡 ${r.dudosas} dudosas</span>
+            <span class="perfil-chip perfil-fallada">🔴 ${r.falladas} falladas</span>
+            <span class="perfil-chip perfil-total">Total: ${r.total}</span>
+        `;
+    }
+
     function startSession() {
         if (filteredIds.length === 0) return;
 
-        // Elegir cuántas y cuáles
         let base = [...filteredIds];
         if (shuffleCheckbox.checked) base = shuffle(base);
 
@@ -287,111 +746,274 @@
             : Math.min(selectedCount, base.length);
 
         sessionIds = base.slice(0, cantidad);
-
-        // Marcar como usadas
         usedSessionIds = new Set(sessionIds);
 
-        // Resetear estado
         currentIndex = 0;
         practiceAnswers = {};
         practiceFeedback = {};
         practiceRevealed = {};
+
+        const minutosEfectivos = getEffectiveTimeLimitMin();
+        const timeLimitSec = (currentMode === MODE_SIMULACRO && minutosEfectivos > 0)
+            ? minutosEfectivos * 60
+            : null;
+
         simulacroState = {
             answers: {},
-            isLocked: {},
-            correct: 0,
-            incorrect: 0,
-            answered: 0
+            flagged: new Set(),
+            revealed: false,
+            startTime: Date.now(),
+            endTime: null,
+            timeLimit: timeLimitSec,
+            remaining: timeLimitSec,
+            elapsedPrevios: 0,
+            timeUp: false,
+            warnLevel: 0
         };
 
-        // Cambiar a pantalla quiz
+        reviewFilter = 'all';
+        reviewIds = [];
+        reviewIndex = 0;
+
         showScreen('quiz');
         updateQuizModeLabel();
-        updateSimulacroInfo();
+        updateQuizInfoPanel();
+
+        if (currentMode === MODE_SIMULACRO) {
+            startSimTimer();
+            saveSimulacroState();
+        } else {
+            stopSimTimer();
+        }
+
         renderPage();
     }
 
     // ============================================================
-    // 8. NAVEGACIÓN ENTRE PANTALLAS
+    // 9. NAVEGACIÓN ENTRE PANTALLAS
     // ============================================================
     function showScreen(name) {
+        [screenSetup, screenQuiz, screenResults, screenReview].forEach(s => {
+            if (s) s.classList.remove('active');
+        });
+
         if (name === 'setup') {
             screenSetup.classList.add('active');
-            screenQuiz.classList.remove('active');
-            continueBar.style.display = 'none';
+            // 🔧 FIX: ocultamos la barra inferior completa, no el contenedor viejo.
+            if (bottomActionBar) bottomActionBar.style.display = 'none';
+            stopSimTimer();
         } else if (name === 'quiz') {
-            screenSetup.classList.remove('active');
             screenQuiz.classList.add('active');
+        } else if (name === 'results') {
+            screenResults.classList.add('active');
+            stopSimTimer();
+        } else if (name === 'review') {
+            screenReview.classList.add('active');
+        }
+    }
+
+    // 🔧 FIX: helper centralizado para volver al setup SIEMPRE recalculando
+    // los filtros y el perfil. Antes, `filteredIds` quedaba con el snapshot
+    // viejo y las preguntas respondidas en bloques posteriores no se
+    // descontaban del contador "disponibles".
+    function volverAlSetup() {
+        showScreen('setup');
+        applyFilters();          // recalcula filteredIds según el perfil actual
+        updatePerfilResumen();
+        updateSetupSummary();
+    }
+
+    // 🔧 FIX: actualiza la visibilidad de la barra inferior unificada
+    // según qué botones (Continuar / Finalizar) estén activos.
+    function actualizarBottomActionBar() {
+        if (!bottomActionBar) return;
+        const hayFinalizar = finishSimulacroBtn && finishSimulacroBtn.style.display !== 'none';
+        const hayContinuar = continueBtn && continueBtn.style.display !== 'none';
+        const mostrar = hayFinalizar || hayContinuar;
+        bottomActionBar.style.display = mostrar ? 'flex' : 'none';
+        if (continueInfoWrap) {
+            continueInfoWrap.style.display = hayContinuar ? 'block' : 'none';
         }
     }
 
     function updateQuizModeLabel() {
         quizModeLabel.textContent = currentMode === MODE_PRACTICE ? 'Práctica' : 'Simulacro';
-        simulacroInfo.style.display = currentMode === MODE_SIMULACRO ? 'flex' : 'none';
+
+        simulacroInfo.style.display = 'flex';
+        simulacroInfo.classList.toggle('mode-practice', currentMode === MODE_PRACTICE);
+        simulacroInfo.classList.toggle('mode-simulacro', currentMode === MODE_SIMULACRO);
+
         resetSimulacroBtn.style.display = currentMode === MODE_SIMULACRO ? 'inline-flex' : 'none';
+        simTimer.style.display = currentMode === MODE_SIMULACRO ? 'inline-flex' : 'none';
+
+        // 🔧 FIX: el botón Finalizar vive abajo. Visible siempre en simulacro
+        // mientras no se haya revelado el resultado.
+        const mostrarFinalizar = (currentMode === MODE_SIMULACRO) && !simulacroState.revealed;
+        if (finishSimulacroBtn) {
+            finishSimulacroBtn.style.display = mostrarFinalizar ? 'inline-flex' : 'none';
+        }
+
+        actualizarBottomActionBar();
     }
 
-    /** Vuelve al setup con confirmación si hay progreso. */
     function goBackToSetup() {
         const hayProgreso =
-            simulacroState.answered > 0 ||
+            Object.keys(simulacroState.answers).length > 0 ||
             Object.keys(practiceRevealed).length > 0;
 
         if (hayProgreso) {
-            if (!confirm('¿Volver a la configuración? Se perderá el progreso de esta sesión.')) return;
+            const msg = currentMode === MODE_SIMULACRO
+                ? '¿Volver a la configuración? Se perderá el progreso del simulacro (no se podrá retomar).'
+                : '¿Volver a la configuración? Se perderá el progreso de esta sesión.';
+
+            if (!confirm(msg)) return;
         }
-        showScreen('setup');
-        updateSetupSummary();
+
+        if (currentMode === MODE_SIMULACRO) {
+            clearSavedSimulacroState();
+        }
+
+        stopSimTimer();
+        volverAlSetup();
     }
 
     // ============================================================
-    // 8b. CONTINUAR CON MÁS PREGUNTAS
+    // 10. TEMPORIZADOR
     // ============================================================
+    let simTimerInterval = null;
 
-    /** Calcula las preguntas disponibles del filtro actual no usadas aún. */
+    function startSimTimer() {
+        stopSimTimer();
+        if (!simulacroState.startTime) simulacroState.startTime = Date.now();
+        updateSimTimerDisplay();
+        simTimerInterval = setInterval(updateSimTimerDisplay, 1000);
+    }
+
+    function stopSimTimer() {
+        if (simTimerInterval) {
+            clearInterval(simTimerInterval);
+            simTimerInterval = null;
+        }
+    }
+
+    function updateSimTimerDisplay() {
+        if (!simulacroState.startTime) {
+            simTimer.textContent = '⏱️ 00:00';
+            return;
+        }
+
+        const elapsed = Math.floor((Date.now() - simulacroState.startTime) / 1000);
+
+        if (!simulacroState.timeLimit) {
+            simTimer.classList.remove('warning', 'danger');
+            simTimer.textContent = `⏱️ ${formatTime(elapsed)}`;
+            return;
+        }
+
+        const remaining = Math.max(0, simulacroState.timeLimit - elapsed);
+        simulacroState.remaining = remaining;
+
+        simTimer.classList.toggle('warning', remaining <= WARN_THRESHOLD_2 && remaining > WARN_THRESHOLD_3);
+        simTimer.classList.toggle('danger', remaining <= WARN_THRESHOLD_3);
+
+        simTimer.textContent = `⏱️ ${formatTime(remaining)} restantes`;
+
+        let nuevoNivel = 0;
+        if (remaining <= WARN_THRESHOLD_3) nuevoNivel = 3;
+        else if (remaining <= WARN_THRESHOLD_2) nuevoNivel = 2;
+        else if (remaining <= WARN_THRESHOLD_1) nuevoNivel = 1;
+
+        if (nuevoNivel > simulacroState.warnLevel) {
+            simulacroState.warnLevel = nuevoNivel;
+            notifyTimeAlert(nuevoNivel, remaining);
+        }
+
+        if (remaining === 0) {
+            stopSimTimer();
+            handleTimeUp();
+        }
+    }
+
+    function notifyTimeAlert(nivel, remaining) {
+        const textos = {
+            1: `⏳ Quedan 15 minutos.`,
+            2: `⚠️ Quedan 5 minutos.`,
+            3: `🚨 ¡Queda 1 minuto!`
+        };
+        console.log(textos[nivel], `(restante: ${formatTime(remaining)})`);
+    }
+
+    function handleTimeUp() {
+        simulacroState.timeUp = true;
+        simulacroState.revealed = true;
+        simulacroState.endTime = Date.now();
+
+        clearSavedSimulacroState();
+        registrarDominioSimulacro();
+
+        const s = computeSimulacroStats();
+        timeUpAnswered.textContent = s.answered;
+        timeUpTotal.textContent = s.total;
+
+        timeUpModal.style.display = 'flex';
+    }
+
+    function confirmTimeUp() {
+        timeUpModal.style.display = 'none';
+        showResults();
+    }
+
+    // ============================================================
+    // 11. CONTINUAR CON MÁS PREGUNTAS
+    // ============================================================
     function getRemainingIds() {
         return filteredIds.filter(id => !usedSessionIds.has(id));
     }
 
-    /**
-     * Muestra u oculta el botón "Continuar".
-     * Aparece solo cuando:
-     *   - Estamos en la última pregunta del bloque.
-     *   - La última pregunta YA fue respondida.
-     *   - Quedan preguntas disponibles para agregar.
-     */
+    // 🔧 FIX: la barra inferior ahora controla DOS botones (Continuar y
+    // Finalizar). Este método decide si el botón Continuar debe mostrarse
+    // y, en consecuencia, actualiza la barra inferior completa.
     function updateContinueBar() {
+        if (!continueBtn) return;
+
         if (sessionIds.length === 0) {
-            continueBar.style.display = 'none';
+            continueBtn.style.display = 'none';
+            actualizarBottomActionBar();
             return;
         }
 
         const isLast = currentIndex === sessionIds.length - 1;
         const remaining = getRemainingIds().length;
 
-        // ¿La última pregunta del bloque ya fue respondida?
+        if (currentMode === MODE_SIMULACRO && simulacroState.revealed) {
+            continueBtn.style.display = 'none';
+            actualizarBottomActionBar();
+            return;
+        }
+
         const lastIdx = sessionIds[currentIndex];
         const lastAnswered = (currentMode === MODE_PRACTICE)
             ? !!practiceRevealed[lastIdx]
-            : !!simulacroState.isLocked[lastIdx];
+            : !!simulacroState.answers[lastIdx];
 
         if (isLast && lastAnswered && remaining > 0) {
-            continueBar.style.display = 'flex';
+            continueBtn.style.display = 'inline-flex';
             continueInfoText.textContent =
                 `Has llegado al final del bloque. Quedan ${remaining} preguntas disponibles.`;
         } else {
-            continueBar.style.display = 'none';
+            continueBtn.style.display = 'none';
         }
+
+        actualizarBottomActionBar();
     }
 
-    /** Abre el modal de "agregar más preguntas". */
     function openContinueModal() {
+        applyFilters();
+
         const remaining = getRemainingIds().length;
         if (remaining === 0) return;
 
         modalRemaining.textContent = remaining;
-
-        // Reset visual del selector: por defecto, 10 o el máximo si hay menos
         modalSelectedCount = Math.min(10, remaining);
 
         Array.from(modalCountSelector.querySelectorAll('.count-btn')).forEach(btn => {
@@ -402,7 +1024,6 @@
             }
         });
 
-        // Si no coincidió ningún botón (ej: remaining < 10), marcar "Todas"
         if (!modalCountSelector.querySelector('.count-btn.active')) {
             const allBtn = modalCountSelector.querySelector('.count-btn[data-count="all"]');
             if (allBtn) allBtn.classList.add('active');
@@ -412,48 +1033,90 @@
         modalCustomCount.value = '';
         modalShuffle.checked = true;
 
+        const esSimulacro = (currentMode === MODE_SIMULACRO);
+        if (modalTimeBlock) {
+            modalTimeBlock.style.display = esSimulacro ? 'block' : 'none';
+        }
+
+        if (esSimulacro && modalTimeInput) {
+            modalTimeInput.value = '';
+            modalTimeInput.placeholder = String(getTiempoSugeridoModal());
+        }
+
         continueModal.style.display = 'flex';
     }
 
-    /** Cierra el modal. */
     function closeContinueModal() {
         continueModal.style.display = 'none';
     }
 
-    /** Agrega N preguntas al final de sessionIds. */
     function addMoreQuestions() {
+        applyFilters();
+
         const remainingIds = getRemainingIds();
         if (remainingIds.length === 0) {
             closeContinueModal();
             return;
         }
 
-        // Determinar cuántas agregar
         let cantidad = modalSelectedCount === 'all'
             ? remainingIds.length
             : Math.min(modalSelectedCount, remainingIds.length);
 
         if (cantidad <= 0) return;
 
-        // Barajar solo las nuevas
         let nuevas = [...remainingIds];
         if (modalShuffle.checked) nuevas = shuffle(nuevas);
         nuevas = nuevas.slice(0, cantidad);
 
-        // Agregarlas a sessionIds y marcarlas como usadas
+        const esSimulacro = (currentMode === MODE_SIMULACRO);
+        let minutosNuevos = null;
+
+        if (esSimulacro && modalTimeInput) {
+            const raw = (modalTimeInput.value || '').trim();
+            if (raw === '') {
+                const ph = parseInt(modalTimeInput.placeholder, 10);
+                minutosNuevos = (!isNaN(ph) && ph > 0) ? ph : cantidad;
+            } else {
+                const v = parseInt(raw, 10);
+                minutosNuevos = (!isNaN(v) && v > 0) ? v : cantidad;
+            }
+        }
+
+        if (esSimulacro
+            && minutosNuevos != null
+            && !simulacroState.revealed) {
+
+            if (simulacroState.startTime) {
+                const elapsedBloque = Math.max(
+                    0,
+                    Math.floor((Date.now() - simulacroState.startTime) / 1000)
+                );
+                simulacroState.elapsedPrevios =
+                    (simulacroState.elapsedPrevios || 0) + elapsedBloque;
+            }
+
+            simulacroState.startTime = Date.now();
+            simulacroState.timeLimit = minutosNuevos * 60;
+            simulacroState.remaining = simulacroState.timeLimit;
+            simulacroState.warnLevel = 0;
+
+            startSimTimer();
+        }
+
         sessionIds = sessionIds.concat(nuevas);
         nuevas.forEach(id => usedSessionIds.add(id));
 
         closeContinueModal();
 
-        // Navegar a la primera nueva
         currentIndex = sessionIds.length - nuevas.length;
         renderPage();
-        updateSimulacroInfo();
+        updateQuizInfoPanel();
+        saveSimulacroState();
     }
 
     // ============================================================
-    // 9. RENDERIZADO DEL CUESTIONARIO
+    // 12. RENDERIZADO DEL CUESTIONARIO
     // ============================================================
     function renderPage() {
         if (sessionIds.length === 0) {
@@ -549,24 +1212,16 @@
     }
 
     function buildSimulacroCard(p, idx) {
-        const isLocked = simulacroState.isLocked[idx] || false;
         const selected = simulacroState.answers[idx] || '';
-        const isCorrect = selected === p.respuesta;
+        const isFlagged = simulacroState.flagged.has(idx);
         const letras = getLetras(p);
 
         const opcionesHtml = letras.map(letra => {
             const texto = p.opciones[letra] || '';
-            let classes = 'option-item';
-            if (isLocked) {
-                classes += ' disabled';
-                if (letra === p.respuesta) classes += ' correct';
-                if (letra === selected && letra !== p.respuesta) classes += ' wrong';
-            } else {
-                classes += ' clickable';
-            }
-            const onclick = isLocked
-                ? ''
-                : `onclick="window.handleSimulacroAnswer(${idx}, '${letra}')"`;
+            let classes = 'option-item clickable';
+            if (letra === selected) classes += ' selected';
+
+            const onclick = `onclick="window.handleSimulacroAnswer(${idx}, '${letra}')"`;
 
             return `
                 <div class="${classes}" ${onclick}>
@@ -576,26 +1231,29 @@
             `;
         }).join('');
 
-        let cardClass = 'question-card';
-        if (isLocked) {
-            cardClass += isCorrect ? ' correct-answered' : ' wrong-answered';
-        }
+        const statusHint = selected
+            ? `<div class="sim-answer-hint">✏️ Marcaste <strong>${selected}</strong>. Puedes cambiarla antes de finalizar.</div>`
+            : `<div class="sim-answer-hint sim-answer-hint-empty">⬜ Aún no has respondido esta pregunta.</div>`;
 
-        const feedbackHtml = isLocked
-            ? `<div class="feedback ${isCorrect ? 'correct' : 'wrong'}">
-                   ${isCorrect
-                       ? '✅ ¡Correcto!'
-                       : `❌ Incorrecto. La respuesta correcta era ${p.respuesta}`}
-               </div>
-               <div class="explanation"><strong>💡 Explicación:</strong> ${p.explicacion}</div>`
-            : '';
+        const flagBtnHtml = `
+            <button
+                class="flag-btn ${isFlagged ? 'flagged' : ''}"
+                onclick="window.toggleFlag(${idx})"
+                title="${isFlagged ? 'Quitar marca' : 'Marcar para revisar'} (M)"
+            >
+                ${isFlagged ? '🚩 Marcada' : '🏳️ Marcar'}
+            </button>
+        `;
 
         return `
-            <div class="${cardClass}">
+            <div class="question-card">
                 ${buildQuestionHeader(p)}
                 <div class="question-text">${p.enunciado}</div>
                 <div class="options-list">${opcionesHtml}</div>
-                ${feedbackHtml}
+                ${statusHint}
+                <div class="sim-card-actions">
+                    ${flagBtnHtml}
+                </div>
             </div>
         `;
     }
@@ -611,69 +1269,445 @@
         const pct = total === 0 ? 0 : ((currentIndex + 1) / total) * 100;
         progressBarFill.style.width = `${pct}%`;
 
-        // Actualizar la barra de "Continuar"
         updateContinueBar();
     }
 
     // ============================================================
-    // 10. HANDLERS DE RESPUESTA
+    // 13. HANDLERS DE RESPUESTA
     // ============================================================
     window.handlePracticeAnswer = function (idx, answer) {
         if (practiceRevealed[idx]) return;
         const p = preguntas[idx];
         practiceAnswers[idx] = answer;
         practiceRevealed[idx] = true;
-        practiceFeedback[idx] = (answer === p.respuesta) ? 'correct' : 'wrong';
+        const acierto = (answer === p.respuesta);
+        practiceFeedback[idx] = acierto ? 'correct' : 'wrong';
+
+        if (window.Dominio) {
+            window.Dominio.registrarIntento(getPreguntaId(p), acierto, false);
+        }
+
         renderPage();
+        updateQuizInfoPanel();
+        updatePerfilResumen();
     };
 
     window.handleSimulacroAnswer = function (idx, answer) {
-        if (simulacroState.isLocked[idx]) return;
-        const p = preguntas[idx];
-        const isCorrect = answer === p.respuesta;
-
+        if (simulacroState.revealed) return;
         simulacroState.answers[idx] = answer;
-        simulacroState.isLocked[idx] = true;
-        if (isCorrect) simulacroState.correct++;
-        else simulacroState.incorrect++;
-        simulacroState.answered++;
-
-        updateSimulacroInfo();
         renderPage();
+        updateQuizInfoPanel();
+        saveSimulacroState();
+    };
+
+    window.toggleFlag = function (idx) {
+        if (currentMode !== MODE_SIMULACRO) return;
+        if (simulacroState.flagged.has(idx)) {
+            simulacroState.flagged.delete(idx);
+        } else {
+            simulacroState.flagged.add(idx);
+        }
+        renderPage();
+        updateQuizInfoPanel();
+        saveSimulacroState();
+    };
+
+    window.marcarYaEntiendo = function (idx) {
+        const p = preguntas[idx];
+        if (window.Dominio) {
+            window.Dominio.marcarDudosa(getPreguntaId(p));
+        }
+        renderReviewPage();
+        updatePerfilResumen();
+    };
+
+    window.marcarAunDudo = function (idx) {
+        const p = preguntas[idx];
+        if (window.Dominio) {
+            window.Dominio.registrarIntento(getPreguntaId(p), false, true);
+        }
+        renderReviewPage();
+        updatePerfilResumen();
     };
 
     // ============================================================
-    // 11. SIMULACRO
+    // 14. SIMULACRO: INFO Y FINALIZACIÓN
     // ============================================================
-    function updateSimulacroInfo() {
-        simAnswered.textContent = simulacroState.answered;
-        simTotal.textContent = sessionIds.length;
-        simCorrect.textContent = simulacroState.correct;
-        simIncorrect.textContent = simulacroState.incorrect;
+    function computePracticeStats() {
+        let correct = 0, incorrect = 0, blank = 0, answered = 0;
+        sessionIds.forEach(idx => {
+            if (!practiceRevealed[idx]) { blank++; return; }
+            answered++;
+            if (practiceFeedback[idx] === 'correct') correct++;
+            else incorrect++;
+        });
+        return { correct, incorrect, blank, answered, total: sessionIds.length, flagged: 0 };
     }
+
+    function computeSimulacroStats() {
+        let correct = 0, incorrect = 0, blank = 0, answered = 0;
+        sessionIds.forEach(idx => {
+            const sel = simulacroState.answers[idx];
+            if (!sel) { blank++; return; }
+            answered++;
+            if (sel === preguntas[idx].respuesta) correct++;
+            else incorrect++;
+        });
+        return {
+            correct, incorrect, blank, answered,
+            total: sessionIds.length,
+            flagged: simulacroState.flagged.size
+        };
+    }
+
+    function updateQuizInfoPanel() {
+        const s = (currentMode === MODE_PRACTICE)
+            ? computePracticeStats()
+            : computeSimulacroStats();
+
+        simAnswered.textContent = s.answered;
+        simTotal.textContent = s.total;
+        simCorrect.textContent = s.correct;
+        simIncorrect.textContent = s.incorrect;
+        simBlank.textContent = s.blank;
+        if (simFlagged) simFlagged.textContent = s.flagged || 0;
+    }
+
+    const updateSimulacroInfo = updateQuizInfoPanel;
 
     function resetSimulacro() {
         if (!confirm('¿Estás seguro de reiniciar el simulacro? Se perderá todo el progreso.')) return;
 
+        const timeLimitSec = simulacroState.timeLimit;
+
         simulacroState = {
             answers: {},
-            isLocked: {},
-            correct: 0,
-            incorrect: 0,
-            answered: 0
+            flagged: new Set(),
+            revealed: false,
+            startTime: Date.now(),
+            endTime: null,
+            timeLimit: timeLimitSec,
+            remaining: timeLimitSec,
+            elapsedPrevios: 0,
+            timeUp: false,
+            warnLevel: 0
         };
         currentIndex = 0;
-        updateSimulacroInfo();
+        updateQuizInfoPanel();
+        startSimTimer();
+        // 🔧 FIX: refrescar visibilidad de la barra inferior
+        updateQuizModeLabel();
         renderPage();
+        saveSimulacroState();
+    }
+
+    window.openFinishModal = function () {
+        if (currentMode !== MODE_SIMULACRO) return;
+        if (simulacroState.revealed) return;
+
+        const s = computeSimulacroStats();
+        finishAnswered.textContent = s.answered;
+        finishTotal.textContent = s.total;
+
+        if (finishStatAnswered) finishStatAnswered.textContent = s.answered;
+        if (finishStatFlagged) finishStatFlagged.textContent = s.flagged;
+        if (finishStatBlank) finishStatBlank.textContent = s.blank;
+
+        if (s.blank > 0 || s.flagged > 0) {
+            let msg = '';
+            if (s.blank > 0) msg += `⚠️ Tienes <strong>${s.blank}</strong> pregunta(s) sin responder. `;
+            if (s.flagged > 0) msg += `🚩 Tienes <strong>${s.flagged}</strong> marcada(s) para revisar. `;
+            msg += `¿Seguro que quieres finalizar?`;
+            finishWarning.innerHTML = msg;
+        } else {
+            finishWarning.innerHTML = `✅ Has respondido todas las preguntas. ¡Listo para ver tu puntaje!`;
+        }
+
+        finishModal.style.display = 'flex';
+    };
+
+    function closeFinishModal() {
+        finishModal.style.display = 'none';
+    }
+
+    function confirmFinishSimulacro() {
+        closeFinishModal();
+        simulacroState.revealed = true;
+        simulacroState.endTime = Date.now();
+        stopSimTimer();
+        clearSavedSimulacroState();
+        registrarDominioSimulacro();
+        showResults();
+    }
+
+    function registrarDominioSimulacro() {
+        if (!window.Dominio) return;
+        sessionIds.forEach(idx => {
+            const p = preguntas[idx];
+            const sel = simulacroState.answers[idx];
+            if (!sel) return;
+            const acierto = (sel === p.respuesta);
+            const dudaba = simulacroState.flagged.has(idx);
+            window.Dominio.registrarIntento(getPreguntaId(p), acierto, dudaba);
+        });
+        updatePerfilResumen();
     }
 
     // ============================================================
-    // 12. NAVEGACIÓN ENTRE PREGUNTAS
+    // 15. PANTALLA DE RESULTADOS
+    // ============================================================
+    function showResults() {
+        const s = computeSimulacroStats();
+        const total = s.total;
+        const pct = total === 0 ? 0 : Math.round((s.correct / total) * 100);
+
+        let icon = '🎯';
+        let title = 'Simulacro finalizado';
+        let subtitle = 'Aquí tienes tu desempeño detallado.';
+        if (pct >= 85) {
+            icon = '🏆'; title = '¡Excelente desempeño!';
+            subtitle = 'Estás en un nivel sobresaliente. Sigue así.';
+        } else if (pct >= 70) {
+            icon = '🎯'; title = 'Buen desempeño';
+            subtitle = 'Vas por buen camino. Refuerza las áreas débiles.';
+        } else if (pct >= 50) {
+            icon = '📚'; title = 'Desempeño regular';
+            subtitle = 'Hay margen de mejora. Revisa las áreas con menor puntaje.';
+        } else {
+            icon = '💪'; title = 'A seguir estudiando';
+            subtitle = 'Concéntrate en las áreas con menor puntaje y vuelve a intentarlo.';
+        }
+
+        if (simulacroState.timeUp) {
+            icon = '⏰'; title = 'Tiempo agotado';
+            subtitle = 'Se acabó el tiempo límite. Aquí tienes tu desempeño.';
+        }
+
+        resultsHeroIcon.textContent = icon;
+        resultsTitle.textContent = title;
+        resultsSubtitle.textContent = subtitle;
+
+        resultsPercent.textContent = `${pct}%`;
+        resultsCorrect.textContent = s.correct;
+        resultsIncorrect.textContent = s.incorrect;
+        resultsBlank.textContent = s.blank;
+
+        let color = '#dc3545';
+        if (pct >= 70) color = '#28a745';
+        else if (pct >= 50) color = '#ffc107';
+        scoreCircle.style.background = `conic-gradient(${color} 0% ${pct}%, var(--gray-200) ${pct}% 100%)`;
+
+        simulacroState.elapsedPrevios = simulacroState.elapsedPrevios || 0;
+        const elapsedSec = simulacroState.elapsedPrevios
+            + Math.max(0, Math.floor((simulacroState.endTime - simulacroState.startTime) / 1000));
+        resultsTime.textContent = formatTime(elapsedSec);
+        const avg = total > 0 ? Math.round(elapsedSec / total) : 0;
+        resultsAvg.textContent = `${avg}s`;
+
+        renderBreakdown('area', resultsByArea);
+        renderBreakdown('especialidad', resultsByEspecialidad);
+
+        showScreen('results');
+    }
+
+    function renderBreakdown(campo, contenedor) {
+        const grupos = {};
+
+        sessionIds.forEach(idx => {
+            const p = preguntas[idx];
+            const key = p[campo] || 'Sin categoría';
+            if (!grupos[key]) grupos[key] = { total: 0, correct: 0, incorrect: 0, blank: 0 };
+            grupos[key].total++;
+
+            const sel = simulacroState.answers[idx];
+            if (!sel) grupos[key].blank++;
+            else if (sel === p.respuesta) grupos[key].correct++;
+            else grupos[key].incorrect++;
+        });
+
+        const entries = Object.entries(grupos).sort((a, b) => {
+            const pa = a[1].total ? a[1].correct / a[1].total : 0;
+            const pb = b[1].total ? b[1].correct / b[1].total : 0;
+            return pa - pb;
+        });
+
+        if (entries.length === 0) {
+            contenedor.innerHTML = `<p style="color:var(--gray-500);font-size:13px;">Sin datos.</p>`;
+            return;
+        }
+
+        contenedor.innerHTML = entries.map(([nombre, g]) => {
+            const pct = g.total ? Math.round((g.correct / g.total) * 100) : 0;
+            let barClass = 'high';
+            if (pct < 50) barClass = 'low';
+            else if (pct < 70) barClass = 'mid';
+
+            return `
+                <div class="breakdown-row">
+                    <div class="breakdown-header">
+                        <span class="breakdown-name">${nombre}</span>
+                        <span class="breakdown-score">
+                            ${g.correct}/${g.total}
+                            <span class="breakdown-pct ${barClass}">${pct}%</span>
+                        </span>
+                    </div>
+                    <div class="breakdown-bar-bg">
+                        <div class="breakdown-bar-fill ${barClass}" style="width:${pct}%"></div>
+                    </div>
+                    <div class="breakdown-meta">
+                        <span class="meta-correct">✅ ${g.correct}</span>
+                        <span class="meta-incorrect">❌ ${g.incorrect}</span>
+                        <span class="meta-blank">⬜ ${g.blank}</span>
+                    </div>
+                </div>
+            `;
+        }).join('');
+    }
+
+    // ============================================================
+    // 16. PANTALLA DE REVISIÓN
+    // ============================================================
+    function openReview() {
+        reviewFilter = 'all';
+        reviewFilterBtns.forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
+        recomputeReviewIds();
+        reviewIndex = 0;
+        showScreen('review');
+        renderReviewPage();
+    }
+
+    function recomputeReviewIds() {
+        reviewIds = sessionIds.filter(idx => {
+            const sel = simulacroState.answers[idx];
+            if (reviewFilter === 'all') return true;
+            if (reviewFilter === 'wrong') return !!sel && sel !== preguntas[idx].respuesta;
+            if (reviewFilter === 'blank') return !sel;
+            return true;
+        });
+    }
+
+    function renderReviewPage() {
+        const total = reviewIds.length;
+
+        if (total === 0) {
+            reviewContainer.innerHTML = `
+                <div class="review-empty">
+                    <p>🎉 No hay preguntas en esta categoría.</p>
+                </div>
+            `;
+            reviewPosition.textContent = `0 / 0`;
+            reviewCounter.textContent = `0 / 0`;
+            progressBarFillReview.style.width = '0%';
+            reviewPrev.disabled = true;
+            reviewNext.disabled = true;
+            return;
+        }
+
+        if (reviewIndex < 0) reviewIndex = 0;
+        if (reviewIndex >= total) reviewIndex = total - 1;
+
+        const idx = reviewIds[reviewIndex];
+        const p = preguntas[idx];
+        const sel = simulacroState.answers[idx] || '';
+        const isCorrect = sel === p.respuesta;
+        const isBlank = !sel;
+
+        const letras = getLetras(p);
+
+        const opcionesHtml = letras.map(letra => {
+            const texto = p.opciones[letra] || '';
+            let classes = 'option-item disabled';
+            if (letra === p.respuesta) classes += ' correct';
+            if (letra === sel && letra !== p.respuesta) classes += ' wrong';
+
+            return `
+                <div class="${classes}">
+                    <span class="letter">${letra}.</span>
+                    <span class="option-text">${texto}</span>
+                    ${letra === p.respuesta ? '<span class="badge-correct">✓ Correcta</span>' : ''}
+                    ${letra === sel && letra !== p.respuesta ? '<span class="badge-wrong">✗ Tu respuesta</span>' : ''}
+                </div>
+            `;
+        }).join('');
+
+        let statusHtml = '';
+        if (isBlank) {
+            statusHtml = `<div class="feedback" style="background:var(--gray-100);color:var(--gray-700);border-left:4px solid var(--gray-400);">⬜ No respondiste esta pregunta. La correcta era <strong>${p.respuesta}</strong>.</div>`;
+        } else if (isCorrect) {
+            statusHtml = `<div class="feedback correct">✅ ¡Correcto!</div>`;
+        } else {
+            statusHtml = `<div class="feedback wrong">❌ Incorrecto. La respuesta correcta era <strong>${p.respuesta}</strong>.</div>`;
+        }
+
+        const idPreg = getPreguntaId(p);
+        const infoDom = window.Dominio ? window.Dominio.getInfo(idPreg) : null;
+        const estadoDom = infoDom ? infoDom.estado : null;
+
+        const estadoLabel = {
+            dominada: '🟢 Dominada',
+            dudosa:   '🟡 Dudosa',
+            fallada:  '🔴 Fallada'
+        };
+        const estadoClase = {
+            dominada: 'dom-dominada',
+            dudosa:   'dom-dudosa',
+            fallada:  'dom-fallada'
+        };
+
+        let dominioHtml = '';
+        if (estadoDom) {
+            dominioHtml = `
+                <div class="review-dominio">
+                    <div class="review-dominio-info">
+                        <span class="review-dominio-label">Estado actual:</span>
+                        <span class="review-dominio-badge ${estadoClase[estadoDom]}">${estadoLabel[estadoDom]}</span>
+                        <span class="review-dominio-meta">
+                            ✅ ${infoDom.aciertos || 0} ·
+                            ❌ ${infoDom.fallos || 0} ·
+                            🚩 ${infoDom.dudas || 0}
+                        </span>
+                    </div>
+                    <div class="review-dominio-actions">
+                        <button class="btn-dom-ok" onclick="window.marcarYaEntiendo(${idx})">
+                            ✅ Ya la entiendo
+                        </button>
+                        <button class="btn-dom-duda" onclick="window.marcarAunDudo(${idx})">
+                            🔁 Aún dudo
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+
+        reviewContainer.innerHTML = `
+            <div class="question-card ${isBlank ? '' : (isCorrect ? 'correct-answered' : 'wrong-answered')}">
+                ${buildQuestionHeader(p)}
+                <div class="question-text">${p.enunciado}</div>
+                <div class="options-list">${opcionesHtml}</div>
+                ${statusHtml}
+                <div class="explanation"><strong>💡 Explicación:</strong> ${p.explicacion}</div>
+                ${dominioHtml}
+            </div>
+        `;
+
+        reviewPosition.textContent = `${reviewIndex + 1} / ${total}`;
+        reviewCounter.textContent = `${reviewIndex + 1} / ${total}`;
+
+        const pct = total === 0 ? 0 : ((reviewIndex + 1) / total) * 100;
+        progressBarFillReview.style.width = `${pct}%`;
+
+        reviewPrev.disabled = reviewIndex <= 0;
+        reviewNext.disabled = reviewIndex >= total - 1;
+    }
+
+    // ============================================================
+    // 17. NAVEGACIÓN ENTRE PREGUNTAS
     // ============================================================
     function goToPrev() {
         if (currentIndex > 0) {
             currentIndex--;
             renderPage();
+            saveSimulacroState();
         }
     }
 
@@ -681,14 +1715,73 @@
         if (currentIndex < sessionIds.length - 1) {
             currentIndex++;
             renderPage();
+            saveSimulacroState();
         }
     }
 
-    // ============================================================
-    // 13. EVENTOS
-    // ============================================================
+    function goToPosition(n) {
+        const pos = parseInt(n, 10);
+        if (isNaN(pos)) return false;
+        if (pos < 1 || pos > sessionIds.length) return false;
+        currentIndex = pos - 1;
+        renderPage();
+        saveSimulacroState();
+        return true;
+    }
 
-    // --- Setup: modos ---
+    // ============================================================
+    // 18. M1: MAPA DE PREGUNTAS
+    // ============================================================
+    function openAnswerMap() {
+        if (currentMode !== MODE_SIMULACRO) return;
+        renderAnswerMap();
+        answerMapModal.style.display = 'flex';
+    }
+
+    function closeAnswerMap() {
+        answerMapModal.style.display = 'none';
+    }
+
+    function renderAnswerMap() {
+        if (!answerMapGrid) return;
+        const total = sessionIds.length;
+
+        answerMapGrid.innerHTML = sessionIds.map((idx, i) => {
+            const answered = !!simulacroState.answers[idx];
+            const flagged = simulacroState.flagged.has(idx);
+            const isCurrent = i === currentIndex;
+            let cls = 'map-cell';
+            if (isCurrent) cls += ' current';
+            if (flagged) cls += ' flagged';
+            else if (answered) cls += ' answered';
+            return `<button class="${cls}" data-pos="${i}" title="Pregunta ${i + 1}">${i + 1}</button>`;
+        }).join('');
+
+        const s = computeSimulacroStats();
+        if (answerMapSummary) {
+            answerMapSummary.innerHTML = `
+                <span class="map-sum-item">📋 Total: <strong>${total}</strong></span>
+                <span class="map-sum-item">✅ Respondidas: <strong>${s.answered}</strong></span>
+                <span class="map-sum-item">🚩 Marcadas: <strong>${s.flagged}</strong></span>
+                <span class="map-sum-item">⬜ En blanco: <strong>${s.blank}</strong></span>
+            `;
+        }
+    }
+
+    function handleAnswerMapClick(e) {
+        const btn = e.target.closest('.map-cell');
+        if (!btn) return;
+        const pos = parseInt(btn.dataset.pos, 10);
+        if (isNaN(pos)) return;
+        currentIndex = pos;
+        closeAnswerMap();
+        renderPage();
+        saveSimulacroState();
+    }
+
+    // ============================================================
+    // 19. EVENTOS
+    // ============================================================
     setupModePractice.addEventListener('click', () => {
         currentMode = MODE_PRACTICE;
         setupModePractice.classList.add('active');
@@ -701,11 +1794,19 @@
         currentMode = MODE_SIMULACRO;
         setupModeSimulacro.classList.add('active');
         setupModePractice.classList.remove('active');
-        modeHelp.textContent = 'En simulacro, cada respuesta queda bloqueada y ves tu puntaje en tiempo real.';
+        modeHelp.textContent = 'En simulacro, respondes todas las preguntas y ves resultados al finalizar (estilo CONAREME).';
         updateSetupSummary();
     });
 
-    // --- Setup: filtros ---
+    enfoqueBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            enfoqueBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentEnfoque = btn.dataset.enfoque;
+            applyFilters();
+        });
+    });
+
     filterArea.addEventListener('change', () => {
         updateDependentFilters();
         applyFilters();
@@ -730,44 +1831,28 @@
         applyFilters();
     });
 
-    // --- Setup: número de preguntas (botones) ---
     countButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             countButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-
             const valor = btn.dataset.count;
             selectedCount = valor === 'all' ? 'all' : parseInt(valor, 10);
-
-            // Limpiar el input personalizado al elegir un botón
             customCountInput.value = '';
-
             updateSetupSummary();
         });
     });
 
-    // --- Setup: número de preguntas (input personalizado) ---
     customCountInput.addEventListener('input', () => {
-        // Si el input está vacío, no modificamos el valor vigente
         if (customCountInput.value === '') return;
-
         let valor = parseInt(customCountInput.value, 10);
-
-        // Ignorar valores inválidos o menores a 1
         if (isNaN(valor) || valor < 1) return;
-
-        // Desmarcar todos los botones porque el input manda
         countButtons.forEach(b => b.classList.remove('active'));
-
         selectedCount = valor;
         updateSetupSummary();
     });
 
     customCountInput.addEventListener('blur', () => {
-        // Si el input queda vacío al perder el foco, restauramos la selección
-        // visual del último valor vigente
         if (customCountInput.value !== '') return;
-
         if (selectedCount === 'all') {
             const allBtn = Array.from(countButtons).find(b => b.dataset.count === 'all');
             if (allBtn) allBtn.classList.add('active');
@@ -778,60 +1863,108 @@
         }
     });
 
-    // --- Setup: iniciar sesión ---
+    customTimeInput.addEventListener('input', () => {
+        const raw = customTimeInput.value.trim();
+        if (raw === '') {
+            selectedTimeLimitMin = null;
+            updateSetupSummary();
+            return;
+        }
+        let valor = parseInt(raw, 10);
+        if (isNaN(valor) || valor < 1) return;
+        selectedTimeLimitMin = valor;
+        updateSetupSummary();
+    });
+
+    customTimeInput.addEventListener('blur', () => {
+        const raw = customTimeInput.value.trim();
+        if (raw === '') {
+            selectedTimeLimitMin = null;
+        } else {
+            let valor = parseInt(raw, 10);
+            if (isNaN(valor) || valor < 1) {
+                selectedTimeLimitMin = null;
+            } else {
+                selectedTimeLimitMin = valor;
+            }
+        }
+        syncTimeInput();
+        updateSetupSummary();
+    });
+
     startSessionBtn.addEventListener('click', startSession);
-
-    // --- Quiz: volver al setup ---
     backToSetupBtn.addEventListener('click', goBackToSetup);
-
-    // --- Quiz: navegación ---
     prevBtn.addEventListener('click', goToPrev);
     nextBtn.addEventListener('click', goToNext);
-
-    // --- Quiz: reiniciar simulacro ---
     resetSimulacroBtn.addEventListener('click', resetSimulacro);
 
-    // --- Continuar / modal ---
+    // 🔧 FIX: listener del botón Finalizar ahora apunta al botón inferior.
+    if (finishSimulacroBtn) {
+        finishSimulacroBtn.addEventListener('click', () => {
+            window.openFinishModal();
+        });
+    }
+
+    openMapBtn.addEventListener('click', openAnswerMap);
+    closeAnswerMapBtn.addEventListener('click', closeAnswerMap);
+    closeAnswerMapFooterBtn.addEventListener('click', closeAnswerMap);
+    answerMapModal.addEventListener('click', (e) => {
+        if (e.target === answerMapModal) closeAnswerMap();
+    });
+    answerMapGrid.addEventListener('click', handleAnswerMapClick);
+
+    goToQuestionInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            const ok = goToPosition(goToQuestionInput.value);
+            if (ok) {
+                goToQuestionInput.value = '';
+                goToQuestionInput.blur();
+            } else {
+                goToQuestionInput.classList.add('invalid');
+                setTimeout(() => goToQuestionInput.classList.remove('invalid'), 700);
+            }
+        }
+        if (e.key === 'Escape') {
+            goToQuestionInput.value = '';
+            goToQuestionInput.blur();
+        }
+    });
+
+    resumeContinueBtn.addEventListener('click', resumeSimulacroFromStorage);
+    discardResumeBtn.addEventListener('click', discardSavedSimulacro);
+
     continueBtn.addEventListener('click', openContinueModal);
     closeModalBtn.addEventListener('click', closeContinueModal);
     cancelModalBtn.addEventListener('click', closeContinueModal);
     confirmModalBtn.addEventListener('click', addMoreQuestions);
 
-    // Cerrar al hacer click fuera del modal
     continueModal.addEventListener('click', (e) => {
         if (e.target === continueModal) closeContinueModal();
     });
 
-    // --- Modal: selector de cantidad ---
     modalCountSelector.addEventListener('click', (e) => {
         const btn = e.target.closest('.count-btn');
         if (!btn) return;
-
         modalCountSelector.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-
         const val = btn.dataset.count;
         modalSelectedCount = val === 'all' ? 'all' : parseInt(val, 10);
-
-        // Limpiar input personalizado al elegir botón
         modalCustomCount.value = '';
+        syncModalTimeInput();
     });
 
-    // --- Modal: input personalizado ---
     modalCustomCount.addEventListener('input', () => {
         if (modalCustomCount.value === '') return;
-
         const valor = parseInt(modalCustomCount.value, 10);
         if (isNaN(valor) || valor < 1) return;
-
         modalCountSelector.querySelectorAll('.count-btn').forEach(b => b.classList.remove('active'));
         modalSelectedCount = valor;
+        syncModalTimeInput();
     });
 
     modalCustomCount.addEventListener('blur', () => {
         if (modalCustomCount.value !== '') return;
-
-        // Restaurar botón correspondiente si el input queda vacío
         if (modalSelectedCount === 'all') {
             const allBtn = modalCountSelector.querySelector('.count-btn[data-count="all"]');
             if (allBtn) allBtn.classList.add('active');
@@ -840,21 +1973,99 @@
                 .find(b => parseInt(b.dataset.count, 10) === modalSelectedCount);
             if (matchingBtn) matchingBtn.classList.add('active');
         }
+        syncModalTimeInput();
     });
 
-    // --- Atajos de teclado ---
+    closeFinishModalBtn.addEventListener('click', closeFinishModal);
+    cancelFinishBtn.addEventListener('click', closeFinishModal);
+    confirmFinishBtn.addEventListener('click', confirmFinishSimulacro);
+    finishModal.addEventListener('click', (e) => {
+        if (e.target === finishModal) closeFinishModal();
+    });
+
+    confirmTimeUpBtn.addEventListener('click', confirmTimeUp);
+
+    reviewAnswersBtn.addEventListener('click', openReview);
+    backToSetupFromResults.addEventListener('click', () => {
+        volverAlSetup();
+    });
+    retrySimulacroBtn.addEventListener('click', () => {
+        if (!confirm('¿Repetir el simulacro con las mismas preguntas?')) return;
+        const timeLimitSec = simulacroState.timeLimit;
+        simulacroState = {
+            answers: {},
+            flagged: new Set(),
+            revealed: false,
+            startTime: Date.now(),
+            endTime: null,
+            timeLimit: timeLimitSec,
+            remaining: timeLimitSec,
+            elapsedPrevios: 0,
+            timeUp: false,
+            warnLevel: 0
+        };
+        currentIndex = 0;
+        updateQuizInfoPanel();
+        showScreen('quiz');
+        // 🔧 FIX: refrescar visibilidad de la barra inferior
+        updateQuizModeLabel();
+        startSimTimer();
+        renderPage();
+        saveSimulacroState();
+    });
+
+    backToResultsBtn.addEventListener('click', () => {
+        showScreen('results');
+    });
+    reviewPrev.addEventListener('click', () => {
+        if (reviewIndex > 0) {
+            reviewIndex--;
+            renderReviewPage();
+        }
+    });
+    reviewNext.addEventListener('click', () => {
+        if (reviewIndex < reviewIds.length - 1) {
+            reviewIndex++;
+            renderReviewPage();
+        }
+    });
+
+    reviewFilterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            reviewFilterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            reviewFilter = btn.dataset.filter;
+            recomputeReviewIds();
+            reviewIndex = 0;
+            renderReviewPage();
+        });
+    });
+
+    window.addEventListener('beforeunload', () => {
+        if (currentMode === MODE_SIMULACRO && !simulacroState.revealed && sessionIds.length > 0) {
+            saveSimulacroState();
+        }
+    });
+
     document.addEventListener('keydown', (e) => {
-        // Ignorar si el foco está en un select o input
         if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
         if (e.ctrlKey || e.altKey || e.metaKey) return;
 
-        // --- Escape: cerrar modal si está abierto ---
-        if (e.key === 'Escape' && continueModal.style.display === 'flex') {
-            closeContinueModal();
+        if (resumeModal.style.display === 'flex') {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                resumeSimulacroFromStorage();
+            }
             return;
         }
 
-        // --- Backspace: volver al setup (solo desde el quiz) ---
+        if (e.key === 'Escape') {
+            if (answerMapModal.style.display === 'flex') { closeAnswerMap(); return; }
+            if (continueModal.style.display === 'flex') { closeContinueModal(); return; }
+            if (finishModal.style.display === 'flex') { closeFinishModal(); return; }
+            return;
+        }
+
         if (e.key === 'Backspace') {
             if (screenQuiz.classList.contains('active')) {
                 e.preventDefault();
@@ -863,38 +2074,61 @@
             return;
         }
 
-        // El resto de atajos solo funcionan en la pantalla del cuestionario
-        if (!screenQuiz.classList.contains('active')) return;
+        if (screenQuiz.classList.contains('active')) {
+            if (e.key === 'ArrowLeft') { goToPrev(); return; }
+            if (e.key === 'ArrowRight') { goToNext(); return; }
 
-        // Navegación
-        if (e.key === 'ArrowLeft') {
-            goToPrev();
+            if (currentMode === MODE_SIMULACRO && !simulacroState.revealed) {
+                const teclaAtajo = e.key.toUpperCase();
+                if (teclaAtajo === 'M') {
+                    e.preventDefault();
+                    const idxActual = sessionIds[currentIndex];
+                    if (idxActual !== undefined) window.toggleFlag(idxActual);
+                    return;
+                }
+                if (teclaAtajo === 'G') {
+                    e.preventDefault();
+                    openAnswerMap();
+                    return;
+                }
+                if (teclaAtajo === 'F') {
+                    e.preventDefault();
+                    window.openFinishModal();
+                    return;
+                }
+            }
+
+            const tecla = e.key.toUpperCase();
+            if (!/^[A-E]$/.test(tecla)) return;
+            if (sessionIds.length === 0) return;
+
+            const idx = sessionIds[currentIndex];
+            const p = preguntas[idx];
+            const letrasDisponibles = getLetras(p);
+            if (!letrasDisponibles.includes(tecla)) return;
+
+            if (currentMode === MODE_PRACTICE) {
+                if (!practiceRevealed[idx]) window.handlePracticeAnswer(idx, tecla);
+            } else {
+                if (!simulacroState.revealed) window.handleSimulacroAnswer(idx, tecla);
+            }
             return;
         }
-        if (e.key === 'ArrowRight') {
-            goToNext();
-            return;
-        }
 
-        // Respuesta por letra A-E
-        const tecla = e.key.toUpperCase();
-        if (!/^[A-E]$/.test(tecla)) return;
-        if (sessionIds.length === 0) return;
-
-        const idx = sessionIds[currentIndex];
-        const p = preguntas[idx];
-        const letrasDisponibles = getLetras(p);
-        if (!letrasDisponibles.includes(tecla)) return;
-
-        if (currentMode === MODE_PRACTICE) {
-            if (!practiceRevealed[idx]) window.handlePracticeAnswer(idx, tecla);
-        } else {
-            if (!simulacroState.isLocked[idx]) window.handleSimulacroAnswer(idx, tecla);
+        if (screenReview.classList.contains('active')) {
+            if (e.key === 'ArrowLeft') {
+                if (reviewIndex > 0) { reviewIndex--; renderReviewPage(); }
+                return;
+            }
+            if (e.key === 'ArrowRight') {
+                if (reviewIndex < reviewIds.length - 1) { reviewIndex++; renderReviewPage(); }
+                return;
+            }
         }
     });
 
     // ============================================================
-    // 14. ARRANQUE
+    // 20. ARRANQUE
     // ============================================================
     loadData();
 

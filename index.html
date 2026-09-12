@@ -8,7 +8,6 @@
 </head>
 <body>
     <div id="app">
-        <!-- Barra superior común -->
         <header>
             <div class="header-left">
                 <h1>📘 QBank Medicina Perú</h1>
@@ -18,36 +17,31 @@
             </div>
         </header>
 
-        <!-- ================================================ -->
-        <!-- PANTALLA 1: CONFIGURACIÓN                        -->
-        <!-- ================================================ -->
         <section id="screenSetup" class="screen active">
             <div class="setup-container">
-                <div class="setup-hero">
-                    <h2>Configura tu sesión de estudio</h2>
-                    <p>Elige el modo, los filtros y cuántas preguntas deseas resolver.</p>
-                </div>
-
                 <div class="setup-grid">
-                    <!-- Modo -->
-                    <div class="setup-card">
-                        <h3>🎯 Modo de estudio</h3>
-                        <div class="mode-selector">
-                            <button class="mode-btn active" data-mode="practice" id="setupModePractice">
-                                📝 Práctica
-                            </button>
-                            <button class="mode-btn" data-mode="simulacro" id="setupModeSimulacro">
-                                🎯 Simulacro
-                            </button>
-                        </div>
-                        <p class="setup-help" id="modeHelp">
-                            En práctica, ves la explicación inmediatamente al responder.
-                        </p>
-                    </div>
-
-                    <!-- Filtros -->
+                    <!-- Filtros (incluye modo) -->
                     <div class="setup-card">
                         <h3>🔍 Filtros</h3>
+
+                        <!-- Selector de modo (dentro de Filtros) -->
+                        <div class="mode-block">
+                            <label class="mode-block-label">Modo de estudio</label>
+                            <div class="mode-selector">
+                                <button class="mode-btn active" data-mode="practice" id="setupModePractice">
+                                    📝 Práctica
+                                </button>
+                                <button class="mode-btn" data-mode="simulacro" id="setupModeSimulacro">
+                                    🎯 Simulacro
+                                </button>
+                            </div>
+                            <p class="setup-help" id="modeHelp" style="margin-top:8px;">
+                                En práctica, ves la explicación inmediatamente al responder.
+                            </p>
+                        </div>
+
+                        <div class="mode-divider"></div>
+
                         <div class="filter-grid">
                             <div class="filter-group">
                                 <label>Área</label>
@@ -82,7 +76,7 @@
                         <button id="resetFilters" class="btn-secondary">🔄 Limpiar filtros</button>
                     </div>
 
-                    <!-- Número de preguntas -->
+                    <!-- Número de preguntas + Tiempo límite integrado -->
                     <div class="setup-card">
                         <h3>🔢 Número de preguntas</h3>
                         <div class="count-selector">
@@ -106,6 +100,46 @@
                             <input type="checkbox" id="shuffleQuestions" checked />
                             <span>Barajar preguntas</span>
                         </label>
+
+                        <!-- Bloque de tiempo (solo visible en modo Simulacro) -->
+                        <div id="timeBlock" class="time-block" style="display:none;">
+                            <div class="time-block-divider"></div>
+                            <h4 class="time-block-title">⏱️ Tiempo límite</h4>
+                            <div class="count-custom" style="margin-bottom:0;">
+                                <label for="customTime">Minutos:</label>
+                                <input
+                                    type="number"
+                                    id="customTime"
+                                    min="1"
+                                    step="1"
+                                    placeholder="20"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Enfoque de estudio -->
+                    <div class="setup-card setup-card-enfoque" id="enfoqueCard">
+                        <h3>🎯 Enfoque de estudio</h3>
+                        <p class="setup-help" style="margin-top:0;margin-bottom:12px;">
+                            Filtra según tu perfil de aprendizaje acumulado.
+                            <strong>Dominadas</strong> no vuelven a salir.
+                        </p>
+                        <div class="enfoque-selector" id="enfoqueSelector">
+                            <button class="enfoque-btn active" data-enfoque="all">
+                                📚 Todas
+                            </button>
+                            <button class="enfoque-btn" data-enfoque="no-dominadas">
+                                🎯 No dominadas
+                            </button>
+                            <button class="enfoque-btn" data-enfoque="falladas">
+                                🔴 Solo falladas
+                            </button>
+                            <button class="enfoque-btn" data-enfoque="dudosas">
+                                🟡 Solo dudosas
+                            </button>
+                        </div>
+                        <div class="perfil-resumen" id="perfilResumen"></div>
                     </div>
                 </div>
 
@@ -128,6 +162,10 @@
                             <span class="summary-label">Vas a resolver:</span>
                             <span id="summaryCount" class="summary-value highlight">0</span>
                         </div>
+                        <div class="summary-line" id="summaryTimeLine" style="display:none;">
+                            <span class="summary-label">Tiempo límite:</span>
+                            <span id="summaryTime" class="summary-value highlight">20 min</span>
+                        </div>
                     </div>
                     <button id="startSession" class="btn-primary btn-large">
                         ▶ Iniciar cuestionario
@@ -136,61 +174,88 @@
             </div>
         </section>
 
-        <!-- ================================================ -->
-        <!-- PANTALLA 2: CUESTIONARIO                         -->
-        <!-- ================================================ -->
+        <!-- PANTALLA 2: CUESTIONARIO -->
         <section id="screenQuiz" class="screen">
-            <!-- Barra superior del cuestionario -->
             <div class="quiz-topbar">
                 <button id="backToSetup" class="btn-back">
                     ← Volver
                 </button>
-                <div class="quiz-topbar-center">
-                    <span id="quizModeLabel" class="quiz-mode-label">Práctica</span>
-                    <span id="questionPosition" class="quiz-position">0 / 0</span>
-                </div>
                 <div class="quiz-topbar-right">
+                    <span id="simTimer" class="sim-timer" style="display:none;">⏱️ 00:00</span>
                     <button id="resetSimulacro" class="btn-secondary" style="display:none;">
                         🔄 Reiniciar
                     </button>
                 </div>
             </div>
 
-            <!-- Barra de progreso -->
             <div id="progressBarContainer">
                 <div id="progressBarFill"></div>
             </div>
 
-            <!-- Info simulacro (solo visible en modo simulacro) -->
             <div id="simulacroInfo" class="simulacro-info" style="display:none;">
-                <div class="sim-stat">
+                <div class="sim-header">
+                    <span id="quizModeLabel" class="quiz-mode-label">Práctica</span>
+                    <span id="questionPosition" class="quiz-position">0 / 0</span>
+                </div>
+
+                <div class="sim-divider"></div>
+
+                <div class="sim-stat sim-stat-answered" style="display:none;">
                     <span class="sim-stat-label">Respondidas</span>
                     <span class="sim-stat-value"><span id="simAnswered">0</span> / <span id="simTotal">0</span></span>
                 </div>
-                <div class="sim-stat">
+
+                <div class="sim-stat sim-stat-correct">
                     <span class="sim-stat-label">Correctas</span>
                     <span class="sim-stat-value correct" id="simCorrect">0</span>
                 </div>
-                <div class="sim-stat">
+                <div class="sim-stat sim-stat-incorrect">
                     <span class="sim-stat-label">Incorrectas</span>
                     <span class="sim-stat-value incorrect" id="simIncorrect">0</span>
                 </div>
+                <div class="sim-stat sim-stat-blank">
+                    <span class="sim-stat-label">En blanco</span>
+                    <span class="sim-stat-value" id="simBlank">0</span>
+                </div>
+                <div class="sim-stat sim-stat-flagged" style="display:none;">
+                    <span class="sim-stat-label">Marcadas</span>
+                    <span class="sim-stat-value flagged" id="simFlagged">0</span>
+                </div>
+                <div class="sim-actions-sim" style="display:none;">
+                    <button id="openMapBtn" class="btn-map" title="Abrir mapa de preguntas (G)">
+                        🗺️ Mapa
+                    </button>
+                    <div class="go-to-wrap">
+                        <input
+                            type="number"
+                            id="goToQuestionInput"
+                            class="go-to-input"
+                            min="1"
+                            step="1"
+                            placeholder="#"
+                            title="Ir a pregunta N"
+                        />
+                    </div>
+                </div>
             </div>
 
-            <!-- Contenedor de la pregunta -->
             <div id="questionContainer"></div>
 
-            <!-- Barra de "Continuar" (aparece solo al llegar al final del bloque) -->
-            <div id="continueBar" class="continue-bar" style="display:none;">
-                <div class="continue-info">
+            <!-- Barra inferior unificada: info + Continuar + Finalizar -->
+            <div id="bottomActionBar" class="bottom-action-bar" style="display:none;">
+                <div id="continueInfoWrap" class="continue-info-wrap" style="display:none;">
                     <span id="continueInfoText">Has llegado al final de este bloque.</span>
                 </div>
-                <button id="continueBtn" class="btn-primary btn-large">
-                    ➕ Continuar con más preguntas
-                </button>
+                <div class="bottom-action-buttons">
+                    <button id="continueBtn" class="btn-primary btn-large" style="display:none;">
+                        ➕ Continuar
+                    </button>
+                    <button id="finishSimulacroBtn" class="btn-finish btn-large" style="display:none;">
+                        🏁 Finalizar
+                    </button>
+                </div>
             </div>
 
-            <!-- Navegación inferior -->
             <div id="navigation">
                 <button id="prevQuestion" class="nav-btn">
                     <span class="nav-icon">◀</span>
@@ -205,15 +270,160 @@
                 </button>
             </div>
         </section>
+
+        <!-- PANTALLA 3: RESULTADOS -->
+        <section id="screenResults" class="screen">
+            <div class="results-container">
+                <div class="results-hero">
+                    <div class="results-hero-icon" id="resultsHeroIcon">🎯</div>
+                    <h2 id="resultsTitle">Simulacro finalizado</h2>
+                    <p id="resultsSubtitle">Aquí tienes tu desempeño detallado.</p>
+                </div>
+
+                <div class="results-score-card">
+                    <div class="score-circle" id="scoreCircle">
+                        <div class="score-circle-inner">
+                            <span class="score-value" id="resultsPercent">0%</span>
+                            <span class="score-label">acierto</span>
+                        </div>
+                    </div>
+                    <div class="score-details">
+                        <div class="score-detail-line">
+                            <span class="score-detail-dot correct"></span>
+                            <span class="score-detail-label">Correctas</span>
+                            <span class="score-detail-value" id="resultsCorrect">0</span>
+                        </div>
+                        <div class="score-detail-line">
+                            <span class="score-detail-dot incorrect"></span>
+                            <span class="score-detail-label">Incorrectas</span>
+                            <span class="score-detail-value" id="resultsIncorrect">0</span>
+                        </div>
+                        <div class="score-detail-line">
+                            <span class="score-detail-dot blank"></span>
+                            <span class="score-detail-label">En blanco</span>
+                            <span class="score-detail-value" id="resultsBlank">0</span>
+                        </div>
+                        <div class="score-detail-line">
+                            <span class="score-detail-dot time"></span>
+                            <span class="score-detail-label">Tiempo total</span>
+                            <span class="score-detail-value" id="resultsTime">00:00</span>
+                        </div>
+                        <div class="score-detail-line">
+                            <span class="score-detail-dot avg"></span>
+                            <span class="score-detail-label">Promedio / pregunta</span>
+                            <span class="score-detail-value" id="resultsAvg">0s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-section">
+                    <h3 class="results-section-title">📊 Desglose por área</h3>
+                    <div id="resultsByArea" class="results-bars"></div>
+                </div>
+
+                <div class="results-section">
+                    <h3 class="results-section-title">📋 Desglose por especialidad</h3>
+                    <div id="resultsByEspecialidad" class="results-bars"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="reviewAnswersBtn" class="btn-primary btn-large">
+                        🔍 Revisar respuestas
+                    </button>
+                    <button id="backToSetupFromResults" class="btn-secondary">
+                        🏠 Volver al inicio
+                    </button>
+                    <button id="retrySimulacroBtn" class="btn-secondary">
+                        🔄 Repetir simulacro
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANTALLA 4: REVISIÓN -->
+        <section id="screenReview" class="screen">
+            <div class="review-topbar">
+                <button id="backToResults" class="btn-back">← Resultados</button>
+                <div class="review-topbar-center">
+                    <span class="quiz-mode-label">Revisión</span>
+                    <span id="reviewPosition" class="quiz-position">0 / 0</span>
+                </div>
+                <div class="review-filters">
+                    <button class="review-filter-btn active" data-filter="all">Todas</button>
+                    <button class="review-filter-btn" data-filter="wrong">Incorrectas</button>
+                    <button class="review-filter-btn" data-filter="blank">En blanco</button>
+                </div>
+            </div>
+
+            <div id="progressBarContainerReview">
+                <div id="progressBarFillReview"></div>
+            </div>
+
+            <div id="reviewContainer"></div>
+
+            <div id="reviewNavigation">
+                <button id="reviewPrev" class="nav-btn">
+                    <span class="nav-icon">◀</span>
+                    <span class="nav-text">Anterior</span>
+                </button>
+                <div class="nav-hint" id="reviewCounter">0 / 0</div>
+                <button id="reviewNext" class="nav-btn primary">
+                    <span class="nav-text">Siguiente</span>
+                    <span class="nav-icon">▶</span>
+                </button>
+            </div>
+        </section>
     </div>
 
-    <!-- ================================================ -->
-    <!-- MODAL: Agregar más preguntas                     -->
-    <!-- ================================================ -->
+    <!-- MODALES -->
+    <div id="answerMapModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content modal-map">
+            <div class="modal-header">
+                <h3>🗺️ Mapa de preguntas</h3>
+                <button id="closeAnswerMapBtn" class="modal-close" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="map-legend">
+                    <span class="legend-item"><span class="legend-dot current"></span> Actual</span>
+                    <span class="legend-item"><span class="legend-dot answered"></span> Respondida</span>
+                    <span class="legend-item"><span class="legend-dot flagged"></span> Marcada</span>
+                    <span class="legend-item"><span class="legend-dot blank"></span> En blanco</span>
+                </div>
+                <div id="answerMapGrid" class="answer-map-grid"></div>
+                <div class="map-summary" id="answerMapSummary"></div>
+            </div>
+            <div class="modal-footer">
+                <button id="closeAnswerMapFooterBtn" class="btn-secondary">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="resumeModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content" style="max-width: 480px;">
+            <div class="modal-header">
+                <h3>💾 Simulacro en curso</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-info" style="background:#e8f0fe;border-left-color:#4a90d9;color:var(--primary);">
+                    Detectamos un simulacro que no finalizaste. ¿Quieres continuar donde lo dejaste?
+                </p>
+                <div class="resume-summary" id="resumeSummary"></div>
+                <p style="font-size:12.5px;color:var(--gray-500);line-height:1.5;">
+                    Si eliges <strong>Descartar</strong>, se borrará el progreso guardado.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button id="discardResumeBtn" class="btn-secondary">🗑️ Descartar</button>
+                <button id="resumeContinueBtn" class="btn-primary">▶ Continuar simulacro</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: Agregar más preguntas (con tiempo para el nuevo bloque) -->
     <div id="continueModal" class="modal-overlay" style="display:none;">
         <div class="modal-content">
             <div class="modal-header">
-                <h3>➕ Agregar más preguntas</h3>
+                <h3>➕ Continuar con más preguntas</h3>
                 <button id="closeModalBtn" class="modal-close" aria-label="Cerrar">✕</button>
             </div>
             <div class="modal-body">
@@ -232,13 +442,26 @@
 
                 <div class="count-custom">
                     <label for="modalCustomCount">O escribe un número:</label>
-                    <input
-                        type="number"
-                        id="modalCustomCount"
-                        min="1"
-                        step="1"
-                        placeholder="Ej: 15"
-                    />
+                    <input type="number" id="modalCustomCount" min="1" step="1" placeholder="Ej: 15" />
+                </div>
+
+                <!-- Bloque de tiempo: solo visible en modo Simulacro -->
+                <div id="modalTimeBlock" style="display:none;">
+                    <label class="modal-label" style="margin-top:4px;">
+                        ⏱️ Tiempo para el nuevo bloque (min)
+                    </label>
+                    <div class="count-custom" style="margin-bottom:8px;">
+                        <input
+                            type="number"
+                            id="modalTime"
+                            min="1"
+                            step="1"
+                            placeholder="10"
+                        />
+                    </div>
+                    <p class="modal-warning">
+                        ⚠️ El tiempo sobrante del bloque actual se descartará. El nuevo bloque arrancará con el tiempo que indiques.
+                    </p>
                 </div>
 
                 <label class="checkbox-row">
@@ -253,6 +476,71 @@
         </div>
     </div>
 
+    <div id="finishModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content" style="max-width: 460px;">
+            <div class="modal-header">
+                <h3>🏁 Finalizar simulacro</h3>
+                <button id="closeFinishModalBtn" class="modal-close" aria-label="Cerrar">✕</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-info">
+                    Has respondido <strong id="finishAnswered">0</strong> de
+                    <strong id="finishTotal">0</strong> preguntas.
+                </p>
+                <div class="finish-stats" id="finishStats">
+                    <div class="finish-stat">
+                        <span class="finish-stat-icon">✅</span>
+                        <span class="finish-stat-label">Respondidas</span>
+                        <span class="finish-stat-value" id="finishStatAnswered">0</span>
+                    </div>
+                    <div class="finish-stat">
+                        <span class="finish-stat-icon">🚩</span>
+                        <span class="finish-stat-label">Marcadas</span>
+                        <span class="finish-stat-value" id="finishStatFlagged">0</span>
+                    </div>
+                    <div class="finish-stat">
+                        <span class="finish-stat-icon">⬜</span>
+                        <span class="finish-stat-label">En blanco</span>
+                        <span class="finish-stat-value" id="finishStatBlank">0</span>
+                    </div>
+                </div>
+                <p id="finishWarning" style="font-size:13px;color:var(--gray-600);line-height:1.5;">
+                    Al finalizar, verás tu puntaje y el desglose por área.
+                    Las preguntas sin responder quedarán como "en blanco".
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button id="cancelFinishBtn" class="btn-secondary">Seguir revisando</button>
+                <button id="confirmFinishBtn" class="btn-primary">🏁 Finalizar y ver resultados</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="timeUpModal" class="modal-overlay" style="display:none;">
+        <div class="modal-content" style="max-width: 440px;">
+            <div class="modal-header">
+                <h3>⏰ ¡Se agotó el tiempo!</h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-info" style="background:#fff3cd;border-left-color:#ffc107;color:#856404;">
+                    El tiempo límite del simulacro ha finalizado.
+                </p>
+                <p style="font-size:13.5px;color:var(--gray-700);line-height:1.5;">
+                    Has respondido <strong id="timeUpAnswered">0</strong> de
+                    <strong id="timeUpTotal">0</strong> preguntas.<br>
+                    Las preguntas sin responder se contarán como <strong>en blanco</strong>.
+                </p>
+                <p style="font-size:13px;color:var(--gray-500);margin-top:4px;">
+                    Pulsa "Ver resultados" para continuar.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button id="confirmTimeUpBtn" class="btn-primary">📊 Ver resultados</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dominio.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

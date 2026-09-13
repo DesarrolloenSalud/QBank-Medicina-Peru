@@ -6,7 +6,7 @@
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/Examen_25A.json';
+    const DATA_URL = 'data/residencia.json';
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 

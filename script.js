@@ -10,6 +10,9 @@
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 
+    // ID virtual para el modo "Todos los bancos"
+    const SOURCE_ALL_ID = '__all__';
+
     const WARN_THRESHOLD_1 = 15 * 60;
     const WARN_THRESHOLD_2 = 5 * 60;
     const WARN_THRESHOLD_3 = 60;
@@ -74,7 +77,7 @@
 
     // --- Multi-banco ---
     let dataSources = [];      // manifiesto completo de data/sources.json
-    let currentSource = null;  // { id, name, description, file }
+    let currentSource = null;  // { id, name, description, file } | { id: '__all__', ... }
 
     // ============================================================
     // 3. REFERENCIAS AL DOM
@@ -230,10 +233,12 @@
 
     /**
      * ID compuesto: "residencia:42", "enam:7", etc.
-     * Evita que la misma numeración en distintos bancos colisione en Dominio.
+     * Lee el banco DESDE la pregunta (`_sourceId`), no desde `currentSource`.
+     * Esto permite que en modo "Todos los bancos" cada pregunta siga
+     * identificándose correctamente aunque haya números repetidos entre bancos.
      */
     function getPreguntaId(p) {
-        const srcId = currentSource ? currentSource.id : 'default';
+        const srcId = p._sourceId || (currentSource ? currentSource.id : 'default');
         return `${srcId}:${p.numero}`;
     }
 
@@ -536,6 +541,13 @@
     function populateSourceFilter() {
         if (!filterSource) return;
         filterSource.innerHTML = '';
+
+        // Opción "Todos" (primera, como en los demás filtros)
+        const allOpt = document.createElement('option');
+        allOpt.value = SOURCE_ALL_ID;
+        allOpt.textContent = 'Todos';
+        filterSource.appendChild(allOpt);
+
         dataSources.forEach(src => {
             const opt = document.createElement('option');
             opt.value = src.id;
@@ -556,8 +568,14 @@
                 }
                 dataSources = list;
                 populateSourceFilter();
+
                 const savedId = getSavedSourceId();
-                const initial = dataSources.find(s => s.id === savedId) || dataSources[0];
+                let initial;
+                if (savedId === SOURCE_ALL_ID) {
+                    initial = { id: SOURCE_ALL_ID, name: 'Todos', file: null };
+                } else {
+                    initial = dataSources.find(s => s.id === savedId) || dataSources[0];
+                }
                 return loadSource(initial);
             })
             .catch(err => {
@@ -575,18 +593,7 @@
             });
     }
 
-    function loadSource(source) {
-        if (!source || !source.file) return Promise.resolve();
-
-        // Cerrar modales previos y detener cualquier timer
-        hideResumeModal();
-        stopSimTimer();
-
-        currentSource = source;
-        saveSourceId(source.id);
-        if (filterSource) filterSource.value = source.id;
-
-        // Reset completo del estado (evita arrastrar datos del banco anterior)
+    function resetSessionState() {
         preguntas = [];
         filteredIds = [];
         sessionIds = [];
@@ -600,6 +607,27 @@
             startTime: null, endTime: null, timeLimit: null,
             remaining: null, elapsedPrevios: 0, timeUp: false, warnLevel: 0
         };
+    }
+
+    function loadSource(source) {
+        if (!source) return Promise.resolve();
+
+        // Modo "Todos"
+        if (source.id === SOURCE_ALL_ID) {
+            return loadAllSources();
+        }
+
+        if (!source.file) return Promise.resolve();
+
+        // Cerrar modales previos y detener cualquier timer
+        hideResumeModal();
+        stopSimTimer();
+
+        currentSource = source;
+        saveSourceId(source.id);
+        if (filterSource) filterSource.value = source.id;
+
+        resetSessionState();
 
         return fetch(source.file)
             .then(r => {
@@ -607,7 +635,9 @@
                 return r.json();
             })
             .then(data => {
-                preguntas = data;
+                // Etiquetar cada pregunta con su banco de origen
+                preguntas = data.map(p => ({ ...p, _sourceId: source.id }));
+
                 console.log(`✅ ${preguntas.length} preguntas cargadas desde ${source.file}`);
                 totalSpan.textContent = preguntas.length;
                 populateAllFilters();
@@ -628,6 +658,59 @@
                     </div>
                 `;
             });
+    }
+
+    function loadAllSources() {
+        hideResumeModal();
+        stopSimTimer();
+
+        currentSource = { id: SOURCE_ALL_ID, name: 'Todos los bancos', file: null };
+        saveSourceId(SOURCE_ALL_ID);
+        if (filterSource) filterSource.value = SOURCE_ALL_ID;
+
+        resetSessionState();
+
+        // Cargar todos los bancos en paralelo sin abortar si uno falla
+        const tasks = dataSources.map(src =>
+            fetch(src.file)
+                .then(r => {
+                    if (!r.ok) throw new Error(`No se pudo cargar ${src.file}`);
+                    return r.json();
+                })
+                .then(data => ({ src, data, ok: true }))
+                .catch(err => ({ src, error: err, ok: false }))
+        );
+
+        return Promise.all(tasks).then(results => {
+            const exitosos = [];
+            const fallidos = [];
+
+            results.forEach(res => {
+                if (res.ok && Array.isArray(res.data)) {
+                    const tagged = res.data.map(p => ({ ...p, _sourceId: res.src.id }));
+                    preguntas = preguntas.concat(tagged);
+                    exitosos.push({ name: res.src.name, count: tagged.length });
+                } else {
+                    fallidos.push(res.src.name);
+                    console.warn(`[Multi-banco] Falló ${res.src.name}:`, res.error);
+                }
+            });
+
+            console.log(`✅ ${preguntas.length} preguntas cargadas de ${exitosos.length} banco(s).`);
+            if (fallidos.length) {
+                console.warn(`⚠️ Bancos con error: ${fallidos.join(', ')}`);
+            }
+
+            totalSpan.textContent = preguntas.length;
+            populateAllFilters();
+            updatePerfilResumen();
+            applyFilters();
+
+            const saved = loadSavedSimulacroState();
+            if (saved) {
+                showResumeModal(saved);
+            }
+        });
     }
 
     // ============================================================
@@ -812,8 +895,15 @@
             perfilResumen.textContent = '';
             return;
         }
-        const srcId = currentSource ? currentSource.id : 'default';
-        const r = window.Dominio.getResumen(srcId + ':');
+
+        // En modo "Todos los bancos" → resumen global (sin prefijo).
+        // En banco individual → sólo ese banco (prefijo "residencia:").
+        let r;
+        if (!currentSource || currentSource.id === SOURCE_ALL_ID) {
+            r = window.Dominio.getResumen();
+        } else {
+            r = window.Dominio.getResumen(currentSource.id + ':');
+        }
 
         if (r.total === 0) {
             perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos para este banco. Empieza a practicar para construir tu perfil.</span>`;
@@ -1210,8 +1300,12 @@
     }
 
     function buildQuestionHeader(p, mostrarTags = true, idx = null) {
+        // En modo "Todos los bancos" mostramos un tag extra con el banco de origen
+        const mostrarTagBanco = mostrarTags && currentSource && currentSource.id === SOURCE_ALL_ID && p._sourceId;
+
         const tagsHtml = mostrarTags ? `
             <div class="question-tags">
+                ${mostrarTagBanco ? `<span class="tag tag-source">${p._sourceId}</span>` : ''}
                 <span class="tag">${p.area}</span>
                 <span class="tag">${p.especialidad}</span>
                 <span class="tag">${p.tema}</span>
@@ -1958,7 +2052,15 @@
     // ---- Banco de preguntas ----
     if (filterSource) {
         filterSource.addEventListener('change', () => {
-            const nuevo = dataSources.find(s => s.id === filterSource.value);
+            const val = filterSource.value;
+
+            if (val === SOURCE_ALL_ID) {
+                if (currentSource && currentSource.id === SOURCE_ALL_ID) return;
+                loadSource({ id: SOURCE_ALL_ID, name: 'Todos', file: null });
+                return;
+            }
+
+            const nuevo = dataSources.find(s => s.id === val);
             if (!nuevo || nuevo === currentSource) return;
             loadSource(nuevo);
         });

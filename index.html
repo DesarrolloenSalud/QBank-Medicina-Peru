@@ -77,6 +77,14 @@
                         <div class="mode-divider"></div>
 
                         <div class="filter-grid">
+                            <!-- NUEVO: Banco de preguntas como filtro adicional -->
+                            <div class="filter-group">
+                                <label for="filterSource">Banco</label>
+                                <select id="filterSource">
+                                    <option value="">Cargando…</option>
+                                </select>
+                            </div>
+
                             <div class="filter-group">
                                 <label>Área</label>
                                 <select id="filterArea"><option value="all">Todas</option></select>
@@ -255,7 +263,6 @@
 
         <!-- PANTALLA 2: CUESTIONARIO -->
         <section id="screenQuiz" class="screen">
-            <!-- Barra única: Volver + Mode/Pos + Stats + Timer + Acciones -->
             <div class="quiz-toolbar">
                 <button id="backToSetup" class="btn-back btn-back-compact" title="Volver (⌫)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -336,7 +343,6 @@
 
             <div id="questionContainer"></div>
 
-            <!-- NAVEGACIÓN (Anterior / Siguiente) — ahora ARRIBA -->
             <div id="navigation">
                 <button id="prevQuestion" class="nav-btn">
                     <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -357,7 +363,6 @@
                 </button>
             </div>
 
-            <!-- BARRA DE ACCIONES (Finalizar / Continuar) — ahora ABAJO -->
             <div id="bottomActionBar" class="bottom-action-bar" style="display:none;">
                 <div id="continueInfoWrap" class="continue-info-wrap" style="display:none;">
                     <span id="continueInfoText">Has llegado al final de este bloque.</span>

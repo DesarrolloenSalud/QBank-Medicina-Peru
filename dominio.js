@@ -15,13 +15,17 @@
 //   - ultimaVez: timestamp
 //   - estado:   "dominada" | "dudosa" | "fallada"
 //
+// Los IDs ahora incluyen el prefijo del banco ("residencia:1", "enam:42").
+// Esto permite que el mismo número de pregunta en distintos bancos NO
+// se mezcle en el perfil de dominio.
+//
 // API pública (window.Dominio):
 //   Dominio.getEstado(id)                    → estado | null
 //   Dominio.getInfo(id)                      → { estado, aciertos, fallos, dudas, ultimaVez } | null
 //   Dominio.registrarIntento(id, acierto, dudaba) → void
-//   Dominio.marcarDudosa(id)                 → void  (usado por "Ya la entiendo" o "Aún dudo")
+//   Dominio.marcarDudosa(id)                 → void
 //   Dominio.getIdsPorEstado(estado)          → number[]
-//   Dominio.getResumen()                     → { dominadas, dudosas, falladas, total }
+//   Dominio.getResumen(prefix?)              → { dominadas, dudosas, falladas, total }
 //   Dominio.getPerfil()                      → objeto crudo para el setup
 //   Dominio.resetear()                       → void
 // ============================================================
@@ -35,7 +39,6 @@
     // ------------------------------------------------------------
     // ESTADO INTERNO
     // ------------------------------------------------------------
-    // estructura: { [preguntaId]: { estado, aciertos, fallos, dudas, ultimaVez } }
     let cache = null;
     let dirty = false;
 
@@ -90,24 +93,7 @@
     // HELPERS
     // ------------------------------------------------------------
     function clave(id) {
-        // Acepta números o strings; normaliza a string.
         return String(id);
-    }
-
-    function asegurarEntrada(id) {
-        const k = clave(id);
-        const db = cargar();
-        if (!db[k]) {
-            db[k] = {
-                estado: 'fallada',   // por defecto, sin datos se considera fallada hasta primer acierto
-                aciertos: 0,
-                fallos: 0,
-                dudas: 0,
-                ultimaVez: 0,
-                sinDatos: true       // se limpia al primer registro real
-            };
-        }
-        return db[k];
     }
 
     // ------------------------------------------------------------
@@ -115,7 +101,6 @@
     // ------------------------------------------------------------
     const Dominio = {
 
-        /** Devuelve el estado ("dominada" | "dudosa" | "fallada") o null si no hay datos. */
         getEstado(id) {
             const k = clave(id);
             const db = cargar();
@@ -124,7 +109,6 @@
             return e.estado || null;
         },
 
-        /** Devuelve la info completa o null si no hay datos. */
         getInfo(id) {
             const k = clave(id);
             const db = cargar();
@@ -133,12 +117,6 @@
             return { ...e };
         },
 
-        /**
-         * Registra un intento en la pregunta.
-         * @param {number|string} id
-         * @param {boolean} acierto
-         * @param {boolean} dudaba  - true si el usuario la marcó con flag
-         */
         registrarIntento(id, acierto, dudaba) {
             const k = clave(id);
             const db = cargar();
@@ -149,7 +127,6 @@
 
             if (acierto) {
                 e.aciertos = (e.aciertos || 0) + 1;
-                // D2=a: si dudaba al responder → dudosa. Si no → dominada.
                 e.estado = dudaba ? 'dudosa' : 'dominada';
             } else {
                 e.fallos = (e.fallos || 0) + 1;
@@ -166,10 +143,6 @@
             guardar();
         },
 
-        /**
-         * Marca la pregunta como "dudosa" (usado por P7 en revisión).
-         * No suma aciertos ni fallos; suma una duda si la pregunta ya era fallada.
-         */
         marcarDudosa(id) {
             const k = clave(id);
             const db = cargar();
@@ -186,7 +159,6 @@
             guardar();
         },
 
-        /** Devuelve los IDs (como números si el JSON los tiene como números) con el estado dado. */
         getIdsPorEstado(estado) {
             const db = cargar();
             const out = [];
@@ -195,15 +167,19 @@
                 if (!e || e.sinDatos) continue;
                 if (e.estado === estado) out.push(k);
             }
-            // Los IDs se guardan como string; devolvemos number si es numérico
-            return out.map(k => /^\d+$/.test(k) ? parseInt(k, 10) : k);
+            return out;
         },
 
-        /** Devuelve un resumen de los 3 estados. */
-        getResumen() {
+        /**
+         * Resumen de los 3 estados.
+         * @param {string} [prefix] Filtra sólo las claves que comienzan con ese prefijo.
+         *                          Ej: "residencia:" para contar sólo ese banco.
+         */
+        getResumen(prefix) {
             const db = cargar();
             let dominadas = 0, dudosas = 0, falladas = 0, total = 0;
             for (const k of Object.keys(db)) {
+                if (prefix && !k.startsWith(prefix)) continue;
                 const e = db[k];
                 if (!e || e.sinDatos) continue;
                 total++;
@@ -214,12 +190,10 @@
             return { dominadas, dudosas, falladas, total };
         },
 
-        /** Devuelve el objeto crudo (para uso interno o debug). */
         getPerfil() {
             return { ...cargar() };
         },
 
-        /** Borra todo el perfil. */
         resetear() {
             cache = {};
             dirty = true;
@@ -227,15 +201,12 @@
         }
     };
 
-    // Exponer globalmente
     window.Dominio = Dominio;
 
-    // Guardar automáticamente al cerrar la pestaña
     window.addEventListener('beforeunload', () => {
         guardar();
     });
 
-    // Log inicial para confirmar carga
     const r = Dominio.getResumen();
     console.log(`[Dominio] Cargado. Dominadas: ${r.dominadas}, Dudosas: ${r.dudosas}, Falladas: ${r.falladas} (total ${r.total}).`);
 })();

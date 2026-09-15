@@ -1,0 +1,26 @@
+[
+  {
+    "id": "residencia",
+    "name": "Residencia",
+    "description": "Banco de preguntas CONAREME para residencia médica.",
+    "file": "data/residencia.json"
+  },
+  {
+    "id": "enam",
+    "name": "ENAM",
+    "description": "Examen Nacional de Medicina.",
+    "file": "data/enam.json"
+  },
+  {
+    "id": "essalud",
+    "name": "EsSalud",
+    "description": "Convocatoria EsSalud.",
+    "file": "data/essalud.json"
+  },
+  {
+    "id": "pregrado",
+    "name": "Pregrado",
+    "description": "Banco de preguntas Pregrado.",
+    "file": "data/pregrado.json"
+  }
+]

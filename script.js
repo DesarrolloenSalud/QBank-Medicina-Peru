@@ -1,12 +1,12 @@
 // script.js
 // ============================================================
-// QBank Medicina Perú - Lógica principal
+// QBank Medicina Perú - Lógica principal (multi-banco)
 // ============================================================
 
 (function () {
     'use strict';
 
-    const DATA_URL = 'data/residencia.json';
+    const SOURCES_URL = 'data/sources.json';
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 
@@ -14,7 +14,8 @@
     const WARN_THRESHOLD_2 = 5 * 60;
     const WARN_THRESHOLD_3 = 60;
 
-    const STORAGE_KEY = 'qbank_simulacro_v1';
+    const STORAGE_KEY_SIMULACRO = 'qbank_simulacro_v1';
+    const STORAGE_KEY_SOURCE = 'qbank_source_v1';
     const STORAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
     // ------------------------------------------------------------
@@ -71,6 +72,10 @@
 
     let pendingResumeData = null;
 
+    // --- Multi-banco ---
+    let dataSources = [];      // manifiesto completo de data/sources.json
+    let currentSource = null;  // { id, name, description, file }
+
     // ============================================================
     // 3. REFERENCIAS AL DOM
     // ============================================================
@@ -101,6 +106,7 @@
     const timeBlock = document.getElementById('timeBlock');
     const customTimeInput = document.getElementById('customTime');
 
+    const filterSource = document.getElementById('filterSource');
     const filterArea = document.getElementById('filterArea');
     const filterEspecialidad = document.getElementById('filterEspecialidad');
     const filterTema = document.getElementById('filterTema');
@@ -222,8 +228,13 @@
         return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
     }
 
+    /**
+     * ID compuesto: "residencia:42", "enam:7", etc.
+     * Evita que la misma numeración en distintos bancos colisione en Dominio.
+     */
     function getPreguntaId(p) {
-        return String(p.numero);
+        const srcId = currentSource ? currentSource.id : 'default';
+        return `${srcId}:${p.numero}`;
     }
 
     function getCantidadResolver() {
@@ -273,8 +284,13 @@
     }
 
     // ============================================================
-    // 5. PERSISTENCIA
+    // 5. PERSISTENCIA (namespaced por banco)
     // ============================================================
+    function getSimulacroStorageKey() {
+        const id = currentSource ? currentSource.id : 'default';
+        return `${STORAGE_KEY_SIMULACRO}_${id}`;
+    }
+
     function saveSimulacroState() {
         if (currentMode !== MODE_SIMULACRO) return;
         if (simulacroState.revealed) return;
@@ -305,7 +321,7 @@
                     estado: filterEstado.value
                 }
             };
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
+            localStorage.setItem(getSimulacroStorageKey(), JSON.stringify(snapshot));
         } catch (err) {
             console.warn('No se pudo guardar el simulacro:', err);
         }
@@ -314,7 +330,7 @@
     function loadSavedSimulacroState() {
         let raw;
         try {
-            raw = localStorage.getItem(STORAGE_KEY);
+            raw = localStorage.getItem(getSimulacroStorageKey());
         } catch (err) {
             return null;
         }
@@ -353,7 +369,7 @@
 
     function clearSavedSimulacroState() {
         try {
-            localStorage.removeItem(STORAGE_KEY);
+            localStorage.removeItem(getSimulacroStorageKey());
         } catch (err) { /* noop */ }
     }
 
@@ -505,17 +521,94 @@
     }
 
     // ============================================================
-    // 6. CARGA DE DATOS
+    // 6. CARGA DE DATOS (multi-banco)
     // ============================================================
-    function loadData() {
-        fetch(DATA_URL)
-            .then(response => {
-                if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
-                return response.json();
+    function getSavedSourceId() {
+        try { return localStorage.getItem(STORAGE_KEY_SOURCE); }
+        catch (err) { return null; }
+    }
+
+    function saveSourceId(id) {
+        try { localStorage.setItem(STORAGE_KEY_SOURCE, id); }
+        catch (err) { /* noop */ }
+    }
+
+    function populateSourceFilter() {
+        if (!filterSource) return;
+        filterSource.innerHTML = '';
+        dataSources.forEach(src => {
+            const opt = document.createElement('option');
+            opt.value = src.id;
+            opt.textContent = src.name;
+            filterSource.appendChild(opt);
+        });
+    }
+
+    function loadSourcesManifest() {
+        fetch(SOURCES_URL)
+            .then(r => {
+                if (!r.ok) throw new Error(`No se pudo cargar ${SOURCES_URL}`);
+                return r.json();
+            })
+            .then(list => {
+                if (!Array.isArray(list) || list.length === 0) {
+                    throw new Error('El manifiesto de fuentes está vacío.');
+                }
+                dataSources = list;
+                populateSourceFilter();
+                const savedId = getSavedSourceId();
+                const initial = dataSources.find(s => s.id === savedId) || dataSources[0];
+                return loadSource(initial);
+            })
+            .catch(err => {
+                console.error('Error al cargar el manifiesto:', err);
+                if (filterSource) {
+                    filterSource.innerHTML = '<option value="">Error de carga</option>';
+                }
+                container.innerHTML = `
+                    <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
+                        <h3 style="color:#991b1b;">Error al cargar los bancos</h3>
+                        <p style="margin-top:8px;">Verifica que exista <strong>${SOURCES_URL}</strong> y que sea un JSON válido.</p>
+                        <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
+                    </div>
+                `;
+            });
+    }
+
+    function loadSource(source) {
+        if (!source || !source.file) return Promise.resolve();
+
+        // Cerrar modales previos y detener cualquier timer
+        hideResumeModal();
+        stopSimTimer();
+
+        currentSource = source;
+        saveSourceId(source.id);
+        if (filterSource) filterSource.value = source.id;
+
+        // Reset completo del estado (evita arrastrar datos del banco anterior)
+        preguntas = [];
+        filteredIds = [];
+        sessionIds = [];
+        currentIndex = 0;
+        practiceAnswers = {};
+        practiceFeedback = {};
+        practiceRevealed = {};
+        usedSessionIds = new Set();
+        simulacroState = {
+            answers: {}, flagged: new Set(), revealed: false,
+            startTime: null, endTime: null, timeLimit: null,
+            remaining: null, elapsedPrevios: 0, timeUp: false, warnLevel: 0
+        };
+
+        return fetch(source.file)
+            .then(r => {
+                if (!r.ok) throw new Error(`No se pudo cargar ${source.file}`);
+                return r.json();
             })
             .then(data => {
                 preguntas = data;
-                console.log(`✅ ${preguntas.length} preguntas cargadas desde ${DATA_URL}`);
+                console.log(`✅ ${preguntas.length} preguntas cargadas desde ${source.file}`);
                 totalSpan.textContent = preguntas.length;
                 populateAllFilters();
                 updatePerfilResumen();
@@ -530,8 +623,7 @@
                 console.error('Error al cargar los datos:', err);
                 container.innerHTML = `
                     <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
-                        <h3 style="color:#991b1b;">Error al cargar los datos</h3>
-                        <p style="margin-top:8px;">Verifica que el archivo <strong>${DATA_URL}</strong> exista.</p>
+                        <h3 style="color:#991b1b;">Error al cargar ${source.file}</h3>
                         <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
                     </div>
                 `;
@@ -695,6 +787,7 @@
 
     function buildFilterLabel() {
         const activos = [];
+        if (currentSource && currentSource.name) activos.push(currentSource.name);
         if (filterArea.value !== 'all') activos.push(filterArea.value);
         if (filterEspecialidad.value !== 'all') activos.push(filterEspecialidad.value);
         if (filterTema.value !== 'all') activos.push(filterTema.value);
@@ -719,9 +812,11 @@
             perfilResumen.textContent = '';
             return;
         }
-        const r = window.Dominio.getResumen();
+        const srcId = currentSource ? currentSource.id : 'default';
+        const r = window.Dominio.getResumen(srcId + ':');
+
         if (r.total === 0) {
-            perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos. Empieza a practicar para construir tu perfil.</span>`;
+            perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos para este banco. Empieza a practicar para construir tu perfil.</span>`;
             return;
         }
         perfilResumen.innerHTML = `
@@ -790,7 +885,6 @@
     // 9. NAVEGACIÓN ENTRE PANTALLAS
     // ============================================================
     function showScreen(name) {
-        // Actualizar clase del body (usada por CSS para ocultar header en quiz)
         body.classList.remove('view-setup', 'view-quiz', 'view-results', 'view-review');
         body.classList.add('view-' + name);
 
@@ -1115,14 +1209,6 @@
         updateNavigation();
     }
 
-    /**
-     * Construye el encabezado de la pregunta.
-     * @param {Object} p - Pregunta
-     * @param {boolean} mostrarTags - Si true, muestra área/especialidad/tema/dificultad/estado.
-     *                                Si false (simulacro), solo muestra el número.
-     * @param {number|string} idx - Índice interno de la pregunta en `preguntas[]`
-     *                              (necesario para el botón de copiar).
-     */
     function buildQuestionHeader(p, mostrarTags = true, idx = null) {
         const tagsHtml = mostrarTags ? `
             <div class="question-tags">
@@ -1353,7 +1439,6 @@
             return navigator.clipboard.writeText(texto);
         }
 
-        // Fallback para contextos sin Clipboard API (http, iframes, etc.)
         return new Promise((resolve, reject) => {
             try {
                 const ta = document.createElement('textarea');
@@ -1384,7 +1469,6 @@
             .then(() => {
                 if (btn) {
                     btn.classList.add('copied');
-                    // Evitar acumulación de timeouts si se hace clic varias veces rápido
                     if (btn._copyTimeout) clearTimeout(btn._copyTimeout);
                     btn._copyTimeout = setTimeout(() => {
                         btn.classList.remove('copied');
@@ -1871,6 +1955,15 @@
         });
     });
 
+    // ---- Banco de preguntas ----
+    if (filterSource) {
+        filterSource.addEventListener('change', () => {
+            const nuevo = dataSources.find(s => s.id === filterSource.value);
+            if (!nuevo || nuevo === currentSource) return;
+            loadSource(nuevo);
+        });
+    }
+
     filterArea.addEventListener('change', () => {
         updateDependentFilters();
         applyFilters();
@@ -2192,6 +2285,6 @@
     // ============================================================
     // 20. ARRANQUE
     // ============================================================
-    loadData();
+    loadSourcesManifest();
 
 })();

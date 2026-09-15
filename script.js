@@ -3,6 +3,44 @@
 // QBank Medicina Perú - Lógica principal (multi-banco)
 // ============================================================
 
+// ============================================================
+// TEMA CLARO / OSCURO — control del botón flotante
+// ============================================================
+(function () {
+    'use strict';
+
+    const STORAGE_KEY = 'qbank_theme';
+    const root = document.documentElement;
+
+    function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        const meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'dark' ? '#0f172a' : '#0e4a6e');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('themeToggle');
+        if (!btn) return;
+
+        btn.addEventListener('click', () => {
+            const current = root.getAttribute('data-theme') || 'light';
+            const next = current === 'dark' ? 'light' : 'dark';
+            applyTheme(next);
+            try { localStorage.setItem(STORAGE_KEY, next); } catch (e) { /* noop */ }
+        });
+    });
+
+    // Si el usuario nunca eligió manualmente, seguir la preferencia del SO en vivo
+    try {
+        const mq = window.matchMedia('(prefers-color-scheme: dark)');
+        mq.addEventListener('change', (e) => {
+            let saved = null;
+            try { saved = localStorage.getItem(STORAGE_KEY); } catch (err) { /* noop */ }
+            if (!saved) applyTheme(e.matches ? 'dark' : 'light');
+        });
+    } catch (e) { /* noop */ }
+})();
+
 (function () {
     'use strict';
 

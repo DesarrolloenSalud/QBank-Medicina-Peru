@@ -42,6 +42,20 @@
     --warning-soft: #fffbeb;
     --warning-soft-2: #fef3c7;
 
+    /* NUEVO: naranja intermedio entre warning y danger */
+    --serious: #ea580c;
+    --serious-hover: #c2410c;
+    --serious-soft: #fff7ed;
+    --serious-text: #9a3412;
+
+    /* NUEVO: morado imperial para el nivel "excellent" */
+    --excellent: #7c3aed;
+    --excellent-hover: #6d28d9;
+    --excellent-soft: #ede9fe;
+    --excellent-text: #5b21b6;
+    --excellent-ring: rgba(124, 58, 237, 0.22);
+    --gradient-excellent: linear-gradient(135deg, #7c3aed 0%, #a855f7 55%, #c026d3 100%);
+
     --surface: #ffffff;
     --surface-2: #f7f9fb;
     --surface-3: #eef2f6;
@@ -158,7 +172,7 @@ select:focus-visible {
 .view-quiz #app,
 .view-review #app {
     padding: var(--space-3) var(--space-5);
-    min-height: auto;             /* ← ya no forzamos 100vh */
+    min-height: auto;
 }
 
 .view-quiz #app::before,
@@ -168,12 +182,12 @@ select:focus-visible {
 
 .view-quiz .screen,
 .view-review .screen {
-    flex: 0 0 auto;               /* ← no estirar el screen */
+    flex: 0 0 auto;
 }
 
 #screenQuiz,
 #screenReview {
-    flex: 0 0 auto;               /* refuerzo explícito */
+    flex: 0 0 auto;
 }
 
 header {
@@ -1022,7 +1036,6 @@ header {
 
 /* ============================================================
    CONTENEDOR DE PREGUNTA
-   Sin flex:1 → la tarjeta ocupa solo su altura natural.
    ============================================================ */
 #questionContainer {
     display: flex;
@@ -1286,8 +1299,6 @@ header {
 
 /* ============================================================
    NAVEGACIÓN + BARRA DE ACCIONES
-   Flujo normal: sin margin-top:auto. Ahora el hueco desaparece
-   porque #app y .screen ya no fuerzan altura de viewport.
    ============================================================ */
 #navigation,
 #reviewNavigation {
@@ -1818,7 +1829,19 @@ header {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    transition: background 0.6s ease;
+    transition: background 0.6s ease, box-shadow 0.4s ease;
+}
+
+/* NUEVO: halo solo para el nivel "excellent" (morado imperial) */
+.score-circle.circle-excellent {
+    box-shadow: 0 0 0 6px var(--excellent-ring);
+}
+
+.score-circle.circle-pass,
+.score-circle.circle-near,
+.score-circle.circle-risk,
+.score-circle.circle-fail {
+    box-shadow: none;
 }
 
 .score-circle-inner {
@@ -1878,6 +1901,7 @@ header {
 .score-detail-dot.blank { background: var(--text-tertiary); }
 .score-detail-dot.time { background: var(--accent); }
 .score-detail-dot.avg { background: var(--warning); }
+.score-detail-dot.flagged { background: var(--warning); }
 
 .score-detail-label { color: var(--text-secondary); font-weight: 500; flex: 1; }
 
@@ -2360,6 +2384,20 @@ header {
     --warning-soft: #3b2a08;
     --warning-soft-2: #78350f;
 
+    /* NUEVO: naranja intermedio (dark) */
+    --serious: #fb923c;
+    --serious-hover: #fdba74;
+    --serious-soft: #3b1d08;
+    --serious-text: #fdba74;
+
+    /* NUEVO: morado imperial (dark) */
+    --excellent: #a78bfa;
+    --excellent-hover: #c4b5fd;
+    --excellent-soft: #2e1065;
+    --excellent-text: #c4b5fd;
+    --excellent-ring: rgba(167, 139, 250, 0.30);
+    --gradient-excellent: linear-gradient(135deg, #a78bfa 0%, #c084fc 55%, #e879f9 100%);
+
     --surface: #0f172a;
     --surface-2: #0a1120;
     --surface-3: #1e293b;
@@ -2498,4 +2536,182 @@ header { padding-right: 56px; }
     .view-review .review-topbar {
         padding-right: 48px;
     }
+}
+
+/* ============================================================
+   RESULTADOS — Hero + Banner de veredicto (5 niveles)
+   ============================================================ */
+.results-hero-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+
+.results-hero-icon svg {
+    width: 52px;
+    height: 52px;
+    display: block;
+    stroke: currentColor;
+    flex-shrink: 0;
+}
+
+.results-verdict {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding: var(--space-4) var(--space-5);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    border-left-width: 4px;
+    background: var(--surface-2);
+    transition: var(--transition);
+}
+
+/* --- Excellent (morado imperial) --- */
+.results-verdict.verdict-excellent {
+    background: linear-gradient(135deg, var(--excellent-soft) 0%, var(--surface) 100%);
+    border-color: rgba(124, 58, 237, 0.30);
+    border-left-color: var(--excellent);
+}
+.verdict-excellent .verdict-icon { background: var(--gradient-excellent); }
+.verdict-excellent .verdict-title { color: var(--excellent-text); }
+.verdict-excellent .verdict-msg   { color: var(--excellent-hover); }
+
+/* --- Pass (verde) --- */
+.results-verdict.verdict-pass {
+    background: linear-gradient(135deg, var(--success-soft) 0%, var(--surface) 100%);
+    border-color: #a7f3d0;
+    border-left-color: var(--success);
+}
+.verdict-pass .verdict-icon { background: var(--success); }
+.verdict-pass .verdict-title { color: #065f46; }
+.verdict-pass .verdict-msg   { color: #047857; }
+
+/* --- Near (ámbar) --- */
+.results-verdict.verdict-near {
+    background: linear-gradient(135deg, var(--warning-soft) 0%, var(--surface) 100%);
+    border-color: #fde68a;
+    border-left-color: var(--warning);
+}
+.verdict-near .verdict-icon { background: var(--warning); }
+.verdict-near .verdict-title { color: #92400e; }
+.verdict-near .verdict-msg   { color: #b45309; }
+
+/* --- Risk (naranja, --serious) --- */
+.results-verdict.verdict-risk {
+    background: linear-gradient(135deg, var(--serious-soft) 0%, var(--surface) 100%);
+    border-color: #fed7aa;
+    border-left-color: var(--serious);
+}
+.verdict-risk .verdict-icon { background: var(--serious); }
+.verdict-risk .verdict-title { color: var(--serious-text); }
+.verdict-risk .verdict-msg   { color: var(--serious-hover); }
+
+/* --- Fail (rojo) --- */
+.results-verdict.verdict-fail {
+    background: linear-gradient(135deg, var(--danger-soft) 0%, var(--surface) 100%);
+    border-color: #fecaca;
+    border-left-color: var(--danger);
+}
+.verdict-fail .verdict-icon { background: var(--danger); }
+.verdict-fail .verdict-title { color: #991b1b; }
+.verdict-fail .verdict-msg   { color: #b91c1c; }
+
+/* --- Común a todos los niveles --- */
+.verdict-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-inverse);
+}
+
+.verdict-icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: var(--text-inverse);
+    flex-shrink: 0;
+}
+
+.verdict-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    flex: 1;
+}
+
+.verdict-title {
+    font-size: 14.5px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+}
+
+.verdict-msg {
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+
+/* Punto de "marcadas" en el score-details */
+.score-detail-dot.flagged { background: var(--warning); }
+
+/* ============================================================
+   TEMA OSCURO — Veredicto (5 niveles)
+   ============================================================ */
+[data-theme="dark"] .results-verdict.verdict-excellent {
+    border-color: #4c1d95;
+    border-left-color: var(--excellent);
+}
+[data-theme="dark"] .results-verdict.verdict-pass {
+    border-color: #064e3b;
+    border-left-color: var(--success);
+}
+[data-theme="dark"] .results-verdict.verdict-near {
+    border-color: #78350f;
+    border-left-color: var(--warning);
+}
+[data-theme="dark"] .results-verdict.verdict-risk {
+    border-color: #7c2d12;
+    border-left-color: var(--serious);
+}
+[data-theme="dark"] .results-verdict.verdict-fail {
+    border-color: #7f1d1d;
+    border-left-color: var(--danger);
+}
+
+[data-theme="dark"] .verdict-excellent .verdict-title { color: #c4b5fd; }
+[data-theme="dark"] .verdict-excellent .verdict-msg   { color: #a78bfa; }
+
+[data-theme="dark"] .verdict-pass .verdict-title { color: #6ee7b7; }
+[data-theme="dark"] .verdict-pass .verdict-msg   { color: #34d399; }
+
+[data-theme="dark"] .verdict-near .verdict-title { color: #fcd34d; }
+[data-theme="dark"] .verdict-near .verdict-msg   { color: #fbbf24; }
+
+[data-theme="dark"] .verdict-risk .verdict-title { color: #fdba74; }
+[data-theme="dark"] .verdict-risk .verdict-msg   { color: #fb923c; }
+
+[data-theme="dark"] .verdict-fail .verdict-title { color: #fca5a5; }
+[data-theme="dark"] .verdict-fail .verdict-msg   { color: #f87171; }
+
+[data-theme="dark"] .score-circle.circle-excellent {
+    box-shadow: 0 0 0 6px var(--excellent-ring);
+}
+
+/* Responsive del veredicto */
+@media (max-width: 480px) {
+    .results-verdict {
+        padding: var(--space-3) var(--space-4);
+        gap: var(--space-3);
+    }
+    .verdict-icon { width: 38px; height: 38px; }
+    .verdict-icon svg { width: 20px; height: 20px; }
+    .verdict-title { font-size: 14px; }
+    .verdict-msg { font-size: 12px; }
+    .results-hero-icon svg { width: 44px; height: 44px; }
 }

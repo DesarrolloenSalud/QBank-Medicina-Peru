@@ -112,7 +112,6 @@
                         <div class="mode-divider"></div>
 
                         <div class="filter-grid">
-                            <!-- NUEVO: Banco de preguntas como filtro adicional -->
                             <div class="filter-group">
                                 <label for="filterSource">Banco</label>
                                 <select id="filterSource">
@@ -425,9 +424,18 @@
         <section id="screenResults" class="screen">
             <div class="results-container">
                 <div class="results-hero">
-                    <div class="results-hero-icon" id="resultsHeroIcon">🎯</div>
+                    <div class="results-hero-icon" id="resultsHeroIcon" aria-hidden="true"></div>
                     <h2 id="resultsTitle">Simulacro finalizado</h2>
                     <p id="resultsSubtitle">Aquí tienes tu desempeño detallado.</p>
+                </div>
+
+                <!-- NUEVO: Banner de veredicto (Aprobado / En riesgo / A mejorar) -->
+                <div id="resultsVerdict" class="results-verdict" style="display:none;" role="status" aria-live="polite">
+                    <div class="verdict-icon" id="verdictIcon" aria-hidden="true"></div>
+                    <div class="verdict-body">
+                        <strong class="verdict-title" id="verdictTitle"></strong>
+                        <span class="verdict-msg" id="verdictMessage"></span>
+                    </div>
                 </div>
 
                 <div class="results-score-card">
@@ -452,6 +460,12 @@
                             <span class="score-detail-dot blank"></span>
                             <span class="score-detail-label">En blanco</span>
                             <span class="score-detail-value" id="resultsBlank">0</span>
+                        </div>
+                        <!-- NUEVO: preguntas marcadas -->
+                        <div class="score-detail-line" id="resultsFlaggedLine">
+                            <span class="score-detail-dot flagged"></span>
+                            <span class="score-detail-label">Marcadas para revisar</span>
+                            <span class="score-detail-value" id="resultsFlagged">0</span>
                         </div>
                         <div class="score-detail-line">
                             <span class="score-detail-dot time"></span>
@@ -492,6 +506,17 @@
                     <div id="resultsByEspecialidad" class="results-bars"></div>
                 </div>
 
+                <!-- NUEVO: Desglose por dificultad -->
+                <div class="results-section">
+                    <div class="card-title-row compact">
+                        <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                        <h3 class="results-section-title">Desglose por dificultad</h3>
+                    </div>
+                    <div id="resultsByDificultad" class="results-bars"></div>
+                </div>
+
                 <div class="results-actions">
                     <button id="reviewAnswersBtn" class="btn-primary btn-large">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -499,6 +524,15 @@
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                         </svg>
                         Revisar respuestas
+                    </button>
+                    <!-- NUEVO: Practicar puntos débiles -->
+                    <button id="practiceWeakBtn" class="btn-secondary" style="display:none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        Practicar puntos débiles
                     </button>
                     <button id="backToSetupFromResults" class="btn-secondary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

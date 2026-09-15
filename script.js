@@ -30,7 +30,6 @@
         });
     });
 
-    // Si el usuario nunca eligió manualmente, seguir la preferencia del SO en vivo
     try {
         const mq = window.matchMedia('(prefers-color-scheme: dark)');
         mq.addEventListener('change', (e) => {
@@ -48,7 +47,6 @@
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 
-    // ID virtual para el modo "Todos los bancos"
     const SOURCE_ALL_ID = '__all__';
 
     const WARN_THRESHOLD_1 = 15 * 60;
@@ -71,7 +69,16 @@
         bulb: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg>',
         bookOpen: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
         refresh: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>',
-        copy: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>'
+        copy: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+
+        // ---- Iconos para la pantalla de resultados ----
+        trophy: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>',
+        // NUEVO: laurel (para excellent, junto al morado imperial)
+        laurel: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 22V10"/><path d="M12 12c-2 0-4-1-4-4 2 0 4 1 4 4z"/><path d="M12 12c2 0 4-1 4-4-2 0-4 1-4 4z"/><path d="M12 16c-2 0-4-1-4-4 2 0 4 1 4 4z"/><path d="M12 16c2 0 4-1 4-4-2 0-4 1-4 4z"/></svg>',
+        checkCircle: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
+        target: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
+        alertTriangle: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+        clock: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>'
     };
 
     // ============================================================
@@ -114,8 +121,8 @@
     let pendingResumeData = null;
 
     // --- Multi-banco ---
-    let dataSources = [];      // manifiesto completo de data/sources.json
-    let currentSource = null;  // { id, name, description, file } | { id: '__all__', ... }
+    let dataSources = [];
+    let currentSource = null;
 
     // ============================================================
     // 3. REFERENCIAS AL DOM
@@ -238,6 +245,16 @@
     const backToSetupFromResults = document.getElementById('backToSetupFromResults');
     const retrySimulacroBtn = document.getElementById('retrySimulacroBtn');
 
+    // --- refs para la pantalla de resultados ---
+    const resultsVerdict = document.getElementById('resultsVerdict');
+    const verdictIcon = document.getElementById('verdictIcon');
+    const verdictTitle = document.getElementById('verdictTitle');
+    const verdictMessage = document.getElementById('verdictMessage');
+    const resultsFlagged = document.getElementById('resultsFlagged');
+    const resultsFlaggedLine = document.getElementById('resultsFlaggedLine');
+    const resultsByDificultad = document.getElementById('resultsByDificultad');
+    const practiceWeakBtn = document.getElementById('practiceWeakBtn');
+
     const backToResultsBtn = document.getElementById('backToResults');
     const reviewPosition = document.getElementById('reviewPosition');
     const reviewContainer = document.getElementById('reviewContainer');
@@ -269,12 +286,6 @@
         return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
     }
 
-    /**
-     * ID compuesto: "residencia:42", "enam:7", etc.
-     * Lee el banco DESDE la pregunta (`_sourceId`), no desde `currentSource`.
-     * Esto permite que en modo "Todos los bancos" cada pregunta siga
-     * identificándose correctamente aunque haya números repetidos entre bancos.
-     */
     function getPreguntaId(p) {
         const srcId = p._sourceId || (currentSource ? currentSource.id : 'default');
         return `${srcId}:${p.numero}`;
@@ -580,7 +591,6 @@
         if (!filterSource) return;
         filterSource.innerHTML = '';
 
-        // Opción "Todos" (primera, como en los demás filtros)
         const allOpt = document.createElement('option');
         allOpt.value = SOURCE_ALL_ID;
         allOpt.textContent = 'Todos';
@@ -650,14 +660,12 @@
     function loadSource(source) {
         if (!source) return Promise.resolve();
 
-        // Modo "Todos"
         if (source.id === SOURCE_ALL_ID) {
             return loadAllSources();
         }
 
         if (!source.file) return Promise.resolve();
 
-        // Cerrar modales previos y detener cualquier timer
         hideResumeModal();
         stopSimTimer();
 
@@ -673,7 +681,6 @@
                 return r.json();
             })
             .then(data => {
-                // Etiquetar cada pregunta con su banco de origen
                 preguntas = data.map(p => ({ ...p, _sourceId: source.id }));
 
                 console.log(`✅ ${preguntas.length} preguntas cargadas desde ${source.file}`);
@@ -708,7 +715,6 @@
 
         resetSessionState();
 
-        // Cargar todos los bancos en paralelo sin abortar si uno falla
         const tasks = dataSources.map(src =>
             fetch(src.file)
                 .then(r => {
@@ -934,8 +940,6 @@
             return;
         }
 
-        // En modo "Todos los bancos" → resumen global (sin prefijo).
-        // En banco individual → sólo ese banco (prefijo "residencia:").
         let r;
         if (!currentSource || currentSource.id === SOURCE_ALL_ID) {
             r = window.Dominio.getResumen();
@@ -1338,7 +1342,6 @@
     }
 
     function buildQuestionHeader(p, mostrarTags = true, idx = null) {
-        // En modo "Todos los bancos" mostramos un tag extra con el banco de origen
         const mostrarTagBanco = mostrarTags && currentSource && currentSource.id === SOURCE_ALL_ID && p._sourceId;
 
         const tagsHtml = mostrarTags ? `
@@ -1736,47 +1739,158 @@
     // ============================================================
     // 15. PANTALLA DE RESULTADOS
     // ============================================================
+
+    /**
+     * Escala de 5 niveles.
+     *  - excellent ≥ 95 %  → morado imperial (rango excepcional)
+     *  - pass      85–94 % → verde (aprobado, mínimo alcanzado)
+     *  - near      70–84 % → ámbar (cerca del corte)
+     *  - risk      50–69 % → naranja (en riesgo)
+     *  - fail      < 50 %  → rojo (a mejorar)
+     */
+    function getVerdict(pct) {
+        if (pct >= 95) {
+            return {
+                icon: ICONS.laurel,
+                title: '¡Excelencia imperial!',
+                subtitle: 'Rango excepcional. Estás por encima del 95 %.',
+                level: 'excellent',
+                verdictTitle: 'Excelencia imperial',
+                verdictMsg: 'Rango excepcional. A este nivel compites por cualquier especialidad, incluidas las más demandadas.'
+            };
+        }
+        if (pct >= 85) {
+            return {
+                icon: ICONS.trophy,
+                title: '¡Buen desempeño!',
+                subtitle: 'Alcanzas el mínimo de aprobado. Refuerza lo débil.',
+                level: 'pass',
+                verdictTitle: 'Aprobado',
+                verdictMsg: 'Alcanzas el 85 % mínimo. Consolida tus áreas débiles para ganar margen.'
+            };
+        }
+        if (pct >= 70) {
+            return {
+                icon: ICONS.checkCircle,
+                title: 'Cerca del corte',
+                subtitle: 'Vas por buen camino, pero aún no alcanzas el 85 %.',
+                level: 'near',
+                verdictTitle: 'Cerca del corte',
+                verdictMsg: 'Cerca del 85 %, pero por debajo. Refuerza las áreas con menor puntaje.'
+            };
+        }
+        if (pct >= 50) {
+            return {
+                icon: ICONS.alertTriangle,
+                title: 'Desempeño regular',
+                subtitle: 'Hay margen de mejora. Revisa tus puntos débiles.',
+                level: 'risk',
+                verdictTitle: 'En riesgo',
+                verdictMsg: 'Bastante por debajo del mínimo. Prioriza las áreas con menos aciertos.'
+            };
+        }
+        return {
+            icon: ICONS.bookOpen,
+            title: 'A seguir estudiando',
+            subtitle: 'Concéntrate en las áreas con menor puntaje y vuelve a intentarlo.',
+            level: 'fail',
+            verdictTitle: 'A mejorar',
+            verdictMsg: 'Muy por debajo del mínimo. Trabaja bases antes de volver a simular.'
+        };
+    }
+
+    /**
+     * Detecta el área con menor % de acierto de la sesión actual.
+     */
+    function getWeakestArea() {
+        const grupos = {};
+        sessionIds.forEach(idx => {
+            const p = preguntas[idx];
+            const key = p.area || 'Sin categoría';
+            if (!grupos[key]) grupos[key] = { total: 0, correct: 0 };
+            grupos[key].total++;
+            if (simulacroState.answers[idx] === p.respuesta) grupos[key].correct++;
+        });
+
+        let peor = null;
+        let peorPct = 101;
+        for (const [nombre, g] of Object.entries(grupos)) {
+            const pct = g.total ? (g.correct / g.total) * 100 : 100;
+            if (pct < peorPct) {
+                peorPct = pct;
+                peor = nombre;
+            }
+        }
+        return { nombre: peor, pct: Math.round(peorPct) };
+    }
+
     function showResults() {
         const s = computeSimulacroStats();
         const total = s.total;
         const pct = total === 0 ? 0 : Math.round((s.correct / total) * 100);
 
-        let icon = '🎯';
-        let title = 'Simulacro finalizado';
-        let subtitle = 'Aquí tienes tu desempeño detallado.';
-        if (pct >= 85) {
-            icon = '🏆'; title = '¡Excelente desempeño!';
-            subtitle = 'Estás en un nivel sobresaliente. Sigue así.';
-        } else if (pct >= 70) {
-            icon = '🎯'; title = 'Buen desempeño';
-            subtitle = 'Vas por buen camino. Refuerza las áreas débiles.';
-        } else if (pct >= 50) {
-            icon = '📚'; title = 'Desempeño regular';
-            subtitle = 'Hay margen de mejora. Revisa las áreas con menor puntaje.';
-        } else {
-            icon = '💪'; title = 'A seguir estudiando';
-            subtitle = 'Concéntrate en las áreas con menor puntaje y vuelve a intentarlo.';
-        }
+        const v = getVerdict(pct);
+
+        let heroIcon = v.icon;
+        let heroTitle = v.title;
+        let heroSubtitle = v.subtitle;
 
         if (simulacroState.timeUp) {
-            icon = '⏰'; title = 'Tiempo agotado';
-            subtitle = 'Se acabó el tiempo límite. Aquí tienes tu desempeño.';
+            heroIcon = ICONS.clock;
+            heroTitle = 'Tiempo agotado';
+            heroSubtitle = 'Se acabó el tiempo límite. Aquí tienes tu desempeño.';
         }
 
-        resultsHeroIcon.textContent = icon;
-        resultsTitle.textContent = title;
-        resultsSubtitle.textContent = subtitle;
+        // Hero (icono SVG)
+        if (resultsHeroIcon) resultsHeroIcon.innerHTML = heroIcon;
+        resultsTitle.textContent = heroTitle;
+        resultsSubtitle.textContent = heroSubtitle;
 
+        // Métricas base
         resultsPercent.textContent = `${pct}%`;
         resultsCorrect.textContent = s.correct;
         resultsIncorrect.textContent = s.incorrect;
         resultsBlank.textContent = s.blank;
 
-        let color = 'var(--danger)';
-        if (pct >= 70) color = 'var(--success)';
-        else if (pct >= 50) color = 'var(--warning)';
-        scoreCircle.style.background = `conic-gradient(${color} 0% ${pct}%, var(--border) ${pct}% 100%)`;
+        // Marcadas
+        if (resultsFlagged) resultsFlagged.textContent = s.flagged || 0;
+        if (resultsFlaggedLine) {
+            resultsFlaggedLine.style.display = 'flex';
+        }
 
+        // Banner de veredicto (5 niveles)
+        if (resultsVerdict && verdictIcon && verdictTitle && verdictMessage) {
+            resultsVerdict.style.display = 'flex';
+            resultsVerdict.classList.remove(
+                'verdict-excellent', 'verdict-pass', 'verdict-near',
+                'verdict-risk', 'verdict-fail'
+            );
+            resultsVerdict.classList.add('verdict-' + v.level);
+            verdictIcon.innerHTML = v.icon;
+            verdictTitle.textContent = v.verdictTitle;
+            verdictMessage.textContent = v.verdictMsg;
+        }
+
+        // Círculo de puntaje — color según nivel
+        const colorByLevel = {
+            excellent: 'var(--excellent)',
+            pass:      'var(--success)',
+            near:      'var(--warning)',
+            risk:      'var(--serious)',
+            fail:      'var(--danger)'
+        };
+        const color = colorByLevel[v.level] || 'var(--danger)';
+
+        scoreCircle.classList.remove(
+            'circle-excellent', 'circle-pass', 'circle-near',
+            'circle-risk', 'circle-fail'
+        );
+        scoreCircle.classList.add('circle-' + v.level);
+
+        // Reset inmediato a 0% para animar
+        scoreCircle.style.background = `conic-gradient(${color} 0% 0%, var(--border) 0% 100%)`;
+
+        // Tiempo y promedio
         simulacroState.elapsedPrevios = simulacroState.elapsedPrevios || 0;
         const elapsedSec = simulacroState.elapsedPrevios
             + Math.max(0, Math.floor((simulacroState.endTime - simulacroState.startTime) / 1000));
@@ -1784,13 +1898,40 @@
         const avg = total > 0 ? Math.round(elapsedSec / total) : 0;
         resultsAvg.textContent = `${avg}s`;
 
+        // Desgloses
         renderBreakdown('area', resultsByArea);
         renderBreakdown('especialidad', resultsByEspecialidad);
+        if (resultsByDificultad) {
+            renderBreakdown('dificultad', resultsByDificultad, ['Baja', 'Media', 'Alta']);
+        }
+
+        // Botón "Practicar puntos débiles"
+        if (practiceWeakBtn) {
+            const weak = getWeakestArea();
+            if (weak.nombre && weak.pct < 90) {
+                practiceWeakBtn.style.display = 'inline-flex';
+                practiceWeakBtn.dataset.weakArea = weak.nombre;
+                practiceWeakBtn.title = `Filtrar solo ${weak.nombre} (${weak.pct}% acierto)`;
+            } else {
+                practiceWeakBtn.style.display = 'none';
+                practiceWeakBtn.dataset.weakArea = '';
+            }
+        }
 
         showScreen('results');
+
+        // Animación del círculo tras hacer visible la pantalla
+        requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+                scoreCircle.style.background =
+                    `conic-gradient(${color} 0% ${pct}%, var(--border) ${pct}% 100%)`;
+            });
+        });
     }
 
-    function renderBreakdown(campo, contenedor) {
+    function renderBreakdown(campo, contenedor, order) {
+        if (!contenedor) return;
+
         const grupos = {};
 
         sessionIds.forEach(idx => {
@@ -1805,11 +1946,21 @@
             else grupos[key].incorrect++;
         });
 
-        const entries = Object.entries(grupos).sort((a, b) => {
-            const pa = a[1].total ? a[1].correct / a[1].total : 0;
-            const pb = b[1].total ? b[1].correct / b[1].total : 0;
-            return pa - pb;
-        });
+        let entries = Object.entries(grupos);
+
+        if (Array.isArray(order) && order.length > 0) {
+            entries.sort((a, b) => {
+                const ia = order.indexOf(a[0]);
+                const ib = order.indexOf(b[0]);
+                return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
+            });
+        } else {
+            entries.sort((a, b) => {
+                const pa = a[1].total ? a[1].correct / a[1].total : 0;
+                const pb = b[1].total ? b[1].correct / b[1].total : 0;
+                return pa - pb;
+            });
+        }
 
         if (entries.length === 0) {
             contenedor.innerHTML = `<p style="color:var(--text-tertiary);font-size:13px;">Sin datos.</p>`;
@@ -2285,6 +2436,24 @@
     backToSetupFromResults.addEventListener('click', () => {
         volverAlSetup();
     });
+
+    // Practicar puntos débiles → filtra por la peor área y vuelve al setup
+    if (practiceWeakBtn) {
+        practiceWeakBtn.addEventListener('click', () => {
+            const area = practiceWeakBtn.dataset.weakArea;
+            if (!area) return;
+
+            filterEspecialidad.value = 'all';
+            filterTema.value = 'all';
+            filterDificultad.value = 'all';
+            filterEstado.value = 'all';
+            filterArea.value = area;
+
+            updateDependentFilters();
+            volverAlSetup();
+        });
+    }
+
     retrySimulacroBtn.addEventListener('click', () => {
         if (!confirm('¿Repetir el simulacro con las mismas preguntas?')) return;
         const timeLimitSec = simulacroState.timeLimit;

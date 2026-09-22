@@ -113,42 +113,31 @@
 
                         <div class="filter-grid">
                             <div class="filter-group">
-                                <label for="filterSource">Banco</label>
-                                <select id="filterSource">
-                                    <option value="">Cargando…</option>
-                                </select>
+                                <label>Banco</label>
+                                <div class="multiselect" id="msSource"></div>
                             </div>
-
                             <div class="filter-group">
                                 <label>Área</label>
-                                <select id="filterArea"><option value="all">Todas</option></select>
+                                <div class="multiselect" id="msArea"></div>
                             </div>
                             <div class="filter-group">
                                 <label>Especialidad</label>
-                                <select id="filterEspecialidad"><option value="all">Todas</option></select>
+                                <div class="multiselect" id="msEspecialidad"></div>
                             </div>
                             <div class="filter-group">
                                 <label>Tema</label>
-                                <select id="filterTema"><option value="all">Todos</option></select>
+                                <div class="multiselect" id="msTema"></div>
                             </div>
                             <div class="filter-group">
                                 <label>Dificultad</label>
-                                <select id="filterDificultad">
-                                    <option value="all">Todas</option>
-                                    <option value="Baja">Baja</option>
-                                    <option value="Media">Media</option>
-                                    <option value="Alta">Alta</option>
-                                </select>
+                                <div class="multiselect" id="msDificultad"></div>
                             </div>
                             <div class="filter-group">
                                 <label>Estado</label>
-                                <select id="filterEstado">
-                                    <option value="all">Todos</option>
-                                    <option value="activa">Activa</option>
-                                    <option value="inactiva">Inactiva</option>
-                                </select>
+                                <div class="multiselect" id="msEstado"></div>
                             </div>
                         </div>
+                        
                         <button id="resetFilters" class="btn-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
@@ -858,6 +847,7 @@
     </div>
 
     <script src="dominio.js"></script>
+    <script src="multiselect.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

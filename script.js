@@ -47,14 +47,12 @@
     const MODE_PRACTICE = 'practice';
     const MODE_SIMULACRO = 'simulacro';
 
-    const SOURCE_ALL_ID = '__all__';
-
     const WARN_THRESHOLD_1 = 15 * 60;
     const WARN_THRESHOLD_2 = 5 * 60;
     const WARN_THRESHOLD_3 = 60;
 
-    const STORAGE_KEY_SIMULACRO = 'qbank_simulacro_v1';
-    const STORAGE_KEY_SOURCE = 'qbank_source_v1';
+    // Subimos a v2 porque el formato de filtros cambió (Set en vez de string)
+    const STORAGE_KEY_SIMULACRO = 'qbank_simulacro_v2';
     const STORAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
     // ------------------------------------------------------------
@@ -70,10 +68,7 @@
         bookOpen: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
         refresh: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>',
         copy: '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
-
-        // ---- Iconos para la pantalla de resultados ----
         trophy: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>',
-        // NUEVO: laurel (para excellent, junto al morado imperial)
         laurel: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M12 22V10"/><path d="M12 12c-2 0-4-1-4-4 2 0 4 1 4 4z"/><path d="M12 12c2 0 4-1 4-4-2 0-4 1-4 4z"/><path d="M12 16c-2 0-4-1-4-4 2 0 4 1 4 4z"/><path d="M12 16c2 0 4-1 4-4-2 0-4 1-4 4z"/></svg>',
         checkCircle: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>',
         target: '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>',
@@ -122,7 +117,18 @@
 
     // --- Multi-banco ---
     let dataSources = [];
-    let currentSource = null;
+
+    // --- Filtros con selección múltiple (Set vacío = "todos") ---
+    let filtrosActivos = {
+        source: new Set(),
+        area: new Set(),
+        especialidad: new Set(),
+        tema: new Set(),
+        dificultad: new Set(),
+        estado: new Set()
+    };
+
+    let multiSource, multiArea, multiEspecialidad, multiTema, multiDificultad, multiEstado;
 
     // ============================================================
     // 3. REFERENCIAS AL DOM
@@ -154,12 +160,14 @@
     const timeBlock = document.getElementById('timeBlock');
     const customTimeInput = document.getElementById('customTime');
 
-    const filterSource = document.getElementById('filterSource');
-    const filterArea = document.getElementById('filterArea');
-    const filterEspecialidad = document.getElementById('filterEspecialidad');
-    const filterTema = document.getElementById('filterTema');
-    const filterDificultad = document.getElementById('filterDificultad');
-    const filterEstado = document.getElementById('filterEstado');
+    // Contenedores de MultiSelect
+    const msSource       = document.getElementById('msSource');
+    const msArea         = document.getElementById('msArea');
+    const msEspecialidad = document.getElementById('msEspecialidad');
+    const msTema         = document.getElementById('msTema');
+    const msDificultad   = document.getElementById('msDificultad');
+    const msEstado       = document.getElementById('msEstado');
+
     const resetBtn = document.getElementById('resetFilters');
     const totalSpan = document.getElementById('totalQuestions');
 
@@ -245,7 +253,6 @@
     const backToSetupFromResults = document.getElementById('backToSetupFromResults');
     const retrySimulacroBtn = document.getElementById('retrySimulacroBtn');
 
-    // --- refs para la pantalla de resultados ---
     const resultsVerdict = document.getElementById('resultsVerdict');
     const verdictIcon = document.getElementById('verdictIcon');
     const verdictTitle = document.getElementById('verdictTitle');
@@ -287,7 +294,7 @@
     }
 
     function getPreguntaId(p) {
-        const srcId = p._sourceId || (currentSource ? currentSource.id : 'default');
+        const srcId = p._sourceId || 'default';
         return `${srcId}:${p.numero}`;
     }
 
@@ -338,11 +345,10 @@
     }
 
     // ============================================================
-    // 5. PERSISTENCIA (namespaced por banco)
+    // 5. PERSISTENCIA (simulacro global, no por banco)
     // ============================================================
     function getSimulacroStorageKey() {
-        const id = currentSource ? currentSource.id : 'default';
-        return `${STORAGE_KEY_SIMULACRO}_${id}`;
+        return STORAGE_KEY_SIMULACRO;
     }
 
     function saveSimulacroState() {
@@ -352,7 +358,7 @@
 
         try {
             const snapshot = {
-                version: 1,
+                version: 2,
                 timestamp: Date.now(),
                 sessionIds: [...sessionIds],
                 currentIndex,
@@ -368,11 +374,12 @@
                 selectedCount,
                 enfoque: currentEnfoque,
                 filters: {
-                    area: filterArea.value,
-                    especialidad: filterEspecialidad.value,
-                    tema: filterTema.value,
-                    dificultad: filterDificultad.value,
-                    estado: filterEstado.value
+                    source:       [...filtrosActivos.source],
+                    area:         [...filtrosActivos.area],
+                    especialidad: [...filtrosActivos.especialidad],
+                    tema:         [...filtrosActivos.tema],
+                    dificultad:   [...filtrosActivos.dificultad],
+                    estado:       [...filtrosActivos.estado]
                 }
             };
             localStorage.setItem(getSimulacroStorageKey(), JSON.stringify(snapshot));
@@ -399,7 +406,7 @@
             return null;
         }
 
-        if (!data || data.version !== 1) {
+        if (!data || data.version !== 2) {
             clearSavedSimulacroState();
             return null;
         }
@@ -412,7 +419,8 @@
             clearSavedSimulacroState();
             return null;
         }
-        const valid = data.sessionIds.every(id => typeof id === 'number' && id >= 0 && id < preguntas.length);
+        const total = preguntas.length;
+        const valid = data.sessionIds.every(id => typeof id === 'number' && id >= 0 && id < total);
         if (!valid) {
             clearSavedSimulacroState();
             return null;
@@ -524,13 +532,21 @@
         }
 
         if (data.filters) {
-            filterArea.value = data.filters.area || 'all';
+            filtrosActivos.source       = new Set(data.filters.source || []);
+            filtrosActivos.area         = new Set(data.filters.area || []);
+            filtrosActivos.especialidad = new Set(data.filters.especialidad || []);
+            filtrosActivos.tema         = new Set(data.filters.tema || []);
+            filtrosActivos.dificultad   = new Set(data.filters.dificultad || []);
+            filtrosActivos.estado       = new Set(data.filters.estado || []);
+
+            if (multiSource)       multiSource.setSelected(filtrosActivos.source);
+            if (multiArea)         multiArea.setSelected(filtrosActivos.area);
+            if (multiEspecialidad) multiEspecialidad.setSelected(filtrosActivos.especialidad);
+            if (multiTema)         multiTema.setSelected(filtrosActivos.tema);
+            if (multiDificultad)   multiDificultad.setSelected(filtrosActivos.dificultad);
+            if (multiEstado)       multiEstado.setSelected(filtrosActivos.estado);
+
             updateDependentFilters();
-            filterEspecialidad.value = data.filters.especialidad || 'all';
-            updateDependentFilters();
-            filterTema.value = data.filters.tema || 'all';
-            filterDificultad.value = data.filters.dificultad || 'all';
-            filterEstado.value = data.filters.estado || 'all';
         }
 
         setupModePractice.classList.remove('active');
@@ -575,72 +591,8 @@
     }
 
     // ============================================================
-    // 6. CARGA DE DATOS (multi-banco)
+    // 6. CARGA DE DATOS (multi-banco, siempre todos)
     // ============================================================
-    function getSavedSourceId() {
-        try { return localStorage.getItem(STORAGE_KEY_SOURCE); }
-        catch (err) { return null; }
-    }
-
-    function saveSourceId(id) {
-        try { localStorage.setItem(STORAGE_KEY_SOURCE, id); }
-        catch (err) { /* noop */ }
-    }
-
-    function populateSourceFilter() {
-        if (!filterSource) return;
-        filterSource.innerHTML = '';
-
-        const allOpt = document.createElement('option');
-        allOpt.value = SOURCE_ALL_ID;
-        allOpt.textContent = 'Todos';
-        filterSource.appendChild(allOpt);
-
-        dataSources.forEach(src => {
-            const opt = document.createElement('option');
-            opt.value = src.id;
-            opt.textContent = src.name;
-            filterSource.appendChild(opt);
-        });
-    }
-
-    function loadSourcesManifest() {
-        fetch(SOURCES_URL)
-            .then(r => {
-                if (!r.ok) throw new Error(`No se pudo cargar ${SOURCES_URL}`);
-                return r.json();
-            })
-            .then(list => {
-                if (!Array.isArray(list) || list.length === 0) {
-                    throw new Error('El manifiesto de fuentes está vacío.');
-                }
-                dataSources = list;
-                populateSourceFilter();
-
-                const savedId = getSavedSourceId();
-                let initial;
-                if (savedId === SOURCE_ALL_ID) {
-                    initial = { id: SOURCE_ALL_ID, name: 'Todos', file: null };
-                } else {
-                    initial = dataSources.find(s => s.id === savedId) || dataSources[0];
-                }
-                return loadSource(initial);
-            })
-            .catch(err => {
-                console.error('Error al cargar el manifiesto:', err);
-                if (filterSource) {
-                    filterSource.innerHTML = '<option value="">Error de carga</option>';
-                }
-                container.innerHTML = `
-                    <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
-                        <h3 style="color:#991b1b;">Error al cargar los bancos</h3>
-                        <p style="margin-top:8px;">Verifica que exista <strong>${SOURCES_URL}</strong> y que sea un JSON válido.</p>
-                        <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
-                    </div>
-                `;
-            });
-    }
-
     function resetSessionState() {
         preguntas = [];
         filteredIds = [];
@@ -657,34 +609,21 @@
         };
     }
 
-    function loadSource(source) {
-        if (!source) return Promise.resolve();
-
-        if (source.id === SOURCE_ALL_ID) {
-            return loadAllSources();
-        }
-
-        if (!source.file) return Promise.resolve();
-
-        hideResumeModal();
-        stopSimTimer();
-
-        currentSource = source;
-        saveSourceId(source.id);
-        if (filterSource) filterSource.value = source.id;
-
-        resetSessionState();
-
-        return fetch(source.file)
+    function loadSourcesManifest() {
+        fetch(SOURCES_URL)
             .then(r => {
-                if (!r.ok) throw new Error(`No se pudo cargar ${source.file}`);
+                if (!r.ok) throw new Error(`No se pudo cargar ${SOURCES_URL}`);
                 return r.json();
             })
-            .then(data => {
-                preguntas = data.map(p => ({ ...p, _sourceId: source.id }));
-
-                console.log(`✅ ${preguntas.length} preguntas cargadas desde ${source.file}`);
-                totalSpan.textContent = preguntas.length;
+            .then(list => {
+                if (!Array.isArray(list) || list.length === 0) {
+                    throw new Error('El manifiesto de fuentes está vacío.');
+                }
+                dataSources = list;
+                return loadAllSources();
+            })
+            .then(() => {
+                initMultiSelects();
                 populateAllFilters();
                 updatePerfilResumen();
                 applyFilters();
@@ -695,10 +634,11 @@
                 }
             })
             .catch(err => {
-                console.error('Error al cargar los datos:', err);
+                console.error('Error al cargar el manifiesto:', err);
                 container.innerHTML = `
                     <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
-                        <h3 style="color:#991b1b;">Error al cargar ${source.file}</h3>
+                        <h3 style="color:#991b1b;">Error al cargar los bancos</h3>
+                        <p style="margin-top:8px;">Verifica que exista <strong>${SOURCES_URL}</strong> y que sea un JSON válido.</p>
                         <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
                     </div>
                 `;
@@ -708,11 +648,6 @@
     function loadAllSources() {
         hideResumeModal();
         stopSimTimer();
-
-        currentSource = { id: SOURCE_ALL_ID, name: 'Todos los bancos', file: null };
-        saveSourceId(SOURCE_ALL_ID);
-        if (filterSource) filterSource.value = SOURCE_ALL_ID;
-
         resetSessionState();
 
         const tasks = dataSources.map(src =>
@@ -746,86 +681,133 @@
             }
 
             totalSpan.textContent = preguntas.length;
-            populateAllFilters();
-            updatePerfilResumen();
-            applyFilters();
+        });
+    }
 
-            const saved = loadSavedSimulacroState();
-            if (saved) {
-                showResumeModal(saved);
+    // ============================================================
+    // 7. FILTROS MULTISELECT CON CASCADA
+    // ============================================================
+    function initMultiSelects() {
+        multiSource = MultiSelect(msSource, {
+            placeholder: 'Todos los bancos',
+            searchThreshold: 6,
+            onChange: (set) => {
+                filtrosActivos.source = set;
+                updateDependentFilters();
+                applyFilters();
+            }
+        });
+
+        multiArea = MultiSelect(msArea, {
+            placeholder: 'Todas las áreas',
+            onChange: (set) => {
+                filtrosActivos.area = set;
+                updateDependentFilters();
+                applyFilters();
+            }
+        });
+
+        multiEspecialidad = MultiSelect(msEspecialidad, {
+            placeholder: 'Todas las especialidades',
+            searchThreshold: 6,
+            onChange: (set) => {
+                filtrosActivos.especialidad = set;
+                updateDependentFilters();
+                applyFilters();
+            }
+        });
+
+        multiTema = MultiSelect(msTema, {
+            placeholder: 'Todos los temas',
+            searchThreshold: 6,
+            onChange: (set) => {
+                filtrosActivos.tema = set;
+                applyFilters();
+            }
+        });
+
+        multiDificultad = MultiSelect(msDificultad, {
+            placeholder: 'Todas',
+            onChange: (set) => {
+                filtrosActivos.dificultad = set;
+                applyFilters();
+            }
+        });
+
+        multiEstado = MultiSelect(msEstado, {
+            placeholder: 'Todos',
+            onChange: (set) => {
+                filtrosActivos.estado = set;
+                applyFilters();
             }
         });
     }
 
-    // ============================================================
-    // 7. FILTROS
-    // ============================================================
     function populateAllFilters() {
-        const areas = getUniqueValues('area');
-        const especialidades = getUniqueValues('especialidad');
-        const temas = getUniqueValues('tema');
+        // Bancos: desde dataSources (nombre → lo que ve el usuario)
+        multiSource.setOptions(dataSources.map(s => s.name));
 
-        populateSelect(filterArea, areas, 'Todas');
-        populateSelect(filterEspecialidad, especialidades, 'Todas');
-        populateSelect(filterTema, temas, 'Todos');
+        // Dificultad y estado: valores fijos
+        multiDificultad.setOptions(['Baja', 'Media', 'Alta']);
+        multiEstado.setOptions(['activa', 'inactiva']);
+
+        // Cascada
+        updateDependentFilters();
     }
 
-    function getUniqueValues(campo, fuente = preguntas) {
-        return [...new Set(fuente.map(p => p[campo]))].sort();
-    }
-
-    function populateSelect(select, items, placeholder) {
-        select.innerHTML = `<option value="all">${placeholder}</option>`;
-        items.forEach(item => {
-            const opt = document.createElement('option');
-            opt.value = item;
-            opt.textContent = item;
-            select.appendChild(opt);
+    /**
+     * Devuelve los IDs de banco seleccionados a partir de los nombres.
+     * Set vacío = todos.
+     */
+    function getSourceIdsSeleccionados() {
+        if (filtrosActivos.source.size === 0) return new Set();
+        const ids = new Set();
+        dataSources.forEach(s => {
+            if (filtrosActivos.source.has(s.name)) ids.add(s.id);
         });
+        return ids;
     }
 
+    /**
+     * Recalcula en cascada las opciones disponibles de cada filtro
+     * según los filtros "padre" ya seleccionados.
+     */
     function updateDependentFilters() {
-        const areaSeleccionada = filterArea.value;
-        const espActual = filterEspecialidad.value;
-        const temaActual = filterTema.value;
+        const sourceIds = getSourceIdsSeleccionados();
 
-        const especialidadesDisponibles = getEspecialidadesDisponibles(areaSeleccionada);
-        rebuildFilterSelect(filterEspecialidad, especialidadesDisponibles, 'Todas', espActual);
+        // Área: depende solo del banco
+        const areas = getOpcionesDisponibles('area', sourceIds, null, null);
+        multiArea.setOptions(areas);
 
-        const espFinal = filterEspecialidad.value;
-        const temasDisponibles = getTemasDisponibles(areaSeleccionada, espFinal);
-        rebuildFilterSelect(filterTema, temasDisponibles, 'Todos', temaActual);
+        // Especialidad: depende de banco + área
+        const especialidades = getOpcionesDisponibles(
+            'especialidad', sourceIds, filtrosActivos.area, null
+        );
+        multiEspecialidad.setOptions(especialidades);
+
+        // Tema: depende de banco + área + especialidad
+        const temas = getOpcionesDisponibles(
+            'tema', sourceIds, filtrosActivos.area, filtrosActivos.especialidad
+        );
+        multiTema.setOptions(temas);
     }
 
-    function getEspecialidadesDisponibles(area) {
-        if (area === 'all') return getUniqueValues('especialidad');
-        return getUniqueValues('especialidad', preguntas.filter(p => p.area === area));
-    }
-
-    function getTemasDisponibles(area, especialidad) {
-        const sinArea = area === 'all';
-        const sinEsp = especialidad === 'all';
-
-        if (sinArea && sinEsp) return getUniqueValues('tema');
-        if (!sinArea && sinEsp) return getUniqueValues('tema', preguntas.filter(p => p.area === area));
-        if (sinArea && !sinEsp) return getUniqueValues('tema', preguntas.filter(p => p.especialidad === especialidad));
-        return getUniqueValues('tema', preguntas.filter(p => p.area === area && p.especialidad === especialidad));
-    }
-
-    function rebuildFilterSelect(select, opciones, placeholder, seleccionPrevia) {
-        select.innerHTML = `<option value="all">${placeholder}</option>`;
-        opciones.forEach(op => {
-            const opt = document.createElement('option');
-            opt.value = op;
-            opt.textContent = op;
-            select.appendChild(opt);
+    /**
+     * Devuelve los valores únicos del campo `campo` entre las preguntas
+     * que cumplen los filtros padre indicados.
+     * @param {string} campo
+     * @param {Set<string>} sourceIds     - IDs de bancos seleccionados (vacío = todos)
+     * @param {Set<string>|null} areaSet
+     * @param {Set<string>|null} espSet
+     */
+    function getOpcionesDisponibles(campo, sourceIds, areaSet, espSet) {
+        const candidatas = preguntas.filter(p => {
+            if (sourceIds.size > 0 && !sourceIds.has(p._sourceId)) return false;
+            if (areaSet && areaSet.size > 0 && !areaSet.has(p.area)) return false;
+            if (espSet && espSet.size > 0 && !espSet.has(p.especialidad)) return false;
+            return true;
         });
-
-        if (opciones.includes(seleccionPrevia) && seleccionPrevia !== 'all') {
-            select.value = seleccionPrevia;
-        } else {
-            select.value = 'all';
-        }
+        return [...new Set(candidatas.map(p => p[campo]))].sort();
     }
 
     function cumpleEnfoque(p) {
@@ -855,17 +837,9 @@
     }
 
     function applyFilters() {
-        const filtros = {
-            area: filterArea.value,
-            especialidad: filterEspecialidad.value,
-            tema: filterTema.value,
-            dificultad: filterDificultad.value,
-            estado: filterEstado.value
-        };
-
         let candidatas = preguntas
             .map((p, idx) => ({ ...p, idx }))
-            .filter(p => cumpleFiltros(p, filtros))
+            .filter(p => cumpleFiltros(p))
             .filter(p => cumpleEnfoque(p));
 
         if (currentEnfoque !== 'all') {
@@ -873,14 +847,21 @@
         }
 
         filteredIds = candidatas.map(p => p.idx);
-
         updateSetupSummary();
     }
 
-    function cumpleFiltros(pregunta, filtros) {
-        for (const [campo, valor] of Object.entries(filtros)) {
-            if (valor !== 'all' && pregunta[campo] !== valor) return false;
-        }
+    function cumpleFiltros(p) {
+        // Banco (por id interno)
+        const sourceIds = getSourceIdsSeleccionados();
+        if (sourceIds.size > 0 && !sourceIds.has(p._sourceId)) return false;
+
+        // Campos de texto: OR dentro del set, AND entre campos
+        if (filtrosActivos.area.size > 0 && !filtrosActivos.area.has(p.area)) return false;
+        if (filtrosActivos.especialidad.size > 0 && !filtrosActivos.especialidad.has(p.especialidad)) return false;
+        if (filtrosActivos.tema.size > 0 && !filtrosActivos.tema.has(p.tema)) return false;
+        if (filtrosActivos.dificultad.size > 0 && !filtrosActivos.dificultad.has(p.dificultad)) return false;
+        if (filtrosActivos.estado.size > 0 && !filtrosActivos.estado.has(p.estado)) return false;
+
         return true;
     }
 
@@ -913,13 +894,20 @@
     }
 
     function buildFilterLabel() {
-        const activos = [];
-        if (currentSource && currentSource.name) activos.push(currentSource.name);
-        if (filterArea.value !== 'all') activos.push(filterArea.value);
-        if (filterEspecialidad.value !== 'all') activos.push(filterEspecialidad.value);
-        if (filterTema.value !== 'all') activos.push(filterTema.value);
-        if (filterDificultad.value !== 'all') activos.push(filterDificultad.value);
-        if (filterEstado.value !== 'all') activos.push(filterEstado.value);
+        const partes = [];
+
+        const pushSet = (set, label) => {
+            if (set.size === 0) return;
+            if (set.size === 1) partes.push([...set][0]);
+            else partes.push(`${label} (${set.size})`);
+        };
+
+        pushSet(filtrosActivos.source, 'Bancos');
+        pushSet(filtrosActivos.area, 'Áreas');
+        pushSet(filtrosActivos.especialidad, 'Especialidades');
+        pushSet(filtrosActivos.tema, 'Temas');
+        pushSet(filtrosActivos.dificultad, 'Dificultad');
+        pushSet(filtrosActivos.estado, 'Estado');
 
         const mapEnfoque = {
             'all': null,
@@ -928,9 +916,9 @@
             'dudosas': 'Solo dudosas'
         };
         const enfTxt = mapEnfoque[currentEnfoque];
-        if (enfTxt) activos.push(enfTxt);
+        if (enfTxt) partes.push(enfTxt);
 
-        return activos.length ? activos.join(' · ') : 'Todas';
+        return partes.length ? partes.join(' · ') : 'Todas';
     }
 
     function updatePerfilResumen() {
@@ -940,11 +928,22 @@
             return;
         }
 
+        // Con multibando, mostramos el resumen de los bancos seleccionados
+        // (o el global si no hay ninguno seleccionado).
         let r;
-        if (!currentSource || currentSource.id === SOURCE_ALL_ID) {
+        if (filtrosActivos.source.size === 0) {
             r = window.Dominio.getResumen();
         } else {
-            r = window.Dominio.getResumen(currentSource.id + ':');
+            // Sumamos los resúmenes por prefijo de cada banco seleccionado
+            const ids = getSourceIdsSeleccionados();
+            r = { dominadas: 0, dudosas: 0, falladas: 0, total: 0 };
+            ids.forEach(id => {
+                const sub = window.Dominio.getResumen(id + ':');
+                r.dominadas += sub.dominadas;
+                r.dudosas   += sub.dudosas;
+                r.falladas  += sub.falladas;
+                r.total     += sub.total;
+            });
         }
 
         if (r.total === 0) {
@@ -1341,12 +1340,17 @@
         updateNavigation();
     }
 
+    function getSourceName(sourceId) {
+        const s = dataSources.find(x => x.id === sourceId);
+        return s ? s.name : sourceId;
+    }
+
     function buildQuestionHeader(p, mostrarTags = true, idx = null) {
-        const mostrarTagBanco = mostrarTags && currentSource && currentSource.id === SOURCE_ALL_ID && p._sourceId;
+        const mostrarTagBanco = mostrarTags && p._sourceId;
 
         const tagsHtml = mostrarTags ? `
             <div class="question-tags">
-                ${mostrarTagBanco ? `<span class="tag tag-source">${p._sourceId}</span>` : ''}
+                ${mostrarTagBanco ? `<span class="tag tag-source">${getSourceName(p._sourceId)}</span>` : ''}
                 <span class="tag">${p.area}</span>
                 <span class="tag">${p.especialidad}</span>
                 <span class="tag">${p.tema}</span>
@@ -1550,7 +1554,7 @@
     };
 
     // ------------------------------------------------------------
-    // COPIAR ENUNCIADO + ALTERNATIVAS AL PORTAPAPELES
+    // COPIAR ENUNCIADO + ALTERNATIVAS
     // ------------------------------------------------------------
     function buildQuestionPlainText(p) {
         const letras = getLetras(p);
@@ -1739,15 +1743,6 @@
     // ============================================================
     // 15. PANTALLA DE RESULTADOS
     // ============================================================
-
-    /**
-     * Escala de 5 niveles.
-     *  - excellent ≥ 95 %  → morado imperial (rango excepcional)
-     *  - pass      85–94 % → verde (aprobado, mínimo alcanzado)
-     *  - near      70–84 % → ámbar (cerca del corte)
-     *  - risk      50–69 % → naranja (en riesgo)
-     *  - fail      < 50 %  → rojo (a mejorar)
-     */
     function getVerdict(pct) {
         if (pct >= 95) {
             return {
@@ -1799,9 +1794,6 @@
         };
     }
 
-    /**
-     * Detecta el área con menor % de acierto de la sesión actual.
-     */
     function getWeakestArea() {
         const grupos = {};
         sessionIds.forEach(idx => {
@@ -1841,24 +1833,20 @@
             heroSubtitle = 'Se acabó el tiempo límite. Aquí tienes tu desempeño.';
         }
 
-        // Hero (icono SVG)
         if (resultsHeroIcon) resultsHeroIcon.innerHTML = heroIcon;
         resultsTitle.textContent = heroTitle;
         resultsSubtitle.textContent = heroSubtitle;
 
-        // Métricas base
         resultsPercent.textContent = `${pct}%`;
         resultsCorrect.textContent = s.correct;
         resultsIncorrect.textContent = s.incorrect;
         resultsBlank.textContent = s.blank;
 
-        // Marcadas
         if (resultsFlagged) resultsFlagged.textContent = s.flagged || 0;
         if (resultsFlaggedLine) {
             resultsFlaggedLine.style.display = 'flex';
         }
 
-        // Banner de veredicto (5 niveles)
         if (resultsVerdict && verdictIcon && verdictTitle && verdictMessage) {
             resultsVerdict.style.display = 'flex';
             resultsVerdict.classList.remove(
@@ -1871,7 +1859,6 @@
             verdictMessage.textContent = v.verdictMsg;
         }
 
-        // Círculo de puntaje — color según nivel
         const colorByLevel = {
             excellent: 'var(--excellent)',
             pass:      'var(--success)',
@@ -1887,10 +1874,8 @@
         );
         scoreCircle.classList.add('circle-' + v.level);
 
-        // Reset inmediato a 0% para animar
         scoreCircle.style.background = `conic-gradient(${color} 0% 0%, var(--border) 0% 100%)`;
 
-        // Tiempo y promedio
         simulacroState.elapsedPrevios = simulacroState.elapsedPrevios || 0;
         const elapsedSec = simulacroState.elapsedPrevios
             + Math.max(0, Math.floor((simulacroState.endTime - simulacroState.startTime) / 1000));
@@ -1898,14 +1883,12 @@
         const avg = total > 0 ? Math.round(elapsedSec / total) : 0;
         resultsAvg.textContent = `${avg}s`;
 
-        // Desgloses
         renderBreakdown('area', resultsByArea);
         renderBreakdown('especialidad', resultsByEspecialidad);
         if (resultsByDificultad) {
             renderBreakdown('dificultad', resultsByDificultad, ['Baja', 'Media', 'Alta']);
         }
 
-        // Botón "Practicar puntos débiles"
         if (practiceWeakBtn) {
             const weak = getWeakestArea();
             if (weak.nombre && weak.pct < 90) {
@@ -1920,7 +1903,6 @@
 
         showScreen('results');
 
-        // Animación del círculo tras hacer visible la pantalla
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
                 scoreCircle.style.background =
@@ -2238,44 +2220,22 @@
         });
     });
 
-    // ---- Banco de preguntas ----
-    if (filterSource) {
-        filterSource.addEventListener('change', () => {
-            const val = filterSource.value;
-
-            if (val === SOURCE_ALL_ID) {
-                if (currentSource && currentSource.id === SOURCE_ALL_ID) return;
-                loadSource({ id: SOURCE_ALL_ID, name: 'Todos', file: null });
-                return;
-            }
-
-            const nuevo = dataSources.find(s => s.id === val);
-            if (!nuevo || nuevo === currentSource) return;
-            loadSource(nuevo);
-        });
-    }
-
-    filterArea.addEventListener('change', () => {
-        updateDependentFilters();
-        applyFilters();
-    });
-
-    filterEspecialidad.addEventListener('change', () => {
-        updateDependentFilters();
-        applyFilters();
-    });
-
-    filterTema.addEventListener('change', applyFilters);
-    filterDificultad.addEventListener('change', applyFilters);
-    filterEstado.addEventListener('change', applyFilters);
-
     resetBtn.addEventListener('click', () => {
-        filterArea.value = 'all';
+        filtrosActivos = {
+            source: new Set(),
+            area: new Set(),
+            especialidad: new Set(),
+            tema: new Set(),
+            dificultad: new Set(),
+            estado: new Set()
+        };
+        multiSource.clear();
+        multiArea.clear();
+        multiEspecialidad.clear();
+        multiTema.clear();
+        multiDificultad.clear();
+        multiEstado.clear();
         updateDependentFilters();
-        filterEspecialidad.value = 'all';
-        filterTema.value = 'all';
-        filterDificultad.value = 'all';
-        filterEstado.value = 'all';
         applyFilters();
     });
 
@@ -2437,17 +2397,23 @@
         volverAlSetup();
     });
 
-    // Practicar puntos débiles → filtra por la peor área y vuelve al setup
     if (practiceWeakBtn) {
         practiceWeakBtn.addEventListener('click', () => {
             const area = practiceWeakBtn.dataset.weakArea;
             if (!area) return;
 
-            filterEspecialidad.value = 'all';
-            filterTema.value = 'all';
-            filterDificultad.value = 'all';
-            filterEstado.value = 'all';
-            filterArea.value = area;
+            // Limpiar filtros y dejar solo el área débil
+            filtrosActivos.especialidad = new Set();
+            filtrosActivos.tema = new Set();
+            filtrosActivos.dificultad = new Set();
+            filtrosActivos.estado = new Set();
+            filtrosActivos.area = new Set([area]);
+
+            multiEspecialidad.clear();
+            multiTema.clear();
+            multiDificultad.clear();
+            multiEstado.clear();
+            multiArea.setSelected([area]);
 
             updateDependentFilters();
             volverAlSetup();
@@ -2512,7 +2478,9 @@
     });
 
     document.addEventListener('keydown', (e) => {
-        if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
+        // No interferir si el foco está en un input/select/textarea o en el buscador del multiselect
+        const tag = e.target.tagName;
+        if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
         if (e.ctrlKey || e.altKey || e.metaKey) return;
 
         if (resumeModal.style.display === 'flex') {

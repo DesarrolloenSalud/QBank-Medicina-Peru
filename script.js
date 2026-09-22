@@ -923,7 +923,13 @@
                 r.total     += sub.total;
             });
         }
-
+        // --- Stat-cards (alta prioridad) ---
+        const elDom = document.getElementById('statDominadas');
+        const elDud = document.getElementById('statDudosas');
+        const elFal = document.getElementById('statFalladas');
+        if (elDom) elDom.textContent = r.dominadas;
+        if (elDud) elDud.textContent = r.dudosas;
+        if (elFal) elFal.textContent = r.falladas;
         if (r.total === 0) {
             perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos. Empieza a practicar para construir tu perfil.</span>`;
             return;

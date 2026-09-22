@@ -42,13 +42,11 @@
     --warning-soft: #fffbeb;
     --warning-soft-2: #fef3c7;
 
-    /* NUEVO: naranja intermedio entre warning y danger */
     --serious: #ea580c;
     --serious-hover: #c2410c;
     --serious-soft: #fff7ed;
     --serious-text: #9a3412;
 
-    /* NUEVO: morado imperial para el nivel "excellent" */
     --excellent: #7c3aed;
     --excellent-hover: #6d28d9;
     --excellent-soft: #ede9fe;
@@ -164,11 +162,6 @@ select:focus-visible {
     display: none;
 }
 
-/* ============================================================
-   IMPORTANTE: en quiz y review NO forzamos altura mínima ni
-   estiramos las pantallas. Así el contenido fluye naturalmente
-   y los botones quedan pegados justo debajo de la pregunta.
-   ============================================================ */
 .view-quiz #app,
 .view-review #app {
     padding: var(--space-3) var(--space-5);
@@ -277,6 +270,7 @@ header {
     padding: var(--space-5);
     transition: var(--transition);
     box-shadow: var(--shadow-xs);
+    overflow: visible;
 }
 
 .setup-card:hover {
@@ -377,6 +371,7 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-3);
     margin-bottom: var(--space-4);
+    overflow: visible;
 }
 
 .filter-group {
@@ -386,11 +381,20 @@ header {
 }
 
 .filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     font-size: 11px;
     font-weight: 600;
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.filter-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+    opacity: 0.85;
 }
 
 .filter-group select {
@@ -1832,7 +1836,6 @@ header {
     transition: background 0.6s ease, box-shadow 0.4s ease;
 }
 
-/* NUEVO: halo solo para el nivel "excellent" (morado imperial) */
 .score-circle.circle-excellent {
     box-shadow: 0 0 0 6px var(--excellent-ring);
 }
@@ -2186,8 +2189,6 @@ header {
 /* ============================================================
    PANEL DE PROGRESO — VISIBILIDAD POR MODO
    ============================================================ */
-
-/* --- Modo PRÁCTICA --- */
 .simulacro-info.mode-practice .sim-stat-answered { display: none; }
 .simulacro-info.mode-practice .sim-stat-flagged { display: none; }
 .simulacro-info.mode-practice .sim-actions-sim { display: none; }
@@ -2198,7 +2199,6 @@ header {
     display: flex;
 }
 
-/* --- Modo SIMULACRO --- */
 .simulacro-info.mode-simulacro .sim-stat-correct,
 .simulacro-info.mode-simulacro .sim-stat-incorrect,
 .simulacro-info.mode-simulacro .sim-stat-blank {
@@ -2384,13 +2384,11 @@ header {
     --warning-soft: #3b2a08;
     --warning-soft-2: #78350f;
 
-    /* NUEVO: naranja intermedio (dark) */
     --serious: #fb923c;
     --serious-hover: #fdba74;
     --serious-soft: #3b1d08;
     --serious-text: #fdba74;
 
-    /* NUEVO: morado imperial (dark) */
     --excellent: #a78bfa;
     --excellent-hover: #c4b5fd;
     --excellent-soft: #2e1065;
@@ -2521,7 +2519,6 @@ header {
 [data-theme="dark"] .theme-toggle .icon-sun  { display: inline-block; }
 [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
-/* Reserva espacio en la cabecera y toolbar para que el botón no tape nada */
 header { padding-right: 56px; }
 
 .view-quiz .quiz-toolbar,
@@ -2568,7 +2565,6 @@ header { padding-right: 56px; }
     transition: var(--transition);
 }
 
-/* --- Excellent (morado imperial) --- */
 .results-verdict.verdict-excellent {
     background: linear-gradient(135deg, var(--excellent-soft) 0%, var(--surface) 100%);
     border-color: rgba(124, 58, 237, 0.30);
@@ -2578,7 +2574,6 @@ header { padding-right: 56px; }
 .verdict-excellent .verdict-title { color: var(--excellent-text); }
 .verdict-excellent .verdict-msg   { color: var(--excellent-hover); }
 
-/* --- Pass (verde) --- */
 .results-verdict.verdict-pass {
     background: linear-gradient(135deg, var(--success-soft) 0%, var(--surface) 100%);
     border-color: #a7f3d0;
@@ -2588,7 +2583,6 @@ header { padding-right: 56px; }
 .verdict-pass .verdict-title { color: #065f46; }
 .verdict-pass .verdict-msg   { color: #047857; }
 
-/* --- Near (ámbar) --- */
 .results-verdict.verdict-near {
     background: linear-gradient(135deg, var(--warning-soft) 0%, var(--surface) 100%);
     border-color: #fde68a;
@@ -2598,7 +2592,6 @@ header { padding-right: 56px; }
 .verdict-near .verdict-title { color: #92400e; }
 .verdict-near .verdict-msg   { color: #b45309; }
 
-/* --- Risk (naranja, --serious) --- */
 .results-verdict.verdict-risk {
     background: linear-gradient(135deg, var(--serious-soft) 0%, var(--surface) 100%);
     border-color: #fed7aa;
@@ -2608,7 +2601,6 @@ header { padding-right: 56px; }
 .verdict-risk .verdict-title { color: var(--serious-text); }
 .verdict-risk .verdict-msg   { color: var(--serious-hover); }
 
-/* --- Fail (rojo) --- */
 .results-verdict.verdict-fail {
     background: linear-gradient(135deg, var(--danger-soft) 0%, var(--surface) 100%);
     border-color: #fecaca;
@@ -2618,7 +2610,6 @@ header { padding-right: 56px; }
 .verdict-fail .verdict-title { color: #991b1b; }
 .verdict-fail .verdict-msg   { color: #b91c1c; }
 
-/* --- Común a todos los niveles --- */
 .verdict-icon {
     flex-shrink: 0;
     width: 44px;
@@ -2657,12 +2648,8 @@ header { padding-right: 56px; }
     line-height: 1.45;
 }
 
-/* Punto de "marcadas" en el score-details */
 .score-detail-dot.flagged { background: var(--warning); }
 
-/* ============================================================
-   TEMA OSCURO — Veredicto (5 niveles)
-   ============================================================ */
 [data-theme="dark"] .results-verdict.verdict-excellent {
     border-color: #4c1d95;
     border-left-color: var(--excellent);
@@ -2703,7 +2690,6 @@ header { padding-right: 56px; }
     box-shadow: 0 0 0 6px var(--excellent-ring);
 }
 
-/* Responsive del veredicto */
 @media (max-width: 480px) {
     .results-verdict {
         padding: var(--space-3) var(--space-4);
@@ -2939,17 +2925,8 @@ header { padding-right: 56px; }
     background: rgba(255, 255, 255, 0.12);
 }
 
-/* Ajuste para que el popover no se corte en la tarjeta */
-.setup-card {
-    overflow: visible;
-}
-
-.filter-grid {
-    overflow: visible;
-}
-
 /* ============================================================
-   TIME BLOCK (por si no lo tenías)
+   TIME BLOCK
    ============================================================ */
 .time-block-divider {
     height: 1px;
@@ -3023,65 +3000,13 @@ header { padding-right: 56px; }
     margin-top: auto;
 }
 
-.filters-stats {
-    display: flex;
-    gap: var(--space-5);
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.filters-stat {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.filters-stat-label {
-    font-size: 10.5px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--text-tertiary);
-    font-weight: 600;
-}
-
-.filters-stat-value {
-    font-size: 20px;
-    font-weight: 800;
-    color: var(--primary);
-    font-variant-numeric: tabular-nums;
-    line-height: 1;
-}
-
 .filters-footer-actions {
     display: flex;
     gap: var(--space-2);
     margin-left: auto;
 }
 
-/* Encabezado de paso */
-.step-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 12px;
-    border-radius: var(--radius-full);
-    background: var(--primary-soft);
-    color: var(--primary);
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    border: 1px solid var(--primary-soft-2);
-    margin-bottom: var(--space-2);
-}
-
-.step-badge.step-2 {
-    background: var(--accent-soft);
-    color: var(--accent);
-    border-color: var(--accent-soft-2);
-}
-
-/* Config: la pantalla 2 ahora respira más */
+/* Config */
 .config-container {
     display: flex;
     flex-direction: column;
@@ -3097,7 +3022,6 @@ header { padding-right: 56px; }
     gap: var(--space-5);
 }
 
-/* Barra superior de la pantalla de config, con "volver a filtros" */
 .config-topbar {
     display: flex;
     align-items: center;
@@ -3106,5 +3030,187 @@ header { padding-right: 56px; }
     padding: 0 0 var(--space-3);
     border-bottom: 1px solid var(--border);
     flex-wrap: wrap;
-    padding-right: 56px; /* espacio para el botón de tema */
+    padding-right: 56px;
+}
+
+/* ============================================================
+   ALTA PRIORIDAD — 1) Header compacto en setup
+   ============================================================ */
+.view-filters header,
+.view-config header {
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+.view-filters .brand-mark,
+.view-config .brand-mark {
+    width: 36px;
+    height: 36px;
+}
+
+.view-filters .brand-text h1,
+.view-config .brand-text h1 {
+    font-size: 16px;
+}
+
+.view-filters .brand-subtitle,
+.view-config .brand-subtitle {
+    font-size: 11px;
+}
+
+@media (max-width: 600px) {
+    .view-filters header,
+    .view-config header {
+        display: none;
+    }
+    .view-filters #app,
+    .view-config #app {
+        padding-top: var(--space-4);
+    }
+}
+
+/* ============================================================
+   ALTA PRIORIDAD — 2) Stepper visual
+   ============================================================ */
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+}
+
+.stepper-compact {
+    margin-bottom: 0;
+}
+
+.stepper-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-tertiary);
+    font-size: 12.5px;
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.stepper-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--surface-3);
+    color: var(--text-tertiary);
+    font-size: 12px;
+    font-weight: 700;
+    border: 2px solid var(--border);
+    transition: var(--transition-fast);
+    line-height: 1;
+}
+
+.stepper-step.active {
+    color: var(--primary);
+}
+
+.stepper-step.active .stepper-num {
+    background: var(--primary);
+    color: var(--text-inverse);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--primary-soft);
+}
+
+.stepper-step.done .stepper-num {
+    background: var(--success);
+    color: var(--text-inverse);
+    border-color: var(--success);
+}
+
+.stepper-step.done {
+    color: var(--success);
+}
+
+.stepper-line {
+    width: 40px;
+    height: 2px;
+    background: var(--border);
+    border-radius: 2px;
+    transition: var(--transition-fast);
+}
+
+.stepper-step.done + .stepper-line,
+.stepper-step.active + .stepper-line {
+    background: var(--primary);
+}
+
+@media (max-width: 500px) {
+    .stepper-label {
+        display: none;
+    }
+    .stepper-line {
+        width: 24px;
+    }
+}
+
+/* ============================================================
+   ALTA PRIORIDAD — 3) Stat-cards en footer de filtros
+   ============================================================ */
+.filters-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    gap: var(--space-2);
+    flex: 1;
+    min-width: 0;
+}
+
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: var(--space-3) var(--space-4);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    border-left-width: 3px;
+    transition: var(--transition-fast);
+}
+
+.stat-card:hover {
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+}
+
+.stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-tertiary);
+    font-weight: 600;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+}
+
+.stat-primary { border-left-color: var(--primary); }
+.stat-primary .stat-value { color: var(--primary); }
+
+.stat-success { border-left-color: var(--success); }
+.stat-success .stat-value { color: var(--success); }
+
+.stat-warning { border-left-color: var(--warning); }
+.stat-warning .stat-value { color: var(--warning); }
+
+.stat-danger { border-left-color: var(--danger); }
+.stat-danger .stat-value { color: var(--danger); }
+
+@media (max-width: 700px) {
+    .filters-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }

@@ -80,7 +80,17 @@
             <div class="filters-container">
 
                 <div class="filters-hero">
-                    <span class="step-badge">Paso 1 de 2</span>
+                    <div class="stepper">
+                        <div class="stepper-step active">
+                            <span class="stepper-num">1</span>
+                            <span class="stepper-label">Filtros</span>
+                        </div>
+                        <div class="stepper-line"></div>
+                        <div class="stepper-step">
+                            <span class="stepper-num">2</span>
+                            <span class="stepper-label">Configuración</span>
+                        </div>
+                    </div>
                     <h2>Selecciona tu contenido</h2>
                     <p>Elige los bancos y temas que quieres estudiar. Cada filtro se ajusta según lo que marques arriba.</p>
                 </div>
@@ -114,11 +124,22 @@
 
                 <div class="filters-footer">
                     <div class="filters-stats">
-                        <div class="filters-stat">
-                            <span class="filters-stat-label">Disponibles</span>
-                            <span class="filters-stat-value" id="filtersAvailable">0</span>
+                        <div class="stat-card stat-primary">
+                            <span class="stat-label">Disponibles</span>
+                            <span class="stat-value" id="filtersAvailable">0</span>
                         </div>
-                        <div class="perfil-resumen" id="perfilResumen"></div>
+                        <div class="stat-card stat-success">
+                            <span class="stat-label">Dominadas</span>
+                            <span class="stat-value" id="statDominadas">0</span>
+                        </div>
+                        <div class="stat-card stat-warning">
+                            <span class="stat-label">Dudosas</span>
+                            <span class="stat-value" id="statDudosas">0</span>
+                        </div>
+                        <div class="stat-card stat-danger">
+                            <span class="stat-label">Falladas</span>
+                            <span class="stat-value" id="statFalladas">0</span>
+                        </div>
                     </div>
                     <div class="filters-footer-actions">
                         <button id="resetFilters" class="btn-secondary">
@@ -154,7 +175,17 @@
                         </svg>
                         Volver a filtros
                     </button>
-                    <span class="step-badge step-2">Paso 2 de 2</span>
+                    <div class="stepper stepper-compact">
+                        <div class="stepper-step done">
+                            <span class="stepper-num">✓</span>
+                            <span class="stepper-label">Filtros</span>
+                        </div>
+                        <div class="stepper-line"></div>
+                        <div class="stepper-step active">
+                            <span class="stepper-num">2</span>
+                            <span class="stepper-label">Configuración</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="config-grid">

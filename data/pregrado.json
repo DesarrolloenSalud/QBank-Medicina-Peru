@@ -8934,7 +8934,7 @@
     "especialidad": "2 fructuosa - Galactosa",
     "tema": "Galactosemia tipo II",
     "dificultad": "Básica",
-    "explicacion": "El archivo indica que la deficiencia de GALK1 (galactosemia tipo II) no causa trastornos neurológicos ni daño hepático. La presencia de cataratas bilaterales es la única manifestación clínica de la enfermedad.",
+    "explicacion": "La alternativa correcta es la B, deficiencia de galactoquinasa 1 o galactosemia tipo II, porque esta forma de galactosemia generalmente no produce trastornos neurológicos ni daño hepático, y su manifestación clínica más característica son las cataratas por acumulación de galactitol en el cristalino; se descarta la A, galactosemia clásica o tipo I, porque es la forma más grave y sí causa daño hepático, alteraciones neurológicas, sepsis, fallo de medro y otras complicaciones serias; se descarta la C, deficiencia de UDP-galactosa-4-epimerasa o tipo III, porque aunque su espectro clínico es variable y puede ser benigna en algunos casos, no es la opción clásicamente asociada con la ausencia de daño hepático y neurológico como la tipo II, y puede presentar alteraciones similares a la galactosemia clásica en sus formas graves; y se descarta la D, todas causan daño hepático, porque precisamente la galactosemia tipo II es la excepción típica en la que no se presenta daño hepático ni trastornos neurológicos importantes.",
     "estado": "activa",
     "frecuencia": "Alta",
     "respuesta_correcta": "B"

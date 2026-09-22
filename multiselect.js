@@ -48,6 +48,9 @@
 
         // ---- Render del botón ----
         function renderTrigger() {
+            // NUEVO: estado has-value
+            contenedor.classList.toggle('has-value', seleccionados.size > 0);
+
             if (seleccionados.size === 0) {
                 content.innerHTML = `<span class="ms-placeholder">${placeholder}</span>`;
                 return;

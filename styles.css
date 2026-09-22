@@ -3214,3 +3214,55 @@ header { padding-right: 56px; }
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* ============================================================
+   MEDIA PRIORIDAD — 1) Iconos en labels de filtros
+   ============================================================ */
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filter-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+    opacity: 0.85;
+}
+
+/* ============================================================
+   MEDIA PRIORIDAD — 2) Estado has-value en multiselect
+   ============================================================ */
+.multiselect.has-value .ms-trigger {
+    border-color: var(--primary);
+    background: var(--primary-soft);
+}
+
+.multiselect.has-value .ms-trigger::after {
+    border-top-color: var(--primary);
+}
+
+.multiselect.has-value .ms-placeholder {
+    color: var(--primary);
+}
+
+/* ============================================================
+   MEDIA PRIORIDAD — 3) Línea divisoria en títulos de tarjeta
+   (solo setup-card y results-section, no modales)
+   ============================================================ */
+.setup-card .card-title-row {
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-4);
+}
+
+.setup-card .card-title-row.compact {
+    padding-bottom: var(--space-2);
+    margin-bottom: var(--space-3);
+}
+
+.results-section .card-title-row.compact {
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-4);
+}

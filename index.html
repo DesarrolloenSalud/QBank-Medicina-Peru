@@ -21,7 +21,7 @@
     </script>
     <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="view-setup">
+<body class="view-filters">
 
     <!-- Botón flotante de tema claro / oscuro -->
     <button id="themeToggle" class="theme-toggle" type="button"
@@ -73,71 +73,54 @@
             </div>
         </header>
 
-        <section id="screenSetup" class="screen active">
-            <div class="setup-container">
-                <div class="setup-grid">
-                    <!-- Filtros (incluye modo) -->
-                    <div class="setup-card">
-                        <div class="card-title-row">
-                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
-                            </svg>
-                            <h3>Filtros</h3>
-                        </div>
+        <!-- ============================================================ -->
+        <!-- PANTALLA 1: FILTROS                                           -->
+        <!-- ============================================================ -->
+        <section id="screenFilters" class="screen active">
+            <div class="filters-container">
 
-                        <div class="mode-block">
-                            <label class="mode-block-label">Modo de estudio</label>
-                            <div class="mode-selector">
-                                <button class="mode-btn active" data-mode="practice" id="setupModePractice">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <path d="M12 20h9"></path>
-                                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
-                                    </svg>
-                                    Práctica
-                                </button>
-                                <button class="mode-btn" data-mode="simulacro" id="setupModeSimulacro">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <circle cx="12" cy="12" r="6"></circle>
-                                        <circle cx="12" cy="12" r="2"></circle>
-                                    </svg>
-                                    Simulacro
-                                </button>
-                            </div>
-                            <p class="setup-help" id="modeHelp" style="margin-top:8px;">
-                                En práctica, ves la explicación inmediatamente al responder.
-                            </p>
-                        </div>
+                <div class="filters-hero">
+                    <span class="step-badge">Paso 1 de 2</span>
+                    <h2>Selecciona tu contenido</h2>
+                    <p>Elige los bancos y temas que quieres estudiar. Cada filtro se ajusta según lo que marques arriba.</p>
+                </div>
 
-                        <div class="mode-divider"></div>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label>Banco</label>
+                        <div class="multiselect" id="msSource"></div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Área</label>
+                        <div class="multiselect" id="msArea"></div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Especialidad</label>
+                        <div class="multiselect" id="msEspecialidad"></div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Tema</label>
+                        <div class="multiselect" id="msTema"></div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Dificultad</label>
+                        <div class="multiselect" id="msDificultad"></div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Estado</label>
+                        <div class="multiselect" id="msEstado"></div>
+                    </div>
+                </div>
 
-                        <div class="filter-grid">
-                            <div class="filter-group">
-                                <label>Banco</label>
-                                <div class="multiselect" id="msSource"></div>
-                            </div>
-                            <div class="filter-group">
-                                <label>Área</label>
-                                <div class="multiselect" id="msArea"></div>
-                            </div>
-                            <div class="filter-group">
-                                <label>Especialidad</label>
-                                <div class="multiselect" id="msEspecialidad"></div>
-                            </div>
-                            <div class="filter-group">
-                                <label>Tema</label>
-                                <div class="multiselect" id="msTema"></div>
-                            </div>
-                            <div class="filter-group">
-                                <label>Dificultad</label>
-                                <div class="multiselect" id="msDificultad"></div>
-                            </div>
-                            <div class="filter-group">
-                                <label>Estado</label>
-                                <div class="multiselect" id="msEstado"></div>
-                            </div>
+                <div class="filters-footer">
+                    <div class="filters-stats">
+                        <div class="filters-stat">
+                            <span class="filters-stat-label">Disponibles</span>
+                            <span class="filters-stat-value" id="filtersAvailable">0</span>
                         </div>
-                        
+                        <div class="perfil-resumen" id="perfilResumen"></div>
+                    </div>
+                    <div class="filters-footer-actions">
                         <button id="resetFilters" class="btn-secondary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path>
@@ -145,8 +128,69 @@
                             </svg>
                             Limpiar filtros
                         </button>
+                        <button id="goToConfig" class="btn-primary btn-large">
+                            Continuar
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================ -->
+        <!-- PANTALLA 2: CONFIGURACIÓN                                    -->
+        <!-- ============================================================ -->
+        <section id="screenConfig" class="screen">
+            <div class="config-container">
+
+                <div class="config-topbar">
+                    <button id="backToFilters" class="btn-back">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        Volver a filtros
+                    </button>
+                    <span class="step-badge step-2">Paso 2 de 2</span>
+                </div>
+
+                <div class="config-grid">
+                    <!-- Modo -->
+                    <div class="setup-card">
+                        <div class="card-title-row">
+                            <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                            <h3>Modo de estudio</h3>
+                        </div>
+                        <div class="mode-selector">
+                            <button class="mode-btn active" data-mode="practice" id="setupModePractice">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 20h9"></path>
+                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                                </svg>
+                                Práctica
+                            </button>
+                            <button class="mode-btn" data-mode="simulacro" id="setupModeSimulacro">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                                Simulacro
+                            </button>
+                        </div>
+                        <p class="setup-help" id="modeHelp" style="margin-top:8px;">
+                            En práctica, ves la explicación inmediatamente al responder.
+                        </p>
                     </div>
 
+                    <!-- Cantidad -->
                     <div class="setup-card">
                         <div class="card-title-row">
                             <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -166,13 +210,7 @@
                         </div>
                         <div class="count-custom">
                             <label for="customCount">O escribe un número:</label>
-                            <input
-                                type="number"
-                                id="customCount"
-                                min="1"
-                                step="1"
-                                placeholder="Ej: 35"
-                            />
+                            <input type="number" id="customCount" min="1" step="1" placeholder="Ej: 35" />
                         </div>
                         <label class="checkbox-row">
                             <input type="checkbox" id="shuffleQuestions" checked />
@@ -190,17 +228,12 @@
                             </div>
                             <div class="count-custom" style="margin-bottom:0;">
                                 <label for="customTime">Minutos:</label>
-                                <input
-                                    type="number"
-                                    id="customTime"
-                                    min="1"
-                                    step="1"
-                                    placeholder="20"
-                                />
+                                <input type="number" id="customTime" min="1" step="1" placeholder="20" />
                             </div>
                         </div>
                     </div>
 
+                    <!-- Enfoque -->
                     <div class="setup-card setup-card-enfoque" id="enfoqueCard">
                         <div class="card-title-row">
                             <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -247,7 +280,6 @@
                                 Solo dudosas
                             </button>
                         </div>
-                        <div class="perfil-resumen" id="perfilResumen"></div>
                     </div>
                 </div>
 
@@ -284,7 +316,7 @@
             </div>
         </section>
 
-        <!-- PANTALLA 2: CUESTIONARIO -->
+        <!-- PANTALLA 3: CUESTIONARIO -->
         <section id="screenQuiz" class="screen">
             <div class="quiz-toolbar">
                 <button id="backToSetup" class="btn-back btn-back-compact" title="Volver (⌫)">
@@ -331,15 +363,7 @@
                             </svg>
                             <span class="btn-map-text">Mapa</span>
                         </button>
-                        <input
-                            type="number"
-                            id="goToQuestionInput"
-                            class="go-to-input"
-                            min="1"
-                            step="1"
-                            placeholder="#"
-                            title="Ir a pregunta N"
-                        />
+                        <input type="number" id="goToQuestionInput" class="go-to-input" min="1" step="1" placeholder="#" title="Ir a pregunta N" />
                     </div>
                 </div>
 
@@ -409,7 +433,7 @@
             </div>
         </section>
 
-        <!-- PANTALLA 3: RESULTADOS -->
+        <!-- PANTALLA 4: RESULTADOS -->
         <section id="screenResults" class="screen">
             <div class="results-container">
                 <div class="results-hero">
@@ -418,7 +442,6 @@
                     <p id="resultsSubtitle">Aquí tienes tu desempeño detallado.</p>
                 </div>
 
-                <!-- NUEVO: Banner de veredicto (Aprobado / En riesgo / A mejorar) -->
                 <div id="resultsVerdict" class="results-verdict" style="display:none;" role="status" aria-live="polite">
                     <div class="verdict-icon" id="verdictIcon" aria-hidden="true"></div>
                     <div class="verdict-body">
@@ -450,7 +473,6 @@
                             <span class="score-detail-label">En blanco</span>
                             <span class="score-detail-value" id="resultsBlank">0</span>
                         </div>
-                        <!-- NUEVO: preguntas marcadas -->
                         <div class="score-detail-line" id="resultsFlaggedLine">
                             <span class="score-detail-dot flagged"></span>
                             <span class="score-detail-label">Marcadas para revisar</span>
@@ -495,7 +517,6 @@
                     <div id="resultsByEspecialidad" class="results-bars"></div>
                 </div>
 
-                <!-- NUEVO: Desglose por dificultad -->
                 <div class="results-section">
                     <div class="card-title-row compact">
                         <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -514,7 +535,6 @@
                         </svg>
                         Revisar respuestas
                     </button>
-                    <!-- NUEVO: Practicar puntos débiles -->
                     <button id="practiceWeakBtn" class="btn-secondary" style="display:none;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
@@ -541,7 +561,7 @@
             </div>
         </section>
 
-        <!-- PANTALLA 4: REVISIÓN -->
+        <!-- PANTALLA 5: REVISIÓN -->
         <section id="screenReview" class="screen">
             <div class="review-topbar">
                 <button id="backToResults" class="btn-back">
@@ -709,13 +729,7 @@
                         Tiempo para el nuevo bloque (min)
                     </label>
                     <div class="count-custom" style="margin-bottom:8px;">
-                        <input
-                            type="number"
-                            id="modalTime"
-                            min="1"
-                            step="1"
-                            placeholder="10"
-                        />
+                        <input type="number" id="modalTime" min="1" step="1" placeholder="10" />
                     </div>
                     <p class="modal-warning">
                         El tiempo sobrante del bloque actual se descartará. El nuevo bloque arrancará con el tiempo que indiques.

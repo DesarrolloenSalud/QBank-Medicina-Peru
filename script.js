@@ -51,7 +51,6 @@
     const WARN_THRESHOLD_2 = 5 * 60;
     const WARN_THRESHOLD_3 = 60;
 
-    // Subimos a v2 porque el formato de filtros cambió (Set en vez de string)
     const STORAGE_KEY_SIMULACRO = 'qbank_simulacro_v2';
     const STORAGE_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
@@ -135,10 +134,11 @@
     // ============================================================
     const body = document.body;
 
-    const screenSetup = document.getElementById('screenSetup');
-    const screenQuiz = document.getElementById('screenQuiz');
+    const screenFilters = document.getElementById('screenFilters');
+    const screenConfig  = document.getElementById('screenConfig');
+    const screenQuiz    = document.getElementById('screenQuiz');
     const screenResults = document.getElementById('screenResults');
-    const screenReview = document.getElementById('screenReview');
+    const screenReview  = document.getElementById('screenReview');
 
     const setupModePractice = document.getElementById('setupModePractice');
     const setupModeSimulacro = document.getElementById('setupModeSimulacro');
@@ -156,6 +156,7 @@
 
     const enfoqueBtns = document.querySelectorAll('.enfoque-btn');
     const perfilResumen = document.getElementById('perfilResumen');
+    const filtersAvailable = document.getElementById('filtersAvailable');
 
     const timeBlock = document.getElementById('timeBlock');
     const customTimeInput = document.getElementById('customTime');
@@ -169,6 +170,8 @@
     const msEstado       = document.getElementById('msEstado');
 
     const resetBtn = document.getElementById('resetFilters');
+    const goToConfigBtn = document.getElementById('goToConfig');
+    const backToFiltersBtn = document.getElementById('backToFilters');
     const totalSpan = document.getElementById('totalQuestions');
 
     const backToSetupBtn = document.getElementById('backToSetup');
@@ -345,7 +348,7 @@
     }
 
     // ============================================================
-    // 5. PERSISTENCIA (simulacro global, no por banco)
+    // 5. PERSISTENCIA (simulacro global)
     // ============================================================
     function getSimulacroStorageKey() {
         return STORAGE_KEY_SIMULACRO;
@@ -635,13 +638,15 @@
             })
             .catch(err => {
                 console.error('Error al cargar el manifiesto:', err);
-                container.innerHTML = `
-                    <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
-                        <h3 style="color:#991b1b;">Error al cargar los bancos</h3>
-                        <p style="margin-top:8px;">Verifica que exista <strong>${SOURCES_URL}</strong> y que sea un JSON válido.</p>
-                        <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
-                    </div>
-                `;
+                if (container) {
+                    container.innerHTML = `
+                        <div style="padding:40px;text-align:center;color:#991b1b;background:#fef2f2;border-radius:14px;border:1px solid #fecaca;">
+                            <h3 style="color:#991b1b;">Error al cargar los bancos</h3>
+                            <p style="margin-top:8px;">Verifica que exista <strong>${SOURCES_URL}</strong> y que sea un JSON válido.</p>
+                            <p style="font-size:13px;color:#6b7280;margin-top:4px;">${err.message}</p>
+                        </div>
+                    `;
+                }
             });
     }
 
@@ -744,21 +749,12 @@
     }
 
     function populateAllFilters() {
-        // Bancos: desde dataSources (nombre → lo que ve el usuario)
         multiSource.setOptions(dataSources.map(s => s.name));
-
-        // Dificultad y estado: valores fijos
         multiDificultad.setOptions(['Baja', 'Media', 'Alta']);
         multiEstado.setOptions(['activa', 'inactiva']);
-
-        // Cascada
         updateDependentFilters();
     }
 
-    /**
-     * Devuelve los IDs de banco seleccionados a partir de los nombres.
-     * Set vacío = todos.
-     */
     function getSourceIdsSeleccionados() {
         if (filtrosActivos.source.size === 0) return new Set();
         const ids = new Set();
@@ -768,38 +764,23 @@
         return ids;
     }
 
-    /**
-     * Recalcula en cascada las opciones disponibles de cada filtro
-     * según los filtros "padre" ya seleccionados.
-     */
     function updateDependentFilters() {
         const sourceIds = getSourceIdsSeleccionados();
 
-        // Área: depende solo del banco
         const areas = getOpcionesDisponibles('area', sourceIds, null, null);
         multiArea.setOptions(areas);
 
-        // Especialidad: depende de banco + área
         const especialidades = getOpcionesDisponibles(
             'especialidad', sourceIds, filtrosActivos.area, null
         );
         multiEspecialidad.setOptions(especialidades);
 
-        // Tema: depende de banco + área + especialidad
         const temas = getOpcionesDisponibles(
             'tema', sourceIds, filtrosActivos.area, filtrosActivos.especialidad
         );
         multiTema.setOptions(temas);
     }
 
-    /**
-     * Devuelve los valores únicos del campo `campo` entre las preguntas
-     * que cumplen los filtros padre indicados.
-     * @param {string} campo
-     * @param {Set<string>} sourceIds     - IDs de bancos seleccionados (vacío = todos)
-     * @param {Set<string>|null} areaSet
-     * @param {Set<string>|null} espSet
-     */
     function getOpcionesDisponibles(campo, sourceIds, areaSet, espSet) {
         const candidatas = preguntas.filter(p => {
             if (sourceIds.size > 0 && !sourceIds.has(p._sourceId)) return false;
@@ -851,11 +832,9 @@
     }
 
     function cumpleFiltros(p) {
-        // Banco (por id interno)
         const sourceIds = getSourceIdsSeleccionados();
         if (sourceIds.size > 0 && !sourceIds.has(p._sourceId)) return false;
 
-        // Campos de texto: OR dentro del set, AND entre campos
         if (filtrosActivos.area.size > 0 && !filtrosActivos.area.has(p.area)) return false;
         if (filtrosActivos.especialidad.size > 0 && !filtrosActivos.especialidad.has(p.especialidad)) return false;
         if (filtrosActivos.tema.size > 0 && !filtrosActivos.tema.has(p.tema)) return false;
@@ -876,6 +855,8 @@
         summaryFilters.textContent = buildFilterLabel();
         summaryAvailable.textContent = disponible;
         summaryCount.textContent = aResolver;
+
+        if (filtersAvailable) filtersAvailable.textContent = disponible;
 
         const esSimulacro = currentMode === MODE_SIMULACRO;
         if (timeBlock) {
@@ -928,13 +909,10 @@
             return;
         }
 
-        // Con multibando, mostramos el resumen de los bancos seleccionados
-        // (o el global si no hay ninguno seleccionado).
         let r;
         if (filtrosActivos.source.size === 0) {
             r = window.Dominio.getResumen();
         } else {
-            // Sumamos los resúmenes por prefijo de cada banco seleccionado
             const ids = getSourceIdsSeleccionados();
             r = { dominadas: 0, dudosas: 0, falladas: 0, total: 0 };
             ids.forEach(id => {
@@ -947,7 +925,7 @@
         }
 
         if (r.total === 0) {
-            perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos para este banco. Empieza a practicar para construir tu perfil.</span>`;
+            perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos. Empieza a practicar para construir tu perfil.</span>`;
             return;
         }
         perfilResumen.innerHTML = `
@@ -1016,17 +994,22 @@
     // 9. NAVEGACIÓN ENTRE PANTALLAS
     // ============================================================
     function showScreen(name) {
-        body.classList.remove('view-setup', 'view-quiz', 'view-results', 'view-review');
+        body.classList.remove(
+            'view-filters', 'view-config',
+            'view-quiz', 'view-results', 'view-review'
+        );
         body.classList.add('view-' + name);
 
-        [screenSetup, screenQuiz, screenResults, screenReview].forEach(s => {
-            if (s) s.classList.remove('active');
-        });
+        [screenFilters, screenConfig, screenQuiz, screenResults, screenReview]
+            .forEach(s => s && s.classList.remove('active'));
 
-        if (name === 'setup') {
-            screenSetup.classList.add('active');
+        if (name === 'filters') {
+            screenFilters.classList.add('active');
             if (bottomActionBar) bottomActionBar.style.display = 'none';
             stopSimTimer();
+        } else if (name === 'config') {
+            screenConfig.classList.add('active');
+            updateSetupSummary();
         } else if (name === 'quiz') {
             screenQuiz.classList.add('active');
         } else if (name === 'results') {
@@ -1038,7 +1021,7 @@
     }
 
     function volverAlSetup() {
-        showScreen('setup');
+        showScreen('filters');
         applyFilters();
         updatePerfilResumen();
         updateSetupSummary();
@@ -2239,6 +2222,9 @@
         applyFilters();
     });
 
+    goToConfigBtn.addEventListener('click', () => showScreen('config'));
+    backToFiltersBtn.addEventListener('click', () => showScreen('filters'));
+
     countButtons.forEach(btn => {
         btn.addEventListener('click', () => {
             countButtons.forEach(b => b.classList.remove('active'));
@@ -2402,7 +2388,6 @@
             const area = practiceWeakBtn.dataset.weakArea;
             if (!area) return;
 
-            // Limpiar filtros y dejar solo el área débil
             filtrosActivos.especialidad = new Set();
             filtrosActivos.tema = new Set();
             filtrosActivos.dificultad = new Set();
@@ -2478,7 +2463,6 @@
     });
 
     document.addEventListener('keydown', (e) => {
-        // No interferir si el foco está en un input/select/textarea o en el buscador del multiselect
         const tag = e.target.tagName;
         if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
         if (e.ctrlKey || e.altKey || e.metaKey) return;
@@ -2495,6 +2479,13 @@
             if (answerMapModal.style.display === 'flex') { closeAnswerMap(); return; }
             if (continueModal.style.display === 'flex') { closeContinueModal(); return; }
             if (finishModal.style.display === 'flex') { closeFinishModal(); return; }
+            return;
+        }
+
+        // En pantalla de config, Backspace = volver a filtros
+        if (e.key === 'Backspace' && screenConfig.classList.contains('active')) {
+            e.preventDefault();
+            showScreen('filters');
             return;
         }
 

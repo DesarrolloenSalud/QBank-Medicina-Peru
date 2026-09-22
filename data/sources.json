@@ -22,5 +22,11 @@
     "name": "Pregrado",
     "description": "Banco de preguntas Pregrado.",
     "file": "data/pregrado.json"
+  },
+  {
+    "id": "simulacro_villamedic",
+    "name": "Banco externo",
+    "description": "Banco de preguntas VM",
+    "file": "data/simulacro_villamedic.json"
   }
 ]

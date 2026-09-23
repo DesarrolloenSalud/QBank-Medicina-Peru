@@ -1,42 +1,104 @@
-// dominio.js — Sistema de repetición espaciada (SM-2 simplificado)
 (function () {
     'use strict';
 
     const STORAGE_KEY = 'qbank_dominio_v1';
-    const VERSION = 1;
+    const VERSION = 2; // v2: registros con estructura FSRS
 
-    // ---- SM-2 constants ----
     const DIA_MS = 86400000;
-    const MINUTO_MS = 60000;
+
+    // ---- SM-2 fallback constants ----
     const INTERVALOS_BASE = [1, 3, 7, 21, 60];
     const FACILIDAD_DEFAULT = 2.5;
     const FACILIDAD_MIN = 1.3;
     const FACILIDAD_MAX = 3.0;
 
+    // ------------------------------------------------------------
+    // FSRS — inicialización (con fallback)
+    // ------------------------------------------------------------
+    let fsrsReady = false;
+    let scheduler = null;
+    let Rating = null;
+    let State = null;
+    let createEmptyCard = null;
+
+    function initFSRS() {
+        const lib = window.tsFsrs || window.TSFSRS || window['ts-fsrs'] || window.FSRS;
+        if (!lib) {
+            console.warn('[Dominio] ts-fsrs no disponible. Usando fallback SM-2.');
+            return false;
+        }
+        try {
+            createEmptyCard = lib.createEmptyCard;
+            Rating = lib.Rating;
+            State = lib.State;
+            scheduler = lib.fsrs({
+                request_retention: 0.9,      // 90% de retención objetivo
+                maximum_interval: 36500,     // 100 años
+                enable_fuzz: true,
+                enable_short_term: true,
+                learning_steps: ['1m', '10m'],
+                relearning_steps: ['10m']
+            });
+            if (!createEmptyCard || !Rating || !State || !scheduler) {
+                console.warn('[Dominio] ts-fsrs incompleto. Usando fallback SM-2.');
+                return false;
+            }
+            fsrsReady = true;
+            console.log('[Dominio] FSRS inicializado correctamente.');
+            return true;
+        } catch (err) {
+            console.warn('[Dominio] Error inicializando FSRS:', err);
+            return false;
+        }
+    }
+
+    // ------------------------------------------------------------
+    // ESTADO INTERNO
+    // ------------------------------------------------------------
     let cache = null;
     let dirty = false;
 
-    // ---- Migración de registros antiguos ----
+    // ------------------------------------------------------------
+    // MIGRACIÓN v1 (SM-2) → v2 (FSRS)
+    // ------------------------------------------------------------
     function migrarRegistro(e) {
         if (!e) return e;
-        if (e.intervalo != null && e.proximoRepaso != null) return e;
+        if (e.stability != null && e.due != null) return e; // ya es FSRS
 
-        e.facilidad = e.facilidad || FACILIDAD_DEFAULT;
+        const ahora = Date.now();
+        const ultima = e.ultimaVez || ahora;
+
+        const oldEstado = e.estado || 'fallada';
+        const oldIntervalo = e.intervalo || 0;
+        const oldFacilidad = e.facilidad || FACILIDAD_DEFAULT;
+        const oldFallos = e.fallos || 0;
+        const oldAciertos = e.aciertos || 0;
+
+        // Mapear estado SM-2 → FSRS (0=New, 1=Learning, 2=Review, 3=Relearning)
+        let fsrsState;
+        if (oldEstado === 'dominada') fsrsState = 2;      // Review
+        else if (oldEstado === 'dudosa') fsrsState = 1;   // Learning
+        else fsrsState = 3;                               // Relearning
+
+        e.stability = oldIntervalo > 0 ? oldIntervalo : 1;
+        const norm = (oldFacilidad - FACILIDAD_MIN) / (FACILIDAD_MAX - FACILIDAD_MIN);
+        e.difficulty = Math.round(10 - norm * 9);
+        e.elapsed_days = 0;
+        e.scheduled_days = oldIntervalo;
+        e.reps = oldAciertos + oldFallos;
+        e.lapses = oldFallos;
+        e.state = fsrsState;
+        e.last_review = ultima;
+        e.due = (e.proximoRepaso && e.proximoRepaso > 0) ? e.proximoRepaso : ahora;
+        e.sinDatos = e.sinDatos || false;
+
+        // Campos de compatibilidad
+        e.proximoRepaso = e.due;
+        e.intervalo = e.scheduled_days;
+        e.facilidad = oldFacilidad;
+        e.repeticiones = e.reps;
         e.racha = e.racha || 0;
 
-        if (e.estado === 'dominada') {
-            e.intervalo = 1;
-            e.repeticiones = 1;
-            e.proximoRepaso = (e.ultimaVez || Date.now()) + DIA_MS;
-        } else if (e.estado === 'dudosa' || e.estado === 'fallada') {
-            e.intervalo = 1;
-            e.repeticiones = 0;
-            e.proximoRepaso = 0;
-        } else {
-            e.intervalo = 0;
-            e.repeticiones = 0;
-            e.proximoRepaso = 0;
-        }
         return e;
     }
 
@@ -49,12 +111,22 @@
 
         try {
             const data = JSON.parse(raw);
-            if (!data || data.version !== VERSION || typeof data.preguntas !== 'object') {
+            if (!data || typeof data.preguntas !== 'object') {
                 cache = {};
                 return cache;
             }
             cache = data.preguntas || {};
-            for (const k in cache) cache[k] = migrarRegistro(cache[k]);
+            let migrados = 0;
+            for (const k in cache) {
+                const antes = cache[k];
+                const eraV1 = antes && antes.stability == null;
+                cache[k] = migrarRegistro(cache[k]);
+                if (eraV1 && cache[k] && cache[k].stability != null) migrados++;
+            }
+            if (migrados > 0) {
+                console.log(`[Dominio] ${migrados} registros migrados a FSRS.`);
+                dirty = true; // forzar guardado con la nueva estructura
+            }
         } catch (err) {
             console.warn('[Dominio] Datos corruptos, se reinicia el perfil.');
             cache = {};
@@ -79,13 +151,115 @@
 
     function clave(id) { return String(id); }
 
-    // ---- Núcleo SM-2 ----
-    function aplicarSM2(e, acierto, dudaba, ahora) {
+    // ------------------------------------------------------------
+    // HELPERS FSRS
+    // ------------------------------------------------------------
+    // Extrae el Card del resultado de scheduler.next().
+    // ts-fsrs v4/v5 → RecordLog: { [Rating.X]: { card, log } }
+    // Algunas variantes → objeto directo { card, log }
+    function extraerCard(result, rating) {
+        if (!result) return null;
+        if (result[rating] && result[rating].card) return result[rating].card;
+        if (result.card) return result.card;
+        return null;
+    }
+
+    function construirCardFSRS(e, ahora) {
+        return {
+            due: new Date(e.due || ahora),
+            stability: e.stability || 0,
+            difficulty: e.difficulty || 0,
+            elapsed_days: e.elapsed_days || 0,
+            scheduled_days: e.scheduled_days || 0,
+            reps: e.reps || 0,
+            lapses: e.lapses || 0,
+            state: (e.state != null) ? e.state : State.New,
+            last_review: e.last_review ? new Date(e.last_review) : undefined
+        };
+    }
+
+    function volcarCardFSRS(e, nextCard, ahora, rating) {
+        e.stability = nextCard.stability;
+        e.difficulty = nextCard.difficulty;
+        e.elapsed_days = nextCard.elapsed_days;
+        e.scheduled_days = nextCard.scheduled_days;
+        e.reps = nextCard.reps;
+        e.lapses = nextCard.lapses;
+        e.state = nextCard.state;
+        e.last_review = ahora;
+        e.due = nextCard.due.getTime();
+        if (rating != null) e._ultimoRating = rating;
+
+        // Campos de compatibilidad
+        e.proximoRepaso = e.due;
+        e.intervalo = e.scheduled_days;
+        e.ultimaVez = ahora;
+
+        // facilidad aproximada para compatibilidad con UI
+        e.facilidad = Math.max(FACILIDAD_MIN,
+            Math.min(FACILIDAD_MAX,
+                FACILIDAD_DEFAULT + (5 - e.difficulty) * 0.2
+            )
+        );
+    }
+
+    // ------------------------------------------------------------
+    // NÚCLEO FSRS
+    // ------------------------------------------------------------
+    // Rating: Again=1, Hard=2, Good=3, Easy=4
+    function registrarConFSRS(e, acierto, dudaba, ahora) {
+        // Mapear resultado del QBank a Rating FSRS
+        let rating;
+        if (!acierto) {
+            rating = Rating.Again;
+        } else if (dudaba) {
+            rating = Rating.Hard;
+        } else {
+            rating = Rating.Good;
+        }
+
+        const card = construirCardFSRS(e, ahora);
+
+        let nextCard = null;
+        try {
+            const result = scheduler.next(card, new Date(ahora), rating);
+            nextCard = extraerCard(result, rating);
+        } catch (err) {
+            console.warn('[Dominio] FSRS.next() falló, se usa SM-2 para este intento:', err);
+            nextCard = null;
+        }
+
+        if (!nextCard) {
+            // Fallback automático a SM-2
+            registrarConSM2(e, acierto, dudaba, ahora);
+            return;
+        }
+
+        volcarCardFSRS(e, nextCard, ahora, rating);
+
+        // Estado legible derivado del resultado FSRS
+        if (rating === Rating.Again) {
+            e.estado = 'fallada';
+        } else if (rating === Rating.Hard) {
+            e.estado = 'dudosa';
+        } else {
+            // Good o Easy → dominada si entró en Review, si no dudosa
+            e.estado = (nextCard.state === State.Review) ? 'dominada' : 'dudosa';
+        }
+
+        // racha: aciertos consecutivos sin fallo
+        if (acierto) e.racha = (e.racha || 0) + 1;
+        else e.racha = 0;
+    }
+
+    // ------------------------------------------------------------
+    // NÚCLEO SM-2 (fallback)
+    // ------------------------------------------------------------
+    function registrarConSM2(e, acierto, dudaba, ahora) {
         if (acierto && !dudaba) {
             e.racha = (e.racha || 0) + 1;
             e.repeticiones = (e.repeticiones || 0) + 1;
             e.facilidad = Math.min(FACILIDAD_MAX, (e.facilidad || FACILIDAD_DEFAULT) + 0.10);
-
             const r = e.repeticiones;
             if (r <= INTERVALOS_BASE.length) {
                 e.intervalo = INTERVALOS_BASE[r - 1];
@@ -94,7 +268,6 @@
             }
             e.estado = 'dominada';
             e.proximoRepaso = ahora + e.intervalo * DIA_MS;
-
         } else if (acierto && dudaba) {
             e.racha = 0;
             e.repeticiones = Math.max(0, (e.repeticiones || 0) - 1);
@@ -102,18 +275,26 @@
             e.intervalo = Math.max(1, Math.round((e.intervalo || 1) * 0.5));
             e.estado = 'dudosa';
             e.proximoRepaso = ahora + e.intervalo * DIA_MS;
-
         } else {
             e.racha = 0;
             e.repeticiones = 0;
             e.facilidad = Math.max(FACILIDAD_MIN, (e.facilidad || FACILIDAD_DEFAULT) - 0.20);
             e.intervalo = 1;
             e.estado = 'fallada';
-            // Fallo: re-mostrar en 10 min (misma sesión si el usuario vuelve a filtros)
-            e.proximoRepaso = ahora + 10 * MINUTO_MS;
+            e.proximoRepaso = ahora + 10 * 60000;
         }
+        e.ultimaVez = ahora;
+
+        // Sincronizar campos FSRS para mantener consistencia si en el futuro
+        // se reactiva FSRS o se leen desde getFsrsInfo()
+        e.due = e.proximoRepaso;
+        e.scheduled_days = e.intervalo;
+        e.last_review = ahora;
     }
 
+    // ------------------------------------------------------------
+    // API PÚBLICA
+    // ------------------------------------------------------------
     const Dominio = {
 
         getEstado(id) {
@@ -135,7 +316,10 @@
             const e = db[k] || {
                 estado: 'fallada', aciertos: 0, fallos: 0, dudas: 0,
                 ultimaVez: 0, intervalo: 0, facilidad: FACILIDAD_DEFAULT,
-                repeticiones: 0, proximoRepaso: 0, racha: 0
+                repeticiones: 0, proximoRepaso: 0, racha: 0,
+                // Campos FSRS
+                due: 0, stability: 0, difficulty: 0, elapsed_days: 0,
+                scheduled_days: 0, reps: 0, lapses: 0, state: 0, last_review: 0
             };
 
             e.sinDatos = false;
@@ -145,7 +329,11 @@
             else          e.fallos  = (e.fallos  || 0) + 1;
             if (dudaba)   e.dudas   = (e.dudas   || 0) + 1;
 
-            aplicarSM2(e, acierto, dudaba, ahora);
+            if (fsrsReady) {
+                registrarConFSRS(e, acierto, dudaba, ahora);
+            } else {
+                registrarConSM2(e, acierto, dudaba, ahora);
+            }
 
             db[k] = e;
             cache = db;
@@ -160,18 +348,52 @@
             const e = db[k] || {
                 estado: 'dudosa', aciertos: 0, fallos: 0, dudas: 0,
                 ultimaVez: 0, intervalo: 1, facilidad: FACILIDAD_DEFAULT,
-                repeticiones: 0, proximoRepaso: 0, racha: 0
+                repeticiones: 0, proximoRepaso: 0, racha: 0,
+                due: 0, stability: 0, difficulty: 0, elapsed_days: 0,
+                scheduled_days: 0, reps: 0, lapses: 0, state: 0, last_review: 0
             };
 
             e.sinDatos = false;
             e.ultimaVez = ahora;
-            e.estado = 'dudosa';
             e.dudas = (e.dudas || 0) + 1;
             e.racha = 0;
-            e.repeticiones = Math.max(0, (e.repeticiones || 0) - 1);
-            e.facilidad = Math.max(FACILIDAD_MIN, (e.facilidad || FACILIDAD_DEFAULT) - 0.10);
-            e.intervalo = Math.max(1, Math.round((e.intervalo || 1) * 0.5));
-            e.proximoRepaso = ahora + e.intervalo * DIA_MS;
+
+            if (fsrsReady) {
+                // "Ya la entiendo" → Rating.Hard (recuperó, pero con esfuerzo)
+                const card = construirCardFSRS(e, ahora);
+                let nextCard = null;
+                try {
+                    const result = scheduler.next(card, new Date(ahora), Rating.Hard);
+                    nextCard = extraerCard(result, Rating.Hard);
+                } catch (err) {
+                    console.warn('[Dominio] FSRS.next() (marcarDudosa) falló:', err);
+                    nextCard = null;
+                }
+
+                if (nextCard) {
+                    volcarCardFSRS(e, nextCard, ahora, Rating.Hard);
+                    e.estado = 'dudosa';
+                } else {
+                    // Fallback SM-2 si FSRS falla
+                    e.estado = 'dudosa';
+                    e.repeticiones = Math.max(0, (e.repeticiones || 0) - 1);
+                    e.facilidad = Math.max(FACILIDAD_MIN, (e.facilidad || FACILIDAD_DEFAULT) - 0.10);
+                    e.intervalo = Math.max(1, Math.round((e.intervalo || 1) * 0.5));
+                    e.proximoRepaso = ahora + e.intervalo * DIA_MS;
+                    e.due = e.proximoRepaso;
+                    e.scheduled_days = e.intervalo;
+                    e.last_review = ahora;
+                }
+            } else {
+                e.estado = 'dudosa';
+                e.repeticiones = Math.max(0, (e.repeticiones || 0) - 1);
+                e.facilidad = Math.max(FACILIDAD_MIN, (e.facilidad || FACILIDAD_DEFAULT) - 0.10);
+                e.intervalo = Math.max(1, Math.round((e.intervalo || 1) * 0.5));
+                e.proximoRepaso = ahora + e.intervalo * DIA_MS;
+                e.due = e.proximoRepaso;
+                e.scheduled_days = e.intervalo;
+                e.last_review = ahora;
+            }
 
             db[k] = e;
             cache = db;
@@ -205,7 +427,6 @@
             return { dominadas, dudosas, falladas, total };
         },
 
-        // ---- SRS API ----
         getVencidas(prefix, ahora = Date.now()) {
             const db = cargar();
             const out = new Set();
@@ -220,7 +441,7 @@
 
         getResumenVencimiento(prefix, ahora = Date.now()) {
             const db = cargar();
-            let nuevas = 0, vencidas = 0, proximas = 0;
+            let vencidas = 0, proximas = 0;
             for (const k of Object.keys(db)) {
                 if (prefix && !k.startsWith(prefix)) continue;
                 const e = db[k];
@@ -228,7 +449,7 @@
                 if ((e.proximoRepaso || 0) <= ahora) vencidas++;
                 else proximas++;
             }
-            return { nuevas, vencidas, proximas };
+            return { vencidas, proximas };
         },
 
         getProximoRepaso(id) {
@@ -246,6 +467,25 @@
             return e ? (e.racha || 0) : 0;
         },
 
+        // Info extendida de FSRS (para UI futura)
+        getFsrsInfo(id) {
+            const e = cargar()[clave(id)];
+            if (!e || e.sinDatos) return null;
+            return {
+                stability: e.stability || 0,
+                difficulty: e.difficulty || 0,
+                elapsed_days: e.elapsed_days || 0,
+                scheduled_days: e.scheduled_days || 0,
+                reps: e.reps || 0,
+                lapses: e.lapses || 0,
+                state: e.state,
+                due: e.due,
+                last_review: e.last_review
+            };
+        },
+
+        isFsrsReady() { return fsrsReady; },
+
         getPerfil() { return { ...cargar() }; },
 
         resetear() {
@@ -255,10 +495,15 @@
         }
     };
 
+    // ------------------------------------------------------------
+    // INICIALIZACIÓN
+    // ------------------------------------------------------------
+    initFSRS();
+
     window.Dominio = Dominio;
 
     window.addEventListener('beforeunload', () => { guardar(); });
 
     const r = Dominio.getResumen();
-    console.log(`[Dominio] Cargado. Dominadas: ${r.dominadas}, Dudosas: ${r.dudosas}, Falladas: ${r.falladas} (total ${r.total}).`);
+    console.log(`[Dominio] Cargado (${fsrsReady ? 'FSRS' : 'SM-2 fallback'}). Dominadas: ${r.dominadas}, Dudosas: ${r.dudosas}, Falladas: ${r.falladas} (total ${r.total}).`);
 })();

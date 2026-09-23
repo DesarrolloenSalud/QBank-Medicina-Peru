@@ -927,7 +927,7 @@
         }
 
         enfoqueBadge.innerHTML = `
-            <span class="enfoque-badge-item badge-due" title="Vencidas + nuevas">🔥 ${totalRepaso} para repasar</span>
+            <span class="enfoque-badge-item badge-due" title="Vencidas + nuevas">🔥 ${totalRepaso} repasar</span>
             <span class="enfoque-badge-item badge-new" title="Nunca vistas">🆕 ${counts.nuevas} nuevas</span>
             <span class="enfoque-badge-item badge-weak" title="Falladas o dudosas">⚠️ ${counts.debiles} débiles</span>
         `;

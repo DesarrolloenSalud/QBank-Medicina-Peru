@@ -85,7 +85,7 @@
     let currentMode = MODE_PRACTICE;
     let selectedCount = 20;
 
-    let currentEnfoque = 'all';
+    let currentEnfoque = 'todas';
     let selectedTimeLimitMin = null;
 
     let practiceAnswers = {};
@@ -132,15 +132,11 @@
     // ============================================================
     // 2.b CACHÉS DE RENDIMIENTO
     // ============================================================
-    // 1) Guardado con debounce: agrupa múltiples cambios en una sola escritura.
     let _saveTimer = null;
     let _savePending = false;
 
-    // 2) Snapshot estático: sessionIds, filteredIds, usedSessionIds y filtros
-    //    no cambian durante la sesión de simulacro → se serializan una sola vez.
     let _staticSnapshotCache = null;
 
-    // 3) sourceIds derivados de los bancos seleccionados (memoizado por firma).
     let _sourceIdsCache = null;
     let _sourceIdsKey = '';
 
@@ -170,13 +166,13 @@
     const shuffleCheckbox = document.getElementById('shuffleQuestions');
 
     const enfoqueBtns = document.querySelectorAll('.enfoque-btn');
+    const enfoqueBadge = document.getElementById('enfoqueBadge');
     const perfilResumen = document.getElementById('perfilResumen');
     const filtersAvailable = document.getElementById('filtersAvailable');
 
     const timeBlock = document.getElementById('timeBlock');
     const customTimeInput = document.getElementById('customTime');
 
-    // Contenedores de MultiSelect
     const msSource       = document.getElementById('msSource');
     const msArea         = document.getElementById('msArea');
     const msEspecialidad = document.getElementById('msEspecialidad');
@@ -369,9 +365,6 @@
         return STORAGE_KEY_SIMULACRO;
     }
 
-    // ------------------------------------------------------------
-    // Caché del snapshot estático (parte inmutable durante la sesión)
-    // ------------------------------------------------------------
     function getStaticSnapshot() {
         if (_staticSnapshotCache) return _staticSnapshotCache;
         _staticSnapshotCache = {
@@ -397,9 +390,6 @@
         _staticSnapshotCache = null;
     }
 
-    // ------------------------------------------------------------
-    // Guardado con debounce
-    // ------------------------------------------------------------
     function scheduleSaveSimulacro() {
         if (currentMode !== MODE_SIMULACRO) return;
         if (simulacroState.revealed) return;
@@ -604,7 +594,13 @@
             selectedCount = data.selectedCount;
         }
         if (data.enfoque) {
-            currentEnfoque = data.enfoque;
+            const mapEnfoque = {
+                'all': 'todas',
+                'no-dominadas': 'repaso',
+                'falladas': 'debiles',
+                'dudosas': 'nuevas'
+            };
+            currentEnfoque = mapEnfoque[data.enfoque] || data.enfoque;
             enfoqueBtns.forEach(b => {
                 b.classList.toggle('active', b.dataset.enfoque === currentEnfoque);
             });
@@ -834,9 +830,6 @@
         updateDependentFilters();
     }
 
-    // ------------------------------------------------------------
-    // sourceIds memoizado por firma del Set de bancos seleccionados
-    // ------------------------------------------------------------
     function getSourceIdsSeleccionados() {
         if (filtrosActivos.source.size === 0) return new Set();
 
@@ -880,54 +873,103 @@
         return [...new Set(candidatas.map(p => p[campo]))].sort();
     }
 
+    // ============================================================
+    // 7.b SRS — Filtro de enfoque y prioridad por vencimiento
+    // ============================================================
     function cumpleEnfoque(p) {
-        if (currentEnfoque === 'all') return true;
+        if (currentEnfoque === 'todas') return true;
 
-        const id = getPreguntaId(p);
-        const estado = window.Dominio ? window.Dominio.getEstado(id) : null;
+        const info = window.Dominio ? window.Dominio.getInfo(getPreguntaId(p)) : null;
+        const ahora = Date.now();
 
-        if (currentEnfoque === 'no-dominadas') {
-            return estado !== 'dominada';
+        if (currentEnfoque === 'repaso') {
+            // Vencidas + nuevas (nunca vistas)
+            if (!info) return true;
+            return (info.proximoRepaso || 0) <= ahora;
         }
-        if (currentEnfoque === 'falladas') {
-            return estado === 'fallada';
+        if (currentEnfoque === 'nuevas') {
+            return !info;
         }
-        if (currentEnfoque === 'dudosas') {
-            return estado === 'dudosa';
+        if (currentEnfoque === 'debiles') {
+            if (!info) return false;
+            return info.estado === 'fallada' || info.estado === 'dudosa';
         }
         return true;
     }
 
     function pesoEnfoque(p) {
+        if (currentEnfoque === 'todas') return 0;
         if (!window.Dominio) return 0;
-        const id = getPreguntaId(p);
-        const info = window.Dominio.getInfo(id);
-        if (!info) return 0;
-        return (info.fallos || 0) * 1000 + (info.dudas || 0) * 10;
+
+        const info = window.Dominio.getInfo(getPreguntaId(p));
+        const ahora = Date.now();
+
+        if (!info) return 500000; // nueva: prioridad media
+
+        const pr = info.proximoRepaso || 0;
+        if (pr <= ahora) {
+            const atrasoDias = (ahora - pr) / 86400000;
+            return 1000000 + atrasoDias * 1000
+                 + (info.fallos || 0) * 100
+                 + (info.dudas  || 0) * 10;
+        }
+        const diasFalta = (pr - ahora) / 86400000;
+        return -diasFalta;
     }
 
-    // ------------------------------------------------------------
-    // applyFilters optimizado: una sola pasada, sin copias de preguntas,
-    // con sourceIds calculado una sola vez.
-    // ------------------------------------------------------------
+    function renderEnfoqueBadge(counts) {
+        if (!enfoqueBadge) return;
+        const totalRepaso = counts.nuevas + counts.vencidas;
+
+        if (totalRepaso === 0 && counts.debiles === 0) {
+            enfoqueBadge.innerHTML = `<span class="enfoque-badge-empty">Aún no hay datos. Empieza con <strong>Nuevas</strong> o <strong>Todas</strong>.</span>`;
+            return;
+        }
+
+        enfoqueBadge.innerHTML = `
+            <span class="enfoque-badge-item badge-due" title="Vencidas + nuevas">🔥 ${totalRepaso} para repasar</span>
+            <span class="enfoque-badge-item badge-new" title="Nunca vistas">🆕 ${counts.nuevas} nuevas</span>
+            <span class="enfoque-badge-item badge-weak" title="Falladas o dudosas">⚠️ ${counts.debiles} débiles</span>
+        `;
+    }
+
+    // ============================================================
+    // 7.c applyFilters — una sola pasada (filtros + conteo del badge)
+    // ============================================================
     function applyFilters() {
         const sourceIds = getSourceIdsSeleccionados();
+        const ahora = Date.now();
         const ids = [];
+        let nuevas = 0, vencidas = 0, debiles = 0;
 
         for (let i = 0; i < preguntas.length; i++) {
             const p = preguntas[i];
             if (!cumpleFiltros(p, sourceIds)) continue;
+
+            // ---- Conteo del badge (mismo criterio de filtro base) ----
+            const info = window.Dominio ? window.Dominio.getInfo(getPreguntaId(p)) : null;
+            if (!info) {
+                nuevas++;
+            } else if ((info.proximoRepaso || 0) <= ahora) {
+                vencidas++;
+            }
+            if (info && (info.estado === 'fallada' || info.estado === 'dudosa')) {
+                debiles++;
+            }
+
+            // ---- Filtro de enfoque ----
             if (!cumpleEnfoque(p)) continue;
             ids.push(i);
         }
 
-        if (currentEnfoque !== 'all') {
+        if (currentEnfoque !== 'todas') {
             ids.sort((a, b) => pesoEnfoque(preguntas[b]) - pesoEnfoque(preguntas[a]));
         }
 
         filteredIds = ids;
         invalidateStaticSnapshot();
         updateSetupSummary();
+        renderEnfoqueBadge({ nuevas, vencidas, debiles });
     }
 
     function cumpleFiltros(p, sourceIds) {
@@ -989,10 +1031,10 @@
         pushSet(filtrosActivos.estado, 'Estado');
 
         const mapEnfoque = {
-            'all': null,
-            'no-dominadas': 'No dominadas',
-            'falladas': 'Solo falladas',
-            'dudosas': 'Solo dudosas'
+            'todas':   null,
+            'repaso':  'Repaso',
+            'nuevas':  'Nuevas',
+            'debiles': 'Débiles'
         };
         const enfTxt = mapEnfoque[currentEnfoque];
         if (enfTxt) partes.push(enfTxt);
@@ -1021,7 +1063,6 @@
                 r.total     += sub.total;
             });
         }
-        // --- Stat-cards (alta prioridad) ---
         const elDom = document.getElementById('statDominadas');
         const elDud = document.getElementById('statDudosas');
         const elFal = document.getElementById('statFalladas');
@@ -1088,7 +1129,6 @@
 
         if (currentMode === MODE_SIMULACRO) {
             startSimTimer();
-            // Guardado inmediato al iniciar (una sola vez).
             saveSimulacroState();
         } else {
             stopSimTimer();

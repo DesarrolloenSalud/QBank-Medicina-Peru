@@ -3266,3 +3266,66 @@ header { padding-right: 56px; }
     border-bottom: 1px solid var(--border);
     margin-bottom: var(--space-4);
 }
+
+/* ============================================================
+   SRS — Badge del panel de enfoque
+   ============================================================ */
+.enfoque-badge {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    padding: var(--space-3);
+    background: var(--surface);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: var(--space-3);
+    min-height: 40px;
+    align-items: center;
+}
+
+.enfoque-badge-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: var(--radius-full);
+    font-size: 11.5px;
+    font-weight: 700;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    border: 1px solid transparent;
+    line-height: 1.6;
+}
+
+.enfoque-badge-item.badge-due {
+    background: var(--danger-soft);
+    color: #991b1b;
+    border-color: #fecaca;
+}
+
+.enfoque-badge-item.badge-new {
+    background: var(--primary-soft);
+    color: var(--primary);
+    border-color: var(--primary-soft-2);
+}
+
+.enfoque-badge-item.badge-weak {
+    background: var(--warning-soft);
+    color: #92400e;
+    border-color: #fde68a;
+}
+
+.enfoque-badge-empty {
+    color: var(--text-tertiary);
+    font-style: italic;
+    font-size: 12px;
+}
+
+[data-theme="dark"] .enfoque-badge-item.badge-due  { color: #fca5a5; border-color: #7f1d1d; }
+[data-theme="dark"] .enfoque-badge-item.badge-new  { color: #38bdf8; border-color: #103d56; }
+[data-theme="dark"] .enfoque-badge-item.badge-weak { color: #fcd34d; border-color: #78350f; }
+
+/* Ajuste responsive para el badge */
+@media (max-width: 480px) {
+    .enfoque-badge-item { font-size: 11px; padding: 3px 8px; }
+}

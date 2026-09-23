@@ -1081,13 +1081,14 @@
     // Antes: N llamadas a Dominio.getResumen(prefijo), cada una
     // recorría todo el perfil. Ahora: una sola pasada agregando
     // todos los prefijos a la vez.
+    //
+    // FIX bug #1: las tarjetas #statDominadas / #statDudosas /
+    // #statFalladas se actualizan SIEMPRE. El contenedor opcional
+    // `perfilResumen` (chips) ya no bloquea el flujo principal —
+    // sólo se renderiza si existe en el DOM.
     // ============================================================
     function updatePerfilResumen() {
-        if (!perfilResumen) return;
-        if (!window.Dominio) {
-            perfilResumen.textContent = '';
-            return;
-        }
+        if (!window.Dominio) return;
 
         let r;
         if (filtrosActivos.source.size === 0) {
@@ -1099,12 +1100,16 @@
             r = window.Dominio.getResumenMulti(prefijos);
         }
 
+        // ---- Tarjetas de estadísticas (siempre presentes) ----
         const elDom = document.getElementById('statDominadas');
         const elDud = document.getElementById('statDudosas');
         const elFal = document.getElementById('statFalladas');
         if (elDom) elDom.textContent = r.dominadas;
         if (elDud) elDud.textContent = r.dudosas;
         if (elFal) elFal.textContent = r.falladas;
+
+        // ---- Chips de perfil (opcional: sólo si el contenedor existe) ----
+        if (!perfilResumen) return;
 
         if (r.total === 0) {
             perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos. Empieza a practicar para construir tu perfil.</span>`;

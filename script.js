@@ -130,6 +130,21 @@
     let multiSource, multiArea, multiEspecialidad, multiTema, multiDificultad, multiEstado;
 
     // ============================================================
+    // 2.b CACHÉS DE RENDIMIENTO
+    // ============================================================
+    // 1) Guardado con debounce: agrupa múltiples cambios en una sola escritura.
+    let _saveTimer = null;
+    let _savePending = false;
+
+    // 2) Snapshot estático: sessionIds, filteredIds, usedSessionIds y filtros
+    //    no cambian durante la sesión de simulacro → se serializan una sola vez.
+    let _staticSnapshotCache = null;
+
+    // 3) sourceIds derivados de los bancos seleccionados (memoizado por firma).
+    let _sourceIdsCache = null;
+    let _sourceIdsKey = '';
+
+    // ============================================================
     // 3. REFERENCIAS AL DOM
     // ============================================================
     const body = document.body;
@@ -354,16 +369,83 @@
         return STORAGE_KEY_SIMULACRO;
     }
 
+    // ------------------------------------------------------------
+    // Caché del snapshot estático (parte inmutable durante la sesión)
+    // ------------------------------------------------------------
+    function getStaticSnapshot() {
+        if (_staticSnapshotCache) return _staticSnapshotCache;
+        _staticSnapshotCache = {
+            sessionIds: [...sessionIds],
+            filteredIds: [...filteredIds],
+            usedSessionIds: Array.from(usedSessionIds),
+            selectedTimeLimitMin,
+            selectedCount,
+            enfoque: currentEnfoque,
+            filters: {
+                source:       [...filtrosActivos.source],
+                area:         [...filtrosActivos.area],
+                especialidad: [...filtrosActivos.especialidad],
+                tema:         [...filtrosActivos.tema],
+                dificultad:   [...filtrosActivos.dificultad],
+                estado:       [...filtrosActivos.estado]
+            }
+        };
+        return _staticSnapshotCache;
+    }
+
+    function invalidateStaticSnapshot() {
+        _staticSnapshotCache = null;
+    }
+
+    // ------------------------------------------------------------
+    // Guardado con debounce
+    // ------------------------------------------------------------
+    function scheduleSaveSimulacro() {
+        if (currentMode !== MODE_SIMULACRO) return;
+        if (simulacroState.revealed) return;
+        if (sessionIds.length === 0) return;
+
+        _savePending = true;
+        if (_saveTimer) return;
+        _saveTimer = setTimeout(() => {
+            _saveTimer = null;
+            if (_savePending) {
+                _savePending = false;
+                saveSimulacroState();
+            }
+        }, 400);
+    }
+
+    function flushSaveSimulacro() {
+        if (_saveTimer) {
+            clearTimeout(_saveTimer);
+            _saveTimer = null;
+        }
+        if (_savePending) {
+            _savePending = false;
+            saveSimulacroState();
+        }
+    }
+
+    function cancelPendingSave() {
+        if (_saveTimer) {
+            clearTimeout(_saveTimer);
+            _saveTimer = null;
+        }
+        _savePending = false;
+    }
+
     function saveSimulacroState() {
         if (currentMode !== MODE_SIMULACRO) return;
         if (simulacroState.revealed) return;
         if (sessionIds.length === 0) return;
 
         try {
+            const staticPart = getStaticSnapshot();
             const snapshot = {
                 version: 2,
                 timestamp: Date.now(),
-                sessionIds: [...sessionIds],
+                sessionIds: staticPart.sessionIds,
                 currentIndex,
                 answers: { ...simulacroState.answers },
                 flagged: Array.from(simulacroState.flagged),
@@ -371,19 +453,12 @@
                 timeLimit: simulacroState.timeLimit,
                 elapsedPrevios: simulacroState.elapsedPrevios || 0,
                 warnLevel: simulacroState.warnLevel,
-                usedSessionIds: Array.from(usedSessionIds),
-                filteredIds: [...filteredIds],
-                selectedTimeLimitMin,
-                selectedCount,
-                enfoque: currentEnfoque,
-                filters: {
-                    source:       [...filtrosActivos.source],
-                    area:         [...filtrosActivos.area],
-                    especialidad: [...filtrosActivos.especialidad],
-                    tema:         [...filtrosActivos.tema],
-                    dificultad:   [...filtrosActivos.dificultad],
-                    estado:       [...filtrosActivos.estado]
-                }
+                usedSessionIds: staticPart.usedSessionIds,
+                filteredIds: staticPart.filteredIds,
+                selectedTimeLimitMin: staticPart.selectedTimeLimitMin,
+                selectedCount: staticPart.selectedCount,
+                enfoque: staticPart.enfoque,
+                filters: staticPart.filters
             };
             localStorage.setItem(getSimulacroStorageKey(), JSON.stringify(snapshot));
         } catch (err) {
@@ -436,6 +511,7 @@
         try {
             localStorage.removeItem(getSimulacroStorageKey());
         } catch (err) { /* noop */ }
+        cancelPendingSave();
     }
 
     function showResumeModal(data) {
@@ -552,6 +628,8 @@
             updateDependentFilters();
         }
 
+        invalidateStaticSnapshot();
+
         setupModePractice.classList.remove('active');
         setupModeSimulacro.classList.add('active');
         modeHelp.textContent = 'En simulacro, respondes todas las preguntas y ves resultados al finalizar (estilo CONAREME).';
@@ -610,6 +688,7 @@
             startTime: null, endTime: null, timeLimit: null,
             remaining: null, elapsedPrevios: 0, timeUp: false, warnLevel: 0
         };
+        invalidateStaticSnapshot();
     }
 
     function loadSourcesManifest() {
@@ -755,12 +834,22 @@
         updateDependentFilters();
     }
 
+    // ------------------------------------------------------------
+    // sourceIds memoizado por firma del Set de bancos seleccionados
+    // ------------------------------------------------------------
     function getSourceIdsSeleccionados() {
         if (filtrosActivos.source.size === 0) return new Set();
+
+        const key = [...filtrosActivos.source].sort().join('|');
+        if (key === _sourceIdsKey && _sourceIdsCache) return _sourceIdsCache;
+
         const ids = new Set();
         dataSources.forEach(s => {
             if (filtrosActivos.source.has(s.name)) ids.add(s.id);
         });
+
+        _sourceIdsKey = key;
+        _sourceIdsCache = ids;
         return ids;
     }
 
@@ -817,22 +906,31 @@
         return (info.fallos || 0) * 1000 + (info.dudas || 0) * 10;
     }
 
+    // ------------------------------------------------------------
+    // applyFilters optimizado: una sola pasada, sin copias de preguntas,
+    // con sourceIds calculado una sola vez.
+    // ------------------------------------------------------------
     function applyFilters() {
-        let candidatas = preguntas
-            .map((p, idx) => ({ ...p, idx }))
-            .filter(p => cumpleFiltros(p))
-            .filter(p => cumpleEnfoque(p));
+        const sourceIds = getSourceIdsSeleccionados();
+        const ids = [];
 
-        if (currentEnfoque !== 'all') {
-            candidatas.sort((a, b) => pesoEnfoque(b) - pesoEnfoque(a));
+        for (let i = 0; i < preguntas.length; i++) {
+            const p = preguntas[i];
+            if (!cumpleFiltros(p, sourceIds)) continue;
+            if (!cumpleEnfoque(p)) continue;
+            ids.push(i);
         }
 
-        filteredIds = candidatas.map(p => p.idx);
+        if (currentEnfoque !== 'all') {
+            ids.sort((a, b) => pesoEnfoque(preguntas[b]) - pesoEnfoque(preguntas[a]));
+        }
+
+        filteredIds = ids;
+        invalidateStaticSnapshot();
         updateSetupSummary();
     }
 
-    function cumpleFiltros(p) {
-        const sourceIds = getSourceIdsSeleccionados();
+    function cumpleFiltros(p, sourceIds) {
         if (sourceIds.size > 0 && !sourceIds.has(p._sourceId)) return false;
 
         if (filtrosActivos.area.size > 0 && !filtrosActivos.area.has(p.area)) return false;
@@ -982,12 +1080,15 @@
         reviewIds = [];
         reviewIndex = 0;
 
+        invalidateStaticSnapshot();
+
         showScreen('quiz');
         updateQuizModeLabel();
         updateQuizInfoPanel();
 
         if (currentMode === MODE_SIMULACRO) {
             startSimTimer();
+            // Guardado inmediato al iniciar (una sola vez).
             saveSimulacroState();
         } else {
             stopSimTimer();
@@ -1298,6 +1399,8 @@
         sessionIds = sessionIds.concat(nuevas);
         nuevas.forEach(id => usedSessionIds.add(id));
 
+        invalidateStaticSnapshot();
+
         closeContinueModal();
 
         currentIndex = sessionIds.length - nuevas.length;
@@ -1509,7 +1612,7 @@
         simulacroState.answers[idx] = answer;
         renderPage();
         updateQuizInfoPanel();
-        saveSimulacroState();
+        scheduleSaveSimulacro();
     };
 
     window.toggleFlag = function (idx) {
@@ -1521,7 +1624,7 @@
         }
         renderPage();
         updateQuizInfoPanel();
-        saveSimulacroState();
+        scheduleSaveSimulacro();
     };
 
     window.marcarYaEntiendo = function (idx) {
@@ -1670,6 +1773,7 @@
             warnLevel: 0
         };
         currentIndex = 0;
+        invalidateStaticSnapshot();
         updateQuizInfoPanel();
         startSimTimer();
         updateQuizModeLabel();
@@ -2109,7 +2213,7 @@
         if (currentIndex > 0) {
             currentIndex--;
             renderPage();
-            saveSimulacroState();
+            scheduleSaveSimulacro();
         }
     }
 
@@ -2117,7 +2221,7 @@
         if (currentIndex < sessionIds.length - 1) {
             currentIndex++;
             renderPage();
-            saveSimulacroState();
+            scheduleSaveSimulacro();
         }
     }
 
@@ -2127,7 +2231,7 @@
         if (pos < 1 || pos > sessionIds.length) return false;
         currentIndex = pos - 1;
         renderPage();
-        saveSimulacroState();
+        scheduleSaveSimulacro();
         return true;
     }
 
@@ -2178,7 +2282,7 @@
         currentIndex = pos;
         closeAnswerMap();
         renderPage();
-        saveSimulacroState();
+        scheduleSaveSimulacro();
     }
 
     // ============================================================
@@ -2427,6 +2531,7 @@
             warnLevel: 0
         };
         currentIndex = 0;
+        invalidateStaticSnapshot();
         updateQuizInfoPanel();
         showScreen('quiz');
         updateQuizModeLabel();
@@ -2464,7 +2569,7 @@
 
     window.addEventListener('beforeunload', () => {
         if (currentMode === MODE_SIMULACRO && !simulacroState.revealed && sessionIds.length > 0) {
-            saveSimulacroState();
+            flushSaveSimulacro();
         }
     });
 

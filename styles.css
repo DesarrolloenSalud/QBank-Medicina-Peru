@@ -3004,6 +3004,22 @@ header { padding-right: 56px; }
     display: flex;
     gap: var(--space-2);
     margin-left: auto;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .filters-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filters-footer .filters-stats {
+        flex: 0 0 auto;
+    }
+    .filters-footer-actions {
+        margin-left: 0;
+        justify-content: flex-end;
+    }
 }
 
 /* Config */
@@ -3160,7 +3176,7 @@ header { padding-right: 56px; }
     display: grid;
     grid-template-columns: repeat(4, minmax(80px, 1fr));
     gap: var(--space-2);
-    flex: 1;
+    flex: 1 1 340px;
     min-width: 0;
 }
 

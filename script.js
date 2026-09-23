@@ -875,12 +875,14 @@
 
     // ============================================================
     // 7.b SRS — Filtro de enfoque y prioridad por vencimiento
+    // ------------------------------------------------------------
+    // NOTA: estas funciones operan sobre el objeto `info` ya obtenido
+    // (una sola llamada a Dominio.getInfo() por pregunta en applyFilters).
+    // `ahora` se pasa por parámetro para garantizar que badge, filtro y
+    // peso usen el mismo instante — el orden del sort queda determinista.
     // ============================================================
-    function cumpleEnfoque(p) {
+    function cumpleEnfoqueInfo(info, ahora) {
         if (currentEnfoque === 'todas') return true;
-
-        const info = window.Dominio ? window.Dominio.getInfo(getPreguntaId(p)) : null;
-        const ahora = Date.now();
 
         if (currentEnfoque === 'repaso') {
             // Vencidas + nuevas (nunca vistas)
@@ -897,13 +899,7 @@
         return true;
     }
 
-    function pesoEnfoque(p) {
-        if (currentEnfoque === 'todas') return 0;
-        if (!window.Dominio) return 0;
-
-        const info = window.Dominio.getInfo(getPreguntaId(p));
-        const ahora = Date.now();
-
+    function pesoEnfoqueInfo(info, ahora) {
         if (!info) return 500000; // nueva: prioridad media
 
         const pr = info.proximoRepaso || 0;
@@ -934,7 +930,12 @@
     }
 
     // ============================================================
-    // 7.c applyFilters — una sola pasada (filtros + conteo del badge)
+    // 7.c applyFilters — una sola pasada, un solo getInfo() por pregunta
+    // ------------------------------------------------------------
+    // Optimización: antes se llamaba Dominio.getInfo() 3 veces por
+    // pregunta (badge + cumpleEnfoque + pesoEnfoque) y O(N log N) veces
+    // más durante el sort. Ahora se calcula UNA vez por pregunta y los
+    // pesos se precalculan en un Map antes de ordenar.
     // ============================================================
     function applyFilters() {
         const sourceIds = getSourceIdsSeleccionados();
@@ -942,12 +943,17 @@
         const ids = [];
         let nuevas = 0, vencidas = 0, debiles = 0;
 
+        const necesitaPesos = (currentEnfoque !== 'todas') && !!window.Dominio;
+        const pesos = necesitaPesos ? new Map() : null;
+
         for (let i = 0; i < preguntas.length; i++) {
             const p = preguntas[i];
             if (!cumpleFiltros(p, sourceIds)) continue;
 
-            // ---- Conteo del badge (mismo criterio de filtro base) ----
+            // ---- Una sola lectura de info por pregunta ----
             const info = window.Dominio ? window.Dominio.getInfo(getPreguntaId(p)) : null;
+
+            // ---- Conteo del badge ----
             if (!info) {
                 nuevas++;
             } else if ((info.proximoRepaso || 0) <= ahora) {
@@ -958,12 +964,18 @@
             }
 
             // ---- Filtro de enfoque ----
-            if (!cumpleEnfoque(p)) continue;
+            if (!cumpleEnfoqueInfo(info, ahora)) continue;
+
             ids.push(i);
+
+            // ---- Peso precalculado (evita getInfo O(N log N) en el sort) ----
+            if (necesitaPesos) {
+                pesos.set(i, pesoEnfoqueInfo(info, ahora));
+            }
         }
 
-        if (currentEnfoque !== 'todas') {
-            ids.sort((a, b) => pesoEnfoque(preguntas[b]) - pesoEnfoque(preguntas[a]));
+        if (necesitaPesos) {
+            ids.sort((a, b) => pesos.get(b) - pesos.get(a));
         }
 
         filteredIds = ids;
@@ -1042,6 +1054,13 @@
         return partes.length ? partes.join(' · ') : 'Todas';
     }
 
+    // ============================================================
+    // updatePerfilResumen — una sola pasada con getResumenMulti
+    // ------------------------------------------------------------
+    // Antes: N llamadas a Dominio.getResumen(prefijo), cada una
+    // recorría todo el perfil. Ahora: una sola pasada agregando
+    // todos los prefijos a la vez.
+    // ============================================================
     function updatePerfilResumen() {
         if (!perfilResumen) return;
         if (!window.Dominio) {
@@ -1054,21 +1073,18 @@
             r = window.Dominio.getResumen();
         } else {
             const ids = getSourceIdsSeleccionados();
-            r = { dominadas: 0, dudosas: 0, falladas: 0, total: 0 };
-            ids.forEach(id => {
-                const sub = window.Dominio.getResumen(id + ':');
-                r.dominadas += sub.dominadas;
-                r.dudosas   += sub.dudosas;
-                r.falladas  += sub.falladas;
-                r.total     += sub.total;
-            });
+            const prefijos = [];
+            ids.forEach(id => prefijos.push(id + ':'));
+            r = window.Dominio.getResumenMulti(prefijos);
         }
+
         const elDom = document.getElementById('statDominadas');
         const elDud = document.getElementById('statDudosas');
         const elFal = document.getElementById('statFalladas');
         if (elDom) elDom.textContent = r.dominadas;
         if (elDud) elDud.textContent = r.dudosas;
         if (elFal) elFal.textContent = r.falladas;
+
         if (r.total === 0) {
             perfilResumen.innerHTML = `<span class="perfil-vacio">Aún no hay datos. Empieza a practicar para construir tu perfil.</span>`;
             return;
@@ -1860,16 +1876,33 @@
         showResults();
     }
 
+    // ============================================================
+    // registrarDominioSimulacro — BATCH MODE
+    // ------------------------------------------------------------
+    // Antes: N llamadas a Dominio.registrarIntento(), cada una
+    // serializaba TODO el perfil a localStorage. Ahora: una sola
+    // escritura al final. La lógica FSRS por tarjeta es idéntica —
+    // se ejecuta dentro de registrarIntento en cada iteración.
+    // try/finally garantiza que el flag `batching` se resetee
+    // incluso si una excepción interrumpe el bucle.
+    // ============================================================
     function registrarDominioSimulacro() {
         if (!window.Dominio) return;
-        sessionIds.forEach(idx => {
-            const p = preguntas[idx];
-            const sel = simulacroState.answers[idx];
-            if (!sel) return;
-            const acierto = (sel === p.respuesta);
-            const dudaba = simulacroState.flagged.has(idx);
-            window.Dominio.registrarIntento(getPreguntaId(p), acierto, dudaba);
-        });
+
+        window.Dominio.beginBatch();
+        try {
+            sessionIds.forEach(idx => {
+                const p = preguntas[idx];
+                const sel = simulacroState.answers[idx];
+                if (!sel) return;
+                const acierto = (sel === p.respuesta);
+                const dudaba = simulacroState.flagged.has(idx);
+                window.Dominio.registrarIntento(getPreguntaId(p), acierto, dudaba);
+            });
+        } finally {
+            window.Dominio.endBatch();
+        }
+
         updatePerfilResumen();
     }
 

@@ -58,6 +58,13 @@
     let cache = null;
     let dirty = false;
 
+    // Modo batch: cuando está activo, registrarIntento() y marcarDudosa()
+    // NO llaman a guardar(). El llamador debe invocar endBatch() para
+    // persistir una sola vez. La mutación de estado (FSRS/SM-2) sigue
+    // ocurriendo incondicionalmente en cada llamada — el batching sólo
+    // difiere la serialización a localStorage.
+    let batching = false;
+
     // ------------------------------------------------------------
     // MIGRACIÓN v1 (SM-2) → v2 (FSRS)
     // ------------------------------------------------------------
@@ -309,6 +316,20 @@
             return { ...e };
         },
 
+        // ---- BATCH MODE ----
+        // beginBatch()/endBatch() sólo difieren la serialización a localStorage.
+        // La lógica FSRS/SM-2 dentro de registrarIntento() y marcarDudosa()
+        // se ejecuta incondicionalmente en cada llamada — sin cambios.
+        // Uso:
+        //   Dominio.beginBatch();
+        //   try { /* N llamadas a registrarIntento */ }
+        //   finally { Dominio.endBatch(); }
+        beginBatch() { batching = true; },
+        endBatch() {
+            batching = false;
+            if (dirty) guardar();
+        },
+
         registrarIntento(id, acierto, dudaba) {
             const k = clave(id);
             const db = cargar();
@@ -329,6 +350,7 @@
             else          e.fallos  = (e.fallos  || 0) + 1;
             if (dudaba)   e.dudas   = (e.dudas   || 0) + 1;
 
+            // LÓGICA FSRS/SM-2 — siempre se ejecuta (mutación de estado).
             if (fsrsReady) {
                 registrarConFSRS(e, acierto, dudaba, ahora);
             } else {
@@ -338,7 +360,9 @@
             db[k] = e;
             cache = db;
             dirty = true;
-            guardar();
+
+            // PERSISTENCIA — diferida en modo batch.
+            if (!batching) guardar();
         },
 
         marcarDudosa(id) {
@@ -398,7 +422,8 @@
             db[k] = e;
             cache = db;
             dirty = true;
-            guardar();
+
+            if (!batching) guardar();
         },
 
         getIdsPorEstado(estado) {
@@ -425,6 +450,33 @@
                 else if (e.estado === 'fallada') falladas++;
             }
             return { dominadas, dudosas, falladas, total };
+        },
+
+        // Agrega en UNA SOLA PASADA por el cache los prefijos indicados.
+        // Cada prefijo tiene la forma "srcId:" (ej: "conareme-2023:").
+        // Extrae el prefijo desde la clave "srcId:numero" vía indexOf(':').
+        // Retorna el mismo shape que getResumen().
+        getResumenMulti(prefijos) {
+            const out = { dominadas: 0, dudosas: 0, falladas: 0, total: 0 };
+            if (!Array.isArray(prefijos) || prefijos.length === 0) return out;
+
+            const set = new Set(prefijos.map(p => String(p)));
+            const db = cargar();
+
+            for (const k of Object.keys(db)) {
+                const idx = k.indexOf(':');
+                if (idx < 0) continue;
+                const pref = k.slice(0, idx + 1);
+                if (!set.has(pref)) continue;
+
+                const e = db[k];
+                if (!e || e.sinDatos) continue;
+                out.total++;
+                if (e.estado === 'dominada') out.dominadas++;
+                else if (e.estado === 'dudosa') out.dudosas++;
+                else if (e.estado === 'fallada') out.falladas++;
+            }
+            return out;
         },
 
         getVencidas(prefix, ahora = Date.now()) {

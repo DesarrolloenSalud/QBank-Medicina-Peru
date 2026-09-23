@@ -846,31 +846,52 @@
         return ids;
     }
 
+    // ============================================================
+    // updateDependentFilters — UNA SOLA PASADA
+    // ------------------------------------------------------------
+    // Antes: 3 barridos completos de `preguntas` (uno por campo)
+    // vía getOpcionesDisponibles(). Ahora: un solo bucle alimenta
+    // los tres Set a la vez.
+    //
+    // Semántica preservada exactamente:
+    //   - Áreas:          candidatas = sourceIds
+    //   - Especialidades: candidatas = sourceIds + area
+    //   - Temas:          candidatas = sourceIds + area + especialidad
+    // ============================================================
     function updateDependentFilters() {
         const sourceIds = getSourceIdsSeleccionados();
+        const areaSet = filtrosActivos.area;
+        const espSet = filtrosActivos.especialidad;
 
-        const areas = getOpcionesDisponibles('area', sourceIds, null, null);
-        multiArea.setOptions(areas);
+        const areaEmpty = areaSet.size === 0;
+        const espEmpty = espSet.size === 0;
+        const sourceEmpty = sourceIds.size === 0;
 
-        const especialidades = getOpcionesDisponibles(
-            'especialidad', sourceIds, filtrosActivos.area, null
-        );
-        multiEspecialidad.setOptions(especialidades);
+        const setAreas = new Set();
+        const setEsp = new Set();
+        const setTemas = new Set();
 
-        const temas = getOpcionesDisponibles(
-            'tema', sourceIds, filtrosActivos.area, filtrosActivos.especialidad
-        );
-        multiTema.setOptions(temas);
-    }
+        for (let i = 0; i < preguntas.length; i++) {
+            const p = preguntas[i];
 
-    function getOpcionesDisponibles(campo, sourceIds, areaSet, espSet) {
-        const candidatas = preguntas.filter(p => {
-            if (sourceIds.size > 0 && !sourceIds.has(p._sourceId)) return false;
-            if (areaSet && areaSet.size > 0 && !areaSet.has(p.area)) return false;
-            if (espSet && espSet.size > 0 && !espSet.has(p.especialidad)) return false;
-            return true;
-        });
-        return [...new Set(candidatas.map(p => p[campo]))].sort();
+            // Filtro base: sourceIds
+            if (!sourceEmpty && !sourceIds.has(p._sourceId)) continue;
+
+            // Áreas: sólo dependen de sourceIds
+            setAreas.add(p.area);
+
+            // Especialidades: dependen de sourceIds + area
+            if (!areaEmpty && !areaSet.has(p.area)) continue;
+            setEsp.add(p.especialidad);
+
+            // Temas: dependen de sourceIds + area + especialidad
+            if (!espEmpty && !espSet.has(p.especialidad)) continue;
+            setTemas.add(p.tema);
+        }
+
+        multiArea.setOptions(setAreas);
+        multiEspecialidad.setOptions(setEsp);
+        multiTema.setOptions(setTemas);
     }
 
     // ============================================================

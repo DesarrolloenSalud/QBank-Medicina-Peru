@@ -1698,5 +1698,855 @@
     "dificultad": "Baja",
     "estado": "activa",
     "explicacion": "La lidocaína es un anestésico local que bloquea los canales de sodio dependientes de voltaje en las membranas nerviosas, impidiendo la despolarización y la conducción del impulso sensitivo y motor; este mecanismo es fundamental en anestesia local y se describe en farmacología básica y en el Petitorio Nacional Único de Medicamentos Esenciales del MINSA. La opción A es incorrecta porque el agonismo GABA-A corresponde a benzodiacepinas y barbitúricos; la opción B es incorrecta porque la inhibición de canales de potasio no es el mecanismo de los anestésicos locales; la opción C es incorrecta porque el antagonismo beta-adrenérgico es propio de fármacos como el propranolol, sin relación con la anestesia local."
+  },
+  {
+    "numero": 101,
+    "enunciado": "Recién nacido de 30 semanas de gestación, peso 1200 g, parto vaginal. Al examen: frecuencia cardíaca 140/min, frecuencia respiratoria 60/min, temperatura axilar 35.8 °C, quejido audible, retracciones subcostales. Radiografía de tórax: patrón reticulogranular difuso con broncograma aéreo. Se indica surfactante pulmonar. ¿Cuál es la dosis de carga inicial más apropiada para este paciente?",
+    "opciones": {
+      "A": "50 mg/kg",
+      "B": "100–200 mg/kg",
+      "C": "20 mg/kg",
+      "D": "300 mg/kg"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La dosis de carga inicial de surfactante pulmonar en prematuros con enfermedad de membrana hialina es de 100 a 200 mg/kg, recomendada por la ficha técnica de DIGEMID y guías del MINSA; esta dosis restablece la tensión superficial alveolar y mejora la oxigenación. La opción A (50 mg/kg) es insuficiente para lograr el efecto terapéutico esperado. La opción C (20 mg/kg) corresponde a una dosis de cafeína, no de surfactante, lo que constituye un error conceptual grave. La opción D (300 mg/kg) supera la dosis máxima recomendada y aumenta el riesgo de toxicidad pulmonar y efectos adversos."
+  },
+  {
+    "numero": 102,
+    "enunciado": "Lactante de 2 semanas de vida, nacido a las 28 semanas de gestación, hospitalizado en la unidad neonatal. Presenta episodios recurrentes de pausa respiratoria mayor a 20 segundos, con cianosis y bradicardia, que ceden con estimulación táctil. Se decide iniciar citrato de cafeína. ¿Cuál es la dosis de carga correcta?",
+    "opciones": {
+      "A": "10 mg/kg",
+      "B": "5 mg/kg",
+      "C": "20 mg/kg",
+      "D": "50 mg/kg"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La apnea del prematuro se debe a inmadurez del centro respiratorio; el citrato de cafeína es el metilxantínico de elección. La dosis de carga estándar es de 20 mg/kg de citrato de cafeína (equivalente a 10 mg/kg de cafeína base), según la ficha técnica y la Cochrane. La opción A (10 mg/kg) corresponde a la mitad de la dosis de carga, lo que resultaría insuficiente para alcanzar niveles terapéuticos. La opción B (5 mg/kg) es la dosis de mantenimiento, no de carga, un error frecuente de confusión. La opción D (50 mg/kg) es excesiva y puede provocar taquicardia, irritabilidad y toxicidad cardiovascular."
+  },
+  {
+    "numero": 103,
+    "enunciado": "Recién nacido prematuro de 32 semanas, peso 1500 g, con antecedente de asfixia perinatal. A las 48 horas de vida presenta distensión abdominal, sangre oculta en heces y neumatosis intestinal en la radiografía de abdomen. Se diagnostica enterocolitis necrotizante. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Iniciar alimentación enteral trófica",
+      "B": "Suspender vía oral, iniciar antibióticos intravenosos y aspiración nasogástrica",
+      "C": "Administrar corticoides sistémicos",
+      "D": "Realizar laparotomía exploratoria de inmediato"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La enterocolitis necrotizante en prematuros requiere manejo inicial médico: ayuno, descompresión gástrica, antibióticos de amplio espectro y soporte hemodinámico, según la Guía de Procedimientos del INMP y la MSD. La opción A (alimentación enteral trófica) está contraindicada porque agrava la lesión intestinal isquémica. La opción C (corticoides) no tiene indicación en el manejo agudo de la enterocolitis necrotizante y puede aumentar el riesgo de perforación. La opción D (laparotomía inmediata) se reserva para casos con perforación intestinal o peritonitis, no para el manejo inicial del cuadro sin complicaciones quirúrgicas evidentes."
+  },
+  {
+    "numero": 104,
+    "enunciado": "Recién nacido de 26 semanas de gestación, peso 900 g, en la unidad de cuidados intensivos neonatales. A las 72 horas de vida presenta caída de la hemoglobina, palidez y alteración del estado de conciencia. La ecografía transfontanelar muestra hemorragia en el plexo coroideo con extensión al ventrículo lateral. ¿Cuál es la medida preventiva más importante para reducir la incidencia de hemorragia intraventricular en este grupo de pacientes?",
+    "opciones": {
+      "A": "Administración prenatal de corticoides",
+      "B": "Ventilación de alta frecuencia",
+      "C": "Uso profiláctico de indometacina",
+      "D": "Transfusión de glóbulos rojos"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hemorragia intraventricular en prematuros extremos se previene principalmente con la administración prenatal de corticoides, que maduran la matriz germinal y reducen la fragilidad vascular, según evidencia de revisiones sistemáticas. La opción B (ventilación de alta frecuencia) no ha demostrado reducir la hemorragia intraventricular de manera consistente. La opción C (indometacina profiláctica) es controversial y no es la primera línea de prevención en la práctica actual. La opción D (transfusión de glóbulos rojos) no previene la hemorragia intraventricular y puede aumentar el riesgo de complicaciones."
+  },
+  {
+    "numero": 105,
+    "enunciado": "Recién nacido prematuro de 34 semanas, peso 2100 g, hijo de madre diabética. A las 2 horas de vida presenta temblores, irritabilidad y sudoración. La glucemia capilar es de 35 mg/dL. ¿Cuál es la conducta inmediata más adecuada?",
+    "opciones": {
+      "A": "Iniciar infusión intravenosa de dextrosa al 10%",
+      "B": "Administrar glucagón intramuscular",
+      "C": "Alimentar con leche materna y reevaluar en 1 hora",
+      "D": "Solicitar insulinemia y esperar resultados"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hipoglucemia neonatal sintomática (glucemia ≤ 50 mg/dL) requiere tratamiento inmediato con infusión intravenosa de dextrosa al 10%, según la MSD y guías peruanas. La opción B (glucagón) no es de primera línea en neonatos por su efecto transitorio y riesgo de hipoglucemia de rebote. La opción C (alimentación enteral) es insuficiente en un neonato sintomático y puede retrasar la corrección de la glucemia. La opción D (solicitar insulinemia) es un paso diagnóstico que no debe retrasar el tratamiento en un paciente con síntomas de hipoglucemia."
+  },
+  {
+    "numero": 106,
+    "enunciado": "Recién nacido prematuro de 30 semanas, peso 1300 g, en incubadora. La temperatura axilar es de 36.2 °C, presenta piel fría y letargo. ¿Cuál es la primera medida para corregir la hipotermia en este paciente?",
+    "opciones": {
+      "A": "Aumentar la temperatura de la incubadora",
+      "B": "Colocar gorro y envolver en mantas calientes",
+      "C": "Administrar líquidos intravenosos calentados",
+      "D": "Realizar baño de agua tibia"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hipotermia en prematuros se maneja inicialmente aumentando la temperatura de la incubadora o cuna térmica, ya que el neonato tiene limitada capacidad de termorregulación por falta de grasa parda y superficie corporal amplia. La opción B (gorro y mantas) es complementaria, pero no la primera medida en un paciente en incubadora. La opción C (líquidos intravenosos calentados) no corrige la pérdida de calor por evaporación y radiación. La opción D (baño de agua tibia) está contraindicada porque produce vasodilatación y aumenta la pérdida de calor."
+  },
+  {
+    "numero": 107,
+    "enunciado": "Recién nacido prematuro de 28 semanas, peso 1100 g, con dificultad respiratoria progresiva que requiere intubación y ventilación mecánica. A las 6 horas de vida presenta aumento de la saturación de oxígeno y mejoría de la compliance pulmonar tras la administración de surfactante. ¿Cuál es el efecto fisiológico principal del surfactante en este paciente?",
+    "opciones": {
+      "A": "Aumentar la tensión superficial alveolar",
+      "B": "Reducir la tensión superficial alveolar y evitar el colapso alveolar",
+      "C": "Estimular la producción de moco bronquial",
+      "D": "Producir vasoconstricción pulmonar"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El surfactante pulmonar reduce la tensión superficial en la interfaz aire-líquido alveolar, evitando el colapso alveolar al final de la espiración y mejorando la compliance pulmonar, según la fisiopatología de la enfermedad de membrana hialina. La opción A (aumentar la tensión superficial) es incorrecta porque agravaría el colapso alveolar. La opción C (estimular moco bronquial) no es una función del surfactante. La opción D (vasoconstricción pulmonar) es un efecto contrario al deseado, ya que el surfactante mejora la oxigenación y reduce la resistencia vascular pulmonar."
+  },
+  {
+    "numero": 108,
+    "enunciado": "Recién nacido prematuro de 32 semanas, peso 1600 g, alimentado con leche materna. A los 7 días de vida presenta ictericia que alcanza la región plantar y bilirrubina total de 15 mg/dL. ¿Cuál es el tratamiento inicial más apropiado?",
+    "opciones": {
+      "A": "Exanguinotransfusión",
+      "B": "Fototerapia",
+      "C": "Fenobarbital",
+      "D": "Suspender la lactancia materna"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hiperbilirrubinemia en prematuros se maneja inicialmente con fototerapia, que convierte la bilirrubina indirecta en isómeros hidrosolubles para su excreción, según las guías de la Sociedad Pediátrica Canadiense y la OMS. La opción A (exanguinotransfusión) se reserva para niveles que superan el umbral de exanguinotransfusión o cuando la fototerapia no es efectiva. La opción C (fenobarbital) no es un tratamiento de primera línea y tiene efectos sedantes no deseados. La opción D (suspender la lactancia) no está indicada de rutina, ya que la ictericia por lactancia materna no contraindica la alimentación."
+  },
+  {
+    "numero": 109,
+    "enunciado": "Recién nacido prematuro de 30 semanas, peso 1400 g, con antecedente de oxigenoterapia por 10 días. ¿Cuál es el criterio de tamizaje para retinopatía del prematuro según la Guía de Práctica Clínica de EsSalud?",
+    "opciones": {
+      "A": "Peso al nacer < 2500 g y edad gestacional ≤ 37 semanas",
+      "B": "Peso al nacer < 2000 g y/o edad gestacional ≤ 36 semanas con oxígeno suplementario",
+      "C": "Peso al nacer < 1500 g y edad gestacional ≤ 32 semanas sin oxígeno",
+      "D": "Peso al nacer < 3000 g y edad gestacional ≤ 38 semanas"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El tamizaje de retinopatía del prematuro se realiza en todo recién nacido con peso al nacer < 2000 g y/o edad gestacional ≤ 36 semanas con antecedente de uso de oxígeno suplementario, según la Guía de Práctica Clínica de EsSalud y la GPC de la OPS. La opción A (peso < 2500 g y ≤ 37 semanas) amplía innecesariamente el criterio y sobrecarga el sistema de tamizaje. La opción C (peso < 1500 g y ≤ 32 semanas sin oxígeno) excluye a prematuros moderados que también requieren tamizaje. La opción D (peso < 3000 g y ≤ 38 semanas) no corresponde a los criterios establecidos y no tiene respaldo en guías peruanas."
+  },
+  {
+    "numero": 110,
+    "enunciado": "Recién nacido prematuro de 33 semanas, peso 1800 g, con dificultad para la alimentación oral por succión débil y coordinación deglución-respiración inmadura. Se decide iniciar alimentación enteral. ¿Cuál es la mejor estrategia nutricional inicial para este paciente?",
+    "opciones": {
+      "A": "Fórmula de inicio para prematuros a libre demanda",
+      "B": "Leche materna fortificada con suplementos de proteínas y minerales",
+      "C": "Suero glucosado al 5% por sonda orogástrica",
+      "D": "Alimentación parenteral total desde el primer día"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La leche materna fortificada es la mejor estrategia nutricional para prematuros, ya que aporta los nutrientes inmunológicos de la leche materna y la densidad calórica y proteica necesaria para el crecimiento, según recomendaciones de la OMS y la Guía de Procedimientos del INMP. La opción A (fórmula de inicio a libre demanda) no satisface los requerimientos aumentados de proteínas, calcio y fósforo de los prematuros. La opción C (suero glucosado) no aporta nutrientes esenciales y no es una alimentación enteral adecuada. La opción D (alimentación parenteral total desde el primer día) se reserva para casos de contraindicación absoluta de la vía enteral, no para un prematuro estable con dificultad de succión."
+  },
+  {
+    "numero": 111,
+    "enunciado": "Recién nacido prematuro de 29 semanas, peso 1150 g, con dificultad respiratoria progresiva. Se inicia CPAP nasal. A las 2 horas, la fracción inspirada de oxígeno requerida es del 40% para mantener saturación de 90-95%, y la radiografía muestra patrón reticulogranular difuso. Según la Guía de Procedimiento del INMP, ¿cuál es la conducta más apropiada en este momento?",
+    "opciones": {
+      "A": "Aumentar la presión del CPAP a 8 cmH2O",
+      "B": "Administrar surfactante pulmonar mediante técnica mínimamente invasiva (LISA/MIST)",
+      "C": "Intubar y iniciar ventilación mecánica convencional",
+      "D": "Iniciar óxido nítrico inhalado"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El prematuro con síndrome de dificultad respiratoria que requiere FiO2 ≥ 0.30-0.40 en CPAP nasal es candidato a surfactante pulmonar, y la técnica de elección actual es la administración mínimamente invasiva (LISA/MIST) según la Guía de Procedimiento del INMP, que reduce la necesidad de ventilación mecánica y la injuria pulmonar. La opción A (aumentar CPAP a 8 cmH2O) no corrige el déficit de surfactante y puede aumentar el riesgo de neumotórax. La opción C (intubación y ventilación mecánica convencional) es una conducta más invasiva que debe reservarse para falla del surfactante o apnea severa. La opción D (óxido nítrico inhalado) está indicada en hipertensión pulmonar persistente, no en enfermedad de membrana hialina no complicada."
+  },
+  {
+    "numero": 112,
+    "enunciado": "Recién nacido prematuro de 31 semanas, peso 1400 g, con diagnóstico de sepsis neonatal temprana. Se inicia antibioticoterapia empírica. Según la Guía de Práctica Clínica del MINSA, ¿cuál es el esquema antibiótico empírico de primera línea recomendado para este paciente?",
+    "opciones": {
+      "A": "Cefotaxima más amikacina",
+      "B": "Ampicilina más gentamicina",
+      "C": "Meropenem más vancomicina",
+      "D": "Ceftriaxona más metronidazol"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El esquema empírico de primera línea para sepsis neonatal temprana en prematuros es ampicilina más gentamicina, que cubre Streptococcus agalactiae, Listeria monocytogenes y Escherichia coli, según la Guía de Práctica Clínica del MINSA para la atención del recién nacido con sepsis bacteriana. La opción A (cefotaxima más amikacina) se reserva para infecciones nosocomiales o cuando hay resistencia documentada, no como primera línea. La opción C (meropenem más vancomicina) es un esquema de amplio espectro para sepsis nosocomial grave o sospecha de resistencia, no para sepsis temprana. La opción D (ceftriaxona más metronidazol) no está indicada en neonatos porque la ceftriaxona desplaza la bilirrubina de la albúmina y aumenta el riesgo de kernícter, además de no cubrir Listeria."
+  },
+  {
+    "numero": 113,
+    "enunciado": "Recién nacido prematuro de 33 semanas, peso 1900 g, con alimentación enteral por sonda orogástrica. Según la Guía de Manejo Médico de Nutrición Enteral del Hospital Cayetano Heredia, ¿cuál es el volumen inicial recomendado para iniciar la alimentación enteral trófica en este paciente?",
+    "opciones": {
+      "A": "5 ml/kg/día",
+      "B": "20 a 30 ml/kg/día",
+      "C": "50 ml/kg/día",
+      "D": "80 ml/kg/día"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La Guía de Manejo Médico de Nutrición Enteral en Prematuros ≤ 1500 g y de 1500 a 2000 g del Hospital Cayetano Heredia establece iniciar la alimentación enteral trófica con 20 a 30 ml/kg/día en prematuros estables, para estimular la maduración intestinal sin aumentar el riesgo de enterocolitis necrotizante. La opción A (5 ml/kg/día) es un volumen insuficiente que no proporciona el estímulo trófico adecuado. La opción C (50 ml/kg/día) es un volumen de avance, no de inicio, y podría superar la tolerancia inicial. La opción D (80 ml/kg/día) corresponde a volúmenes de alimentación completa, no a la fase de inicio trófico."
+  },
+  {
+    "numero": 114,
+    "enunciado": "Recién nacido prematuro de 30 semanas, peso 1300 g, en fototerapia por hiperbilirrubinemia no conjugada. Según la Guía de Práctica Clínica de Ictericia Neonatal, ¿cuál es el efecto adverso más frecuente y esperado de la fototerapia en este paciente?",
+    "opciones": {
+      "A": "Deshidripción hipernatrémica",
+      "B": "Síndrome de bilis espesa",
+      "C": "Hipoalbuminemia",
+      "D": "Trombocitopenia"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La fototerapia produce pérdidas insensibles de agua por evaporación a través de la piel, lo que puede llevar a deshidratación hipernatrémica si no se monitoriza adecuadamente el peso y el balance hídrico, según las guías de manejo de ictericia neonatal. La opción B (síndrome de bilis espesa) es una complicación de la exanguinotransfusión, no de la fototerapia. La opción C (hipoalbuminemia) no es un efecto directo de la fototerapia. La opción D (trombocitopenia) no está asociada a la fototerapia; puede observarse en sepsis o en trastornos hematológicos, pero no es un efecto esperado del tratamiento con luz azul."
+  },
+  {
+    "numero": 115,
+    "enunciado": "Recién nacido prematuro de 27 semanas, peso 950 g, con síndrome de dificultad respiratoria severa. Se administra surfactante porcino natural a dosis de 200 mg/kg. Según la Guía de Procedimiento de Administración de Surfactante del INMP, ¿cuál es el momento recomendado para administrar la segunda dosis si persiste la necesidad de oxígeno?",
+    "opciones": {
+      "A": "A las 2 horas de la primera dosis",
+      "B": "A las 4 horas de la primera dosis",
+      "C": "Entre 6 y 12 horas después de la primera dosis",
+      "D": "A las 24 horas de la primera dosis"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La Guía de Procedimiento de Administración de Surfactante del INMP recomienda administrar una segunda dosis entre 6 y 12 horas después de la primera si el paciente mantiene la indicación, es decir, si persiste con requerimiento de FiO2 elevado o signos de dificultad respiratoria. La opción A (2 horas) es un intervalo demasiado corto, sin respaldo en la guía y con riesgo de sobredosificación. La opción B (4 horas) no corresponde al intervalo establecido. La opción D (24 horas) es un intervalo excesivo; para entonces, la ventana terapéutica puede haberse cerrado y el daño pulmonar puede ser irreversible."
+  },
+  {
+    "numero": 116,
+    "enunciado": "Recién nacido prematuro de 32 semanas, peso 1700 g, con diagnóstico de displasia broncopulmonar en evolución. ¿Cuál es el factor de riesgo perinatal más importante para el desarrollo de esta complicación?",
+    "opciones": {
+      "A": "Corioamnionitis materna",
+      "B": "Ventilación mecánica prolongada y oxigenoterapia",
+      "C": "Hipoglucemia neonatal transitoria",
+      "D": "Ictericia neonatal no conjugada"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La displasia broncopulmonar es el resultado de la injuria pulmonar producida por la ventilación mecánica con volutrauma y barotrauma, junto con la toxicidad del oxígeno y la inmadurez pulmonar, según la fisiopatología aceptada y las guías de neonatología. La opción A (corioamnionitis) es un factor de riesgo para sepsis y parto pretérmino, pero no el factor más directamente relacionado con la DBP. La opción C (hipoglucemia transitoria) no causa daño pulmonar crónico. La opción D (ictericia no conjugada) no tiene relación fisiopatológica con la displasia broncopulmonar."
+  },
+  {
+    "numero": 117,
+    "enunciado": "Recién nacido prematuro de 34 semanas, peso 2100 g, con dificultad respiratoria leve que mejora a las 6 horas de vida. La madre refiere que el recién nacido presenta episodios de cianosis peribucal durante la alimentación. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Enfermedad de membrana hialina",
+      "B": "Taquipnea transitoria del recién nacido",
+      "C": "Inmadurez de la coordinación succión-deglución-respiración",
+      "D": "Síndrome de aspiración meconial"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El prematuro tardío (34 semanas) con cianosis durante la alimentación presenta inmadurez de la coordinación succión-deglución-respiración, que es la causa más frecuente de dificultad alimentaria en esta edad gestacional, según la fisiopatología del desarrollo neurológico neonatal. La opción A (enfermedad de membrana hialina) se presenta con dificultad respiratoria progresiva y patrón radiológico característico, no con cianosis aislada durante la alimentación. La opción B (taquipnea transitoria) se manifiesta con taquipnea inmediata al nacimiento y resolución en 24-72 horas, no con episodios de cianosis durante la alimentación. La opción D (aspiración meconial) ocurre en recién nacidos con líquido amniótico meconial y presenta dificultad respiratoria desde el nacimiento."
+  },
+  {
+    "numero": 118,
+    "enunciado": "Recién nacido prematuro de 26 semanas, peso 850 g, con hemorragia intraventricular grado III diagnosticada por ecografía transfontanelar a los 5 días de vida. ¿Cuál es la complicación más frecuente asociada a este grado de hemorragia?",
+    "opciones": {
+      "A": "Leucomalacia periventricular",
+      "B": "Hidrocefalia posthemorrágica",
+      "C": "Parálisis cerebral espástica",
+      "D": "Retinopatía del prematuro"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hemorragia intraventricular grado III (con extensión al ventrículo y dilatación) se asocia con mayor frecuencia a hidrocefalia posthemorrágica por obstrucción del flujo del líquido cefalorraquídeo por coágulos, según la fisiopatología de la hemorragia en la matriz germinal. La opción A (leucomalacia periventricular) se asocia más a isquemia periventricular que a hemorragia intraventricular. La opción C (parálisis cerebral espástica) es una secuela a largo plazo, no una complicación aguda frecuente del grado III. La opción D (retinopatía del prematuro) está relacionada con la prematuridad extrema y la oxigenoterapia, no directamente con la hemorragia intraventricular."
+  },
+  {
+    "numero": 119,
+    "enunciado": "Recién nacido prematuro de 31 semanas, peso 1500 g, con antecedente de asfixia perinatal. A las 72 horas de vida presenta convulsiones focales. La ecografía transfontanelar muestra lesiones hiperecogénicas periventriculares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hemorragia intraventricular",
+      "B": "Leucomalacia periventricular",
+      "C": "Infarto cerebral arterial",
+      "D": "Edema cerebral difuso"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La leucomalacia periventricular es una lesión isquémica de la sustancia blanca periventricular, frecuente en prematuros con antecedente de asfixia, que se manifiesta con hiperecogenicidad periventricular en la ecografía y puede asociarse a convulsiones, según la fisiopatología de la injuria hipóxico-isquémica. La opción A (hemorragia intraventricular) se caracteriza por hiperecogenicidad en el plexo coroideo y el ventrículo, no periventricular. La opción C (infarto cerebral arterial) presenta una distribución vascular territorial, no periventricular difusa. La opción D (edema cerebral difuso) muestra pérdida de la diferenciación de surcos y cisuras, no lesiones hiperecogénicas focales periventriculares."
+  },
+  {
+    "numero": 120,
+    "enunciado": "Recién nacido prematuro de 32 semanas, peso 1600 g, con intolerancia a la vía oral y residuo gástrico bilioso. Se decide iniciar alimentación parenteral. Según las guías de nutrición parenteral neonatal, ¿cuál es el aporte calórico inicial recomendado para este paciente?",
+    "opciones": {
+      "A": "30 a 40 kcal/kg/día",
+      "B": "50 a 60 kcal/kg/día",
+      "C": "80 a 100 kcal/kg/día",
+      "D": "120 a 150 kcal/kg/día"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Prematuridad",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El aporte calórico inicial en nutrición parenteral para prematuros debe ser conservador, comenzando con 50 a 60 kcal/kg/día para evitar sobrecarga metabólica y luego avanzar gradualmente según tolerancia, según las guías de nutrición parenteral neonatal. La opción A (30 a 40 kcal/kg/día) es un aporte insuficiente que no cubre las necesidades basales del prematuro. La opción C (80 a 100 kcal/kg/día) corresponde a un aporte de avance, no inicial. La opción D (120 a 150 kcal/kg/día) supera las necesidades iniciales y puede provocar hiperglucemia, azotemia y esteatosis hepática."
+  },
+  {
+    "numero": 121,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con RPR reactivo 1:16 y tratamiento incompleto con penicilina benzatínica. Al examen: hepatoesplenomegalia, ictericia y lesiones descamativas en palmas y plantas. La radiografía de huesos largos muestra periostitis y osteocondritis. ¿Cuál es el esquema de tratamiento más apropiado para este recién nacido?",
+    "opciones": {
+      "A": "Penicilina G sódica 50 000 UI/kg/dosis EV cada 12 horas por 10 días",
+      "B": "Penicilina G benzatínica 50 000 UI/kg IM dosis única",
+      "C": "Penicilina G sódica 50 000 UI/kg/dosis EV cada 12 horas por 14 días",
+      "D": "Ceftriaxona 50 mg/kg/día EV por 10 días"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El recién nacido con sífilis congénita comprobada o muy probable (clínica compatible, radiografía anormal y madre con tratamiento inadecuado) requiere penicilina G sódica 50 000 UI/kg/dosis por vía endovenosa cada 12 horas durante los primeros 7 días y luego cada 8 horas, completando 14 días, según la Guía de Práctica Clínica del INMP y la Norma Técnica del MINSA. La opción A (10 días) es el esquema para sífilis congénita sin evidencia de neurosífilis, pero este paciente tiene manifestaciones clínicas y radiológicas que obligan a 14 días. La opción B (penicilina benzatínica dosis única) está indicada solo en el neonato asintomático con madre adecuadamente tratada y RPR no reactivo. La opción D (ceftriaxona) no es el tratamiento de elección y no alcanza niveles adecuados en líquido cefalorraquídeo para neurosífilis."
+  },
+  {
+    "numero": 122,
+    "enunciado": "Recién nacido de 36 semanas, hijo de madre con VIH diagnosticada en el tercer trimestre sin tratamiento antirretroviral. El parto fue vaginal y la carga viral materna al momento del parto es de 50 000 copias/mL. ¿Cuál es la conducta más apropiada respecto a la alimentación de este recién nacido?",
+    "opciones": {
+      "A": "Lactancia materna exclusiva hasta los 6 meses",
+      "B": "Lactancia materna con profilaxis antirretroviral al neonato",
+      "C": "Alimentación con sucedáneos de leche materna desde el nacimiento",
+      "D": "Lactancia mixta con fórmula y pecho directo"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La Norma Técnica de Salud para la Prevención de la Transmisión Materno Infantil del VIH del MINSA establece la supresión de la lactancia materna y el uso de sucedáneos de leche materna en todo recién nacido expuesto al VIH, independientemente de la carga viral materna, para eliminar el riesgo de transmisión posnatal. La opción A (lactancia materna exclusiva) está contraindicada porque el virus se transmite por la leche materna. La opción B (lactancia con profilaxis) no elimina el riesgo de transmisión y no es la recomendación nacional. La opción D (lactancia mixta) también está contraindicada por el mismo motivo."
+  },
+  {
+    "numero": 123,
+    "enunciado": "Recién nacido de 39 semanas, hijo de madre HBsAg positiva sin carga viral disponible. El parto fue por cesárea de emergencia. ¿Cuál es la medida profiláctica más importante que debe recibir este recién nacido dentro de las primeras 12 horas de vida?",
+    "opciones": {
+      "A": "Vacuna contra hepatitis B únicamente",
+      "B": "Inmunoglobulina anti-HBs únicamente",
+      "C": "Vacuna contra hepatitis B más inmunoglobulina anti-HBs",
+      "D": "Tenofovir oral al neonato"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El recién nacido de madre HBsAg positiva debe recibir vacuna contra hepatitis B más inmunoglobulina anti-HBs dentro de las primeras 12 horas de vida, según la Norma Técnica de Salud del MINSA para la prevención de la transmisión materno infantil de hepatitis B. Esta combinación reduce la transmisión vertical en más del 90%. La opción A (solo vacuna) es insuficiente porque la inmunoglobulina proporciona inmunidad pasiva inmediata. La opción B (solo inmunoglobulina) no genera memoria inmunológica a largo plazo. La opción D (tenofovir al neonato) no está indicada como profilaxis neonatal; el tenofovir se usa en la gestante con alta carga viral."
+  },
+  {
+    "numero": 124,
+    "enunciado": "Recién nacido de 34 semanas, hijo de madre con IgM positiva para Toxoplasma gondii en el tercer trimestre. Al examen: hidrocefalia, calcificaciones intracraneales difusas y coriorretinitis. ¿Cuál es el esquema de tratamiento más apropiado para este recién nacido?",
+    "opciones": {
+      "A": "Pirimetamina más sulfadiazina más ácido folínico",
+      "B": "Espiramicina oral",
+      "C": "Clindamicina más pirimetamina",
+      "D": "Sulfadiazina únicamente"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La toxoplasmosis congénita sintomática se trata con pirimetamina más sulfadiazina más ácido folínico, según la Guía de Práctica Clínica del INMP y las recomendaciones de la Sociedad Española de Infectología Pediátrica. Este esquema es el único que erradica los quistes tisulares y previene el daño neurológico progresivo. La opción B (espiramicina) se utiliza durante el embarazo para reducir la transmisión fetal, pero no tiene eficacia en el neonato porque no atraviesa la placenta en concentraciones terapéuticas. La opción C (clindamicina más pirimetamina) no es un esquema estándar y la clindamicina no tiene actividad demostrada contra Toxoplasma. La opción D (sulfadiazina sola) es insuficiente porque requiere la acción sinérgica de la pirimetamina."
+  },
+  {
+    "numero": 125,
+    "enunciado": "Recién nacido de 37 semanas, pequeño para la edad gestacional, con microcefalia, ictericia colestásica y hepatoesplenomegalia. La madre refiere haber tenido un cuadro viral en el primer trimestre del embarazo. La PCR en orina para citomegalovirus es positiva. ¿Cuál es la manifestación clínica más característica de la infección congénita por CMV que debe buscarse en este paciente?",
+    "opciones": {
+      "A": "Hipoacusia neurosensorial",
+      "B": "Catarata congénita",
+      "C": "Sordera por ototoxicidad",
+      "D": "Glaucoma congénito"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La infección congénita por citomegalovirus es la primera causa de hipoacusia neurosensorial no genética en la infancia, según la Guía de Práctica Clínica del INMP. La hipoacusia puede ser progresiva y de aparición tardía, por lo que requiere evaluación audiológica seriada. La opción B (catarata congénita) es más característica de la rubéola congénita. La opción C (sordera por ototoxicidad) se asocia al uso de aminoglucósidos, no al CMV. La opción D (glaucoma congénito) también es más típico de la rubéola o de causas genéticas."
+  },
+  {
+    "numero": 126,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con antecedente de herpes genital primario en el tercer trimestre. El parto fue vaginal y el recién nacido presenta vesículas agrupadas en el cuero cabelludo. ¿Cuál es el tratamiento de elección para este paciente?",
+    "opciones": {
+      "A": "Aciclovir oral 20 mg/kg/dosis cada 8 horas por 14 días",
+      "B": "Aciclovir endovenoso 60 mg/kg/día cada 8 horas por 14 días",
+      "C": "Aciclovir endovenoso 20 mg/kg/día cada 8 horas por 21 días",
+      "D": "Valaciclovir oral 20 mg/kg/dosis cada 12 horas por 10 días"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El herpes neonatal con manifestaciones cutáneas (enfermedad localizada) requiere aciclovir endovenoso a dosis de 60 mg/kg/día cada 8 horas por 14 días, según la Guía de la Sociedad Española de Infectología Pediátrica y el MINSA. La opción A (aciclovir oral) no alcanza niveles plasmáticos adecuados para tratar la infección neonatal y no está indicada. La opción C (20 mg/kg/día) es una dosis insuficiente para el tratamiento del herpes neonatal. La opción D (valaciclovir oral) no es el tratamiento de elección en neonatos por su farmacocinética impredecible en esta edad."
+  },
+  {
+    "numero": 127,
+    "enunciado": "Recién nacido de 39 semanas con sordera neurosensorial bilateral, cataratas congénitas y cardiopatía congénita (ductus arterioso persistente). La madre refiere haber presentado exantema y artralgias en el segundo mes del embarazo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de rubéola congénita",
+      "B": "Infección congénita por citomegalovirus",
+      "C": "Sífilis congénita",
+      "D": "Toxoplasmosis congénita"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La triada clásica del síndrome de rubéola congénita incluye sordera neurosensorial, cataratas y cardiopatía congénita (usualmente ductus arterioso persistente o estenosis pulmonar), según la OPS y el MINSA. El antecedente materno de exantema y artralgias en el primer trimestre es típico de rubéola. La opción B (CMV congénito) se caracteriza por microcefalia, calcificaciones periventriculares e hipoacusia, pero no por cataratas ni cardiopatía. La opción C (sífilis congénita) presenta hepatoesplenomegalia, ictericia, rinitis mucopurulenta y periostitis, no cataratas. La opción D (toxoplasmosis congénita) cursa con hidrocefalia, calcificaciones difusas y coriorretinitis, no con la triada de rubéola."
+  },
+  {
+    "numero": 128,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con exantema y fiebre durante el segundo trimestre del embarazo en una zona endémica de Zika en Perú. Al examen: microcefalia severa y ventriculomegalia en la ecografía transfontanelar. ¿Cuál es la principal medida de prevención de esta complicación?",
+    "opciones": {
+      "A": "Vacunación contra Zika durante el embarazo",
+      "B": "Uso de repelente y mosquitero en la gestante",
+      "C": "Tratamiento antiviral prenatal",
+      "D": "Administración de inmunoglobulina específica"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La prevención del síndrome congénito por Zika se basa en evitar la picadura del mosquito Aedes aegypti mediante el uso de repelente, mosquiteros y ropa de manga larga, según la Norma Técnica de Salud para la Atención Integral de Pacientes con Zika del MINSA. La opción A (vacunación) no está disponible; no existe vacuna contra el Zika. La opción C (antiviral prenatal) no existe; no hay tratamiento antiviral específico para el Zika. La opción D (inmunoglobulina) no ha demostrado eficacia en la prevención de la transmisión vertical."
+  },
+  {
+    "numero": 129,
+    "enunciado": "Recién nacido de 35 semanas, hijo de madre que consumió queso fresco artesanal no pasteurizado durante el tercer trimestre. El recién nacido presenta sepsis con granulomatosis infantiséptica (lesiones diseminadas en piel, hígado y pulmones) y meningitis. ¿Cuál es el agente etiológico más probable?",
+    "opciones": {
+      "A": "Listeria monocytogenes",
+      "B": "Streptococcus agalactiae",
+      "C": "Escherichia coli",
+      "D": "Treponema pallidum"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La listeriosis neonatal se asocia al consumo materno de productos lácteos no pasteurizados y se manifiesta con granulomatosis infantiséptica, una forma grave de sepsis con lesiones diseminadas, según reportes del Instituto Nacional de Salud y estudios peruanos. La opción B (Streptococcus agalactiae) causa sepsis neonatal temprana, pero no presenta granulomatosis. La opción C (Escherichia coli) es un agente común de sepsis neonatal, pero no se asocia a consumo de queso fresco no pasteurizado ni a granulomatosis. La opción D (Treponema pallidum) causa sífilis congénita con manifestaciones cutáneas y óseas, no granulomatosis diseminada."
+  },
+  {
+    "numero": 130,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con cultivo rectovaginal positivo para Streptococcus agalactiae a las 36 semanas. La madre no recibió profilaxis antibiótica intraparto. El recién nacido presenta dificultad respiratoria progresiva y sepsis en las primeras 24 horas de vida. ¿Cuál es el esquema antibiótico empírico de primera línea para este paciente?",
+    "opciones": {
+      "A": "Ampicilina más gentamicina",
+      "B": "Cefotaxima más vancomicina",
+      "C": "Meropenem más amikacina",
+      "D": "Penicilina G sódica más clindamicina"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El esquema empírico de primera línea para sepsis neonatal temprana por Streptococcus agalactiae es ampicilina más gentamicina, según la Norma Técnica de Salud del MINSA y la OMS. La ampicilina cubre S. agalactiae y Listeria, mientras que la gentamicina actúa sinérgicamente contra gramnegativos. La opción B (cefotaxima más vancomicina) se reserva para sepsis nosocomial o sospecha de resistencia. La opción C (meropenem más amikacina) es un esquema de amplio espectro para infecciones graves nosocomiales, no para sepsis neonatal temprana. La opción D (penicilina más clindamicina) es un esquema para infecciones por anaerobios, no para S. agalactiae, y la clindamicina no es de primera línea en neonatos."
+  },
+  {
+    "numero": 131,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre proveniente de una zona endémica de enfermedad de Chagas en Arequipa. La madre tiene serología positiva para Trypanosoma cruzi. El recién nacido está asintomático y el examen físico es normal. Se realiza microhematocrito al nacer, que resulta positivo. ¿Cuál es el tratamiento de elección para este recién nacido?",
+    "opciones": {
+      "A": "Nifurtimox 10-15 mg/kg/día por 30-60 días",
+      "B": "Benznidazol 5-7 mg/kg/día por 30-60 días",
+      "C": "Nifurtimox 5 mg/kg/día por 10 días",
+      "D": "Benznidazol 15 mg/kg/día por 7 días"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El tratamiento de elección para el Chagas congénito confirmado en el recién nacido es benznidazol a dosis de 5-7 mg/kg/día durante 30-60 días, según la Guía de Práctica Clínica del MINSA y el Programa Nacional de Control de la Enfermedad de Chagas. La opción A (nifurtimox 10-15 mg/kg/día) es una alternativa terapéutica, pero no la de primera elección en el Perú, donde se prefiere benznidazol por su mejor perfil de tolerabilidad. La opción C (nifurtimox 5 mg/kg/día por 10 días) es una dosis y duración insuficientes para erradicar el parásito. La opción D (benznidazol 15 mg/kg/día por 7 días) emplea una dosis excesiva y un tiempo demasiado corto, lo que conlleva riesgo de toxicidad y falla terapéutica."
+  },
+  {
+    "numero": 132,
+    "enunciado": "Recién nacido de 39 semanas, hijo de madre que reside en Iquitos y presenta fiebre y anemia durante el tercer trimestre del embarazo. La madre tiene diagnóstico de malaria por Plasmodium vivax. El recién nacido presenta ictericia, palidez y hepatoesplenomegalia a los 15 días de vida. El frotis de sangre periférica del recién nacido muestra trofozoítos de Plasmodium vivax. ¿Cuál es el tratamiento de elección para este recién nacido?",
+    "opciones": {
+      "A": "Cloroquina 25 mg/kg/día por 3 días",
+      "B": "Cloroquina 10 mg/kg/día por 3 días más primaquina 0.5 mg/kg/día por 14 días",
+      "C": "Artesunato 3 mg/kg/día por 7 días",
+      "D": "Mefloquina 15 mg/kg dosis única"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El tratamiento de la malaria congénita por Plasmodium vivax en el recién nacido se realiza con cloroquina a dosis de 25 mg/kg/día por 3 días, según la Norma Técnica de Salud del MINSA para el manejo de la malaria. La primaquina está contraindicada en menores de 6 meses por riesgo de hemólisis. La opción B (cloroquina más primaquina) incluye primaquina, que está contraindicada en neonatos. La opción C (artesunato) es un esquema para malaria grave o por P. falciparum, no para P. vivax. La opción D (mefloquina) no es el tratamiento de primera línea para malaria congénita por P. vivax."
+  },
+  {
+    "numero": 133,
+    "enunciado": "Recién nacido de 37 semanas, hijo de madre que presentó varicela 2 días antes del parto. Al nacer, el recién nacido presenta lesiones vesiculares diseminadas en tronco y extremidades. ¿Cuál es la conducta más apropiada para este recién nacido?",
+    "opciones": {
+      "A": "Aislamiento y observación por 72 horas sin tratamiento",
+      "B": "Aciclovir endovenoso 30 mg/kg/día dividido en 3 dosis por 10 días",
+      "C": "Inmunoglobulina específica contra varicela zóster únicamente",
+      "D": "Aciclovir oral 80 mg/kg/día dividido en 4 dosis por 7 días"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El recién nacido con varicela neonatal sintomática debe recibir aciclovir endovenoso a dosis de 30 mg/kg/día dividido en 3 dosis por 10 días, según la Guía de Práctica Clínica para la Prevención, Diagnóstico y Tratamiento de Varicela Neonatal del INMP. La opción A (observación sin tratamiento) es inapropiada porque el neonato sintomático tiene alto riesgo de complicaciones sistémicas. La opción C (inmunoglobulina específica) está indicada como profilaxis en el neonato expuesto asintomático, no como tratamiento en el que ya presenta lesiones. La opción D (aciclovir oral) es una alternativa para el paciente asintomático, pero en el neonato sintomático la vía endovenosa es obligatoria por su mayor biodisponibilidad."
+  },
+  {
+    "numero": 134,
+    "enunciado": "Recién nacido de 34 semanas, hijo de madre con diagnóstico de primoinfección por parvovirus B19 en el segundo trimestre del embarazo. El recién nacido presenta hidrops fetal, anemia severa y derrame pericárdico. ¿Cuál es la complicación más característica de la infección por parvovirus B19 en el feto?",
+    "opciones": {
+      "A": "Anemia fetal severa por aplasia de la serie roja",
+      "B": "Cardiopatía congénita estructural",
+      "C": "Microcefalia con calcificaciones intracraneales",
+      "D": "Catarata congénita"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El parvovirus B19 tiene tropismo por los precursores eritroides de la médula ósea fetal, causando aplasia de la serie roja y anemia fetal severa que puede llevar a hidrops fetal no inmune, según la fisiopatología de la infección por parvovirus B19. La opción B (cardiopatía congénita estructural) es más característica de la rubéola congénita. La opción C (microcefalia con calcificaciones) se asocia a CMV o toxoplasmosis congénita. La opción D (catarata congénita) es típica de la rubéola congénita."
+  },
+  {
+    "numero": 135,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con antecedente de cuadro febril inespecífico en el tercer trimestre. El recién nacido presenta fiebre, letargo, miocarditis y signos de sepsis sin etiología bacteriana identificada. La PCR en líquido cefalorraquídeo es positiva para enterovirus. ¿Cuál es la principal medida terapéutica de soporte que debe considerarse en este paciente?",
+    "opciones": {
+      "A": "Inmunoglobulina intravenosa",
+      "B": "Aciclovir endovenoso",
+      "C": "Antibióticos de amplio espectro",
+      "D": "Corticoides sistémicos"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La sepsis neonatal por enterovirus con miocarditis y compromiso del sistema nervioso central puede beneficiarse de inmunoglobulina intravenosa, que aporta anticuerpos neutralizantes y modula la respuesta inflamatoria, según la literatura de enfermedades infecciosas neonatales. La opción B (aciclovir) es específico para el virus herpes simple, no para enterovirus. La opción C (antibióticos de amplio espectro) se usa empíricamente al inicio, pero una vez confirmada la etiología viral no constituye el tratamiento dirigido. La opción D (corticoides) no está indicada de forma rutinaria en la sepsis viral neonatal y podría ser perjudicial."
+  },
+  {
+    "numero": 136,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con diagnóstico de hepatitis C crónica. La madre tiene carga viral detectable y anticuerpos anti-VHC positivos. El recién nacido está asintomático y las pruebas de función hepática son normales. ¿Cuál es la conducta más apropiada respecto al diagnóstico de infección por VHC en este recién nacido?",
+    "opciones": {
+      "A": "Realizar PCR para VHC al mes de vida",
+      "B": "Realizar PCR para VHC a los 18 meses de vida",
+      "C": "Realizar serología para VHC al nacer",
+      "D": "No realizar ninguna prueba hasta los 3 años"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El diagnóstico de infección por VHC en el recién nacido expuesto debe realizarse mediante PCR para VHC, idealmente al mes de vida, según las recomendaciones de la Sociedad Peruana de Pediatría y guías internacionales. La serología al nacer no es útil porque los anticuerpos maternos pueden persistir hasta los 18 meses. La opción B (PCR a los 18 meses) retrasa innecesariamente el diagnóstico, ya que la PCR puede detectar el ARN viral desde etapas tempranas. La opción C (serología al nacer) no distingue entre anticuerpos maternos y producción propia del neonato. La opción D (no realizar pruebas hasta los 3 años) es inaceptable porque retrasa el diagnóstico y el posible seguimiento."
+  },
+  {
+    "numero": 137,
+    "enunciado": "Recién nacido de 39 semanas, hijo de madre con diagnóstico de gonorrea no tratada. Al examen, el recién nacido presenta secreción ocular purulenta bilateral y edema palpebral severo a las 48 horas de vida. ¿Cuál es la profilaxis ocular neonatal recomendada según la Norma Técnica del MINSA para prevenir esta complicación?",
+    "opciones": {
+      "A": "Nitrato de plata al 1% en solución acuosa, una sola aplicación",
+      "B": "Eritromicina al 0.5% en ungüento oftálmico, una sola aplicación",
+      "C": "Tetraciclina al 1% en ungüento oftálmico, una sola aplicación",
+      "D": "Cloranfenicol al 0.5% en ungüento oftálmico, una sola aplicación"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La profilaxis ocular neonatal recomendada por el MINSA para la prevención de la oftalmía gonocócica es la eritromicina al 0.5% en ungüento oftálmico en una sola aplicación, según la Guía Nacional de Manejo de Infecciones de Transmisión Sexual. La opción A (nitrato de plata al 1%) fue el esquema clásico, pero ha sido reemplazado por la eritromicina por su menor irritación ocular. La opción C (tetraciclina al 1%) es una alternativa, pero no la de primera elección según la norma peruana. La opción D (cloranfenicol) no está recomendada para la profilaxis ocular neonatal por su potencial toxicidad hematológica."
+  },
+  {
+    "numero": 138,
+    "enunciado": "Recién nacido de 38 semanas, hijo de madre con infección por Chlamydia trachomatis no tratada. El recién nacido presenta conjuntivitis con secreción mucopurulenta y edema palpebral a los 10 días de vida. ¿Cuál es el tratamiento de elección para esta infección?",
+    "opciones": {
+      "A": "Eritromicina oral 50 mg/kg/día por 14 días",
+      "B": "Azitromicina oral 20 mg/kg/día por 3 días",
+      "C": "Gotas oftálmicas de eritromicina por 14 días",
+      "D": "Tetraciclina oral 25 mg/kg/día por 7 días"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El tratamiento de la conjuntivitis neonatal por Chlamydia trachomatis es la eritromicina oral a dosis de 50 mg/kg/día por 14 días, según las recomendaciones de la Sociedad Peruana de Pediatría y la OMS. La vía sistémica es necesaria porque la infección puede acompañarse de neumonía y la terapia tópica no erradica el microorganismo de la nasofaringe. La opción B (azitromicina oral) es una alternativa, pero la eritromicina sigue siendo el esquema de primera línea en el Perú. La opción C (gotas oftálmicas de eritromicina) es insuficiente porque no elimina el estado de portador nasofaríngeo. La opción D (tetraciclina oral) está contraindicada en menores de 8 años por el riesgo de decoloración dental."
+  },
+  {
+    "numero": 139,
+    "enunciado": "Recién nacido de 36 semanas, hijo de madre con infección por citomegalovirus documentada durante el embarazo. El recién nacido presenta microcefalia, calcificaciones periventriculares e hipoacusia neurosensorial. ¿Cuál es el tratamiento antiviral de elección para este recién nacido según las guías actuales?",
+    "opciones": {
+      "A": "Ganciclovir endovenoso por 6 semanas",
+      "B": "Valganciclovir oral por 6 meses",
+      "C": "Aciclovir endovenoso por 14 días",
+      "D": "Foscarnet endovenoso por 21 días"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El tratamiento de elección para el CMV congénito sintomático es valganciclovir oral durante 6 meses, que ha demostrado mejorar los resultados audiológicos y del neurodesarrollo, según el Manual Merck y estudios aleatorizados. La opción A (ganciclovir endovenoso por 6 semanas) es una alternativa cuando la absorción gastrointestinal no es fiable, pero el valganciclovir oral es preferido por su facilidad de administración y eficacia comparable. La opción C (aciclovir) no tiene actividad contra el CMV. La opción D (foscarnet) se reserva para casos de resistencia o intolerancia a ganciclovir/valganciclovir, no como primera línea."
+  },
+  {
+    "numero": 140,
+    "enunciado": "Recién nacido de 37 semanas, hijo de madre con antecedente de exantema y fiebre durante el segundo trimestre del embarazo en una zona endémica de Zika en Perú. El recién nacido presenta microcefalia severa y ventriculomegalia en la ecografía transfontanelar. ¿Cuál es la principal medida de prevención de esta complicación en gestantes que viven en zonas endémicas?",
+    "opciones": {
+      "A": "Vacunación contra el virus Zika durante el embarazo",
+      "B": "Uso de repelente y mosquitero en la gestante",
+      "C": "Tratamiento antiviral prenatal con aciclovir",
+      "D": "Administración de inmunoglobulina específica anti-Zika"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Infecciones Verticales",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La prevención del síndrome congénito por Zika se basa en evitar la picadura del mosquito Aedes aegypti mediante el uso de repelente, mosquiteros y ropa protectora, según la Norma Técnica de Salud para la Atención Integral de Pacientes con Zika del MINSA. La opción A (vacunación) no está disponible porque no existe vacuna contra el Zika. La opción C (antiviral prenatal) no existe; no hay tratamiento antiviral específico para el Zika. La opción D (inmunoglobulina) no ha demostrado eficacia en la prevención de la transmisión vertical."
+  },
+  {
+    "numero": 141,
+    "enunciado": "Recién nacido de 38 semanas, peso 3200 g, parto vaginal sin complicaciones. A las 30 horas de vida presenta ictericia facial progresiva. La madre refiere que el neonato está alimentándose bien y tiene deposiciones normales. Al examen: frecuencia cardíaca 140/min, frecuencia respiratoria 40/min, temperatura 36.8 °C, ictericia hasta región cervical, sin hepatoesplenomegalia. Bilirrubina total sérica: 9 mg/dL, bilirrubina directa: 0.5 mg/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Ictericia fisiológica",
+      "B": "Ictericia por incompatibilidad ABO",
+      "C": "Ictericia por lactancia materna",
+      "D": "Ictericia por sepsis neonatal"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ictericia fisiológica aparece después de las 24 horas de vida, con bilirrubina total que no supera 12 mg/dL en el recién nacido de término, y se caracteriza por un neonato activo, con buena alimentación y sin signos de hemólisis o infección, según la Guía de Práctica Clínica del INMP. La opción B (incompatibilidad ABO) suele manifestarse antes de las 24 horas o con ascenso rápido de bilirrubina, y se acompaña de anemia y prueba de Coombs directa positiva. La opción C (ictericia por lactancia materna) se presenta típicamente entre el cuarto y séptimo día de vida, no a las 30 horas. La opción D (sepsis neonatal) cursa con signos sistémicos como letargo, hipotermia o dificultad respiratoria, ausentes en este paciente."
+  },
+  {
+    "numero": 142,
+    "enunciado": "Recién nacido de 39 semanas, peso 3400 g, hijo de madre grupo O Rh positivo. A las 12 horas de vida presenta ictericia en escleras y cara. Al examen: frecuencia cardíaca 160/min, frecuencia respiratoria 50/min, temperatura 36.5 °C, hepatoesplenomegalia leve, palidez marcada. Bilirrubina total: 12 mg/dL, hematocrito: 38%, prueba de Coombs directa positiva. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Ictericia fisiológica",
+      "B": "Enfermedad hemolítica por incompatibilidad ABO",
+      "C": "Ictericia por lactancia materna",
+      "D": "Hipotiroidismo congénito"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ictericia que aparece antes de las 24 horas de vida siempre es patológica, y en este caso la palidez, hepatoesplenomegalia, Coombs directo positivo y madre grupo O sugieren enfermedad hemolítica por incompatibilidad ABO, según la Norma Técnica de Salud del MINSA. La opción A (ictericia fisiológica) nunca se manifiesta antes de las 24 horas. La opción C (ictericia por lactancia materna) aparece después del cuarto día y no cursa con anemia ni Coombs positivo. La opción D (hipotiroidismo congénito) produce ictericia prolongada, estreñimiento y fontanela amplia, no ictericia precoz con hemólisis."
+  },
+  {
+    "numero": 143,
+    "enunciado": "Recién nacido de 37 semanas, peso 2900 g, con diagnóstico de ictericia neonatal no conjugada. La bilirrubina total es de 18 mg/dL a las 72 horas de vida. El neonato está activo, con alimentación adecuada y sin signos de encefalopatía. Según la Guía de Práctica Clínica del INMP, ¿cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Iniciar fototerapia convencional",
+      "B": "Observación clínica y control de bilirrubina en 24 horas",
+      "C": "Realizar exanguinotransfusión inmediata",
+      "D": "Administrar fenobarbital"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La fototerapia es el tratamiento de primera línea para la hiperbilirrubinemia no conjugada en el recién nacido de término cuando los niveles superan el umbral de tratamiento para su edad posnatal y factores de riesgo, según la Guía de Práctica Clínica del INMP. La opción B (observación sin tratamiento) es inapropiada porque niveles de 18 mg/dL a las 72 horas en un neonato de 37 semanas ya requieren intervención. La opción C (exanguinotransfusión) se reserva para niveles que superan el umbral de exanguinotransfusión o cuando hay signos de encefalopatía bilirrubínica. La opción D (fenobarbital) no está indicado en el manejo agudo de la ictericia neonatal."
+  },
+  {
+    "numero": 144,
+    "enunciado": "Recién nacido de 40 semanas, peso 3600 g, en lactancia materna exclusiva. A los 8 días de vida presenta ictericia leve persistente. La madre refiere que el neonato está activo, con buen apetito, deposiciones y diuresis normales. Bilirrubina total: 13 mg/dL, bilirrubina directa: 0.8 mg/dL. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Suspender la lactancia materna por 48 horas",
+      "B": "Iniciar fototerapia de inmediato",
+      "C": "Continuar lactancia materna y controlar bilirrubina",
+      "D": "Realizar exanguinotransfusión"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ictericia por leche materna se presenta en neonatos de término sanos, con buen estado general y niveles de bilirrubina que no alcanzan umbrales de tratamiento; se debe continuar la lactancia materna y monitorizar, según la Guía de Práctica Clínica del INMP. La opción A (suspender la lactancia) no está indicada de rutina porque la lactancia materna no causa la ictericia y su suspensión priva al neonato de sus beneficios. La opción B (fototerapia inmediata) no es necesaria con niveles de 13 mg/dL en un neonato de 8 días sin factores de riesgo. La opción D (exanguinotransfusión) está contraindicada en este escenario."
+  },
+  {
+    "numero": 145,
+    "enunciado": "Recién nacido de 36 semanas, peso 2500 g, con ictericia progresiva desde las 36 horas de vida. A las 96 horas, la bilirrubina total es de 20 mg/dL. El neonato presenta letargo, succión débil y tono muscular disminuido. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Fototerapia intensiva y preparación para exanguinotransfusión",
+      "B": "Fototerapia convencional y reevaluar en 24 horas",
+      "C": "Suspender la lactancia materna y observar",
+      "D": "Administrar inmunoglobulina intravenosa únicamente"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El neonato prematuro tardío con niveles de bilirrubina cercanos al umbral de exanguinotransfusión y signos tempranos de encefalopatía bilirrubínica (letargo, succión débil, hipotonía) requiere fototerapia intensiva inmediata y preparación para exanguinotransfusión, según la Guía de Práctica Clínica del INMP y la Norma Técnica del MINSA. La opción B (fototerapia convencional) es insuficiente por la gravedad del cuadro y la presencia de signos neurológicos. La opción C (suspender lactancia y observar) retrasa el tratamiento y agrava el riesgo de kernicterus. La opción D (inmunoglobulina únicamente) es un adyuvante en enfermedad hemolítica, no el tratamiento principal en este escenario."
+  },
+  {
+    "numero": 146,
+    "enunciado": "Recién nacido de 38 semanas, peso 3100 g, hijo de madre con diabetes gestacional. A las 48 horas de vida presenta ictericia en cara y tórax. Al examen: frecuencia cardíaca 150/min, frecuencia respiratoria 44/min, temperatura 36.6 °C, macrosomía, hematocrito 65%. Bilirrubina total: 14 mg/dL. ¿Cuál es el factor de riesgo más importante para la ictericia en este paciente?",
+    "opciones": {
+      "A": "Policitemia secundaria a diabetes materna",
+      "B": "Prematuridad",
+      "C": "Lactancia materna exclusiva",
+      "D": "Sexo masculino"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El hijo de madre diabética presenta policitemia por hiperinsulinismo fetal, lo que aumenta la masa eritrocitaria y la producción de bilirrubina, constituyendo un factor de riesgo mayor para ictericia neonatal, según la Guía de Práctica Clínica del INMP. La opción B (prematuridad) no aplica porque el neonato es de 38 semanas. La opción C (lactancia materna exclusiva) puede contribuir a la ictericia por lactancia, pero no es el factor de riesgo principal en este contexto de policitemia. La opción D (sexo masculino) no es un factor de riesgo relevante para ictericia neonatal."
+  },
+  {
+    "numero": 147,
+    "enunciado": "Recién nacido de 39 semanas, peso 3300 g, con ictericia que persiste a los 21 días de vida. La madre refiere que el neonato está ictérico desde la primera semana y que las deposiciones son acólicas. Al examen: hepatomegalia de 3 cm, esplenomegalia de 2 cm. Bilirrubina total: 12 mg/dL, bilirrubina directa: 7 mg/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Ictericia por lactancia materna",
+      "B": "Hepatitis neonatal o atresia de vías biliares",
+      "C": "Ictericia fisiológica prolongada",
+      "D": "Enfermedad hemolítica por incompatibilidad Rh"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ictericia con bilirrubina directa elevada (mayor de 4 mg/dL o más del 20% del total), acompañada de hepatoesplenomegalia y deposiciones acólicas, sugiere hepatitis neonatal o atresia de vías biliares, según la Guía de Práctica Clínica del INMP. La opción A (ictericia por lactancia materna) cursa con bilirrubina indirecta y nunca con colestasis ni hepatoesplenomegalia. La opción C (ictericia fisiológica prolongada) no presenta hiperbilirrubinemia directa. La opción D (enfermedad hemolítica Rh) produce hiperbilirrubinemia indirecta y anemia, no colestasis."
+  },
+  {
+    "numero": 148,
+    "enunciado": "Recién nacido de 40 semanas, peso 3500 g, con ictericia leve a las 72 horas de vida. La madre refiere que el neonato recibe lactancia materna exclusiva y que ha perdido el 8% de su peso. Bilirrubina total: 11 mg/dL. ¿Cuál es la medida más importante para prevenir la progresión de la ictericia en este paciente?",
+    "opciones": {
+      "A": "Asegurar una adecuada ingesta de leche materna",
+      "B": "Iniciar fórmula láctea complementaria",
+      "C": "Administrar agua glucosada entre tomas",
+      "D": "Suspender la lactancia materna por 24 horas"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ictericia por lactancia materna se relaciona con una ingesta insuficiente de leche, que aumenta la circulación enterohepática de bilirrubina; la medida más importante es asegurar una adecuada ingesta mediante el apoyo a la lactancia materna, según la Norma Técnica de Salud del MINSA y las recomendaciones del INMP. La opción B (fórmula complementaria) no está indicada de rutina si la lactancia puede optimizarse. La opción C (agua glucosada) no reduce la bilirrubina y puede desplazar la ingesta de leche. La opción D (suspender la lactancia) es innecesaria y priva al neonato de los beneficios de la leche materna."
+  },
+  {
+    "numero": 149,
+    "enunciado": "Recién nacido de 38 semanas, peso 3200 g, con ictericia que requiere fototerapia. La madre es de ascendencia andina y no tiene antecedentes de hemólisis. El neonato presenta anemia leve y reticulocitosis. Se solicita dosaje de glucosa-6-fosfato deshidrogenasa. ¿Cuál es la importancia de esta determinación en el contexto peruano?",
+    "opciones": {
+      "A": "La deficiencia de G6PD es una causa frecuente de ictericia grave en neonatos peruanos",
+      "B": "La deficiencia de G6PD solo se presenta en neonatos de ascendencia africana",
+      "C": "La deficiencia de G6PD no tiene relevancia clínica en el Perú",
+      "D": "La deficiencia de G6PD solo causa ictericia en prematuros"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La deficiencia de glucosa-6-fosfato deshidrogenasa es una causa importante de hiperbilirrubinemia grave y kernicterus en neonatos peruanos, especialmente en zonas con ascendencia andina, según estudios del Instituto Nacional de Salud. La opción B (solo en ascendencia africana) es incorrecta porque la deficiencia de G6PD también es prevalente en poblaciones mediterráneas, asiáticas y andinas. La opción C (sin relevancia clínica en el Perú) es falsa, ya que se han reportado casos de kernicterus asociados a esta enzimopatía en el país. La opción D (solo en prematuros) es incorrecta; la deficiencia de G6PD afecta a neonatos de término y prematuros."
+  },
+  {
+    "numero": 150,
+    "enunciado": "Recién nacido de 39 semanas, peso 3400 g, con ictericia a las 48 horas de vida. La madre es grupo O Rh positivo y el neonato es grupo A Rh positivo. La prueba de Coombs directa es positiva. La bilirrubina total es de 15 mg/dL. ¿Cuál es el mecanismo fisiopatológico principal de la ictericia en este paciente?",
+    "opciones": {
+      "A": "Hemólisis por anticuerpos maternos anti-A",
+      "B": "Inmadurez de la glucuroniltransferasa hepática",
+      "C": "Aumento de la circulación enterohepática",
+      "D": "Déficit de captación hepática de bilirrubina"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Ictericia neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La incompatibilidad ABO ocurre cuando la madre grupo O produce anticuerpos IgG anti-A que atraviesan la placenta y hemolizan los eritrocitos del neonato grupo A, generando hiperbilirrubinemia indirecta y Coombs directo positivo, según la fisiopatología de la enfermedad hemolítica del recién nacido. La opción B (inmadurez de la glucuroniltransferasa) es el mecanismo de la ictericia fisiológica, que no cursa con Coombs positivo. La opción C (aumento de la circulación enterohepática) es el mecanismo de la ictericia por lactancia materna. La opción D (déficit de captación hepática) corresponde a la inmadurez de las proteínas Y/Z, propia de la ictericia fisiológica, no de la hemólisis inmunológica."
   }
 ]

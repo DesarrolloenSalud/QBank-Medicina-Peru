@@ -2548,5 +2548,345 @@
     "dificultad": "Baja",
     "estado": "activa",
     "explicacion": "La incompatibilidad ABO ocurre cuando la madre grupo O produce anticuerpos IgG anti-A que atraviesan la placenta y hemolizan los eritrocitos del neonato grupo A, generando hiperbilirrubinemia indirecta y Coombs directo positivo, según la fisiopatología de la enfermedad hemolítica del recién nacido. La opción B (inmadurez de la glucuroniltransferasa) es el mecanismo de la ictericia fisiológica, que no cursa con Coombs positivo. La opción C (aumento de la circulación enterohepática) es el mecanismo de la ictericia por lactancia materna. La opción D (déficit de captación hepática) corresponde a la inmadurez de las proteínas Y/Z, propia de la ictericia fisiológica, no de la hemólisis inmunológica."
+  },
+  {
+    "numero": 151,
+    "enunciado": "Recién nacido a término, parto vaginal sin complicaciones, nace vigoroso, llora al nacer y presenta buen tono muscular. La madre pregunta por qué no se corta inmediatamente el cordón umbilical. Según las recomendaciones actuales de reanimación neonatal, ¿cuál es el tiempo mínimo recomendado para el pinzamiento diferido del cordón en un recién nacido vigoroso?",
+    "opciones": {
+      "A": "15 segundos",
+      "B": "30 segundos",
+      "C": "60 segundos",
+      "D": "120 segundos"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El pinzamiento diferido del cordón umbilical por al menos 60 segundos en recién nacidos vigorosos es la recomendación actual de ILCOR y de la Norma Técnica de Salud del MINSA, ya que favorece la transfusión placentaria, mejora los depósitos de hierro y disminuye la anemia neonatal sin incrementar el riesgo de ictericia patológica. La opción A es incorrecta porque 15 segundos no permite un volumen adecuado de transfusión placentaria. La opción B es errónea porque 30 segundos es insuficiente según el consenso actual. La opción D es incorrecta porque 120 segundos excede lo recomendado y no aporta beneficio adicional en el recién nacido vigoroso, pudiendo retrasar intervenciones necesarias si el neonato se deteriora."
+  },
+  {
+    "numero": 152,
+    "enunciado": "Recién nacido de 38 semanas, parto por cesárea de emergencia por sufrimiento fetal. Al nacer presenta apnea, frecuencia cardíaca de 80 latidos por minuto y tono muscular disminuido. Se colocan los pasos iniciales de reanimación neonatal: calentar, secar, estimular y permeabilizar la vía aérea. ¿Cuál es la intervención más importante y efectiva en este momento para revertir la bradicardia?",
+    "opciones": {
+      "A": "Iniciar compresiones torácicas inmediatamente",
+      "B": "Administrar adrenalina por vía endovenosa",
+      "C": "Iniciar ventilación a presión positiva con máscara",
+      "D": "Realizar intubación endotraqueal de urgencia"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ventilación a presión positiva es la intervención más importante y efectiva en la reanimación neonatal, ya que la bradicardia en el recién nacido es casi siempre secundaria a hipoxemia por ventilación inadecuada; al ventilar eficazmente se revierte la hipoxemia y la frecuencia cardíaca se recupera, tal como establece el algoritmo de ILCOR y el MINSA. La opción A es incorrecta porque las compresiones torácicas solo se inician si la frecuencia cardíaca permanece menor de 60 lpm después de 30 segundos de ventilación efectiva. La opción B es errónea porque la adrenalina se reserva para cuando la frecuencia cardíaca no responde a ventilación y compresiones, no como primera medida. La opción D es incorrecta porque la intubación endotraqueal no es el paso inicial, sino una medida que se considera si la ventilación con máscara no es efectiva o se requiere ventilación prolongada."
+  },
+  {
+    "numero": 153,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con líquido amniótico teñido de meconio espeso. El neonato presenta tono muscular disminuido, frecuencia cardíaca de 90 lpm y respiración irregular. Usted decide iniciar los pasos iniciales de reanimación. ¿Cuál es la conducta correcta respecto a la aspiración de la vía aérea en este recién nacido?",
+    "opciones": {
+      "A": "Aspirar la orofaringe y nasofaringe antes de los hombros",
+      "B": "Intubar y aspirar la tráquea de rutina",
+      "C": "Aspirar la boca y nariz solo si hay obstrucción evidente",
+      "D": "No aspirar en ningún momento y solo ventilar"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En presencia de líquido meconial, la aspiración rutinaria de orofaringe y nasofaringe antes de la salida de los hombros no está recomendada, ni la intubación y aspiración traqueal de rutina, incluso en neonatos no vigorosos; solo se aspira si hay obstrucción evidente de la vía aérea que impide la ventilación, según las guías de ILCOR y el MINSA. La opción A es incorrecta porque la aspiración intraparto antes de la salida de los hombros no ha demostrado beneficio y puede causar lesiones. La opción B es errónea porque la aspiración traqueal rutinaria no mejora los resultados y puede retrasar la ventilación efectiva. La opción D es incorrecta porque la aspiración puede ser necesaria si existe obstrucción, y la ventilación debe iniciarse si el neonato no respira adecuadamente."
+  },
+  {
+    "numero": 154,
+    "enunciado": "Recién nacido pretérmino de 32 semanas, nace con apnea y frecuencia cardíaca de 70 lpm. Se inicia ventilación a presión positiva con máscara y se evalúa la frecuencia cardíaca a los 30 segundos, que persiste en 55 lpm a pesar de ventilación efectiva. Según el algoritmo de reanimación neonatal, ¿cuál es la siguiente intervención más apropiada?",
+    "opciones": {
+      "A": "Aumentar la presión inspiratoria pico al máximo",
+      "B": "Iniciar compresiones torácicas coordinadas con la ventilación",
+      "C": "Administrar adrenalina por vía endotraqueal",
+      "D": "Realizar aspiración de secreciones y reintentar ventilación"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Cuando la frecuencia cardíaca permanece por debajo de 60 lpm a pesar de 30 segundos de ventilación efectiva, el siguiente paso es iniciar compresiones torácicas coordinadas con la ventilación en una relación de 3:1 (90 compresiones y 30 ventilaciones por minuto), según el algoritmo de ILCOR y el MINSA. La opción A es incorrecta porque aumentar la presión inspiratoria pico sin evaluar la efectividad de la ventilación puede causar barotrauma y no corrige la causa de la bradicardia. La opción C es errónea porque la adrenalina se indica si la frecuencia cardíaca no responde a ventilación y compresiones, no antes de iniciarlas. La opción D es incorrecta porque la aspiración de secreciones solo se realiza si hay obstrucción evidente, y reintentar la ventilación sin compresiones retrasaría la reanimación."
+  },
+  {
+    "numero": 155,
+    "enunciado": "Recién nacido a término, parto vaginal, APGAR 3 al minuto. Se inician los pasos iniciales de reanimación neonatal: calentar, secar, estimular y permeabilizar la vía aérea. A los 30 segundos, el neonato persiste con apnea y frecuencia cardíaca de 80 lpm. ¿Cuál es la frecuencia recomendada de ventilación a presión positiva en este momento?",
+    "opciones": {
+      "A": "20 a 30 respiraciones por minuto",
+      "B": "30 a 40 respiraciones por minuto",
+      "C": "40 a 60 respiraciones por minuto",
+      "D": "60 a 80 respiraciones por minuto"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La frecuencia recomendada de ventilación a presión positiva en reanimación neonatal es de 40 a 60 respiraciones por minuto, según las guías de ILCOR, la AHA y el MINSA, ya que esta frecuencia permite una adecuada eliminación de CO2 y oxigenación sin causar hiperventilación ni disminución del retorno venoso. La opción A es incorrecta porque 20 a 30 respiraciones por minuto es insuficiente para revertir la hipoxemia y la bradicardia. La opción B es errónea porque 30 a 40 respiraciones por minuto está por debajo del rango recomendado y puede no ser efectiva. La opción D es incorrecta porque 60 a 80 respiraciones por minuto excede lo recomendado y puede provocar hiperventilación, con riesgo de disminución del flujo sanguíneo cerebral."
+  },
+  {
+    "numero": 156,
+    "enunciado": "Recién nacido de 40 semanas, parto vaginal, nace con depresión respiratoria severa. Se realizan los pasos iniciales y se inicia ventilación a presión positiva con máscara. A los 30 segundos, la frecuencia cardíaca es de 50 lpm. Se inician compresiones torácicas coordinadas con la ventilación en relación 3:1. Después de 30 segundos de compresiones y ventilación, la frecuencia cardíaca persiste en 45 lpm. ¿Cuál es la siguiente intervención más apropiada?",
+    "opciones": {
+      "A": "Administrar adrenalina por vía endovenosa a dosis de 0.01 a 0.03 mg/kg",
+      "B": "Aumentar la frecuencia de compresiones torácicas al doble",
+      "C": "Suspender las compresiones y continuar solo con ventilación",
+      "D": "Realizar punción lumbar para descartar hemorragia"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Si la frecuencia cardíaca permanece por debajo de 60 lpm después de 30 segundos de compresiones torácicas coordinadas con ventilación efectiva, está indicada la administración de adrenalina por vía endovenosa a dosis de 0.01 a 0.03 mg/kg (solución 1:10 000), según las guías de ILCOR y el MINSA. La opción B es incorrecta porque aumentar la frecuencia de compresiones no mejora el gasto cardíaco y puede comprometer la ventilación. La opción C es errónea porque suspender las compresiones en un neonato con frecuencia cardíaca menor de 60 lpm empeoraría la perfusión. La opción D es incorrecta porque la punción lumbar no forma parte del manejo agudo de la bradicardia en reanimación neonatal y retrasaría la administración de adrenalina."
+  },
+  {
+    "numero": 157,
+    "enunciado": "Recién nacido a término, sin factores de riesgo, nace vigoroso, con llanto fuerte y buen tono muscular. La madre es portadora de estreptococo del grupo B y recibió profilaxis antibiótica adecuada. Según las recomendaciones de atención inmediata del recién nacido, ¿cuál es la conducta correcta respecto al contacto piel a piel y el pinzamiento del cordón?",
+    "opciones": {
+      "A": "Pinzamiento inmediato del cordón y traslado a cuna térmica",
+      "B": "Pinzamiento diferido por al menos 60 segundos y contacto piel a piel",
+      "C": "Aspiración de secreciones rutinaria antes del contacto piel a piel",
+      "D": "Administración de oxígeno suplementario profiláctico"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En un recién nacido vigoroso, sin factores de riesgo, se recomienda el pinzamiento diferido del cordón por al menos 60 segundos y el contacto piel a piel inmediato con la madre, ya que esto favorece la termorregulación, la lactancia materna precoz y la transfusión placentaria, según el MINSA y las guías de ILCOR. La opción A es incorrecta porque el pinzamiento inmediato y el traslado innecesario a cuna térmica interfieren con el vínculo madre-hijo y la adaptación neonatal. La opción C es errónea porque la aspiración de secreciones rutinaria no está recomendada en recién nacidos vigorosos y puede causar bradicardia refleja. La opción D es incorrecta porque la administración de oxígeno suplementario profiláctico no está indicada en un neonato vigoroso con respiración espontánea adecuada."
+  },
+  {
+    "numero": 158,
+    "enunciado": "Recién nacido pretérmino de 34 semanas, nace con respiración espontánea irregular, frecuencia cardíaca de 110 lpm y saturación de oxígeno preductal de 70% al minuto de vida. Se decide iniciar ventilación a presión positiva con máscara. ¿Cuál es la saturación de oxígeno preductal objetivo a los 5 minutos de vida en este recién nacido?",
+    "opciones": {
+      "A": "70% a 75%",
+      "B": "75% a 80%",
+      "C": "80% a 85%",
+      "D": "90% a 95%"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La saturación de oxígeno preductal objetivo a los 5 minutos de vida en un recién nacido que recibe reanimación es de 80% a 85%, según las tablas de saturación recomendadas por ILCOR y el MINSA. La opción A es incorrecta porque 70% a 75% corresponde al objetivo a los 3 minutos de vida. La opción B es errónea porque 75% a 80% corresponde al objetivo a los 4 minutos de vida. La opción D es incorrecta porque 90% a 95% es el objetivo a los 10 minutos de vida en adelante, y una saturación tan alta a los 5 minutos puede reflejar hiperoxia con riesgo de lesión por radicales libres."
+  },
+  {
+    "numero": 159,
+    "enunciado": "Recién nacido a término, parto por cesárea, nace con apnea y frecuencia cardíaca de 40 lpm. Se inician los pasos iniciales y ventilación a presión positiva con máscara. A los 30 segundos, la frecuencia cardíaca es de 50 lpm. Se inician compresiones torácicas coordinadas con ventilación. Se coloca catéter venoso umbilical y se administra adrenalina a dosis de 0.02 mg/kg. ¿Cuál es la vía de elección para la administración de adrenalina en la reanimación neonatal?",
+    "opciones": {
+      "A": "Vía endotraqueal",
+      "B": "Vía intramuscular",
+      "C": "Vía endovenosa",
+      "D": "Vía subcutánea"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La vía endovenosa es la vía de elección para la administración de adrenalina en la reanimación neonatal, ya que permite una acción rápida y predecible, según las guías de ILCOR y el MINSA; la vía endotraqueal se reserva como alternativa mientras se obtiene acceso venoso. La opción A es incorrecta porque la vía endotraqueal tiene absorción errática y efectos menos predecibles. La opción B es errónea porque la vía intramuscular no se utiliza en reanimación neonatal por su absorción lenta e impredecible. La opción D es incorrecta porque la vía subcutánea no está indicada en situaciones de emergencia por su absorción lenta y errática."
+  },
+  {
+    "numero": 160,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con líquido amniótico claro, respiración espontánea, frecuencia cardíaca de 130 lpm y buen tono muscular. La madre pregunta si es necesario aspirar las secreciones de la boca y nariz del bebé de manera rutinaria. ¿Cuál es la conducta correcta respecto a la aspiración de secreciones en este recién nacido?",
+    "opciones": {
+      "A": "Aspirar la boca y luego la nariz de forma rutinaria",
+      "B": "Aspirar solo la nariz para evitar obstrucción",
+      "C": "No aspirar de forma rutinaria, solo si hay obstrucción evidente",
+      "D": "Aspirar la orofaringe antes del pinzamiento del cordón"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En un recién nacido vigoroso con respiración espontánea adecuada, no se recomienda la aspiración rutinaria de secreciones; solo se aspira si hay obstrucción evidente de la vía aérea que interfiere con la respiración, según las guías de ILCOR y el MINSA. La opción A es incorrecta porque la aspiración rutinaria puede causar bradicardia refleja, laringoespasmo y lesión de la mucosa. La opción B es errónea porque aspirar solo la nariz de forma profiláctica no está indicado y puede desencadenar reflejos vagales. La opción D es incorrecta porque la aspiración de orofaringe antes del pinzamiento del cordón no es una práctica recomendada y puede retrasar el pinzamiento diferido beneficioso."
+  },
+  {
+    "numero": 161,
+    "enunciado": "Recién nacido a término, parto vaginal, nace vigoroso con llanto fuerte y buen tono muscular. La madre es portadora de estreptococo del grupo B y recibió profilaxis antibiótica adecuada. Según las recomendaciones de atención inmediata del recién nacido, ¿cuál es la conducta correcta respecto al pinzamiento del cordón umbilical en este neonato?",
+    "opciones": {
+      "A": "Pinzamiento inmediato del cordón y traslado a cuna térmica",
+      "B": "Pinzamiento diferido por al menos 60 segundos",
+      "C": "Pinzamiento a los 15 segundos para evitar ictericia",
+      "D": "Pinzamiento después de administrar vitamina K"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El pinzamiento diferido del cordón por al menos 60 segundos en recién nacidos vigorosos es la recomendación actual de ILCOR y el MINSA, ya que favorece la transfusión placentaria, mejora los depósitos de hierro y disminuye la anemia neonatal sin incrementar el riesgo de ictericia patológica. La opción A es incorrecta porque el pinzamiento inmediato y el traslado innecesario a cuna térmica interfieren con el vínculo madre-hijo y la adaptación neonatal. La opción C es errónea porque 15 segundos es insuficiente para obtener los beneficios de la transfusión placentaria y no previene la ictericia. La opción D es incorrecta porque la vitamina K se administra después del pinzamiento y no es un paso que deba precederlo."
+  },
+  {
+    "numero": 162,
+    "enunciado": "Recién nacido a término, parto vaginal, nace vigoroso, con llanto fuerte y buen tono muscular. La madre es portadora de estreptococo del grupo B y recibió profilaxis antibiótica adecuada. Según las recomendaciones de atención inmediata del recién nacido, ¿cuál es la conducta correcta respecto al contacto piel a piel y el pinzamiento del cordón?",
+    "opciones": {
+      "A": "Pinzamiento inmediato del cordón y traslado a cuna térmica",
+      "B": "Pinzamiento diferido por al menos 60 segundos y contacto piel a piel",
+      "C": "Aspiración de secreciones rutinaria antes del contacto piel a piel",
+      "D": "Administración de oxígeno suplementario profiláctico"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En un recién nacido vigoroso, sin factores de riesgo, se recomienda el pinzamiento diferido del cordón por al menos 60 segundos y el contacto piel a piel inmediato con la madre, ya que esto favorece la termorregulación, la lactancia materna precoz y la transfusión placentaria, según el MINSA y las guías de ILCOR. La opción A es incorrecta porque el pinzamiento inmediato y el traslado innecesario a cuna térmica interfieren con el vínculo madre-hijo y la adaptación neonatal. La opción C es errónea porque la aspiración de secreciones rutinaria no está recomendada en recién nacidos vigorosos y puede causar bradicardia refleja. La opción D es incorrecta porque la administración de oxígeno suplementario profiláctico no está indicada en un neonato vigoroso con respiración espontánea adecuada."
+  },
+  {
+    "numero": 163,
+    "enunciado": "Recién nacido a término, parto vaginal sin complicaciones, nace en la sala de partos de un hospital de Lima. La madre recibió profilaxis antibiótica adecuada y el líquido amniótico es claro. El neonato es colocado bajo cuna de calor radiante y secado con paños estériles. Usted debe realizar la evaluación inicial para decidir si requiere reanimación. Según el algoritmo de reanimación neonatal, ¿cuáles son las tres preguntas iniciales que debe responder para determinar la necesidad de pasar a los pasos iniciales?",
+    "opciones": {
+      "A": "¿Llora? ¿Peso? ¿Frecuencia cardíaca?",
+      "B": "¿Term? ¿Respira? ¿Tono?",
+      "C": "¿APGAR? ¿Reflejos? ¿Color?",
+      "D": "¿Frecuencia cardíaca? ¿Saturación? ¿Peso?"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Las tres preguntas iniciales del algoritmo de reanimación neonatal son ¿Term? ¿Respira? ¿Tono?, según ILCOR y el MINSA, porque permiten decidir de forma rápida si el recién nacido requiere pasar a los pasos iniciales de estabilización. La opción A es incorrecta porque el llanto, el peso y la frecuencia cardíaca no constituyen las preguntas iniciales, sino que se evalúan después. La opción C es errónea porque el APGAR no se utiliza para decidir el inicio de la reanimación, y los reflejos y el color no son parte de la evaluación inicial. La opción D es incorrecta porque la frecuencia cardíaca y la saturación se valoran luego de los pasos iniciales, no antes de decidir si se requieren."
+  },
+  {
+    "numero": 164,
+    "enunciado": "Recién nacido pretérmino de 32 semanas, parto vaginal, nace en la sala de partos con temperatura axilar de 35.8°C. Se inician los pasos iniciales de reanimación neonatal, incluyendo calentamiento bajo cuna de calor radiante y secado con paños tibios. La madre se encuentra estable y el neonato presenta respiración espontánea irregular. ¿Cuál es la temperatura axilar objetivo que debe alcanzar y mantener este recién nacido para evitar la hipotermia y sus complicaciones?",
+    "opciones": {
+      "A": "35.5 a 36.0°C",
+      "B": "36.0 a 36.5°C",
+      "C": "36.5 a 37.5°C",
+      "D": "37.5 a 38.0°C"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La temperatura axilar objetivo en el recién nacido, incluido el pretérmino, es de 36.5 a 37.5°C, según la OMS y el MINSA, porque mantiene un ambiente térmico neutro que reduce el consumo de oxígeno, la glucólisis anaerobia y el riesgo de acidosis metabólica. La opción A es incorrecta porque 35.5 a 36.0°C corresponde a hipotermia leve y no es el objetivo. La opción B es errónea porque 36.0 a 36.5°C está por debajo del rango recomendado y puede perpetuar el estrés por frío. La opción D es incorrecta porque 37.5 a 38.0°C se asocia a hipertermia, con riesgo de apnea, deshidratación y lesión cerebral."
+  },
+  {
+    "numero": 165,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con apnea y frecuencia cardíaca de 80 lpm. Se inician los pasos iniciales de reanimación neonatal: calentar, secar, estimular y permeabilizar la vía aérea. Ante la persistencia de la apnea, se decide iniciar ventilación a presión positiva con máscara. ¿Con qué concentración inicial de oxígeno se debe iniciar la ventilación en este recién nacido a término, de acuerdo con las recomendaciones actuales?",
+    "opciones": {
+      "A": "Aire (21%)",
+      "B": "Oxígeno al 40%",
+      "C": "Oxígeno al 100%",
+      "D": "Oxígeno al 30%"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En el recién nacido a término, la ventilación a presión positiva debe iniciarse con aire (21% de oxígeno), según ILCOR y el MINSA, porque el oxígeno suplementario innecesario genera hiperoxia y radicales libres que pueden lesionar el cerebro, los pulmones y la retina. La opción B es incorrecta porque no se recomienda iniciar con 40% de oxígeno en un recién nacido a término sin evaluación de saturación. La opción C es errónea porque el oxígeno al 100% solo se reserva para casos específicos y no como inicio rutinario. La opción D es incorrecta porque el 30% se utiliza en pretérminos menores de 35 semanas, no en a término como concentración inicial."
+  },
+  {
+    "numero": 166,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con apnea y frecuencia cardíaca de 50 lpm. Se inician los pasos iniciales, ventilación a presión positiva con máscara y, al persistir la frecuencia cardíaca por debajo de 60 lpm, se indican compresiones torácicas. ¿Cuál es la técnica correcta para realizar las compresiones torácicas en un recién nacido durante la reanimación neonatal?",
+    "opciones": {
+      "A": "Con dos dedos en el tercio medio del esternón",
+      "B": "Con dos pulgares en el tercio inferior del esternón",
+      "C": "Con el talón de la mano en el tercio superior del esternón",
+      "D": "Con una mano en el esternón y la otra en la espalda"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La técnica recomendada de compresiones torácicas en el recién nacido consiste en usar dos pulgares sobre el tercio inferior del esternón, con las manos rodeando el tórax, según ILCOR y el MINSA, porque permite una compresión efectiva y controlada sin lesionar las costillas ni el hígado. La opción A es incorrecta porque la ubicación en el tercio medio del esternón no corresponde al punto de compresión recomendado. La opción C es errónea porque el talón de la mano en el tercio superior no es la técnica neonatal y puede causar lesiones. La opción D es incorrecta porque la técnica descrita no es la recomendada para recién nacidos y no garantiza una compresión eficaz."
+  },
+  {
+    "numero": 167,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con depresión respiratoria severa. Se inician los pasos iniciales, ventilación a presión positiva con máscara y, al persistir la frecuencia cardíaca en 50 lpm, se inician compresiones torácicas coordinadas con la ventilación. ¿Cuál es la relación recomendada entre compresiones torácicas y ventilaciones durante la reanimación neonatal, según las guías actuales?",
+    "opciones": {
+      "A": "15 compresiones y 2 ventilaciones",
+      "B": "30 compresiones y 2 ventilaciones",
+      "C": "3 compresiones y 1 ventilación",
+      "D": "5 compresiones y 1 ventilación"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La relación recomendada en la reanimación neonatal es de 3 compresiones por 1 ventilación, lo que equivale a 90 compresiones y 30 ventilaciones por minuto, según ILCOR y el MINSA, porque la causa principal de la bradicardia neonatal es la hipoxemia y se necesita asegurar una ventilación frecuente y efectiva. La opción A es incorrecta porque 15:2 corresponde a la reanimación pediátrica fuera del periodo neonatal. La opción B es errónea porque 30:2 es la relación para adultos y niños mayores, no para recién nacidos. La opción D es incorrecta porque 5:1 no es una relación recomendada en reanimación neonatal."
+  },
+  {
+    "numero": 168,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con apnea y frecuencia cardíaca de 40 lpm. Se realizan los pasos iniciales, ventilación a presión positiva con máscara y compresiones torácicas coordinadas. A los 30 segundos, la frecuencia cardíaca persiste en 45 lpm. Se decide administrar adrenalina por vía endovenosa a través de catéter venoso umbilical. ¿Cuál es la dosis recomendada de adrenalina en la reanimación neonatal?",
+    "opciones": {
+      "A": "0.1 mg/kg",
+      "B": "0.5 mg/kg",
+      "C": "1 mg/kg",
+      "D": "0.01 a 0.03 mg/kg"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La dosis recomendada de adrenalina en la reanimación neonatal es de 0.01 a 0.03 mg/kg por vía endovenosa, utilizando la solución 1:10 000, según ILCOR y el MINSA, porque a esta dosis se logra el efecto cronotrópico e inotrópico deseado sin provocar hipertensión grave ni arritmias. La opción A es incorrecta porque 0.1 mg/kg excede la dosis recomendada y puede causar efectos adversos graves. La opción B es errónea porque 0.5 mg/kg es una dosis muy superior a la neonatal y no está indicada. La opción C es incorrecta porque 1 mg/kg corresponde a una dosis de adrenalina para otras situaciones, no para reanimación neonatal."
+  },
+  {
+    "numero": 169,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con palidez marcada, frecuencia cardíaca de 50 lpm, mala perfusión periférica y antecedente de desprendimiento prematuro de placenta. Se inician los pasos iniciales, ventilación a presión positiva y compresiones torácicas. Se sospecha hipovolemia por pérdida sanguínea. ¿Cuál es la conducta más apropiada respecto a la administración de volumen en este recién nacido?",
+    "opciones": {
+      "A": "Administrar 10 mL/kg de solución salina fisiológica por vía endovenosa en 5 a 10 minutos",
+      "B": "Administrar 20 mL/kg de solución salina fisiológica en bolo rápido",
+      "C": "Administrar 1 mL/kg de adrenalina por vía endovenosa",
+      "D": "Administrar 5 mL/kg de albúmina al 5%"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la reanimación neonatal con sospecha de hipovolemia, se recomienda administrar un expansor de volumen a 10 mL/kg de solución salina fisiológica por vía endovenosa en 5 a 10 minutos, según ILCOR y el MINSA, porque permite restaurar el volumen intravascular sin sobrecarga rápida. La opción B es incorrecta porque 20 mL/kg en bolo rápido puede provocar sobrecarga de volumen y edema pulmonar. La opción C es errónea porque la adrenalina no es un expansor de volumen y no corrige la hipovolemia. La opción D es incorrecta porque la albúmina al 5% no es de primera línea en la reanimación neonatal y puede aumentar el riesgo de infecciones."
+  },
+  {
+    "numero": 170,
+    "enunciado": "Recién nacido a término, parto vaginal, nace con apnea. Se inician los pasos iniciales y ventilación a presión positiva con máscara. A los 30 segundos, no se observa mejoría en la frecuencia cardíaca ni en la expansión torácica, y la saturación de oxígeno permanece por debajo de 90%. ¿Cuál es la indicación más apropiada para realizar intubación endotraqueal en este momento de la reanimación neonatal?",
+    "opciones": {
+      "A": "Frecuencia cardíaca menor de 100 lpm",
+      "B": "Apnea que no responde a ventilación con mascarilla",
+      "C": "Saturación de oxígeno menor de 90%",
+      "D": "Llanto débil o ausente"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "RCP neonatal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La intubación endotraqueal está indicada cuando la ventilación con mascarilla no es efectiva, es decir, no mejora la frecuencia cardíaca ni la expansión torácica, según ILCOR y el MINSA, porque se necesita asegurar la vía aérea y una ventilación adecuada. La opción A es incorrecta porque una frecuencia cardíaca menor de 100 lpm no es indicación por sí sola de intubación, sino que primero se optimiza la ventilación con mascarilla. La opción C es errónea porque la saturación menor de 90% se maneja inicialmente ajustando la ventilación y el oxígeno, no intubando de rutina. La opción D es incorrecta porque el llanto débil o ausente no constituye una indicación de intubación endotraqueal."
   }
 ]

@@ -30,7 +30,7 @@
     "file": "data/simulacro_villamedic.json"
   },
   {
-    "id": "deepseek_creadas",
+    "id": "ds",
     "name": "DeepSeek",
     "description": "Creadas con IA",
     "file": "data/ds.json"

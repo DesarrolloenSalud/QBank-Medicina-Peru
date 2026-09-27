@@ -28,5 +28,11 @@
     "name": "Banco externo",
     "description": "Banco de preguntas VM",
     "file": "data/simulacro_villamedic.json"
+  },
+  {
+    "id": "deepseek_creadas",
+    "name": "DeepSeek",
+    "description": "Creadas con IA",
+    "file": "data/ds.json"
   }
 ]

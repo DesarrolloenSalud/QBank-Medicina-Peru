@@ -1,0 +1,1702 @@
+[
+  {
+    "numero": 1,
+    "enunciado": "Lactante de 14 meses, procedente de zona rural de Cajamarca, acude con su madre por deposiciones líquidas abundantes de 3 días de evolución, sin sangre, aproximadamente 6 veces al día, asociadas a vómitos ocasionales. Al examen físico: irritable, ojos hundidos, boca seca, signo del pliegue positivo (retracción lenta), bebe con avidez el agua ofrecida. Funciones vitales: FC 130/min, FR 32/min, PA 80/50 mmHg, T 37.8 °C. Peso 10 kg. Según la clasificación de la OMS/MINSA, ¿cuál es el diagnóstico y el plan de tratamiento inicial más adecuado?",
+    "opciones": {
+      "A": "Deshidratación grave; iniciar Plan C con 100 ml/kg de solución polielectrolítica endovenosa.",
+      "B": "Sin deshidratación; indicar Plan A con sales de rehidratación oral a libre demanda.",
+      "C": "Deshidratación moderada (algún grado de deshidratación); iniciar Plan B con 75 ml/kg de SRO en 4 horas.",
+      "D": "Deshidratación leve; indicar solo aumento de líquidos caseros y control en 24 horas."
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El lactante presenta dos o más signos de deshidratación (irritabilidad, ojos hundidos, boca seca, pliegue cutáneo de retracción lenta) que, según la clasificación de la OMS y la Guía de Práctica Clínica del MINSA, corresponden a deshidratación moderada o 'algún grado de deshidratación', cuyo tratamiento inicial es el Plan B: administrar 75 ml/kg de solución de sales de rehidratación oral (SRO) en 4 horas en el establecimiento de salud, con evaluación periódica. La opción A es incorrecta porque el paciente no presenta signos de deshidratación grave (shock, letargo, incapacidad para beber), por lo que no requiere Plan C con fluidos endovenosos. La opción B es errónea porque el niño sí tiene signos de deshidratación, por lo que no puede manejarse solo con Plan A en casa. La opción D es incorrecta porque la deshidratación leve no existe como categoría en la clasificación de la OMS/MINSA y porque el manejo con solo líquidos caseros sin SRO no revierte la deshidratación establecida."
+  },
+  {
+    "numero": 2,
+    "enunciado": "Niño de 3 años, procedente de Iquitos, es traído por su madre a la posta médica por deposiciones líquidas sin sangre, de 2 días de evolución, 4 veces al día, sin vómitos. Al examen físico: alerta, activo, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 100/min, FR 24/min, PA 90/60 mmHg, T 36.8 °C. Peso 14 kg. No hay signos de deshidratación. ¿Cuál de las siguientes medidas corresponde al Plan A de tratamiento de la enfermedad diarreica aguda según la norma peruana?",
+    "opciones": {
+      "A": "Administrar 20 mg de sulfato de zinc diario por 10 días y aumentar la ingesta de líquidos en el hogar.",
+      "B": "Indicar 75 ml/kg de SRO en 4 horas en el establecimiento de salud y reevaluar.",
+      "C": "Iniciar hidratación endovenosa con 100 ml/kg de solución polielectrolítica.",
+      "D": "Indicar dieta absoluta por 12 horas y luego reiniciar alimentación con caldos."
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El niño no presenta signos de deshidratación, por lo que corresponde el Plan A, que incluye las cinco reglas de la nemotecnia ACREZ: aumentar la ingesta de líquidos apropiados, continuar la alimentación habitual, reconocer signos de alarma, enseñar medidas preventivas y administrar suplemento de zinc. Según la Guía de Práctica Clínica del MINSA y la recomendación de UNICEF/OPS, el zinc se administra a razón de 20 mg diarios (en mayores de 6 meses) durante 10 días para reducir la duración y severidad del episodio, siendo la opción A la correcta al combinar la suplementación con zinc y el aumento de líquidos. La opción B corresponde al Plan B, indicado solo cuando existe algún grado de deshidratación, lo cual no ocurre en este paciente. La opción C es propia del Plan C, reservado para deshidratación grave con o sin shock. La opción D es incorrecta porque la dieta absoluta no está indicada; se debe continuar la alimentación habitual, incluyendo lactancia materna si aplica, para no prolongar la diarrea ni afectar el estado nutricional."
+  },
+  {
+    "numero": 3,
+    "enunciado": "Niño de 8 meses, procedente de Piura, presenta deposiciones líquidas abundantes de 4 días de evolución, sin sangre, aproximadamente 8 veces al día, acompañadas de vómitos frecuentes. Al examen físico: somnoliento, ojos muy hundidos, boca muy seca, signo del pliegue muy positivo (retracción muy lenta), no bebe o bebe mal. Funciones vitales: FC 150/min, FR 40/min, PA 70/40 mmHg, T 37.5 °C. Peso 8 kg. ¿Cuál es la conducta inicial más adecuada según el manejo de la deshidratación grave en pediatría?",
+    "opciones": {
+      "A": "Administrar 75 ml/kg de SRO por sonda nasogástrica en 4 horas.",
+      "B": "Indicar solo aumento de líquidos caseros y control en 2 horas.",
+      "C": "Iniciar Plan C: 100 ml/kg de solución polielectrolítica endovenosa, con bolos de 20 ml/kg si hay shock.",
+      "D": "Administrar 20 mg de zinc y 50 ml de SRO después de cada deposición."
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El lactante presenta signos de deshidratación grave: somnolencia, ojos muy hundidos, boca muy seca, signo del pliegue muy positivo, incapacidad para beber y signos de hipoperfusión (taquicardia, hipotensión). Según la Guía de Práctica Clínica del MINSA y las recomendaciones de la OMS, el manejo es el Plan C: administrar 100 ml/kg de solución polielectrolítica por vía endovenosa, con bolos adicionales de 20 ml/kg de solución isotónica si hay shock, y reevaluar constantemente. La opción A corresponde al Plan B, que está indicado para deshidratación moderada, no para deshidratación grave con compromiso del sensorio y signos de shock. La opción B es insuficiente y peligrosa, pues no revierte la deshidratación grave. La opción D es parte del Plan A (sin deshidratación), no del manejo de la deshidratación grave, y retrasaría la rehidratación endovenosa necesaria."
+  },
+  {
+    "numero": 4,
+    "enunciado": "Lactante de 5 meses, procedente de Huancayo, es llevado a consulta por deposiciones líquidas sin sangre de 3 días de evolución, aproximadamente 5 veces al día, sin vómitos ni fiebre. Al examen físico: alerta, activo, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 110/min, FR 28/min, PA 85/55 mmHg, T 36.5 °C. Peso 6 kg. La madre refiere que el niño solo recibe lactancia materna exclusiva. Según la norma peruana, ¿cuál es la dosis de zinc elemental que corresponde a este paciente?",
+    "opciones": {
+      "A": "10 mg diarios durante 10 días.",
+      "B": "20 mg diarios durante 10 días.",
+      "C": "20 mg diarios durante 14 días.",
+      "D": "10 mg diarios durante 14 días."
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El lactante de 5 meses se encuentra sin signos de deshidratación, por lo que corresponde el Plan A, que incluye la suplementación con zinc como parte del tratamiento de la enfermedad diarreica aguda. Según la Guía de Práctica Clínica del MINSA, basada en las recomendaciones de la OMS y UNICEF, la dosis de zinc elemental es de 10 mg diarios en lactantes menores de 6 meses, administrada durante 10 días, tal como señala la opción A. La opción B (20 mg) corresponde a niños de 6 meses a 5 años, por lo que no aplica a este paciente. Las opciones C y D prolongan innecesariamente el tratamiento a 14 días; si bien la OMS menciona un rango de 10 a 14 días, la evidencia y la norma peruana priorizan 10 días por ser eficaz y segura, y además la dosis de 20 mg no corresponde a la edad del lactante."
+  },
+  {
+    "numero": 5,
+    "enunciado": "Niño de 2 años, procedente de una comunidad rural de Cusco, es traído por diarrea líquida sin sangre de 5 días de evolución, 3 a 4 deposiciones por día, sin vómitos. Al examen físico: alerta, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 105/min, FR 26/min, PA 90/60 mmHg, T 36.7 °C. Peso 12 kg. La madre refiere que no le ha dado ningún medicamento y que el niño come normalmente. Además de las medidas del Plan A, ¿cuál es la conducta farmacológica más apropiada según la Guía de Práctica Clínica del MINSA?",
+    "opciones": {
+      "A": "Indicar loperamida a dosis pediátrica para reducir la frecuencia de las deposiciones.",
+      "B": "Indicar antibiótico empírico con trimetoprim-sulfametoxazol por 5 días.",
+      "C": "Administrar sulfato de zinc 20 mg al día por 10 días como coadyuvante.",
+      "D": "Indicar ondansetrón oral para prevenir vómitos y mejorar la tolerancia oral."
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El niño no presenta signos de deshidratación, por lo que el manejo es el Plan A, que incluye la suplementación con zinc. Según la Guía de Práctica Clínica del MINSA, el zinc está indicado en todos los niños con enfermedad diarreica aguda, administrado a razón de 20 mg de zinc elemental al día (en mayores de 6 meses) durante 10 días, ya que reduce la duración y severidad del episodio y disminuye la probabilidad de recurrencia en los siguientes 2 a 3 meses; por ello la opción C es la correcta. La opción A es incorrecta porque la loperamida está contraindicada en niños con diarrea aguda, ya que puede producir íleo paralítico, somnolencia y toxicidad del sistema nervioso central. La opción B es errónea porque el uso rutinario de antibióticos no está indicado en diarrea acuosa sin sangre, y además el trimetoprim-sulfametoxazol no es el esquema de primera línea para diarrea bacteriana invasiva en el contexto peruano. La opción D es incorrecta porque el ondansetrón no está recomendado de rutina en el manejo de la diarrea aguda pediátrica según la norma peruana, y su uso podría enmascarar signos de deshidratación."
+  },
+  {
+    "numero": 6,
+    "enunciado": "Niño de 2 años, procedente de una comunidad periurbana de Lima, acude a consulta por deposiciones líquidas abundantes, sin sangre ni moco, de 3 días de evolución, aproximadamente 6 veces al día, asociadas a vómitos escasos y fiebre baja. Al examen físico: alerta, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 110/min, FR 26/min, PA 85/55 mmHg, T 37.9 °C. Peso 12 kg. La madre refiere que otros niños de la guardería presentan cuadros similares. Según la epidemiología peruana, ¿cuál es el agente etiológico más frecuente de enfermedad diarreica aguda acuosa en niños menores de 5 años?",
+    "opciones": {
+      "A": "Shigella",
+      "B": "Rotavirus",
+      "C": "Giardia lamblia",
+      "D": "Salmonella"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El rotavirus es el agente etiológico más frecuente de enfermedad diarreica aguda acuosa en niños menores de 5 años en el Perú y a nivel mundial, según la OMS y la Guía de Práctica Clínica del MINSA, y se caracteriza por diarrea líquida, vómitos y fiebre baja, con transmisión fecal-oral en guarderías y comunidades. La opción A es incorrecta porque Shigella se asocia típicamente a diarrea disentérica con sangre, moco, fiebre alta, pujo y tenesmo, no a diarrea acuosa sin sangre. La opción C es errónea porque Giardia lamblia suele producir diarrea prolongada o persistente, con heces pastosas y malolientes, no un cuadro agudo acuoso autolimitado. La opción D es incorrecta porque Salmonella puede causar diarrea invasiva o acuosa, pero no es el agente más frecuente de diarrea acuosa aguda en lactantes y preescolares en el contexto peruano."
+  },
+  {
+    "numero": 7,
+    "enunciado": "Niño de 4 años, procedente de Iquitos, presenta deposiciones con sangre y moco, de 2 días de evolución, aproximadamente 5 veces al día, acompañadas de fiebre de 38.5 °C, dolor abdominal cólico, pujo y tenesmo. Al examen físico: alerta, regular estado general, ojos normales, boca húmeda, signo del pliegue negativo, abdomen doloroso a la palpación profunda sin signos de irritación peritoneal. Funciones vitales: FC 115/min, FR 24/min, PA 90/60 mmHg, T 38.5 °C. Peso 16 kg. Según el perfil epidemiológico peruano, ¿cuál es el agente bacteriano más frecuentemente implicado en este tipo de diarrea disentérica?",
+    "opciones": {
+      "A": "Rotavirus",
+      "B": "Giardia lamblia",
+      "C": "Shigella",
+      "D": "Escherichia coli enterotoxigénica"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "Shigella es el agente bacteriano más frecuentemente implicado en la diarrea disentérica en niños peruanos, según la Guía de Práctica Clínica del MINSA y los reportes epidemiológicos nacionales, y se manifiesta con deposiciones con sangre y moco, fiebre alta, dolor abdominal tipo cólico, pujo y tenesmo. La opción A es incorrecta porque el rotavirus produce diarrea acuosa sin sangre, con vómitos y fiebre baja, no disentería. La opción B es errónea porque Giardia lamblia se asocia a diarrea persistente, esteatorrea y distensión abdominal, sin sangre ni fiebre alta. La opción D es incorrecta porque Escherichia coli enterotoxigénica causa diarrea acuosa secretora, típicamente del viajero, sin sangre ni moco."
+  },
+  {
+    "numero": 8,
+    "enunciado": "Niño de 5 años, procedente de Piura, acude por deposiciones con sangre y moco de 3 días, fiebre de 38.8 °C y dolor abdominal. Al examen físico: alerta, hidratado, ojos normales, boca húmeda, signo del pliegue negativo, abdomen doloroso difuso sin defensa. Funciones vitales: FC 100/min, FR 22/min, PA 95/60 mmHg, T 38.8 °C. Peso 18 kg. No presenta signos de deshidratación. La madre refiere que no ha recibido antibióticos. Según la Guía de Práctica Clínica del MINSA, ¿cuál es el antibiótico empírico de elección para este cuadro de disentería probable por Shigella?",
+    "opciones": {
+      "A": "Metronidazol",
+      "B": "Trimetoprim-sulfametoxazol",
+      "C": "Loperamida",
+      "D": "Ciprofloxacino"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "En la disentería probable por Shigella, la Guía de Práctica Clínica del MINSA y la OMS recomiendan como antibiótico empírico de primera línea el ciprofloxacino, que reduce la duración de la fiebre, la excreción del patógeno y las complicaciones. La opción A es incorrecta porque el metronidazol está indicado para amebiasis y giardiasis, no para shigelosis. La opción B es errónea porque el trimetoprim-sulfametoxazol presenta altas tasas de resistencia en Shigella en el Perú y ya no se recomienda como primera línea. La opción C es incorrecta porque la loperamida está contraindicada en niños con diarrea disentérica, ya que puede provocar íleo paralítico, toxicidad del sistema nervioso central y prolongar la excreción bacteriana."
+  },
+  {
+    "numero": 9,
+    "enunciado": "Lactante de 9 meses, procedente de Huancayo, es llevado a consulta por deposiciones líquidas sin sangre de 2 días de evolución, aproximadamente 5 veces al día, sin vómitos ni fiebre. Al examen físico: alerta, activo, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 115/min, FR 28/min, PA 85/55 mmHg, T 36.8 °C. Peso 8 kg. Recibe lactancia materna a demanda y alimentación complementaria. La madre pregunta si debe suspender la leche y dar solo suero. ¿Cuál es la indicación alimentaria más adecuada durante la enfermedad diarreica aguda?",
+    "opciones": {
+      "A": "Continuar lactancia materna y alimentación habitual",
+      "B": "Suspender lactancia materna y dar solo SRO",
+      "C": "Mantener ayuno por 24 horas",
+      "D": "Indicar dieta sin lactosa de forma rutinaria"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La Guía de Práctica Clínica del MINSA y la OMS recomiendan continuar la lactancia materna y la alimentación habitual durante la enfermedad diarreica aguda, ya que mantener la ingesta nutricional reduce la duración de la diarrea, evita la desnutrición y favorece la recuperación de la mucosa intestinal. La opción B es incorrecta porque suspender la lactancia materna priva al lactante de factores inmunológicos y nutritivos esenciales, además de aumentar el riesgo de deshidratación y desnutrición. La opción C es errónea porque el ayuno prolonga la diarrea, retrasa la reparación intestinal y no aporta beneficio. La opción D es incorrecta porque la dieta sin lactosa no está indicada de forma rutinaria en la diarrea aguda; solo se considera en casos de diarrea persistente con intolerancia documentada a la lactosa."
+  },
+  {
+    "numero": 10,
+    "enunciado": "Niño de 1 año, procedente de una zona rural de Cajamarca, es traído por diarrea acuosa de 4 días de evolución, aproximadamente 8 veces al día, sin sangre, con vómitos ocasionales. Al examen físico: somnoliento, ojos hundidos, boca seca, signo del pliegue positivo de retracción lenta, bebe con avidez. Funciones vitales: FC 140/min, FR 36/min, PA 75/45 mmHg, T 37.2 °C. Peso 9 kg. La madre refiere que el niño ha disminuido la ingesta y orina poco. ¿Cuál es la complicación más frecuente y principal causa de mortalidad en la enfermedad diarreica aguda pediátrica?",
+    "opciones": {
+      "A": "Intolerancia a la lactosa",
+      "B": "Deshidratación",
+      "C": "Convulsiones",
+      "D": "Sepsis"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La deshidratación es la complicación más frecuente y la principal causa de mortalidad en la enfermedad diarreica aguda pediátrica, según la OMS y la Guía de Práctica Clínica del MINSA, y se produce por la pérdida de agua y electrolitos en las heces y vómitos, lo que puede llevar a shock hipovolémico y muerte si no se trata oportunamente. La opción A es incorrecta porque la intolerancia a la lactosa puede ocurrir en algunos casos de diarrea persistente, pero no es la complicación más frecuente ni la principal causa de muerte. La opción C es errónea porque las convulsiones pueden aparecer en cuadros de disentería por Shigella o por alteraciones electrolíticas graves, pero son menos frecuentes que la deshidratación. La opción D es incorrecta porque la sepsis es una complicación poco común en la enfermedad diarreica aguda no invasiva y no constituye la principal causa de mortalidad."
+  },
+  {
+    "numero": 11,
+    "enunciado": "Madre de lactante de 18 meses, procedente de Comas, Lima, acude a control de niño sano. Refiere que su hijo tuvo diarrea hace un mes y desea saber cómo prevenir nuevos episodios. El niño está vacunado según calendario peruano, recibe alimentación familiar y agua hervida. Al examen físico: sano, peso adecuado para la edad, sin signos de desnutrición. Funciones vitales normales. ¿Cuál es la medida preventiva más eficaz y recomendada por el MINSA para reducir la enfermedad diarreica aguda en niños?",
+    "opciones": {
+      "A": "Completar vacunación contra rotavirus, lavado de manos y consumo de agua segura.",
+      "B": "Administrar antibióticos profilácticos cada 3 meses.",
+      "C": "Desparasitar con albendazol cada 6 meses.",
+      "D": "Usar loperamida al primer episodio de diarrea."
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La OMS y la Guía de Práctica Clínica del MINSA recomiendan como medidas preventivas clave la vacunación completa contra rotavirus, el lavado de manos con jabón, el consumo de agua segura, la lactancia materna exclusiva hasta los 6 meses y el saneamiento básico, por lo que la opción A es la correcta. La opción B es incorrecta porque los antibióticos profilácticos no previenen la diarrea aguda y favorecen resistencia antimicrobiana. La opción C es errónea porque la desparasitación periódica no previene los episodios agudos virales o bacterianos, aunque puede reducir parasitosis. La opción D es incorrecta porque la loperamida está contraindicada en niños con diarrea aguda por riesgo de íleo paralítico y toxicidad neurológica."
+  },
+  {
+    "numero": 12,
+    "enunciado": "Niño de 1 año, procedente de Puno, con diarrea acuosa de 2 días, manejado en casa con SRO. La madre consulta porque el niño presenta somnolencia, no quiere beber y ha dejado de orinar. Al examen: letárgico, ojos muy hundidos, boca seca, pliegue cutáneo muy lento, FC 150/min, FR 40/min, PA 70/40 mmHg. ¿Cuál es el signo de alarma que indica deshidratación grave y requiere referencia inmediata?",
+    "opciones": {
+      "A": "Dos deposiciones líquidas en 24 horas.",
+      "B": "Vómitos ocasionales.",
+      "C": "Somnolencia y incapacidad para beber.",
+      "D": "Dolor abdominal leve."
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "Según la OMS y la Guía de Práctica Clínica del MINSA, los signos de deshidratación grave incluyen letargo o somnolencia, incapacidad para beber, ojos muy hundidos, pliegue cutáneo de retracción muy lenta y signos de shock, por lo que la opción C es la correcta y obliga a referencia inmediata para hidratación endovenosa. La opción A es incorrecta porque dos deposiciones líquidas en 24 horas no constituyen signo de alarma ni deshidratación. La opción B es errónea porque los vómitos ocasionales pueden manejarse con SRO fraccionado y no indican gravedad por sí solos. La opción D es incorrecta porque el dolor abdominal leve es inespecífico y no define deshidratación grave."
+  },
+  {
+    "numero": 13,
+    "enunciado": "Lactante de 10 meses, procedente de Ayacucho, presenta diarrea acuosa sin sangre de 1 día, sin deshidratación. La madre no tiene SRO en casa y pregunta qué líquido puede darle mientras consigue sales. Según la OMS y el MINSA, ¿cuál es la mejor alternativa casera para mantener la hidratación?",
+    "opciones": {
+      "A": "Gaseosa o jugo de frutas envasado.",
+      "B": "Agua de arroz o sopa con sal.",
+      "C": "Bebida rehidratante deportiva.",
+      "D": "Solo agua pura."
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La OMS y la Guía de Práctica Clínica del MINSA recomiendan como líquidos caseros apropiados el agua de arroz, las sopas con sal, el yogur o los caldos, porque aportan agua y electrolitos con osmolaridad adecuada, por lo que la opción B es la correcta. La opción A es incorrecta porque las gaseosas y jugos envasados tienen alto contenido de azúcar, lo que produce diarrea osmótica y empeora el cuadro. La opción C es errónea porque las bebidas deportivas tienen composición de electrolitos no adaptada a lactantes y alto azúcar. La opción D es incorrecta porque el agua sola no repone las pérdidas de sodio y potasio, y en grandes volúmenes puede agravar la hiponatremia."
+  },
+  {
+    "numero": 14,
+    "enunciado": "Niño de 2 años, procedente de Loreto, presenta deposiciones líquidas de 16 días de evolución, 4 veces al día, sin sangre, con pérdida de peso. Al examen: alerta, deshidratación leve, abdomen distendido, pelo quebradizo. ¿Cómo se define la diarrea persistente y cuál es el manejo inicial más adecuado?",
+    "opciones": {
+      "A": "Diarrea que dura más de 7 días; manejo con ayuno.",
+      "B": "Diarrea que dura más de 10 días; antibióticos empíricos.",
+      "C": "Diarrea que dura 14 días o más; manejo nutricional y evaluación de causas.",
+      "D": "Diarrea que dura más de 21 días; solo SRO."
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La OMS y la Guía de Práctica Clínica del MINSA definen la diarrea persistente como aquella que dura 14 días o más, y su manejo inicial incluye rehidratación, alimentación continua, suplemento de zinc, búsqueda de causas como Giardia lamblia o intolerancia a la lactosa y evaluación del estado nutricional, por lo que la opción C es la correcta. La opción A es incorrecta porque 7 días no define diarrea persistente y el ayuno está contraindicado. La opción B es errónea porque 10 días no es el punto de corte y los antibióticos empíricos no son de rutina sin signos de invasión. La opción D es incorrecta porque 21 días corresponde a diarrea crónica y el manejo no se limita a SRO."
+  },
+  {
+    "numero": 15,
+    "enunciado": "Niño de 3 años, procedente de una zona costera de Piura, tras inundaciones, presenta diarrea acuosa profusa, heces con aspecto de agua de arroz, vómitos y deshidratación grave. Al examen: letárgico, ojos muy hundidos, pliegue muy lento, FC 160/min, FR 45/min, PA 60/30 mmHg. Se sospecha cólera. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Iniciar Plan C con solución polielectrolítica endovenosa y notificar el caso.",
+      "B": "Iniciar Plan B con SRO por sonda nasogástrica.",
+      "C": "Indicar doxiciclina oral y observación.",
+      "D": "Administrar loperamida para reducir las pérdidas."
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cólera produce diarrea acuosa profusa con heces de aspecto agua de arroz y puede llevar a deshidratación grave y shock hipovolémico, por lo que la conducta inicial es la rehidratación endovenosa inmediata con Plan C y la notificación epidemiológica obligatoria, tal como señala la opción A según la Guía de Práctica Clínica del MINSA y la OMS. La opción B es incorrecta porque el Plan B con SRO por sonda es insuficiente en deshidratación grave con compromiso hemodinámico. La opción C es errónea porque los antibióticos como doxiciclina son coadyuvantes para reducir la duración de la diarrea, pero nunca reemplazan la rehidratación inicial. La opción D es incorrecta porque la loperamida está contraindicada en diarrea acuosa grave y puede agravar la deshidratación."
+  },
+  {
+    "numero": 16,
+    "enunciado": "Niño de 3 años, procedente de Iquitos, acude a la posta médica por deposiciones líquidas sin sangre de 10 días de evolución, aproximadamente 4 veces al día, sin vómitos ni fiebre. Antecedentes: sin enfermedades crónicas, vacunas completas según edad. Enfermedad actual: inicio gradual, heces acuosas, sin moco ni sangre, apetito conservado. Examen físico: alerta, activo, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 100/min, FR 22/min, PA 90/60 mmHg, T 36.8 °C. Peso 14 kg. No signos de deshidratación. Según la OMS y la Guía de Práctica Clínica del MINSA, ¿cómo se clasifica esta diarrea según su duración?",
+    "opciones": {
+      "A": "Aguda",
+      "B": "Persistente",
+      "C": "Crónica",
+      "D": "Disentérica"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La diarrea aguda se define, según la OMS y la Guía de Práctica Clínica del MINSA, como aquella que dura menos de 14 días; la diarrea persistente dura 14 días o más, y la crónica supera los 30 días; la disentérica se caracteriza por presencia de sangre y moco en las heces. En este caso, el niño presenta diarrea de 10 días de evolución, por lo que corresponde clasificarla como aguda, tal como señala la opción A. La opción B es incorrecta porque la diarrea persistente requiere un mínimo de 14 días de duración. La opción C es errónea porque la diarrea crónica se define por más de 30 días de evolución. La opción D es incorrecta porque la disentérica implica sangre y moco en las deposiciones, hallazgos ausentes en este paciente."
+  },
+  {
+    "numero": 17,
+    "enunciado": "Lactante de 4 meses, procedente de Huancayo, acude a control de niño sano. La madre refiere que un vecino tuvo diarrea por rotavirus y pregunta cómo prevenir esa enfermedad. Antecedentes: lactancia materna exclusiva, sin enfermedades previas, calendario de vacunación según edad. Examen físico: alerta, activo, hidratado, abdomen blando, sin visceromegalias. Funciones vitales: FC 120/min, FR 30/min, PA 80/50 mmHg, T 36.5 °C. Peso 6.5 kg. Según el calendario nacional de inmunizaciones del Perú, ¿cuál es la medida preventiva específica contra rotavirus?",
+    "opciones": {
+      "A": "Vacuna antipoliomielítica oral",
+      "B": "Antibióticos profilácticos",
+      "C": "Loperamida en dosis preventiva",
+      "D": "Vacuna contra rotavirus"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La vacuna contra rotavirus está incluida en el calendario nacional de inmunizaciones del Perú y constituye la medida preventiva específica más eficaz para reducir la diarrea grave por rotavirus, administrándose por vía oral a los 2 y 4 meses de edad, por lo que la opción D es la correcta según el MINSA y la OMS. La opción A es incorrecta porque la vacuna antipoliomielítica previene la poliomielitis, no la diarrea por rotavirus. La opción B es errónea porque los antibióticos profilácticos no previenen infecciones virales y favorecen la resistencia antimicrobiana. La opción C es incorrecta porque la loperamida está contraindicada en lactantes y no tiene ningún rol preventivo en la enfermedad diarreica aguda."
+  },
+  {
+    "numero": 18,
+    "enunciado": "Niño de 2 años, procedente de Piura, es traído a consulta por deposiciones líquidas sin sangre de 2 días de evolución, aproximadamente 5 veces al día, sin vómitos ni fiebre. Antecedentes: sin enfermedades crónicas, alimentación habitual. Examen físico: alerta, activo, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 105/min, FR 24/min, PA 85/55 mmHg, T 36.7 °C. Peso 12 kg. No presenta signos de deshidratación. La madre recibe educación sobre el Plan A. ¿Qué cantidad de sales de rehidratación oral debe administrar después de cada deposición líquida?",
+    "opciones": {
+      "A": "100 a 200 ml",
+      "B": "50 a 100 ml",
+      "C": "200 a 300 ml",
+      "D": "10 a 20 ml"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "Según la OMS y la Guía de Práctica Clínica del MINSA, en el Plan A se debe administrar SRO después de cada deposición líquida: 50 a 100 ml en menores de 2 años y 100 a 200 ml en niños de 2 a 5 años. Como el paciente tiene 2 años, corresponde administrar 100 a 200 ml, tal como indica la opción A. La opción B es incorrecta porque 50 a 100 ml corresponde a menores de 2 años. La opción C es errónea porque 200 a 300 ml excede la cantidad recomendada para la edad. La opción D es incorrecta porque 10 a 20 ml es insuficiente para reponer las pérdidas y no cumple la recomendación del Plan A."
+  },
+  {
+    "numero": 19,
+    "enunciado": "Niño de 4 años, procedente de Iquitos, presenta deposiciones con sangre y moco de 2 días de evolución, aproximadamente 5 veces al día, acompañadas de fiebre de 38.5 °C, dolor abdominal cólico, pujo y tenesmo. Antecedentes: sin enfermedades previas, sin antibióticos recientes. Examen físico: alerta, regular estado general, ojos normales, boca húmeda, signo del pliegue negativo, abdomen doloroso a la palpación profunda sin signos de irritación peritoneal. Funciones vitales: FC 115/min, FR 24/min, PA 90/60 mmHg, T 38.5 °C. Peso 16 kg. Según el perfil epidemiológico peruano, ¿cuál es el agente bacteriano más frecuentemente implicado en este tipo de diarrea disentérica?",
+    "opciones": {
+      "A": "Rotavirus",
+      "B": "Giardia lamblia",
+      "C": "Shigella",
+      "D": "Escherichia coli enterotoxigénica"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "Shigella es el agente bacteriano más frecuentemente implicado en la diarrea disentérica en niños peruanos, según la Guía de Práctica Clínica del MINSA y los reportes epidemiológicos nacionales, y se manifiesta con deposiciones con sangre y moco, fiebre alta, dolor abdominal tipo cólico, pujo y tenesmo, por lo que la opción C es la correcta. La opción A es incorrecta porque el rotavirus produce diarrea acuosa sin sangre, con vómitos y fiebre baja, no disentería. La opción B es errónea porque Giardia lamblia se asocia a diarrea persistente, esteatorrea y distensión abdominal, sin sangre ni fiebre alta. La opción D es incorrecta porque Escherichia coli enterotoxigénica causa diarrea acuosa secretora, típicamente del viajero, sin sangre ni moco."
+  },
+  {
+    "numero": 20,
+    "enunciado": "Niño de 2 años, procedente de Cajamarca, es traído a consulta por deposiciones líquidas sin sangre de 2 días de evolución, aproximadamente 4 veces al día, sin vómitos ni fiebre. Antecedentes: sin enfermedades crónicas, alimentación habitual. Examen físico: alerta, activo, ojos normales, boca húmeda, signo del pliegue negativo, bebe normalmente. Funciones vitales: FC 100/min, FR 22/min, PA 85/55 mmHg, T 37.0 °C. Peso 12 kg. No presenta signos de deshidratación. La madre trae loperamida y pregunta si puede administrarla. ¿Cuál es la conducta más adecuada según la norma peruana?",
+    "opciones": {
+      "A": "Administrar loperamida en dosis pediátrica para reducir la frecuencia de las deposiciones",
+      "B": "No administrar loperamida; continuar con SRO, zinc y alimentación habitual",
+      "C": "Administrar loperamida solo si aparece fiebre",
+      "D": "Administrar loperamida y suspender la alimentación por 24 horas"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Enfermedad diarreica aguda",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La loperamida está contraindicada en niños con enfermedad diarreica aguda, ya que puede producir íleo paralítico, toxicidad del sistema nervioso central, somnolencia y prolongación de la excreción de patógenos, por lo que nunca debe indicarse; en su lugar, el manejo incluye SRO, suplemento de zinc y continuación de la alimentación habitual, tal como señala la opción B según la Guía de Práctica Clínica del MINSA y la OMS. La opción A es incorrecta porque la loperamida no debe administrarse en pediatría con diarrea aguda. La opción C es errónea porque la fiebre no modifica la contraindicación de loperamida. La opción D es incorrecta porque además de administrar loperamida, suspender la alimentación prolonga la diarrea y favorece la desnutrición."
+  },
+  {
+    "numero": 21,
+    "enunciado": "Lactante varón de 9 meses, residente en Lima, es llevado a control por palidez progresiva e irritabilidad. La madre refiere que desde los 6 meses consume leche de vaca entera sin fórmula ni suplemento de hierro. Al examen físico: palidez conjuntival marcada, sin adenopatías ni hepatoesplenomegalia. Funciones vitales normales. Exámenes auxiliares: hemoglobina 9.0 g/dL, VCM 68 fL, HCM 24 pg, ferritina sérica 8 ng/mL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Anemia ferropénica",
+      "B": "Talasemia menor",
+      "C": "Anemia por déficit de vitamina B12",
+      "D": "Anemia de enfermedad crónica"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Carenciales",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico es anemia ferropénica, la carencia nutricional más frecuente en lactantes peruanos, favorecida por la introducción temprana de leche de vaca que inhibe la absorción de hierro y carece del mismo. La microcitosis (VCM 68 fL), hipocromía (HCM 24 pg) y ferritina baja (<12 ng/mL) confirman depleción de depósitos. La talasemia menor cursa con microcitosis pero ferritina normal y antecedente familiar; el déficit de B12 produce macrocitosis; la anemia de enfermedad crónica presenta ferritina elevada y normocitosis. La Norma Técnica del MINSA (NTS N° 213-MINSA/DGIESP-2024) establece el diagnóstico y tratamiento con hierro oral a 3 mg/kg/día por 6 meses."
+  },
+  {
+    "numero": 22,
+    "enunciado": "Niño de 14 meses, procedente de zona rural de Puno, es traído por deformidad progresiva de piernas y retraso en la marcha. La madre refiere que casi no lo expone al sol y que la dieta es a base de papas y maíz. Al examen físico: genu varo bilateral, rosario raquítico, fontanela anterior de 3x3 cm. Laboratorio: calcio 7.8 mg/dL, fósforo 3.0 mg/dL, fosfatasa alcalina 650 U/L. Sin antecedentes de prematurez ni bajo peso al nacer. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Raquitismo carencial (déficit de vitamina D)",
+      "B": "Raquitismo hipofosfatémico",
+      "C": "Osteogénesis imperfecta",
+      "D": "Escorbuto"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Carenciales",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cuadro es raquitismo carencial por déficit de vitamina D, frecuente en zonas con poca exposición solar y dietas pobres en calcio y fósforo, como la sierra peruana. La hipocalcemia, hipofosfatemia y fosfatasa alcalina elevada, junto con rosario raquítico y genu varo, son hallazgos clásicos. El raquitismo hipofosfatémico se hereda ligado al X, cursa con fosfatemia muy baja y no responde a vitamina D; la osteogénesis imperfecta presenta fracturas múltiples y escleróticas azules; el escorbuto por déficit de vitamina C da sangrado gingival y dolor óseo, sin alteraciones del calcio ni fósforo. La OMS y el MINSA recomiendan suplementación con vitamina D 400 UI/día desde el nacimiento."
+  },
+  {
+    "numero": 23,
+    "enunciado": "Niño de 2 años, procedente de Huancavelica, es evaluado en CRED por bajo peso y talla. La madre refiere que solo come sopa de papa y arroz, y que ha tenido múltiples episodios de diarrea e infecciones respiratorias. Al examen físico: peso 9 kg (z-score -3), talla 78 cm (z-score -3), perímetro braquial 13 cm, sin edemas. El peso para la talla es normal. ¿Qué tipo de desnutrición presenta?",
+    "opciones": {
+      "A": "Desnutrición crónica",
+      "B": "Desnutrición aguda",
+      "C": "Desnutrición global",
+      "D": "Desnutrición crónica agudizada"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Carenciales",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La desnutrición crónica se caracteriza por talla baja para la edad (z-score -3) con peso para la talla conservado, reflejando un déficit nutricional prolongado que afecta el crecimiento lineal. En el Perú, es prevalente en zonas rurales andinas como Huancavelica, asociada a dietas monótonas e infecciones recurrentes. La desnutrición aguda cursa con peso/talla bajo pero talla normal; la global afecta ambos indicadores de forma reciente; la crónica agudizada combina talla baja con peso/talla bajo. El MINSA utiliza los patrones de la OMS y el índice de Waterlow para su clasificación."
+  },
+  {
+    "numero": 24,
+    "enunciado": "Niño de 4 años, procedente de Iquitos, es llevado por ceguera nocturna y sequedad ocular. La madre refiere que desde hace meses no consume frutas ni verduras por falta de recursos. Al examen físico: manchas de Bitot en conjuntiva, xerosis corneal sin ulceración, peso 15 kg. No recibe suplementos. ¿Cuál es la conducta inmediata más apropiada?",
+    "opciones": {
+      "A": "Administrar vitamina A 200,000 UI vía oral",
+      "B": "Administrar vitamina A 100,000 UI vía oral",
+      "C": "Iniciar dieta rica en vitamina A",
+      "D": "Referir a oftalmología para evaluación"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Carenciales",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta inmediata es administrar vitamina A 200,000 UI vía oral, según recomendación de la OMS y el MINSA para niños mayores de 1 año con xeroftalmia. La dosis se repite al día siguiente y a las 2 semanas. La deficiencia de vitamina A es un problema de salud pública en Perú, especialmente en zonas amazónicas y rurales. La opción B corresponde a niños menores de 1 año; la C es insuficiente como tratamiento agudo; la D es parte del manejo pero no la conducta inmediata que revierte la deficiencia. La suplementación con vitamina A reduce la mortalidad infantil."
+  },
+  {
+    "numero": 25,
+    "enunciado": "Niño de 18 meses, procedente de Piura, es traído por diarrea líquida de 14 días de evolución, acompañada de lesiones eritematosas periorificiales y pérdida de apetito. Recibió antidiarreicos sin mejoría. Al examen físico: deshidratación leve, dermatitis en región perianal y peribucal, peso 10 kg. No presenta fiebre ni sangre en heces. ¿Cuál es el manejo más apropiado?",
+    "opciones": {
+      "A": "Zinc oral 20 mg/día por 10-14 días",
+      "B": "Zinc oral 10 mg/día por 10-14 días",
+      "C": "Continuar antidiarreicos y rehidratación",
+      "D": "Iniciar antibióticos empíricos"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Carenciales",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El manejo es zinc oral 20 mg/día por 10-14 días, según la Norma Técnica del MINSA y la OMS, para niños con diarrea persistente y signos de deficiencia de zinc como dermatitis periorificial. La dosis en menores de 6 meses es 10 mg/día; en mayores, 20 mg/día. Los antidiarreicos están contraindicados por riesgo de íleo paralítico; los antibióticos solo se indican si hay disentería o cólera. La suplementación con zinc reduce la duración y severidad de la diarrea, y previene recurrencias en los siguientes 2-3 meses."
+  },
+  {
+    "numero": 26,
+    "enunciado": "Lactante varón de 4 meses, sin antecedentes patológicos, es traído a emergencia por dificultad respiratoria de 2 días de evolución. La madre refiere que inició con rinorrea y tos, y desde anoche presenta quejido y rechazo parcial de tomas. Funciones vitales: FC 150 lpm, FR 62 rpm, P.A 80/50 mmHg, T 37.8 °C, SatO2 91% con aire ambiente. Al examen físico: taquipnea, tiraje subcostal, sibilancias espiratorias difusas y crépitos finos bilaterales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Bronquiolitis aguda",
+      "B": "Neumonía adquirida en la comunidad",
+      "C": "Crisis asmática",
+      "D": "Laringotraqueobronquitis"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico es bronquiolitis aguda, cuadro de etiología viral (predominantemente virus respiratorio sincitial) que afecta a lactantes menores de 2 años, caracterizado por pródromo de rinorrea y tos que progresa a dificultad respiratoria con sibilancias y crépitos; la edad, el inicio viral y los hallazgos auscultatorios son típicos. La neumonía adquirida en la comunidad suele presentar fiebre más alta, crépitos localizados y no sibilancias difusas; la crisis asmática se presenta en niños con antecedente de atopia y no en lactantes sin antecedentes; la laringotraqueobronquitis cursa con estridor inspiratorio y tos perruna, no con sibilancias. La guía de práctica clínica del MINSA y la Academia Americana de Pediatría respaldan el diagnóstico clínico sin necesidad de exámenes auxiliares rutinarios."
+  },
+  {
+    "numero": 27,
+    "enunciado": "Lactante mujer de 3 meses, procedente de Lima, es evaluada en consultorio por tos y rinorrea de 4 días, con dificultad respiratoria progresiva. Al examen físico: FR 58 rpm, tiraje subcostal leve, sibilancias espiratorias bilaterales y crépitos finos. La madre refiere buena tolerancia oral y diuresis conservada. No presenta cianosis, apnea ni letargo. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Manejo ambulatorio con medidas de soporte y control en 24-48 horas",
+      "B": "Hospitalización para oxigenoterapia y monitorización",
+      "C": "Administrar broncodilatadores nebulizados en emergencia",
+      "D": "Indicar antibioticoterapia empírica oral"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta es manejo ambulatorio con medidas de soporte (aseo nasal, hidratación fraccionada, control de signos de alarma) y reevaluación en 24-48 horas, ya que el lactante no presenta criterios de gravedad como SatO2 menor de 90%, apnea, letargo, rechazo alimentario o deshidratación. La hospitalización se reserva para casos con dificultad respiratoria moderada-severa, hipoxemia o incapacidad de alimentarse; los broncodilatadores no están recomendados de rutina en bronquiolitis por evidencia de beneficio limitado y efectos adversos; los antibióticos no están indicados porque la etiología es viral. La guía del MINSA y la AAP establecen el manejo según criterios clínicos de gravedad."
+  },
+  {
+    "numero": 28,
+    "enunciado": "Lactante varón de 5 meses, con antecedente de prematurez de 34 semanas, es traído por dificultad respiratoria de 3 días. La madre refiere que desde ayer presenta pausas respiratorias y palidez peribucal. Al examen físico: FR 68 rpm, tiraje intercostal y subcostal, quejido audible, crépitos bilaterales, SatO2 87% con aire ambiente. Funciones vitales: FC 170 lpm, T 37.2 °C. ¿Cuál es el diagnóstico de gravedad y la conducta más apropiada?",
+    "opciones": {
+      "A": "Bronquiolitis grave, requiere hospitalización con oxigenoterapia",
+      "B": "Bronquiolitis leve, manejo ambulatorio con control en 48 horas",
+      "C": "Bronquiolitis moderada, nebulizar con salbutamol en emergencia",
+      "D": "Bronquiolitis grave, iniciar antibióticos endovenosos"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cuadro es bronquiolitis grave por la presencia de hipoxemia (SatO2 87%), quejido, tiraje marcado y taquipnea severa en un lactante con factor de riesgo (prematurez), requiriendo hospitalización inmediata con oxigenoterapia para mantener SatO2 mayor de 90-92%. El manejo ambulatorio no es seguro ante la hipoxemia; el salbutamol no tiene indicación de rutina y no revierte el cuadro; los antibióticos no están indicados porque la causa es viral. La guía del MINSA y la AAP señalan que la hipoxemia persistente es criterio de hospitalización y que el tratamiento es de soporte."
+  },
+  {
+    "numero": 29,
+    "enunciado": "Lactante mujer de 2 meses, previamente sana, es llevada a emergencia por tos y dificultad respiratoria de 2 días. La madre refiere que la lactancia ha disminuido por fatiga. Funciones vitales: FR 55 rpm, FC 140 lpm, T 37.5 °C, SatO2 94% con aire ambiente. Al examen físico: tiraje subcostal leve, sibilancias espiratorias, sin crépitos. Se indica aseo nasal, oxígeno suplementario si SatO2 menor de 90% y control de ingesta. ¿Qué medida adicional está indicada de forma rutinaria?",
+    "opciones": {
+      "A": "Broncodilatadores de rescate con salbutamol",
+      "B": "Corticoides sistémicos por 5 días",
+      "C": "Antibióticos macrólidos empíricos",
+      "D": "Fisioterapia respiratoria para movilizar secreciones"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "Ninguna de las medidas mencionadas está indicada de forma rutinaria en bronquiolitis. Los broncodilatadores no se recomiendan de rutina por evidencia de beneficio transitorio y efectos adversos; los corticoides sistémicos no han demostrado reducir la gravedad ni la duración; los macrólidos no están indicados porque la etiología es viral y su uso indiscriminado favorece resistencia; la fisioterapia respiratoria no ha mostrado beneficio y puede causar estrés. La respuesta correcta es la que indica que no se debe administrar ninguna de estas medidas de forma rutinaria, pues el manejo es de soporte. La guía del MINSA y la AAP desaconsejan estas intervenciones."
+  },
+  {
+    "numero": 30,
+    "enunciado": "Lactante varón de 6 meses, procedente de zona rural de Cajamarca, es traído por tos y dificultad respiratoria de 5 días. La madre refiere que no recibió lactancia materna y que vive en vivienda con humo de leña. Al examen físico: FR 60 rpm, tiraje subcostal, sibilancias espiratorias bilaterales, SatO2 92% con aire ambiente. El diagnóstico es bronquiolitis aguda. ¿Cuál es el factor de riesgo más importante identificado en este caso?",
+    "opciones": {
+      "A": "Ausencia de lactancia materna",
+      "B": "Exposición a humo de leña",
+      "C": "Edad menor de 6 meses",
+      "D": "Procedencia rural"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La exposición a humo de leña es un factor de riesgo importante para bronquiolitis grave, ya que la contaminación del aire intradomiciliario aumenta la inflamación de la vía aérea y la susceptibilidad a infecciones respiratorias; en Perú, muchas familias rurales cocinan con leña, lo que incrementa el riesgo. La ausencia de lactancia materna también es un factor de riesgo, pero en este caso la exposición al humo es el más directamente relacionado con la gravedad; la edad menor de 6 meses es un factor de riesgo, pero no el más destacado en el contexto; la procedencia rural es un marcador epidemiológico, pero no el factor fisiopatológico directo. La OMS y el MINSA enfatizan la reducción de la exposición a humo intradomiciliario como medida preventiva."
+  },
+  {
+    "numero": 31,
+    "enunciado": "Lactante varón de 2 meses, sin antecedentes patológicos, es traído por tos y dificultad respiratoria de 3 días. Inició con rinorrea y estornudos; hoy presenta tiraje subcostal y sibilancias. Funciones vitales: FC 140 lpm, FR 58 rpm, T 37.4 °C, SatO2 93% con aire ambiente. Al examen físico: taquipnea, tiraje leve, sibilancias espiratorias difusas y crépitos finos bilaterales. No hay fiebre alta ni crépitos localizados. No se solicitaron exámenes auxiliares por diagnóstico clínico. ¿Cuál es el agente etiológico más frecuente de este cuadro?",
+    "opciones": {
+      "A": "Adenovirus",
+      "B": "Rinovirus",
+      "C": "Virus respiratorio sincitial",
+      "D": "Metapneumovirus"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El agente etiológico más frecuente de bronquiolitis aguda es el virus respiratorio sincitial, responsable del 60-80% de los casos en lactantes menores de 2 años, según la OMS y la guía del MINSA. El adenovirus puede causar cuadros respiratorios pero con menor frecuencia y mayor gravedad; el rinovirus es una causa menos común de bronquiolitis típica; el metapneumovirus es el segundo agente en frecuencia, pero no el más habitual. El diagnóstico es clínico y no requiere pruebas virológicas de rutina en atención primaria."
+  },
+  {
+    "numero": 32,
+    "enunciado": "Lactante mujer de 3 meses con diagnóstico de bronquiolitis aguda presenta SatO2 88% con aire ambiente, FR 64 rpm y quejido audible. Se decide hospitalizar para soporte. Funciones vitales: FC 160 lpm, T 37.6 °C. Al examen físico: tiraje intercostal y subcostal, sibilancias espiratorias difusas, crépitos finos. ¿Cuál es el objetivo inicial de saturación de oxígeno a mantener?",
+    "opciones": {
+      "A": "Mayor de 95%",
+      "B": "Mayor de 90%",
+      "C": "Mayor de 85%",
+      "D": "Mayor de 80%"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El objetivo inicial de saturación de oxígeno en bronquiolitis grave es mantener SatO2 mayor de 90-92%, según la Academia Americana de Pediatría y la guía del MINSA. Un objetivo mayor de 95% no aporta beneficio y puede prolongar innecesariamente la oxigenoterapia; mantener mayor de 85% o mayor de 80% es insuficiente porque persiste la hipoxemia con riesgo de complicaciones. La oxigenoterapia debe titularse para evitar tanto la hipoxemia como la hiperoxia."
+  },
+  {
+    "numero": 33,
+    "enunciado": "Lactante de 2 meses, prematuro de 32 semanas, con diagnóstico de displasia broncopulmonar, es evaluado en consultorio. La madre pregunta sobre medidas de prevención para bronquiolitis por virus respiratorio sincitial. Funciones vitales normales. Al examen físico: leve tiraje subcostal basal, sin sibilancias. ¿Cuál es la indicación más apropiada de palivizumab en este paciente?",
+    "opciones": {
+      "A": "Lactante con antecedente de asma",
+      "B": "Lactante con lactancia materna exclusiva",
+      "C": "Lactante prematuro de 34 semanas sin displasia",
+      "D": "Lactante con displasia broncopulmonar"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La indicación más apropiada de palivizumab es en lactantes con displasia broncopulmonar, al ser un factor de riesgo mayor para bronquiolitis grave por virus respiratorio sincitial, según la Academia Americana de Pediatría y el MINSA. El antecedente de asma no es indicación establecida; la lactancia materna exclusiva es un factor protector, no una indicación de palivizumab; el prematuro de 34 semanas sin displasia no cumple criterios de profilaxis. Palivizumab se reserva para prematuros de alto riesgo, cardiopatía congénita o enfermedad pulmonar crónica."
+  },
+  {
+    "numero": 34,
+    "enunciado": "Lactante varón de 1 mes, sin antecedentes, es traído por pausas respiratorias y palidez peribucal. La madre refiere tos y rinorrea de 2 días. Funciones vitales: FC 130 lpm, FR 40 rpm, T 37.2 °C, SatO2 85% con aire ambiente. Al examen físico: apnea presenciada, crépitos finos bilaterales, sin sibilancias. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Hospitalización con monitorización y oxigenoterapia",
+      "B": "Alta con control en 24 horas",
+      "C": "Nebulización con salbutamol",
+      "D": "Antibióticos endovenosos"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La presencia de apnea en un lactante menor de 2 meses con bronquiolitis es un criterio de gravedad que obliga a hospitalización con monitorización continua y oxigenoterapia, según la guía del MINSA y la Academia Americana de Pediatría. El alta con control ambulatorio es insegura por el riesgo de apnea recurrente; el salbutamol no está indicado de rutina y no revierte la apnea; los antibióticos no están indicados porque la etiología es viral. La apnea es más frecuente en prematuros y menores de 2 meses."
+  },
+  {
+    "numero": 35,
+    "enunciado": "Lactante mujer de 2 meses, sana, acude a control de niño sano. La madre pregunta cómo prevenir la bronquiolitis por virus respiratorio sincitial. Funciones vitales normales. Al examen físico: sin hallazgos patológicos. No hay antecedentes de prematurez ni cardiopatía. ¿Cuál es la medida más efectiva para prevenir esta infección en el hogar?",
+    "opciones": {
+      "A": "Vacunación antigripal",
+      "B": "Corticoides inhalados",
+      "C": "Lavado de manos frecuente de cuidadores",
+      "D": "Antibióticos profilácticos"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Bronquiolitis",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La medida más efectiva para prevenir la bronquiolitis por virus respiratorio sincitial en el hogar es el lavado de manos frecuente de los cuidadores, ya que el virus se transmite por contacto directo con secreciones contaminadas, según la OMS y el MINSA. La vacunación antigripal no protege contra el virus respiratorio sincitial; los corticoides inhalados no previenen la infección; los antibióticos profilácticos no tienen indicación y favorecen resistencia. También se recomienda evitar exposición a humo de tabaco y promover lactancia materna."
+  },
+  {
+    "numero": 36,
+    "enunciado": "Niño de 4 años, procedente de Lima, sin antecedentes de importancia, es llevado a emergencia por fiebre de 39 °C y tos productiva de 3 días. La madre refiere que está decaído y con dificultad para respirar. Funciones vitales: FC 130 lpm, FR 42 rpm, P.A 95/60 mmHg, T 39.2 °C, SatO2 94% con aire ambiente. Al examen físico: taquipnea, tiraje subcostal leve, crépitos finos en base pulmonar derecha, sin sibilancias. No hay signos de deshidratación ni compromiso de conciencia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Bronquiolitis aguda",
+      "B": "Neumonía adquirida en la comunidad",
+      "C": "Crisis asmática",
+      "D": "Laringotraqueobronquitis"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Neumonía",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico es neumonía adquirida en la comunidad, caracterizada por fiebre alta, taquipnea y crépitos localizados en un niño mayor de 2 años, hallazgos que orientan a etiología bacteriana, principalmente Streptococcus pneumoniae. La bronquiolitis aguda ocurre en menores de 2 años con sibilancias difusas y pródromo viral; la crisis asmática requiere antecedente de atopia o sibilancias recurrentes; la laringotraqueobronquitis cursa con estridor inspiratorio y tos perruna. La guía del MINSA y la OMS establecen el diagnóstico clínico de neumonía ante fiebre y taquipnea con signos focales."
+  },
+  {
+    "numero": 37,
+    "enunciado": "Lactante de 8 meses, procedente de zona rural de Cajamarca, sin vacunas completas, es traído por tos y dificultad respiratoria de 4 días. La madre refiere que rechaza las tomas y está somnoliento. Funciones vitales: FC 160 lpm, FR 62 rpm, P.A 80/50 mmHg, T 38.5 °C, SatO2 88% con aire ambiente. Al examen físico: tiraje subcostal e intercostal, quejido audible, crépitos bilaterales, sin sibilancias. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Hospitalización con oxigenoterapia y antibióticos endovenosos",
+      "B": "Manejo ambulatorio con amoxicilina oral",
+      "C": "Nebulización con salbutamol",
+      "D": "Alta con control en 24 horas"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Neumonía",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta es hospitalización con oxigenoterapia y antibióticos endovenosos, porque el lactante presenta criterios de neumonía grave según la OMS y el MINSA: SatO2 menor de 90%, quejido, tiraje marcado, taquipnea severa y rechazo alimentario. El manejo ambulatorio con amoxicilina oral se reserva para neumonía no grave sin hipoxemia; la nebulización con salbutamol no está indicada en neumonía sin sibilancias; el alta con control en 24 horas es insegura ante la hipoxemia y el compromiso del estado general. La referencia oportuna reduce la mortalidad por neumonía en menores de 1 año."
+  },
+  {
+    "numero": 38,
+    "enunciado": "Niño de 2 años, procedente de Piura, sin alergias conocidas, es evaluado en consultorio por fiebre de 38.5 °C y tos de 2 días. Funciones vitales: FC 120 lpm, FR 38 rpm, P.A 90/55 mmHg, T 38.6 °C, SatO2 96% con aire ambiente. Al examen físico: taquipnea leve, crépitos finos en base derecha, sin tiraje ni quejido. Buen estado general, tolera vía oral. Se diagnostica neumonía adquirida en la comunidad no grave. ¿Cuál es el antibiótico de primera línea?",
+    "opciones": {
+      "A": "Azitromicina oral",
+      "B": "Ceftriaxona intramuscular",
+      "C": "Trimetoprim-sulfametoxazol oral",
+      "D": "Amoxicilina oral"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Neumonía",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El antibiótico de primera línea es amoxicilina oral, según la OMS y la guía del MINSA, porque cubre de forma adecuada Streptococcus pneumoniae, el agente más frecuente en neumonía adquirida en la comunidad no grave en niños. La azitromicina se reserva para sospecha de micoplasma o chlamydia en niños mayores; la ceftriaxona intramuscular se indica en neumonía grave o cuando no hay tolerancia oral; el trimetoprim-sulfametoxazol no es de primera línea por resistencia y menor eficacia. La duración recomendada es de 7 a 10 días con control clínico."
+  },
+  {
+    "numero": 39,
+    "enunciado": "Niño de 5 años, procedente de Arequipa, con diagnóstico de neumonía adquirida en la comunidad, recibió amoxicilina oral por 7 días. Persiste con fiebre de 38.8 °C, dolor torácico derecho y dificultad respiratoria. Funciones vitales: FC 125 lpm, FR 40 rpm, P.A 100/65 mmHg, T 38.8 °C, SatO2 92% con aire ambiente. Al examen físico: matidez y disminución del murmullo vesicular en base pulmonar derecha. ¿Cuál es el examen más apropiado para confirmar la complicación sospechada?",
+    "opciones": {
+      "A": "Hemograma completo",
+      "B": "Ecografía abdominal",
+      "C": "Radiografía de tórax",
+      "D": "Tomografía cerebral"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Neumonía",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La radiografía de tórax es el examen más apropiado para confirmar derrame pleural paraneumónico, complicación sospechada por fiebre persistente, dolor torácico, matidez y disminución del murmullo vesicular en un niño con neumonía que no mejora con amoxicilina. El hemograma puede mostrar leucocitosis pero no confirma la colección; la ecografía abdominal no evalúa el tórax; la tomografía cerebral no tiene relación con el cuadro. La guía del MINSA y la Sociedad Peruana de Pediatría recomiendan radiografía de tórax ante sospecha de complicación pleural."
+  },
+  {
+    "numero": 40,
+    "enunciado": "Lactante de 2 meses, procedente de Lima, acude a control de niño sano. La madre refiere que desea protegerlo de infecciones respiratorias. Funciones vitales normales. Al examen físico: sin hallazgos patológicos. Según el calendario nacional de vacunación del Perú, ¿cuál vacuna previene la neumonía por Streptococcus pneumoniae?",
+    "opciones": {
+      "A": "Vacuna neumocócica conjugada",
+      "B": "Vacuna contra influenza",
+      "C": "Vacuna contra rotavirus",
+      "D": "Vacuna BCG"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "Neumonía",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La vacuna neumocócica conjugada previene la neumonía por Streptococcus pneumoniae, principal agente de neumonía bacteriana en lactantes y niños, y está incluida en el calendario nacional de vacunación del Perú según el MINSA. La vacuna contra influenza protege contra el virus influenza, no contra neumococo; la vacuna contra rotavirus previene diarrea por rotavirus; la BCG protege contra formas graves de tuberculosis, no contra neumococo. La vacunación oportuna reduce la incidencia de neumonía y sus complicaciones."
+  },
+  {
+    "numero": 41,
+    "enunciado": "Niño de 7 años, procedente de Lima, sin antecedentes patológicos, es llevado a consultorio por fiebre de 38.5 °C y tos seca persistente de 7 días. La madre refiere cefalea y mialgias. Funciones vitales: FC 110 lpm, FR 28 rpm, P.A 100/60 mmHg, T 38.4 °C, SatO2 95% con aire ambiente. Al examen físico: faringe hiperémica, crépitos finos difusos bilaterales, sin sibilancias ni consolidación. Laboratorio: leucocitos 8,500/mm3, sin desviación izquierda. Radiografía de tórax: infiltrados intersticiales bilaterales. ¿Cuál es el agente etiológico más probable?",
+    "opciones": {
+      "A": "Streptococcus pneumoniae",
+      "B": "Mycoplasma pneumoniae",
+      "C": "Virus respiratorio sincitial",
+      "D": "Mycobacterium tuberculosis"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El agente más probable es Mycoplasma pneumoniae, causa frecuente de neumonía atípica en niños escolares, caracterizada por inicio insidioso, fiebre moderada, tos seca persistente, cefalea y mialgias, con infiltrados intersticiales bilaterales y leucocitos normales. Streptococcus pneumoniae produce neumonía típica con consolidación lobar, fiebre alta y leucocitosis; el virus respiratorio sincitial afecta principalmente a lactantes menores de 2 años con sibilancias y crépitos difusos; Mycobacterium tuberculosis cursa con evolución crónica, adenopatías hiliares y prueba de tuberculina positiva. La guía del MINSA y la Sociedad Peruana de Pediatría consideran el cuadro clínico y radiológico para orientar el diagnóstico etiológico."
+  },
+  {
+    "numero": 42,
+    "enunciado": "Niño de 3 años, procedente de Piura, sin antecedentes de importancia, es traído por fiebre de 39 °C y tos de 4 días. Funciones vitales: FC 125 lpm, FR 38 rpm, P.A 90/55 mmHg, T 38.8 °C, SatO2 95% con aire ambiente. Al examen físico: taquipnea leve, crépitos en lóbulo superior derecho, sin tiraje. Radiografía de tórax: imagen redondeada única en lóbulo superior derecho, sin adenopatías hiliares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Neumonía redonda por neumococo",
+      "B": "Tuberculosis pulmonar",
+      "C": "Absceso pulmonar",
+      "D": "Quiste hidatídico"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico es neumonía redonda, presentación radiológica característica de la neumonía neumocócica en niños, que muestra una imagen redondeada única, habitualmente en lóbulos superiores, con fiebre aguda y crépitos focales, y que se resuelve con antibioticoterapia. La tuberculosis pulmonar cursa con adenopatías hiliares, evolución crónica y síntomas constitucionales; el absceso pulmonar presenta nivel hidroaéreo y fiebre prolongada; el quiste hidatídico no produce fiebre aguda y se asocia a antecedente epidemiológico de contacto con ovinos. La guía del MINSA y la Sociedad Peruana de Pediatría recomiendan tratar la neumonía redonda como neumonía bacteriana típica."
+  },
+  {
+    "numero": 43,
+    "enunciado": "Lactante de 10 meses, procedente de zona rural de Huánuco, es hospitalizado por neumonía grave. Presenta fiebre de 39 °C, tos, quejido y SatO2 88% con aire ambiente. Funciones vitales: FC 160 lpm, FR 64 rpm, P.A 80/50 mmHg, T 38.9 °C. Al examen físico: tiraje subcostal, crépitos bilaterales, sin sibilancias. Se decide iniciar antibioticoterapia empírica endovenosa. ¿Cuál es el esquema inicial más apropiado?",
+    "opciones": {
+      "A": "Amoxicilina oral",
+      "B": "Azitromicina oral",
+      "C": "Ceftriaxona endovenosa",
+      "D": "Trimetoprim-sulfametoxazol oral"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El esquema inicial más apropiado es ceftriaxona endovenosa, recomendada por la OMS y el MINSA para neumonía grave en lactantes, por su cobertura contra Streptococcus pneumoniae y otras bacterias frecuentes, además de permitir administración parenteral en un paciente con hipoxemia y riesgo de falla terapéutica. La amoxicilina oral no se indica en neumonía grave por la gravedad del cuadro y la posible intolerancia oral; la azitromicina oral se reserva para sospecha de gérmenes atípicos; el trimetoprim-sulfametoxazol oral no es de primera línea por resistencia y menor eficacia. La antibioticoterapia debe iniciarse precozmente tras la estabilización."
+  },
+  {
+    "numero": 44,
+    "enunciado": "Niño de 4 años, procedente de Lima, con diagnóstico de neumonía adquirida en la comunidad, recibió amoxicilina oral por 7 días. Persiste con fiebre de 39 °C, dolor torácico derecho y dificultad respiratoria. Funciones vitales: FC 130 lpm, FR 44 rpm, P.A 95/60 mmHg, T 38.8 °C, SatO2 91% con aire ambiente. Al examen físico: matidez y disminución del murmullo vesicular en base pulmonar derecha. Radiografía de tórax: derrame pleural derecho. Punción pleural: líquido purulento, pH 7.1, glucosa 20 mg/dL. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Derrame pleural paraneumónico simple",
+      "B": "Empiema pleural",
+      "C": "Neumotórax",
+      "D": "Atelectasia"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La complicación más probable es empiema pleural, definido por la presencia de líquido pleural purulento con pH menor de 7.2 y glucosa baja, en un niño con neumonía que no mejora y presenta signos de derrame. El derrame pleural paraneumónico simple tiene líquido no purulento, pH normal y glucosa conservada; el neumotórax se caracteriza por aire en la cavidad pleural y ausencia de líquido; la atelectasia produce colapso pulmonar sin líquido purulento. El MINSA y la Sociedad Peruana de Pediatría recomiendan drenaje pleural y antibioticoterapia endovenosa en empiema."
+  },
+  {
+    "numero": 45,
+    "enunciado": "Niño de 2 años, procedente de Lima, con diagnóstico de neumonía adquirida en la comunidad no grave, recibe amoxicilina oral desde hace 48 horas. La madre refiere que persiste con fiebre de 38.5 °C y tos, aunque está más activo. Funciones vitales: FC 120 lpm, FR 36 rpm, P.A 90/55 mmHg, T 38.3 °C, SatO2 95% con aire ambiente. Al examen físico: crépitos en base derecha, sin tiraje ni quejido. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Cambiar a azitromicina oral",
+      "B": "Suspender el antibiótico",
+      "C": "Continuar amoxicilina y reevaluar en 24-48 horas",
+      "D": "Hospitalizar para antibióticos endovenosos"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta es continuar amoxicilina y reevaluar en 24-48 horas, porque en la neumonía adquirida en la comunidad no grave la fiebre puede persistir hasta 48-72 horas, y la mejoría del estado general sin signos de gravedad indica que el tratamiento es adecuado. Cambiar a azitromicina no está indicado como primera línea; suspender el antibiótico antes de completar el esquema favorece recaídas y resistencia; hospitalizar para antibióticos endovenosos se reserva para neumonía grave o falta de mejoría con compromiso sistémico. La OMS y el MINSA recomiendan completar el tratamiento antibiótico oral y controlar la evolución clínica."
+  },
+  {
+    "numero": 46,
+    "enunciado": "Niño de 3 años, procedente de Lima, sin antecedentes patológicos ni alergias conocidas, es llevado a consultorio por rinorrea, estornudos y tos leve de 2 días de evolución. La madre refiere que inició con malestar general y que no presenta fiebre alta ni dificultad respiratoria. Funciones vitales: FC 100 lpm, FR 24 rpm, P.A 90/55 mmHg, T 37.5 °C, SatO2 98% con aire ambiente. Al examen físico: faringe hiperémica leve, sin exudado amigdalino, sin adenopatías cervicales, auscultación pulmonar normal. No hay signos de alarma. ¿Cuál es el manejo más apropiado?",
+    "opciones": {
+      "A": "Amoxicilina oral por 7 días",
+      "B": "Medidas sintomáticas y control en 48-72 horas",
+      "C": "Azitromicina oral por 5 días",
+      "D": "Corticoides sistémicos por 3 días"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a rinofaringitis aguda viral, infección respiratoria alta autolimitada que en la mayoría de casos no requiere antibióticos; el manejo es sintomático con hidratación, aseo nasal y antipiréticos, con control en 48-72 horas para vigilar signos de alarma, según la guía del MINSA y la OMS. La amoxicilina es errónea porque no hay evidencia de infección bacteriana y su uso indiscriminado favorece resistencia; la azitromicina carece de indicación en un cuadro viral no complicado; los corticoides sistémicos no están indicados y pueden causar efectos adversos. El diagnóstico es clínico y no requiere exámenes auxiliares."
+  },
+  {
+    "numero": 47,
+    "enunciado": "Niño de 7 años, procedente de Lima, sin antecedentes de alergia a betalactámicos, es traído por odinofagia intensa y fiebre de 2 días de evolución. La madre refiere que no tiene tos ni rinorrea, y que se niega a comer por dolor. Funciones vitales: FC 110 lpm, FR 22 rpm, P.A 100/60 mmHg, T 38.8 °C, SatO2 97% con aire ambiente. Al examen físico: amígdalas eritematosas con exudado blanquecino, petequias en paladar blando, adenopatías cervicales anteriores dolorosas, sin rinorrea ni tos. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "A": "Penicilina V oral o penicilina benzatínica intramuscular",
+      "B": "Amoxicilina oral",
+      "C": "Azitromicina oral",
+      "D": "Trimetoprim-sulfametoxazol oral"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cuadro es faringoamigdalitis estreptocócica, causada por Streptococcus pyogenes, y el tratamiento de elección es penicilina, ya sea penicilina V oral o penicilina benzatínica intramuscular, según la guía del MINSA y la OMS, porque erradica el germen y previene la fiebre reumática. La amoxicilina es un betalactámico alternativo pero no de primera línea en nuestro medio; la azitromicina se reserva para alérgicos a betalactámicos; el trimetoprim-sulfametoxazol no erradica adecuadamente el estreptococo y no previene complicaciones. La penicilina sigue siendo el fármaco de elección por su eficacia y bajo costo."
+  },
+  {
+    "numero": 48,
+    "enunciado": "Lactante de 1 año, procedente de Lima, sin antecedentes patológicos, es llevado por irritabilidad, rinorrea y fiebre de 2 días de evolución. La madre refiere que se jala la oreja derecha y rechaza parcialmente las tomas, sin vómitos ni diarrea. Funciones vitales: FC 130 lpm, FR 30 rpm, P.A 85/50 mmHg, T 38.5 °C, SatO2 98% con aire ambiente. Al examen físico: otoscopia derecha con membrana timpánica abombada, eritematosa y opaca, sin perforación; otoscopia izquierda normal. ¿Cuál es el antibiótico de primera línea?",
+    "opciones": {
+      "A": "Azitromicina oral",
+      "B": "Amoxicilina oral",
+      "C": "Ceftriaxona intramuscular",
+      "D": "Ciprofloxacino ótico"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico es otitis media aguda, y el antibiótico de primera línea es amoxicilina oral, según la guía del MINSA y la Academia Americana de Pediatría, porque cubre Streptococcus pneumoniae, Haemophilus influenzae y Moraxella catarrhalis, principales agentes. La azitromicina se reserva para alérgicos o falta de respuesta; la ceftriaxona intramuscular se indica en casos graves o vómitos persistentes; el ciprofloxacino ótico no es de primera línea y se usa en otitis externa o perforación timpánica. La amoxicilina a dosis adecuadas es eficaz y segura."
+  },
+  {
+    "numero": 49,
+    "enunciado": "Niño de 2 años, procedente de Lima, sin antecedentes patológicos, es traído por tos perruna, ronquera y estridor inspiratorio de 1 día de evolución. La madre refiere que inició con rinorrea y fiebre baja, sin dificultad para deglutir. Funciones vitales: FC 120 lpm, FR 30 rpm, P.A 90/55 mmHg, T 37.8 °C, SatO2 95% con aire ambiente. Al examen físico: estridor inspiratorio en reposo, tiraje subcostal leve, sin sibilancias ni crépitos. ¿Cuál es el tratamiento inicial más apropiado?",
+    "opciones": {
+      "A": "Adrenalina nebulizada",
+      "B": "Amoxicilina oral",
+      "C": "Dexametasona oral o intramuscular",
+      "D": "Salbutamol nebulizado"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cuadro es laringotraqueobronquitis (crup), y el tratamiento inicial incluye dexametasona oral o intramuscular, según la guía del MINSA y la Academia Americana de Pediatría, porque reduce la inflamación subglótica y la necesidad de hospitalización. La adrenalina nebulizada se reserva para casos moderados a graves con estridor en reposo y tiraje marcado; la amoxicilina no está indicada porque la etiología es viral; el salbutamol nebulizado no actúa sobre la vía aérea superior y no mejora el estridor. La dexametasona es eficaz, segura y de elección en crup."
+  },
+  {
+    "numero": 50,
+    "enunciado": "Niño de 4 años, procedente de zona rural de Cajamarca, con vacunas incompletas, es traído por tos paroxística de 2 semanas de evolución, acompañada de accesos con cianosis y vómitos postusivos. La madre refiere que no ha tenido fiebre ni dificultad respiratoria entre los accesos. Funciones vitales: FC 110 lpm, FR 28 rpm, P.A 95/60 mmHg, T 37.0 °C, SatO2 96% con aire ambiente. Al examen físico: tos paroxística durante la consulta, sin crépitos ni sibilancias. ¿Cuál es el tratamiento antimicrobiano de elección?",
+    "opciones": {
+      "A": "Amoxicilina oral",
+      "B": "Penicilina G benzatínica intramuscular",
+      "C": "Trimetoprim-sulfametoxazol oral",
+      "D": "Azitromicina oral"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Pediatría General",
+    "tema": "IRA",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El cuadro es tos ferina (pertussis), y el tratamiento antimicrobiano de elección es azitromicina oral, según la OMS y el MINSA, porque erradica Bordetella pertussis, reduce la transmisión y acorta el periodo de contagio. La amoxicilina no es activa frente a Bordetella; la penicilina benzatínica no tiene indicación; el trimetoprim-sulfametoxazol es una alternativa en alérgicos a macrólidos pero no de primera línea. La azitromicina se prefiere por su eficacia, posología corta y perfil de seguridad en niños."
+  },
+  {
+    "numero": 51,
+    "enunciado": "Varón de 28 años, procedente de Lima, sin antecedentes patológicos, es traído a emergencia tras accidente de tránsito con impacto abdominal cerrado. Refiere dolor en flanco derecho y hematuria macroscópica. Funciones vitales: FC 110 lpm, FR 22 rpm, P.A 110/70 mmHg, T 36.8 °C, SatO2 97%. Al examen físico: equimosis en flanco derecho, dolor a la palpación profunda, sin signos de irritación peritoneal. Estable hemodinámicamente. Tomografía abdominal con contraste: laceración renal de 2 cm de profundidad sin extravasación urinaria. ¿Cuál es el grado de lesión renal según la clasificación AAST?",
+    "opciones": {
+      "A": "Grado I",
+      "B": "Grado II",
+      "C": "Grado III",
+      "D": "Grado IV"
+    },
+    "respuesta": "C",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La lesión corresponde a un traumatismo renal grado III según la clasificación de la Asociación Americana de Cirugía de Trauma (AAST), que define el grado III como laceración cortical mayor de 1 cm de profundidad sin extravasación urinaria, tal como se observa en la tomografía. El grado I es contusión o hematoma subcapsular; el grado II es laceración menor o igual a 1 cm sin extravasación; el grado IV implica laceración que compromete el sistema colector con extravasación urinaria o lesión vascular segmentaria. La mayoría de las lesiones renales de bajo grado se manejan de forma conservadora con monitorización, según la guía de la AUA y la EAU."
+  },
+  {
+    "numero": 52,
+    "enunciado": "Mujer de 35 años, procedente de Arequipa, es sometida a histerectomía abdominal por miomatosis uterina. En el postoperatorio inmediato presenta dolor lumbar, fiebre de 38.5 °C e íleo paralítico persistente. Funciones vitales: FC 100 lpm, FR 20 rpm, P.A 100/60 mmHg, T 38.5 °C. Al examen físico: sensibilidad en flanco izquierdo, sin signos peritoneales. Ecografía abdominal: colección líquida perirrenal izquierda. Se sospecha lesión ureteral iatrogénica. ¿Cuál es el examen de imagen de elección para confirmar el diagnóstico?",
+    "opciones": {
+      "A": "Urografía excretora",
+      "B": "Tomografía computarizada con contraste y fase excretoria tardía",
+      "C": "Resonancia magnética abdominal",
+      "D": "Cistografía retrógrada"
+    },
+    "respuesta": "B",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La tomografía computarizada con contraste y fase excretoria tardía es el examen de elección para diagnosticar lesión ureteral iatrogénica, ya que permite visualizar la extravasación de contraste y la formación de urinoma, según las guías de la EAU y la Asociación Americana de Cirugía de Trauma. La urografía excretora tiene menor sensibilidad; la resonancia magnética no es el estudio inicial en trauma agudo; la cistografía retrógrada evalúa la vejiga y la uretra, no el uréter. La lesión ureteral debe sospecharse ante dolor lumbar, fiebre e íleo prolongado postoperatorio."
+  },
+  {
+    "numero": 53,
+    "enunciado": "Varón de 40 años, procedente de Lima, ingresa a emergencia tras colisión vehicular con fractura de pelvis. Presenta hematuria macroscópica y dolor suprapúbico. Funciones vitales: FC 115 lpm, FR 22 rpm, P.A 100/60 mmHg, T 36.5 °C, SatO2 96%. Al examen físico: distensión abdominal leve, sin signos peritoneales. Cistografía: extravasación de contraste en espacio extraperitoneal, sin compromiso del cuello vesical ni lesión rectal o vaginal. ¿Cuál es el manejo inicial más apropiado?",
+    "opciones": {
+      "A": "Drenaje con catéter vesical",
+      "B": "Reparación quirúrgica abierta",
+      "C": "Cistostomía suprapúbica",
+      "D": "Nefrostomía percutánea"
+    },
+    "respuesta": "A",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El manejo inicial de una rotura vesical extraperitoneal no complicada es el drenaje con catéter vesical, que permite la cicatrización espontánea en la mayoría de los casos, según la guía de la AUA y el Manual MSD. La reparación quirúrgica abierta se reserva para roturas intraperitoneales, compromiso del cuello vesical, lesiones rectales o vaginales asociadas, o cuando el drenaje con catéter falla; la cistostomía suprapúbica es una alternativa pero no de primera línea; la nefrostomía percutánea está indicada para obstrucción ureteral, no vesical. El catéter debe mantenerse hasta que la cistografía de control muestre resolución."
+  },
+  {
+    "numero": 54,
+    "enunciado": "Varón de 25 años, procedente de Piura, es traído a emergencia tras caída a horcajadas sobre una barra metálica, con trauma perineal. Refiere dolor intenso en periné, incapacidad para orinar y sangrado por el meato uretral. Funciones vitales: FC 95 lpm, FR 18 rpm, P.A 120/80 mmHg, T 36.7 °C. Al examen físico: equimosis perineal, escroto aumentado de volumen, sangre en meato uretral. Tacto rectal: próstata no palpable en su ubicación habitual. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Colocación de sonda Foley",
+      "B": "Cistostomía suprapúbica",
+      "C": "Uretrografía retrógrada",
+      "D": "Cistografía"
+    },
+    "respuesta": "C",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "Ante sospecha de lesión uretral posterior por trauma perineal con sangre en meato, equimosis perineal y próstata no palpable, la conducta inicial es la uretrografía retrógrada para confirmar el diagnóstico y localizar la lesión, según la guía de la EAU y el Manual MSD. La colocación de sonda Foley está contraindicada porque puede convertir una rotura parcial en completa; la cistostomía suprapúbica es el tratamiento de derivación urinaria una vez confirmada la lesión, no el paso diagnóstico inicial; la cistografía evalúa la vejiga, no la uretra. La uretrografía retrógrada es el estudio de elección."
+  },
+  {
+    "numero": 55,
+    "enunciado": "Varón de 22 años, procedente de Lima, es traído a emergencia por dolor escrotal intenso y aumento de volumen tras recibir una patada en la región escrotal durante una pelea. Funciones vitales estables. Al examen físico: escroto derecho aumentado de volumen, equimosis, dolor exquisito a la palpación, sin herida penetrante. Ecografía escrotal: discontinuidad de la túnica albugínea con hematoma intratesticular. ¿Cuál es el tratamiento más apropiado?",
+    "opciones": {
+      "A": "Manejo conservador con hielo y analgesia",
+      "B": "Exploración quirúrgica con reparación de la túnica albugínea",
+      "C": "Orquiectomía inmediata",
+      "D": "Aspiración del hematoma"
+    },
+    "respuesta": "B",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El tratamiento de la rotura testicular es la exploración quirúrgica con reparación de la túnica albugínea y desbridamiento del tejido necrótico, según las guías de la EAU y la Asociación Americana de Cirugía de Trauma, ya que permite salvar el testículo en 80-90% de los casos cuando se realiza precozmente. El manejo conservador se reserva para contusiones sin rotura; la orquiectomía se indica solo cuando el testículo está completamente destruido o no viable; la aspiración del hematoma no repara la rotura y puede favorecer infección. El diagnóstico se confirma con ecografía que muestra discontinuidad de la túnica albugínea."
+  },
+  {
+    "numero": 56,
+    "enunciado": "Varón de 30 años, procedente de Lima, ingresa a emergencia tras accidente de tránsito con trauma abdominal cerrado. Presenta hematuria macroscópica y dolor en flanco izquierdo. Funciones vitales: FC 120 lpm, FR 24 rpm, P.A 90/60 mmHg, T 36.5 °C, SatO2 95%. Se encuentra taquicárdico e hipotenso a pesar de reanimación con cristaloides. Tomografía abdominal con contraste: laceración renal grado V con extravasación activa de contraste. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Manejo conservador con monitorización",
+      "B": "Embolización arterial selectiva",
+      "C": "Exploración quirúrgica con nefrectomía",
+      "D": "Colocación de stent ureteral"
+    },
+    "respuesta": "C",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El paciente con lesión renal grado V (riñón destrozado o desvascularizado) y hemorragia activa con inestabilidad hemodinámica persistente requiere exploración quirúrgica urgente, que en la mayoría de los casos termina en nefrectomía, según las guías de la AUA y la EAU. El manejo conservador está contraindicado en inestabilidad hemodinámica; la embolización arterial selectiva puede intentarse en pacientes estables con extravasación limitada, pero no en este caso con inestabilidad; el stent ureteral está indicado para lesiones ureterales, no renales. La prioridad es el control del sangrado y la estabilización del paciente."
+  },
+  {
+    "numero": 57,
+    "enunciado": "Mujer de 45 años, procedente de Lima, es sometida a resección anterior baja de colon por cáncer. En el postoperatorio presenta fiebre de 39 °C, dolor en flanco izquierdo y débito urinario disminuido. Funciones vitales: FC 110 lpm, FR 22 rpm, P.A 100/60 mmHg, T 38.8 °C. Tomografía con contraste y fase excretoria tardía: extravasación de contraste en uréter izquierdo con urinoma. ¿Cuál es el manejo inicial más apropiado?",
+    "opciones": {
+      "A": "Nefrectomía izquierda",
+      "B": "Colocación de stent ureteral o nefrostomía percutánea",
+      "C": "Reparación quirúrgica abierta inmediata",
+      "D": "Observación con control en 48 horas"
+    },
+    "respuesta": "B",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El manejo inicial de la lesión ureteral iatrogénica con extravasación es la derivación urinaria mediante stent ureteral o nefrostomía percutánea, según las guías de la EAU y el Manual MSD, ya que permite la cicatrización espontánea en lesiones parciales y evita cirugía mayor. La nefrectomía se reserva para riñones no funcionantes o destruidos; la reparación quirúrgica abierta inmediata se indica cuando la derivación falla o la lesión es completa con gran defecto; la observación sin derivación favorece la formación de urinoma, absceso y sepsis. La mayoría de las lesiones ureterales iatrogénicas se manejan inicialmente con derivación mínimamente invasiva."
+  },
+  {
+    "numero": 58,
+    "enunciado": "Varón de 60 años, procedente de Lima, con antecedente de prostatectomía radical por cáncer de próstata, es llevado a emergencia por retención urinaria y sangrado por meato uretral tras caída con trauma perineal. Funciones vitales estables. Al examen físico: equimosis perineal, próstata ausente en tacto rectal. Uretrografía retrógrada: extravasación de contraste en uretra posterior con disrupción completa. ¿Cuál es el manejo inicial más apropiado?",
+    "opciones": {
+      "A": "Colocación de sonda Foley",
+      "B": "Cistostomía suprapúbica",
+      "C": "Uretroplastia inmediata",
+      "D": "Observación con control de hematuria"
+    },
+    "respuesta": "B",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El manejo inicial de la disrupción uretral posterior completa es la cistostomía suprapúbica para derivar la orina y permitir la estabilización del paciente, según las guías de la EAU y el Manual MSD. La colocación de sonda Foley está contraindicada porque puede agravar la lesión; la uretroplastia inmediata no se recomienda en la fase aguda porque se asocia a mayor tasa de estenosis y disfunción eréctil; la observación sin derivación urinaria provoca extravasación, infección y fibrosis. La reparación definitiva se realiza de forma diferida, generalmente después de 8 a 12 semanas."
+  },
+  {
+    "numero": 59,
+    "enunciado": "Niño de 8 años, procedente de Cusco, es traído a emergencia tras caída de bicicleta con trauma abdominal cerrado. Presenta dolor abdominal difuso y hematuria macroscópica. Funciones vitales: FC 100 lpm, FR 22 rpm, P.A 100/60 mmHg, T 36.7 °C, SatO2 98%. Al examen físico: sensibilidad abdominal difusa, sin signos peritoneales. Tomografía abdominal con contraste: laceración renal de 1.5 cm sin extravasación urinaria. ¿Cuál es el manejo más apropiado?",
+    "opciones": {
+      "A": "Manejo conservador con monitorización y control de hemoglobina",
+      "B": "Exploración quirúrgica inmediata",
+      "C": "Embolización arterial",
+      "D": "Nefrectomía parcial"
+    },
+    "respuesta": "A",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El manejo del trauma renal grado III en un paciente pediátrico hemodinámicamente estable es conservador, con monitorización, reposo, control de hemoglobina y hematocrito, según las guías de la AUA y la EAU, que señalan que la mayoría de las lesiones renales de bajo grado se resuelven sin cirugía. La exploración quirúrgica inmediata se reserva para inestabilidad hemodinámica o lesiones vasculares; la embolización arterial se indica en sangrado activo en pacientes estables seleccionados; la nefrectomía parcial se considera en lesiones complejas o cuando la conservación no es posible. En niños, el manejo conservador tiene alta tasa de éxito."
+  },
+  {
+    "numero": 60,
+    "enunciado": "Varón de 35 años, procedente de Lima, es traído a emergencia tras herida por arma blanca en flanco derecho. Presenta dolor abdominal y hematuria macroscópica. Funciones vitales: FC 110 lpm, FR 22 rpm, P.A 100/60 mmHg, T 36.6 °C, SatO2 96%. Al examen físico: herida penetrante en flanco derecho, sensibilidad abdominal difusa. Tomografía abdominal con contraste: laceración renal grado IV con extravasación urinaria y hematoma perirrenal. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Manejo conservador con monitorización estricta",
+      "B": "Exploración quirúrgica renal",
+      "C": "Embolización arterial selectiva",
+      "D": "Colocación de stent ureteral"
+    },
+    "respuesta": "B",
+    "area": "Cirugía",
+    "especialidad": "Urología",
+    "tema": "Trauma Urológico",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "En trauma renal penetrante con lesión grado IV (laceración que compromete el sistema colector con extravasación urinaria), la conducta más apropiada es la exploración quirúrgica renal, según las guías de la AUA y la EAU, que recomiendan cirugía en lesiones penetrantes de alto grado para reparar el sistema colector y controlar el sangrado. El manejo conservador se reserva para lesiones de bajo grado o pacientes estables seleccionados; la embolización arterial selectiva puede ser una alternativa en pacientes estables con sangrado activo pero no repara la extravasación urinaria; el stent ureteral está indicado para lesiones ureterales, no renales. La exploración permite evaluar la extensión y realizar reparación primaria."
+  },
+  {
+    "numero": 61,
+    "enunciado": "Mujer de 28 años, natural de Lima, acude a consulta externa por cuadro de 3 meses de evolución caracterizado por fatiga intensa, artralgias simétricas en manos y muñecas, y episodios de fiebre no documentada. Refiere además caída difusa del cabello y lesiones eritematosas en mejillas y dorso nasal que empeoran con la exposición solar. Examen físico: FC 88 lpm, FR 18 rpm, PA 110/70 mmHg, T 37.8 °C; eritema malar en alas de mariposa, alopecia difusa no cicatricial, artritis en articulaciones metacarpofalángicas e interfalángicas proximales bilaterales. Exámenes auxiliares: Hb 9.8 g/dL, leucocitos 3200/mm³, plaquetas 130 000/mm³, ANA positivo a título 1/320, anti-DNA de doble cadena positivo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Artritis reumatoide",
+      "B": "Lupus eritematoso sistémico",
+      "C": "Dermatomiositis",
+      "D": "Síndrome de Sjögren"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es lupus eritematoso sistémico (LES), sustentado por la presencia de manifestaciones clínicas multisistémicas (eritema malar, fotosensibilidad, alopecia no cicatricial, artritis, fiebre, citopenias) y serológicas (ANA positivo a título significativo y anti-DNA de doble cadena positivo), cumpliendo los criterios de clasificación EULAR/ACR 2019, donde un paciente con ANA positivo como criterio de entrada y una puntuación ≥10 en criterios clínicos e inmunológicos clasifica para LES; la artritis reumatoide (A) se descarta porque típicamente presenta artritis erosiva con anti-CCP y factor reumatoide, sin compromiso cutáneo malar ni citopenias, además de que el eritema malar y la fotosensibilidad no son propios de ella; la dermatomiositis (C) se descarta porque cursa con debilidad muscular proximal, pápulas de Gottron y heliotropo, elevación de enzimas musculares y biopsia muscular característica, sin artritis simétrica ni citopenias; el síndrome de Sjögren (D) se descarta porque predomina xeroftalmia y xerostomía, con anti-Ro/SSA y anti-La/SSB, y aunque puede haber artralgias, no presenta el cortejo cutáneo-mucoso ni las citopenias observadas; en el contexto peruano, la prevalencia estimada de LES es de 40-50 casos por 100 000 habitantes, con predominio en mujeres jóvenes en edad reproductiva, lo que refuerza la pertinencia epidemiológica del caso."
+  },
+  {
+    "numero": 62,
+    "enunciado": "Mujer de 32 años con diagnóstico de lupus eritematoso sistémico de 4 años de evolución, en tratamiento con hidroxicloroquina 200 mg/día y prednisona 5 mg/día. Acude a control refiriendo disnea de esfuerzo progresiva y edema en miembros inferiores de 2 semanas de evolución. Examen físico: PA 150/90 mmHg, FC 92 lpm, FR 22 rpm; edema bimaleolar grado II, crépitos bibasales, ingurgitación yugular leve. Exámenes auxiliares: creatinina 1.6 mg/dL, proteinuria en orina de 24 horas 3.2 g, sedimento urinario con cilindros hemáticos, C3 y C4 disminuidos, anti-DNA positivo. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Aumentar prednisona a 1 mg/kg/día y añadir azatioprina",
+      "B": "Solicitar biopsia renal y luego iniciar tratamiento inmunosupresor según clase histológica",
+      "C": "Iniciar micofenolato de mofetilo 2 g/día sin biopsia renal",
+      "D": "Añadir ciclofosfamida en pulsos mensuales y suspender hidroxicloroquina"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta correcta es solicitar biopsia renal antes de definir el tratamiento inmunosupresor, ya que el caso evidencia nefritis lúpica activa (proteinuria >3 g/24 h, cilindros hemáticos, hipocomplementemia, anti-DNA positivo e hipertensión) y la clasificación histológica según la ISN/RPS (clases I a VI) determina la elección entre micofenolato, ciclofosfamida o azatioprina, así como la intensidad y duración de la terapia, tal como recomienda la guía de práctica clínica de EsSalud para nefritis lúpica en el Seguro Social del Perú, que condiciona el esquema de inducción al resultado de la biopsia; la opción A es incorrecta porque aumentar prednisona y añadir azatioprina sin conocer la clase histológica puede ser insuficiente para clases proliferativas (III/IV) y retrasar el tratamiento adecuado; la opción C es incorrecta porque iniciar micofenolato sin biopsia omite el paso diagnóstico obligatorio y podría subtratar una clase IV o V; la opción D es incorrecta porque suspender hidroxicloroquina está contraindicado en LES activo, ya que reduce brotes y daño acumulado, y además la ciclofosfamida en pulsos se reserva para casos graves confirmados por biopsia, no como primera elección empírica."
+  },
+  {
+    "numero": 63,
+    "enunciado": "Mujer de 26 años con lupus eritematoso sistémico en remisión clínica, en tratamiento con hidroxicloroquina 200 mg/día. Acude a consulta preconcepcional porque desea embarazarse. No tiene proteinuria, creatinina normal, anti-DNA negativo, C3 y C4 normales, y no presenta manifestaciones cutáneo-articulares activas en los últimos 8 meses. ¿Cuál es la recomendación más adecuada respecto a su tratamiento?",
+    "opciones": {
+      "A": "Suspender hidroxicloroquina durante el primer trimestre y reiniciar en el segundo",
+      "B": "Mantener hidroxicloroquina durante todo el embarazo",
+      "C": "Cambiar hidroxicloroquina por azatioprina antes de la concepción",
+      "D": "Suspender hidroxicloroquina y añadir aspirina 100 mg/día como único tratamiento"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La recomendación correcta es mantener hidroxicloroquina durante todo el embarazo, ya que este fármaco ha demostrado reducir los brotes lúpicos, la actividad de la enfermedad y el riesgo de bloqueo cardíaco congénito en fetos de madres con anticuerpos anti-Ro/SSA, sin asociarse a teratogenicidad; la guía de práctica clínica de EsSalud y las recomendaciones internacionales de reumatología obstétrica señalan que la hidroxicloroquina debe continuarse en la gestación y que la suspensión se asocia a mayor actividad lúpica y peores resultados materno-fetales; la opción A es incorrecta porque suspenderla en cualquier trimestre incrementa el riesgo de brote y no aporta beneficio alguno; la opción C es incorrecta porque no hay indicación de cambiar a azatioprina en una paciente estable sin necesidad de inmunosupresión adicional, y la azatioprina se reserva para casos que requieren tratamiento inmunosupresor durante el embarazo; la opción D es incorrecta porque la aspirina sola no controla la actividad lúpica subyacente y la hidroxicloroquina debe mantenerse, pudiendo añadirse aspirina solo si existe indicación adicional como síndrome antifosfolípido o profilaxis de preeclampsia en lupus con nefritis."
+  },
+  {
+    "numero": 64,
+    "enunciado": "Varón de 45 años con diagnóstico reciente de lupus eritematoso sistémico. Presenta cuadro de 3 semanas de evolución con fiebre, poliartralgias, úlceras orales indoloras, y en los últimos 5 días aparición de petequias y equimosis en miembros inferiores. Examen físico: PA 130/80 mmHg, T 38.2 °C; úlceras orales en paladar duro, petequias en extremidades inferiores; resto sin alteraciones. Exámenes auxiliares: Hb 11 g/dL, leucocitos 4500/mm³, plaquetas 18 000/mm³, creatinina 0.9 mg/dL, ANA positivo 1/160, anti-DNA negativo, anti-Ro positivo, anticuerpos antifosfolípidos (anticoagulante lúpico) positivos en dos ocasiones separadas por 12 semanas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Púrpura trombocitopénica inmune aislada",
+      "B": "Lupus eritematoso sistémico con síndrome antifosfolípido secundario",
+      "C": "Lupus eritematoso sistémico con púrpura trombocitopénica trombótica",
+      "D": "Síndrome antifosfolípido primario"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es lupus eritematoso sistémico con síndrome antifosfolípido secundario, ya que el paciente cumple criterios de LES (úlceras orales, artralgias, fiebre, citopenias, ANA positivo) y presenta trombocitopenia grave con anticuerpos antifosfolípidos positivos en dos determinaciones separadas por 12 semanas, lo que cumple los criterios de clasificación de Sydney para síndrome antifosfolípido, condición frecuentemente asociada al LES (hasta 30-40% de pacientes lúpicos); la opción A es incorrecta porque la púrpura trombocitopénica inmune aislada no explica las úlceras orales, artralgias ni el ANA positivo, y en este caso la trombocitopenia es parte de un síndrome antifosfolípido secundario; la opción C es incorrecta porque la púrpura trombocitopénica trombótica cursa con anemia hemolítica microangiopática, esquistocitos, fiebre, alteración neurológica y renal, y no se asocia típicamente a antifosfolípidos; la opción D es incorrecta porque el síndrome antifosfolípido primario no cumple criterios de LES, y en este paciente hay manifestaciones lúpicas claras además de los anticuerpos antifosfolípidos."
+  },
+  {
+    "numero": 65,
+    "enunciado": "Mujer de 30 años con lupus eritematoso sistémico de 2 años de evolución, en tratamiento irregular con prednisona. Acude a emergencia por cuadro de 4 días de fiebre, tos seca y dolor pleurítico derecho. Examen físico: FR 28 rpm, PA 110/70 mmHg, T 38.5 °C; matidez y disminución del murmullo vesicular en base pulmonar derecha. Radiografía de tórax: opacidad homogénea en base derecha con ángulo costofrénico borrado. Exámenes auxiliares: leucocitos 6800/mm³, PCR 45 mg/L, procalcitonina 0.3 ng/mL, ANA positivo, anti-DNA positivo, C3 y C4 disminuidos. ¿Cuál es la causa más probable del derrame pleural?",
+    "opciones": {
+      "A": "Derrame pleural paraneumónico complicado",
+      "B": "Pleuritis lúpica por actividad de la enfermedad",
+      "C": "Tuberculosis pleural",
+      "D": "Embolia pulmonar con infarto"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La causa más probable es pleuritis lúpica por actividad de la enfermedad, sustentada por la presencia de fiebre, dolor pleurítico, derrame pleural, anti-DNA positivo e hipocomplementemia (C3 y C4 disminuidos), que indican actividad inmunológica sistémica; la pleuritis es la manifestación pulmonar más frecuente del LES (40-60% de pacientes) y suele responder a corticosteroides; la opción A es incorrecta porque el derrame paraneumónico complicado típicamente cursa con leucocitosis, procalcitonina elevada y respuesta inflamatoria local, mientras que en este caso la procalcitonina es baja y las citopenias no están presentes; la opción C es incorrecta porque la tuberculosis pleural es endémica en Perú, pero se presenta con adenopatías mediastínicas, granulomas en biopsia pleural, ADA elevada y ausencia de anti-DNA positivo, además de que la hipocomplementemia y el anti-DNA orientan a actividad lúpica; la opción D es incorrecta porque la embolia pulmonar con infarto suele presentarse con disnea súbita, dolor torácico, hipoxemia y factores de riesgo trombótico, y el derrame pleural sería serohemático, no con el cortejo inmunológico observado."
+  },
+  {
+    "numero": 66,
+    "enunciado": "Recién nacido de 15 días de vida, hijo de madre con lupus eritematoso sistémico y anticuerpos anti-Ro/SSA positivos. Presenta desde el nacimiento lesiones eritematosas anulares en cara y tronco, sin fiebre ni compromiso del estado general. Examen físico: FC 140 lpm, FR 40 rpm, T 36.8 °C; lesiones cutáneas anulares con centro pálido y borde eritematoso en mejillas, frente y tronco; resto sin alteraciones. Exámenes auxiliares: hemograma normal, enzimas hepáticas normales, ECG con ritmo sinusal sin bloqueos. ¿Cuál es el diagnóstico más probable y la conducta más apropiada?",
+    "opciones": {
+      "A": "Lupus neonatal; observar y control con cardiología pediátrica",
+      "B": "Lupus neonatal; iniciar hidroxicloroquina oral en el neonato",
+      "C": "Dermatitis seborreica; tratamiento con ketoconazol tópico",
+      "D": "Urticaria neonatal; antihistamínicos orales"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es lupus neonatal, una entidad transitoria causada por el paso transplacentario de anticuerpos anti-Ro/SSA y anti-La/SSB maternos, que se manifiesta típicamente con lesiones cutáneas anulares eritematosas en cara y tronco, y que en ausencia de bloqueo cardíaco congénito requiere solo observación y control con cardiología pediátrica para descartar arritmias o bloqueos tardíos, ya que las lesiones cutáneas suelen resolverse espontáneamente en 6-8 meses cuando los anticuerpos maternos desaparecen; la opción B es incorrecta porque no hay indicación de hidroxicloroquina en el neonato, ya que el tratamiento es de soporte y la enfermedad es autolimitada; la opción C es incorrecta porque la dermatitis seborreica no presenta lesiones anulares con borde eritematoso y centro pálido, y no se asocia a anticuerpos anti-Ro; la opción D es incorrecta porque la urticaria neonatal cursa con habones pruriginosos migratorios y no con lesiones anulares fijas, además de que los antihistamínicos no están indicados en este contexto."
+  },
+  {
+    "numero": 67,
+    "enunciado": "Mujer de 35 años con lupus eritematoso sistémico en tratamiento con hidroxicloroquina 200 mg/día y prednisona 10 mg/día. Acude a control refiriendo visión borrosa y dificultad para leer de cerca en las últimas 3 semanas. Examen físico: agudeza visual disminuida en ojo derecho, fondo de ojo con mácula de aspecto normal, campo visual con escotoma paracentral. Exámenes auxiliares: anticuerpos anti-DNA negativos, C3 y C4 normales, ANA positivo. ¿Cuál es la causa más probable del cuadro visual y la conducta más adecuada?",
+    "opciones": {
+      "A": "Retinopatía por hidroxicloroquina; suspender el fármaco y evaluar con OCT",
+      "B": "Catarata inducida por corticosteroides; reducir prednisona",
+      "C": "Síndrome de Sjögren secundario; iniciar lágrimas artificiales",
+      "D": "Neuritis óptica lúpica; aumentar prednisona a 1 mg/kg/día"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La causa más probable es retinopatía por hidroxicloroquina, una complicación ocular potencialmente irreversible que se manifiesta con visión borrosa, escotoma paracentral y cambios en la tomografía de coherencia óptica (OCT), y que requiere suspensión inmediata del fármaco y evaluación oftalmológica con OCT y campo visual, ya que la dosis acumulada y el tiempo de exposición son factores de riesgo; la opción B es incorrecta porque las cataratas inducidas por corticosteroides suelen ser bilaterales, progresivas y no cursan con escotoma paracentral agudo, y la dosis de prednisona es baja; la opción C es incorrecta porque el síndrome de Sjögren cursa con ojo seco, queratoconjuntivitis sicca y xerostomía, no con escotoma paracentral ni disminución de agudeza visual; la opción D es incorrecta porque la neuritis óptica lúpica se asocia a actividad sistémica (anti-DNA positivo, hipocomplementemia), que en este caso está ausente, y aunque puede requerir corticosteroides, el cuadro visual con escotoma paracentral en paciente en hidroxicloroquina orienta a toxicidad medicamentosa."
+  },
+  {
+    "numero": 68,
+    "enunciado": "Mujer de 40 años con lupus eritematoso sistémico de 6 años de evolución, en tratamiento con hidroxicloroquina y micofenolato de mofetilo por nefritis lúpica clase IV en remisión. Acude a control refiriendo fatiga, dolor lumbar y fiebre de 2 semanas de evolución. Examen físico: PA 140/85 mmHg, T 38.3 °C; dolor a la puñopercusión lumbar bilateral, sin disuria. Exámenes auxiliares: leucocitos 11 000/mm³, PCR 80 mg/L, creatinina 1.4 mg/dL (previa 1.0 mg/dL), sedimento urinario con leucocituria y cilindros leucocitarios, urocultivo pendiente. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Iniciar antibioticoterapia empírica para pielonefritis y ajustar inmunosupresión",
+      "B": "Aumentar micofenolato de mofetilo por sospecha de brote lúpico renal",
+      "C": "Iniciar pulsos de metilprednisolona por nefritis lúpica activa",
+      "D": "Solicitar biopsia renal de urgencia antes de cualquier tratamiento"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta correcta es iniciar antibioticoterapia empírica para pielonefritis y ajustar la inmunosupresión, ya que el cuadro clínico (fiebre, dolor lumbar, puñopercusión positiva, leucocituria, cilindros leucocitarios, leucocitosis y PCR elevada) es compatible con infección del tracto urinario alto en una paciente inmunosuprimida, y en lupus la infección es una causa frecuente de morbilidad y mortalidad que debe tratarse de forma oportuna; la opción B es incorrecta porque aumentar micofenolato sin tratar la infección puede agravar la situación y no hay evidencia de brote lúpico renal (anti-DNA y complemento no están alterados, y el sedimento muestra leucocituria no hemática); la opción C es incorrecta porque los pulsos de metilprednisolona están indicados en brote lúpico grave, pero en este caso la presentación sugiere infección, y administrar corticosteroides en dosis altas sin cobertura antibiótica podría exacerbar la sepsis; la opción D es incorrecta porque la biopsia renal no es urgente ni prioritaria ante un cuadro infeccioso activo, y debe realizarse una vez controlada la infección si persisten signos de actividad lúpica."
+  },
+  {
+    "numero": 69,
+    "enunciado": "Mujer de 22 años con lupus eritematoso sistémico recién diagnosticado. Presenta lesiones cutáneas fotosensibles, artralgias, fatiga y úlceras orales. Examen físico: PA 100/60 mmHg, T 37.2 °C; eritema malar, úlceras orales indoloras, artralgias sin artritis. Exámenes auxiliares: Hb 11.5 g/dL, leucocitos 3800/mm³, plaquetas 180 000/mm³, creatinina 0.8 mg/dL, proteinuria negativa, ANA positivo 1/640, anti-DNA positivo, C3 y C4 disminuidos. ¿Cuál es el tratamiento inicial más apropiado además de hidroxicloroquina?",
+    "opciones": {
+      "A": "Prednisona 1 mg/kg/día por 4 semanas",
+      "B": "Prednisona 5-10 mg/día o AINEs a demanda",
+      "C": "Micofenolato de mofetilo 2 g/día",
+      "D": "Ciclofosfamida en pulsos mensuales"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El tratamiento inicial más apropiado es prednisona en dosis bajas (5-10 mg/día) o AINEs a demanda, ya que la paciente presenta manifestaciones lúpicas leves (cutáneas, articulares, úlceras orales) sin compromiso de órganos mayores, y en este escenario el objetivo es controlar síntomas con la menor dosis posible de corticosteroides, evitando toxicidad acumulada; la hidroxicloroquina es la base del tratamiento y debe mantenerse; la opción A es incorrecta porque la prednisona a 1 mg/kg/día se reserva para manifestaciones graves como nefritis proliferativa, compromiso neurológico o vasculitis sistémica, y en enfermedad leve no está indicada por el riesgo de efectos adversos; la opción C es incorrecta porque el micofenolato de mofetilo se utiliza en nefritis lúpica o manifestaciones graves refractarias, no en enfermedad cutáneo-articular leve; la opción D es incorrecta porque la ciclofosfamida en pulsos está indicada en compromiso orgánico grave (nefritis clase III/IV, afectación del sistema nervioso central, vasculitis), y su uso en enfermedad leve expone a la paciente a toxicidad innecesaria (cistitis hemorrágica, infertilidad, riesgo infeccioso)."
+  },
+  {
+    "numero": 70,
+    "enunciado": "Mujer de 38 años con lupus eritematoso sistémico de 8 años de evolución, en tratamiento con hidroxicloroquina y prednisona 5 mg/día, acude a control refiriendo sequedad ocular y bucal de 6 meses de evolución, con sensación de arena en los ojos y dificultad para deglutir alimentos secos. Examen físico: PA 110/70 mmHg; escleras sin hiperemia, test de Schirmer disminuido en ambos ojos, mucosa oral seca, glándulas parótidas no aumentadas de tamaño. Exámenes auxiliares: anti-Ro/SSA positivo, anti-La/SSB positivo, ANA positivo, anti-DNA negativo, C3 y C4 normales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de Sjögren secundario a lupus eritematoso sistémico",
+      "B": "Brote lúpico con afectación de glándulas exocrinas",
+      "C": "Efecto adverso de hidroxicloroquina sobre glándulas lagrimales",
+      "D": "Síndrome de Sjögren primario sin relación con lupus"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "Lupus Eritematoso",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es síndrome de Sjögren secundario a lupus eritematoso sistémico, ya que la paciente presenta xeroftalmia y xerostomía objetivadas (test de Schirmer disminuido, mucosa oral seca) junto con anticuerpos anti-Ro/SSA y anti-La/SSB positivos, en el contexto de un LES de larga data; el síndrome de Sjögren es la enfermedad autoinmune más frecuentemente asociada al LES (15-30% de pacientes) y se caracteriza por infiltración linfocítica de glándulas exocrinas; la opción B es incorrecta porque un brote lúpico con afectación de glándulas exocrinas no es una entidad reconocida, y en este caso los marcadores de actividad lúpica (anti-DNA, C3, C4) están normales; la opción C es incorrecta porque la hidroxicloroquina no produce sequedad glandular como efecto adverso característico, y los anticuerpos anti-Ro/La positivos indican un mecanismo autoinmune subyacente; la opción D es incorrecta porque el síndrome de Sjögren primario se diagnostica cuando no hay otra enfermedad autoinmune asociada, y en esta paciente el LES está claramente establecido, por lo que se clasifica como secundario."
+  },
+  {
+    "numero": 71,
+    "enunciado": "Mujer de 28 años, natural de Arequipa, sin antecedentes patológicos de importancia, acude a consulta por cefalea recurrente de 6 meses de evolución. Refiere episodios de dolor pulsátil hemicraneal derecho, de intensidad moderada a severa, que duran entre 6 y 24 horas, acompañados de náuseas, fotofobia y fonofobia, y que empeoran con la actividad física habitual. No presenta fiebre ni déficit neurológico. Examen físico: FC 78 lpm, FR 16 rpm, PA 110/70 mmHg, T 36.8 °C; examen neurológico normal, fondo de ojo sin papiledema, senos paranasales no dolorosos. Exámenes auxiliares: hemograma, glucosa, creatinina y TSH normales; TC cerebral sin contraste sin alteraciones. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña sin aura",
+      "B": "Cefalea tensional episódica",
+      "C": "Cefalea en racimos",
+      "D": "Cefalea por sinusitis aguda"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es migraña sin aura, pues cumple los criterios de la International Headache Society: al menos cinco episodios de cefalea pulsátil unilateral, duración de 4 a 72 horas, intensidad moderada a severa, empeoramiento con la actividad física y presencia de náuseas, fotofobia y fonofobia, con examen neurológico y neuroimagen normales; la migraña es la cefalea primaria más frecuente en mujeres jóvenes y su fisiopatología involucra activación del sistema trigeminovascular y liberación de péptido relacionado con el gen de la calcitonina. La opción B es incorrecta porque la cefalea tensional suele ser opresiva, bilateral, leve a moderada, no empeora con la actividad y no presenta náuseas ni ambos síntomas de fotofobia y fonofobia; la opción C es incorrecta porque la cefalea en racimos es unilateral orbitaria, de 15 a 180 minutos, con síntomas autonómicos como lagrimeo y rinorrea, y predominio en varones; la opción D es incorrecta porque la sinusitis aguda cursa con rinorrea purulenta, fiebre, dolor a la palpación de senos paranasales y opacidad en imágenes, datos ausentes en este caso."
+  },
+  {
+    "numero": 72,
+    "enunciado": "Varón de 35 años, oficinista, con antecedente de estrés laboral crónico, consulta por cefalea de 4 meses de evolución. Describe dolor opresivo, bilateral, en banda, de intensidad leve a moderada, que no empeora con la actividad física y no se acompaña de náuseas ni vómitos; ocasionalmente presenta fotofobia o fonofobia leve, pero nunca ambas. No hay fiebre ni pérdida de peso. Examen físico: FC 72 lpm, FR 14 rpm, PA 120/80 mmHg, T 36.5 °C; examen neurológico normal, musculatura pericraneal dolorosa a la palpación, fondo de ojo normal. Exámenes auxiliares: hemograma, VSG y glucosa normales; sin indicación de neuroimagen por ausencia de signos de alarma. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña sin aura",
+      "B": "Cefalea tensional episódica",
+      "C": "Cefalea en racimos",
+      "D": "Cefalea por abuso de medicamentos"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es cefalea tensional episódica, que se caracteriza por dolor opresivo, bilateral, en banda, leve a moderado, sin náuseas ni vómitos, sin empeoramiento con la actividad física y con sensibilidad pericraneal, en un paciente con estrés laboral y sin signos de alarma, cumpliendo los criterios de la International Headache Society; su fisiopatología implica sensibilización periférica y central de las vías trigeminales y factores psicosociales. La opción A es incorrecta porque la migraña es pulsátil, unilateral, moderada a severa, empeora con la actividad y se acompaña de náuseas, fotofobia y fonofobia; la opción C es incorrecta porque la cefalea en racimos es unilateral orbitaria, severa, de corta duración, con síntomas autonómicos y agitación psicomotriz; la opción D es incorrecta porque la cefalea por abuso de medicamentos requiere consumo excesivo de analgésicos o triptanes por más de 3 meses, dato que no se menciona en la anamnesis."
+  },
+  {
+    "numero": 73,
+    "enunciado": "Varón de 30 años, chofer, sin antecedentes familiares de cefalea, acude por episodios recurrentes de dolor ocular derecho de 3 semanas de evolución. El dolor es unilateral, orbitario y supraorbitario, de intensidad severa, dura entre 30 y 90 minutos, y se presenta varias veces al día, a la misma hora, despertándolo por la noche. Se acompaña de lagrimeo, rinorrea y ptosis palpebral derecha; durante el episodio el paciente no puede quedarse quieto. Examen físico: FC 80 lpm, FR 18 rpm, PA 130/80 mmHg, T 36.7 °C; ptosis parcial derecha, resto neurológico normal. Exámenes auxiliares: hemograma y glucosa normales; TC cerebral sin alteraciones. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña con aura",
+      "B": "Cefalea tensional crónica",
+      "C": "Cefalea en racimos",
+      "D": "Neuralgia del trigémino"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es cefalea en racimos, una cefalea trigémino-autonómica que se presenta con dolor unilateral orbitario o supraorbitario, severo, de 15 a 180 minutos, con síntomas autonómicos ipsilaterales como lagrimeo, rinorrea, ptosis y agitación psicomotriz, en episodios que pueden agruparse en racimos y predominan en varones jóvenes, según los criterios de la International Headache Society. La opción A es incorrecta porque la migraña con aura presenta síntomas neurológicos reversibles previos al dolor y no cursa con síntomas autonómicos tan marcados; la opción B es incorrecta porque la cefalea tensional crónica es opresiva, bilateral, leve a moderada y sin síntomas autonómicos; la opción D es incorrecta porque la neuralgia del trigémino produce descargas eléctricas paroxísticas de segundos, desencadenadas por estímulos cutáneos, sin lagrimeo ni rinorrea."
+  },
+  {
+    "numero": 74,
+    "enunciado": "Mujer de 45 años, ama de casa, con antecedente de hipertensión arterial no controlada, presenta cefalea súbita e intensa mientras realizaba esfuerzo físico, descrita como la peor de su vida. Refiere náuseas, vómitos y dolor cervical. Examen físico: FC 95 lpm, FR 22 rpm, PA 160/95 mmHg, T 36.9 °C; paciente somnolienta, rigidez nucal marcada, sin déficit motor focal. Exámenes auxiliares: TC cerebral sin contraste muestra hiperdensidad en cisternas basales y surcos silvanos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña con aura",
+      "B": "Meningitis bacteriana",
+      "C": "Cefalea en racimos",
+      "D": "Hemorragia subaracnoidea"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es hemorragia subaracnoidea, que se manifiesta por cefalea súbita, intensa y explosiva, la peor de la vida, a menudo durante esfuerzo físico, acompañada de vómitos, rigidez nucal y alteración del estado de conciencia, con TC cerebral sin contraste que muestra hiperdensidad en cisternas basales y surcos, hallazgo altamente sensible en las primeras 24 horas; la causa más frecuente es ruptura de aneurisma intracraneal y requiere evaluación urgente por neurocirugía. La opción A es incorrecta porque la migraña con aura es recurrente, pulsátil, con síntomas neurológicos reversibles y sin hiperdensidad meníngea en TC; la opción B es incorrecta porque la meningitis bacteriana cursa con fiebre, petequias y líquido cefalorraquídeo con pleocitosis neutrofílica, y aunque puede haber rigidez nucal, la TC no muestra sangrado cisternal; la opción C es incorrecta porque la cefalea en racimos es unilateral orbitaria, recurrente en racimos, con síntomas autonómicos y sin sangrado subaracnoideo."
+  },
+  {
+    "numero": 75,
+    "enunciado": "Varón de 20 años, estudiante, sin antecedentes patológicos, acude a emergencia por fiebre, cefalea holocraneal y rigidez de nuca de 2 días de evolución. Refiere vómitos y malestar general. Examen físico: FC 110 lpm, FR 20 rpm, PA 100/60 mmHg, T 39.2 °C; paciente confuso, rigidez nucal, signo de Kerning positivo, petequias en tronco y extremidades. Exámenes auxiliares: leucocitos 18 000/mm³, PCR 120 mg/L, glucosa 70 mg/dL, TC cerebral sin contraste sin lesiones focales ni papiledema. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña con aura",
+      "B": "Meningitis bacteriana",
+      "C": "Hemorragia subaracnoidea",
+      "D": "Cefalea tensional"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es meningitis bacteriana, probablemente meningocócica por la presencia de fiebre alta, cefalea holocraneal, rigidez nucal, signo de Kerning, alteración del estado mental y petequias, junto con leucocitosis y PCR elevada; la TC sin lesiones focales ni papiledema permite realizar punción lumbar urgente para confirmar pleocitosis neutrofílica y buscar el agente, y el tratamiento antibiótico empírico debe iniciarse de inmediato según la guía de práctica clínica de MINSA y EsSalud. La opción A es incorrecta porque la migraña con aura no produce fiebre, rigidez nucal ni petequias; la opción C es incorrecta porque la hemorragia subaracnoidea se presenta con cefalea súbita intensa y TC con hiperdensidad cisternal, no con fiebre y petequias; la opción D es incorrecta porque la cefalea tensional no cursa con fiebre, signos meníngeos ni compromiso del estado general."
+  },
+  {
+    "numero": 76,
+    "enunciado": "Mujer de 40 años, comerciante, con antecedente de migraña desde la adolescencia, consulta por cefalea diaria de 6 meses de evolución. Refiere que toma paracetamol 1 g y ibuprofeno 400 mg casi todos los días, a veces más de 20 días al mes, y que el dolor mejora parcialmente pero reaparece al despertar. No presenta fiebre, pérdida de peso ni déficit neurológico. Examen físico: FC 76 lpm, FR 16 rpm, PA 115/75 mmHg, T 36.6 °C; examen neurológico normal, fondo de ojo sin papiledema. Exámenes auxiliares: hemograma, VSG, glucosa y creatinina normales; TC cerebral sin alteraciones. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña crónica sin abuso de medicamentos",
+      "B": "Cefalea tensional episódica",
+      "C": "Cefalea por hipertensión arterial",
+      "D": "Cefalea por abuso de medicamentos"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es cefalea por abuso de medicamentos, que se define por cefalea presente 15 o más días al mes en un paciente con cefalea primaria previa y consumo regular excesivo de medicamentos agudos por más de 3 meses, como analgésicos simples 15 o más días al mes o combinaciones y triptanes 10 o más días al mes; en este caso la paciente consume paracetamol e ibuprofeno más de 20 días al mes, lo que perpetúa el dolor y requiere educación, retiro gradual del analgésico y tratamiento profiláctico. La opción A es incorrecta porque, aunque la paciente tenga migraña, el patrón diario y el consumo excesivo configuran abuso de medicamentos; la opción B es incorrecta porque la cefalea tensional episódica no es diaria ni se asocia a consumo excesivo de analgésicos; la opción C es incorrecta porque la cefalea por hipertensión arterial no explica el patrón crónico diario ni el antecedente de migraña con uso excesivo de fármacos."
+  },
+  {
+    "numero": 77,
+    "enunciado": "Mujer de 70 años, pensionista, con antecedente de polimialgia reumática, acude por cefalea temporal derecha de 3 semanas de evolución. El dolor es continuo, sordo, con hipersensibilidad del cuero cabelludo y claudicación mandibular al masticar. Refiere además visión borrosa transitoria en ojo derecho. Examen físico: FC 80 lpm, FR 18 rpm, PA 140/80 mmHg, T 37.0 °C; arteria temporal derecha engrosada y dolorosa, fondo de ojo normal. Exámenes auxiliares: VSG 85 mm/h, PCR 45 mg/L, hemograma con anemia normocítica leve. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Iniciar prednisona 1 mg/kg/día y programar biopsia de arteria temporal",
+      "B": "Iniciar AINE y control ambulatorio",
+      "C": "Iniciar triptán oral para abortar la crisis",
+      "D": "Solicitar resonancia magnética cerebral y observación"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta correcta es iniciar prednisona en dosis alta, aproximadamente 1 mg/kg/día, y programar biopsia de arteria temporal, ya que el cuadro es compatible con arteritis de células gigantes, una vasculitis de grandes vasos que afecta a mayores de 50 años y se manifiesta con cefalea temporal nueva, claudicación mandibular, hipersensibilidad del cuero cabelludo, elevación de VSG y PCR, y riesgo de ceguera irreversible por neuropatía óptica isquémica anterior; el corticosteroide debe iniciarse de inmediato si hay síntomas visuales, sin esperar la biopsia, que puede realizarse dentro de las primeras dos semanas sin perder sensibilidad. La opción B es incorrecta porque los AINE no controlan la vasculitis ni previenen la pérdida visual; la opción C es incorrecta porque los triptanes están indicados en migraña y no en arteritis de células gigantes; la opción D es incorrecta porque la resonancia magnética no es el examen inicial y la observación retrasaría un tratamiento que previene la ceguera."
+  },
+  {
+    "numero": 78,
+    "enunciado": "Mujer de 32 años, obesa, sin antecedentes de cefalea previa, consulta por cefalea holocraneal progresiva de 2 meses de evolución, que aumenta al agacharse y al despertar. Refiere acúfenos pulsátiles y episodios transitorios de visión borrosa. No presenta fiebre ni déficit focal. Examen físico: FC 84 lpm, FR 16 rpm, PA 120/80 mmHg, T 36.7 °C; índice de masa corporal 34 kg/m², papiledema bilateral, resto neurológico normal. Exámenes auxiliares: TC cerebral sin alteraciones; punción lumbar con presión de apertura elevada, líquido cefalorraquídeo con citoquímica normal. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña sin aura",
+      "B": "Cefalea tensional crónica",
+      "C": "Hipertensión intracraneal idiopática",
+      "D": "Tumor cerebral con hipertensión endocraneana"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es hipertensión intracraneal idiopática, que se presenta típicamente en mujeres jóvenes con obesidad, con cefalea holocraneal progresiva, empeoramiento al agacharse o al despertar, acúfenos pulsátiles, visión borrosa transitoria y papiledema bilateral, con neuroimagen sin lesiones estructurales y punción lumbar con presión de apertura elevada pero líquido cefalorraquídeo normal; su fisiopatología se relaciona con alteración en la reabsorción del líquido cefalorraquídeo y requiere manejo con pérdida de peso, acetazolamida y control oftalmológico para prevenir pérdida visual. La opción A es incorrecta porque la migraña no produce papiledema ni presión de apertura elevada; la opción B es incorrecta porque la cefalea tensional crónica no cursa con papiledema ni acúfenos pulsátiles; la opción D es incorrecta porque el tumor cerebral mostraría lesión estructural en la TC o resonancia magnética, y en este caso la neuroimagen es normal."
+  },
+  {
+    "numero": 79,
+    "enunciado": "Varón de 25 años, sin antecedentes patológicos, acude por cefalea frontal de 10 días de evolución, acompañada de rinorrea purulenta, obstrucción nasal y fiebre. Refiere dolor a la palpación de senos paranasales y que el dolor empeora al inclinarse hacia adelante. Examen físico: FC 88 lpm, FR 18 rpm, PA 110/70 mmHg, T 38.2 °C; mucosa nasal hiperémica con secreción purulenta, dolor a la palpación de senos frontales y maxilares, resto neurológico normal. Exámenes auxiliares: leucocitos 12 000/mm³, PCR 60 mg/L; radiografía de senos paranasales con opacidad de seno maxilar derecho. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña sin aura",
+      "B": "Sinusitis aguda bacteriana",
+      "C": "Cefalea en racimos",
+      "D": "Neuralgia del trigémino"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es sinusitis aguda bacteriana, sustentada por cefalea frontal, rinorrea purulenta, obstrucción nasal, fiebre, dolor a la palpación de senos paranasales, empeoramiento al inclinarse hacia adelante, leucocitosis con PCR elevada y opacidad del seno maxilar en la radiografía; los criterios clínicos incluyen síntomas persistentes por más de 10 días sin mejoría o empeoramiento después de una mejoría inicial, y el tratamiento antibiótico empírico se dirige a Streptococcus pneumoniae y Haemophilus influenzae según las guías de MINSA y EsSalud. La opción A es incorrecta porque la migraña no produce rinorrea purulenta, fiebre ni opacidad de senos paranasales; la opción C es incorrecta porque la cefalea en racimos es unilateral orbitaria, con síntomas autonómicos como lagrimeo y rinorrea serosa, no purulenta, y sin fiebre; la opción D es incorrecta porque la neuralgia del trigémino se manifiesta con descargas eléctricas paroxísticas de segundos, desencadenadas por estímulos táctiles, sin síntomas nasales ni fiebre."
+  },
+  {
+    "numero": 80,
+    "enunciado": "Mujer de 55 años, sin antecedentes de migraña, consulta por dolor paroxístico en mejilla y mandíbula derecha de 4 meses de evolución. Describe descargas eléctricas de segundos de duración, desencadenadas por masticar, cepillarse los dientes o tocar la cara, con períodos asintomáticos entre episodios. No presenta náuseas, fotofobia ni lagrimeo. Examen físico: FC 76 lpm, FR 16 rpm, PA 130/80 mmHg, T 36.5 °C; examen neurológico normal, sin déficit sensitivo ni motor, puntos gatillo en mejilla derecha. Exámenes auxiliares: hemograma y glucosa normales; resonancia magnética cerebral sin lesiones estructurales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Migraña sin aura",
+      "B": "Cefalea en racimos",
+      "C": "Cefalea tensional crónica",
+      "D": "Neuralgia del trigémino"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Cefaleas",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es neuralgia del trigémino, caracterizada por dolor paroxístico, lancinante, con descargas eléctricas de segundos de duración, limitado al territorio de una o más ramas del trigémino, desencadenado por estímulos innocuos como masticar, cepillarse los dientes o tocar la cara, con períodos asintomáticos y examen neurológico normal; la resonancia magnética es normal en la forma clásica idiopática y su fisiopatología implica irritación o compresión de la raíz trigeminal, frecuentemente por un vaso sanguíneo. La opción A es incorrecta porque la migraña es pulsátil, dura horas, se acompaña de náuseas, fotofobia y fonofobia, y no se desencadena por estímulos cutáneos; la opción B es incorrecta porque la cefalea en racimos es unilateral orbitaria, dura de 15 a 180 minutos, con lagrimeo, rinorrea y agitación, no descargas eléctricas de segundos; la opción C es incorrecta porque la cefalea tensional es opresiva, bilateral, leve a moderada y no presenta paroxismos eléctricos ni puntos gatillo trigeminales."
+  },
+  {
+    "numero": 81,
+    "enunciado": "Varón de 25 años, natural de Piura, sin antecedentes patológicos ni familiares de epilepsia, es traído a emergencia tras presentar en su domicilio una crisis tónico-clónica generalizada de aproximadamente 2 minutos, con relajación de esfínteres y confusión postictal breve. No refiere episodios previos. Examen físico: FC 82 lpm, FR 16 rpm, PA 120/80 mmHg, T 36.8 °C; paciente alerta, examen neurológico normal, sin signos meníngeos ni déficit focal. Exámenes auxiliares: hemograma, glucosa, electrolitos, calcio y magnesio normales; TC cerebral sin contraste normal; EEG interictal sin descargas epileptiformes. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Iniciar fenitoína intravenosa y mantenerla por 2 años",
+      "B": "Observar, educar al paciente y no iniciar anticonvulsivante de rutina",
+      "C": "Iniciar ácido valproico oral por 2 años",
+      "D": "Solicitar resonancia magnética y luego iniciar carbamazepina"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta correcta es observar, educar y no iniciar anticonvulsivante de rutina, porque se trata de una primera crisis no provocada con examen neurológico, neuroimagen y EEG normales, y el riesgo de recurrencia en los primeros dos años es menor al 50%, de modo que el tratamiento profiláctico no se justifica por el balance riesgo-beneficio; las guías de la ILAE y las recomendaciones de MINSA y EsSalud señalan que tras una primera crisis no provocada sin factores de alto riesgo se puede optar por observación y educación sobre factores desencadenantes y conducción. La opción A es incorrecta porque iniciar fenitoína intravenosa y mantenerla por dos años expone a efectos adversos sin indicación; la opción C es incorrecta porque el ácido valproico oral por dos años no está indicado en un paciente con una sola crisis y EEG normal; la opción D es incorrecta porque solicitar resonancia magnética y luego iniciar carbamazepina omite que la neuroimagen inicial ya es normal y no hay diagnóstico de epilepsia que requiera fármaco."
+  },
+  {
+    "numero": 82,
+    "enunciado": "Varón de 40 años, con antecedente de epilepsia focal no tratada, es traído a emergencia por crisis convulsivas repetidas durante 10 minutos, sin recuperar la conciencia entre ellas. Examen físico: FC 120 lpm, FR 24 rpm, PA 140/90 mmHg, T 37.2 °C; paciente en fase tónico-clónica, cianosis perioral, mordedura lingual. Se asegura vía aérea, se administra oxígeno y se monitoriza. Exámenes auxiliares: glucemia 110 mg/dL, electrolitos normales; no se evidencia trauma. ¿Cuál es el fármaco de primera línea para el manejo de este estado epiléptico?",
+    "opciones": {
+      "A": "Diazepam intravenoso",
+      "B": "Fenitoína intravenosa",
+      "C": "Fenobarbital intramuscular",
+      "D": "Levetiracetam oral"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El fármaco de primera línea es diazepam intravenoso, porque en el estado epiléptico convulsivo las benzodiacepinas actúan rápidamente sobre los receptores GABA-A para detener la crisis, y las guías de práctica clínica de MINSA, EsSalud y la ILAE recomiendan una benzodiacepina como tratamiento inicial tras estabilizar la vía aérea, respiración y circulación. La opción B es incorrecta porque la fenitoína intravenosa se usa como fármaco de segunda línea después de las benzodiacepinas, no como primera elección; la opción C es incorrecta porque el fenobarbital intramuscular tiene inicio de acción lento y no es la vía ni el fármaco inicial en este escenario; la opción D es incorrecta porque el levetiracetam oral no es útil en un paciente con crisis activa que no puede deglutir y no tiene efecto inmediato."
+  },
+  {
+    "numero": 83,
+    "enunciado": "Lactante de 18 meses, natural de Cusco, sin antecedentes neurológicos, es llevado a consulta por convulsión generalizada de 5 minutos de duración durante un episodio de fiebre de 38.8 °C. La madre refiere que el niño estaba irritable y con rinorrea. Examen físico: FC 130 lpm, FR 28 rpm, PA 90/60 mmHg, T 38.5 °C; paciente alerta, examen neurológico normal, sin rigidez nucal, fontanela normotensa, otoscopia con otitis media aguda. Exámenes auxiliares: hemograma con leucocitos 12 000/mm³, glucosa y electrolitos normales. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Iniciar ácido valproico profiláctico",
+      "B": "Indicar diazepam rectal diario",
+      "C": "Tratar la fiebre y la infección, y observar sin anticonvulsivantes profilácticos",
+      "D": "Realizar punción lumbar en todos los casos"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La conducta correcta es tratar la fiebre y la infección de vías respiratorias y observar sin anticonvulsivantes profilácticos, porque se trata de una convulsión febril simple, generalizada, de menos de 15 minutos, en un lactante con examen neurológico normal y sin signos de meningitis, y las guías de MINSA, EsSalud y la Academia Americana de Pediatría no recomiendan tratamiento anticonvulsivante continuo ni intermitente para la convulsión febril simple. La opción A es incorrecta porque el ácido valproico profiláctico no está indicado y puede causar efectos adversos graves; la opción B es incorrecta porque el diazepam rectal diario no previene la primera convulsión y no se indica de rutina; la opción D es incorrecta porque la punción lumbar no es obligatoria en un niño de 18 meses con vacunación completa, sin signos meníngeos y con foco infeccioso identificado."
+  },
+  {
+    "numero": 84,
+    "enunciado": "Mujer de 35 años, procedente de zona rural de Huánuco, acude por crisis focales con generalización secundaria de 4 meses de evolución. Refiere cefalea intermitente y antecedente de convivencia con cerdos. Examen físico: FC 78 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.9 °C; examen neurológico normal, fondo de ojo sin papiledema. Exámenes auxiliares: ELISA para cisticercosis positivo; resonancia magnética cerebral muestra múltiples quistes con escólex en parénquima, sin edema perilesional significativo. ¿Cuál es el tratamiento más apropiado?",
+    "opciones": {
+      "A": "Solo anticonvulsivante",
+      "B": "Praziquantel más fenitoína",
+      "C": "Cirugía inmediata",
+      "D": "Albendazol más dexametasona más anticonvulsivante"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El tratamiento correcto es albendazol más dexametasona más anticonvulsivante, porque la neurocisticercosis parenquimatosa viable con múltiples quistes y escólex requiere tratamiento antiparasitario para eliminar los cisticercos, corticosteroides para controlar la reacción inflamatoria que puede desencadenar crisis y edema, y anticonvulsivantes para controlar las crisis epilépticas, según las guías de MINSA y la OMS para el manejo de la neurocisticercosis en zonas endémicas del Perú. La opción A es incorrecta porque solo administrar anticonvulsivante no trata la causa parasitaria y permite progresión; la opción B es incorrecta porque el praziquantel no es el antiparasitario de primera elección en este contexto y la fenitoína sola no cubre la inflamación; la opción C es incorrecta porque la cirugía inmediata se reserva para quistes intraventriculares, hidrocefalia o complicaciones, no para quistes parenquimatosos múltiples sin edema significativo."
+  },
+  {
+    "numero": 85,
+    "enunciado": "Mujer de 28 años, natural de Lima, sin antecedentes patológicos, consulta por dos episodios de pérdida de conciencia con movimientos tónico-clónicos generalizados, ocurridos con 6 meses de diferencia. No refiere fiebre, traumatismo craneal ni consumo de sustancias. Examen físico: FC 76 lpm, FR 16 rpm, PA 110/70 mmHg, T 36.6 °C; examen neurológico normal. Exámenes auxiliares: glucosa, electrolitos y función renal normales; resonancia magnética cerebral normal; EEG interictal con descargas de punta-onda generalizada. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Epilepsia",
+      "B": "Crisis febril",
+      "C": "Síncope convulsivo",
+      "D": "Crisis psicógena no epiléptica"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es epilepsia, porque la paciente presenta dos crisis no provocadas separadas por más de 24 horas, lo que cumple la definición operativa de epilepsia de la ILAE, y además el EEG muestra descargas epileptiformes generalizadas que apoyan el diagnóstico; las guías de MINSA y EsSalud consideran que dos crisis no provocadas en cualquier período establecen el diagnóstico de epilepsia y justifican iniciar tratamiento anticonvulsivante. La opción B es incorrecta porque la crisis febril ocurre en el contexto de fiebre y en edades pediátricas, y esta paciente no tiene fiebre; la opción C es incorrecta porque el síncope convulsivo se asocia a pródromos de hipoperfusión cerebral, recuperación rápida y no muestra descargas epileptiformes; la opción D es incorrecta porque las crisis psicógenas no epilépticas no presentan descargas epileptiformes en el EEG y suelen tener semiología atípica."
+  },
+  {
+    "numero": 86,
+    "enunciado": "Mujer de 25 años, con diagnóstico de epilepsia generalizada tónico-clónica desde los 18 años, acude a consulta preconcepcional porque desea embarazarse. Actualmente se encuentra libre de crisis con ácido valproico 500 mg cada 12 horas, pero refiere temor por efectos teratogénicos. Examen físico: FC 80 lpm, FR 16 rpm, PA 110/70 mmHg, T 36.5 °C; examen neurológico normal. Exámenes auxiliares: hemograma, función hepática y renal normales; EEG con descargas epileptiformes generalizadas. ¿Cuál es el fármaco más apropiado para cambiar su esquema terapéutico?",
+    "opciones": {
+      "A": "Ácido valproico",
+      "B": "Lamotrigina",
+      "C": "Fenitoína",
+      "D": "Carbamazepina"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El fármaco más apropiado es lamotrigina, porque en mujeres con epilepsia que planean embarazo se prefieren antiepilépticos con menor riesgo teratogénico, como lamotrigina o levetiracetam, y el ácido valproico está contraindicado por su asociación con malformaciones congénitas, trastornos del neurodesarrollo y menor coeficiente intelectual; las guías de MINSA, EsSalud y la ILAE recomiendan evitar valproato en mujeres en edad fértil y realizar un cambio planificado antes de la concepción. La opción A es incorrecta porque mantener ácido valproico expone al feto a alto riesgo teratogénico; la opción C es incorrecta porque la fenitoína también tiene riesgo teratogénico y no es de primera elección; la opción D es incorrecta porque la carbamazepina puede asociarse a defectos del tubo neural y no es la opción más segura en epilepsia generalizada."
+  },
+  {
+    "numero": 87,
+    "enunciado": "Niño de 8 años, natural de Arequipa, sin antecedentes patológicos, es llevado por episodios recurrentes de desconexión del medio de 10 a 15 segundos de duración, hasta 20 veces al día, en los que se queda con la mirada fija y no responde al llamado, sin caída ni convulsión. Examen físico: FC 90 lpm, FR 18 rpm, PA 100/60 mmHg, T 36.7 °C; examen neurológico normal. Exámenes auxiliares: hemograma y glucosa normales; EEG muestra descargas generalizadas de punta-onda a 3 Hz. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Epilepsia focal",
+      "B": "Crisis tónico-clónica generalizada",
+      "C": "Espasmos infantiles",
+      "D": "Epilepsia ausencia infantil"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es epilepsia ausencia infantil, porque el niño presenta episodios breves de desconexión, sin caída, con EEG característico de descargas generalizadas de punta-onda a 3 Hz, que es el hallazgo electroencefalográfico típico de este síndrome, y las guías de MINSA y EsSalud lo clasifican dentro de las epilepsias generalizadas idiopáticas de la infancia. La opción A es incorrecta porque la epilepsia focal produce crisis con semiología focal y descargas localizadas, no punta-onda generalizada a 3 Hz; la opción B es incorrecta porque la crisis tónico-clónica generalizada cursa con pérdida de conciencia, rigidez y convulsión, no con desconexión breve; la opción C es incorrecta porque los espasmos infantiles se presentan en lactantes con flexión o extensión súbita y EEG con hipsarritmia, no en un niño de 8 años con punta-onda a 3 Hz."
+  },
+  {
+    "numero": 88,
+    "enunciado": "Varón de 60 años, con antecedente de hipertensión arterial, consulta por episodios recurrentes de pérdida de conciencia de 3 meses de evolución. Refiere pródromo de mareo y visión borrosa, seguido de caída al suelo y movimientos clónicos breves de extremidades, con recuperación rápida y sin confusión postictal. Examen físico: FC 70 lpm, FR 16 rpm, PA 130/80 mmHg, T 36.5 °C; examen neurológico normal, soplo carotídeo derecho. Exámenes auxiliares: hemograma, glucosa y electrolitos normales; EEG interictal normal; ECG con bloqueo AV de segundo grado. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Epilepsia focal",
+      "B": "Síncope convulsivo",
+      "C": "Crisis generalizada tónico-clónica",
+      "D": "Estado epiléptico"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es síncope convulsivo, porque el paciente presenta pródromo de mareo y visión borrosa, pérdida de conciencia con movimientos clónicos breves, recuperación rápida sin confusión postictal y un ECG con bloqueo AV de segundo grado, lo que orienta a una causa cardíaca de hipoperfusión cerebral; el EEG interictal normal y la ausencia de confusión postictal diferencian este cuadro de una crisis epiléptica generalizada, según las guías de MINSA y EsSalud para el manejo del síncope. La opción A es incorrecta porque la epilepsia focal no explica el pródromo ni el bloqueo AV; la opción C es incorrecta porque la crisis generalizada tónico-clónica deja confusión postictal y no suele tener pródromo de mareo; la opción D es incorrecta porque el estado epiléptico implica crisis continuas o recurrentes sin recuperación, y este paciente se recupera completamente entre episodios."
+  },
+  {
+    "numero": 89,
+    "enunciado": "Niña de 10 años, natural de Trujillo, sin antecedentes patológicos, presenta episodios de desconexión del medio de 1 a 2 minutos, acompañados de movimientos de masticación y automatismos manuales, seguidos de confusión leve. No hay generalización tónico-clónica. Examen físico: FC 84 lpm, FR 18 rpm, PA 100/65 mmHg, T 36.6 °C; examen neurológico normal. Exámenes auxiliares: glucosa, electrolitos y hemograma normales; resonancia magnética cerebral normal; EEG con descargas focales en región temporal izquierda. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Ausencia típica",
+      "B": "Crisis tónico-clónica generalizada",
+      "C": "Crisis focal con alteración de la conciencia",
+      "D": "Espasmos infantiles"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El diagnóstico correcto es crisis focal con alteración de la conciencia, porque la niña presenta desconexión del medio con automatismos orales y manuales, seguida de confusión leve, y el EEG muestra descargas focales en región temporal izquierda, lo que corresponde a una crisis focal disperceptiva según la clasificación de la ILAE; las guías de MINSA y EsSalud denominan a este tipo de crisis como focal con alteración de la conciencia y recomiendan anticonvulsivantes según el foco. La opción A es incorrecta porque la ausencia típica es generalizada, breve, sin automatismos y con punta-onda a 3 Hz; la opción B es incorrecta porque la crisis tónico-clónica generalizada presenta fase tónica y clónica con pérdida de conciencia y no descargas focales temporales; la opción D es incorrecta porque los espasmos infantiles ocurren en lactantes y no cursan con automatismos orales ni descargas focales temporales."
+  },
+  {
+    "numero": 90,
+    "enunciado": "Varón de 45 años, con epilepsia focal sintomática, ingresa a emergencia en estado epiléptico. Recibe diazepam intravenoso en dos dosis y fenitoína intravenosa a dosis de carga, pero persiste con crisis convulsivas continuas. Examen físico: FC 130 lpm, FR 28 rpm, PA 150/90 mmHg, T 37.8 °C; paciente intubado, monitorizado, con saturación de oxígeno 95%. Exámenes auxiliares: glucemia 120 mg/dL, electrolitos y función renal normales; EEG muestra actividad epileptiforme continua. ¿Cuál es el siguiente paso más apropiado?",
+    "opciones": {
+      "A": "Aumentar la dosis de fenitoína",
+      "B": "Iniciar midazolam en infusión continua y monitorizar con EEG",
+      "C": "Administrar otro bolo de diazepam",
+      "D": "Dar de alta con anticonvulsivantes orales"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Neurología",
+    "tema": "Epilepsia y Convulsiones",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El siguiente paso más apropiado es iniciar midazolam en infusión continua y monitorizar con EEG, porque se trata de un estado epiléptico refractario que no respondió a benzodiacepina ni a fenitoína, y las guías de MINSA, EsSalud y la ILAE recomiendan en esta fase el uso de fármacos anestésicos en infusión continua, como midazolam, propofol o tiopental, con monitorización electroencefalográfica continua para titular la dosis y evitar crisis subclínicas. La opción A es incorrecta porque aumentar la fenitoína no tiene beneficio adicional una vez que se alcanzó dosis de carga y el paciente persiste en crisis; la opción C es incorrecta porque administrar otro bolo de diazepam no modifica el estado refractario y puede causar depresión respiratoria; la opción D es incorrecta porque el alta con anticonvulsivantes orales es peligrosa en un paciente que continúa en estado epiléptico."
+  },
+  {
+    "numero": 91,
+    "enunciado": "Varón de 45 años, natural de Lima, con antecedente de trastorno de ansiedad, es traído a emergencia por somnolencia progresiva y dificultad respiratoria. Refiere que ingirió varias tabletas de diazepam hace 2 horas. Examen físico: FC 88 lpm, FR 10 rpm, PA 100/60 mmHg, T 36.5 °C; paciente somnoliento, pupilas normales, reflejos osteotendinosos disminuidos, saturación de oxígeno 88% al aire ambiente. Exámenes auxiliares: glucosa 95 mg/dL, electrolitos normales, tóxicos en orina positivos para benzodiacepinas. ¿Cuál es el antídoto específico para este cuadro?",
+    "opciones": {
+      "A": "Naloxona",
+      "B": "Flumazenil",
+      "C": "Atropina",
+      "D": "Pralidoxima"
+    },
+    "respuesta": "B",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El antídoto específico es flumazenil, un antagonista competitivo del sitio benzodiacepínico del complejo receptor GABA-A que revierte rápidamente la sedación y la depresión respiratoria inducidas por benzodiacepinas, como el diazepam; su uso está respaldado por el Petitorio Nacional Único de Medicamentos Esenciales del MINSA y por textos de farmacología clínica. La opción A es incorrecta porque la naloxona antagoniza opioides y no benzodiacepinas; la opción C es incorrecta porque la atropina se emplea en intoxicación por organofosforados o bradicardia, no en sobredosis de benzodiacepinas; la opción D es incorrecta porque la pralidoxima reactiva la acetilcolinesterasa en intoxicación por organofosforados, sin acción sobre el receptor GABA-A."
+  },
+  {
+    "numero": 92,
+    "enunciado": "Mujer de 30 años con epilepsia focal, en tratamiento con fenitoína 300 mg/día. Acude a control refiriendo aumento de volumen de encías y aparición de vello facial. Examen físico: FC 76 lpm, FR 16 rpm, PA 110/70 mmHg, T 36.6 °C; hipertrofia gingival generalizada, hirsutismo facial leve, nistagmo horizontal. Exámenes auxiliares: niveles de fenitoína 25 µg/mL (rango terapéutico 10-20 µg/mL). ¿Cuál es el mecanismo de acción de la fenitoína?",
+    "opciones": {
+      "A": "Potenciación de canales de calcio tipo T",
+      "B": "Inhibición de la recaptura de serotonina",
+      "C": "Bloqueo de canales de sodio voltaje dependientes",
+      "D": "Antagonismo de receptores GABA-A"
+    },
+    "respuesta": "C",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La fenitoína ejerce su efecto antiepiléptico mediante el bloqueo de canales de sodio dependientes de voltaje, lo que estabiliza la membrana neuronal y limita la propagación de descargas repetitivas; este mecanismo es clásico en fármacos antiepilépticos de primera generación y se describe en el Petitorio Nacional Único de Medicamentos Esenciales del MINSA y en farmacología básica. La opción A es incorrecta porque la potenciación de canales de calcio tipo T corresponde a la etosuximida, usada en ausencias; la opción B es incorrecta porque la inhibición de la recaptura de serotonina es el mecanismo de los antidepresivos ISRS; la opción D es incorrecta porque el antagonismo de receptores GABA-A produciría efectos convulsivantes, no anticonvulsivantes."
+  },
+  {
+    "numero": 93,
+    "enunciado": "Varón de 25 años, sin antecedentes patológicos, es traído a emergencia por presentar miosis puntiforme, depresión respiratoria y coma. Refiere que consumió heroína en una reunión. Examen físico: FC 60 lpm, FR 6 rpm, PA 90/60 mmHg, T 36.2 °C; paciente cianótico, saturación de oxígeno 78%, pupilas mióticas, sin respuesta al dolor. Exámenes auxiliares: glucemia 100 mg/dL, gases arteriales con hipercapnia. ¿Cuál es el tratamiento de elección?",
+    "opciones": {
+      "A": "Flumazenil",
+      "B": "Atropina",
+      "C": "Bicarbonato de sodio",
+      "D": "Naloxona"
+    },
+    "respuesta": "D",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El tratamiento de elección es naloxona, un antagonista competitivo de los receptores opioides que revierte rápidamente la triada de miosis, depresión respiratoria y coma por intoxicación con heroína; su disponibilidad y uso están contemplados en el Petitorio Nacional Único de Medicamentos Esenciales del MINSA y en guías de toxicología. La opción A es incorrecta porque el flumazenil antagoniza benzodiacepinas, no opioides; la opción B es incorrecta porque la atropina se usa en intoxicación por organofosforados o bradicardia; la opción C es incorrecta porque el bicarbonato de sodio se emplea en intoxicación por antidepresivos tricíclicos con QRS ancho, no en sobredosis de opioides."
+  },
+  {
+    "numero": 94,
+    "enunciado": "Mujer de 28 años, con antecedente de depresión, es traída a emergencia 3 horas después de ingerir 20 tabletas de amitriptilina. Examen físico: FC 120 lpm, FR 24 rpm, PA 100/60 mmHg, T 37.0 °C; paciente confusa, mucosas secas, midriasis, reflejos aumentados. ECG: QRS de 120 ms, taquicardia sinusal. Exámenes auxiliares: gasometría con acidosis metabólica leve. ¿Cuál es el tratamiento específico más apropiado?",
+    "opciones": {
+      "A": "Flumazenil intravenoso",
+      "B": "Bicarbonato de sodio intravenoso",
+      "C": "Naloxona intravenosa",
+      "D": "Fisostigmina intravenosa"
+    },
+    "respuesta": "B",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El tratamiento específico es bicarbonato de sodio intravenoso, porque en la intoxicación por antidepresivos tricíclicos como la amitriptilina el bloqueo de canales de sodio cardíacos produce QRS ancho y arritmias, y el bicarbonato revierte este efecto al aumentar el pH sérico y disminuir la unión del fármaco al canal; esta conducta se respalda en guías de toxicología y en el manejo de emergencias del MINSA. La opción A es incorrecta porque el flumazenil no tiene acción sobre tricíclicos; la opción C es incorrecta porque la naloxona se usa en opioides; la opción D es incorrecta porque la fisostigmina puede agravar la cardiotoxicidad y no es de primera línea en este contexto."
+  },
+  {
+    "numero": 95,
+    "enunciado": "Varón de 22 años, sin antecedentes, es llevado a emergencia por presentar desviación forzada de la cabeza hacia la derecha y espasmo de músculos oculares 2 horas después de recibir haloperidol intramuscular por agitación. Examen físico: FC 110 lpm, FR 20 rpm, PA 120/80 mmHg, T 36.8 °C; tortícolis espasmódica, crisis oculógira, conciencia conservada. Exámenes auxiliares: hemograma y electrolitos normales. ¿Cuál es el tratamiento de elección para esta reacción adversa?",
+    "opciones": {
+      "A": "Diazepam oral",
+      "B": "Propranolol oral",
+      "C": "Biperideno intramuscular",
+      "D": "Haloperidol en dosis mayor"
+    },
+    "respuesta": "C",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El tratamiento de elección es biperideno intramuscular, un anticolinérgico central que revierte la distonía aguda inducida por antipsicóticos típicos como el haloperidol, al restablecer el equilibrio dopamina-acetilcolina en los ganglios basales; esta reacción adversa es frecuente y su manejo con anticolinérgicos está descrito en guías de psicofarmacología y en el Petitorio Nacional Único de Medicamentos Esenciales del MINSA. La opción A es incorrecta porque el diazepam puede ser adyuvante pero no es el tratamiento de primera línea; la opción B es incorrecta porque el propranolol se usa para acatisia o temblor, no para distonía aguda; la opción D es incorrecta porque aumentar haloperidol agravaría la distonía."
+  },
+  {
+    "numero": 96,
+    "enunciado": "Mujer de 68 años con enfermedad de Parkinson en tratamiento con levodopa/carbidopa. Acude a control refiriendo mejoría de la rigidez y bradicinesia, pero pregunta por qué debe tomar carbidopa junto con levodopa. Examen físico: FC 80 lpm, FR 16 rpm, PA 120/70 mmHg, T 36.5 °C; temblor en reposo leve, sin discinesias. Exámenes auxiliares: función hepática y renal normales. ¿Cuál es el principal efecto de la carbidopa en esta combinación?",
+    "opciones": {
+      "A": "Bloquear receptores dopaminérgicos centrales",
+      "B": "Inhibir la monoaminooxidasa tipo B",
+      "C": "Estimular la liberación de dopamina presináptica",
+      "D": "Inhibir la descarboxilasa periférica para aumentar levodopa en el SNC"
+    },
+    "respuesta": "D",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La carbidopa inhibe la descarboxilasa de aminoácidos aromáticos en la periferia, impidiendo que la levodopa se convierta en dopamina fuera del sistema nervioso central; así aumenta la cantidad de levodopa que atraviesa la barrera hematoencefálica y reduce náuseas y efectos adversos periféricos, mecanismo descrito en farmacología clínica y en guías de manejo de la enfermedad de Parkinson. La opción A es incorrecta porque bloquear receptores dopaminérgicos centrales agravaría el parkinsonismo; la opción B es incorrecta porque la inhibición de la MAO-B corresponde a la selegilina; la opción C es incorrecta porque la estimulación de la liberación de dopamina presináptica es propia de la amantadina."
+  },
+  {
+    "numero": 97,
+    "enunciado": "Varón de 75 años con diagnóstico de enfermedad de Alzheimer leve, iniciado en donepezilo 5 mg/día. Acude a control con mejoría subjetiva de memoria. Examen físico: FC 72 lpm, FR 16 rpm, PA 130/80 mmHg, T 36.5 °C; examen neurológico sin focalidad. Exámenes auxiliares: hemograma, función hepática y renal normales. ¿Cuál es el mecanismo de acción del donepezilo?",
+    "opciones": {
+      "A": "Antagonismo de receptores NMDA",
+      "B": "Inhibición de la acetilcolinesterasa central",
+      "C": "Inhibición de la recaptura de noradrenalina",
+      "D": "Bloqueo de canales de calcio tipo L"
+    },
+    "respuesta": "B",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El donepezilo es un inhibidor reversible y selectivo de la acetilcolinesterasa central, que aumenta la concentración de acetilcolina en la hendidura sináptica y mejora transitoriamente los síntomas cognitivos en la enfermedad de Alzheimer; este mecanismo está descrito en guías de práctica clínica y en el Petitorio Nacional Único de Medicamentos Esenciales del MINSA. La opción A es incorrecta porque el antagonismo de receptores NMDA corresponde a la memantina; la opción C es incorrecta porque la inhibición de la recaptura de noradrenalina es propia de antidepresivos como la venlafaxina; la opción D es incorrecta porque el bloqueo de canales de calcio tipo L no es el mecanismo de los fármacos anticolinesterásicos."
+  },
+  {
+    "numero": 98,
+    "enunciado": "Mujer de 35 años con migraña sin aura, acude por crisis migrañosa severa. Se le indica sumatriptán subcutáneo. Examen físico: FC 88 lpm, FR 18 rpm, PA 120/80 mmHg, T 36.7 °C; examen neurológico normal. Exámenes auxiliares: ECG normal, sin antecedentes cardiovasculares. ¿Cuál es el mecanismo de acción del sumatriptán?",
+    "opciones": {
+      "A": "Antagonismo de receptores dopaminérgicos D2",
+      "B": "Bloqueo de canales de sodio voltaje dependientes",
+      "C": "Agonismo de receptores serotoninérgicos 5-HT1B/1D",
+      "D": "Inhibición de la ciclooxigenasa tipo 2"
+    },
+    "respuesta": "C",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El sumatriptán es un agonista selectivo de los receptores serotoninérgicos 5-HT1B/1D, que produce vasoconstricción de los vasos meníngeos y inhibe la liberación de péptido relacionado con el gen de la calcitonina, aliviando la migraña; este mecanismo se describe en guías de cefaleas y en farmacología clínica. La opción A es incorrecta porque el antagonismo dopaminérgico D2 corresponde a antieméticos como la metoclopramida; la opción B es incorrecta porque el bloqueo de canales de sodio es propio de antiepilépticos y anestésicos locales; la opción D es incorrecta porque la inhibición de la COX-2 corresponde a antiinflamatorios como el celecoxib."
+  },
+  {
+    "numero": 99,
+    "enunciado": "Varón de 50 años, con antecedente de consumo crónico de alcohol, ingresa a emergencia por temblor, sudoración, agitación y una crisis convulsiva tónico-clónica generalizada. Examen físico: FC 120 lpm, FR 24 rpm, PA 150/90 mmHg, T 37.2 °C; paciente desorientado, temblor grueso, alucinaciones visuales. Exámenes auxiliares: glucemia 90 mg/dL, electrolitos con hipomagnesemia leve, hemograma sin leucocitosis. ¿Cuál es el fármaco de elección para el manejo de esta condición?",
+    "opciones": {
+      "A": "Diazepam intravenoso",
+      "B": "Haloperidol intravenoso",
+      "C": "Clonidina oral",
+      "D": "Naltrexona oral"
+    },
+    "respuesta": "A",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "El fármaco de elección es diazepam intravenoso, porque las benzodiacepinas son el pilar del tratamiento de la abstinencia alcohólica y del delirium tremens, ya que restauran la actividad GABA-A y previenen convulsiones y progresión a complicaciones graves; esta recomendación está en guías de práctica clínica de MINSA y EsSalud y en el Petitorio Nacional Único de Medicamentos Esenciales. La opción B es incorrecta porque el haloperidol puede reducir alucinaciones pero no controla convulsiones y disminuye el umbral convulsivo; la opción C es incorrecta porque la clonidina solo alivia síntomas autonómicos y no previene convulsiones; la opción D es incorrecta porque la naltrexona se usa para mantenimiento de la abstinencia, no en fase aguda."
+  },
+  {
+    "numero": 100,
+    "enunciado": "Paciente de 40 años, sin antecedentes, acude a consulta odontológica para extracción de molar. Se le administra lidocaína al 2% con epinefrina. Durante el procedimiento presenta bloqueo sensitivo y motor local. Examen físico: FC 76 lpm, FR 16 rpm, PA 120/80 mmHg, T 36.5 °C; paciente consciente, sin efectos sistémicos. ¿Cuál es el mecanismo de acción de la lidocaína?",
+    "opciones": {
+      "A": "Agonismo de receptores GABA-A",
+      "B": "Inhibición de canales de potasio",
+      "C": "Antagonismo de receptores adrenérgicos beta",
+      "D": "Bloqueo de canales de sodio voltaje dependientes"
+    },
+    "respuesta": "D",
+    "area": "Básicas",
+    "especialidad": "Farmacología",
+    "tema": "Fármacos del SNC",
+    "dificultad": "Básica",
+    "estado": "activa",
+    "explicacion": "La lidocaína es un anestésico local que bloquea los canales de sodio dependientes de voltaje en las membranas nerviosas, impidiendo la despolarización y la conducción del impulso sensitivo y motor; este mecanismo es fundamental en anestesia local y se describe en farmacología básica y en el Petitorio Nacional Único de Medicamentos Esenciales del MINSA. La opción A es incorrecta porque el agonismo GABA-A corresponde a benzodiacepinas y barbitúricos; la opción B es incorrecta porque la inhibición de canales de potasio no es el mecanismo de los anestésicos locales; la opción C es incorrecta porque el antagonismo beta-adrenérgico es propio de fármacos como el propranolol, sin relación con la anestesia local."
+  }
+]

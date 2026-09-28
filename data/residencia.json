@@ -1551,10 +1551,10 @@
     "respuesta": "C",
     "id": "CONAREME_2026_B_078",
     "area": "Medicina",
-    "especialidad": "Neurología",
-    "tema": "Cefaleas",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
     "dificultad": "Media",
-    "explicacion": "",
+    "explicacion": "En este paciente con policitemia vera JAK2-positiva (cefalea, mareo, acúfenos, rubicundez, eritromelalgia, hematomas, Hb 19 g/dl, leucocitosis y eritropoyetina disminuida), ante alto riesgo trombótico está indicada la hidroxiurea (C) porque es el citorreductor de primera línea que reduce el riesgo de trombosis junto con flebotomías para mantener hematocrito <45% y ácido acetilsalicílico en dosis baja, mientras que se descartan alopurinol (A) y febuxostat (B) porque solo manejan hiperuricemia sin modificar la enfermedad mieloproliferativa, y clopidogrel (D) porque no es el antiagregante de elección ni un citorreductor.",
     "estado": "activa",
     "frecuencia": "media",
     "respuesta_correcta": "C"

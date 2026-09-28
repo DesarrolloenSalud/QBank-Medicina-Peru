@@ -3398,5 +3398,345 @@
     "dificultad": "Baja",
     "estado": "activa",
     "explicacion": "En pacientes con PV de bajo riesgo el manejo inicial consiste en flebotomía terapéutica para mantener hematocrito <45% más aspirina en dosis baja como profilaxis antitrombótica; la hidroxiurea (B) se reserva para alto riesgo (mayores de 60 años o con trombosis previa); el ruxolitinib (C) está indicado en intolerantes o resistentes a hidroxiurea; y la observación sola (D) es inadecuada porque todos los pacientes con PV requieren flebotomía y antiagregación."
+  },
+  {
+    "numero": 201,
+    "enunciado": "Lactante de 8 meses, procedente de Piura, acude por palidez marcada, ictericia y episodios recurrentes de llanto intenso con flexión de extremidades. Al examen: temperatura 37.8°C, frecuencia cardíaca 150 por minuto, frecuencia respiratoria 40 por minuto, saturación de oxígeno 96%, palidez conjuntival marcada, esplenomegalia de 3 cm bajo el borde costal y leve edema de manos y pies. Hemoglobina: 6.8 g/dL, reticulocitos: 12%, frotis: drepanocitos abundantes. Ante la sospecha de enfermedad de células falciformes, ¿cuál es el estudio diagnóstico de elección para confirmar el genotipo?",
+    "opciones": {
+      "A": "Electroforesis de hemoglobina en acetato de celulosa",
+      "B": "Prueba de solubilidad con metabisulfito de sodio",
+      "C": "Cuantificación de hemoglobina fetal mediante HPLC",
+      "D": "Estudio molecular por reacción en cadena de polimerasa"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La electroforesis de hemoglobina en acetato de celulosa es el método estándar inicial para separar y cuantificar las fracciones de hemoglobina (Hb A, Hb S, Hb F, Hb C) y confirmar el patrón característico de la drepanocitosis, tal como lo recomienda el Manual Latinoamericano de Laboratorio de Hemoglobinopatías y el ICSH utilizados en el Perú. La prueba de solubilidad con metabisulfito detecta la presencia de Hb S pero no distingue entre rasgo y enfermedad, por lo que es un tamizaje insuficiente como confirmación. La cuantificación de Hb F por HPLC es útil para el seguimiento o para diagnosticar talasemias, pero no identifica la variante estructural S. El estudio molecular por PCR confirma mutaciones puntuales, pero es de mayor complejidad y costo, reservado para diagnóstico prenatal o casos dudosos, no como primera línea en un lactante sintomático."
+  },
+  {
+    "numero": 202,
+    "enunciado": "Niño de 5 años con diagnóstico de anemia falciforme acude a emergencia por dolor abdominal intenso, fiebre de 38.5°C y dificultad respiratoria de 6 horas de evolución. Examen: frecuencia respiratoria 45 por minuto, saturación de oxígeno 88%, crepitantes bibasales, dolor a la palpación abdominal difusa. Radiografía de tórax: infiltrados alveolares bilaterales nuevos. Hemoglobina: 7.2 g/dL. ¿Cuál es el manejo inicial más apropiado para este cuadro?",
+    "opciones": {
+      "A": "Transfusión simple de glóbulos rojos para llevar hemoglobina a 10 g/dL",
+      "B": "Antibióticos de amplio espectro, oxígeno suplementario e hidratación endovenosa",
+      "C": "Iniciar hidroxiurea a dosis de 15 mg/kg/día por vía oral",
+      "D": "Administrar ácido fólico 5 mg/día y analgesia con paracetamol"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a un síndrome torácico agudo, complicación grave de la drepanocitosis que requiere manejo inmediato con antibioterapia de amplio espectro (por alta sospecha de infección por Streptococcus pneumoniae y otros gérmenes), oxigenoterapia para corregir la hipoxemia y hidratación endovenosa cautelosa para mantener el flujo microvascular sin precipitar edema pulmonar, tal como establece el manejo de soporte de la drepanocitosis descrito en guías como la de EsSalud. La transfusión simple no es el tratamiento inicial de elección en un paciente con hemoglobina de 7.2 g/dL sin datos de insuficiencia cardíaca o hipoxemia refractaria, y podría aumentar la viscosidad sanguínea. La hidroxiurea es una terapia de mantenimiento para prevenir crisis, no un tratamiento de la fase aguda. El ácido fólico y la analgesia con paracetamol son medidas coadyuvantes insuficientes ante un evento potencialmente fatal como el síndrome torácico agudo."
+  },
+  {
+    "numero": 203,
+    "enunciado": "Mujer de 28 años, natural de Chincha, asintomática, acude a control prenatal a las 12 semanas de gestación. Su pareja es de la misma localidad. En el hemograma rutinario: hemoglobina 11.8 g/dL, VCM 76 fL, HCM 25 pg, ferritina normal. Ante la sospecha de rasgo falciforme en ambos progenitores, ¿qué conducta es más apropiada en esta pareja?",
+    "opciones": {
+      "A": "Indicar suplemento de hierro oral a la gestante y control hematológico en 3 meses",
+      "B": "Solicitar electroforesis de hemoglobina a ambos progenitores y ofrecer consejo genético",
+      "C": "Realizar prueba de solubilidad con metabisulfito a la gestante únicamente",
+      "D": "Programar cordocentesis para diagnóstico fetal de drepanocitosis inmediato"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Ante la sospecha de rasgo falciforme en una pareja con microcitosis e hipocromía sin ferropenia, el paso inicial es confirmar el estado de portador mediante electroforesis de hemoglobina en ambos progenitores, ya que si ambos son portadores el riesgo de descendencia con enfermedad de células falciformes es del 25%. Este estudio permite diferenciar el rasgo de otras hemoglobinopatías y es la base del consejo genético, tal como recomienda la OMS y el Manual Latinoamericano de Laboratorio de Hemoglobinopatías. La suplementación con hierro no está indicada con ferritina normal y no aborda la hemoglobinopatía subyacente. La prueba de solubilidad es un tamizaje que no distingue entre rasgo y enfermedad y no debe usarse como único estudio. La cordocentesis es un procedimiento invasivo reservado para diagnóstico prenatal cuando ambos progenitores son portadores confirmados y la pareja decide continuar el estudio, no como primera conducta."
+  },
+  {
+    "numero": 204,
+    "enunciado": "Paciente varón de 22 años, procedente de Ica, con diagnóstico conocido de anemia falciforme (Hb SS), acude por dolor en extremidades y espalda de 24 horas de evolución que no cede con paracetamol. Refiere haber tenido episodios similares en el último año. Examen: temperatura 37.2°C, frecuencia cardíaca 100 por minuto, saturación de oxígeno 97%, ictericia escleral leve, extremidades sin signos de trombosis. Hemoglobina: 8.5 g/dL, leucocitos: 12,000/mm³. ¿Cuál es el manejo inicial más adecuado para este episodio?",
+    "opciones": {
+      "A": "Transfusión de glóbulos rojos para mantener hemoglobina mayor de 9 g/dL",
+      "B": "Hidratación endovenosa, analgesia con opioides y oxígeno suplementario",
+      "C": "Iniciar antibióticos endovenosos de amplio espectro",
+      "D": "Administrar corticosteroides en dosis altas por 48 horas"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a una crisis vaso-oclusiva dolorosa no complicada, cuyo manejo inicial se basa en hidratación endovenosa (para reducir la viscosidad sanguínea y mejorar el flujo microvascular), analgesia escalonada con opioides (la morfina o derivados son el pilar para el dolor moderado a severo) y oxígeno suplementario si la saturación está por debajo de lo normal, medidas recomendadas por guías como la de EsSalud y el Manual MSD. La transfusión no está indicada de rutina en crisis dolorosa no complicada sin anemia sintomática grave ni síndrome torácico agudo; podría aumentar la viscosidad. Los antibióticos se reservan para sospecha de infección bacteriana grave, que no es el caso (paciente afebril). Los corticosteroides no tienen un rol establecido en el manejo de crisis vaso-oclusivas y su uso indiscriminado puede ser perjudicial."
+  },
+  {
+    "numero": 205,
+    "enunciado": "Niño de 2 años con anemia falciforme (Hb SS) acude a control ambulatorio. Está asintomático, con adecuada ganancia pondoestatural. Examen: palidez leve, esplenomegalia de 2 cm, sin signos de insuficiencia cardíaca. Hemograma: hemoglobina 8.9 g/dL, reticulocitos 8%, leucocitos 9,500/mm³, plaquetas 250,000/mm³. ¿Qué medida de prevención de complicaciones está indicada de forma sistemática en este paciente?",
+    "opciones": {
+      "A": "Penicilina V oral profiláctica hasta los 5 años y vacunación completa",
+      "B": "Transfusiones programadas cada 4 semanas para mantener hemoglobina mayor de 10 g/dL",
+      "C": "Esplenectomía profiláctica antes de los 3 años",
+      "D": "Hidroxiurea a dosis de 30 mg/kg/día de inicio"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Los niños con anemia falciforme presentan asplenia funcional progresiva, lo que los hace altamente susceptibles a infecciones por bacterias encapsuladas, especialmente Streptococcus pneumoniae. La profilaxis con penicilina V oral hasta al menos los 5 años, junto con el esquema completo de vacunación (incluyendo antineumocócica conjugada y antimeningocócica), es la medida preventiva fundamental y está recomendada por el MINSA y las guías internacionales. Las transfusiones programadas no se indican de forma sistemática por el riesgo de sobrecarga de hierro y aloimmunización. La esplenectomía profiláctica no está indicada en todos los pacientes y se reserva para casos con secuestro esplénico recurrente o complicaciones específicas. La hidroxiurea se considera en pacientes con crisis frecuentes o complicaciones, pero la dosis inicial recomendada es de 15-20 mg/kg/día, no 30 mg/kg/día, y no es la primera medida preventiva en un paciente asintomático."
+  },
+  {
+    "numero": 206,
+    "enunciado": "Mujer de 32 años acude por cuadro de anemia microcítica hipocrómica de larga data, con antecedente familiar de anemia en varios miembros. Hemograma: hemoglobina 10.2 g/dL, VCM 68 fL, HCM 22 pg, hierro sérico normal, ferritina normal, electroforesis de hemoglobina: Hb A2 elevada (5.5%). ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Rasgo falciforme (Hb AS)",
+      "B": "Beta-talasemia menor",
+      "C": "Anemia por deficiencia de hierro",
+      "D": "Alfa-talasemia mayor"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La presencia de anemia microcítica hipocrómica con ferritina y hierro sérico normales, junto con una Hb A2 elevada (por encima del 3.5%) en la electroforesis, es el hallazgo característico de la beta-talasemia menor (rasgo beta-talasémico), que en el Perú es la segunda hemoglobinopatía más frecuente después de la Hb S, según los estudios del Hospital Rebagliati. El rasgo falciforme (Hb AS) no produce anemia significativa ni microcitosis marcada, y en la electroforesis mostraría una banda de Hb S además de Hb A. La anemia por deficiencia de hierro cursa con ferritina baja, lo que no ocurre en este caso. La alfa-talasemia mayor es una entidad grave que se manifiesta en la infancia con anemia hemolítica severa e hidropesía fetal, no con este cuadro leve en una adulta."
+  },
+  {
+    "numero": 207,
+    "enunciado": "Niño de 6 años con anemia falciforme acude a emergencia por palidez marcada, letargo y fiebre de 39°C. Examen: frecuencia cardíaca 160 por minuto, frecuencia respiratoria 30 por minuto, saturación de oxígeno 94%, esplenomegalia de 6 cm bajo el borde costal (previamente 3 cm), sin signos de focalización infecciosa. Hemoglobina: 4.2 g/dL (previa: 8.5 g/dL), reticulocitos: 1.5%. ¿Cuál es la complicación más probable y el manejo inmediato?",
+    "opciones": {
+      "A": "Crisis aplásica; transfusión de glóbulos rojos urgente y soporte",
+      "B": "Síndrome torácico agudo; antibióticos y oxígeno",
+      "C": "Secuestro esplénico; transfusión de glóbulos rojos y observación",
+      "D": "Crisis vaso-oclusiva; hidratación y analgesia"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La caída brusca de la hemoglobina (de 8.5 a 4.2 g/dL) con reticulocitos bajos (1.5%) en un niño con anemia falciforme y fiebre es altamente sugestiva de crisis aplásica, generalmente desencadenada por una infección por parvovirus B19, que suprime transitoriamente la eritropoyesis. El manejo inmediato es la transfusión de glóbulos rojos para corregir la anemia severa sintomática y el soporte hemodinámico. El síndrome torácico agudo cursa con infiltrados pulmonares y dificultad respiratoria, no necesariamente con reticulocitopenia. El secuestro esplénico se presenta con esplenomegalia aguda dolorosa y shock, pero habitualmente con reticulocitosis, no con reticulocitopenia. La crisis vaso-oclusiva no produce anemia aguda severa con reticulocitopenia."
+  },
+  {
+    "numero": 208,
+    "enunciado": "Paciente varón de 18 años con diagnóstico de anemia falciforme acude a consulta externa para evaluación. Refiere haber presentado 4 episodios de dolor en extremidades en el último año que requirieron hospitalización. Está en tratamiento con ácido fólico. Examen: hemoglobina 8.8 g/dL, leucocitos 8,200/mm³, plaquetas 310,000/mm³, función renal y hepática normales. ¿Qué terapia de mantenimiento está indicada para reducir la frecuencia de crisis?",
+    "opciones": {
+      "A": "Hidroxiurea 15-20 mg/kg/día por vía oral",
+      "B": "Penicilina V oral 250 mg cada 12 horas",
+      "C": "Transfusiones simples cada 3 semanas",
+      "D": "Ácido fólico 10 mg/día y hierro oral"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hidroxiurea es el fármaco de elección para reducir la frecuencia de crisis vaso-oclusivas, síndrome torácico agudo y hospitalizaciones en pacientes con anemia falciforme que presentan crisis recurrentes, como este caso con 4 episodios en un año. Actúa induciendo la síntesis de hemoglobina fetal (Hb F), que inhibe la polimerización de la Hb S. La dosis inicial recomendada es de 15-20 mg/kg/día, con ajuste posterior según toxicidad y respuesta, tal como establecen las guías internacionales y las recomendaciones para el manejo de la drepanocitosis. La penicilina profiláctica está indicada en niños pequeños para prevenir infecciones neumocócicas, no para reducir crisis dolorosas en un adolescente. Las transfusiones crónicas se reservan para complicaciones específicas (ictus, síndrome torácico agudo recurrente) y conllevan riesgo de sobrecarga de hierro. El ácido fólico es un suplemento necesario pero no reduce la frecuencia de crisis, y el hierro no está indicado con ferritina normal."
+  },
+  {
+    "numero": 209,
+    "enunciado": "Mujer de 24 años, procedente de la costa norte del Perú, con antecedente de anemia falciforme, acude a emergencia por dolor torácico pleurítico, fiebre de 38.2°C y tos seca de 12 horas de evolución. Examen: frecuencia respiratoria 32 por minuto, saturación de oxígeno 90%, crepitantes en base derecha, sin signos de trombosis venosa profunda. Radiografía de tórax: infiltrado alveolar en lóbulo inferior derecho. ¿Cuál es la conducta inmediata más apropiada?",
+    "opciones": {
+      "A": "Antibióticos de amplio espectro, oxígeno y evaluación para transfusión",
+      "B": "Hidratación oral y analgesia con antiinflamatorios no esteroideos",
+      "C": "Iniciar hidroxiurea a dosis de 20 mg/kg/día",
+      "D": "Realizar espirometría para descartar asma bronquial"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro es compatible con un nuevo episodio de síndrome torácico agudo, que se define por la aparición de un infiltrado pulmonar nuevo en un paciente con anemia falciforme, acompañado de fiebre, dolor torácico y dificultad respiratoria. El manejo inmediato incluye antibioterapia de amplio espectro (para cubrir neumococo, Mycoplasma, Chlamydia y otros), oxigenoterapia para mantener saturación >92% y evaluación para transfusión (simple o de intercambio) si hay hipoxemia progresiva o afectación multilobar, según las recomendaciones de las guías de manejo de drepanocitosis. La hidratación oral y los AINE no son suficientes ante un evento potencialmente mortal. La hidroxiurea es un tratamiento de mantenimiento, no de la fase aguda. La espirometría está contraindicada en un paciente con distress respiratorio agudo y no aborda la causa del cuadro."
+  },
+  {
+    "numero": 210,
+    "enunciado": "Lactante de 4 meses, procedente de Lima, es traído por palidez progresiva desde el nacimiento. Examen: ictericia leve, hepatomegalia de 3 cm, esplenomegalia de 4 cm, sin dismorfias. Hemograma: hemoglobina 7.5 g/dL, VCM 65 fL, reticulocitos 6%, frotis: dianocitos y punteado basófilo. Electroforesis de hemoglobina: Hb F 85%, Hb A ausente, Hb A2 3.5%. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Beta-talasemia mayor",
+      "B": "Enfermedad de células falciformes (Hb SS)",
+      "C": "Alfa-talasemia mayor",
+      "D": "Anemia de Fanconi"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro de anemia microcítica grave de inicio temprano, con hepatosplenomegalia, ictericia y electroforesis que muestra ausencia de Hb A con Hb F elevada (85%) es característico de la beta-talasemia mayor (anemia de Cooley). Esta entidad se debe a mutaciones que impiden la síntesis de cadenas beta, lo que produce un exceso de cadenas alfa que precipitan y causan hemólisis intramedular y eritropoyesis ineficaz. El diagnóstico se confirma con electroforesis de hemoglobina que muestra Hb F marcadamente elevada y ausencia o mínima Hb A. La enfermedad de células falciformes (Hb SS) mostraría una banda de Hb S en la electroforesis, no ausencia de Hb A con Hb F elevada. La alfa-talasemia mayor (enfermedad por Hb H o hidropesía fetal) cursa con anemia hemolítica grave pero la electroforesis típicamente muestra Hb H o Hb Bart's, no este patrón. La anemia de Fanconi es una enfermedad de la médula ósea con pancitopenia y anomalías congénitas, no con este patrón electroforético."
+  },
+  {
+    "numero": 211,
+    "enunciado": "Varón de 16 años con anemia falciforme acude por dolor peneano intenso y erección mantenida de 4 horas de evolución que no cede. Refiere episodios similares autolimitados en los últimos meses. Examen: pene erecto, doloroso, sin signos de trauma; temperatura 37°C. Hemoglobina: 8.2 g/dL, leucocitos 9,000/mm³. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Analgesia con opioides, hidratación endovenosa y aspiración/irrigación del cuerpo cavernoso",
+      "B": "Administrar sildenafilo oral y observación por 2 horas",
+      "C": "Indicar hidroxiurea 20 mg/kg/día y control ambulatorio",
+      "D": "Realizar ecografía Doppler y programar cirugía diferida"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a priapismo isquémico, una complicación frecuente de la drepanocitosis que requiere manejo urgente. El priapismo isquémico se define por una erección dolorosa que persiste más de 4 horas y constituye una emergencia urológica. El manejo inicial incluye analgesia con opioides, hidratación endovenosa y aspiración/irrigación del cuerpo cavernoso con solución salina, medidas que buscan revertir la vaso-oclusión y prevenir fibrosis del cuerpo cavernoso, tal como recomiendan las guías de manejo de priapismo en drepanocitosis. El sildenafilo está contraindicado en el priapismo isquémico agudo porque puede prolongar la erección. La hidroxiurea es un tratamiento de mantenimiento para prevención de crisis, no de la fase aguda. La ecografía Doppler y la cirugía diferida no son conductas iniciales ante una emergencia que requiere descompresión inmediata."
+  },
+  {
+    "numero": 212,
+    "enunciado": "Mujer de 25 años con anemia falciforme (Hb SS) acude por úlcera dolorosa en tercio inferior de pierna derecha de 3 meses de evolución. Examen: úlcera de 4 cm de diámetro, bordes irregulares, fondo con tejido de granulación, sin signos de infección activa. Pulsos distales presentes. ¿Cuál es la medida inicial más adecuada para el manejo local de esta úlcera?",
+    "opciones": {
+      "A": "Curación con apósitos modernos y compresión venosa multicapa",
+      "B": "Desbridamiento quirúrgico amplio y injerto de piel inmediato",
+      "C": "Aplicación de nitrato de plata tópico y vendaje oclusivo seco",
+      "D": "Antibióticos sistémicos empíricos y reposo absoluto"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Las úlceras de pierna en la drepanocitosis son una complicación crónica que afecta al 5-10% de los pacientes homocigotos, con predominio en el tercio inferior de la pierna. El manejo local se realiza de forma similar al de las úlceras venosas e incluye curación con apósitos modernos que mantengan un ambiente húmedo y compresión venosa multicapa para mejorar el retorno venoso y reducir el edema, medidas que favorecen la cicatrización y previenen la recurrencia, según las recomendaciones de manejo de úlceras en drepanocitosis. El desbridamiento quirúrgico amplio y el injerto inmediato no son medidas iniciales y se reservan para casos seleccionados. El nitrato de plata y el vendaje seco no son el estándar de cuidado. Los antibióticos sistémicos se indican solo si hay infección activa, no de forma empírica en una úlcera sin signos infecciosos."
+  },
+  {
+    "numero": 213,
+    "enunciado": "Paciente varón de 30 años con anemia falciforme acude a emergencia por cefalea intensa, hemiparesia derecha y afasia de instalación brusca. Examen: presión arterial 130/80 mmHg, frecuencia cardíaca 90 por minuto, saturación de oxígeno 95%, déficit motor derecho 3/5. Tomografía cerebral: sin hemorragia. Hemoglobina: 7.8 g/dL. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Transfusión de intercambio urgente para reducir hemoglobina S por debajo del 30%",
+      "B": "Transfusión simple para llevar hemoglobina a 10 g/dL",
+      "C": "Iniciar aspirina 100 mg/día y rehabilitación física",
+      "D": "Administrar hidroxiurea 15 mg/kg/día y observación"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a un evento cerebrovascular isquémico agudo en un paciente con drepanocitosis, una complicación grave que requiere transfusión de intercambio urgente para reducir rápidamente el porcentaje de hemoglobina S a menos del 30% y mejorar la oxigenación cerebral, tal como establecen las guías de manejo de drepanocitosis. La transfusión simple no logra reducir de forma rápida y efectiva la Hb S y puede aumentar la viscosidad sanguínea. La aspirina no está indicada de rutina en el ictus isquémico asociado a drepanocitosis y la rehabilitación es coadyuvante, no tratamiento de la fase aguda. La hidroxiurea es un tratamiento de mantenimiento para prevención de complicaciones, no para el manejo del evento agudo."
+  },
+  {
+    "numero": 214,
+    "enunciado": "Lactante de 10 meses con beta-talasemia mayor diagnosticada a los 6 meses, en tratamiento con transfusiones cada 3 semanas. Acude a control. Examen: peso y talla en percentil 10, hepatomegalia de 3 cm, esplenomegalia de 4 cm, facies con aumento de malar y frontal. Hemoglobina pretransfusional: 9.5 g/dL, ferritina sérica: 1,800 ng/mL. ¿Qué tratamiento adicional está indicado?",
+    "opciones": {
+      "A": "Quelación de hierro con deferasirox oral",
+      "B": "Esplenectomía inmediata por hiperesplenismo",
+      "C": "Iniciar hidroxiurea para reducir necesidad transfusional",
+      "D": "Suplemento de hierro oral y ácido fólico"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Los pacientes con beta-talasemia mayor requieren transfusiones crónicas para mantener hemoglobina adecuada, lo que inevitablemente produce sobrecarga de hierro. Cuando la ferritina supera 1,000 ng/mL y hay evidencia de sobrecarga férrica, está indicada la quelación de hierro con deferasirox oral, deferiprona o deferoxamina, siendo el deferasirox el agente de primera línea por su administración oral y eficacia, según las guías de manejo de talasemias. La esplenectomía se reserva para casos con hiperesplenismo significativo o requerimiento transfusional elevado, no como primera medida. La hidroxiurea no tiene un rol establecido en la beta-talasemia mayor. La suplementación con hierro está contraindicada en un paciente con sobrecarga férrica."
+  },
+  {
+    "numero": 215,
+    "enunciado": "Niño de 3 años con anemia falciforme presenta palidez súbita, letargo y dolor abdominal. Examen: frecuencia cardíaca 170 por minuto, presión arterial 70/40 mmHg, esplenomegalia de 8 cm bajo el borde costal, sin signos de infección. Hemoglobina: 5.0 g/dL (previa: 8.0 g/dL), reticulocitos: 12%. ¿Cuál es la complicación más probable y el manejo inmediato?",
+    "opciones": {
+      "A": "Crisis de secuestro esplénico; transfusión de glóbulos rojos urgente y soporte hemodinámico",
+      "B": "Crisis aplásica; transfusión de glóbulos rojos y observación",
+      "C": "Síndrome torácico agudo; antibióticos y oxígeno",
+      "D": "Crisis vaso-oclusiva; hidratación y analgesia"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El secuestro esplénico es una complicación grave de la drepanocitosis en niños pequeños, caracterizada por un atrapamiento masivo de sangre en el bazo que produce esplenomegalia aguda dolorosa, hipovolemia, shock y caída brusca de la hemoglobina. El cuadro descrito, con esplenomegalia de 8 cm, hipotensión y hemoglobina de 5.0 g/dL, es compatible con secuestro esplénico. El manejo inmediato es la transfusión de glóbulos rojos para restaurar el volumen intravascular y corregir la anemia, junto con soporte hemodinámico. La crisis aplásica cursa con reticulocitopenia, no reticulocitosis. El síndrome torácico agudo presenta infiltrados pulmonares y dificultad respiratoria. La crisis vaso-oclusiva no produce esplenomegalia aguda ni shock hipovolémico."
+  },
+  {
+    "numero": 216,
+    "enunciado": "Mujer de 22 años, procedente de la selva peruana, presenta anemia microcítica hipocrómica crónica. Hemograma: hemoglobina 9.8 g/dL, VCM 70 fL, HCM 23 pg, ferritina normal, electroforesis de hemoglobina: Hb A2 normal, Hb F normal, sin bandas anormales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Alfa-talasemia menor",
+      "B": "Beta-talasemia menor",
+      "C": "Rasgo falciforme",
+      "D": "Anemia por deficiencia de hierro"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La alfa-talasemia menor (rasgo alfa-talasémico) se caracteriza por anemia microcítica hipocrómica leve con ferritina normal y electroforesis de hemoglobina normal, ya que las cadenas alfa no se separan en la electroforesis convencional. El diagnóstico se sospecha por el cuadro clínico y se confirma con estudios moleculares. La beta-talasemia menor mostraría Hb A2 elevada. El rasgo falciforme (Hb AS) presentaría una banda de Hb S en la electroforesis. La anemia por deficiencia de hierro tendría ferritina baja. La alfa-talasemia menor es frecuente en el Perú, especialmente en la selva, y debe considerarse en el diagnóstico diferencial de microcitosis sin ferropenia."
+  },
+  {
+    "numero": 217,
+    "enunciado": "Varón de 28 años con anemia falciforme acude por fiebre de 38.8°C, escalofríos y dolor lumbar de 24 horas. Examen: frecuencia cardíaca 110 por minuto, frecuencia respiratoria 22 por minuto, saturación de oxígeno 96%, dolor a la palpación en fosa renal derecha. Urocultivo pendiente. Hemoglobina: 8.0 g/dL, leucocitos 15,000/mm³, creatinina 1.2 mg/dL. ¿Cuál es el manejo inicial más apropiado?",
+    "opciones": {
+      "A": "Antibióticos endovenosos de amplio espectro, hidratación y analgesia",
+      "B": "Transfusión de glóbulos rojos y observación",
+      "C": "Iniciar hidroxiurea y control ambulatorio",
+      "D": "Realizar tomografía abdominal y diferir antibióticos"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro es compatible con pielonefritis aguda en un paciente con drepanocitosis, quien tiene mayor susceptibilidad a infecciones bacterianas, especialmente por microorganismos encapsulados y gramnegativos. El manejo inicial incluye antibioterapia endovenosa de amplio espectro (por ejemplo, ceftriaxona más aminoglucósido o una quinolona), hidratación adecuada para mantener el flujo renal y analgesia. La transfusión no está indicada de rutina en un paciente con hemoglobina de 8.0 g/dL sin anemia sintomática grave. La hidroxiurea es un tratamiento de mantenimiento, no de la fase aguda. Diferir los antibióticos para realizar tomografía retrasaría el tratamiento de una infección potencialmente grave."
+  },
+  {
+    "numero": 218,
+    "enunciado": "Niño de 5 años con anemia falciforme acude a control. Refiere episodios recurrentes de dolor abdominal y estreñimiento. Examen: ictericia escleral leve, esplenomegalia de 2 cm. Hemograma: hemoglobina 8.5 g/dL, reticulocitos 10%, bilirrubina indirecta 2.5 mg/dL, LDH elevada. Ecografía abdominal: litiasis vesicular múltiple. ¿Cuál es la conducta más apropiada?",
+    "opciones": {
+      "A": "Colecistectomía laparoscópica programada",
+      "B": "Ácido ursodesoxicólico y control ambulatorio",
+      "C": "Transfusión de glóbulos rojos y observación",
+      "D": "Iniciar hidroxiurea para reducir hemólisis"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La litiasis vesicular es una complicación frecuente de la drepanocitosis debido a la hemólisis crónica que produce hiperbilirrubinemia indirecta y formación de cálculos de bilirrubinato de calcio. En pacientes sintomáticos con episodios de dolor abdominal y evidencia ecográfica de litiasis, la colecistectomía laparoscópica programada es el tratamiento de elección para prevenir complicaciones como colecistitis, colangitis o pancreatitis, según las recomendaciones de manejo de drepanocitosis. El ácido ursodesoxicólico no disuelve los cálculos pigmentarios. La transfusión no aborda la causa de la litiasis. La hidroxiurea puede reducir la hemólisis, pero no elimina la necesidad de colecistectomía en un paciente sintomático."
+  },
+  {
+    "numero": 219,
+    "enunciado": "Gestante de 32 semanas con anemia falciforme acude por dolor torácico y disnea de 6 horas. Examen: frecuencia respiratoria 28 por minuto, saturación de oxígeno 92%, crepitantes en base izquierda. Radiografía de tórax: infiltrado alveolar en lóbulo inferior izquierdo. Hemoglobina: 7.0 g/dL. ¿Cuál es el manejo más apropiado?",
+    "opciones": {
+      "A": "Antibióticos de amplio espectro, oxígeno y transfusión de intercambio",
+      "B": "Hidratación oral y analgesia con AINE",
+      "C": "Iniciar hidroxiurea y control ambulatorio",
+      "D": "Realizar cesárea de emergencia por sufrimiento fetal"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a un síndrome torácico agudo en una gestante con drepanocitosis, una situación de alto riesgo tanto para la madre como para el feto. El manejo incluye antibioterapia de amplio espectro, oxigenoterapia para mantener saturación >92% y transfusión de intercambio para reducir rápidamente la Hb S y mejorar la oxigenación tisular, medidas recomendadas en el manejo de drepanocitosis en el embarazo. La hidratación oral y los AINE no son suficientes. La hidroxiurea está contraindicada en el embarazo por su potencial teratogénico. La cesárea de emergencia no está indicada por el cuadro respiratorio materno sin evidencia de sufrimiento fetal agudo."
+  },
+  {
+    "numero": 220,
+    "enunciado": "Varón de 40 años con anemia falciforme acude por disnea progresiva, edemas en miembros inferiores y ortopnea de 2 semanas. Examen: presión arterial 110/70 mmHg, frecuencia cardíaca 100 por minuto, saturación de oxígeno 93%, ingurgitación yugular, crepitantes bibasales, edema hasta rodillas. Ecocardiograma: fracción de eyección del ventrículo izquierdo 45%, dilatación de cavidades derechas. Ferritina: 2,500 ng/mL. ¿Cuál es la causa más probable de este cuadro?",
+    "opciones": {
+      "A": "Cardiopatía por sobrecarga de hierro (hemocromatosis secundaria)",
+      "B": "Hipertensión pulmonar por vasculopatía drepanocítica",
+      "C": "Miocardiopatía dilatada idiopática",
+      "D": "Insuficiencia cardíaca por anemia crónica"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Hemoglobinopatías",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El paciente presenta insuficiencia cardíaca con fracción de eyección reducida y ferritina marcadamente elevada (2,500 ng/mL), hallazgo sugestivo de sobrecarga férrica secundaria a transfusiones crónicas, complicación frecuente en pacientes con drepanocitosis que reciben múltiples transfusiones. La hemocromatosis secundaria produce depósito de hierro en el miocardio, lo que lleva a miocardiopatía dilatada y insuficiencia cardíaca. La hipertensión pulmonar es una complicación de la drepanocitosis, pero no explica la ferritina de 2,500 ng/mL. La miocardiopatía dilatada idiopática es un diagnóstico de exclusión. La insuficiencia cardíaca por anemia crónica no suele cursar con ferritina tan elevada ni con dilatación de cavidades derechas como hallazgo predominante."
   }
 ]

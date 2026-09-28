@@ -9,7 +9,7 @@
       "D": "35"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_001",
+    "id": "CONAREME_2026_B_001",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Patología Mamaria",
@@ -29,7 +29,7 @@
       "D": "Reducción del riesgo de exposición a la contaminación ambiental"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_002",
+    "id": "CONAREME_2026_B_002",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "Atención Primaria",
@@ -49,7 +49,7 @@
       "D": "Poros en hendidura"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_003",
+    "id": "CONAREME_2026_B_003",
     "area": "Básicas",
     "especialidad": "Histología",
     "tema": "Tejido Epitelial",
@@ -69,7 +69,7 @@
       "D": "Leishmania spp."
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_004",
+    "id": "CONAREME_2026_B_004",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Parasitarias",
@@ -89,7 +89,7 @@
       "D": "Almacenamiento"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_005",
+    "id": "CONAREME_2026_B_005",
     "area": "Básicas",
     "especialidad": "Bioquímica",
     "tema": "Metabolismo de Carbohidratos",
@@ -109,7 +109,7 @@
       "D": "Legrado puerperal"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_006",
+    "id": "CONAREME_2026_B_006",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Hemorragia Postparto",
@@ -129,7 +129,7 @@
       "D": "Ceftriaxona + vancomicina"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_007",
+    "id": "CONAREME_2026_B_007",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Meningitis/Encefalitis",
@@ -149,7 +149,7 @@
       "D": "Carcinoma in situ"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_008",
+    "id": "CONAREME_2026_B_008",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "ERGE",
@@ -169,7 +169,7 @@
       "D": "Resonancia magnética"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_009",
+    "id": "CONAREME_2026_B_009",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Accidente Cerebrovascular",
@@ -189,7 +189,7 @@
       "D": "35"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_010",
+    "id": "CONAREME_2026_B_010",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Diabetes Mellitus",
@@ -209,7 +209,7 @@
       "D": "Colocación sistema VAC"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_011",
+    "id": "CONAREME_2026_B_011",
     "area": "Cirugia",
     "especialidad": "Cirurgía Plástica",
     "tema": "Reparación de Cicatrices",
@@ -229,7 +229,7 @@
       "D": "Dicigotos"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_012",
+    "id": "CONAREME_2026_B_012",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Control Prenatal",
@@ -249,7 +249,7 @@
       "D": "Solo en caso de incremento de la leucocitosis"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_013",
+    "id": "CONAREME_2026_B_013",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Colecistitis",
@@ -269,7 +269,7 @@
       "D": "TSH."
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_014",
+    "id": "CONAREME_2026_B_014",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Trastornos Tiroideos",
@@ -289,7 +289,7 @@
       "D": "Iniciar la profilaxis pre exposición"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_015",
+    "id": "CONAREME_2026_B_015",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "VIH/SIDA",
@@ -309,7 +309,7 @@
       "D": "18"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_016",
+    "id": "CONAREME_2026_B_016",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Malformaciones Congénitas",
@@ -329,7 +329,7 @@
       "D": "Ventana pericárdica"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_017",
+    "id": "CONAREME_2026_B_017",
     "area": "Cirugia",
     "especialidad": "Cirugía Torácica",
     "tema": "Trauma Torácico",
@@ -349,7 +349,7 @@
       "D": "Endometriosis"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_018",
+    "id": "CONAREME_2026_B_018",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Endometriosis",
@@ -369,7 +369,7 @@
       "D": "¿Tienes pensamientos acerca de suicidarte ahora mismo?"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_019",
+    "id": "CONAREME_2026_B_019",
     "area": "Medicina",
     "especialidad": "Psiquiatría",
     "tema": "Depresión",
@@ -389,7 +389,7 @@
       "D": "XII"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_020",
+    "id": "CONAREME_2026_B_020",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Pares Craneales",
@@ -409,7 +409,7 @@
       "D": "Interculturalidad"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_021",
+    "id": "CONAREME_2026_B_021",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "Atención Primaria",
@@ -429,7 +429,7 @@
       "D": "Dicloxacilina VO"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_022",
+    "id": "CONAREME_2026_B_022",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Respiratorias",
@@ -449,7 +449,7 @@
       "D": "Ecografía abdominal"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_023",
+    "id": "CONAREME_2026_B_023",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Neoplasias",
@@ -469,7 +469,7 @@
       "D": "Alcalinizar la orina"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_024",
+    "id": "CONAREME_2026_B_024",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Intoxicaciones",
@@ -489,7 +489,7 @@
       "D": "Atresia biliar"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_025",
+    "id": "CONAREME_2026_B_025",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Ictericia Neonatal",
@@ -509,7 +509,7 @@
       "D": "Ecocardiograma"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_026",
+    "id": "CONAREME_2026_B_026",
     "area": "Medicina",
     "especialidad": "Reumatología",
     "tema": "Enfermedades Autoinmunes",
@@ -529,7 +529,7 @@
       "D": "Enfermedad inflamatoria intestinal"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_027",
+    "id": "CONAREME_2026_B_027",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Enfermedad Inflamatoria Intestinal",
@@ -549,7 +549,7 @@
       "D": "Nefrostomía percutánea"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_028",
+    "id": "CONAREME_2026_B_028",
     "area": "Cirugia",
     "especialidad": "Urología",
     "tema": "Litiasis Renal",
@@ -569,7 +569,7 @@
       "D": "Observación"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_029",
+    "id": "CONAREME_2026_B_029",
     "area": "Cirugia",
     "especialidad": "Cirugía Torácica",
     "tema": "Hemotórax",
@@ -589,7 +589,7 @@
       "D": "AMP"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_030",
+    "id": "CONAREME_2026_B_030",
     "area": "Básicas",
     "especialidad": "Bioquímica",
     "tema": "Metabolismo de Carbohidratos",
@@ -609,7 +609,7 @@
       "D": "Penicilina en altas dosis"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_031",
+    "id": "CONAREME_2026_B_031",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Bacterianas",
@@ -629,7 +629,7 @@
       "D": "Midazolam IV"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_032",
+    "id": "CONAREME_2026_B_032",
     "area": "Pediatría",
     "especialidad": "Neurología Pediátrica",
     "tema": "Convulsiones",
@@ -649,7 +649,7 @@
       "D": "TC pulmonar con contraste"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_033",
+    "id": "CONAREME_2026_B_033",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Respiratorias",
@@ -669,7 +669,7 @@
       "D": "Maduración pulmonar"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_034",
+    "id": "CONAREME_2026_B_034",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Insuficiencia Cervical",
@@ -689,7 +689,7 @@
       "D": "Derivación ventrículo atrial"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_035",
+    "id": "CONAREME_2026_B_035",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Accidente Cerebrovascular",
@@ -709,7 +709,7 @@
       "D": "Acral lentiginoso"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_036",
+    "id": "CONAREME_2026_B_036",
     "area": "Medicina",
     "especialidad": "Dermatología",
     "tema": "Neoplasias Cutáneas",
@@ -729,7 +729,7 @@
       "D": ">10°"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_037",
+    "id": "CONAREME_2026_B_037",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Ortopédicas",
@@ -749,7 +749,7 @@
       "D": "Hipertrigliceridemia grave"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_038",
+    "id": "CONAREME_2026_B_038",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Síndrome Metabólico",
@@ -769,7 +769,7 @@
       "D": "48"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_039",
+    "id": "CONAREME_2026_B_039",
     "area": "Preventiva",
     "especialidad": "Epidemiología",
     "tema": "Vigilancia Epidemiológica",
@@ -789,7 +789,7 @@
       "D": "Angiografía más embolización"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_040",
+    "id": "CONAREME_2026_B_040",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Trauma Abdominal",
@@ -809,7 +809,7 @@
       "D": "Derecho"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_041",
+    "id": "CONAREME_2026_B_041",
     "area": "Preventiva",
     "especialidad": "Ética Médica",
     "tema": "Consentimiento Informado",
@@ -829,7 +829,7 @@
       "D": "Intoxicación digitálica"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_042",
+    "id": "CONAREME_2026_B_042",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Arritmias y ECG",
@@ -849,7 +849,7 @@
       "D": "Histerectomía laparoscópica"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_043",
+    "id": "CONAREME_2026_B_043",
     "area": "Gineco-Obstetricia",
     "especialidad": "Oncología Ginecológica",
     "tema": "Cáncer de Endometrio",
@@ -869,7 +869,7 @@
       "D": "Dolicomegacolon"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_044",
+    "id": "CONAREME_2026_B_044",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Obstrucción Intestinal",
@@ -889,7 +889,7 @@
       "D": "Director de IPRESS"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_045",
+    "id": "CONAREME_2026_B_045",
     "area": "Preventiva",
     "especialidad": "Ética Médica",
     "tema": "Confidencialidad",
@@ -909,7 +909,7 @@
       "D": "Sangre oculta en heces"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_046",
+    "id": "CONAREME_2026_B_046",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Neoplasias",
@@ -929,7 +929,7 @@
       "D": "Diálisis si al quinto día no disminuyen los nitrogenados"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_047",
+    "id": "CONAREME_2026_B_047",
     "area": "Medicina",
     "especialidad": "Nefrología",
     "tema": "Insuficiencia Renal Aguda",
@@ -949,7 +949,7 @@
       "D": "Chikunguya"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_048",
+    "id": "CONAREME_2026_B_048",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Parasitarias",
@@ -969,7 +969,7 @@
       "D": "Activa artificial"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_049",
+    "id": "CONAREME_2026_B_049",
     "area": "Medicina",
     "especialidad": "Inmunología",
     "tema": "Inmunizaciones",
@@ -989,7 +989,7 @@
       "D": "Citobioquímico y cultivo del LCR"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_050",
+    "id": "CONAREME_2026_B_050",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Meningitis Neonatal",
@@ -1009,7 +1009,7 @@
       "D": "Propagada"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_051",
+    "id": "CONAREME_2026_B_051",
     "area": "Preventiva",
     "especialidad": "Epidemiología",
     "tema": "Brotes",
@@ -1029,7 +1029,7 @@
       "D": "PIMS por coronavirus"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_052",
+    "id": "CONAREME_2026_B_052",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Exantemáticas",
@@ -1049,7 +1049,7 @@
       "D": "Minimizar interrupciones"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_053",
+    "id": "CONAREME_2026_B_053",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "RCP Neonatal",
@@ -1069,7 +1069,7 @@
       "D": "Orquitis bilateral"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_054",
+    "id": "CONAREME_2026_B_054",
     "area": "Cirugia",
     "especialidad": "Urología",
     "tema": "Cáncer de Próstata",
@@ -1089,7 +1089,7 @@
       "D": "Enfisema"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_055",
+    "id": "CONAREME_2026_B_055",
     "area": "Medicina",
     "especialidad": "Neumología",
     "tema": "Enfermedad bronquial",
@@ -1109,7 +1109,7 @@
       "D": "Hospitalización y antibiótico parenteral"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_056",
+    "id": "CONAREME_2026_B_056",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Infecciones de Transmisión Sexual",
@@ -1129,7 +1129,7 @@
       "D": "Prostaglandina E"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_057",
+    "id": "CONAREME_2026_B_057",
     "area": "Pediatría",
     "especialidad": "Cardiología Pediátrica",
     "tema": "Cardiopatías Congénitas",
@@ -1149,7 +1149,7 @@
       "D": "Alacrán venenoso"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_058",
+    "id": "CONAREME_2026_B_058",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Mordeduras y Picaduras",
@@ -1169,7 +1169,7 @@
       "D": "Porfiria intermitente aguda"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_059",
+    "id": "CONAREME_2026_B_059",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Reumatológicas",
@@ -1189,7 +1189,7 @@
       "D": "Permetrina"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_060",
+    "id": "CONAREME_2026_B_060",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Alergias",
@@ -1209,7 +1209,7 @@
       "D": "Hiperkalemia"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_061",
+    "id": "CONAREME_2026_B_061",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Carenciales",
@@ -1229,7 +1229,7 @@
       "D": "Capacitación periódica al personal sobre uso correcto de protección respiratoria"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_062",
+    "id": "CONAREME_2026_B_062",
     "area": "Preventiva",
     "especialidad": "Normas Técnicas",
     "tema": "Guías Clínicas",
@@ -1249,7 +1249,7 @@
       "D": "Salpinguectomía bilateral"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_063",
+    "id": "CONAREME_2026_B_063",
     "area": "Gineco-Obstetricia",
     "especialidad": "Oncología Ginecológica",
     "tema": "Cáncer de Ovario",
@@ -1269,7 +1269,7 @@
       "D": "Manejo conservador con antibiótico"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_064",
+    "id": "CONAREME_2026_B_064",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "RPM",
@@ -1289,7 +1289,7 @@
       "D": "Medroxiprogesterona"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_065",
+    "id": "CONAREME_2026_B_065",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Anticoncepción",
@@ -1309,7 +1309,7 @@
       "D": "Esquizotípico"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_066",
+    "id": "CONAREME_2026_B_066",
     "area": "Medicina",
     "especialidad": "Psiquiatría",
     "tema": "Trastornos de la Personalidad",
@@ -1329,7 +1329,7 @@
       "D": "BCG"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_067",
+    "id": "CONAREME_2026_B_067",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Infecciones Verticales",
@@ -1349,7 +1349,7 @@
       "D": "sigmoide."
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_068",
+    "id": "CONAREME_2026_B_068",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Pares Craneales",
@@ -1369,7 +1369,7 @@
       "D": "Dextrosa con electrolitos"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_069",
+    "id": "CONAREME_2026_B_069",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Gastrointestinales",
@@ -1389,7 +1389,7 @@
       "D": "Erupción cutánea"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_070",
+    "id": "CONAREME_2026_B_070",
     "area": "Medicina",
     "especialidad": "Nefrología",
     "tema": "Insuficiencia Renal Aguda",
@@ -1409,7 +1409,7 @@
       "D": "Espondiloartrosis lumbar"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_071",
+    "id": "CONAREME_2026_B_071",
     "area": "Cirugia",
     "especialidad": "Neurocirugía",
     "tema": "Hernia discal",
@@ -1429,7 +1429,7 @@
       "D": "Staphylococcus aureus"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_072",
+    "id": "CONAREME_2026_B_072",
     "area": "Medicina",
     "especialidad": "Neumología",
     "tema": "Neumonía",
@@ -1449,7 +1449,7 @@
       "D": "Furosemida"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_073",
+    "id": "CONAREME_2026_B_073",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Insuficiencia Cardíaca",
@@ -1469,7 +1469,7 @@
       "D": "Ticagrelor"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_074",
+    "id": "CONAREME_2026_B_074",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Accidente Cerebrovascular",
@@ -1489,7 +1489,7 @@
       "D": "Nocardia asteroides"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_075",
+    "id": "CONAREME_2026_B_075",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Bacterianas",
@@ -1509,7 +1509,7 @@
       "D": "1"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_076",
+    "id": "CONAREME_2026_B_076",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Anemia",
@@ -1529,7 +1529,7 @@
       "D": "Generalizada"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_077",
+    "id": "CONAREME_2026_B_077",
     "area": "Medicina",
     "especialidad": "Psiquiatría",
     "tema": "Trastornos de Ansiedad",
@@ -1549,7 +1549,7 @@
       "D": "Clopidogrel"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_078",
+    "id": "CONAREME_2026_B_078",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Cefaleas",
@@ -1569,7 +1569,7 @@
       "D": "Virus Influenza"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_079",
+    "id": "CONAREME_2026_B_079",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "",
@@ -1589,7 +1589,7 @@
       "D": "Gentamicina"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_080",
+    "id": "CONAREME_2026_B_080",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "",
@@ -1609,7 +1609,7 @@
       "D": "Descenso del PR"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_081",
+    "id": "CONAREME_2026_B_081",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Arritmias y ECG",
@@ -1629,7 +1629,7 @@
       "D": "Dermatitis seborreica"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_082",
+    "id": "CONAREME_2026_B_082",
     "area": "Medicina",
     "especialidad": "Neumología",
     "tema": "Asma",
@@ -1649,7 +1649,7 @@
       "D": "Equidad"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_083",
+    "id": "CONAREME_2026_B_083",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "",
@@ -1669,7 +1669,7 @@
       "D": "Derrame pleural derecho"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_084",
+    "id": "CONAREME_2026_B_084",
     "area": "Medicina",
     "especialidad": "Nefrología",
     "tema": "Insuficiencia Renal",
@@ -1689,7 +1689,7 @@
       "D": "Aumento de la presión hidrostática"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_085",
+    "id": "CONAREME_2026_B_085",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Enfermedad vascular periférica",
@@ -1709,7 +1709,7 @@
       "D": "Listeria monocytogenes"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_086",
+    "id": "CONAREME_2026_B_086",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Metabolismo Neonatal",
@@ -1729,7 +1729,7 @@
       "D": "Disrafismo oculto"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_087",
+    "id": "CONAREME_2026_B_087",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Ortopédicas",
@@ -1749,7 +1749,7 @@
       "D": "Atención en establecimiento con capacidad para biopsia y diagnóstico de patología"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_088",
+    "id": "CONAREME_2026_B_088",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Patología Mamaria",
@@ -1769,7 +1769,7 @@
       "D": "Hemocultivo y urocultivo"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_089",
+    "id": "CONAREME_2026_B_089",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Fiebre",
@@ -1789,7 +1789,7 @@
       "D": "Moderado"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_090",
+    "id": "CONAREME_2026_B_090",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Preeclampsia",
@@ -1809,7 +1809,7 @@
       "D": "II"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_091",
+    "id": "CONAREME_2026_B_091",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Prolapso Genital",
@@ -1829,7 +1829,7 @@
       "D": "Solicitar calcio"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_092",
+    "id": "CONAREME_2026_B_092",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Metabolismo Neonatal",
@@ -1849,7 +1849,7 @@
       "D": "De Hodgkin"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_093",
+    "id": "CONAREME_2026_B_093",
     "area": "Medicina",
     "especialidad": "Hematología",
     "tema": "Linfomas",
@@ -1869,7 +1869,7 @@
       "D": "Hidrocele comunicante"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_094",
+    "id": "CONAREME_2026_B_094",
     "area": "Cirugia",
     "especialidad": "Urología",
     "tema": "Patología Testicular",
@@ -1889,7 +1889,7 @@
       "D": "Medroxiprogesterona de deposito"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_A_095",
+    "id": "CONAREME_2026_B_095",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Sangrado Uterino Anormal",
@@ -1909,7 +1909,7 @@
       "D": "demanda"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_096",
+    "id": "CONAREME_2026_B_096",
     "area": "Básicas",
     "especialidad": "Farmacología",
     "tema": "Farmacocinética",
@@ -1929,7 +1929,7 @@
       "D": "Cierre inmediato"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_097",
+    "id": "CONAREME_2026_B_097",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Malformaciones Congénitas",
@@ -1949,7 +1949,7 @@
       "D": "Glimepirida"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_A_098",
+    "id": "CONAREME_2026_B_098",
     "area": "Medicina",
     "especialidad": "Nefrología",
     "tema": "Insuficiencia Renal Crónica",
@@ -1969,7 +1969,7 @@
       "D": "Osteoartritis de columna vertebral"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_A_099",
+    "id": "CONAREME_2026_B_099",
     "area": "Medicina",
     "especialidad": "Reumatología",
     "tema": "Espondiloartropatías",
@@ -1989,7 +1989,7 @@
       "D": "Autonomía"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_A_100",
+    "id": "CONAREME_2026_B_100",
     "area": "Preventiva",
     "especialidad": "Ética Médica",
     "tema": "Consentimiento Informado",
@@ -2009,7 +2009,7 @@
       "D": "TC abdominal con contraste"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_101",
+    "id": "CONAREME_2026_A_101",
     "area": "Cirugia",
     "especialidad": "Urología",
     "tema": "Trauma Urológico",
@@ -2029,7 +2029,7 @@
       "D": "Virus de herpes simple"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_102",
+    "id": "CONAREME_2026_A_102",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Infecciones de Transmisión Sexual",
@@ -2049,7 +2049,7 @@
       "D": "Fenitoína"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_103",
+    "id": "CONAREME_2026_A_103",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Epilepsia y Convulsiones",
@@ -2069,7 +2069,7 @@
       "D": "Infección cutánea por Mycobacterium marinum"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_104",
+    "id": "CONAREME_2026_A_104",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Fúngicas",
@@ -2089,7 +2089,7 @@
       "D": "Manejar la obesidad"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_105",
+    "id": "CONAREME_2026_A_105",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Respiratorias",
@@ -2109,7 +2109,7 @@
       "D": "Control de hematocrito en 6 horas"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_106",
+    "id": "CONAREME_2026_A_106",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Policitemia Neonatal",
@@ -2129,7 +2129,7 @@
       "D": "Eliminación del estímulo"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_107",
+    "id": "CONAREME_2026_A_107",
     "area": "Básicas",
     "especialidad": "Patología",
     "tema": "Inflamación",
@@ -2149,7 +2149,7 @@
       "D": "27"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_108",
+    "id": "CONAREME_2026_A_108",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Quemaduras",
@@ -2169,7 +2169,7 @@
       "D": "Bocio sumergido"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_109",
+    "id": "CONAREME_2026_A_109",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Trastornos Tiroideos",
@@ -2189,7 +2189,7 @@
       "D": "Cohorte"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_110",
+    "id": "CONAREME_2026_A_110",
     "area": "Preventiva",
     "especialidad": "Epidemiología",
     "tema": "Estadística",
@@ -2209,7 +2209,7 @@
       "D": "Gonadotrofos"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_111",
+    "id": "CONAREME_2026_A_111",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Trastornos Hipofisarios",
@@ -2229,7 +2229,7 @@
       "D": "Infección resuelta por virus de hepatitis B con inmunidad natural"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_112",
+    "id": "CONAREME_2026_A_112",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Hepatitis",
@@ -2249,7 +2249,7 @@
       "D": "Bloqueadores de los receptores α1"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_113",
+    "id": "CONAREME_2026_A_113",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Hipertensión Arterial",
@@ -2269,7 +2269,7 @@
       "D": "III"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_114",
+    "id": "CONAREME_2026_A_114",
     "area": "Cirugia",
     "especialidad": "Anestesiología",
     "tema": "Anestesia General",
@@ -2289,7 +2289,7 @@
       "D": "Sumatriptán"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_115",
+    "id": "CONAREME_2026_A_115",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Cefaleas",
@@ -2309,7 +2309,7 @@
       "D": "Biopsia de endometrio"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_116",
+    "id": "CONAREME_2026_A_116",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Sangrado Uterino Anormal",
@@ -2329,7 +2329,7 @@
       "D": "Linfoma de Burkitt"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_117",
+    "id": "CONAREME_2026_A_117",
     "area": "Cirugia",
     "especialidad": "Otorrinolaringología",
     "tema": "Orofaringe",
@@ -2349,7 +2349,7 @@
       "D": "Tratamiento expectante y nada por vía oral"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_118",
+    "id": "CONAREME_2026_A_118",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Intoxicaciones",
@@ -2369,7 +2369,7 @@
       "D": "Delegar la entrega de información y la obtención de la firma del consentimiento al personal administrativo"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_119",
+    "id": "CONAREME_2026_A_119",
     "area": "Preventiva",
     "especialidad": "Ética Médica",
     "tema": "Consentimiento Informado",
@@ -2389,7 +2389,7 @@
       "D": "Séptico"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_120",
+    "id": "CONAREME_2026_A_120",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Deshidratación",
@@ -2409,7 +2409,7 @@
       "D": "Cumplimiento de práctica de higiene de manos según OMS"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_121",
+    "id": "CONAREME_2026_A_121",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Bacterianas",
@@ -2429,7 +2429,7 @@
       "D": "Misoprostol sublingual"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_122",
+    "id": "CONAREME_2026_A_122",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Embarazo Ectópico",
@@ -2449,7 +2449,7 @@
       "D": "Alendronato"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_123",
+    "id": "CONAREME_2026_A_123",
     "area": "Medicina",
     "especialidad": "Reumatología",
     "tema": "Artritis Reumatoide",
@@ -2469,7 +2469,7 @@
       "D": "Bicarbonato de sodio"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_124",
+    "id": "CONAREME_2026_A_124",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Diabetes Mellitus",
@@ -2489,7 +2489,7 @@
       "D": "Disminución de la producción endógena de glucosa"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_125",
+    "id": "CONAREME_2026_A_125",
     "area": "Medicina",
     "especialidad": "Endocrinología",
     "tema": "Diabetes Mellitus",
@@ -2509,7 +2509,7 @@
       "D": "Pirazinamida"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_126",
+    "id": "CONAREME_2026_A_126",
     "area": "Medicina",
     "especialidad": "Neumología",
     "tema": "Tuberculosis",
@@ -2529,7 +2529,7 @@
       "D": "Ecografía escrotal"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_127",
+    "id": "CONAREME_2026_A_127",
     "area": "Cirugia",
     "especialidad": "Urología",
     "tema": "Patología Testicular",
@@ -2549,7 +2549,7 @@
       "D": "Utilizar magnitud, gravedad, vulnerabilidad y la percepción de la comunidad"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_128",
+    "id": "CONAREME_2026_A_128",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "Programas de Salud",
@@ -2569,7 +2569,7 @@
       "D": "Psicosis alcohólica"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_129",
+    "id": "CONAREME_2026_A_129",
     "area": "Medicina",
     "especialidad": "Psiquiatría",
     "tema": "Dependencia química",
@@ -2589,7 +2589,7 @@
       "D": "Laparoscopía quirúrgica"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_130",
+    "id": "CONAREME_2026_A_130",
     "area": "Gineco-Obstetricia",
     "especialidad": "Oncología Ginecológica",
     "tema": "Cáncer de Ovario",
@@ -2609,7 +2609,7 @@
       "D": "Griseofulvina"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_131",
+    "id": "CONAREME_2026_A_131",
     "area": "Medicina",
     "especialidad": "Dermatología",
     "tema": "Infecciones Cutáneas",
@@ -2629,7 +2629,7 @@
       "D": "Implementar sala situacional municipal"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_132",
+    "id": "CONAREME_2026_A_132",
     "area": "Preventiva",
     "especialidad": "Epidemiología",
     "tema": "Vigilancia Epidemiológica",
@@ -2649,7 +2649,7 @@
       "D": "Hierro endovenoso"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_133",
+    "id": "CONAREME_2026_A_133",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Sepsis Neonatal",
@@ -2669,7 +2669,7 @@
       "D": "Varicela"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_134",
+    "id": "CONAREME_2026_A_134",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Control Prenatal",
@@ -2689,7 +2689,7 @@
       "D": "Losartán"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_135",
+    "id": "CONAREME_2026_A_135",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Hipertensión Arterial",
@@ -2709,7 +2709,7 @@
       "D": "Contracción"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_136",
+    "id": "CONAREME_2026_A_136",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "Programas de Salud",
@@ -2729,7 +2729,7 @@
       "D": "Piridoxina"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_137",
+    "id": "CONAREME_2026_A_137",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Carenciales",
@@ -2749,7 +2749,7 @@
       "D": "Quimioterapia convencional"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_138",
+    "id": "CONAREME_2026_A_138",
     "area": "Cirugia",
     "especialidad": "Urología",
     "tema": "Patología Testicular",
@@ -2769,7 +2769,7 @@
       "D": "Dislocación del cristalino"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_139",
+    "id": "CONAREME_2026_A_139",
     "area": "Cirugia",
     "especialidad": "Oftalmología",
     "tema": "Glaucoma",
@@ -2789,7 +2789,7 @@
       "D": "Descartar anillo vaginal"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_140",
+    "id": "CONAREME_2026_A_140",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Anticoncepción",
@@ -2809,7 +2809,7 @@
       "D": "Metilprednisolona"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_141",
+    "id": "CONAREME_2026_A_141",
     "area": "Medicina",
     "especialidad": "Reumatología",
     "tema": "Lupus Eritematoso",
@@ -2829,7 +2829,7 @@
       "D": "Test de tolerancia normal"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_142",
+    "id": "CONAREME_2026_A_142",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Diabetes Gestacional",
@@ -2849,7 +2849,7 @@
       "D": "Evitar hipotermia e iniciar nutrición parenteral"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_143",
+    "id": "CONAREME_2026_A_143",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Carenciales",
@@ -2869,7 +2869,7 @@
       "D": "Coagulación"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_144",
+    "id": "CONAREME_2026_A_144",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Anorrectal",
@@ -2889,7 +2889,7 @@
       "D": "Drenaje"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_145",
+    "id": "CONAREME_2026_A_145",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Anorrectal",
@@ -2909,7 +2909,7 @@
       "D": "Daratumumab"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_146",
+    "id": "CONAREME_2026_A_146",
     "area": "Medicina",
     "especialidad": "Hematología",
     "tema": "Mieloma Múltiple",
@@ -2929,7 +2929,7 @@
       "D": "Amilasa"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_147",
+    "id": "CONAREME_2026_A_147",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Pancreatitis",
@@ -2949,7 +2949,7 @@
       "D": "Neumonía"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_148",
+    "id": "CONAREME_2026_A_148",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Respiratorias",
@@ -2969,7 +2969,7 @@
       "D": "Ibuprofeno y corticoides sistémicos"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_149",
+    "id": "CONAREME_2026_A_149",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Reumatológicas",
@@ -2989,7 +2989,7 @@
       "D": "AGA cada 4 horas"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_150",
+    "id": "CONAREME_2026_A_150",
     "area": "Medicina",
     "especialidad": "Neumología",
     "tema": "Neumonía",
@@ -3009,7 +3009,7 @@
       "D": "Administración de vitamina E"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_151",
+    "id": "CONAREME_2026_A_151",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Prematuridad",
@@ -3029,7 +3029,7 @@
       "D": "Solución salina isotónica antes de la infusión de anfotericina B"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_152",
+    "id": "CONAREME_2026_A_152",
     "area": "Medicina",
     "especialidad": "Nefrología",
     "tema": "Insuficiencia Renal Aguda",
@@ -3049,7 +3049,7 @@
       "D": "Histerectomía más salpinguectomía"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_153",
+    "id": "CONAREME_2026_A_153",
     "area": "Gineco-Obstetricia",
     "especialidad": "Oncología Ginecológica",
     "tema": "Cáncer de Endometrio",
@@ -3069,7 +3069,7 @@
       "D": "Albendazol"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_154",
+    "id": "CONAREME_2026_A_154",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Parasitarias",
@@ -3089,7 +3089,7 @@
       "D": "Absceso epidural"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_155",
+    "id": "CONAREME_2026_A_155",
     "area": "Cirugia",
     "especialidad": "Otorrinolaringología",
     "tema": "Otitis",
@@ -3109,7 +3109,7 @@
       "D": "Anemia aplásica"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_156",
+    "id": "CONAREME_2026_A_156",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Reumatológicas",
@@ -3129,7 +3129,7 @@
       "D": "Loxoceles laeta"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_157",
+    "id": "CONAREME_2026_A_157",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Mordeduras y Picaduras",
@@ -3149,7 +3149,7 @@
       "D": "Decúbito lateral izquierdo"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_158",
+    "id": "CONAREME_2026_A_158",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Trabajo de Parto",
@@ -3169,7 +3169,7 @@
       "D": "Cuaternario"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_159",
+    "id": "CONAREME_2026_A_159",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "Prevención de Enfermedades",
@@ -3189,7 +3189,7 @@
       "D": "Progesterona"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_160",
+    "id": "CONAREME_2026_A_160",
     "area": "Básicas",
     "especialidad": "Fisiología",
     "tema": "Fisiología Renal",
@@ -3209,7 +3209,7 @@
       "D": "Lesión permanente del ADN"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_161",
+    "id": "CONAREME_2026_A_161",
     "area": "Básicas",
     "especialidad": "Patología",
     "tema": "Procesos Patológicos",
@@ -3229,7 +3229,7 @@
       "D": "Verde"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_162",
+    "id": "CONAREME_2026_A_162",
     "area": "Preventiva",
     "especialidad": "Salud Comunitaria",
     "tema": "Prevención de Enfermedades",
@@ -3249,7 +3249,7 @@
       "D": "Antibióticos"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_163",
+    "id": "CONAREME_2026_A_163",
     "area": "Cirugia",
     "especialidad": "Cirugía General",
     "tema": "Vías Biliares",
@@ -3269,7 +3269,7 @@
       "D": "Vancomicina"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_164",
+    "id": "CONAREME_2026_A_164",
     "area": "Cirugia",
     "especialidad": "Traumatología",
     "tema": "Artrosis",
@@ -3289,7 +3289,7 @@
       "D": "Manejo basado en riesgo cardiovascular, evaluación de diabetes y enfermedad renal"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_165",
+    "id": "CONAREME_2026_A_165",
     "area": "Medicina",
     "especialidad": "Cardiología",
     "tema": "Hipertensión Arterial",
@@ -3309,7 +3309,7 @@
       "D": "Salbutamol inhalado cada 4 horas y amoxicilina/ácido clavulánico oral"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_166",
+    "id": "CONAREME_2026_A_166",
     "area": "Medicina",
     "especialidad": "Neumología",
     "tema": "Asma",
@@ -3329,7 +3329,7 @@
       "D": "Azitromicina + cefalotina"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_167",
+    "id": "CONAREME_2026_A_167",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Puerperio",
@@ -3349,7 +3349,7 @@
       "D": "Tromboflebitis venosa profunda"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_168",
+    "id": "CONAREME_2026_A_168",
     "area": "Cirugia",
     "especialidad": "Cirugía Vascular",
     "tema": "Enfermedad Arterial Periférica",
@@ -3369,7 +3369,7 @@
       "D": "Crítica"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_169",
+    "id": "CONAREME_2026_A_169",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Virales",
@@ -3389,7 +3389,7 @@
       "D": "Toracocentesis diagnóstica"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_170",
+    "id": "CONAREME_2026_A_170",
     "area": "Cirugia",
     "especialidad": "Cirugía Torácica",
     "tema": "Trauma Torácico",
@@ -3409,7 +3409,7 @@
       "D": "Nistatina tópica"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_171",
+    "id": "CONAREME_2026_A_171",
     "area": "Medicina",
     "especialidad": "Dermatología",
     "tema": "Trastornos Pigmentarios",
@@ -3429,7 +3429,7 @@
       "D": "Dirimente"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_172",
+    "id": "CONAREME_2026_A_172",
     "area": "Preventiva",
     "especialidad": "Gestión en Salud",
     "tema": "Políticas de Salud",
@@ -3449,7 +3449,7 @@
       "D": "Síndrome urémico hemolítico"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_173",
+    "id": "CONAREME_2026_A_173",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Reumatológicas",
@@ -3469,7 +3469,7 @@
       "D": "Metronidazol"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_174",
+    "id": "CONAREME_2026_A_174",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Bacterianas",
@@ -3489,7 +3489,7 @@
       "D": "Desproporción cefalopélvica"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_175",
+    "id": "CONAREME_2026_A_175",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Trabajo de Parto",
@@ -3509,7 +3509,7 @@
       "D": "Prednisona"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_176",
+    "id": "CONAREME_2026_A_176",
     "area": "Medicina",
     "especialidad": "Reumatología",
     "tema": "Enfermedades Autoinmunes",
@@ -3529,7 +3529,7 @@
       "D": "Cianocobalamina"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_177",
+    "id": "CONAREME_2026_A_177",
     "area": "Medicina",
     "especialidad": "Hematología",
     "tema": "Hemoglobinopatías",
@@ -3549,7 +3549,7 @@
       "D": "Conducta expectante"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_178",
+    "id": "CONAREME_2026_A_178",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "Trabajo de Parto",
@@ -3569,7 +3569,7 @@
       "D": "IGHB dentro de la 1ra semana"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_179",
+    "id": "CONAREME_2026_A_179",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Infecciones Verticales",
@@ -3589,7 +3589,7 @@
       "D": "Exanguinotransfusión y monitorización"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_180",
+    "id": "CONAREME_2026_A_180",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Respiratorias",
@@ -3609,7 +3609,7 @@
       "D": "Síndrome de Kallman"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_181",
+    "id": "CONAREME_2026_A_181",
     "area": "Gineco-Obstetricia",
     "especialidad": "Ginecología",
     "tema": "Infertilidad",
@@ -3629,7 +3629,7 @@
       "D": "Agresión sexual"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_182",
+    "id": "CONAREME_2026_A_182",
     "area": "Medicina",
     "especialidad": "Psiquiatría",
     "tema": "Trastorno de Estrés Postraumático",
@@ -3649,7 +3649,7 @@
       "D": "Estabilizar hemodinamia y valorar protección de la vía aérea pre endoscopía"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_183",
+    "id": "CONAREME_2026_A_183",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Úlcera Péptica",
@@ -3669,7 +3669,7 @@
       "D": "Furosemida"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_184",
+    "id": "CONAREME_2026_A_184",
     "area": "Medicina",
     "especialidad": "Nefrología",
     "tema": "Insuficiencia Renal Aguda",
@@ -3689,7 +3689,7 @@
       "D": "Maltrato infantil"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_185",
+    "id": "CONAREME_2026_A_185",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Maltrato Infantil",
@@ -3709,7 +3709,7 @@
       "D": "Bulimia nerviosa"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_186",
+    "id": "CONAREME_2026_A_186",
     "area": "Medicina",
     "especialidad": "Psiquiatría",
     "tema": "Trastornos Alimentarios",
@@ -3729,7 +3729,7 @@
       "D": "IV"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_187",
+    "id": "CONAREME_2026_A_187",
     "area": "Preventiva",
     "especialidad": "Epidemiología",
     "tema": "Brotes",
@@ -3749,7 +3749,7 @@
       "D": "Antibióticos EV y surfactante endotraqueal"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_188",
+    "id": "CONAREME_2026_A_188",
     "area": "Pediatría",
     "especialidad": "Cardiología Pediátrica",
     "tema": "Cardiopatías Congénitas",
@@ -3769,7 +3769,7 @@
       "D": "Parasitológico seriado"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_189",
+    "id": "CONAREME_2026_A_189",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Gastrointestinales",
@@ -3789,7 +3789,7 @@
       "D": "Seguimiento del crecimiento fetal"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_190",
+    "id": "CONAREME_2026_A_190",
     "area": "Gineco-Obstetricia",
     "especialidad": "Obstetricia",
     "tema": "RCIU",
@@ -3809,7 +3809,7 @@
       "D": "Streptococcus pneumoniae"
     },
     "respuesta": "B",
-    "id": "CONAREME_2026_B_191",
+    "id": "CONAREME_2026_A_191",
     "area": "Medicina",
     "especialidad": "Gastroenterología",
     "tema": "Infecciones Peritonéales",
@@ -3829,7 +3829,7 @@
       "D": "Iniciar ventilación con bolsa autoinflable conectada a fuente de oxígeno"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_192",
+    "id": "CONAREME_2026_A_192",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "RCP Neonatal",
@@ -3849,7 +3849,7 @@
       "D": "fumarato"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_193",
+    "id": "CONAREME_2026_A_193",
     "area": "Básicas",
     "especialidad": "Bioquímica",
     "tema": "Metabolismo de Proteínas",
@@ -3869,7 +3869,7 @@
       "D": "Túnica íntima"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_194",
+    "id": "CONAREME_2026_A_194",
     "area": "Básicas",
     "especialidad": "Histología",
     "tema": "Tejido Conectivo",
@@ -3889,7 +3889,7 @@
       "D": "Uno de los padres y un tutor adulto"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_195",
+    "id": "CONAREME_2026_A_195",
     "area": "Preventiva",
     "especialidad": "Ética Médica",
     "tema": "Consentimiento Informado",
@@ -3909,7 +3909,7 @@
       "D": "Neumotórax a tensión"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_196",
+    "id": "CONAREME_2026_A_196",
     "area": "Pediatría",
     "especialidad": "Neonatología",
     "tema": "Malformaciones Congénitas",
@@ -3929,7 +3929,7 @@
       "D": "Neuropatía sensitivomotora de predominio sensitivo con enlentecimiento en la VCN"
     },
     "respuesta": "C",
-    "id": "CONAREME_2026_B_197",
+    "id": "CONAREME_2026_A_197",
     "area": "Medicina",
     "especialidad": "Neurología",
     "tema": "Neuropatías Periféricas",
@@ -3949,7 +3949,7 @@
       "D": "Fístula arteriovenosa"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_198",
+    "id": "CONAREME_2026_A_198",
     "area": "Cirugia",
     "especialidad": "Neurocirugía",
     "tema": "Trauma Craneoencefálico",
@@ -3969,7 +3969,7 @@
       "D": "Reducción hidrostática por enema"
     },
     "respuesta": "D",
-    "id": "CONAREME_2026_B_199",
+    "id": "CONAREME_2026_A_199",
     "area": "Pediatría",
     "especialidad": "Pediatría General",
     "tema": "Gastrointestinales",
@@ -3989,7 +3989,7 @@
       "D": "Staphylococcus aureus"
     },
     "respuesta": "A",
-    "id": "CONAREME_2026_B_200",
+    "id": "CONAREME_2026_A_200",
     "area": "Medicina",
     "especialidad": "Infectología",
     "tema": "Infecciones Fúngicas",

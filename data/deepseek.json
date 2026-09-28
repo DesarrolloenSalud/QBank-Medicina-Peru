@@ -2888,5 +2888,515 @@
     "dificultad": "Baja",
     "estado": "activa",
     "explicacion": "La intubación endotraqueal está indicada cuando la ventilación con mascarilla no es efectiva, es decir, no mejora la frecuencia cardíaca ni la expansión torácica, según ILCOR y el MINSA, porque se necesita asegurar la vía aérea y una ventilación adecuada. La opción A es incorrecta porque una frecuencia cardíaca menor de 100 lpm no es indicación por sí sola de intubación, sino que primero se optimiza la ventilación con mascarilla. La opción C es errónea porque la saturación menor de 90% se maneja inicialmente ajustando la ventilación y el oxígeno, no intubando de rutina. La opción D es incorrecta porque el llanto débil o ausente no constituye una indicación de intubación endotraqueal."
+  },
+  {
+    "numero": 171,
+    "enunciado": "Varón de 62 años, natural de Cerro de Pasco, acude por cefalea, prurito intenso tras la ducha y enrojecimiento facial de 6 meses. No fuma ni tiene antecedentes cardiopulmonares. Examen: pletórico, esplenomegalia palpable a 3 cm bajo el reborde costal. Funciones vitales: FC 84, FR 18, PA 138/86, T 36.5 °C. Hemograma: Hb 19.2 g/dL, Hto 58%, leucocitos 12,400/mm³, plaquetas 520,000/mm³. ¿Cuál es el hallazgo que mejor sustenta el diagnóstico de policitemia vera frente a una eritrocitosis secundaria?",
+    "opciones": {
+      "A": "Eritropoyetina sérica elevada",
+      "B": "Mutación JAK2 V617F positiva",
+      "C": "Saturación de oxígeno arterial de 88%",
+      "D": "Carboxihemoglobina elevada"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mutación JAK2 V617F está presente en más del 95% de los pacientes con policitemia vera y es un criterio diagnóstico mayor según la OMS 2016, por lo que su positividad confirma una neoplasia mieloproliferativa y descarta las eritrocitosis secundarias donde es negativa; la eritropoyetina sérica elevada (A) orienta a eritrocitosis secundaria por hipoxia renal o tumoral, no a PV; la saturación de oxígeno baja (C) y la carboxihemoglobina elevada (D) son causas de eritrocitosis secundaria por hipoxia tisular o tabaquismo, respectivamente, y no explican el cuadro en un paciente no fumador sin hipoxemia."
+  },
+  {
+    "numero": 172,
+    "enunciado": "Mujer de 58 años con diagnóstico reciente de policitemia vera, asintomática, sin antecedentes de trombosis. Examen físico sin esplenomegalia. Hemograma: Hb 17.5 g/dL, Hto 53%, plaquetas 380,000/mm³, leucocitos 9,800/mm³. Según las recomendaciones actuales, ¿cuál es la conducta terapéutica inicial más apropiada para esta paciente?",
+    "opciones": {
+      "A": "Flebotomía terapéutica hasta hematocrito menor de 45% más aspirina en dosis baja",
+      "B": "Hidroxiurea en monoterapia como primera línea",
+      "C": "Ruxolitinib de inicio por ser inhibidor de JAK2",
+      "D": "Solo observación clínica con controles hemáticos semestrales"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En pacientes con policitemia vera de bajo riesgo (menores de 60 años y sin antecedentes trombóticos) el manejo inicial recomendado por guías como la revisión JAMA 2025 y el MSD Manual consiste en flebotomía terapéutica para mantener hematocrito por debajo del 45% más aspirina en dosis baja como profilaxis antitrombótica; la hidroxiurea (B) se reserva para pacientes de alto riesgo (mayores de 60 años o con trombosis previa) o con síntomas persistentes; el ruxolitinib (C) está indicado en pacientes intolerantes o resistentes a hidroxiurea, no como primera línea; y la observación sola (D) es inadecuada porque todos los pacientes con PV requieren flebotomía y antiagregación para reducir el riesgo trombótico."
+  },
+  {
+    "numero": 173,
+    "enunciado": "Varón de 45 años con policitemia vera en tratamiento con flebotomías y aspirina. Acude a emergencia por dolor abdominal intenso, distensión y ascitis. Ecografía Doppler: trombosis de venas suprahepáticas. ¿Cuál es la complicación trombótica más característica de la policitemia vera que se presenta en este caso?",
+    "opciones": {
+      "A": "Trombosis de senos venosos cerebrales",
+      "B": "Síndrome de Budd-Chiari",
+      "C": "Infarto agudo de miocardio",
+      "D": "Trombosis venosa profunda de miembros inferiores"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El síndrome de Budd-Chiari por trombosis de las venas suprahepáticas es una complicación trombótica característica de la policitemia vera, especialmente en mujeres jóvenes y en pacientes con diagnóstico reciente, debido al estado de hiperviscosidad y hipercoagulabilidad; la trombosis de senos venosos cerebrales (A), el infarto de miocardio (C) y la trombosis venosa profunda (D) también pueden ocurrir en PV, pero no son la presentación típica ni la complicación más asociada al territorio esplácnico como en este caso."
+  },
+  {
+    "numero": 174,
+    "enunciado": "Mujer de 50 años con policitemia vera en tratamiento con hidroxiurea. Refiere prurito acuagénico incapacitante y esplenomegalia sintomática que no mejora. Hemograma: Hb 16.8 g/dL, Hto 50%, plaquetas 600,000/mm³. ¿Cuál es la alternativa terapéutica de elección en esta paciente?",
+    "opciones": {
+      "A": "Aumentar la dosis de hidroxiurea al doble",
+      "B": "Iniciar ruxolitinib",
+      "C": "Agregar interferón alfa pegilado",
+      "D": "Realizar esplenectomía"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El ruxolitinib, inhibidor de JAK1/JAK2, está indicado en pacientes con policitemia vera intolerantes o resistentes a hidroxiurea, ya que mejora el prurito y reduce la esplenomegalia, según la revisión JAMA 2025; aumentar la dosis de hidroxiurea (A) no está recomendado si ya es intolerante o resistente y puede aumentar la mielosupresión; el interferón alfa pegilado (C) es una alternativa, pero no la primera elección en este escenario; y la esplenectomía (D) se reserva para casos extremos con esplenomegalia masiva refractaria y no es el manejo inicial del prurito y esplenomegalia persistente."
+  },
+  {
+    "numero": 175,
+    "enunciado": "Varón de 70 años con policitemia vera de 8 años de evolución. Acude por fatiga progresiva, pérdida de peso y dolor óseo. Examen: palidez marcada, esplenomegalia masiva. Hemograma: Hb 9.5 g/dL, leucocitos 3,200/mm³, plaquetas 80,000/mm³, con dacriocitos en frotis. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Transformación a leucemia mieloide aguda",
+      "B": "Mielofibrosis post-policitemia vera",
+      "C": "Anemia ferropénica por flebotomías",
+      "D": "Hiperesplenismo por trombosis portal"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mielofibrosis post-policitemia vera es una complicación tardía que se presenta con citopenias progresivas, esplenomegalia masiva, síntomas constitucionales y dacriocitos en el frotis periférico, y ocurre en aproximadamente 10-15% de los pacientes; la transformación a leucemia aguda (A) se manifiesta con blastos en sangre periférica y médula ósea, no solo con citopenias; la anemia ferropénica por flebotomías (C) no explica la leucopenia, trombocitopenia ni la esplenomegalia masiva; y el hiperesplenismo por trombosis portal (D) no produce dacriocitos ni el cuadro de falla medular progresiva."
+  },
+  {
+    "numero": 176,
+    "enunciado": "Mujer de 55 años acude por cefalea, visión borrosa y eritromelalgia en pies. Examen: pletórica, esplenomegalia. Hemograma: Hb 18.5 g/dL, Hto 56%, plaquetas 850,000/mm³. Se indica flebotomía y aspirina. ¿Cuál es la meta de hematocrito recomendada para reducir el riesgo trombótico en policitemia vera?",
+    "opciones": {
+      "A": "Menor de 50%",
+      "B": "Menor de 48%",
+      "C": "Menor de 45%",
+      "D": "Menor de 42%"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Las guías internacionales y la revisión JAMA 2025 establecen que la meta de hematocrito en pacientes con policitemia vera debe ser menor de 45% para reducir el riesgo de trombosis, ya que existe una relación exponencial entre el hematocrito y la viscosidad sanguínea; un valor menor de 50% (A) o 48% (B) no es suficiente para controlar el riesgo trombótico; y un valor menor de 42% (D) no está respaldado por la evidencia y podría aumentar innecesariamente las flebotomías y el riesgo de anemia ferropénica."
+  },
+  {
+    "numero": 177,
+    "enunciado": "Varón de 68 años con policitemia vera en tratamiento con flebotomías. Acude por sangrado gingival y equimosis espontáneas. Hemograma: plaquetas 1,200,000/mm³, Hb 15.2 g/dL. ¿Cuál es el mecanismo fisiopatológico más probable del sangrado en este paciente?",
+    "opciones": {
+      "A": "Trombocitopenia por hiperesplenismo",
+      "B": "Enfermedad de von Willebrand adquirida por trombocitosis extrema",
+      "C": "Coagulación intravascular diseminada crónica",
+      "D": "Déficit de vitamina K por malabsorción"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la policitemia vera, la trombocitosis extrema (plaquetas ≥1,000 × 10⁹/L) puede causar una enfermedad de von Willebrand adquirida por secuestro del factor de von Willebrand de alto peso molecular, lo que produce sangrado mucocutáneo; la trombocitopenia por hiperesplenismo (A) no está presente porque las plaquetas están muy elevadas; la coagulación intravascular diseminada (C) no es típica en PV sin sepsis o complicaciones mayores; y el déficit de vitamina K (D) no se relaciona con la trombocitosis extrema ni con el cuadro clínico."
+  },
+  {
+    "numero": 178,
+    "enunciado": "Mujer de 40 años sin antecedentes de trombosis, con diagnóstico de policitemia vera. Hemograma: Hb 17.8 g/dL, Hto 54%, plaquetas 450,000/mm³. ¿Cuál de los siguientes factores la clasifica como de alto riesgo trombótico y justifica el inicio de terapia citorreductora?",
+    "opciones": {
+      "A": "Edad mayor de 60 años",
+      "B": "Antecedente de trombosis previa",
+      "C": "Esplenomegalia palpable",
+      "D": "Prurito acuagénico"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La estratificación de riesgo trombótico en policitemia vera considera de alto riesgo a los pacientes mayores de 60 años o con antecedente de trombosis previa, y en ellos se recomienda terapia citorreductora con hidroxiurea o interferón; en esta paciente de 40 años, el antecedente de trombosis previa (B) la clasifica como alto riesgo, mientras que la edad mayor de 60 años (A) no aplica; la esplenomegalia (C) y el prurito (D) son manifestaciones clínicas que afectan la calidad de vida, pero no determinan por sí solos el riesgo trombótico ni la indicación de citorreducción."
+  },
+  {
+    "numero": 179,
+    "enunciado": "Varón de 60 años con policitemia vera. Se realiza biopsia de médula ósea que muestra hipercelularidad trilineal con megacariocitos grandes y agrupados. ¿Cuál es el hallazgo molecular que con mayor frecuencia se encuentra en esta enfermedad y que forma parte de los criterios diagnósticos mayores de la OMS 2016?",
+    "opciones": {
+      "A": "Mutación BCR-ABL1",
+      "B": "Mutación JAK2 V617F",
+      "C": "Mutación CALR",
+      "D": "Mutación MPL"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mutación JAK2 V617F está presente en aproximadamente 95-97% de los pacientes con policitemia vera y es un criterio diagnóstico mayor según la OMS 2016, junto con la eritrocitosis y la biopsia de médula ósea característica; la mutación BCR-ABL1 (A) es propia de la leucemia mieloide crónica; las mutaciones CALR (C) y MPL (D) se encuentran principalmente en trombocitemia esencial y mielofibrosis primaria, no en PV, y no forman parte de los criterios diagnósticos mayores de esta enfermedad."
+  },
+  {
+    "numero": 180,
+    "enunciado": "Mujer de 48 años con policitemia vera en tratamiento con flebotomías y aspirina. Acude por dolor, enrojecimiento y ardor en los dedos de los pies que mejora con la elevación de las extremidades. ¿Cuál es el diagnóstico de esta manifestación microvascular?",
+    "opciones": {
+      "A": "Eritromelalgia",
+      "B": "Acrocianosis",
+      "C": "Fenómeno de Raynaud",
+      "D": "Celulitis"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La eritromelalgia es una manifestación microvascular característica de la policitemia vera y la trombocitemia esencial, que se presenta con dolor urente, enrojecimiento y aumento de la temperatura en los dedos de manos y pies, y mejora con la elevación de la extremidad o con aspirina; la acrocianosis (B) es una coloración azulada de las extremidades por vasoconstricción, no dolorosa; el fenómeno de Raynaud (C) se caracteriza por palidez, cianosis y rubor trifásico desencadenado por el frío; y la celulitis (D) es una infección cutánea con signos inflamatorios, fiebre y no mejora con la elevación."
+  },
+  {
+    "numero": 181,
+    "enunciado": "Varón de 58 años con policitemia vera en tratamiento con hidroxiurea. Acude por fiebre, tos productiva y disnea. Examen: estertores crepitantes en base derecha. Hemograma: Hb 16.2 g/dL, leucocitos 18,500/mm³ con neutrofilia, plaquetas 450,000/mm³. Radiografía de tórax: infiltrado alveolar en lóbulo inferior derecho. ¿Cuál es el agente etiológico más probable de esta complicación infecciosa en pacientes con policitemia vera?",
+    "opciones": {
+      "A": "Streptococcus pneumoniae",
+      "B": "Mycobacterium tuberculosis",
+      "C": "Pneumocystis jirovecii",
+      "D": "Aspergillus fumigatus"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Los pacientes con policitemia vera, especialmente aquellos en tratamiento con hidroxiurea, presentan un mayor riesgo de infecciones bacterianas, siendo Streptococcus pneumoniae el agente más frecuente de neumonía adquirida en la comunidad en este contexto; Mycobacterium tuberculosis (B) es más prevalente en Perú pero no es la causa típica de neumonía aguda en este paciente sin factores de riesgo epidemiológico específicos; Pneumocystis jirovecii (C) se presenta en pacientes con inmunosupresión profunda, no en PV con hidroxiurea; y Aspergillus fumigatus (D) causa infección pulmonar invasora en neutropénicos prolongados, no en este escenario."
+  },
+  {
+    "numero": 182,
+    "enunciado": "Mujer de 62 años con policitemia vera de 10 años de evolución. Acude por astenia, palidez y fiebre. Hemograma: Hb 8.5 g/dL, leucocitos 2,800/mm³, plaquetas 65,000/mm³, blastos 35% en sangre periférica. ¿Cuál es el diagnóstico más probable de esta complicación tardía?",
+    "opciones": {
+      "A": "Mielofibrosis post-policitemia vera",
+      "B": "Leucemia mieloide aguda secundaria",
+      "C": "Anemia aplásica por hidroxiurea",
+      "D": "Crisis blástica de leucemia mieloide crónica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La presencia de blastos en sangre periférica (≥20%) en un paciente con policitemia vera de larga data indica transformación a leucemia mieloide aguda secundaria, complicación que ocurre en 5-10% de los casos y se asocia a mutaciones como TP53; la mielofibrosis post-policitemia vera (A) cursa con citopenias progresivas, esplenomegalia masiva y dacriocitos, pero no con blastos; la anemia aplásica por hidroxiurea (C) es una causa de citopenias pero no produce blastosis; y la crisis blástica de LMC (D) requiere la presencia de BCR-ABL1, que no está presente en PV."
+  },
+  {
+    "numero": 183,
+    "enunciado": "Varón de 55 años con policitemia vera. Se realiza biopsia de médula ósea que reporta hipercelularidad con proliferación de las tres series y fibrosis reticulínica leve. ¿Cuál es el hallazgo histológico característico de la médula ósea en la policitemia vera?",
+    "opciones": {
+      "A": "Hipercelularidad trilineal con megacariocitos pleomórficos",
+      "B": "Hipocelularidad con infiltración grasa",
+      "C": "Fibrosis colágena difusa con osteosclerosis",
+      "D": "Infiltración por linfocitos atípicos"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La biopsia de médula ósea en la policitemia vera muestra hipercelularidad trilineal (eritroide, granulocítica y megacariocítica) con megacariocitos grandes, pleomórficos y agrupados, hallazgo que forma parte de los criterios diagnósticos de la OMS 2016; la hipocelularidad con infiltración grasa (B) es característica de la aplasia medular; la fibrosis colágena difusa con osteosclerosis (C) corresponde a la mielofibrosis primaria o post-policitemia vera avanzada; y la infiltración por linfocitos atípicos (D) orienta a linfoma o leucemia linfocítica."
+  },
+  {
+    "numero": 184,
+    "enunciado": "Mujer de 48 años con policitemia vera en tratamiento con flebotomías. Acude por dolor abdominal, ictericia y hepatomegalia. Ecografía Doppler: trombosis de la vena porta. ¿Cuál es la complicación trombótica esplácnica más frecuentemente asociada a la policitemia vera?",
+    "opciones": {
+      "A": "Trombosis de la vena porta",
+      "B": "Trombosis mesentérica",
+      "C": "Síndrome de Budd-Chiari",
+      "D": "Trombosis esplénica"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La trombosis de la vena porta es la complicación trombótica esplácnica más frecuente en pacientes con neoplasias mieloproliferativas, incluyendo la policitemia vera, y puede presentarse como dolor abdominal, ictericia y hepatomegalia; la trombosis mesentérica (B) también ocurre pero es menos común; el síndrome de Budd-Chiari (C) es característico pero menos frecuente que la trombosis portal; y la trombosis esplénica (D) suele ser secundaria a hiperesplenismo o infarto esplénico, no a trombosis venosa esplácnica primaria."
+  },
+  {
+    "numero": 185,
+    "enunciado": "Varón de 65 años con policitemia vera en tratamiento con hidroxiurea y aspirina. Acude por hematomas espontáneos y epistaxis recurrentes. Hemograma: plaquetas 1,500,000/mm³. ¿Cuál es el mecanismo fisiopatológico del sangrado en este paciente?",
+    "opciones": {
+      "A": "Trombocitopenia por mielosupresión",
+      "B": "Enfermedad de von Willebrand adquirida",
+      "C": "Coagulación intravascular diseminada",
+      "D": "Déficit de factores de coagulación por hepatopatía"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La trombocitosis extrema (plaquetas >1,000,000/mm³) en la policitemia vera puede causar una enfermedad de von Willebrand adquirida por secuestro del factor de von Willebrand de alto peso molecular, lo que produce sangrado mucocutáneo como epistaxis y hematomas; la trombocitopenia por mielosupresión (A) no está presente porque las plaquetas están muy elevadas; la coagulación intravascular diseminada (C) no es típica en PV sin sepsis; y el déficit de factores de coagulación por hepatopatía (D) no se relaciona con la trombocitosis extrema."
+  },
+  {
+    "numero": 186,
+    "enunciado": "Mujer de 50 años con diagnóstico reciente de policitemia vera. Se solicita eritropoyetina sérica que resulta subnormal. ¿Qué utilidad tiene este hallazgo en el diagnóstico de policitemia vera?",
+    "opciones": {
+      "A": "Es un criterio diagnóstico mayor",
+      "B": "Es un criterio diagnóstico menor",
+      "C": "Descarta eritrocitosis secundaria",
+      "D": "Indica necesidad de flebotomía inmediata"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Según los criterios de la OMS 2016, la eritropoyetina sérica subnormal es un criterio diagnóstico menor de policitemia vera, que junto con los criterios mayores (hemoglobina/hematocrito elevados, biopsia de médula ósea característica y mutación JAK2) permite establecer el diagnóstico; no es un criterio mayor (A) porque estos son la eritrocitosis, la histología medular y la mutación JAK2; descartar eritrocitosis secundaria (C) es una consecuencia pero no la utilidad principal del hallazgo; y la flebotomía inmediata (D) se indica por el hematocrito elevado, no por la eritropoyetina."
+  },
+  {
+    "numero": 187,
+    "enunciado": "Varón de 60 años con policitemia vera. Acude por prurito intenso que aparece después de la ducha y le impide dormir. ¿Cuál es el tratamiento de primera línea para el prurito acuagénico en este paciente?",
+    "opciones": {
+      "A": "Antihistamínicos no sedantes",
+      "B": "Ruxolitinib",
+      "C": "Flebotomía terapéutica",
+      "D": "Corticosteroides tópicos"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El ruxolitinib, inhibidor de JAK1/JAK2, ha demostrado ser eficaz en reducir el prurito acuagénico en pacientes con policitemia vera, especialmente en aquellos intolerantes o resistentes a hidroxiurea, y es considerado el tratamiento de primera línea para este síntoma según guías actuales; los antihistamínicos no sedantes (A) son la terapia más común pero su eficacia es limitada; la flebotomía (C) controla el hematocrito pero no mejora el prurito; y los corticosteroides tópicos (D) no tienen efecto sobre el prurito acuagénico."
+  },
+  {
+    "numero": 188,
+    "enunciado": "Mujer de 55 años con policitemia vera en tratamiento con flebotomías y aspirina. Acude por dolor urente, enrojecimiento y calor en los dedos de los pies que mejora con la elevación. ¿Cuál es el tratamiento específico para esta manifestación?",
+    "opciones": {
+      "A": "Aspirina en dosis baja",
+      "B": "Anticoagulación con warfarina",
+      "C": "Corticosteroides",
+      "D": "Antibióticos"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La eritromelalgia es una manifestación microvascular característica de la policitemia vera que responde rápidamente a la aspirina en dosis baja (50-100 mg/día), que inhibe la agregación plaquetaria y alivia el dolor; la anticoagulación con warfarina (B) no es efectiva para la eritromelalgia; los corticosteroides (C) y los antibióticos (D) no tienen indicación en esta manifestación."
+  },
+  {
+    "numero": 189,
+    "enunciado": "Varón de 70 años con policitemia vera de larga data. Acude por fatiga, pérdida de peso y esplenomegalia masiva. Hemograma: Hb 9.0 g/dL, leucocitos 3,000/mm³, plaquetas 70,000/mm³, con dacriocitos en frotis. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Transformación a leucemia aguda",
+      "B": "Mielofibrosis post-policitemia vera",
+      "C": "Anemia ferropénica por flebotomías",
+      "D": "Hiperesplenismo por trombosis portal"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mielofibrosis post-policitemia vera es una complicación tardía que se presenta con citopenias progresivas, esplenomegalia masiva, síntomas constitucionales y dacriocitos en el frotis periférico, y ocurre en 10-15% de los pacientes; la transformación a leucemia aguda (A) se manifiesta con blastos en sangre periférica; la anemia ferropénica por flebotomías (C) no explica la leucopenia ni la trombocitopenia; y el hiperesplenismo por trombosis portal (D) no produce dacriocitos."
+  },
+  {
+    "numero": 190,
+    "enunciado": "Mujer de 45 años con policitemia vera. Se realiza estudio molecular que reporta mutación JAK2 V617F positiva. ¿Cuál es la frecuencia aproximada de esta mutación en pacientes con policitemia vera?",
+    "opciones": {
+      "A": "50-60%",
+      "B": "70-80%",
+      "C": "85-90%",
+      "D": "95-97%"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mutación JAK2 V617F está presente en aproximadamente 95-97% de los pacientes con policitemia vera y es un criterio diagnóstico mayor según la OMS 2016; las frecuencias de 50-60% (A), 70-80% (B) y 85-90% (C) corresponden a otras neoplasias mieloproliferativas o son cifras menores a la real, y no reflejan la alta prevalencia de esta mutación en PV."
+  },
+  {
+    "numero": 191,
+    "enunciado": "Varón de 52 años acude por cefalea, tinnitus y visión borrosa de 3 meses. Examen: pletórico, esplenomegalia de 4 cm. Hemograma: Hb 19.0 g/dL, Hto 57%, leucocitos 13,200/mm³, plaquetas 480,000/mm³. Eritropoyetina sérica: 1.8 mU/mL. Biopsia de médula ósea: hipercelularidad trilineal con megacariocitos pleomórficos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Eritrocitosis secundaria a hipoxia crónica",
+      "B": "Policitemia vera",
+      "C": "Trombocitemia esencial",
+      "D": "Leucemia mieloide crónica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro cumple los criterios diagnósticos de la OMS 2016 para policitemia vera: eritrocitosis (Hb >16.5 g/dL en varón), biopsia de médula ósea con panmielosis y megacariocitos pleomórficos, y eritropoyetina sérica subnormal (criterio menor); la eritrocitosis secundaria a hipoxia crónica (A) cursa con eritropoyetina elevada o normal y no presenta panmielosis medular ni esplenomegalia; la trombocitemia esencial (C) se define por plaquetas ≥450,000/mm³ con serie roja normal; y la leucemia mieloide crónica (D) requiere BCR-ABL1 positivo y presenta leucocitosis con desviación a la izquierda."
+  },
+  {
+    "numero": 192,
+    "enunciado": "Mujer de 58 años con policitemia vera de 6 años en tratamiento con hidroxiurea. Acude por fiebre, tos y disnea. Examen: estertores en base izquierda. Hemograma: Hb 15.8 g/dL, leucocitos 22,000/mm³ con neutrofilia, plaquetas 380,000/mm³. Radiografía: consolidación alveolar en lóbulo inferior izquierdo. ¿Cuál es el agente etiológico más probable?",
+    "opciones": {
+      "A": "Mycobacterium tuberculosis",
+      "B": "Streptococcus pneumoniae",
+      "C": "Pneumocystis jirovecii",
+      "D": "Aspergillus fumigatus"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Los pacientes con policitemia vera, especialmente con hidroxiurea, presentan mayor riesgo de infecciones bacterianas; Streptococcus pneumoniae es el agente más frecuente de neumonía adquirida en la comunidad en este contexto; Mycobacterium tuberculosis (A) es prevalente en Perú pero no causa neumonía aguda con consolidación lobar en un paciente sin factores de riesgo específicos; Pneumocystis jirovecii (C) requiere inmunosupresión profunda; y Aspergillus fumigatus (D) causa infección invasora en neutropénicos prolongados, no en este escenario."
+  },
+  {
+    "numero": 193,
+    "enunciado": "Varón de 65 años con policitemia vera de 12 años de evolución. Acude por fatiga, pérdida de peso y esplenomegalia masiva. Hemograma: Hb 8.8 g/dL, leucocitos 2,900/mm³, plaquetas 60,000/mm³, dacriocitos 4%. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Transformación a leucemia mieloide aguda",
+      "B": "Mielofibrosis post-policitemia vera",
+      "C": "Anemia ferropénica por flebotomías",
+      "D": "Hiperesplenismo por trombosis portal"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mielofibrosis post-policitemia vera ocurre en 10-15% de los pacientes y se manifiesta con citopenias progresivas, esplenomegalia masiva, síntomas constitucionales y dacriocitos en frotis periférico; la transformación a leucemia aguda (A) se define por blastos ≥20% en sangre periférica o médula ósea; la anemia ferropénica por flebotomías (C) no explica la leucopenia ni la trombocitopenia; y el hiperesplenismo por trombosis portal (D) no produce dacriocitos ni falla medular trilineal."
+  },
+  {
+    "numero": 194,
+    "enunciado": "Mujer de 48 años con policitemia vera en tratamiento con flebotomías. Acude por dolor urente, enrojecimiento y calor en dedos de pies que mejora con elevación. ¿Cuál es el tratamiento específico de esta manifestación?",
+    "opciones": {
+      "A": "Aspirina en dosis baja",
+      "B": "Anticoagulación con warfarina",
+      "C": "Corticosteroides sistémicos",
+      "D": "Antibióticos de amplio espectro"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La eritromelalgia es una manifestación microvascular característica de la policitemia vera que responde rápidamente a aspirina en dosis baja (50-100 mg/día) por inhibición de la agregación plaquetaria; la anticoagulación con warfarina (B) no es efectiva; los corticosteroides (C) no tienen indicación; y los antibióticos (D) no están indicados en una manifestación trombótica microvascular no infecciosa."
+  },
+  {
+    "numero": 195,
+    "enunciado": "Varón de 60 años con policitemia vera. Se realiza biopsia de médula ósea que reporta hipercelularidad trilineal con megacariocitos grandes y agrupados. ¿Cuál de los siguientes hallazgos moleculares está presente en aproximadamente 95-97% de los pacientes con esta enfermedad?",
+    "opciones": {
+      "A": "BCR-ABL1",
+      "B": "JAK2 V617F",
+      "C": "CALR",
+      "D": "MPL"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La mutación JAK2 V617F está presente en 95-97% de pacientes con policitemia vera y es criterio diagnóstico mayor de la OMS 2016; BCR-ABL1 (A) es propio de leucemia mieloide crónica; CALR (C) y MPL (D) se encuentran en trombocitemia esencial y mielofibrosis primaria, no en PV."
+  },
+  {
+    "numero": 196,
+    "enunciado": "Mujer de 55 años con policitemia vera. Acude por prurito intenso tras la ducha que le impide dormir. Está en tratamiento con hidroxiurea y flebotomías. ¿Cuál es la alternativa terapéutica de elección para el prurito acuagénico refractario?",
+    "opciones": {
+      "A": "Antihistamínicos no sedantes",
+      "B": "Ruxolitinib",
+      "C": "Aumentar dosis de hidroxiurea",
+      "D": "Corticosteroides tópicos"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El ruxolitinib, inhibidor de JAK1/JAK2, ha demostrado eficacia en reducir el prurito acuagénico en pacientes con PV intolerantes o resistentes a hidroxiurea; los antihistamínicos (A) tienen eficacia limitada; aumentar la hidroxiurea (C) no está recomendado si ya es intolerante; y los corticosteroides tópicos (D) no tienen efecto sobre este síntoma."
+  },
+  {
+    "numero": 197,
+    "enunciado": "Varón de 45 años con policitemia vera de diagnóstico reciente. Refiere episodios de dolor abdominal, ictericia y hepatomegalia. Ecografía Doppler: trombosis de venas suprahepáticas. ¿Cuál es el diagnóstico de esta complicación?",
+    "opciones": {
+      "A": "Trombosis de vena porta",
+      "B": "Síndrome de Budd-Chiari",
+      "C": "Trombosis mesentérica",
+      "D": "Infarto esplénico"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El síndrome de Budd-Chiari por trombosis de venas suprahepáticas es una complicación trombótica característica de la PV, especialmente en mujeres jóvenes y en diagnóstico reciente; la trombosis de vena porta (A) afecta el sistema venoso portal y causa hipertensión portal; la trombosis mesentérica (C) produce isquemia intestinal; y el infarto esplénico (D) cursa con dolor en hipocondrio izquierdo, no con ictericia ni hepatomegalia."
+  },
+  {
+    "numero": 198,
+    "enunciado": "Mujer de 62 años con policitemia vera de 10 años. Acude por astenia, palidez y fiebre. Hemograma: Hb 8.0 g/dL, leucocitos 2,500/mm³, plaquetas 55,000/mm³, blastos 40% en sangre periférica. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Mielofibrosis post-policitemia vera",
+      "B": "Leucemia mieloide aguda secundaria",
+      "C": "Anemia aplásica por hidroxiurea",
+      "D": "Crisis blástica de leucemia mieloide crónica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La presencia de blastos ≥20% en sangre periférica en un paciente con PV de larga data define leucemia mieloide aguda secundaria, complicación que ocurre en 1.5-7% de los casos; la mielofibrosis post-PV (A) cursa con citopenias y dacriocitos pero sin blastosis; la anemia aplásica por hidroxiurea (C) causa citopenias sin blastos; y la crisis blástica de LMC (D) requiere BCR-ABL1 positivo, ausente en PV."
+  },
+  {
+    "numero": 199,
+    "enunciado": "Varón de 70 años con policitemia vera en tratamiento con flebotomías. Acude por sangrado gingival y equimosis espontáneas. Hemograma: plaquetas 1,400,000/mm³, Hb 15.0 g/dL. ¿Cuál es el mecanismo fisiopatológico del sangrado?",
+    "opciones": {
+      "A": "Trombocitopenia por hiperesplenismo",
+      "B": "Enfermedad de von Willebrand adquirida",
+      "C": "Coagulación intravascular diseminada",
+      "D": "Déficit de vitamina K"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La trombocitosis extrema (plaquetas >1,000 × 10⁹/L) en PV puede causar enfermedad de von Willebrand adquirida por secuestro del factor de von Willebrand de alto peso molecular, produciendo sangrado mucocutáneo; la trombocitopenia por hiperesplenismo (A) no está presente porque las plaquetas están muy elevadas; la CID (C) no es típica en PV sin sepsis; y el déficit de vitamina K (D) no se relaciona con trombocitosis extrema."
+  },
+  {
+    "numero": 200,
+    "enunciado": "Mujer de 50 años con policitemia vera de bajo riesgo (menor de 60 años, sin trombosis previa). ¿Cuál es el manejo inicial recomendado según las guías actuales?",
+    "opciones": {
+      "A": "Flebotomía terapéutica hasta hematocrito menor de 45% más aspirina en dosis baja",
+      "B": "Hidroxiurea en monoterapia como primera línea",
+      "C": "Ruxolitinib de inicio",
+      "D": "Solo observación con controles semestrales"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Policitemia Vera",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En pacientes con PV de bajo riesgo el manejo inicial consiste en flebotomía terapéutica para mantener hematocrito <45% más aspirina en dosis baja como profilaxis antitrombótica; la hidroxiurea (B) se reserva para alto riesgo (mayores de 60 años o con trombosis previa); el ruxolitinib (C) está indicado en intolerantes o resistentes a hidroxiurea; y la observación sola (D) es inadecuada porque todos los pacientes con PV requieren flebotomía y antiagregación."
   }
 ]

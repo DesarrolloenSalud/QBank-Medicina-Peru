@@ -30,9 +30,9 @@
     "file": "data/simulacro_villamedic.json"
   },
   {
-    "id": "deepseek",
-    "name": "DeepSeek",
+    "id": "banco_ia",
+    "name": "qBank IA",
     "description": "Creadas con IA",
-    "file": "data/deepseek.json"
+    "file": "data/banco_ia.json"
   }
 ]

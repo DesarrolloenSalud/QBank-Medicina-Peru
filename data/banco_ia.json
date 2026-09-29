@@ -8498,5 +8498,1705 @@
     "dificultad": "Baja",
     "estado": "activa",
     "explicacion": "En las vasculitis asociadas a ANCA con afectación orgánica grave, como la granulomatosis con poliangitis con compromiso renal y pulmonar, el tratamiento de inducción de remisión estándar consiste en ciclofosfamida o rituximab asociado a glucocorticoides, según las guías internacionales y las recomendaciones de sociedades de reumatología y nefrología. La opción A es incorrecta porque el metotrexato se reserva para enfermedad leve sin afectación orgánica grave. La opción B es errónea porque los glucocorticoides solos no son suficientes para inducir remisión en enfermedad grave. La opción D es incorrecta porque la azatioprina se utiliza para mantenimiento de la remisión, no para inducción."
+  },
+  {
+    "numero": 501,
+    "enunciado": "Lactante de 9 meses, afroperuano, con diagnóstico de drepanocitosis homocigota, acude por irritabilidad y tumefacción dolorosa de manos y pies de 2 días. Funciones vitales: FC 140 lpm, FR 32 rpm, PA 80/50 mmHg, T 38.2 °C, SatO2 96%. Examen físico: edema simétrico de dorso de manos y pies, eritema leve, dolor a la palpación; sin signos de focalización. Laboratorio: Hb 7.8 g/dL, leucocitos 14 000/mm3, plaquetas 350 000/mm3, reticulocitos 9%. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Crisis vasooclusiva con dactilitis",
+      "B": "Osteomielitis aguda",
+      "C": "Artritis séptica",
+      "D": "Leucemia linfoblástica aguda"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La dactilitis o síndrome mano-pie es una manifestación vasooclusiva típica de la drepanocitosis en lactantes y niños pequeños, producida por oclusión de capilares de la médula ósea de manos y pies, con edema doloroso simétrico y fiebre reactiva. La OMS y las guías peruanas de hematología pediátrica la reconocen como presentación frecuente en homocigotos HbSS. El hemograma con anemia y reticulocitosis apoya hemólisis crónica, sin blastos ni datos de supuración. La osteomielitis aguda suele ser focal, asimétrica, con signos locales marcados y gérmenes identificables; la artritis séptica compromete una articulación con derrame y limitación funcional; la leucemia linfoblástica aguda cursa con citopenias, blastos y organomegalias, no con edema simétrico de manos y pies. Por eso, el diagnóstico más probable es crisis vasooclusiva con dactilitis."
+  },
+  {
+    "numero": 502,
+    "enunciado": "Adolescente de 16 años, afroperuano, con anemia crónica y episodios recurrentes de dolor óseo desde la infancia, acude por ictericia y fatiga. Funciones vitales: FC 96 lpm, FR 20 rpm, PA 110/70 mmHg, T 37.0 °C, SatO2 98%. Examen: palidez conjuntival, ictericia escleral, esplenomegalia de 2 cm. Laboratorio: Hb 8.2 g/dL, reticulocitos 10%, bilirrubina indirecta 3.1 mg/dL, LDH 420 U/L, frotis con drepanocitos. ¿Cuál es el examen confirmatorio más adecuado?",
+    "opciones": {
+      "A": "Prueba de Coombs directa",
+      "B": "Electroforesis de hemoglobina",
+      "C": "Aspirado de médula ósea",
+      "D": "Dosaje de hierro sérico"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La drepanocitosis se sospecha por anemia hemolítica crónica, ictericia, esplenomegalia y episodios dolorosos, y se confirma mediante electroforesis de hemoglobina, que identifica HbS y el patrón homocigoto o compuesto. La OMS y las guías del MINSA señalan que el frotis con drepanocitos orienta, pero no confirma el genotipo ni descarta otras hemoglobinopatías. La prueba de Coombs directa se usa en anemia hemolítica autoinmune, no en hemoglobinopatías; el aspirado de médula ósea evalúa infiltración o falla medular, no el tipo de hemoglobina; el dosaje de hierro sérico puede mostrar sobrecarga o deficiencia, pero no define drepanocitosis. Por tanto, el examen confirmatorio más adecuado es la electroforesis de hemoglobina."
+  },
+  {
+    "numero": 503,
+    "enunciado": "Niño de 8 años con drepanocitosis conocida, acude por dolor intenso en brazos y piernas de 6 horas, sin fiebre. Funciones vitales: FC 118 lpm, FR 24 rpm, PA 100/60 mmHg, T 37.2 °C, SatO2 97%. Examen: dolor a la palpación de huesos largos, sin edema ni signos de focalización; abdomen blando. Laboratorio: Hb 7.5 g/dL, leucocitos 11 000/mm3, plaquetas 280 000/mm3. ¿Cuál es la medida inicial más importante para el dolor de esta crisis vasooclusiva?",
+    "opciones": {
+      "A": "Transfusión simple de glóbulos rojos",
+      "B": "Oxígeno suplementario a alto flujo",
+      "C": "Analgesia con opioides",
+      "D": "Inicio de hidroxiurea"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la crisis vasooclusiva dolorosa, la prioridad inicial es controlar el dolor con opioides según intensidad, junto con hidratación y búsqueda de desencadenantes; la analgesia oportuna reduce sufrimiento y complicaciones. La OMS y las guías del MINSA recomiendan opioides para dolor moderado a severo en drepanocitosis. La transfusión simple de glóbulos rojos no es medida inicial rutinaria para dolor no complicado y se reserva para anemia grave, síndrome torácico agudo o accidente cerebrovascular; el oxígeno suplementario a alto flujo solo está indicado si hay hipoxemia, no de rutina; la hidroxiurea es terapia modificadora crónica, no analgésico de rescate. Por ello, la medida inicial más importante para el dolor es la analgesia con opioides."
+  },
+  {
+    "numero": 504,
+    "enunciado": "Niño de 2 años, afroperuano, con drepanocitosis HbSS confirmada, asintomático, acude a control ambulatorio con esquema de vacunación completo. Funciones vitales: FC 100 lpm, FR 24 rpm, PA 90/60 mmHg, T 36.8 °C, SatO2 98%. Examen físico sin hallazgos. Hemograma: Hb 8.5 g/dL, leucocitos 10 000/mm3, plaquetas 300 000/mm3. ¿Cuál es la profilaxis antibiótica indicada para prevenir sepsis neumocócica?",
+    "opciones": {
+      "A": "Ácido fólico oral diario",
+      "B": "Hidroxiurea oral diaria",
+      "C": "Penicilina V oral diaria",
+      "D": "Transfusión simple periódica"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La penicilina V oral diaria es la profilaxis antibiótica recomendada en niños con drepanocitosis para prevenir sepsis neumocócica, sobre todo antes de los 5 años, según la OMS y las guías del MINSA. La asplenia funcional propia de la enfermedad aumenta el riesgo de infecciones por gérmenes encapsulados, y la profilaxis antibiótica reduce mortalidad en este grupo. El ácido fólico corrige el mayor consumo por eritropoyesis aumentada, pero no previene infecciones. La hidroxiurea es terapia modificadora crónica que disminuye crisis dolorosas, no profilaxis antibiótica. La transfusión simple periódica se reserva para complicaciones específicas, como síndrome torácico agudo o accidente cerebrovascular, y no previene sepsis neumocócica. Por ello, la opción correcta es penicilina V oral diaria. La vacunación antineumocócica es complementaria, pero la pregunta indaga específicamente profilaxis antibiótica."
+  },
+  {
+    "numero": 505,
+    "enunciado": "Niño de 5 años con drepanocitosis conocida, acude por fiebre y tos de 1 día. Funciones vitales: FC 130 lpm, FR 32 rpm, PA 95/60 mmHg, T 38.5 °C, SatO2 88%. Examen: crépitos en base derecha y dolor torácico. Radiografía de tórax: infiltrado alveolar nuevo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Crisis vasooclusiva no complicada",
+      "B": "Neumonía adquirida en la comunidad",
+      "C": "Asma bronquial",
+      "D": "Síndrome torácico agudo"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El síndrome torácico agudo es la complicación respiratoria más frecuente y grave de la drepanocitosis, definida por fiebre, síntomas respiratorios, infiltrado pulmonar nuevo e hipoxemia. La OMS y las guías del MINSA lo consideran una emergencia hematológica. En este niño, la fiebre, la tos, el dolor torácico, la SatO2 de 88% y el infiltrado alveolar nuevo configuran el diagnóstico. La crisis vasooclusiva no complicada produce dolor óseo o abdominal sin infiltrado ni hipoxemia. La neumonía adquirida en la comunidad puede solaparse, pero en drepanocitosis con infiltrado nuevo e hipoxemia se denomina síndrome torácico agudo, que exige manejo urgente. El asma bronquial no cursa con fiebre ni infiltrado alveolar nuevo. Por tanto, la respuesta correcta es síndrome torácico agudo."
+  },
+  {
+    "numero": 506,
+    "enunciado": "Mujer de 25 años con drepanocitosis homocigota, acude por crisis dolorosas recurrentes. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.7 °C, SatO2 98%. Examen sin focalización. Laboratorio: Hb 8.0 g/dL, leucocitos 9 000/mm3, plaquetas 250 000/mm3. ¿Cuál es la terapia modificadora de la enfermedad que reduce la frecuencia de crisis?",
+    "opciones": {
+      "A": "Hidroxiurea oral",
+      "B": "Penicilina V oral",
+      "C": "Ácido fólico oral",
+      "D": "Transfusión simple periódica"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hidroxiurea es la terapia modificadora de la enfermedad que reduce la frecuencia de crisis vasooclusivas y hospitalizaciones en drepanocitosis, al aumentar la hemoglobina fetal y disminuir la polimerización de HbS. La OMS y las guías del MINSA la recomiendan en pacientes con crisis recurrentes. La penicilina V oral es profilaxis antibiótica para sepsis neumocócica, no modifica la enfermedad. El ácido fólico es soporte nutricional para la eritropoyesis aumentada, pero no reduce crisis. La transfusión simple periódica puede usarse en indicaciones específicas, pero no es la terapia modificadora de primera línea para disminuir crisis. Por ello, la opción correcta es hidroxiurea oral."
+  },
+  {
+    "numero": 507,
+    "enunciado": "Lactante de 12 meses con drepanocitosis HbSS, acude por palidez súbita y somnolencia de 4 horas. Funciones vitales: FC 180 lpm, FR 40 rpm, PA 70/40 mmHg, T 37.5 °C, SatO2 95%. Examen: palidez marcada, esplenomegalia de 5 cm, sin focalización. Laboratorio: Hb 4.0 g/dL, reticulocitos 12%, leucocitos 12 000/mm3, plaquetas 200 000/mm3. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Crisis aplásica por parvovirus B19",
+      "B": "Secuestro esplénico agudo",
+      "C": "Crisis vasooclusiva dolorosa",
+      "D": "Sepsis con anemia asociada"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El secuestro esplénico agudo es una complicación grave y típica de la drepanocitosis en lactantes y niños pequeños, producida por atrapamiento masivo de eritrocitos falciformes en el bazo, con caída brusca de la hemoglobina, esplenomegalia y shock hipovolémico. La OMS y las guías del MINSA lo consideran una emergencia hematológica que requiere transfusión urgente. En este caso, la palidez súbita, la esplenomegalia de 5 cm, la hipotensión y la Hb de 4.0 g/dL con reticulocitosis configuran el cuadro. La crisis aplásica por parvovirus B19 cursa con reticulocitopenia marcada, no con reticulocitos elevados. La crisis vasooclusiva dolorosa se manifiesta por dolor óseo o abdominal sin secuestro esplénico ni shock. La sepsis con anemia asociada suele presentar fiebre, focalización infecciosa y leucocitosis, pero no explica por sí sola la esplenomegalia masiva y la caída aguda de la hemoglobina. Por ello, la respuesta correcta es secuestro esplénico agudo."
+  },
+  {
+    "numero": 508,
+    "enunciado": "Niño de 6 años con drepanocitosis, acude por palidez progresiva y fatiga de 3 días, sin fiebre ni dolor. Funciones vitales: FC 120 lpm, FR 24 rpm, PA 95/60 mmHg, T 36.8 °C, SatO2 97%. Examen: palidez conjuntival, esplenomegalia leve. Laboratorio: Hb 4.5 g/dL, reticulocitos 0.4%, leucocitos 8 000/mm3, plaquetas 250 000/mm3. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Secuestro esplénico agudo",
+      "B": "Crisis vasooclusiva",
+      "C": "Anemia ferropénica",
+      "D": "Crisis aplásica por parvovirus B19"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La crisis aplásica por parvovirus B19 es una complicación frecuente en niños con drepanocitosis, caracterizada por anemia aguda grave, reticulocitopenia y ausencia de dolor o fiebre significativa. El parvovirus B19 infecta los precursores eritroides y detiene transitoriamente la eritropoyesis, lo que se traduce en caída de la hemoglobina con reticulocitos muy bajos. La OMS y las guías del MINSA recomiendan transfusión de glóbulos rojos si hay anemia sintomática. En este paciente, la Hb de 4.5 g/dL con reticulocitos de 0.4% y leucocitos y plaquetas normales orientan a aplasia transitoria. El secuestro esplénico agudo presenta esplenomegalia marcada, shock y reticulocitosis. La crisis vasooclusiva cursa con dolor intenso, no con reticulocitopenia. La anemia ferropénica es crónica, microcítica y con reticulocitos bajos o normales, pero no explica la caída aguda en un paciente con drepanocitosis. Por ello, la opción correcta es crisis aplásica por parvovirus B19."
+  },
+  {
+    "numero": 509,
+    "enunciado": "Adolescente de 16 años con drepanocitosis, acude por erección dolorosa de 5 horas de evolución, sin traumatismo. Funciones vitales: FC 90 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.7 °C, SatO2 98%. Examen: pene erecto, doloroso, sin signos de necrosis. Laboratorio: Hb 8.5 g/dL, leucocitos 9 000/mm3. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Hidratación, analgesia y oxígeno",
+      "B": "Transfusión simple inmediata",
+      "C": "Aspiración quirúrgica inmediata",
+      "D": "Administración de sildenafilo"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El priapismo isquémico es una complicación vasooclusiva de la drepanocitosis que requiere manejo urgente para evitar disfunción eréctil permanente. La conducta inicial incluye hidratación, analgesia y oxígeno, medidas que reducen la falciformación y mejoran el flujo microvascular; la OMS y las guías del MINSA respaldan este enfoque conservador inicial. Si el cuadro persiste más de 4 horas, se puede considerar aspiración e irrigación, pero no como primer paso en todos los casos. La transfusión simple inmediata no es la conducta inicial rutinaria y se reserva para complicaciones graves o falla del manejo conservador. La aspiración quirúrgica inmediata es un procedimiento de rescate, no la primera medida. El sildenafilo está contraindicado porque prolonga la erección y agrava la isquemia. Por ello, la opción correcta es hidratación, analgesia y oxígeno."
+  },
+  {
+    "numero": 510,
+    "enunciado": "Niño de 10 años con drepanocitosis, acude por hemiparesia derecha y desviación de comisura labial de inicio súbito hace 2 horas. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 100/60 mmHg, T 36.9 °C, SatO2 97%. Examen: hemiparesia derecha, afasia. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Crisis vasooclusiva periférica",
+      "B": "Síndrome torácico agudo",
+      "C": "Accidente cerebrovascular isquémico",
+      "D": "Secuestro esplénico agudo"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El accidente cerebrovascular isquémico es una complicación neurológica grave de la drepanocitosis, causada por vasooclusión de grandes vasos intracraneales y activación endotelial. Se presenta con déficit neurológico focal súbito, como hemiparesia y afasia, y es más frecuente en niños con HbSS. La OMS y las guías del MINSA recomiendan Doppler transcraneal para tamizaje y transfusión urgente ante un evento agudo. En este paciente, el inicio súbito de hemiparesia derecha y afasia sin fiebre ni dolor óseo orienta a evento vascular cerebral. La crisis vasooclusiva periférica produce dolor en huesos o abdomen, sin focalización neurológica. El síndrome torácico agudo cursa con fiebre, síntomas respiratorios, infiltrado pulmonar e hipoxemia. El secuestro esplénico agudo se manifiesta por palidez súbita, esplenomegalia y shock. Por ello, la respuesta correcta es accidente cerebrovascular isquémico."
+  },
+  {
+    "numero": 511,
+    "enunciado": "Adulto de 22 años con drepanocitosis, acude por úlcera dolorosa en región maleolar interna de pierna derecha de 3 meses, sin fiebre. Funciones vitales: FC 80 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.5 °C, SatO2 98%. Examen: úlcera de 3 cm, fondo limpio, bordes hiperpigmentados, sin signos de infección. ¿Cuál es la complicación cutánea más frecuente en esta enfermedad?",
+    "opciones": {
+      "A": "Celulitis recurrente",
+      "B": "Psoriasis invertida",
+      "C": "Dermatitis atópica",
+      "D": "Úlcera maleolar crónica"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La úlcera maleolar crónica es la complicación cutánea más frecuente y característica de la drepanocitosis en adolescentes y adultos jóvenes. Se localiza típicamente en la región maleolar interna, es dolorosa, de evolución tórpida y se relaciona con estasis venosa, microvasculatura alterada y hemólisis crónica. La OMS y las guías del MINSA la reconocen como manifestación frecuente que afecta la calidad de vida. En este paciente, la úlcera de 3 cm, de fondo limpio, bordes hiperpigmentados y sin signos de infección, en un adulto joven con drepanocitosis, configura el cuadro típico. La celulitis recurrente es una infección aguda, con eritema, calor y fiebre, no una úlcera crónica. La psoriasis invertida afecta pliegues y no se asocia específicamente a drepanocitosis. La dermatitis atópica es una enfermedad inflamatoria crónica con prurito y lesiones eccematosas, no una úlcera maleolar. Por ello, la opción correcta es úlcera maleolar crónica."
+  },
+  {
+    "numero": 512,
+    "enunciado": "Niño de 12 años con drepanocitosis HbSS, acude por dolor abdominal cólico en hipocondrio derecho de 8 horas, tras ingesta de comida grasosa. Funciones vitales: FC 92 lpm, FR 20 rpm, PA 105/65 mmHg, T 37.2 °C, SatO2 98%. Examen: ictericia escleral leve, dolor a la palpación en hipocondrio derecho, signo de Murphy negativo. Laboratorio: Hb 8.0 g/dL, leucocitos 9 000/mm3, bilirrubina indirecta 2.8 mg/dL, directa 1.2 mg/dL. Ecografía: imágenes hiperecogénicas con sombra acústica en vesícula. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Crisis vasooclusiva abdominal",
+      "B": "Colelitiasis",
+      "C": "Hepatitis viral aguda",
+      "D": "Apendicitis aguda"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La colelitiasis es una complicación frecuente de la drepanocitosis debido a hemólisis crónica, que aumenta la bilirrubina indirecta y favorece la formación de cálculos de bilirrubinato. El dolor cólico postprandial en hipocondrio derecho, la ictericia leve y la ecografía con imágenes hiperecogénicas con sombra acústica confirman el diagnóstico. La OMS y las guías del MINSA recomiendan vigilancia ecográfica en pacientes con hemólisis crónica. La crisis vasooclusiva abdominal produce dolor difuso o localizado sin cálculos vesiculares ni ictericia colestásica. La hepatitis viral aguda cursa con transaminasas muy elevadas, bilirrubina directa predominante y ausencia de cálculos. La apendicitis aguda migra el dolor a fosa ilíaca derecha, con fiebre y leucocitosis, y no muestra cálculos en vesícula. Por ello, la respuesta correcta es colelitiasis."
+  },
+  {
+    "numero": 513,
+    "enunciado": "Adolescente de 15 años con drepanocitosis, acude por dolor sordo en cadera derecha de 2 meses, que aumenta con la actividad, y cojera. Funciones vitales: FC 84 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.6 °C, SatO2 98%. Examen: limitación de la rotación interna y abducción de cadera derecha, sin fiebre. Radiografía de cadera: aplanamiento y esclerosis de la cabeza femoral. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Osteomielitis crónica",
+      "B": "Artritis reumatoide juvenil",
+      "C": "Necrosis avascular de cabeza femoral",
+      "D": "Fractura de cadera"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La necrosis avascular de la cabeza femoral es una complicación osteoarticular característica de la drepanocitosis, producida por vasooclusión de la microcirculación ósea que compromete la vascularización de la epífisis femoral. El dolor crónico, la cojera, la limitación de la rotación interna y la abducción, junto con el aplanamiento y la esclerosis radiológica, configuran el diagnóstico. La OMS y las guías del MINSA reconocen la osteonecrosis como causa importante de morbilidad en adolescentes y adultos con drepanocitosis. La osteomielitis crónica cursa con fiebre, dolor agudo, secuestros óseos y reacción perióstica, no con aplanamiento epifisario. La artritis reumatoide juvenil es una poliartritis inflamatoria simétrica, sin esclerosis femoral aislada. La fractura de cadera requiere traumatismo previo y muestra línea de fractura, no esclerosis crónica. Por ello, la opción correcta es necrosis avascular de cabeza femoral."
+  },
+  {
+    "numero": 514,
+    "enunciado": "Adulto de 24 años con drepanocitosis, acude por disnea de esfuerzo progresiva y palpitaciones de 3 meses. Funciones vitales: FC 100 lpm, FR 24 rpm, PA 115/70 mmHg, T 36.6 °C, SatO2 92%. Examen: soplo sistólico en foco pulmonar, reforzamiento del segundo ruido, ingurgitación yugular. Ecocardiografía: presión sistólica de la arteria pulmonar elevada. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Insuficiencia cardíaca izquierda",
+      "B": "Hipertensión pulmonar",
+      "C": "Derrame pericárdico",
+      "D": "Estenosis aórtica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hipertensión pulmonar es una complicación cardiovascular frecuente de la drepanocitosis, causada por hemólisis crónica, vasooclusión y disfunción endotelial, que aumentan la resistencia vascular pulmonar. La disnea de esfuerzo, el soplo sistólico en foco pulmonar, el reforzamiento del segundo ruido y la elevación de la presión sistólica de la arteria pulmonar en la ecocardiografía confirman el diagnóstico. La OMS y las guías del MINSA recomiendan tamizaje ecocardiográfico en pacientes con disnea. La insuficiencia cardíaca izquierda produce congestión pulmonar, tercer ruido y cardiomegalia, sin soplo pulmonar predominante. El derrame pericárdico cursa con dolor torácico, hipotensión y bajo voltaje electrocardiográfico, no con hipertensión pulmonar. La estenosis aórtica genera soplo eyectivo en foco aórtico, irradiado a cuello, y no eleva la presión pulmonar. Por ello, la respuesta correcta es hipertensión pulmonar."
+  },
+  {
+    "numero": 515,
+    "enunciado": "Niño de 3 años con drepanocitosis HbSS, acude a control ambulatorio. Funciones vitales: FC 96 lpm, FR 22 rpm, PA 90/60 mmHg, T 36.7 °C, SatO2 98%. Examen físico sin hallazgos. Esquema de vacunación nacional completo para la edad. ¿Cuál es la vacuna adicional más importante para prevenir infecciones graves en este paciente?",
+    "opciones": {
+      "A": "Vacuna antineumocócica conjugada",
+      "B": "Vacuna BCG",
+      "C": "Vacuna contra hepatitis A",
+      "D": "Vacuna contra varicela"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La vacuna antineumocócica conjugada es la inmunización adicional más importante en niños con drepanocitosis, debido a la asplenia funcional que los predispone a sepsis por Streptococcus pneumoniae. La OMS y las guías del MINSA recomiendan el esquema antineumocócico ampliado, junto con meningocócica y Haemophilus influenzae tipo b, para reducir la mortalidad por infecciones encapsuladas. En este paciente, el esquema nacional ya incluye BCG, por lo que no es una vacuna adicional. La vacuna contra hepatitis A no previene las infecciones graves típicas de la asplenia funcional. La vacuna contra varicela puede considerarse en algunos casos, pero no es la medida principal para prevenir sepsis neumocócica. Por ello, la opción correcta es vacuna antineumocócica conjugada."
+  },
+  {
+    "numero": 516,
+    "enunciado": "Niño de 5 años con drepanocitosis HbSS confirmada, acude por fiebre de 6 horas. Funciones vitales: FC 130 lpm, FR 28 rpm, PA 90/60 mmHg, T 38.8 °C, SatO2 96%. Examen físico sin focalización infecciosa. Laboratorio: Hb 8.2 g/dL, leucocitos 15 000/mm3, plaquetas 250 000/mm3. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Administrar antipirético y control ambulatorio",
+      "B": "Indicar transfusión simple de glóbulos rojos",
+      "C": "Iniciar hidroxiurea oral",
+      "D": "Tomar hemocultivo e iniciar antibiótico empírico endovenoso"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La fiebre en un niño con drepanocitosis es una emergencia porque la asplenia funcional aumenta el riesgo de sepsis, especialmente por Streptococcus pneumoniae y otros gérmenes encapsulados. La OMS y las guías del MINSA recomiendan hemocultivo y antibioticoterapia empírica endovenosa precoz, junto con evaluación de focos y soporte hemodinámico. En este paciente, la fiebre alta y la leucocitosis obligan a descartar infección grave antes de enviarlo a casa. Administrar antipirético y control ambulatorio omite el riesgo de sepsis fulminante. Indicar transfusión simple de glóbulos rojos no es la conducta inicial de la fiebre sin anemia grave sintomática. Iniciar hidroxiurea oral corresponde a terapia modificadora crónica, no al manejo agudo de fiebre. Por ello, la opción correcta es tomar hemocultivo e iniciar antibiótico empírico endovenoso."
+  },
+  {
+    "numero": 517,
+    "enunciado": "Niño de 7 años con drepanocitosis, acude por dolor intenso en brazos y piernas de 4 horas. Funciones vitales: FC 110 lpm, FR 24 rpm, PA 100/60 mmHg, T 37.0 °C, SatO2 98%. Examen: dolor a la palpación de huesos largos, sin focalización. Laboratorio: Hb 7.8 g/dL, leucocitos 10 000/mm3. Además de analgesia con opioides, ¿cuál es la medida inicial más importante?",
+    "opciones": {
+      "A": "Administrar ácido fólico oral",
+      "B": "Iniciar hidratación endovenosa",
+      "C": "Indicar transfusión simple de glóbulos rojos",
+      "D": "Administrar oxígeno a alto flujo"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la crisis vasooclusiva dolorosa, además de la analgesia oportuna con opioides, la hidratación endovenosa es una medida inicial fundamental porque reduce la viscosidad sanguínea y disminuye la polimerización de la hemoglobina S. La OMS y las guías del MINSA recomiendan hidratación adecuada, control del dolor, oxígeno solo si hay hipoxemia y búsqueda de desencadenantes. El ácido fólico oral es suplemento crónico por eritropoyesis aumentada, no tratamiento de la crisis. La transfusión simple de glóbulos rojos no está indicada de rutina en crisis dolorosa no complicada y se reserva para anemia grave sintomática, síndrome torácico agudo o accidente cerebrovascular. El oxígeno a alto flujo solo se indica si existe hipoxemia documentada, no de forma sistemática. Por ello, la opción correcta es iniciar hidratación endovenosa."
+  },
+  {
+    "numero": 518,
+    "enunciado": "Lactante de 18 meses con drepanocitosis HbSS, asintomático, acude a control. Funciones vitales: FC 100 lpm, FR 24 rpm, PA 85/55 mmHg, T 36.7 °C, SatO2 98%. Examen sin hallazgos. Laboratorio: Hb 7.5 g/dL, reticulocitos 12%, leucocitos 9 000/mm3, plaquetas 280 000/mm3. ¿Cuál es el suplemento indicado de forma crónica?",
+    "opciones": {
+      "A": "Ácido fólico oral",
+      "B": "Hierro oral",
+      "C": "Vitamina B12 intramuscular",
+      "D": "Eritropoyetina subcutánea"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la drepanocitosis existe hemólisis crónica y eritropoyesis aumentada, lo que incrementa el consumo de folato y puede producir deficiencia relativa. La OMS y las guías del MINSA recomiendan suplementación crónica con ácido fólico oral para mantener la eritropoyesis y prevenir anemia megaloblástica. El hierro oral no está indicado de rutina porque estos pacientes pueden presentar sobrecarga férrica por hemólisis y transfusiones, y la ferropenia no es la causa habitual de anemia. La vitamina B12 intramuscular se reserva para deficiencia documentada, que no es propia de la enfermedad. La eritropoyetina subcutánea no forma parte del manejo estándar de la drepanocitosis y puede aumentar la viscosidad. Por ello, la opción correcta es ácido fólico oral."
+  },
+  {
+    "numero": 519,
+    "enunciado": "Niño de 6 años con drepanocitosis, acude por fiebre y dolor en tibia derecha de 2 días. Funciones vitales: FC 120 lpm, FR 26 rpm, PA 95/60 mmHg, T 38.5 °C, SatO2 97%. Examen: dolor focal, calor y limitación funcional de pierna derecha. Hemocultivo pendiente. ¿Cuál es el agente etiológico más frecuente de osteomielitis en este paciente?",
+    "opciones": {
+      "A": "Staphylococcus aureus",
+      "B": "Streptococcus pneumoniae",
+      "C": "Salmonella no typhi",
+      "D": "Kingella kingae"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En los pacientes con drepanocitosis, la osteomielitis tiene una asociación clásica con Salmonella no typhi, debido a microinfartos óseos que favorecen la siembra bacteriana y a alteraciones de la inmunidad humoral. La OMS y las guías del MINSA señalan esta asociación y recomiendan hemocultivo y cultivo óseo, además de antibioticoterapia dirigida. Staphylococcus aureus es la causa más frecuente de osteomielitis en niños sanos, pero en drepanocitosis Salmonella cobra mayor relevancia. Streptococcus pneumoniae se relaciona sobre todo con sepsis y neumonía en asplenia funcional, no con osteomielitis focal típica. Kingella kingae afecta a niños pequeños sanos y no tiene predilección por drepanocitosis. Por ello, la opción correcta es Salmonella no typhi."
+  },
+  {
+    "numero": 520,
+    "enunciado": "Adolescente de 14 años con drepanocitosis, acude por hematuria macroscópica y dolor lumbar leve. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.8 °C, SatO2 98%. Examen: dolor a la palpación lumbar bilateral, sin fiebre. Laboratorio: Hb 8.0 g/dL, creatinina 0.9 mg/dL, sedimento con hematíes. ¿Cuál es la complicación renal más probable?",
+    "opciones": {
+      "A": "Glomerulonefritis postestreptocócica",
+      "B": "Nefrolitiasis úrica",
+      "C": "Pielonefritis aguda",
+      "D": "Necrosis papilar renal"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La necrosis papilar renal es una complicación característica de la drepanocitosis, producida por microinfartos en la médula renal debido a la falciformación y a la hipoxia relativa de esa región. Se manifiesta con hematuria macroscópica, dolor lumbar y, en ocasiones, deterioro de la concentración urinaria. La OMS y las guías del MINSA reconocen la nefropatía por drepanocitosis como causa frecuente de hematuria. La glomerulonefritis postestreptocócica aparece tras infección faríngea o cutánea, con hipertensión, edema y cilindros hemáticos, no en este contexto. La nefrolitiasis úrica puede causar hematuria, pero no es la complicación renal más característica ni explica por sí sola el cuadro. La pielonefritis aguda cursa con fiebre, piuria y dolor lumbar unilateral. Por ello, la opción correcta es necrosis papilar renal."
+  },
+  {
+    "numero": 521,
+    "enunciado": "Varón de 22 años con drepanocitosis homocigota, sin antecedentes de asma ni neumonía reciente, acude por fiebre y dolor torácico de 1 día de evolución. Funciones vitales: FC 118 lpm, FR 28 rpm, PA 100/60 mmHg, T 38.6 °C, SatO2 89%. Examen físico: crépitos en base derecha y matidez leve. Laboratorio: Hb 7.8 g/dL, leucocitos 16 000/mm3, plaquetas 220 000/mm3. Radiografía de tórax: infiltrado alveolar nuevo en lóbulo inferior derecho. Hemocultivo pendiente. ¿Cuál es la medida terapéutica más importante al ingreso?",
+    "opciones": {
+      "A": "Transfusión de hematíes",
+      "B": "Antibióticos empíricos",
+      "C": "Hidroxiurea oral",
+      "D": "Corticoides sistémicos"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a síndrome torácico agudo, complicación grave de la drepanocitosis definida por fiebre, síntomas respiratorios, infiltrado pulmonar nuevo e hipoxemia. La OMS y las guías del MINSA recomiendan como medida inicial antibióticos empíricos endovenosos, dado el alto riesgo de infección por gérmenes encapsulados, junto con oxígeno, hidratación y analgesia. La transfusión de hematíes no es la primera medida en todos los casos y se reserva para hipoxemia refractaria, anemia grave sintomática o deterioro respiratorio progresivo. La hidroxiurea oral es terapia modificadora crónica y no tiene efecto en el episodio agudo. Los corticoides sistémicos no forman parte del manejo estándar del síndrome torácico agudo y pueden asociarse a complicaciones. Por ello, la opción correcta es antibióticos empíricos."
+  },
+  {
+    "numero": 522,
+    "enunciado": "Niño de 10 años con drepanocitosis HbSS, asintomático, sin crisis recientes, acude a control ambulatorio. Recibe ácido fólico. Funciones vitales: FC 90 lpm, FR 20 rpm, PA 100/60 mmHg, T 36.7 °C, SatO2 98%. Examen físico sin hallazgos. Doppler transcraneal: velocidad media en arteria cerebral media de 220 cm/s. Laboratorio: Hb 8.0 g/dL, leucocitos 9 000/mm3, plaquetas 250 000/mm3. ¿Cuál es la conducta más adecuada para prevenir accidente cerebrovascular?",
+    "opciones": {
+      "A": "Hidroxiurea oral",
+      "B": "Ácido acetilsalicílico",
+      "C": "Transfusión crónica",
+      "D": "Observación anual"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "Un Doppler transcraneal con velocidad media superior a 200 cm/s en la arteria cerebral media indica alto riesgo de accidente cerebrovascular isquémico en niños con drepanocitosis. La OMS y las guías del MINSA recomiendan transfusión crónica de glóbulos rojos como conducta de elección para reducir la hemoglobina S y prevenir el evento vascular. La hidroxiurea oral puede considerarse en contextos seleccionados, pero no reemplaza a la transfusión crónica como primera línea en este escenario de alto riesgo. El ácido acetilsalicílico no ha demostrado beneficio en la prevención del ictus en drepanocitosis pediátrica. La observación anual omite una intervención urgente y eficaz. Por ello, la opción correcta es transfusión crónica."
+  },
+  {
+    "numero": 523,
+    "enunciado": "Mujer de 28 años, gestante de 28 semanas, con drepanocitosis HbSS, acude por dolor intenso en miembros inferiores y espalda de 6 horas de evolución. Funciones vitales: FC 110 lpm, FR 24 rpm, PA 105/65 mmHg, T 37.2 °C, SatO2 95%. Examen: dolor a la palpación de huesos largos, útero blando, altura uterina acorde, frecuencia cardíaca fetal 150 lpm. Laboratorio: Hb 7.5 g/dL, leucocitos 11 000/mm3, plaquetas 200 000/mm3. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Inducción del parto",
+      "B": "Transfusión de hematíes",
+      "C": "AINEs y alta precoz",
+      "D": "Hidratación y analgesia"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La crisis vasooclusiva dolorosa en la gestante con drepanocitosis requiere manejo hospitalario con hidratación y analgesia oportuna, preferiblemente con opioides, según la OMS y las guías del MINSA. El embarazo aumenta el riesgo de complicaciones maternofetales, por lo que se debe monitorizar la frecuencia cardíaca fetal y el bienestar materno. La inducción del parto no está indicada de entrada si no hay sufrimiento fetal ni emergencia obstétrica. La transfusión de hematíes no es la conducta inicial de rutina en una crisis dolorosa no complicada y se reserva para anemia grave sintomática o síndrome torácico agudo. Los AINEs y el alta precoz no controlan el dolor intenso y pueden afectar la perfusión fetal. Por ello, la opción correcta es hidratación y analgesia."
+  },
+  {
+    "numero": 524,
+    "enunciado": "Varón de 30 años con drepanocitosis, en tratamiento con hidroxiurea 25 mg/kg/día desde 6 meses, acude a control ambulatorio. Funciones vitales: FC 80 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.5 °C, SatO2 98%. Examen físico sin hallazgos. Laboratorio: Hb 8.5 g/dL, VCM 110 fL, leucocitos 2 800/mm3, neutrófilos 1 200/mm3, plaquetas 90 000/mm3. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Suspender hidroxiurea",
+      "B": "Iniciar filgrastim",
+      "C": "Transfundir plaquetas",
+      "D": "Aumentar la dosis"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La hidroxiurea es eficaz para reducir las crisis vasooclusivas en drepanocitosis, pero puede producir mielosupresión, manifestada por neutropenia, trombocitopenia y macrocitosis. La OMS y las guías del MINSA recomiendan suspender temporalmente el fármaco y ajustar la dosis según el hemograma cuando aparecen citopenias significativas, con vigilancia hematológica periódica. Aumentar la dosis agravaría la toxicidad medular y podría provocar infecciones graves. Iniciar filgrastim no es la medida inicial, ya que la neutropenia suele revertir al suspender el fármaco. Transfundir plaquetas no está indicado en trombocitopenia moderada sin sangrado activo ni cifras críticas. Por ello, la opción correcta es suspender hidroxiurea."
+  },
+  {
+    "numero": 525,
+    "enunciado": "Mujer de 35 años con drepanocitosis, con múltiples transfusiones por complicaciones, acude por fatiga y artralgias de 3 meses. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 115/75 mmHg, T 36.6 °C, SatO2 98%. Examen: hiperpigmentación cutánea, hepatomegalia de 2 cm. Laboratorio: ferritina sérica 2500 ng/mL, saturación de transferrina 85%, Hb 9.0 g/dL, creatinina 1.0 mg/dL. ¿Cuál es el tratamiento más adecuado para la sobrecarga férrica?",
+    "opciones": {
+      "A": "Flebotomía terapéutica",
+      "B": "Deferasirox oral",
+      "C": "Hidroxiurea",
+      "D": "Ácido ascórbico"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La sobrecarga férrica es frecuente en pacientes con drepanocitosis sometidos a transfusiones repetidas y se manifiesta con ferritina elevada, saturación de transferrina aumentada y afectación orgánica. La OMS y las guías del MINSA recomiendan quelación con deferasirox oral, que elimina el hierro y previene daño hepático, cardíaco y endocrino. La flebotomía terapéutica no es adecuada en pacientes anémicos y transfusiones-dependientes, porque agravaría la anemia. La hidroxiurea es una terapia modificadora de la drepanocitosis, pero no tiene efecto quelante del hierro. El ácido ascórbico puede aumentar la absorción de hierro y favorecer la toxicidad, por lo que no se indica. Por ello, la opción correcta es deferasirox oral."
+  },
+  {
+    "numero": 526,
+    "enunciado": "Niño de 6 años con drepanocitosis, acude por dolor abdominal en hipocondrio derecho y palidez de 8 horas. Funciones vitales: FC 130 lpm, FR 28 rpm, PA 85/50 mmHg, T 37.0 °C, SatO2 96%. Examen: hepatomegalia dolorosa de 6 cm, esplenomegalia leve. Laboratorio: Hb 4.2 g/dL, reticulocitos 10%, leucocitos 12 000/mm3, plaquetas 180 000/mm3, bilirrubina indirecta 3.5 mg/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Secuestro hepático agudo",
+      "B": "Colecistitis aguda",
+      "C": "Crisis vasooclusiva abdominal",
+      "D": "Hepatitis viral aguda"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El secuestro hepático agudo es una complicación rara pero grave de la drepanocitosis, caracterizada por atrapamiento masivo de eritrocitos falciformes en el hígado, con hepatomegalia dolorosa, caída brusca de la hemoglobina y shock. La OMS y las guías del MINSA reconocen el secuestro hepático como emergencia hematológica que requiere transfusión urgente. La colecistitis aguda cursa con fiebre, signo de Murphy positivo y leucocitosis, sin caída tan brusca de la hemoglobina. La crisis vasooclusiva abdominal produce dolor difuso sin hepatomegalia masiva ni shock. La hepatitis viral aguda eleva transaminasas y bilirrubina directa, sin anemia aguda grave. Por ello, la opción correcta es secuestro hepático agudo."
+  },
+  {
+    "numero": 527,
+    "enunciado": "Niño de 8 años con drepanocitosis, acude por enuresis nocturna persistente y poliuria. Funciones vitales: FC 88 lpm, FR 20 rpm, PA 100/60 mmHg, T 36.7 °C, SatO2 98%. Examen físico sin hallazgos. Laboratorio: Hb 8.5 g/dL, creatinina 0.7 mg/dL, glucosa 90 mg/dL, densidad urinaria 1.005, osmolaridad urinaria 180 mOsm/kg. ¿Cuál es la causa más probable?",
+    "opciones": {
+      "A": "Diabetes insípida central",
+      "B": "Hipostenuria por drepanocitosis",
+      "C": "Infección urinaria recurrente",
+      "D": "Insuficiencia renal crónica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La hipostenuria es una manifestación renal temprana y frecuente de la drepanocitosis, producida por microinfartos en la médula renal que alteran el mecanismo de concentración urinaria. Se manifiesta con poliuria, nicturia y enuresis, con densidad urinaria baja y osmolaridad disminuida, como en este paciente. La OMS y las guías del MINSA reconocen la nefropatía por drepanocitosis como causa de hipostenuria. La diabetes insípida central cursa con hipernatremia y respuesta al estímulo con desmopresina, no con anemia hemolítica. La infección urinaria recurrente presenta disuria, fiebre y piuria, no poliuria hipoosmolar aislada. La insuficiencia renal crónica eleva creatinina y urea, que están normales. Por ello, la opción correcta es hipostenuria por drepanocitosis."
+  },
+  {
+    "numero": 528,
+    "enunciado": "Mujer de 25 años con drepanocitosis, politransfundida, acude por ictericia y fatiga de 5 días. Funciones vitales: FC 100 lpm, FR 20 rpm, PA 100/60 mmHg, T 37.5 °C, SatO2 97%. Examen: ictericia escleral, esplenomegalia leve. Laboratorio: Hb 6.5 g/dL, reticulocitos 8%, bilirrubina indirecta 4.0 mg/dL, LDH 500 U/L, prueba de Coombs directa positiva. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Crisis aplásica por parvovirus",
+      "B": "Secuestro esplénico agudo",
+      "C": "Reacción hemolítica tardía",
+      "D": "Crisis vasooclusiva dolorosa"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La reacción hemolítica transfusional tardía es una complicación frecuente en pacientes con drepanocitosis politransfundidos, causada por aloanticuerpos contra antígenos eritrocitarios menores. Se manifiesta con ictericia, anemia hemolítica y prueba de Coombs directa positiva, como en este caso. La OMS y las guías del MINSA recomiendan fenotipificación extendida en pacientes politransfundidos para prevenirla. La crisis aplásica por parvovirus cursa con reticulocitopenia, no con reticulocitosis ni Coombs positivo. El secuestro esplénico agudo produce esplenomegalia masiva, shock y reticulocitosis, pero no Coombs positivo. La crisis vasooclusiva dolorosa cursa con dolor intenso sin hemólisis aguda ni Coombs positivo. Por ello, la opción correcta es reacción hemolítica tardía."
+  },
+  {
+    "numero": 529,
+    "enunciado": "Varón de 18 años con drepanocitosis, hospitalizado por síndrome torácico agudo, recibe antibióticos, hidratación y oxígeno. A las 12 horas persiste con SatO2 85% y nuevos infiltrados bilaterales. Funciones vitales: FC 120 lpm, FR 32 rpm, PA 95/60 mmHg, T 38.2 °C, SatO2 85%. Laboratorio: Hb 7.0 g/dL, leucocitos 18 000/mm3. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Transfusión simple de hematíes",
+      "B": "Exanguinotransfusión parcial",
+      "C": "Aumentar hidroxiurea oral",
+      "D": "Corticoides en dosis altas"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La exanguinotransfusión parcial está indicada en el síndrome torácico agudo grave que no mejora con manejo inicial, especialmente cuando hay hipoxemia refractaria y progresión radiológica. Reduce rápidamente la hemoglobina S y mejora la oxigenación, según la OMS y las guías del MINSA. La transfusión simple de hematíes puede ser insuficiente en este escenario y puede aumentar la viscosidad si no se reduce la HbS. Aumentar hidroxiurea oral no tiene efecto agudo y no trata la emergencia. Los corticoides en dosis altas no forman parte del manejo estándar y pueden asociarse a complicaciones. Por ello, la opción correcta es exanguinotransfusión parcial."
+  },
+  {
+    "numero": 530,
+    "enunciado": "Niña de 12 años con drepanocitosis, programada para colecistectomía electiva por colelitiasis sintomática. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 100/60 mmHg, T 36.5 °C, SatO2 98%. Laboratorio: Hb 8.0 g/dL, leucocitos 8 000/mm3, plaquetas 250 000/mm3. ¿Cuál es la medida preoperatoria más adecuada?",
+    "opciones": {
+      "A": "Transfusión preoperatoria de rutina",
+      "B": "Suspender hidroxiurea 1 semana antes",
+      "C": "Administrar ácido fólico dosis alta",
+      "D": "Hidratación y evitar hipoxia"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "En el preoperatorio de pacientes con drepanocitosis, las medidas más importantes son hidratación adecuada, evitar hipoxia, hipotermia y acidosis, y controlar el dolor, según la OMS y las guías del MINSA. La transfusión preoperatoria de rutina no está indicada en todos los casos y se reserva para pacientes de alto riesgo o cirugía mayor. Suspender hidroxiurea no es necesario y puede aumentar el riesgo de crisis. Administrar ácido fólico en dosis alta no previene las complicaciones perioperatorias. Por ello, la opción correcta es hidratación y evitar hipoxia."
+  },
+  {
+    "numero": 531,
+    "enunciado": "Varón de 24 años con drepanocitosis HbSS, hospitalizado por crisis dolorosa, presenta al segundo día fiebre, dolor torácico y disnea. Funciones vitales: FC 125 lpm, FR 34 rpm, PA 95/60 mmHg, T 38.7 °C, SatO2 86% con oxígeno suplementario. Examen físico: crépitos bilaterales y matidez en bases. Laboratorio: Hb 7.2 g/dL, leucocitos 18 000/mm3, plaquetas 180 000/mm3. Radiografía de tórax: infiltrados alveolares bilaterales nuevos. Recibe antibióticos, hidratación, analgesia y oxígeno, pero persiste hipoxémico. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Transfusión simple de hematíes",
+      "B": "Exanguinotransfusión parcial",
+      "C": "Hidroxiurea oral diaria",
+      "D": "Corticoides sistémicos"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a síndrome torácico agudo grave con hipoxemia refractaria al manejo inicial. La exanguinotransfusión parcial reduce rápidamente la hemoglobina S y mejora la oxigenación, según la OMS y las guías del MINSA. La transfusión simple de hematíes puede no disminuir la HbS de forma suficiente y aumentar la viscosidad sanguínea. La hidroxiurea oral es terapia modificadora crónica y no tiene efecto en la emergencia aguda. Los corticoides sistémicos no forman parte del manejo estándar del síndrome torácico agudo y pueden asociarse a complicaciones. Por ello, la opción correcta es exanguinotransfusión parcial."
+  },
+  {
+    "numero": 532,
+    "enunciado": "Niño de 9 años con drepanocitosis HbSS, acude por hemiparesia izquierda y desviación de comisura labial de inicio súbito hace 1 hora. Funciones vitales: FC 110 lpm, FR 22 rpm, PA 100/60 mmHg, T 36.8 °C, SatO2 97%. Examen físico: hemiparesia izquierda y afasia. Laboratorio: Hb 7.8 g/dL, leucocitos 9 000/mm3, plaquetas 250 000/mm3. Tomografía cerebral: sin hemorragia. ¿Cuál es la conducta transfusional inicial más adecuada?",
+    "opciones": {
+      "A": "Transfusión simple de hematíes",
+      "B": "Hidroxiurea oral diaria",
+      "C": "Exanguinotransfusión parcial",
+      "D": "Corticoides sistémicos"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El accidente cerebrovascular isquémico es una emergencia en la drepanocitosis pediátrica. La exanguinotransfusión parcial urgente reduce la hemoglobina S por debajo del 30% y limita el daño neurológico, según la OMS y las guías del MINSA. La transfusión simple de hematíes no logra reducir con la misma rapidez la HbS y puede aumentar la viscosidad. La hidroxiurea oral no tiene efecto agudo y no revierte el déficit neurológico. Los corticoides sistémicos no están indicados en el manejo del ictus por drepanocitosis. Por ello, la opción correcta es exanguinotransfusión parcial."
+  },
+  {
+    "numero": 533,
+    "enunciado": "Mujer de 28 años con drepanocitosis y múltiples transfusiones, acude por disnea, edema y palpitaciones. Funciones vitales: FC 110 lpm, FR 24 rpm, PA 100/60 mmHg, T 36.5 °C, SatO2 94%. Examen físico: ingurgitación yugular, hepatomegalia y edema maleolar. Laboratorio: ferritina 3000 ng/mL, saturación de transferrina 90%, Hb 8.5 g/dL, creatinina 1.1 mg/dL. Ecocardiografía: fracción de eyección 35% y T2* cardíaco bajo. ¿Cuál es el tratamiento quelante más adecuado?",
+    "opciones": {
+      "A": "Deferasirox oral",
+      "B": "Deferoxamina subcutánea",
+      "C": "Flebotomía terapéutica",
+      "D": "Ácido ascórbico oral"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La sobrecarga férrica con afectación cardíaca es una complicación grave de la drepanocitosis politransfundida. El deferasirox oral es un quelante eficaz que reduce el hierro miocárdico y mejora la función cardíaca, según la OMS y las guías del MINSA. La deferoxamina subcutánea también es útil, pero su administración parenteral dificulta la adherencia y no es superior en este contexto. La flebotomía terapéutica está contraindicada en pacientes anémicos y transfusiones-dependientes. El ácido ascórbico puede aumentar la toxicidad del hierro y no debe indicarse. Por ello, la opción correcta es deferasirox oral."
+  },
+  {
+    "numero": 534,
+    "enunciado": "Varón de 32 años con drepanocitosis, en tratamiento con hidroxiurea 30 mg/kg/día, acude por fiebre y odinofagia. Funciones vitales: FC 110 lpm, FR 22 rpm, PA 100/60 mmHg, T 38.5 °C, SatO2 97%. Examen físico: úlceras orales, sin focalización infecciosa. Laboratorio: Hb 8.0 g/dL, leucocitos 1 800/mm3, neutrófilos 600/mm3, plaquetas 80 000/mm3. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Aumentar hidroxiurea",
+      "B": "Iniciar filgrastim",
+      "C": "Transfundir plaquetas",
+      "D": "Suspender hidroxiurea"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La hidroxiurea puede producir mielosupresión, con neutropenia y trombocitopenia. Ante fiebre y neutropenia severa, la conducta inicial es suspender la hidroxiurea y luego iniciar antibióticos empíricos, según la OMS y las guías del MINSA. Aumentar la hidroxiurea agravaría la toxicidad medular y el riesgo de sepsis. Iniciar filgrastim no es la medida inicial, porque la neutropenia suele revertir al suspender el fármaco. Transfundir plaquetas no está indicado en trombocitopenia moderada sin sangrado activo. Por ello, la opción correcta es suspender hidroxiurea."
+  },
+  {
+    "numero": 535,
+    "enunciado": "Mujer de 30 años con drepanocitosis, acude por dolor en cadera derecha de 6 meses y cojera progresiva. Funciones vitales: FC 80 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.6 °C, SatO2 98%. Examen físico: limitación de la rotación interna y abducción de cadera derecha. Radiografía de cadera: aplanamiento y esclerosis de la cabeza femoral, sin colapso. Resonancia magnética: edema medular difuso. ¿Cuál es la conducta quirúrgica más adecuada?",
+    "opciones": {
+      "A": "Artroplastia total de cadera",
+      "B": "Descompresión central de cadera",
+      "C": "Hidroxiurea oral diaria",
+      "D": "Transfusión crónica de hematíes"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La necrosis avascular de la cabeza femoral es frecuente en la drepanocitosis por microinfartos óseos. En etapas precoces, sin colapso de la cabeza femoral, la descompresión central de cadera alivia la presión intraósea y puede retrasar la progresión, según la OMS y las guías del MINSA. La artroplastia total de cadera se reserva para estadios avanzados con colapso o artrosis severa. La hidroxiurea oral no revierte la necrosis ósea establecida. La transfusión crónica de hematíes no es el tratamiento de la osteonecrosis y solo se usa en indicaciones hematológicas específicas. Por ello, la opción correcta es descompresión central de cadera."
+  },
+  {
+    "numero": 536,
+    "enunciado": "Gestante de 30 años, 32 semanas, con drepanocitosis HbSS, acude por cefalea intensa, visión borrosa y dolor epigástrico de 12 horas. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 160/110 mmHg, T 36.8 °C, SatO2 96%. Examen físico: edema facial y de manos, reflejos osteotendinosos exaltados. Laboratorio: Hb 7.5 g/dL, plaquetas 90 000/mm3, creatinina 1.2 mg/dL, proteinuria en 24 horas 5 g, LDH 600 U/L, esquistocitos en frotis. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Sulfato de magnesio y finalizar gestación",
+      "B": "Hidroxiurea oral a dosis habituales",
+      "C": "Transfusión simple de hematíes",
+      "D": "AINEs y control ambulatorio estricto"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a preeclampsia con criterios de severidad en gestante con drepanocitosis, condición que incrementa la mortalidad materno-fetal. La OMS y las guías del MINSA recomiendan sulfato de magnesio para prevenir convulsiones y finalización del embarazo según edad gestacional y condición fetal. La hidroxiurea está contraindicada en el embarazo por teratogenicidad y no trata la emergencia hipertensiva. La transfusión simple de hematíes no revierte la preeclampsia y se reserva para anemia grave sintomática. Los AINEs y el control ambulatorio son inapropiados porque no controlan la hipertensión severa ni el riesgo de eclampsia. Por ello, la opción correcta es sulfato de magnesio y finalizar gestación."
+  },
+  {
+    "numero": 537,
+    "enunciado": "Varón de 40 años con drepanocitosis, acude por edema y dolor en pierna izquierda de 3 días de evolución, tras viaje prolongado en bus. Funciones vitales: FC 90 lpm, FR 20 rpm, PA 120/70 mmHg, T 37.0 °C, SatO2 97%. Examen físico: edema unilateral, calor, eritema y dolor a la palpación en pantorrilla izquierda. Laboratorio: Hb 8.2 g/dL, leucocitos 9 000/mm3, dímero D 1200 ng/mL. Ecografía Doppler: trombosis venosa profunda femoral izquierda. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Transfusión simple de hematíes",
+      "B": "Anticoagulación con enoxaparina",
+      "C": "Hidroxiurea oral diaria",
+      "D": "AINEs y reposo absoluto"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La trombosis venosa profunda es más frecuente en drepanocitosis por hipercoagulabilidad, hemólisis crónica y estasis venosa. La OMS y las guías del MINSA recomiendan anticoagulación con heparina de bajo peso molecular, como enoxaparina, para prevenir embolia pulmonar. La transfusión simple de hematíes no trata la trombosis y puede aumentar la viscosidad sanguínea. La hidroxiurea es terapia modificadora crónica y no tiene efecto anticoagulante. Los AINEs y el reposo absoluto no previenen la progresión del trombo ni la embolia pulmonar. Por ello, la opción correcta es anticoagulación con enoxaparina."
+  },
+  {
+    "numero": 538,
+    "enunciado": "Niña de 4 años con drepanocitosis, esplenectomizada hace 1 año, acude por fiebre alta y letargo de 6 horas. Funciones vitales: FC 160 lpm, FR 40 rpm, PA 70/40 mmHg, T 39.5 °C, SatO2 94%. Examen físico: piel moteada, llenado capilar lento, sin focalización infecciosa. Laboratorio: Hb 6.5 g/dL, leucocitos 22 000/mm3, plaquetas 100 000/mm3. Hemocultivo pendiente. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Transfusión simple de hematíes",
+      "B": "Hidroxiurea oral diaria",
+      "C": "Antibióticos empíricos y soporte",
+      "D": "Corticoides sistémicos en dosis altas"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La sepsis fulminante por gérmenes encapsulados es una emergencia en pacientes esplenectomizados con drepanocitosis. La OMS y las guías del MINSA recomiendan antibióticos empíricos endovenosos inmediatos y soporte hemodinámico. La transfusión simple de hematíes no trata la sepsis y puede ser necesaria solo si hay anemia grave sintomática. La hidroxiurea no tiene efecto en la sepsis aguda. Los corticoides sistémicos en dosis altas no están indicados de rutina y pueden agravar la infección. Por ello, la opción correcta es antibióticos empíricos y soporte."
+  },
+  {
+    "numero": 539,
+    "enunciado": "Varón de 35 años con drepanocitosis, acude por dolor incapacitante en cadera derecha de 1 año de evolución, con limitación progresiva para la marcha. Funciones vitales: FC 80 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.5 °C, SatO2 98%. Examen físico: acortamiento de extremidad, rotación externa fija. Radiografía de cadera: colapso de la cabeza femoral y artrosis secundaria. ¿Cuál es la conducta quirúrgica más adecuada?",
+    "opciones": {
+      "A": "Artroplastia total de cadera",
+      "B": "Descompresión central",
+      "C": "Hidroxiurea oral",
+      "D": "Transfusión crónica de hematíes"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La osteonecrosis avanzada con colapso de la cabeza femoral requiere artroplastia total de cadera para aliviar el dolor y recuperar la función, según la OMS y las guías del MINSA. La descompresión central es útil en etapas precoces sin colapso, no en artrosis avanzada. La hidroxiurea no revierte el daño estructural. La transfusión crónica de hematíes no es tratamiento de la osteonecrosis y solo se usa en indicaciones hematológicas específicas. Por ello, la opción correcta es transfusión crónica de hematíes."
+  },
+  {
+    "numero": 540,
+    "enunciado": "Mujer de 28 años con drepanocitosis, acude por disminución de agudeza visual en ojo derecho y miodesopsias de 2 semanas. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.6 °C, SatO2 98%. Examen físico: fondo de ojo con neovasos en retina periférica y hemorragia vítrea incipiente. ¿Cuál es el tratamiento más adecuado?",
+    "opciones": {
+      "A": "Fotocoagulación láser panretiniana",
+      "B": "Vitrectomía inmediata de rescate",
+      "C": "Hidroxiurea oral",
+      "D": "Transfusión simple"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Hematología",
+    "tema": "Drepanocitosis",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La retinopatía proliferativa es una complicación de la drepanocitosis por isquemia retiniana y neovascularización. La fotocoagulación láser panretiniana reduce el riesgo de hemorragia vítrea y desprendimiento de retina, según la OMS y las guías del MINSA. La vitrectomía se reserva para hemorragia vítrea persistente o desprendimiento de retina, no como primera medida. La hidroxiurea no trata la retinopatía establecida. La transfusión simple no revierte la neovascularización. Por ello, la opción correcta es vitrectomía inmediata de rescate."
+  },
+  {
+    "numero": 541,
+    "enunciado": "Recién nacido de 2 días, producto de parto vaginal, peso 2900 g. Al examen: hipotonía marcada, facies con epicanto, pliegue palmar único, separación del primer y segundo ortejo. Funciones vitales: FC 140 lpm, FR 50 rpm, PA 70/40 mmHg, T 36.8 °C, SatO2 95%. Ecocardiografía pendiente. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Trisomía 21",
+      "B": "Trisomía 18",
+      "C": "Trisomía 13",
+      "D": "Monosomía X"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro es típico de trisomía 21 (síndrome de Down), la aneuploidía autosómica más frecuente, causada por una copia extra del cromosoma 21. La hipotonía, facies con epicanto, pliegue palmar único y separación del primer y segundo ortejo son hallazgos clásicos descritos por la OMS y el MINSA. La trisomía 18 (Edwards) se caracteriza por micrognatia, puños cerrados con dedo índice sobre tercero y pie en mecedora. La trisomía 13 (Patau) presenta holoprosencefalia, labio y paladar hendido y polidactilia postaxial. La monosomía X (Turner) cursa con linfedema de manos y pies, cuello ancho y cardiopatía, en fenotipo femenino. Por ello, la opción correcta es trisomía 21."
+  },
+  {
+    "numero": 542,
+    "enunciado": "Recién nacido de 1 día, pretérmino, con microcefalia, holoprosencefalia, labio y paladar hendido, polidactilia postaxial. Funciones vitales: FC 150 lpm, FR 55 rpm, PA 65/40 mmHg, T 36.5 °C, SatO2 94%. Examen: hipotonía y apneas. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Trisomía 21",
+      "B": "Trisomía 18",
+      "C": "Trisomía 13",
+      "D": "Monosomía X"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a trisomía 13 (síndrome de Patau), aneuploidía autosómica causada por copia extra del cromosoma 13. La microcefalia, holoprosencefalia, labio y paladar hendido y polidactilia postaxial son hallazgos característicos reconocidos por la OMS y el MINSA. La trisomía 21 (Down) presenta hipotonía, facies con epicanto y pliegue palmar único, sin holoprosencefalia. La trisomía 18 (Edwards) cursa con micrognatia, puños cerrados y pie en mecedora, sin polidactilia postaxial. La monosomía X (Turner) se manifiesta con linfedema, cuello ancho y cardiopatía en una recién nacida fenotípicamente femenina. Por ello, la opción correcta es trisomía 13."
+  },
+  {
+    "numero": 543,
+    "enunciado": "Recién nacida de 3 días, con linfedema de manos y pies, cuello ancho con pliegue cutáneo, y soplo cardíaco. Funciones vitales: FC 145 lpm, FR 48 rpm, PA 75/45 mmHg, T 36.7 °C, SatO2 96%. Ecocardiografía: coartación de aorta. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Trisomía 21",
+      "B": "Monosomía X",
+      "C": "Trisomía 18",
+      "D": "Trisomía 13"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro es compatible con monosomía X (síndrome de Turner), única monosomía viable en humanos, que afecta a fenotipo femenino. El linfedema de manos y pies, cuello ancho con pliegue cutáneo y coartación de aorta son hallazgos típicos descritos por la OMS y el MINSA. La trisomía 21 (Down) presenta hipotonía, facies con epicanto y pliegue palmar único. La trisomía 18 (Edwards) cursa con micrognatia, puños cerrados y pie en mecedora. La trisomía 13 (Patau) se asocia a holoprosencefalia, labio hendido y polidactilia. Por ello, la opción correcta es monosomía X."
+  },
+  {
+    "numero": 544,
+    "enunciado": "Recién nacido de 1 día, con micrognatia, puños cerrados con dedo índice sobre tercero, pie en mecedora y cardiopatía congénita. Funciones vitales: FC 155 lpm, FR 60 rpm, PA 60/40 mmHg, T 36.4 °C, SatO2 93%. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Trisomía 21",
+      "B": "Trisomía 13",
+      "C": "Monosomía X",
+      "D": "Trisomía 18"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro es característico de trisomía 18 (síndrome de Edwards), causada por copia extra del cromosoma 18. La micrognatia, puños cerrados con dedo índice sobre tercero, pie en mecedora y cardiopatía congénita son hallazgos clásicos reconocidos por la OMS y el MINSA. La trisomía 21 (Down) cursa con hipotonía, epicanto y pliegue palmar único. La trisomía 13 (Patau) presenta holoprosencefalia, labio y paladar hendido y polidactilia postaxial. La monosomía X (Turner) se manifiesta con linfedema, cuello ancho y coartación de aorta en fenotipo femenino. Por ello, la opción correcta es trisomía 18."
+  },
+  {
+    "numero": 545,
+    "enunciado": "Recién nacido varón de 5 días, con micropene, criptorquidia bilateral e hipotonía leve. Funciones vitales: FC 140 lpm, FR 50 rpm, PA 70/40 mmHg, T 36.8 °C, SatO2 96%. ¿Cuál es el cariotipo más probable?",
+    "opciones": {
+      "A": "47,XXY",
+      "B": "45,X",
+      "C": "47,XX,+21",
+      "D": "47,XX,+18"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro orienta a síndrome de Klinefelter, aneuploidía sexual más frecuente en varones, con cariotipo 47,XXY. La micropene, criptorquidia bilateral e hipotonía leve en el recién nacido pueden hacer sospechar esta condición, aunque el diagnóstico suele confirmarse por cariotipo, según la OMS y el MINSA. El cariotipo 45,X corresponde a síndrome de Turner, con fenotipo femenino y linfedema. El 47,XX,+21 corresponde a trisomía 21, con facies características. El 47,XX,+18 corresponde a trisomía 18, con micrognatia y puños cerrados. Por ello, la opción correcta es 47,XXY."
+  },
+  {
+    "numero": 546,
+    "enunciado": "Recién nacido de 3 días con diagnóstico clínico de síndrome de Down, presenta vómitos biliosos y distensión abdominal desde el nacimiento. Funciones vitales: FC 145 lpm, FR 52 rpm, PA 70/40 mmHg, T 36.7 °C, SatO2 96%. Examen físico: abdomen distendido, matidez hepática desplazada. Radiografía de abdomen: doble burbuja. ¿Con qué aneuploidía se asocia con mayor frecuencia este hallazgo?",
+    "opciones": {
+      "A": "Trisomía 21",
+      "B": "Trisomía 18",
+      "C": "Trisomía 13",
+      "D": "Monosomía X"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La atresia duodenal con signo radiológico de doble burbuja se asocia con mayor frecuencia a trisomía 21, según la OMS y el MINSA. La copia extra del cromosoma 21 altera el desarrollo embriológico del intestino proximal. La trisomía 18 se relaciona con onfalocele y pie en mecedora, no con atresia duodenal típica. La trisomía 13 se asocia a holoprosencefalia y polidactilia postaxial. La monosomía X cursa con linfedema y coartación de aorta. Por ello, la opción correcta es trisomía 21."
+  },
+  {
+    "numero": 547,
+    "enunciado": "Recién nacida de 2 días, fenotipo femenino, con linfedema de manos y pies, cuello ancho y pliegue cutáneo. Funciones vitales: FC 140 lpm, FR 48 rpm, PA 75/45 mmHg, T 36.8 °C, SatO2 96%. Examen físico: sin soplo cardíaco. Cariotipo: 45,X/46,XX. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Monosomía X pura",
+      "B": "Mosaicismo de Turner",
+      "C": "Trisomía 21",
+      "D": "Trisomía 18"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cariotipo 45,X/46,XX corresponde a mosaicismo de Turner, en el que coexisten una línea celular monosómica y otra normal, según la OMS y el MINSA. El fenotipo es variable y puede incluir linfedema, cuello ancho y talla baja. La monosomía X pura (45,X) suele presentar linfedema más severo y cardiopatía asociada. La trisomía 21 cursa con hipotonía y facies con epicanto. La trisomía 18 se manifiesta con micrognatia y puños cerrados. Por ello, la opción correcta es mosaicismo de Turner."
+  },
+  {
+    "numero": 548,
+    "enunciado": "Recién nacido varón de 4 días, con criptorquidia bilateral, hipospadias leve y sin dismorfias mayores. Funciones vitales: FC 142 lpm, FR 50 rpm, PA 70/40 mmHg, T 36.6 °C, SatO2 97%. Examen físico: genitales externos masculinos, testes no palpables. Cariotipo: 47,XYY. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de Klinefelter",
+      "B": "Síndrome de Turner",
+      "C": "Síndrome XYY",
+      "D": "Síndrome de Down"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cariotipo 47,XYY corresponde al síndrome XYY, aneuploidía sexual con un cromosoma Y adicional, según la OMS y el MINSA. La criptorquidia y la hipospadias pueden observarse, aunque muchos casos son asintomáticos. El síndrome de Klinefelter (47,XXY) cursa con micropene y ginecomastia. El síndrome de Turner (45,X) afecta a fenotipo femenino con linfedema. El síndrome de Down (47,XX,+21) presenta facies característica e hipotonía. Por ello, la opción correcta es síndrome XYY."
+  },
+  {
+    "numero": 549,
+    "enunciado": "Recién nacida de 1 día, fenotipo femenino, talla normal, leve hipotonía y sin malformaciones evidentes. Funciones vitales: FC 138 lpm, FR 46 rpm, PA 72/42 mmHg, T 36.7 °C, SatO2 97%. Examen físico: genitales femeninos normales, sin linfedema. Cariotipo: 47,XXX. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de Turner",
+      "B": "Síndrome de Klinefelter",
+      "C": "Trisomía 21",
+      "D": "Trisomía X"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cariotipo 47,XXX corresponde a trisomía X, aneuploidía sexual con tres cromosomas X, según la OMS y el MINSA. El fenotipo suele ser femenino con talla normal o alta y rasgos leves, a menudo sin malformaciones mayores al nacer. El síndrome de Turner (45,X) presenta linfedema y cuello ancho. El síndrome de Klinefelter (47,XXY) afecta a varones con micropene. La trisomía 21 cursa con hipotonía y facies con epicanto. Por ello, la opción correcta es trisomía X."
+  },
+  {
+    "numero": 550,
+    "enunciado": "Recién nacido de 2 días con síndrome de Down confirmado por cariotipo. Funciones vitales: FC 148 lpm, FR 54 rpm, PA 68/40 mmHg, T 36.9 °C, SatO2 95%. Examen físico: soplo sistólico y hepatomegalia leve. Ecocardiografía solicitada. ¿Cuál es la cardiopatía congénita más frecuente en este síndrome?",
+    "opciones": {
+      "A": "Canal auriculoventricular",
+      "B": "Tetralogía de Fallot",
+      "C": "Transposición de grandes arterias",
+      "D": "Estenosis pulmonar"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La cardiopatía congénita más frecuente en la trisomía 21 es el canal auriculoventricular, según la OMS y el MINSA. La copia extra del cromosoma 21 altera la formación de los cojinetes endocárdicos. La tetralogía de Fallot es menos frecuente en este síndrome. La transposición de grandes arterias no muestra predilección especial por la trisomía 21. La estenosis pulmonar aislada es menos común. Por ello, la opción correcta es canal auriculoventricular."
+  },
+  {
+    "numero": 551,
+    "enunciado": "Gestante de 38 años, 12 semanas, acude a control prenatal. Ecografía: translucencia nucal aumentada, ausencia de hueso nasal. Tamizaje combinado: riesgo 1:50 para trisomía 21. ¿Cuál es el siguiente paso más adecuado?",
+    "opciones": {
+      "A": "Amniocentesis",
+      "B": "Biopsia de vellosidades coriónicas",
+      "C": "ADN fetal en sangre materna",
+      "D": "Ecografía morfológica a las 20 semanas"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La biopsia de vellosidades coriónicas es el método diagnóstico de elección entre las 11 y 14 semanas en gestantes con alto riesgo de aneuploidía, según la OMS y el MINSA. Permite obtener tejido placentario para cariotipo con resultados más precoces que la amniocentesis. La amniocentesis se realiza a partir de las 15 semanas, por lo que en este caso sería tardía. El ADN fetal en sangre materna es una prueba de tamizaje, no diagnóstica, y no confirma el cariotipo. La ecografía morfológica a las 20 semanas puede detectar marcadores, pero no establece el diagnóstico citogenético. Por ello, la opción correcta es biopsia de vellosidades coriónicas."
+  },
+  {
+    "numero": 552,
+    "enunciado": "Recién nacido de 2 días con síndrome de Down confirmado. Presenta vómitos biliosos y distensión abdominal. Funciones vitales: FC 145 lpm, FR 52 rpm, PA 70/40 mmHg, T 36.7 °C, SatO2 96%. Radiografía de abdomen: doble burbuja. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Iniciar alimentación oral",
+      "B": "Enema de bario",
+      "C": "Sonda nasogástrica y cirugía",
+      "D": "Observación clínica"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a atresia duodenal, malformación frecuente en la trisomía 21, con signo radiológico de doble burbuja. La OMS y el MINSA recomiendan descompresión con sonda nasogástrica, corrección de alteraciones hidroelectrolíticas y tratamiento quirúrgico. Iniciar alimentación oral agrava los vómitos y el riesgo de aspiración. El enema de bario está indicado en obstrucción colónica, no duodenal. La observación clínica retrasa la cirugía y aumenta la morbimortalidad. Por ello, la opción correcta es sonda nasogástrica y cirugía."
+  },
+  {
+    "numero": 553,
+    "enunciado": "Adolescente de 15 años con talla baja, cuello ancho y amenorrea primaria. Funciones vitales: FC 80 lpm, FR 18 rpm, PA 140/90 mmHg, T 36.5 °C, SatO2 98%. Examen: pulsos femorales débiles. Cariotipo: 45,X. ¿Cuál es la cardiopatía más probable?",
+    "opciones": {
+      "A": "Coartación de aorta",
+      "B": "Estenosis pulmonar",
+      "C": "Comunicación interauricular",
+      "D": "Persistencia del conducto arterioso"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La monosomía X (síndrome de Turner) se asocia con frecuencia a coartación de aorta, que explica la hipertensión en miembros superiores y los pulsos femorales débiles. La OMS y el MINSA reconocen esta asociación y recomiendan evaluación cardiológica temprana. La estenosis pulmonar no es típica del síndrome de Turner. La comunicación interauricular puede presentarse, pero no produce hipertensión arterial ni pulsos femorales débiles como signo cardinal. La persistencia del conducto arterioso es más frecuente en prematuros, no en Turner. Por ello, la opción correcta es coartación de aorta."
+  },
+  {
+    "numero": 554,
+    "enunciado": "Niño de 12 años con talla alta, dificultades de aprendizaje y ginecomastia. Funciones vitales: FC 78 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.5 °C, SatO2 98%. Examen: testes pequeños. Cariotipo: 47,XXY. ¿Cuál es la alteración endocrina más probable?",
+    "opciones": {
+      "A": "Hipogonadismo hipogonadotrópico",
+      "B": "Hipertiroidismo",
+      "C": "Deficiencia de hormona de crecimiento",
+      "D": "Hipogonadismo hipergonadotrópico"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El síndrome de Klinefelter (47,XXY) se caracteriza por hipogonadismo hipergonadotrópico, debido a disfunción testicular primaria con elevación de FSH y LH. La OMS y el MINSA describen esta alteración endocrina como típica, con testes pequeños, ginecomastia y talla alta. El hipogonadismo hipogonadotrópico es de origen central y no se asocia al cariotipo 47,XXY. El hipertiroidismo no es una manifestación característica. La deficiencia de hormona de crecimiento no explica la talla alta ni la ginecomastia. Por ello, la opción correcta es hipogonadismo hipergonadotrópico."
+  },
+  {
+    "numero": 555,
+    "enunciado": "Recién nacido de 1 día con trisomía 18 confirmada. Presenta micrognatia, puños cerrados y pie en mecedora. Funciones vitales: FC 155 lpm, FR 60 rpm, PA 60/40 mmHg, T 36.4 °C, SatO2 93%. Apnea y dificultad respiratoria. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Cirugía cardíaca correctora",
+      "B": "Cuidados paliativos",
+      "C": "Ventilación mecánica prolongada",
+      "D": "Hidroxiurea oral"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La trisomía 18 (síndrome de Edwards) tiene pronóstico letal, con supervivencia menor al año en la mayoría de casos y múltiples malformaciones graves. La OMS y el MINSA recomiendan cuidados paliativos centrados en el confort, alimentación asistida y manejo del dolor, evitando intervenciones invasivas desproporcionadas. La cirugía cardíaca correctora no mejora el pronóstico global y no está indicada de rutina. La ventilación mecánica prolongada no modifica la evolución letal y puede prolongar el sufrimiento. La hidroxiurea no tiene indicación en esta aneuploidía. Por ello, la opción correcta es cuidados paliativos."
+  },
+  {
+    "numero": 556,
+    "enunciado": "Niña de 12 años con diagnóstico de síndrome de Turner (45,X) confirmado en la infancia. Acude por infecciones urinarias recurrentes en el último año. Funciones vitales: FC 84 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.6 °C, SatO2 98%. Examen físico: talla baja, cuello ancho, sin edema. Ecografía renal solicitada. ¿Cuál es la anomalía renal más frecuente en esta entidad?",
+    "opciones": {
+      "A": "Riñón en herradura",
+      "B": "Agenesia renal unilateral",
+      "C": "Duplicación ureteral",
+      "D": "Hidronefrosis congénita"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El riñón en herradura es la anomalía renal más frecuente en el síndrome de Turner, presente hasta en un tercio de los casos, según la OMS y el MINSA. Se produce por fusión de los polos inferiores renales durante la embriogénesis y predispone a infecciones urinarias recurrentes, como en esta paciente. La agenesia renal unilateral es menos común y suele diagnosticarse por ausencia de riñón en ecografía. La duplicación ureteral puede observarse, pero no es la malformación más característica ni explica por sí sola la recurrencia infecciosa. La hidronefrosis congénita es secundaria a obstrucción y no es la anomalía típica del Turner. Por ello, la opción correcta es riñón en herradura."
+  },
+  {
+    "numero": 557,
+    "enunciado": "Recién nacido de 5 días con síndrome de Down confirmado. Presenta petequias, hepatosplenomegalia y dificultad respiratoria leve. Funciones vitales: FC 150 lpm, FR 60 rpm, PA 65/40 mmHg, T 37.0 °C, SatO2 94%. Laboratorio: leucocitos 85 000/mm3 con blastos, plaquetas 50 000/mm3, Hb 12 g/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Leucemia mieloide aguda congénita",
+      "B": "Sepsis neonatal con leucocitosis",
+      "C": "Mielopoyesis anormal transitoria",
+      "D": "Leucemia megacarioblástica aguda"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La mielopoyesis anormal transitoria es una complicación hematológica frecuente en neonatos con trisomía 21, caracterizada por leucocitosis con blastos, trombocitopenia y hepatosplenomegalia, con resolución espontánea en semanas o meses. La OMS y el MINSA la describen como entidad transitoria que requiere vigilancia y soporte. La leucemia mieloide aguda congénita presenta blastos con infiltración orgánica progresiva y no remite espontáneamente. La sepsis neonatal con leucocitosis cursa con fiebre, focalización infecciosa y hemocultivo positivo, sin blastos. La leucemia megacarioblástica aguda es una neoplasia maligna que requiere quimioterapia y no se autolimita. Por ello, la opción correcta es mielopoyesis anormal transitoria."
+  },
+  {
+    "numero": 558,
+    "enunciado": "Lactante de 14 meses con trisomía 18 confirmada. Presenta dificultad respiratoria, cianosis y apnea recurrente. Funciones vitales: FC 160 lpm, FR 50 rpm, PA 70/40 mmHg, T 36.8 °C, SatO2 88%. Examen físico: micrognatia, puños cerrados, pie en mecedora. ¿Cuál es la causa más frecuente de mortalidad en esta aneuploidía?",
+    "opciones": {
+      "A": "Insuficiencia cardíaca congestiva",
+      "B": "Neumonía aspirativa recurrente",
+      "C": "Sepsis por gérmenes encapsulados",
+      "D": "Apnea central por hipoplasia bulbar"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La apnea central por hipoplasia bulbar es una causa frecuente de mortalidad en la trisomía 18, debido a malformaciones del sistema nervioso central que alteran el control respiratorio. La OMS y el MINSA reconocen que la mayoría de estos pacientes fallecen en el primer año por complicaciones respiratorias y apnea. La insuficiencia cardíaca congestiva puede contribuir, pero no es la causa más frecuente ni explica la apnea recurrente. La neumonía aspirativa recurrente es una complicación secundaria a la deglución alterada, no la causa primaria de muerte. La sepsis por gérmenes encapsulados es más propia de la asplenia funcional de otras condiciones. Por ello, la opción correcta es apnea central por hipoplasia bulbar."
+  },
+  {
+    "numero": 559,
+    "enunciado": "Varón de 35 años con síndrome de Klinefelter (47,XXY) confirmado. Acude por tumoración indolora en mama izquierda de 2 meses. Funciones vitales: FC 78 lpm, FR 18 rpm, PA 120/80 mmHg, T 36.5 °C, SatO2 98%. Examen: nódulo de 2 cm, duro, adherido a planos profundos, con adenopatía axilar. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Ginecomastia por hipogonadismo",
+      "B": "Carcinoma ductal infiltrante",
+      "C": "Fibroadenoma mamario",
+      "D": "Lipoma subcutáneo"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El carcinoma ductal infiltrante es la neoplasia mamaria más frecuente en varones con síndrome de Klinefelter, quienes tienen un riesgo hasta 20 veces mayor que la población general. La OMS y el MINSA recomiendan vigilancia mamaria en estos pacientes. El nódulo duro, adherido y con adenopatía axilar sugiere malignidad, no ginecomastia. La ginecomastia por hipogonadismo es una proliferación benigna bilateral y sensible, sin adenopatías. El fibroadenoma es raro en varones y suele ser móvil, bien delimitado. El lipoma es blando, no adherido y sin adenopatías. Por ello, la opción correcta es carcinoma ductal infiltrante."
+  },
+  {
+    "numero": 560,
+    "enunciado": "Niña de 10 años con talla alta, dificultades leves de aprendizaje. Funciones vitales: FC 82 lpm, FR 20 rpm, PA 100/60 mmHg, T 36.5 °C, SatO2 98%. Examen físico: fenotipo femenino normal, sin dismorfias. Cariotipo solicitado por talla alta. ¿Cuál es el resultado más probable?",
+    "opciones": {
+      "A": "47,XXX",
+      "B": "45,X",
+      "C": "47,XXY",
+      "D": "47,XX,+21"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cariotipo 47,XXX corresponde a la trisomía X, aneuploidía sexual que se presenta en fenotipo femenino con talla alta y dificultades leves de aprendizaje, según la OMS y el MINSA. No suele acompañarse de malformaciones mayores ni dismorfias. El cariotipo 45,X corresponde al síndrome de Turner, con talla baja, cuello ancho y linfedema. El 47,XXY corresponde al síndrome de Klinefelter, que afecta a varones con testes pequeños y ginecomastia. El 47,XX,+21 corresponde a trisomía 21, con hipotonía y facies característica. Por ello, la opción correcta es 47,XXX."
+  },
+  {
+    "numero": 561,
+    "enunciado": "Gestante de 39 años, 21 semanas, antecedente de hijo con trisomía 21, acude por resultado de ADN fetal en sangre materna con alto riesgo para trisomía 21. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.6 °C, SatO2 98%. Ecografía obstétrica: translucencia nucal aumentada, hipoplasia nasal y canal auriculoventricular. Se requiere diagnóstico citogenético definitivo. ¿Cuál es el procedimiento más adecuado?",
+    "opciones": {
+      "A": "Repetir ADN fetal",
+      "B": "Biopsia corial",
+      "C": "Amniocentesis",
+      "D": "Cordocentesis"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La amniocentesis es el procedimiento de elección después de las 15 semanas para confirmar aneuploidías cuando el tamizaje es de alto riesgo. En este caso, con 21 semanas y marcadores ecográficos, permite obtener líquido amniótico con células fetales para cariotipo. La OMS y el MINSA la reconocen como prueba diagnóstica definitiva. Repetir ADN fetal no confirma el cariotipo, solo ajusta el riesgo. La biopsia corial se realiza entre las 11 y 14 semanas, por lo que en este momento sería tardía. La cordocentesis es posible después de las 18 semanas, pero tiene mayor riesgo de pérdida fetal y se reserva para casos seleccionados. Por ello, la opción correcta es amniocentesis."
+  },
+  {
+    "numero": 562,
+    "enunciado": "Recién nacido de 3 días con síndrome de Down confirmado. Presenta dificultad respiratoria, soplo sistólico y hepatomegalia leve. Funciones vitales: FC 150 lpm, FR 60 rpm, PA 70/40 mmHg, T 37.0 °C, SatO2 93%. Ecocardiografía: canal auriculoventricular completo con hipertensión pulmonar moderada. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Manejo médico inicial",
+      "B": "Cirugía correctora precoz",
+      "C": "Prostaglandina E1",
+      "D": "Alta con seguimiento"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El canal auriculoventricular completo con hipertensión pulmonar en la trisomía 21 requiere manejo médico inicial con diuréticos, optimización nutricional y control de la hipertensión pulmonar, además de programar la cirugía correctora diferida. La OMS y el MINSA recomiendan estabilizar primero al neonato, ya que la cirugía inmediata aumenta la morbimortalidad. La prostaglandina E1 solo está indicada si existe lesión ductal-dependiente, que no es el caso. El alta con seguimiento no es segura ante dificultad respiratoria e hipertensión pulmonar. Por ello, la opción correcta es manejo médico inicial."
+  },
+  {
+    "numero": 563,
+    "enunciado": "Recién nacida de 5 días con monosomía X confirmada. Presenta cianosis, pulsos femorales ausentes y presión arterial de 90/50 mmHg en miembros superiores. Funciones vitales: FC 160 lpm, FR 60 rpm, PA 90/50 mmHg, T 36.5 °C, SatO2 85%. Ecocardiografía: coartación de aorta crítica con flujo ductal-dependiente. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Furosemida endovenosa",
+      "B": "Prostaglandina E1",
+      "C": "Cirugía correctora urgente",
+      "D": "Oxígeno y observación"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La coartación de aorta crítica con flujo ductal-dependiente en la monosomía X requiere prostaglandina E1 para mantener la permeabilidad del conducto arterioso y estabilizar la perfusión sistémica antes de la cirugía. La OMS y el MINSA recomiendan esta medida inicial en cardiopatías ductal-dependientes. La furosemida no corrige la obstrucción anatómica y puede agravar la hipovolemia. La cirugía correctora urgente debe realizarse tras estabilización inicial, no como primera medida sin soporte. El oxígeno y la observación no revierten el cierre ductal ni la hipoxemia. Por ello, la opción correcta es prostaglandina E1."
+  },
+  {
+    "numero": 564,
+    "enunciado": "Recién nacido de 2 días con trisomía 13 confirmada. Presenta holoprosencefalia, labio y paladar hendido, cardiopatía compleja y apneas recurrentes. Funciones vitales: FC 150 lpm, FR 55 rpm, PA 65/40 mmHg, T 36.4 °C, SatO2 90%. Examen físico: microcefalia y polidactilia postaxial. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Cirugía cardíaca paliativa",
+      "B": "Ventilación prolongada",
+      "C": "Antibióticos profilácticos",
+      "D": "Cuidados paliativos"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La trisomía 13 se asocia a malformaciones incompatibles con la vida y alta mortalidad en el primer año. La OMS y el MINSA recomiendan cuidados paliativos centrados en el confort, alimentación asistida y control del dolor, evitando intervenciones desproporcionadas. La cirugía cardíaca paliativa no modifica el pronóstico global y añade riesgo quirúrgico. La ventilación prolongada no revierte la holoprosencefalia ni las apneas centrales. Los antibióticos profilácticos no previenen la evolución letal y favorecen resistencias. Por ello, la opción correcta es cuidados paliativos."
+  },
+  {
+    "numero": 565,
+    "enunciado": "Recién nacido de 4 días con síndrome de Down confirmado. Presenta dificultad respiratoria, hepatomegalia, ascitis y derrame pericárdico. Funciones vitales: FC 170 lpm, FR 70 rpm, PA 60/35 mmHg, T 37.2 °C, SatO2 90%. Laboratorio: leucocitos 120 000/mm3 con blastos, plaquetas 40 000/mm3, Hb 11 g/dL. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Quimioterapia con citarabina",
+      "B": "Hidroxiurea oral diaria",
+      "C": "Transfusión de plaquetas",
+      "D": "Cuidados paliativos"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a mielopoyesis anormal transitoria grave, complicación de la trisomía 21 que puede poner en riesgo la vida por hiperleucocitosis, falla hepática y derrame pericárdico. La OMS y el MINSA recomiendan quimioterapia con citarabina a dosis baja en casos graves, con vigilancia hematológica estrecha. La hidroxiurea oral no es el tratamiento de esta entidad y puede agravar la mielosupresión. La transfusión de plaquetas es una medida de soporte, no el tratamiento de fondo. Los cuidados paliativos no son adecuados cuando existe una terapia eficaz disponible. Por ello, la opción correcta es quimioterapia con citarabina."
+  },
+  {
+    "numero": 566,
+    "enunciado": "Niña de 10 años con síndrome de Down confirmado, acude por dolor cervical y parestesias en manos tras caída leve de su propia altura. Funciones vitales: FC 92 lpm, FR 20 rpm, PA 100/60 mmHg, T 36.7 °C, SatO2 98%. Examen físico: hiperreflexia en miembros superiores, clonus aquíleo y marcha atáxica. Radiografía lateral de columna cervical: espacio atlantodental de 6 mm. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Collarín blando y control ambulatorio",
+      "B": "Tracción cervical con peso",
+      "C": "Inmovilización rígida y evaluación neuroquirúrgica",
+      "D": "Analgésicos y reposo domiciliario"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La inestabilidad atlantoaxial es frecuente en la trisomía 21 por hipoplasia del diente del axis y laxitud ligamentaria. La presencia de síntomas medulares y un espacio atlantodental mayor de 5 mm obliga a inmovilización rígida y evaluación neuroquirúrgica urgente, según la OMS y el MINSA. El collarín blando no estabiliza adecuadamente y permite progresión del daño medular. La tracción cervical con peso puede agravar la subluxación si no se realiza bajo control especializado. Los analgésicos y el reposo domiciliario omiten el riesgo de lesión medular irreversible. Por ello, la opción correcta es inmovilización rígida y evaluación neuroquirúrgica."
+  },
+  {
+    "numero": 567,
+    "enunciado": "Recién nacido de 3 días con síndrome de Down confirmado, presenta ausencia de eliminación de meconio, distensión abdominal y vómitos biliosos. Funciones vitales: FC 148 lpm, FR 52 rpm, PA 68/40 mmHg, T 36.8 °C, SatO2 96%. Examen físico: ampolla rectal vacía y tono rectal aumentado. Enema de contraste: zona de transición en rectosigmoides. ¿Cuál es el examen diagnóstico definitivo más adecuado?",
+    "opciones": {
+      "A": "Manometría anorrectal",
+      "B": "Biopsia rectal por succión",
+      "C": "Colonoscopia con toma de biopsias",
+      "D": "Radiografía abdominal seriada"
+    },
+    "respuesta": "B",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro orienta a enfermedad de Hirschsprung, que puede asociarse a trisomía 21. La biopsia rectal por succión es el examen diagnóstico definitivo, pues demuestra ausencia de células ganglionares en el plexo submucoso, según la OMS y el MINSA. La manometría anorrectal puede apoyar el diagnóstico, pero no lo confirma. La colonoscopia con biopsias es invasiva y no se requiere para el diagnóstico inicial. La radiografía abdominal seriada solo evalúa la progresión de la obstrucción y no identifica la aganglionosis. Por ello, la opción correcta es biopsia rectal por succión."
+  },
+  {
+    "numero": 568,
+    "enunciado": "Adolescente de 16 años con monosomía X confirmada, acude por dolor torácico súbito, disnea y sudoración. Funciones vitales: FC 120 lpm, FR 28 rpm, PA 150/90 mmHg, T 36.6 °C, SatO2 94%. Examen físico: soplo diastólico en foco aórtico e ingurgitación yugular. Ecocardiografía transesofágica: disección de aorta ascendente tipo A. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Reparación quirúrgica urgente de aorta",
+      "B": "Betabloqueador y control ambulatorio",
+      "C": "Prostaglandina E1 endovenosa",
+      "D": "Anticoagulación con heparina"
+    },
+    "respuesta": "A",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La disección aórtica tipo A es una emergencia quirúrgica en el síndrome de Turner, debido a la dilatación de la raíz aórtica y a la fragilidad de la pared vascular. La OMS y el MINSA recomiendan reparación quirúrgica urgente para evitar rotura y muerte. El betabloqueador y el control ambulatorio no tratan la disección establecida y retrasan la cirugía. La prostaglandina E1 se usa en cardiopatías ductal-dependientes, no en disección aórtica. La anticoagulación con heparina no revierte la lesión anatómica y puede favorecer la hemorragia. Por ello, la opción correcta es reparación quirúrgica urgente de aorta."
+  },
+  {
+    "numero": 569,
+    "enunciado": "Varón de 18 años con síndrome de Klinefelter confirmado, acude por disnea progresiva y dolor torácico opresivo de 1 mes. Funciones vitales: FC 100 lpm, FR 24 rpm, PA 110/70 mmHg, T 36.8 °C, SatO2 95%. Examen físico: ginecomastia, testes pequeños, ingurgitación yugular y matidez torácica anterior. Radiografía de tórax: masa mediastínica anterior. Laboratorio: alfafetoproteína elevada. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Linfoma de Hodgkin",
+      "B": "Timoma",
+      "C": "Tumor germinal mediastínico",
+      "D": "Teratoma benigno"
+    },
+    "respuesta": "C",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El síndrome de Klinefelter se asocia a tumores germinales mediastínicos extragonadales, frecuentemente no seminomatosos, con elevación de alfafetoproteína. La OMS y el MINSA reconocen esta asociación en varones con cariotipo 47,XXY. El linfoma de Hodgkin puede presentar masa mediastínica, pero no eleva alfafetoproteína. El timoma se localiza en mediastino anterior, aunque no se asocia a Klinefelter ni a alfafetoproteína elevada. El teratoma benigno no suele elevar alfafetoproteína de forma significativa. Por ello, la opción correcta es tumor germinal mediastínico."
+  },
+  {
+    "numero": 570,
+    "enunciado": "Lactante de 6 meses con síndrome de Down confirmado, acude por estreñimiento, hipotonía marcada y dificultad para alimentarse. Funciones vitales: FC 110 lpm, FR 28 rpm, PA 85/55 mmHg, T 36.6 °C, SatO2 97%. Examen físico: fontanela amplia, macroglosia y piel seca. Laboratorio: TSH elevada y T4 libre baja. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Observación con control anual",
+      "B": "Yodo radiactivo",
+      "C": "Propiltiouracilo oral",
+      "D": "Levotiroxina oral"
+    },
+    "respuesta": "D",
+    "area": "Pediatría",
+    "especialidad": "Neonatología",
+    "tema": "Aneuploidias",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El hipotiroidismo congénito es más frecuente en niños con trisomía 21 y debe tratarse precozmente para prevenir deterioro cognitivo y retraso del crecimiento. La OMS y el MINSA recomiendan levotiroxina oral como tratamiento de elección, con ajuste según TSH y T4 libre. La observación con control anual retrasa el tratamiento y perpetúa el daño neurológico. El yodo radiactivo está contraindicado en lactantes y no es tratamiento del hipotiroidismo congénito. El propiltiouracilo es un antitiroideo y agravaría el hipotiroidismo. Por ello, la opción correcta es levotiroxina oral."
+  },
+  {
+    "numero": 571,
+    "enunciado": "Gestante de 22 años, primigesta, 34 semanas por fecha de última menstruación, acude por cefalea leve y edema de miembros inferiores. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 150/100 mmHg, T 36.8 °C, SatO2 98%. Examen físico: edema maleolar grado II, reflejos osteotendinosos normales. Laboratorio: proteinuria en 24 horas 450 mg, plaquetas 220 000/mm3, creatinina 0.8 mg/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hipertensión gestacional",
+      "B": "Preeclampsia sin criterios de severidad",
+      "C": "Preeclampsia con criterios de severidad",
+      "D": "Eclampsia"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La preeclampsia sin criterios de severidad se define por hipertensión arterial después de las 20 semanas asociada a proteinuria mayor de 300 mg en 24 horas, sin signos de gravedad. La OMS y el MINSA la reconocen como entidad frecuente en primigestas. En este caso, la PA de 150/100 mmHg y proteinuria de 450 mg confirman el diagnóstico, sin criterios de severidad como trombocitopenia, deterioro renal o síntomas neurológicos. La hipertensión gestacional cursa sin proteinuria, que aquí está presente. La preeclampsia con criterios de severidad requiere plaquetas menores de 100 000, creatinina elevada, síntomas visuales o dolor epigástrico, ausentes en esta paciente. La eclampsia se manifiesta por convulsiones, que no ocurrieron. Por ello, la opción correcta es preeclampsia sin criterios de severidad."
+  },
+  {
+    "numero": 572,
+    "enunciado": "Gestante de 28 años, 36 semanas, con diagnóstico de preeclampsia sin criterios de severidad, acude a control. Funciones vitales: FC 92 lpm, FR 20 rpm, PA 148/96 mmHg, T 36.7 °C, SatO2 98%. Examen físico: edema leve, reflejos normales. Laboratorio: plaquetas 250 000/mm3, creatinina 0.9 mg/dL, proteinuria 500 mg/24h. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Parto inmediato",
+      "B": "Sulfato de magnesio",
+      "C": "Control ambulatorio",
+      "D": "Antihipertensivos"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la preeclampsia sin criterios de severidad, el manejo expectante con control ambulatorio estricto es lo indicado hasta las 37 semanas, según la OMS y el MINSA. Este enfoque reduce la morbilidad neonatal por prematuridad sin aumentar complicaciones maternas. El parto inmediato se reserva para preeclampsia con severidad o deterioro materno-fetal. El sulfato de magnesio está indicado solo en preeclampsia severa o eclampsia para prevenir convulsiones. Los antihipertensivos no se usan de rutina si la presión no alcanza cifras críticas, ya que pueden afectar la perfusión placentaria. Por ello, la opción correcta es control ambulatorio."
+  },
+  {
+    "numero": 573,
+    "enunciado": "Gestante de 30 años, 38 semanas, con preeclampsia con criterios de severidad, presenta PA 170/110 mmHg y cefalea intensa. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 170/110 mmHg, T 36.6 °C, SatO2 97%. Examen físico: hiperreflexia, edema pulmonar leve. Laboratorio: plaquetas 80 000/mm3, creatinina 1.5 mg/dL. ¿Cuál es el medicamento inicial más adecuado para prevenir convulsiones?",
+    "opciones": {
+      "A": "Sulfato de magnesio",
+      "B": "Diazepam",
+      "C": "Fenitoína",
+      "D": "Labetalol"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El sulfato de magnesio es el medicamento de elección para prevenir convulsiones en la preeclampsia con criterios de severidad, según la OMS y el MINSA. Su mecanismo incluye vasodilatación cerebral y bloqueo neuromuscular, reduciendo el riesgo de eclampsia. El diazepam y la fenitoína son alternativas de segunda línea y no superan al sulfato en eficacia y seguridad. El labetalol es un antihipertensivo que controla la presión arterial, pero no previene las convulsiones. Por ello, la opción correcta es sulfato de magnesio."
+  },
+  {
+    "numero": 574,
+    "enunciado": "Gestante de 25 años, 32 semanas, con preeclampsia severa, recibe sulfato de magnesio. Presenta bradipnea, reflejos osteotendinosos abolidos y oliguria. Funciones vitales: FC 80 lpm, FR 10 rpm, PA 130/80 mmHg, T 36.5 °C, SatO2 95%. ¿Cuál es el antídoto específico para esta complicación?",
+    "opciones": {
+      "A": "Diazepam",
+      "B": "Gluconato de calcio",
+      "C": "Fenitoína",
+      "D": "Labetalol"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La toxicidad por sulfato de magnesio se manifiesta con depresión respiratoria, abolición de reflejos y oliguria. El antídoto específico es el gluconato de calcio endovenoso, que revierte los efectos neuromusculares del magnesio, según la OMS y el MINSA. El diazepam y la fenitoína son anticonvulsivantes, no antídotos del magnesio. El labetalol es un antihipertensivo y no revierte la toxicidad. Por ello, la opción correcta es gluconato de calcio."
+  },
+  {
+    "numero": 575,
+    "enunciado": "Gestante de 28 años, 34 semanas, con preeclampsia severa, presenta convulsión tónico-clónica generalizada. Funciones vitales: FC 110 lpm, FR 24 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 92%. Examen físico: relajación de esfínteres, hiperreflexia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Preeclampsia severa",
+      "B": "Epilepsia",
+      "C": "Eclampsia",
+      "D": "Hipoglucemia"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La eclampsia se define por la aparición de convulsiones en una gestante con preeclampsia, sin otra causa identificable. La OMS y el MINSA la consideran una emergencia obstétrica. En este caso, la convulsión tónico-clónica generalizada en una paciente con preeclampsia severa confirma el diagnóstico. La preeclampsia severa cursa sin convulsiones. La epilepsia requiere antecedente de crisis no relacionadas con el embarazo y no se asocia a proteinuria ni hipertensión. La hipoglucemia puede causar convulsiones, pero no explica la hipertensión ni los signos de preeclampsia. Por ello, la opción correcta es eclampsia."
+  },
+  {
+    "numero": 576,
+    "enunciado": "Gestante de 20 años, primigesta, 30 semanas, acude a control prenatal. Funciones vitales: FC 84 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.6 °C, SatO2 98%. Examen físico sin hallazgos. Laboratorio: proteinuria negativa. Antecedente familiar: madre con preeclampsia. ¿Cuál es el principal factor de riesgo para desarrollar preeclampsia en esta paciente?",
+    "opciones": {
+      "A": "Primigestación",
+      "B": "Edad materna",
+      "C": "Sexo fetal",
+      "D": "Altitud de residencia"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La primigestación es uno de los principales factores de riesgo para preeclampsia, debido a la exposición inicial al trofoblasto y a la inmadurez de los mecanismos de tolerancia inmunológica. La OMS y el MINSA la reconocen como factor relevante en la evaluación prenatal. La edad materna extrema, menor de 18 o mayor de 35 años, también incrementa el riesgo, pero la paciente tiene 20 años, fuera de ese rango. El sexo fetal no se asocia de forma consistente a preeclampsia. La altitud de residencia puede influir en la adaptación placentaria, pero no es el factor principal en este caso. Por ello, la opción correcta es primigestación."
+  },
+  {
+    "numero": 577,
+    "enunciado": "Gestante de 32 años, 33 semanas, acude por edema de manos y cara. Funciones vitales: FC 88 lpm, FR 20 rpm, PA 146/94 mmHg, T 36.8 °C, SatO2 98%. Examen físico: edema facial leve, reflejos normales. Laboratorio: proteinuria en 24 horas 350 mg, plaquetas 230 000/mm3, creatinina 0.8 mg/dL. ¿Cuál es el valor mínimo de proteinuria en 24 horas que define preeclampsia?",
+    "opciones": {
+      "A": "150 mg",
+      "B": "300 mg",
+      "C": "500 mg",
+      "D": "1000 mg"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La preeclampsia se define por proteinuria mayor o igual a 300 mg en 24 horas, asociada a hipertensión arterial después de las 20 semanas, según la OMS y el MINSA. Este umbral refleja daño endotelial glomerular significativo y permite diferenciarla de la proteinuria fisiológica del embarazo. El valor de 150 mg corresponde a proteinuria leve y no cumple criterio diagnóstico. El de 500 mg y 1000 mg superan el umbral, pero no son el mínimo requerido. En esta paciente, la proteinuria de 350 mg confirma el diagnóstico junto con la hipertensión. Por ello, la opción correcta es 300 mg."
+  },
+  {
+    "numero": 578,
+    "enunciado": "Gestante de 29 años, 35 semanas, con preeclampsia severa, presenta dolor en hipocondrio derecho, náuseas y malestar general. Funciones vitales: FC 96 lpm, FR 20 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 97%. Laboratorio: plaquetas 85 000/mm3, AST 120 U/L, ALT 110 U/L, LDH 700 U/L, bilirrubina total 1.8 mg/dL, creatinina 1.0 mg/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hepatitis viral aguda",
+      "B": "Colecistitis aguda",
+      "C": "Síndrome HELLP",
+      "D": "Pancreatitis aguda"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El síndrome HELLP se caracteriza por hemólisis, elevación de enzimas hepáticas y trombocitopenia, y es una complicación grave de la preeclampsia. La OMS y el MINSA lo reconocen como criterio de severidad. En este caso, la trombocitopenia, la elevación de AST, ALT y LDH, y la bilirrubina elevada configuran el diagnóstico. La hepatitis viral aguda eleva transaminasas, pero no produce trombocitopenia ni hemólisis. La colecistitis aguda cursa con fiebre, signo de Murphy positivo y leucocitosis, sin trombocitopenia marcada. La pancreatitis aguda presenta dolor epigástrico irradiado, amilasa y lipasa elevadas, no descritas aquí. Por ello, la opción correcta es síndrome HELLP."
+  },
+  {
+    "numero": 579,
+    "enunciado": "Gestante de 26 años, 37 semanas, con preeclampsia sin criterios de severidad, acude a control. Funciones vitales: FC 86 lpm, FR 18 rpm, PA 144/92 mmHg, T 36.6 °C, SatO2 98%. Examen físico: edema leve, reflejos normales. Laboratorio: plaquetas 240 000/mm3, creatinina 0.8 mg/dL, proteinuria 400 mg/24h. ¿Cuál es la conducta más adecuada respecto a la finalización del embarazo?",
+    "opciones": {
+      "A": "Finalizar el embarazo ahora",
+      "B": "Esperar hasta las 40 semanas",
+      "C": "Finalizar a las 37 semanas",
+      "D": "Esperar hasta las 42 semanas"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la preeclampsia sin criterios de severidad, la OMS y el MINSA recomiendan finalizar el embarazo a las 37 semanas, ya que el manejo expectante más allá de esa edad gestacional aumenta el riesgo de progresión a severidad sin mejorar los resultados neonatales. Finalizar el embarazo antes de las 37 semanas expone al neonato a prematuridad innecesaria. Esperar hasta las 40 o 42 semanas incrementa el riesgo de complicaciones maternas y fetales. En esta paciente, con 37 semanas, la conducta adecuada es la finalización del embarazo en este momento. Por ello, la opción correcta es finalizar a las 37 semanas."
+  },
+  {
+    "numero": 580,
+    "enunciado": "Gestante de 24 años, 31 semanas, con preeclampsia severa, recibe sulfato de magnesio. Presenta náuseas, rubor facial y somnolencia. Funciones vitales: FC 88 lpm, FR 16 rpm, PA 140/90 mmHg, T 36.5 °C, SatO2 97%. Examen físico: reflejos osteotendinosos presentes, diuresis 40 mL/h. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Suspender sulfato de magnesio",
+      "B": "Administrar gluconato de calcio",
+      "C": "Reducir la velocidad de infusión",
+      "D": "Aumentar la dosis de sulfato"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Los signos de toxicidad leve por sulfato de magnesio incluyen náuseas, rubor facial y somnolencia, con reflejos presentes y diuresis conservada. La conducta adecuada es reducir la velocidad de infusión y monitorizar estrechamente, según la OMS y el MINSA. Suspender el sulfato de magnesio de forma abrupta puede permitir convulsiones en una paciente con preeclampsia severa. Administrar gluconato de calcio se reserva para toxicidad grave con depresión respiratoria o abolición de reflejos. Aumentar la dosis agravaría la toxicidad. Por ello, la opción correcta es reducir la velocidad de infusión."
+  },
+  {
+    "numero": 581,
+    "enunciado": "Gestante de 32 años, 35 semanas, con antecedente de hipertensión crónica en tratamiento con metildopa. Acude por cefalea y visión borrosa. Funciones vitales: FC 92 lpm, FR 20 rpm, PA 160/105 mmHg, T 36.7 °C, SatO2 98%. Examen físico: edema facial, reflejos osteotendinosos exaltados. Laboratorio: proteinuria 800 mg/24h, plaquetas 90 000/mm3, creatinina 1.2 mg/dL, AST 80 U/L. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Preeclampsia no severa",
+      "B": "Preeclampsia sobreimpuesta",
+      "C": "Hipertensión gestacional",
+      "D": "Eclampsia"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La preeclampsia sobreimpuesta se diagnostica en gestantes con hipertensión crónica que desarrollan proteinuria nueva o deterioro de órganos blanco después de las 20 semanas. La OMS y el MINSA la reconocen como entidad de alto riesgo. En este caso, la hipertensión previa, la proteinuria de 800 mg, la trombocitopenia, la elevación de AST y los síntomas neurológicos confirman el diagnóstico. La preeclampsia no severa no presenta criterios de gravedad como plaquetas menores de 100 000 o síntomas visuales. La hipertensión gestacional cursa sin proteinuria ni alteraciones de laboratorio. La eclampsia se define por convulsiones, ausentes en esta paciente. Por ello, la opción correcta es preeclampsia sobreimpuesta."
+  },
+  {
+    "numero": 582,
+    "enunciado": "Gestante de 28 años, 33 semanas, con preeclampsia severa, recibe sulfato de magnesio. Presenta disnea súbita, ortopnea y crepitantes bilaterales. Funciones vitales: FC 120 lpm, FR 32 rpm, PA 170/110 mmHg, T 36.5 °C, SatO2 88%. Examen físico: ingurgitación yugular y edema agudo de pulmón. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Furosemida endovenosa",
+      "B": "Aumentar sulfato de magnesio",
+      "C": "Betametasona intramuscular",
+      "D": "Hidralazina endovenosa"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El edema agudo de pulmón en la preeclampsia severa se debe a sobrecarga hídrica y disfunción endotelial. La furosemida endovenosa es la conducta inicial para reducir la congestión pulmonar, según la OMS y el MINSA. Aumentar el sulfato de magnesio agravaría la depresión respiratoria y la sobrecarga. La betametasona se usa para maduración pulmonar fetal, no para tratar el edema pulmonar materno. La hidralazina controla la presión arterial, pero no revierte la congestión pulmonar. Por ello, la opción correcta es furosemida endovenosa."
+  },
+  {
+    "numero": 583,
+    "enunciado": "Gestante de 25 años, 30 semanas, con preeclampsia sin criterios de severidad, acude a control. Ecografía: feto con peso estimado en percentil 5, oligohidramnios y Doppler de arteria umbilical con flujo diastólico ausente. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 148/94 mmHg, T 36.6 °C, SatO2 98%. Laboratorio: proteinuria 400 mg/24h, plaquetas 220 000/mm3, creatinina 0.8 mg/dL. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Finalizar el embarazo",
+      "B": "Control ambulatorio",
+      "C": "Sulfato de magnesio",
+      "D": "Antihipertensivos"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La preeclampsia sin criterios de severidad puede complicarse con restricción del crecimiento fetal y oligohidramnios, que indican insuficiencia placentaria. La presencia de flujo diastólico ausente en la arteria umbilical es un signo de hipoxia fetal crónica que obliga a finalizar el embarazo, según la OMS y el MINSA. El control ambulatorio ya no es seguro porque el feto está comprometido. El sulfato de magnesio no está indicado sin criterios de severidad materna. Los antihipertensivos no revierten el daño placentario ni la hipoxia fetal. Por ello, la opción correcta es finalizar el embarazo."
+  },
+  {
+    "numero": 584,
+    "enunciado": "Puérpera de 28 años, 3 días post-cesárea por preeclampsia severa, acude por cefalea intensa y visión borrosa. Funciones vitales: FC 96 lpm, FR 20 rpm, PA 160/100 mmHg, T 36.8 °C, SatO2 98%. Examen físico: reflejos osteotendinosos exaltados, edema leve. Laboratorio: plaquetas 110 000/mm3, creatinina 1.0 mg/dL, proteinuria persistente. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Eclampsia posparto",
+      "B": "Preeclampsia posparto",
+      "C": "Hipertensión posparto",
+      "D": "Cefalea tensional"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La preeclampsia puede persistir o aparecer por primera vez en el posparto, especialmente en los primeros 7 días. La OMS y el MINSA la reconocen como entidad que requiere vigilancia estrecha. En esta puérpera, la hipertensión, la proteinuria persistente, la trombocitopenia y los síntomas neurológicos confirman el diagnóstico. La eclampsia posparto se define por convulsiones, que no han ocurrido. La hipertensión posparto cursa sin proteinuria ni alteraciones de laboratorio. La cefalea tensional no explica la hipertensión ni la trombocitopenia. Por ello, la opción correcta es preeclampsia posparto."
+  },
+  {
+    "numero": 585,
+    "enunciado": "Gestante de 34 años, 36 semanas, con preeclampsia severa, presenta dolor en hipocondrio derecho y náuseas. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 97%. Laboratorio: plaquetas 70 000/mm3, AST 250 U/L, ALT 200 U/L, LDH 800 U/L, bilirrubina total 2.0 mg/dL, creatinina 1.1 mg/dL. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Síndrome HELLP",
+      "B": "Hígado graso agudo",
+      "C": "Hepatitis viral",
+      "D": "Colecistitis aguda"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El síndrome HELLP se caracteriza por hemólisis, elevación de enzimas hepáticas y trombocitopenia, y es una complicación grave de la preeclampsia. La OMS y el MINSA lo consideran criterio de severidad. En este caso, la trombocitopenia, la elevación de AST, ALT, LDH y bilirrubina configuran el diagnóstico. El hígado graso agudo del embarazo cursa con hipoglucemia y falla hepática, sin trombocitopenia marcada. La hepatitis viral eleva transaminasas, pero no produce hemólisis ni trombocitopenia. La colecistitis aguda presenta fiebre, signo de Murphy positivo y leucocitosis, ausentes aquí. Por ello, la opción correcta es síndrome HELLP."
+  },
+  {
+    "numero": 586,
+    "enunciado": "Gestante de 30 años, 12 semanas, con antecedente de preeclampsia severa en embarazo previo que terminó en parto a las 32 semanas. Funciones vitales: FC 80 lpm, FR 18 rpm, PA 110/70 mmHg, T 36.5 °C, SatO2 98%. Examen físico: IMC 32 kg/m2, sin edema. Laboratorio: proteinuria negativa, plaquetas 250 000/mm3, creatinina 0.7 mg/dL. ¿Cuál es la medida profiláctica más adecuada para reducir el riesgo de recurrencia?",
+    "opciones": {
+      "A": "Iniciar ácido acetilsalicílico 100 mg diarios",
+      "B": "Indicar calcio 2 g diarios",
+      "C": "Administrar metildopa 250 mg cada 8 horas",
+      "D": "Recomendar reposo absoluto en decúbito lateral"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El ácido acetilsalicílico a dosis baja iniciado antes de las 16 semanas reduce el riesgo de preeclampsia en gestantes de alto riesgo, como aquellas con antecedente de preeclampsia severa, según la OMS y el MINSA. Su mecanismo implica inhibición de tromboxano A2 y mejoría de la perfusión placentaria. El calcio solo se indica en poblaciones con ingesta deficiente y no en este contexto. La metildopa es un antihipertensivo para hipertensión crónica, no una medida profiláctica de preeclampsia. El reposo absoluto no ha demostrado beneficio y puede aumentar el riesgo tromboembólico. Por ello, la opción correcta es iniciar ácido acetilsalicílico 100 mg diarios."
+  },
+  {
+    "numero": 587,
+    "enunciado": "Gestante de 28 años, 34 semanas, con preeclampsia severa, presenta cefalea intensa y PA 180/120 mmHg. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 180/120 mmHg, T 36.6 °C, SatO2 97%. Examen físico: reflejos osteotendinosos exaltados, edema leve. Laboratorio: plaquetas 90 000/mm3, creatinina 1.1 mg/dL, proteinuria 900 mg/24h. ¿Cuál es el antihipertensivo endovenoso de elección para el manejo agudo?",
+    "opciones": {
+      "A": "Enalaprilato",
+      "B": "Labetalol",
+      "C": "Furosemida",
+      "D": "Metildopa"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El labetalol endovenoso es el antihipertensivo de elección en la preeclampsia severa con cifras críticas, según la OMS y el MINSA. Su acción alfa y beta bloqueante reduce la presión arterial sin afectar significativamente el flujo uteroplacentario. El enalaprilato está contraindicado en el embarazo por riesgo de teratogenicidad y daño renal fetal. La furosemida se reserva para edema agudo de pulmón y no para el control agudo de la hipertensión. La metildopa es un fármaco oral de acción lenta, no útil en la emergencia hipertensiva. Por ello, la opción correcta es labetalol."
+  },
+  {
+    "numero": 588,
+    "enunciado": "Gestante de 26 años, 32 semanas, con preeclampsia severa, presenta deterioro materno y se decide finalizar el embarazo. Funciones vitales: FC 96 lpm, FR 20 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 97%. Examen físico: reflejos presentes, edema leve. Laboratorio: plaquetas 100 000/mm3, creatinina 1.0 mg/dL, proteinuria 800 mg/24h. ¿Cuál es la medida más adecuada para la maduración pulmonar fetal antes de la finalización?",
+    "opciones": {
+      "A": "Sulfato de magnesio endovenoso",
+      "B": "Hidralazina endovenosa",
+      "C": "Furosemida endovenosa",
+      "D": "Betametasona intramuscular"
+    },
+    "respuesta": "D",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La betametasona intramuscular acelera la maduración pulmonar fetal y reduce la morbimortalidad neonatal cuando se prevé la finalización del embarazo antes de las 34 semanas, según la OMS y el MINSA. En la preeclampsia severa con deterioro materno, se administra antes del parto si el tiempo lo permite. El sulfato de magnesio previene convulsiones, pero no madura los pulmones fetales. La hidralazina controla la hipertensión aguda, sin efecto sobre la maduración pulmonar. La furosemida trata el edema pulmonar materno y no tiene indicación fetal. Por ello, la opción correcta es betametasona intramuscular."
+  },
+  {
+    "numero": 589,
+    "enunciado": "Gestante de 34 años, 36 semanas, con preeclampsia sin criterios de severidad, acude a control. Funciones vitales: FC 88 lpm, FR 18 rpm, PA 146/94 mmHg, T 36.6 °C, SatO2 98%. Examen físico: edema leve, reflejos normales. Laboratorio: plaquetas 230 000/mm3, creatinina 0.8 mg/dL, proteinuria 450 mg/24h. ¿Cuál es el examen más adecuado para evaluar el bienestar fetal en esta paciente?",
+    "opciones": {
+      "A": "Amniocentesis para madurez pulmonar",
+      "B": "Cordocentesis para hematocrito fetal",
+      "C": "Perfil biofísico fetal",
+      "D": "Ecografía morfológica detallada"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El perfil biofísico fetal evalúa movimientos respiratorios, movimientos corporales, tono fetal, reactividad cardíaca y volumen de líquido amniótico, y es el examen de elección para vigilar el bienestar fetal en la preeclampsia sin criterios de severidad, según la OMS y el MINSA. La amniocentesis se realiza para evaluar madurez pulmonar o cariotipo, no para vigilancia rutinaria. La cordocentesis permite evaluar anemia fetal, pero es invasiva y no está indicada en este contexto. La ecografía morfológica detallada se realiza entre las 18 y 22 semanas para descartar malformaciones, no para vigilancia en el tercer trimestre. Por ello, la opción correcta es perfil biofísico fetal."
+  },
+  {
+    "numero": 590,
+    "enunciado": "Gestante de 24 años, 31 semanas, con preeclampsia severa, presenta convulsión tónico-clónica generalizada. Se administra sulfato de magnesio endovenoso y se controla la crisis. Funciones vitales: FC 110 lpm, FR 22 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 95%. Examen físico: reflejos osteotendinosos presentes, útero blando, frecuencia cardíaca fetal 140 lpm. ¿Cuál es la conducta obstétrica más adecuada después de estabilizar a la paciente?",
+    "opciones": {
+      "A": "Finalizar el embarazo",
+      "B": "Continuar control ambulatorio",
+      "C": "Repetir sulfato de magnesio",
+      "D": "Administrar antihipertensivos orales"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La eclampsia se define por convulsiones en una gestante con preeclampsia, y el tratamiento definitivo es la finalización del embarazo una vez estabilizada la madre, según la OMS y el MINSA. El sulfato de magnesio controla las convulsiones y previene recurrencias, pero no elimina la causa placentaria. El control ambulatorio no es seguro ante una emergencia obstétrica. Repetir sulfato de magnesio sin finalizar el embarazo mantiene el riesgo de nuevas convulsiones. Los antihipertensivos orales no revierten la indicación de interrupción. Por ello, la opción correcta es finalizar el embarazo."
+  },
+  {
+    "numero": 591,
+    "enunciado": "Gestante de 29 años, 33 semanas, con preeclampsia severa, acude por dolor en hipocondrio derecho y náuseas. Funciones vitales: FC 104 lpm, FR 22 rpm, PA 165/105 mmHg, T 36.8 °C, SatO2 96%. Examen físico: dolor a la palpación en hipocondrio derecho, sin signos de irritación peritoneal, reflejos osteotendinosos exaltados. Laboratorio: plaquetas 70 000/mm3, AST 280 U/L, ALT 240 U/L, LDH 900 U/L, bilirrubina total 2.2 mg/dL, creatinina 1.0 mg/dL. Ecografía abdominal: hematoma hepático subcapsular de 4 cm, sin ruptura. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Laparotomía exploratoria inmediata",
+      "B": "Finalización del embarazo",
+      "C": "Manejo expectante ambulatorio",
+      "D": "Embolización hepática profiláctica"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La paciente presenta síndrome HELLP complicado con hematoma hepático subcapsular no roto. La OMS y el MINSA recomiendan estabilización materna, transfusión según necesidad, vigilancia estrecha y finalización del embarazo, ya que el parto es el tratamiento definitivo de la preeclampsia. La laparotomía exploratoria inmediata se reserva para ruptura hepática con hemoperitoneo o inestabilidad hemodinámica, ausentes en este caso. El manejo expectante ambulatorio es inapropiado porque persiste el riesgo de progresión a ruptura hepática, trombocitopenia grave y muerte materna. La embolización hepática profiláctica no está indicada en hematomas no rotos y sin sangrado activo. Por ello, la opción correcta es finalización del embarazo."
+  },
+  {
+    "numero": 592,
+    "enunciado": "Gestante de 27 años, 35 semanas, con eclampsia, recibe sulfato de magnesio endovenoso. A los 30 minutos presenta nueva convulsión tónico-clónica generalizada. Funciones vitales: FC 118 lpm, FR 26 rpm, PA 170/110 mmHg, T 36.7 °C, SatO2 93%. Examen físico: reflejos osteotendinosos presentes, útero blando, frecuencia cardíaca fetal 130 lpm. Laboratorio: plaquetas 120 000/mm3, creatinina 0.9 mg/dL, proteinuria 700 mg/24h. ¿Cuál es la medida inmediata más adecuada?",
+    "opciones": {
+      "A": "Diazepam endovenoso en bolo",
+      "B": "Fenitoína endovenosa lenta",
+      "C": "Sulfato de magnesio adicional",
+      "D": "Gluconato de calcio endovenoso"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En la eclampsia, el sulfato de magnesio es el fármaco de elección para controlar y prevenir convulsiones, según la OMS y el MINSA. Si la convulsión recurre después de la dosis inicial, se recomienda administrar una dosis adicional de sulfato de magnesio, habitualmente un bolo de 2 g endovenosos, antes de considerar otras medidas. El diazepam endovenoso en bolo puede usarse como alternativa de segunda línea, pero no es la conducta inicial ante recurrencia. La fenitoína endovenosa lenta también es de segunda línea y no supera al sulfato de magnesio en eficacia. El gluconato de calcio endovenoso es el antídoto de la toxicidad por magnesio y no tiene indicación para controlar convulsiones. Por ello, la opción correcta es sulfato de magnesio adicional."
+  },
+  {
+    "numero": 593,
+    "enunciado": "Gestante de 31 años, 34 semanas, con preeclampsia severa, acude por sangrado vaginal oscuro y dolor abdominal súbito. Funciones vitales: FC 120 lpm, FR 24 rpm, PA 160/100 mmHg, T 36.6 °C, SatO2 95%. Examen físico: útero hipertónico, doloroso, altura uterina mayor a la esperada, frecuencia cardíaca fetal 90 lpm. Ecografía: hematoma retroplacentario. Laboratorio: Hb 8.5 g/dL, plaquetas 90 000/mm3, creatinina 1.1 mg/dL. ¿Cuál es la conducta obstétrica más adecuada?",
+    "opciones": {
+      "A": "Cesárea urgente",
+      "B": "Parto vaginal instrumental",
+      "C": "Tocolisis con nifedipino",
+      "D": "Amniotomía y oxitocina"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a desprendimiento prematuro de placenta en una gestante con preeclampsia severa, con sufrimiento fetal evidenciado por bradicardia y útero hipertónico. La OMS y el MINSA recomiendan cesárea urgente para interrumpir el embarazo y evitar muerte fetal y coagulopatía materna. El parto vaginal instrumental está contraindicado por el riesgo de hipoxia fetal progresiva y hemorragia. La tocolisis con nifedipino no debe usarse porque retrasa la resolución del desprendimiento y agrava el sangrado. La amniotomía y oxitocina pueden aumentar la hemorragia y no resuelven la emergencia fetal. Por ello, la opción correcta es cesárea urgente."
+  },
+  {
+    "numero": 594,
+    "enunciado": "Gestante de 28 años, 32 semanas, con preeclampsia severa, presenta oliguria de 12 horas, edema agudo de pulmón y deterioro renal. Funciones vitales: FC 112 lpm, FR 30 rpm, PA 155/95 mmHg, T 36.5 °C, SatO2 90%. Examen físico: crepitantes bilaterales, edema generalizado. Laboratorio: creatinina 3.0 mg/dL, potasio 6.2 mEq/L, plaquetas 80 000/mm3, LDH 800 U/L. Recibe furosemida endovenosa sin respuesta. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Aumentar furosemida endovenosa",
+      "B": "Iniciar dopamina en dosis renal",
+      "C": "Restricción hídrica estricta",
+      "D": "Hemodiálisis urgente"
+    },
+    "respuesta": "D",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La paciente presenta falla renal aguda con oliguria refractaria a furosemida, hipercalemia grave y edema agudo de pulmón en el contexto de preeclampsia severa. La OMS y el MINSA recomiendan hemodiálisis urgente cuando existe hipercalemia refractaria, sobrecarga hídrica o uremia con deterioro clínico. Aumentar la furosemida endovenosa no revierte la falla renal establecida y puede agravar la hipovolemia. La dopamina en dosis renal no ha demostrado beneficio y no está recomendada. La restricción hídrica estricta es insuficiente ante hipercalemia y edema pulmonar que comprometen la vida. Por ello, la opción correcta es hemodiálisis urgente."
+  },
+  {
+    "numero": 595,
+    "enunciado": "Gestante de 30 años, 36 semanas, con preeclampsia severa y síndrome HELLP, presenta plaquetas de 30 000/mm3 y se decide cesárea urgente. Funciones vitales: FC 106 lpm, FR 22 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 97%. Examen físico: petequias en miembros inferiores, sin sangrado activo. Laboratorio: Hb 9.0 g/dL, AST 200 U/L, ALT 180 U/L, LDH 750 U/L, creatinina 1.0 mg/dL. ¿Cuál es la medida preoperatoria más adecuada?",
+    "opciones": {
+      "A": "Transfundir plasma fresco congelado",
+      "B": "Transfundir plaquetas",
+      "C": "Administrar crioprecipitado",
+      "D": "Administrar ácido tranexámico"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En el síndrome HELLP, la trombocitopenia grave aumenta el riesgo de sangrado quirúrgico. La OMS y el MINSA recomiendan transfusión de plaquetas antes de la cesárea cuando las cifras son menores de 50 000/mm3, especialmente si hay sangrado o se prevé cirugía. En esta paciente, con plaquetas de 30 000/mm3 y petequias, la transfusión plaquetaria es la medida preoperatoria más adecuada. El plasma fresco congelado se usa en coagulopatía con prolongación del tiempo de protrombina o tromboplastina, no en trombocitopenia aislada. El crioprecipitado se reserva para déficit de fibrinógeno. El ácido tranexámico no reemplaza la transfusión de plaquetas y no corrige la trombocitopenia. Por ello, la opción correcta es transfundir plaquetas."
+  },
+  {
+    "numero": 596,
+    "enunciado": "Gestante de 28 años, 31 semanas, con preeclampsia severa, presenta cefalea intensa, visión borrosa y confusión. Funciones vitales: FC 96 lpm, FR 20 rpm, PA 170/110 mmHg, T 36.6 °C, SatO2 97%. Examen físico: reflejos osteotendinosos exaltados, fondo de ojo normal. Laboratorio: plaquetas 150 000/mm3, creatinina 0.9 mg/dL, proteinuria 600 mg/24h. Resonancia magnética cerebral: edema vasogénico en regiones posteriores. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Eclampsia",
+      "B": "Encefalopatía posterior reversible",
+      "C": "Infarto cerebral isquémico",
+      "D": "Meningitis bacteriana"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La encefalopatía posterior reversible se caracteriza por cefalea, alteraciones visuales, confusión y edema vasogénico en regiones posteriores del cerebro, asociada a preeclampsia severa. La OMS y el MINSA la reconocen como complicación neurológica que requiere control de presión y finalización del embarazo. La eclampsia se define por convulsiones, ausentes en este caso. El infarto cerebral isquémico muestra restricción en difusión y déficit focal establecido, no edema vasogénico posterior. La meningitis bacteriana cursa con fiebre, rigidez de nuca y pleocitosis en líquido cefalorraquídeo, no descritos aquí. Por ello, la opción correcta es encefalopatía posterior reversible."
+  },
+  {
+    "numero": 597,
+    "enunciado": "Gestante de 32 años, 34 semanas, con preeclampsia severa, presenta sangrado vaginal profuso y equimosis generalizadas. Funciones vitales: FC 120 lpm, FR 24 rpm, PA 150/95 mmHg, T 36.5 °C, SatO2 95%. Examen físico: útero hipertónico, sangrado activo por genitales. Laboratorio: plaquetas 45 000/mm3, TP 18 s, TTPa 45 s, fibrinógeno 120 mg/dL, dímero D elevado. ¿Cuál es la conducta más adecuada?",
+    "opciones": {
+      "A": "Transfundir plaquetas, plasma y finalizar embarazo",
+      "B": "Administrar ácido tranexámico y observar",
+      "C": "Iniciar heparina de bajo peso molecular",
+      "D": "Realizar legrado uterino urgente"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro corresponde a coagulación intravascular diseminada en el contexto de preeclampsia severa con desprendimiento placentario. La OMS y el MINSA recomiendan reposición de plaquetas, plasma fresco congelado y crioprecipitado según necesidad, además de finalizar el embarazo para eliminar el factor desencadenante. El ácido tranexámico y la observación no corrigen la coagulopatía ni detienen el sangrado. La heparina de bajo peso molecular está contraindicada en sangrado activo y coagulopatía. El legrado uterino no es el tratamiento de la coagulación intravascular diseminada y puede agravar el sangrado. Por ello, la opción correcta es transfundir plaquetas, plasma y finalizar embarazo."
+  },
+  {
+    "numero": 598,
+    "enunciado": "Gestante de 29 años, 33 semanas, con preeclampsia severa, presenta ictericia, vómitos y somnolencia. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 160/100 mmHg, T 36.8 °C, SatO2 96%. Examen físico: hepatomegalia dolorosa, reflejos exaltados. Laboratorio: glucosa 50 mg/dL, AST 150 U/L, ALT 130 U/L, bilirrubina total 3.0 mg/dL, plaquetas 110 000/mm3, LDH 400 U/L, creatinina 1.2 mg/dL. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome HELLP",
+      "B": "Hígado graso agudo del embarazo",
+      "C": "Hepatitis viral aguda",
+      "D": "Colestasis intrahepática del embarazo"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El hígado graso agudo del embarazo cursa con hipoglucemia, encefalopatía, ictericia, coagulopatía y elevación moderada de transaminasas, sin hemólisis marcada. La OMS y el MINSA lo reconocen como complicación grave que obliga a finalizar el embarazo. El síndrome HELLP presenta hemólisis, plaquetas bajas y enzimas hepáticas elevadas, pero no hipoglucemia marcada ni encefalopatía. La hepatitis viral aguda eleva transaminasas y bilirrubina, sin hipoglucemia ni trombocitopenia. La colestasis intrahepática del embarazo cursa con prurito y ácidos biliares elevados, sin encefalopatía. Por ello, la opción correcta es hígado graso agudo del embarazo."
+  },
+  {
+    "numero": 599,
+    "enunciado": "Puérpera de 5 días postparto vaginal, sin control prenatal, presenta convulsión tónico-clónica generalizada. Funciones vitales: FC 110 lpm, FR 22 rpm, PA 160/100 mmHg, T 36.7 °C, SatO2 96%. Examen físico: reflejos osteotendinosos exaltados, edema leve. Laboratorio: plaquetas 130 000/mm3, creatinina 1.0 mg/dL, proteinuria 500 mg/24h. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Eclampsia posparto",
+      "B": "Epilepsia generalizada",
+      "C": "Meningitis bacteriana",
+      "D": "Hipoglucemia grave"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La eclampsia posparto se define por convulsiones en una puérpera con hipertensión y proteinuria, sin otra causa identificable, y puede aparecer hasta 6 semanas después del parto. La OMS y el MINSA la consideran una emergencia obstétrica que requiere sulfato de magnesio y control de presión. La epilepsia generalizada requiere antecedente de crisis no relacionadas con el embarazo y no explica la hipertensión ni la proteinuria. La meningitis bacteriana cursa con fiebre, rigidez de nuca y pleocitosis. La hipoglucemia grave puede causar convulsiones, pero no produce hipertensión ni proteinuria. Por ello, la opción correcta es eclampsia posparto."
+  },
+  {
+    "numero": 600,
+    "enunciado": "Gestante de 35 años, 36 semanas, con preeclampsia severa, presenta cefalea súbita intensa, hemiparesia derecha y afasia. Funciones vitales: FC 100 lpm, FR 22 rpm, PA 180/110 mmHg, T 36.6 °C, SatO2 96%. Examen físico: hemiparesia derecha, reflejos exaltados. Tomografía cerebral: hemorragia intracerebral en ganglios basales izquierdos. ¿Cuál es la conducta inicial más adecuada?",
+    "opciones": {
+      "A": "Controlar presión con labetalol y finalizar embarazo",
+      "B": "Administrar sulfato de magnesio y esperar",
+      "C": "Realizar craneotomía descompresiva inmediata",
+      "D": "Iniciar anticoagulación con heparina"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Obstetricia",
+    "tema": "Preeclampsia",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La hemorragia intracerebral en la preeclampsia severa requiere control urgente de la presión arterial con labetalol y finalización del embarazo para evitar expansión del hematoma y muerte materna. La OMS y el MINSA recomiendan este enfoque multidisciplinario. Administrar sulfato de magnesio y esperar no revierte el sangrado ni controla la hipertensión crítica. La craneotomía descompresiva se reserva para hematomas con efecto de masa y riesgo de hernia, no como primera medida en todos los casos. La anticoagulación con heparina está contraindicada porque agravaría la hemorragia. Por ello, la opción correcta es controlar presión con labetalol y finalizar embarazo."
   }
 ]

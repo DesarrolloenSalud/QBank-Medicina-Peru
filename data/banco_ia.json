@@ -10198,5 +10198,515 @@
     "dificultad": "Alta",
     "estado": "activa",
     "explicacion": "La hemorragia intracerebral en la preeclampsia severa requiere control urgente de la presión arterial con labetalol y finalización del embarazo para evitar expansión del hematoma y muerte materna. La OMS y el MINSA recomiendan este enfoque multidisciplinario. Administrar sulfato de magnesio y esperar no revierte el sangrado ni controla la hipertensión crítica. La craneotomía descompresiva se reserva para hematomas con efecto de masa y riesgo de hernia, no como primera medida en todos los casos. La anticoagulación con heparina está contraindicada porque agravaría la hemorragia. Por ello, la opción correcta es controlar presión con labetalol y finalizar embarazo."
+  },
+  {
+    "numero": 601,
+    "enunciado": "Mujer de 22 años, menarquia a los 12 años, consulta por ciclos menstruales cada 45-60 días desde hace 2 años, acné e hirsutismo progresivo. PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.7 °C, SatO2 98%. IMC 29. Examen físico: hirsutismo facial, acné, sin galactorrea. Laboratorio: TSH normal, prolactina normal, FSH 5 mUI/mL, LH 14 mUI/mL, testosterona total 68 ng/dL. Ecografía transvaginal: ovarios aumentados con múltiples folículos periféricos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hiperplasia suprarrenal congénita no clásica",
+      "B": "Síndrome de ovario poliquístico",
+      "C": "Hiperprolactinoma hipofisario",
+      "D": "Insuficiencia ovárica primaria prematura"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro de oligomenorrea, hirsutismo, acné, obesidad, hiperandrogenismo bioquímico y ovarios multifoliculares en una mujer joven cumple los criterios de Rotterdam para síndrome de ovario poliquístico, que exigen dos de tres: oligoovulación, hiperandrogenismo clínico o bioquímico y morfología ovárica compatible. La hiperplasia suprarrenal congénita no clásica cursa con elevación de 17-hidroxiprogesterona y no suele presentar ovarios multifoliculares; el hiperprolactinoma hipofisario se descarta por prolactina normal y ausencia de galactorrea; la insuficiencia ovárica primaria prematura presenta FSH elevada y síntomas de hipoestrogenismo, no hiperandrogenismo. Por ello, la respuesta correcta es B."
+  },
+  {
+    "numero": 602,
+    "enunciado": "Mujer de 25 años, con ciclos irregulares cada 40-60 días, acné e hirsutismo facial de 3 años. No desea embarazo. PA 110/70 mmHg, FC 80 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. IMC 28. Examen: hirsutismo facial, acné. Laboratorio: testosterona total 70 ng/dL, TSH normal, prolactina normal. Ecografía: ovarios multifoliculares. ¿Cuál es el tratamiento de primera línea para el hirsutismo y control menstrual?",
+    "opciones": {
+      "A": "Metformina en monoterapia",
+      "B": "Espironolactona en monoterapia",
+      "C": "Anticonceptivos orales combinados",
+      "D": "Clomifeno en monoterapia"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la paciente con ciclos irregulares e hiperandrogenismo que no desea embarazo, el tratamiento de primera línea para hirsutismo y regularización menstrual son los anticonceptivos orales combinados, que suprimen la producción ovárica de andrógenos y aumentan la globulina transportadora de hormonas sexuales, según los criterios de Rotterdam y guías de la Endocrine Society. La metformina en monoterapia se reserva para resistencia a la insulina o prediabetes y no es primera línea para hirsutismo; la espironolactona se usa como segunda línea por riesgo teratogénico y requiere anticoncepción; el clomifeno en monoterapia está indicado para inducción de ovulación cuando hay deseo de embarazo, no para control del hirsutismo. Por ello, la respuesta correcta es C."
+  },
+  {
+    "numero": 603,
+    "enunciado": "Mujer de 30 años con diagnóstico de síndrome de ovario poliquístico desde hace 5 años, sin deseo de embarazo. PA 120/80 mmHg, FC 82 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. IMC 32. Examen: acantosis nigricans, hirsutismo leve. Laboratorio: glucosa en ayunas 105 mg/dL, HbA1c 5.9%, perfil lipídico normal. ¿Cuál es la complicación a largo plazo más probable?",
+    "opciones": {
+      "A": "Cáncer de endometrio",
+      "B": "Hipertensión arterial sistémica",
+      "C": "Dislipidemia mixta",
+      "D": "Diabetes tipo 2"
+    },
+    "respuesta": "D",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En el síndrome de ovario poliquístico, la resistencia a la insulina y la obesidad abdominal aumentan el riesgo de diabetes tipo 2, que es la complicación metabólica más frecuente a largo plazo, según los criterios de Rotterdam y la guía de la Endocrine Society. El cáncer de endometrio es una complicación asociada a oligoovulación crónica, pero no es la más frecuente en este contexto y suele requerir factores adicionales; la hipertensión arterial sistémica puede coexistir con el síndrome metabólico, aunque no es la complicación metabólica más directamente vinculada; la dislipidemia mixta es frecuente pero no supera a la diabetes tipo 2 como complicación metabólica más probable. Por ello, la respuesta correcta es D."
+  },
+  {
+    "numero": 604,
+    "enunciado": "Mujer de 24 años, consulta por oligomenorrea e hirsutismo. PA 110/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.7 °C, SatO2 98%. Examen: hirsutismo facial. Laboratorio: LH 16 mUI/mL, FSH 6 mUI/mL, testosterona total 70 ng/dL, TSH 2.1 mUI/L, prolactina 12 ng/mL. ¿Cuál es la interpretación más probable de estos resultados?",
+    "opciones": {
+      "A": "Relación LH/FSH aumentada",
+      "B": "Hiperprolactinemia leve",
+      "C": "Hipotiroidismo primario",
+      "D": "Insuficiencia ovárica primaria"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La relación LH/FSH aumentada, con LH 16 mUI/mL y FSH 6 mUI/mL, es un hallazgo hormonal compatible con síndrome de ovario poliquístico, en el que la pulsatilidad alterada de GnRH favorece la síntesis de LH sobre FSH. La prolactina normal descarta hiperprolactinemia; la TSH normal y la ausencia de síntomas tiroideos descartan hipotiroidismo primario; la FSH no está elevada, por lo que no hay insuficiencia ovárica primaria. La testosterona total elevada refuerza el hiperandrogenismo, pero la interpretación solicitada corresponde al patrón gonadotrófico. Los distractores malinterpretan valores normales o atribuyen elevaciones inexistentes. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 605,
+    "enunciado": "Mujer de 29 años, con ciclos cada 50 días, hirsutismo facial y deseo de embarazo de 18 meses. PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.8 °C, SatO2 98%. Examen: IMC 29, hirsutismo facial, acné. Laboratorio: testosterona total 72 ng/dL, TSH 2.0 mUI/L, prolactina 10 ng/mL, FSH 5 mUI/mL, LH 15 mUI/mL. Ecografía transvaginal: ovarios con más de 12 folículos de 2-9 mm. ¿Cuál es el tratamiento de primera línea para inducción de ovulación?",
+    "opciones": {
+      "A": "Clomifeno",
+      "B": "Letrozol",
+      "C": "Metformina",
+      "D": "Gonadotropinas"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En mujeres con síndrome de ovario poliquístico e infertilidad por oligoovulación, el letrozol es el tratamiento de primera línea para inducción de ovulación, ya que como inhibidor de aromatasa aumenta la FSH y mejora la tasa de nacidos vivos en comparación con clomifeno, según el consenso de Rotterdam y guías ASRM/ESHRE. El clomifeno fue el fármaco clásico, pero ha pasado a segunda línea por menor eficacia y mayores efectos antiestrogénicos; la metformina en monoterapia no induce ovulación de forma confiable y se reserva para resistencia a la insulina; las gonadotropinas se emplean en segunda o tercera línea por riesgo de hiperestimulación y embarazo múltiple. Por ello, la respuesta correcta es B."
+  },
+  {
+    "numero": 606,
+    "enunciado": "Mujer de 19 años, menarquia a los 13 años, consulta por ciclos menstruales cada 40-55 días desde hace 2 años, acné persistente e hirsutismo facial progresivo. PA 105/65 mmHg, FC 76 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. IMC 31. Examen físico: hirsutismo facial, acné, acantosis nigricans en cuello. Laboratorio: testosterona total 67 ng/dL, 17-hidroxiprogesterona normal, TSH normal, prolactina normal. Ecografía transvaginal: ovarios aumentados con múltiples folículos periféricos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hiperplasia suprarrenal congénita no clásica",
+      "B": "Síndrome de ovario poliquístico",
+      "C": "Hipotiroidismo primario descompensado",
+      "D": "Hiperprolactinemia hipofisaria idiopática"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro de oligomenorrea, hirsutismo, acné, acantosis nigricans, hiperandrogenismo bioquímico y ovarios multifoliculares en una mujer joven cumple los criterios de Rotterdam para síndrome de ovario poliquístico, que requieren dos de tres: oligoovulación, hiperandrogenismo y morfología ovárica compatible. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona normal; el hipotiroidismo primario descompensado se descarta por TSH normal y ausencia de síntomas tiroideos; la hiperprolactinemia hipofisaria idiopática se descarta por prolactina normal y ausencia de galactorrea. Por ello, la respuesta correcta es B."
+  },
+  {
+    "numero": 607,
+    "enunciado": "Mujer de 27 años, ciclos cada 45-60 días, hirsutismo, acné. PA 115/75 mmHg, FC 80 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. IMC 33. Examen: hirsutismo facial, acantosis nigricans. Laboratorio: glucosa en ayunas 102 mg/dL, HbA1c 5.8%. No desea embarazo. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Perder peso",
+      "B": "Metformina oral",
+      "C": "Anticonceptivos orales",
+      "D": "Espironolactona oral"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la paciente con ciclos irregulares, hirsutismo, obesidad y prediabetes que no desea embarazo, la conducta inicial más apropiada es la pérdida de peso mediante dieta hipocalórica y ejercicio, ya que mejora la sensibilidad a la insulina, regulariza los ciclos y reduce el hiperandrogenismo, según la guía de la Endocrine Society. La metformina oral se reserva para resistencia a la insulina o prediabetes cuando el cambio de estilo de vida no es suficiente; los anticonceptivos orales controlan el ciclo y el hirsutismo, pero no son la medida inicial en una paciente con obesidad y prediabetes; la espironolactona oral es un antiandrógeno de segunda línea y no modifica el riesgo metabólico. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 608,
+    "enunciado": "Mujer de 23 años, ciclos irregulares e hirsutismo. Se realiza ecografía transvaginal que informa: ovario derecho de 11 mL con 14 folículos de 2 a 9 mm; ovario izquierdo de 12 mL con 16 folículos de 2 a 9 mm. ¿Cuál es la interpretación más probable del estudio mostrado?",
+    "opciones": {
+      "A": "Ovarios normales",
+      "B": "Quiste folicular simple",
+      "C": "Ovarios poliquísticos",
+      "D": "Tumor ovárico benigno"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La ecografía transvaginal muestra ovarios de volumen mayor de 10 mL con más de 12 folículos de 2 a 9 mm, hallazgo compatible con ovarios poliquísticos según los criterios de Rotterdam para síndrome de ovario poliquístico. Los ovarios normales tienen volumen menor de 10 mL y menos de 12 folículos; el quiste folicular simple se presenta como una formación anecoica única mayor de 3 cm sin múltiples folículos periféricos; el tumor ovárico benigno suele mostrar una masa sólida o compleja, no un patrón multifolicular bilateral. La interpretación correcta se sustenta en el recuento folicular y el volumen ovárico descritos. Por ello, la respuesta correcta es C."
+  },
+  {
+    "numero": 609,
+    "enunciado": "Mujer de 34 años con diagnóstico de síndrome de ovario poliquístico desde hace 6 años, sin deseo de embarazo. PA 120/80 mmHg, FC 84 lpm, FR 18 rpm, T 36.7 °C, SatO2 98%. IMC 34. Examen: acantosis nigricans. Laboratorio: glucosa en ayunas 108 mg/dL, HbA1c 6.1%. ¿Cuál es el examen de tamizaje recomendado para descartar diabetes mellitus?",
+    "opciones": {
+      "A": "Glucosa en ayunas",
+      "B": "Curva de glucosa",
+      "C": "Hemoglobina glicosilada",
+      "D": "Insulina en ayunas"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En mujeres con síndrome de ovario poliquístico y factores de riesgo metabólico, la guía de la Endocrine Society recomienda realizar una curva de tolerancia oral a la glucosa con 75 g para tamizaje de diabetes mellitus tipo 2, ya que la glucosa en ayunas y la hemoglobina glicosilada pueden ser normales a pesar de intolerancia a la glucosa. La glucosa en ayunas es útil pero menos sensible en este grupo; la hemoglobina glicosilada no detecta estados prediabéticos con la misma precisión; la insulina en ayunas no es un examen de tamizaje diagnóstico de diabetes. Por ello, la respuesta correcta es B."
+  },
+  {
+    "numero": 610,
+    "enunciado": "Mujer de 28 años con ciclos irregulares, hirsutismo, IMC 31, desea embarazo. PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.8 °C, SatO2 98%. Examen: hirsutismo facial, acné. Laboratorio: testosterona total 72 ng/dL, TSH normal, prolactina normal. Ecografía transvaginal: ovarios multifoliculares. ¿Cuál es la medida inicial más importante antes de inducción de ovulación?",
+    "opciones": {
+      "A": "Metformina oral",
+      "B": "Clomifeno oral",
+      "C": "Perder peso",
+      "D": "Letrozol oral"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En la paciente con síndrome de ovario poliquístico, obesidad y deseo de embarazo, la medida inicial más importante antes de cualquier inducción de ovulación es la pérdida de peso, que mejora la ovulación espontánea, la respuesta a fármacos y las tasas de embarazo, según el consenso ASRM/ESHRE. La metformina oral puede coadyuvar en resistencia a la insulina, pero no es la primera medida aislada; el clomifeno oral y el letrozol oral son inductores de ovulación, pero se indican después de optimizar el peso y el estado metabólico. Por ello, la respuesta correcta es C."
+  },
+  {
+    "numero": 611,
+    "enunciado": "Mujer de 26 años, menarquia a los 12 años, consulta por ciclos menstruales cada 45 a 60 días desde hace 3 años, acné e hirsutismo progresivo. Antecedente: obesidad desde la adolescencia. PA 115/75 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 30, hirsutismo facial, acné en mejillas, acantosis nigricans en cuello. Laboratorio: testosterona total 72 ng/dL, TSH 2.1 mUI/L, prolactina 12 ng/mL, 17-hidroxiprogesterona normal. Ecografía transvaginal: ovario derecho 11 mL con 14 folículos de 2 a 9 mm; ovario izquierdo 10 mL con 13 folículos similares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hiperplasia suprarrenal congénita no clásica",
+      "B": "Tumor ovárico productor de andrógenos",
+      "C": "Síndrome de ovario poliquístico",
+      "D": "Hiperprolactinemia hipofisaria idiopática"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La presencia de oligomenorrea, hiperandrogenismo clínico y bioquímico, y ovarios multifoliculares cumple los criterios de Rotterdam para síndrome de ovario poliquístico. El diagnóstico se confirma al cumplir dos de tres criterios: oligoovulación, hiperandrogenismo y morfología ovárica. La ecografía muestra volumen ovárico mayor de 10 mL y más de 12 folículos. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona normal y ausencia de virilización marcada; el tumor ovárico androgénico cursa con testosterona muy elevada, masa ovárica y progresión rápida; la hiperprolactinemia hipofisaria se descarta por prolactina normal y ausencia de galactorrea. La guía de la Endocrine Society respalda estos criterios diagnósticos y la exclusión de otras causas de hiperandrogenismo."
+  },
+  {
+    "numero": 612,
+    "enunciado": "Mujer de 28 años, ciclos menstruales cada 40 a 55 días desde hace 2 años, hirsutismo facial y deseo de embarazo de 12 meses. Antecedente: IMC 29, sin comorbilidades. PA 110/70 mmHg, FC 80 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: hirsutismo en labio superior y mentón, acné leve. Laboratorio: testosterona total 70 ng/dL, TSH 2.0 mUI/L, prolactina 10 ng/mL, FSH 5 mUI/mL, LH 15 mUI/mL. Ecografía transvaginal: ambos ovarios con más de 12 folículos de 2 a 9 mm. ¿Cuál es el tratamiento de primera línea para inducción de ovulación?",
+    "opciones": {
+      "A": "Clomifeno",
+      "B": "Letrozol",
+      "C": "Metformina",
+      "D": "Gonadotropinas"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "En mujeres con síndrome de ovario poliquístico e infertilidad por oligoovulación, el letrozol es el tratamiento de primera línea para inducción de ovulación, según el consenso de la American Society for Reproductive Medicine y la European Society of Human Reproduction and Embryology. El letrozol, inhibidor de aromatasa, aumenta la FSH y mejora la tasa de nacidos vivos en comparación con clomifeno. El clomifeno se considera segunda línea por su menor eficacia y efectos antiestrogénicos; la metformina en monoterapia no induce ovulación de forma confiable y se reserva para resistencia a la insulina; las gonadotropinas se emplean en segunda o tercera línea por riesgo de hiperestimulación ovárica y embarazo múltiple."
+  },
+  {
+    "numero": 613,
+    "enunciado": "Mujer de 35 años con diagnóstico de síndrome de ovario poliquístico desde hace 8 años, sin deseo de embarazo. Refiere ganancia ponderal de 6 kg en el último año. Antecedente: obesidad grado I. PA 120/80 mmHg, FC 82 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 33, acantosis nigricans en cuello y axilas, sin hirsutismo marcado. Laboratorio: glucosa en ayunas 106 mg/dL, HbA1c 6.0%, perfil lipídico normal, TSH normal. No refiere sofocos ni galactorrea. No presenta sangrado vaginal anormal. ¿Cuál es la complicación a largo plazo más probable?",
+    "opciones": {
+      "A": "Cáncer de endometrio uterino",
+      "B": "Dislipidemia mixta",
+      "C": "Hipertensión arterial",
+      "D": "Diabetes tipo 2"
+    },
+    "respuesta": "D",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "En el síndrome de ovario poliquístico, la resistencia a la insulina y la obesidad abdominal aumentan el riesgo de diabetes tipo 2, que es la complicación metabólica más frecuente a largo plazo, según la Endocrine Society. La paciente presenta prediabetes con HbA1c 6.0%, lo que refuerza este riesgo. El tamizaje con curva de tolerancia oral a la glucosa es recomendado en estas pacientes. El cáncer de endometrio se asocia a oligoovulación crónica, pero no es la complicación metabólica más probable; la dislipidemia mixta es frecuente pero no supera a la diabetes tipo 2; la hipertensión arterial puede coexistir con el síndrome metabólico, aunque no es la complicación más directamente vinculada."
+  },
+  {
+    "numero": 614,
+    "enunciado": "Mujer de 25 años, menarquia a los 12 años, consulta por ciclos menstruales cada 45 días e hirsutismo facial de 2 años de evolución. Antecedente: IMC 28. PA 110/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.7 °C, SatO2 98%. Examen físico: hirsutismo en mentón, acné leve, sin galactorrea. Se solicita perfil hormonal. Resultados: LH 16 mUI/mL, FSH 5 mUI/mL, testosterona total 70 ng/dL, TSH 2.0 mUI/L, prolactina 11 ng/mL. No refiere sofocos ni pérdida de peso. Sin antecedentes familiares de hiperplasia suprarrenal. ¿Cuál es la interpretación más probable de estos resultados?",
+    "opciones": {
+      "A": "Hiperprolactinemia leve",
+      "B": "Relación LH/FSH aumentada",
+      "C": "Hipotiroidismo primario",
+      "D": "Insuficiencia ovárica primaria prematura"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "Los resultados muestran LH 16 mUI/mL y FSH 5 mUI/mL, con una relación LH/FSH de 3.2, hallazgo compatible con síndrome de ovario poliquístico, en el que la pulsatilidad alterada de GnRH favorece la síntesis de LH sobre FSH. La prolactina normal descarta hiperprolactinemia; la TSH normal y la ausencia de síntomas tiroideos descartan hipotiroidismo primario; la FSH no está elevada, por lo que no hay insuficiencia ovárica primaria. La testosterona total elevada refuerza el hiperandrogenismo, pero la interpretación solicitada corresponde al patrón gonadotrófico. Los distractores malinterpretan valores normales o atribuyen elevaciones inexistentes."
+  },
+  {
+    "numero": 615,
+    "enunciado": "Mujer de 30 años, ciclos menstruales cada 50 días desde hace 4 años, hirsutismo facial y acné. Antecedente: obesidad central. PA 115/75 mmHg, FC 80 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 31, hirsutismo en labio superior, acantosis nigricans en cuello. Laboratorio: testosterona total 68 ng/dL, 17-hidroxiprogesterona normal, TSH 2.3 mUI/L, prolactina 13 ng/mL. Ecografía transvaginal: ovario derecho 12 mL con 15 folículos de 2 a 9 mm; ovario izquierdo 11 mL con 14 folículos similares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de ovario poliquístico",
+      "B": "Hiperplasia suprarrenal congénita no clásica",
+      "C": "Adenoma hipofisario",
+      "D": "Insuficiencia ovárica primaria"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cuadro de oligomenorrea, hirsutismo, hiperandrogenismo bioquímico y ovarios multifoliculares cumple los criterios de Rotterdam para síndrome de ovario poliquístico. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona normal; el adenoma hipofisario se descarta por prolactina normal y ausencia de galactorrea; la insuficiencia ovárica primaria se descarta por FSH normal y ausencia de hipoestrogenismo. La guía de la Endocrine Society respalda el diagnóstico clínico y la exclusión de otras causas de hiperandrogenismo. La ecografía transvaginal confirma la morfología ovárica compatible. El diagnóstico requiere dos de tres criterios. No se requiere laparoscopia para el diagnóstico."
+  },
+  {
+    "numero": 616,
+    "enunciado": "Mujer de 24 años, menarquia a los 12 años, consulta por ciclos menstruales cada 45 a 60 días desde hace 3 años, acné e hirsutismo progresivo. Antecedente: obesidad desde la adolescencia. PA 115/75 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 30, hirsutismo facial, acné en mejillas, acantosis nigricans en cuello. Laboratorio: testosterona total 72 ng/dL, TSH 2.1 mUI/L, prolactina 12 ng/mL, 17-hidroxiprogesterona normal. Ecografía transvaginal: ovario derecho 11 mL con 14 folículos de 2 a 9 mm; ovario izquierdo 10 mL con 13 folículos similares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de ovario poliquístico",
+      "B": "Hiperplasia suprarrenal congénita",
+      "C": "Tumor ovárico productor de andrógenos",
+      "D": "Hiperprolactinemia hipofisaria"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cuadro cumple los criterios de Rotterdam para síndrome de ovario poliquístico, que exigen dos de tres: oligoovulación, hiperandrogenismo clínico o bioquímico y morfología ovárica compatible, según la Endocrine Society. La paciente presenta oligomenorrea, hirsutismo, testosterona elevada y ovarios multifoliculares. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona normal y ausencia de virilización marcada; el tumor ovárico productor de andrógenos cursa con testosterona muy elevada, masa ovárica y progresión rápida; la hiperprolactinemia hipofisaria se descarta por prolactina normal y ausencia de galactorrea. El diagnóstico diferencial requiere excluir otras causas de hiperandrogenismo. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 617,
+    "enunciado": "Mujer de 32 años con ciclos irregulares e hirsutismo. Antecedente: obesidad central. PA 120/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 34, acantosis nigricans en cuello. Laboratorio: glucosa en ayunas 104 mg/dL, HbA1c 5.9%, testosterona total 70 ng/dL, TSH normal. No refiere síntomas de diabetes. ¿Cuál es el examen de elección para descartar diabetes mellitus?",
+    "opciones": {
+      "A": "Curva de glucosa",
+      "B": "Glucosa en ayunas",
+      "C": "Hemoglobina glicosilada sérica",
+      "D": "Insulina en ayunas"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "En mujeres con síndrome de ovario poliquístico y factores de riesgo metabólico, la Endocrine Society recomienda la curva de tolerancia oral a la glucosa con 75 g para tamizaje de diabetes mellitus tipo 2, ya que la glucosa en ayunas y la hemoglobina glicosilada pueden ser normales a pesar de intolerancia a la glucosa. La paciente presenta glucosa en ayunas limítrofe y HbA1c 5.9%, por lo que requiere prueba dinámica. La glucosa en ayunas es menos sensible en este grupo; la hemoglobina glicosilada sérica no detecta estados prediabéticos con la misma precisión; la insulina en ayunas no es un examen de tamizaje diagnóstico de diabetes. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 618,
+    "enunciado": "Mujer de 28 años con ciclos irregulares e hirsutismo. Antecedente: IMC 31. PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Examen físico: acantosis nigricans en cuello. Se realiza curva de tolerancia oral a la glucosa con 75 g. Resultados: glucosa basal 102 mg/dL, glucosa a las 2 horas 148 mg/dL. ¿Cuál es la interpretación más probable de este estudio?",
+    "opciones": {
+      "A": "Intolerancia a la glucosa",
+      "B": "Diabetes mellitus tipo 2",
+      "C": "Glucemia normal",
+      "D": "Hipoglucemia reactiva"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La curva de tolerancia oral a la glucosa con 75 g muestra glucosa basal 102 mg/dL y a las 2 horas 148 mg/dL, valor comprendido entre 140 y 199 mg/dL, que define intolerancia a la glucosa según los criterios de la American Diabetes Association. La diabetes mellitus tipo 2 se descarta porque la glucosa a las 2 horas es menor de 200 mg/dL; la glucemia normal se descarta porque la basal es mayor de 100 mg/dL y la de 2 horas mayor de 140 mg/dL; la hipoglucemia reactiva se descarta porque no hay valores menores de 70 mg/dL. La interpretación correcta se sustenta en los criterios diagnósticos vigentes y en el contexto de síndrome de ovario poliquístico con resistencia a la insulina. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 619,
+    "enunciado": "Mujer de 34 años con diagnóstico de síndrome de ovario poliquístico desde hace 6 años, sin deseo de embarazo. Refiere ciclos menstruales cada 60 días. Antecedente: obesidad. PA 120/80 mmHg, FC 80 lpm, FR 16 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 32, acantosis nigricans, sin sangrado vaginal anormal. ¿Cuál es el riesgo a largo plazo más asociado a la oligoovulación crónica?",
+    "opciones": {
+      "A": "Cáncer de endometrio",
+      "B": "Cáncer de ovario",
+      "C": "Cáncer de mama",
+      "D": "Cáncer cervical uterino"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La oligoovulación crónica en el síndrome de ovario poliquístico produce exposición prolongada a estrógenos sin oposición progestacional, lo que aumenta el riesgo de hiperplasia endometrial y cáncer de endometrio, según la Endocrine Society y el MINSA. La paciente presenta ciclos cada 60 días, lo que confirma oligoovulación. El cáncer de ovario no se ha asociado de forma consistente con la oligoovulación; el cáncer de mama no guarda relación directa con la anovulación crónica; el cáncer cervical uterino se relaciona con infección por virus del papiloma humano, no con oligoovulación. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 620,
+    "enunciado": "Mujer de 26 años con ciclos menstruales cada 50 días, hirsutismo facial y acné. No desea embarazo. Antecedente: IMC 29. PA 110/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.7 °C, SatO2 98%. Examen físico: hirsutismo en labio superior y mentón, acné leve. Laboratorio: testosterona total 70 ng/dL, TSH normal, prolactina normal. Ecografía transvaginal: ovarios multifoliculares. ¿Cuál es el tratamiento de primera línea para el hirsutismo y control menstrual?",
+    "opciones": {
+      "A": "Anticonceptivos orales combinados",
+      "B": "Espironolactona oral diaria",
+      "C": "Metformina oral diaria",
+      "D": "Clomifeno oral diario"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "En la paciente con síndrome de ovario poliquístico, hirsutismo y sin deseo de embarazo, el tratamiento de primera línea para hirsutismo y control menstrual son los anticonceptivos orales combinados, que suprimen la producción ovárica de andrógenos y aumentan la globulina transportadora de hormonas sexuales, según la Endocrine Society. La espironolactona oral diaria es un antiandrógeno de segunda línea y requiere anticoncepción por riesgo teratogénico; la metformina oral diaria se reserva para resistencia a la insulina o prediabetes y no es primera línea para hirsutismo; el clomifeno oral diario está indicado para inducción de ovulación cuando hay deseo de embarazo, no para control del hirsutismo. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 621,
+    "enunciado": "Mujer de 31 años, menarquia a los 13 años, consulta por ciclos menstruales cada 45 a 70 días desde hace 4 años, hirsutismo facial progresivo, acné persistente e infertilidad de 18 meses. Antecedente: obesidad desde la adolescencia, madre con diabetes tipo 2. PA 120/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 32, hirsutismo en labio superior y mentón, acné en mejillas, acantosis nigricans en cuello y axilas. Laboratorio: testosterona total 85 ng/dL, 17-hidroxiprogesterona basal normal, TSH 2.4 mUI/L, prolactina 14 ng/mL, LH 17 mUI/mL, FSH 6 mUI/mL. Ecografía transvaginal: ovario derecho 12 mL con 16 folículos de 2 a 9 mm; ovario izquierdo 11 mL con 15 folículos similares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de ovario poliquístico",
+      "B": "Hiperplasia suprarrenal congénita no clásica",
+      "C": "Tumor ovárico productor de andrógenos",
+      "D": "Síndrome de Cushing"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro cumple los criterios de Rotterdam para síndrome de ovario poliquístico, que exigen dos de tres: oligoovulación, hiperandrogenismo clínico o bioquímico y morfología ovárica compatible, según la Endocrine Society. La paciente presenta oligomenorrea, hirsutismo, testosterona elevada y ovarios multifoliculares. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona basal normal; el tumor ovárico productor de andrógenos cursa con testosterona muy elevada, masa ovárica y progresión rápida; el síndrome de Cushing se descarta por ausencia de facies cushinoides, estrías violáceas e hipertensión sostenida. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 622,
+    "enunciado": "Mujer de 36 años, menarquia a los 12 años, consulta por sangrado uterino anormal de 2 meses, con episodios de metrorragia abundante. Antecedente: ciclos menstruales cada 50 a 70 días desde la adolescencia, obesidad, hipertensión arterial en tratamiento con enalapril. PA 130/85 mmHg, FC 88 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 34, acantosis nigricans, hirsutismo leve, útero aumentado de tamaño, sin masas anexiales. Laboratorio: hemoglobina 10.2 g/dL, testosterona total 78 ng/dL, TSH normal, prolactina normal, β-hCG negativa. Ecografía transvaginal: endometrio de 15 mm heterogéneo, ovarios multifoliculares bilaterales. ¿Cuál es el examen diagnóstico de elección?",
+    "opciones": {
+      "A": "Biopsia endometrial",
+      "B": "Histeroscopia diagnóstica",
+      "C": "Histerosonografía",
+      "D": "Citología endometrial"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En una paciente con oligoovulación crónica, obesidad y sangrado uterino anormal, el endometrio de 15 mm heterogéneo obliga a descartar hiperplasia o carcinoma endometrial mediante biopsia endometrial, según el American College of Obstetricians and Gynecologists y la Endocrine Society. La histeroscopia diagnóstica puede complementar la evaluación, pero no sustituye a la toma histológica inicial; la histerosonografía evalúa la cavidad uterina y no obtiene tejido para diagnóstico; la citología endometrial tiene baja sensibilidad y no se recomienda para tamizaje de cáncer endometrial. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 623,
+    "enunciado": "Mujer de 27 años con diagnóstico de síndrome de ovario poliquístico desde hace 3 años. Consulta por hirsutismo facial que no ha mejorado con anticonceptivos orales combinados durante 12 meses. No desea embarazo. PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 28, hirsutismo en labio superior, mentón y línea media abdominal, acné leve. Laboratorio: testosterona total 72 ng/dL, TSH normal, prolactina normal, función renal y hepática normales. ¿Cuál es el antiandrógeno de elección para el hirsutismo refractario?",
+    "opciones": {
+      "A": "Espironolactona",
+      "B": "Finasterida",
+      "C": "Flutamida",
+      "D": "Metformina"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En pacientes con síndrome de ovario poliquístico e hirsutismo refractario a anticonceptivos orales, la espironolactona es el antiandrógeno de elección porque bloquea los receptores de andrógenos y reduce la producción ovárica, según la Endocrine Society. La finasterida inhibe la 5-alfa-reductasa, pero no se recomienda en mujeres en edad fértil por riesgo teratogénico; la flutamida tiene eficacia antiandrogénica, pero su hepatotoxicidad limita su uso; la metformina mejora la sensibilidad a la insulina, pero no es un antiandrógeno y no controla el hirsutismo de forma directa. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 624,
+    "enunciado": "Mujer de 24 años, menarquia a los 12 años, consulta por oligomenorrea e hirsutismo facial de 2 años. Antecedente: IMC 28. PA 110/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.7 °C, SatO2 98%. Examen físico: hirsutismo en mentón y labio superior, acné leve, sin galactorrea. Laboratorio: testosterona total 70 ng/dL, TSH 2.0 mUI/L, prolactina 11 ng/mL. Se realiza prueba de estimulación con ACTH: 17-hidroxiprogesterona basal 1.5 ng/mL y a los 60 minutos 3.0 ng/mL. ¿Cuál es la interpretación más probable de este estudio?",
+    "opciones": {
+      "A": "Respuesta normal",
+      "B": "Hiperplasia suprarrenal no clásica",
+      "C": "Déficit de 21-hidroxilasa",
+      "D": "Tumor adrenal productor de andrógenos"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La prueba de estimulación con ACTH muestra 17-hidroxiprogesterona basal 1.5 ng/mL y a los 60 minutos 3.0 ng/mL, valores que no superan el punto de corte de 10 ng/mL, por lo que la respuesta es normal y descarta hiperplasia suprarrenal congénita no clásica, según la Endocrine Society. La hiperplasia suprarrenal no clásica y el déficit de 21-hidroxilasa se descartan porque ambos cursan con elevación marcada de 17-hidroxiprogesterona post-ACTH; el tumor adrenal productor de andrógenos se descarta porque no eleva la 17-hidroxiprogesterona y suele acompañarse de masas adrenales. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 625,
+    "enunciado": "Mujer de 33 años, ciclos menstruales cada 60 días, hirsutismo facial, obesidad central. Antecedente: madre con diabetes tipo 2. PA 125/80 mmHg, FC 84 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 35, acantosis nigricans en cuello y axilas, hirsutismo leve. Laboratorio: glucosa en ayunas 108 mg/dL, HbA1c 6.1%, testosterona total 75 ng/dL, TSH normal, prolactina normal. Ecografía transvaginal: ovarios multifoliculares bilaterales. ¿Cuál es el tratamiento de primera línea para el manejo metabólico?",
+    "opciones": {
+      "A": "Metformina",
+      "B": "Pioglitazona",
+      "C": "Insulina",
+      "D": "Acarbosa"
+    },
+    "respuesta": "A",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En mujeres con síndrome de ovario poliquístico, obesidad y prediabetes, la metformina es el tratamiento de primera línea para el manejo metabólico porque mejora la sensibilidad a la insulina, favorece la ovulación y reduce el riesgo de progresión a diabetes tipo 2, según la Endocrine Society. La pioglitazona no es de primera línea por sus efectos adversos sobre peso y riesgo cardiovascular; la insulina no está indicada en prediabetes sin hiperglucemia significativa; la acarbosa retrasa la absorción de carbohidratos, pero no modifica la resistencia a la insulina ni el hiperandrogenismo. Por ello, la respuesta correcta es A."
+  },
+  {
+    "numero": 626,
+    "enunciado": "Mujer de 29 años, menarquia a los 12 años, consulta por ciclos menstruales cada 45 a 70 días desde hace 4 años, hirsutismo facial progresivo, acné persistente e infertilidad de 18 meses. Antecedente: obesidad desde la adolescencia, madre con diabetes tipo 2. PA 130/85 mmHg, FC 84 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 33, hirsutismo en labio superior y mentón, acné en mejillas, acantosis nigricans en cuello y axilas. Laboratorio: testosterona total 82 ng/dL, 17-hidroxiprogesterona basal normal, TSH 2.3 mUI/L, prolactina 13 ng/mL, LH 16 mUI/mL, FSH 6 mUI/mL. Ecografía transvaginal: ovario derecho 12 mL con 15 folículos de 2 a 9 mm; ovario izquierdo 11 mL con 14 folículos similares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hiperplasia suprarrenal congénita no clásica",
+      "B": "Tumor ovárico productor de andrógenos",
+      "C": "Síndrome de ovario poliquístico",
+      "D": "Síndrome de Cushing"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro de oligomenorrea, hirsutismo, hiperandrogenismo bioquímico, obesidad, acantosis nigricans y ovarios multifoliculares cumple los criterios de Rotterdam para síndrome de ovario poliquístico, que exigen dos de tres: oligoovulación, hiperandrogenismo y morfología ovárica compatible, según la Endocrine Society. La ecografía transvaginal confirma volumen ovárico mayor de 10 mL y más de 12 folículos por ovario. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona basal normal; el tumor ovárico productor de andrógenos cursa con testosterona muy elevada, masa ovárica y progresión rápida; el síndrome de Cushing se descarta por ausencia de facies cushinoides, estrías violáceas e hipertensión sostenida. Por ello, la respuesta correcta es C."
+  },
+  {
+    "numero": 627,
+    "enunciado": "Mujer de 34 años, menarquia a los 13 años, consulta por sangrado uterino anormal de 3 meses, con episodios de metrorragia abundante. Antecedente: ciclos menstruales cada 50 a 70 días desde la adolescencia, obesidad, hipertensión arterial en tratamiento con enalapril. PA 135/85 mmHg, FC 88 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 34, acantosis nigricans, hirsutismo leve, útero aumentado de tamaño, sin masas anexiales. Laboratorio: hemoglobina 10.2 g/dL, testosterona total 78 ng/dL, TSH normal, prolactina normal, β-hCG negativa. Ecografía transvaginal: endometrio de 15 mm heterogéneo, ovarios multifoliculares bilaterales. ¿Cuál es el examen diagnóstico de elección?",
+    "opciones": {
+      "A": "Histeroscopia diagnóstica",
+      "B": "Biopsia endometrial",
+      "C": "Histerosonografía",
+      "D": "Citología endometrial"
+    },
+    "respuesta": "B",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En una paciente con oligoovulación crónica, obesidad y sangrado uterino anormal, el endometrio de 15 mm heterogéneo obliga a descartar hiperplasia o carcinoma endometrial mediante biopsia endometrial, según el American College of Obstetricians and Gynecologists y la Endocrine Society. La biopsia endometrial permite clasificar la hiperplasia y descartar atipia, paso determinante para el manejo. La histeroscopia diagnóstica puede complementar la evaluación, pero no sustituye a la toma histológica inicial; la histerosonografía evalúa la cavidad uterina y no obtiene tejido para diagnóstico; la citología endometrial tiene baja sensibilidad y no se recomienda para tamizaje de cáncer endometrial. Por ello, la respuesta correcta es B."
+  },
+  {
+    "numero": 628,
+    "enunciado": "Mujer de 32 años con diagnóstico de síndrome de ovario poliquístico desde hace 5 años. Consulta por sangrado uterino anormal de 4 meses. No desea embarazo. PA 120/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 33, acantosis nigricans, hirsutismo leve. Biopsia endometrial: hiperplasia endometrial con atipia. ¿Cuál es el manejo más apropiado?",
+    "opciones": {
+      "A": "Progestágenos cíclicos",
+      "B": "Legrado uterino",
+      "C": "Observación con control",
+      "D": "Histerectomía total"
+    },
+    "respuesta": "D",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "En una paciente con síndrome de ovario poliquístico, hiperplasia endometrial con atipia y sin deseo de embarazo, el manejo más apropiado es la histerectomía total, ya que la hiperplasia con atipia tiene un riesgo elevado de progresión a carcinoma endometrial, según el American College of Obstetricians and Gynecologists. La histerectomía total incluye la extirpación del útero y el cuello uterino, y es el tratamiento definitivo. Los progestágenos cíclicos se reservan para hiperplasia sin atipia o para pacientes que desean conservar fertilidad; el legrado uterino es un método diagnóstico y no terapéutico definitivo; la observación con control no está indicada por el riesgo oncológico. Por ello, la respuesta correcta es D."
+  },
+  {
+    "numero": 629,
+    "enunciado": "Mujer de 30 años, ciclos menstruales cada 60 días, hirsutismo facial, obesidad central. Antecedente: madre con diabetes tipo 2. PA 125/80 mmHg, FC 84 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Examen físico: IMC 35, acantosis nigricans en cuello y axilas, hirsutismo leve. Se realiza biopsia endometrial por sangrado uterino anormal. Resultado: glándulas endometriales con atipia citológica, relación glándula/estroma aumentada, sin invasión miometrial. ¿Cuál es la interpretación más probable de este estudio?",
+    "opciones": {
+      "A": "Hiperplasia endometrial sin atipia",
+      "B": "Adenocarcinoma endometrial",
+      "C": "Hiperplasia con atipia",
+      "D": "Endometrio proliferativo normal"
+    },
+    "respuesta": "C",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La biopsia endometrial muestra glándulas con atipia citológica y relación glándula/estroma aumentada, hallazgos compatibles con hiperplasia endometrial con atipia, según la clasificación de la Organización Mundial de la Salud. La presencia de atipia aumenta el riesgo de carcinoma endometrial hasta en 30%. La hiperplasia sin atipia se descarta porque no presenta atipia citológica; el adenocarcinoma endometrial se descarta porque no hay invasión miometrial ni arquitectura cribiforme; el endometrio proliferativo normal se descarta porque no muestra atipia ni aumento de la relación glándula/estroma. La atipia citológica es el factor pronóstico más importante para progresión a carcinoma. Por ello, la respuesta correcta es C."
+  },
+  {
+    "numero": 630,
+    "enunciado": "Mujer de 27 años, menarquia a los 13 años, consulta por oligomenorrea de 3 años, hirsutismo facial progresivo y acné. Antecedente: obesidad desde la adolescencia. PA 115/75 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Examen físico: IMC 31, hirsutismo en labio superior y mentón, acné en mejillas, acantosis nigricans en cuello. Laboratorio: testosterona total 76 ng/dL, 17-hidroxiprogesterona basal normal, TSH 2.1 mUI/L, prolactina 12 ng/mL, LH 15 mUI/mL, FSH 6 mUI/mL. Ecografía transvaginal: ovarios multifoliculares bilaterales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Hiperplasia suprarrenal congénita no clásica",
+      "B": "Tumor ovárico productor de andrógenos",
+      "C": "Hiperprolactinemia hipofisaria",
+      "D": "Síndrome de ovario poliquístico"
+    },
+    "respuesta": "D",
+    "area": "Gineco-Obstetricia",
+    "especialidad": "Ginecología",
+    "tema": "Síndrome de ovario poliquístico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro de oligomenorrea, hirsutismo, hiperandrogenismo bioquímico y ovarios multifoliculares en una mujer joven cumple los criterios de Rotterdam para síndrome de ovario poliquístico, que requieren dos de tres: oligoovulación, hiperandrogenismo y morfología ovárica compatible, según la Endocrine Society. La ecografía transvaginal confirma volumen ovárico mayor de 10 mL y más de 12 folículos por ovario. La hiperplasia suprarrenal congénita no clásica se descarta por 17-hidroxiprogesterona basal normal; el tumor ovárico productor de andrógenos cursa con testosterona muy elevada, masa ovárica y progresión rápida; la hiperprolactinemia hipofisaria se descarta por prolactina normal y ausencia de galactorrea. Por ello, la respuesta correcta es D."
   }
 ]

@@ -14618,5 +14618,345 @@
     "dificultad": "Alta",
     "estado": "activa",
     "explicacion": "La vegetación mitral con insuficiencia leve, sin destrucción valvular, en paciente con lupus, fiebre y hemocultivos negativos corresponde a endocarditis de Libman-Sacks, según la Sociedad Peruana de Reumatología. La endocarditis infecciosa produce hemocultivos positivos, destrucción valvular y vegetaciones grandes. La fiebre reumática causa valvulitis con nódulos de Aschoff y antecedente de faringitis estreptocócica. El mixoma auricular es una masa en aurícula izquierda con prolapso y embolias. La ausencia de microorganismos y el contexto lúpico activo sustentan Libman-Sacks."
+  },
+  {
+    "numero": 861,
+    "enunciado": "Varón de 25 años, fototipo oscuro, consulta por lesión elevada en pabellón auricular posterior a perforación hace 8 meses. Refiere prurito y crecimiento progresivo. Examen físico: PA 110/70 mmHg, FC 80 lpm, FR 18 rpm, T 36.8 °C. Se observa placa firme, brillante, sobreelevada, que rebasa los límites de la herida original. No hay secreción ni dolor espontáneo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Queloide",
+      "B": "Cicatriz hipertrófica",
+      "C": "Cicatriz normotrófica",
+      "D": "Dermatofibroma"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El queloide se caracteriza por proliferación fibroblástica excesiva y depósito de colágeno que rebasa los límites de la herida original, con predilección por pabellón auricular y fototipos oscuros, según la Sociedad Peruana de Cirugía Plástica. La cicatriz hipertrófica respeta los límites originales y suele regresar parcialmente; la cicatriz normotrófica es plana y flexible, sin crecimiento; el dermatofibroma es un nódulo dérmico benigno, no relacionado con perforación reciente ni con crecimiento pruriginoso. El prurito y el crecimiento progresivo apoyan el diagnóstico."
+  },
+  {
+    "numero": 862,
+    "enunciado": "Mujer de 30 años acude por herida cortante en antebrazo de 2 horas de evolución, sin signos de infección. Examen físico: PA 118/76 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C. Herida lineal de 3 cm, bordes limpios, sin pérdida de tejido, sensibilidad y motilidad conservadas. ¿Cuál es la medida inicial más importante?",
+    "opciones": {
+      "A": "Irrigación",
+      "B": "Cierre primario",
+      "C": "Antibiótico",
+      "D": "Desbridamiento"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La irrigación con suero salino es la medida inicial porque remueve detritos y reduce carga bacteriana antes de cualquier cierre, según normas de manejo de heridas del MINSA. El cierre primario inmediato puede realizarse después de irrigar, no antes; el antibiótico profiláctico no reemplaza la limpieza mecánica en heridas limpias; el desbridamiento enzimático se reserva para tejido necrótico o heridas crónicas. En una herida limpia de 2 horas, la prioridad es la asepsia mecánica."
+  },
+  {
+    "numero": 863,
+    "enunciado": "Paciente de 28 años con cicatriz hipertrófica en región deltoidea posterior a quemadura. La lesión es elevada, pruriginosa y ha estabilizado su tamaño. Examen físico: PA 112/72 mmHg, FC 76 lpm, FR 16 rpm, T 36.7 °C. ¿Qué característica diferencia mejor esta lesión de un queloide?",
+    "opciones": {
+      "A": "Respeta los límites originales",
+      "B": "Rebasa los límites originales",
+      "C": "Aparece después de cirugía",
+      "D": "Regresa de forma espontánea"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La cicatriz hipertrófica se distingue del queloide porque respeta los límites de la herida original, aunque sea elevada y pruriginosa, según consensos de cicatrización patológica. El queloide rebasa los límites originales y rara vez regresa espontáneamente; la aparición después de cirugía puede ocurrir en ambas; la regresión espontánea es más propia de la cicatriz hipertrófica, no un criterio diferencial absoluto. La clave morfológica es la extensión fuera de los bordes iniciales."
+  },
+  {
+    "numero": 864,
+    "enunciado": "Varón de 40 años con herida quirúrgica de 7 días de evolución. Se toma biopsia del lecho. El informe describe tejido de granulación con fibroblastos, neovasos y colágeno tipo III. Funciones vitales: PA 120/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.9 °C. ¿Cuál es la interpretación más probable del estudio?",
+    "opciones": {
+      "A": "Fase proliferativa",
+      "B": "Fase inflamatoria",
+      "C": "Fase de remodelación",
+      "D": "Fase de hemostasia"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El tejido de granulación con fibroblastos, neovasos y colágeno tipo III corresponde a la fase proliferativa, que ocurre aproximadamente entre el día 4 y 21, según textos de cirugía plástica. La fase inflamatoria predomina en las primeras 48 horas con neutrófilos y macrófagos; la remodelación ocurre semanas o meses después con reemplazo de colágeno III por I; la hemostasia es inmediata con plaquetas y fibrina. La presencia de neovasos y síntesis de matriz descarta las otras fases."
+  },
+  {
+    "numero": 865,
+    "enunciado": "Mujer de 68 años, diabética, postoperada de laparotomía hace 7 días. Refiere salida de líquido serosanguinolento por herida. Examen físico: PA 130/80 mmHg, FC 88 lpm, FR 20 rpm, T 37.2 °C. Se observa separación de bordes cutáneos sin exposición de fascia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Dehiscencia superficial",
+      "B": "Infección de herida",
+      "C": "Seroma",
+      "D": "Hematoma"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La dehiscencia superficial se manifiesta por separación de bordes cutáneos sin exposición de fascia en el postoperatorio, frecuente en diabéticos por alteración de la síntesis de colágeno, según MINSA. La infección de herida cursa con eritema, calor, dolor y secreción purulenta; el seroma produce colección serosa fluctuante sin separación de bordes; el hematoma presenta tumefacción, dolor y coloración equimótica. La ausencia de signos infecciosos y la separación cutánea orientan a dehiscencia."
+  },
+  {
+    "numero": 866,
+    "enunciado": "Mujer de 32 años con queloide doloroso en tórax posterior a cesárea. Examen físico: PA 110/70 mmHg, FC 80 lpm, FR 16 rpm, T 36.5 °C. Lesión firme, sobreelevada, que rebasa límites. ¿Cuál es el tratamiento de primera línea?",
+    "opciones": {
+      "A": "Triamcinolona intralesional",
+      "B": "Escisión quirúrgica simple",
+      "C": "Radioterapia superficial",
+      "D": "Crioterapia con nitrógeno"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La triamcinolona intralesional es el tratamiento de primera línea del queloide por inhibir fibroblastos y reducir síntesis de colágeno, según la Sociedad Peruana de Cirugía Plástica. La escisión quirúrgica simple tiene alta recurrencia y no se indica sola; la radioterapia superficial se reserva para casos refractarios o recidivantes; la crioterapia con nitrógeno puede usarse como adyuvante, no como primera línea. El dolor y el crecimiento apoyan la necesidad de terapia intralesional."
+  },
+  {
+    "numero": 867,
+    "enunciado": "En la cicatrización normal de una herida cutánea, se sabe que el colágeno es fundamental. Examen físico: PA 116/74 mmHg, FC 74 lpm, FR 16 rpm, T 36.6 °C. ¿Cuál es la célula principal que sintetiza colágeno?",
+    "opciones": {
+      "A": "Fibroblasto",
+      "B": "Macrófago",
+      "C": "Neutrófilo",
+      "D": "Queratinocito"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El fibroblasto es la célula principal responsable de la síntesis de colágeno durante la cicatrización normal, según textos de fisiología de cicatrización. El macrófago participa en la fagocitosis y liberación de factores de crecimiento; el neutrófilo actúa en la fase inflamatoria inicial; el queratinocito forma el epitelio de revestimiento. La producción de colágeno tipo I y III depende del fibroblasto y de su diferenciación a miofibroblasto en fases posteriores."
+  },
+  {
+    "numero": 868,
+    "enunciado": "Paciente de 35 años con cicatriz elevada en hombro. Se realiza biopsia. El informe describe haces gruesos de colágeno, escasos miofibroblastos y vasos ocluidos. Funciones vitales: PA 118/78 mmHg, FC 78 lpm, FR 16 rpm, T 36.7 °C. ¿Cuál es la interpretación más probable del estudio?",
+    "opciones": {
+      "A": "Queloide",
+      "B": "Cicatriz hipertrófica",
+      "C": "Cicatriz madura",
+      "D": "Cicatriz atrófica"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La biopsia con haces gruesos de colágeno, escasos miofibroblastos y vasos ocluidos en una cicatriz que rebasa límites originales corresponde a queloide, según la Sociedad Peruana de Cirugía Plástica. La cicatriz hipertrófica suele mostrar nódulos de miofibroblastos y respeta límites; la cicatriz madura presenta colágeno ordenado y vasos normales; la cicatriz atrófica muestra disminución de colágeno y depresión cutánea. El hallazgo de vasos ocluidos y crecimiento excesivo apoya el queloide."
+  },
+  {
+    "numero": 869,
+    "enunciado": "Varón de 55 años, postoperado de hernia inguinal hace 5 días. Refiere aumento de volumen indoloro en herida. Examen físico: PA 126/78 mmHg, FC 76 lpm, FR 16 rpm, T 36.8 °C. Se palpa colección fluctuante, sin eritema ni calor local. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Seroma",
+      "B": "Hematoma",
+      "C": "Infección",
+      "D": "Dehiscencia"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El seroma es una colección de líquido seroso en el espacio quirúrgico, indolora, fluctuante y sin signos inflamatorios, frecuente tras cirugía inguinal, según MINSA. El hematoma suele ser doloroso, con equimosis y aumento tenso; la infección presenta eritema, calor y fiebre; la dehiscencia implica separación de bordes. La ausencia de eritema y dolor, junto con la fluctuación indolora, orienta a seroma."
+  },
+  {
+    "numero": 870,
+    "enunciado": "Varón de 60 años con herida operatoria infectada. Examen físico: PA 100/60 mmHg, FC 102 lpm, FR 22 rpm, T 38.4 °C. Herida con secreción purulenta, eritema y bordes separados. ¿Cuál es el manejo inicial más apropiado?",
+    "opciones": {
+      "A": "Drenaje",
+      "B": "Cierre primario",
+      "C": "Observación",
+      "D": "Corticoide"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El drenaje es la medida inicial en una herida infectada con colección purulenta, ya que remueve el foco y permite el control bacteriano, según normas de manejo de heridas del MINSA. El cierre primario inmediato está contraindicado porque atrapa la infección; la observación con curaciones no drena la colección; los corticoides sistémicos pueden agravar la infección. Tras el drenaje se debe iniciar antibiótico y curaciones."
+  },
+  {
+    "numero": 871,
+    "enunciado": "Varón de 45 años, quemadura en cara anterior de cuello hace 6 meses. Refiere dificultad para extender el cuello. Examen físico: PA 120/80 mmHg, FC 80 lpm, FR 18 rpm, T 36.7 °C. Se observa cicatriz lineal, tensa, que limita la extensión cervical. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Contractura cicatricial",
+      "B": "Queloide",
+      "C": "Cicatriz hipertrófica",
+      "D": "Cicatriz normotrófica"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La contractura cicatricial se produce por retracción del tejido cicatricial, generalmente tras quemaduras, y limita la movilidad articular, según la Sociedad Peruana de Cirugía Plástica. El queloide rebasa los límites originales y no necesariamente limita la extensión; la cicatriz hipertrófica respeta límites y puede regresar; la cicatriz normotrófica es plana y flexible. La tensión lineal que impide la extensión cervical es típica de contractura."
+  },
+  {
+    "numero": 872,
+    "enunciado": "Mujer de 50 años, herida quirúrgica abdominal hace 10 días. Refiere salida de líquido claro. Examen físico: PA 118/76 mmHg, FC 78 lpm, FR 16 rpm, T 36.8 °C. Se observa colección fluctuante subcutánea, sin eritema. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Compresión local",
+      "B": "Antibiótico oral",
+      "C": "Cierre primario",
+      "D": "Crioterapia"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La compresión local es la conducta inicial en el seroma postoperatorio, ya que favorece la reabsorción y evita acumulación, según normas del MINSA. El antibiótico oral no está indicado sin signos de infección; el cierre primario puede atrapar la colección; la crioterapia no tiene utilidad en seroma. La fluctuación sin eritema orienta a seroma, no a infección."
+  },
+  {
+    "numero": 873,
+    "enunciado": "Paciente con diagnóstico de cicatriz hipertrófica en región deltoidea. Examen físico: PA 118/76 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C. ¿Cuál es la evolución más frecuente?",
+    "opciones": {
+      "A": "Crecimiento continuo",
+      "B": "Malignización",
+      "C": "Regresión parcial",
+      "D": "Infección crónica"
+    },
+    "respuesta": "C",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La cicatriz hipertrófica tiende a la regresión parcial espontánea con el tiempo, a diferencia del queloide que persiste o crece, según consensos de cicatrización patológica. El crecimiento continuo es propio del queloide; la malignización es excepcional y se asocia a úlceras crónicas; la infección crónica no es evolución típica. La regresión parcial es la evolución más frecuente."
+  },
+  {
+    "numero": 874,
+    "enunciado": "Varón de 55 años, dieta inadecuada, herida que no cicatriza. Examen físico: PA 110/70 mmHg, FC 80 lpm, FR 18 rpm, T 36.7 °C. Laboratorio: niveles séricos de vitamina C disminuidos. ¿Qué alteración bioquímica explica el cuadro?",
+    "opciones": {
+      "A": "Exceso de colágeno",
+      "B": "Aumento de enlaces",
+      "C": "Deficiencia de elastina",
+      "D": "Defecto de hidroxilación"
+    },
+    "respuesta": "D",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La vitamina C es cofactor de la prolil hidroxilasa, por lo que su déficit produce defecto de hidroxilación de prolina y colágeno inestable, según bioquímica de la cicatrización. El exceso de colágeno no ocurre en escorbuto; el aumento de enlaces cruzados es lo contrario; la deficiencia de elastina no es el mecanismo principal. La mala cicatrización por escorbuto se debe a hidroxilación deficiente."
+  },
+  {
+    "numero": 875,
+    "enunciado": "Varón de 60 años, antecedente de radioterapia en cuello. Presenta úlcera crónica en zona irradiada. Examen físico: PA 130/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.5 °C. Piel atrófica, telangiectasias, úlcera de bordes irregulares. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Radiodermitis crónica",
+      "B": "Queloide",
+      "C": "Cicatriz hipertrófica",
+      "D": "Úlcera venosa"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La radiodermitis crónica se caracteriza por atrofia cutánea, telangiectasias y úlceras crónicas en zonas irradiadas, según la Sociedad Peruana de Dermatología. El queloide es una lesión elevada que rebasa límites; la cicatriz hipertrófica respeta límites; la úlcera venosa se localiza en maléolo medial con edema. La combinación de irradiación previa y piel atrófica con úlcera es típica de radiodermitis."
+  },
+  {
+    "numero": 876,
+    "enunciado": "Mujer de 65 años, antecedente de radioterapia en mama. Presenta úlcera crónica en zona irradiada de 3 meses. Examen físico: PA 120/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.6 °C. Úlcera de 2 cm, bordes elevados, sin secreción. ¿Cuál es el siguiente paso diagnóstico?",
+    "opciones": {
+      "A": "Cultivo de herida",
+      "B": "Biopsia incisional",
+      "C": "Radiografía local",
+      "D": "Hemograma completo"
+    },
+    "respuesta": "B",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "En una úlcera crónica en zona irradiada, la biopsia incisional es el siguiente paso para descartar carcinoma epidermoide sobre cicatriz, según guías oncológicas. El cultivo de herida se reserva para sospecha de infección; la radiografía local no evalúa malignidad; el hemograma completo es inespecífico. Los bordes elevados y la cronicidad obligan a descartar malignización."
+  },
+  {
+    "numero": 877,
+    "enunciado": "Paciente con diagnóstico de úlcera venosa en maléolo medial. Examen físico: PA 130/80 mmHg, FC 78 lpm, FR 16 rpm, T 36.7 °C. ¿Cuál es el tratamiento de primera línea?",
+    "opciones": {
+      "A": "Antibiótico sistémico",
+      "B": "Injerto de piel",
+      "C": "Compresión elástica",
+      "D": "Desbridamiento enzimático"
+    },
+    "respuesta": "C",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La compresión elástica es el tratamiento de primera línea de la úlcera venosa porque corrige la hipertensión venosa, según consensos de manejo de úlceras. El antibiótico sistémico solo se indica si hay infección; el injerto de piel se reserva para casos refractarios; el desbridamiento enzimático es adyuvante. La compresión es la medida fundamental."
+  },
+  {
+    "numero": 878,
+    "enunciado": "Paciente con herida de 24 horas. Examen físico: PA 120/80 mmHg, FC 80 lpm, FR 18 rpm, T 37.0 °C. Biopsia muestra abundantes neutrófilos y macrófagos, ausencia de fibroblastos. ¿Qué fase de la cicatrización corresponde?",
+    "opciones": {
+      "A": "Proliferativa",
+      "B": "Remodelación",
+      "C": "Hemostasia",
+      "D": "Inflamatoria"
+    },
+    "respuesta": "D",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La presencia de neutrófilos y macrófagos sin fibroblastos corresponde a la fase inflamatoria, que ocurre en las primeras 48 horas, según fisiología de la cicatrización. La proliferativa se caracteriza por fibroblastos y neovasos; la remodelación ocurre semanas después; la hemostasia es inmediata con plaquetas. La ausencia de fibroblastos descarta la fase proliferativa."
+  },
+  {
+    "numero": 879,
+    "enunciado": "Mujer de 70 años, úlcera en maléolo medial de 2 meses. Examen físico: PA 140/80 mmHg, FC 78 lpm, FR 16 rpm, T 36.7 °C. Edema, pigmentación, úlcera superficial, sin dolor intenso. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Úlcera venosa",
+      "B": "Úlcera arterial",
+      "C": "Úlcera neuropática",
+      "D": "Úlcera por presión"
+    },
+    "respuesta": "A",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La úlcera venosa se localiza en maléolo medial, con edema, pigmentación y escaso dolor, según guías de manejo de heridas. La úlcera arterial es dolorosa, en dedos o maléolo lateral, con pulsos disminuidos; la neuropática está en puntos de presión plantar y hay pérdida de sensibilidad; la por presión ocurre en prominencias óseas. La localización y los signos venosos orientan a úlcera venosa."
+  },
+  {
+    "numero": 880,
+    "enunciado": "Varón de 68 años, úlcera en maléolo medial, edema, pigmentación. Examen físico: PA 130/80 mmHg, FC 76 lpm, FR 16 rpm, T 36.6 °C. ¿Cuál es la medida inicial más importante?",
+    "opciones": {
+      "A": "Antibiótico",
+      "B": "Compresión",
+      "C": "Desbridamiento",
+      "D": "Injerto"
+    },
+    "respuesta": "B",
+    "area": "cirugía plástica",
+    "especialidad": "cicatrización de heridas",
+    "tema": "Fisiología y bioquímica de la cicatrización normal y anormal",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La compresión es la medida inicial más importante en la úlcera venosa, ya que reduce la hipertensión venosa y favorece la cicatrización, según consensos. El antibiótico no es inicial sin infección; el desbridamiento es adyuvante; el injerto se reserva para casos seleccionados. La compresión es la piedra angular del tratamiento."
   }
 ]

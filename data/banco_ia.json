@@ -13768,5 +13768,855 @@
     "dificultad": "Media",
     "estado": "activa",
     "explicacion": "La paciente cumple criterios clínicos y serológicos de artritis reumatoide: poliartritis simétrica de manos, rigidez matutina prolongada, anti-CCP positivo y osteopenia yuxtaarticular, aunque el factor reumatoide sea negativo. El lupus sistémico añade manifestaciones cutáneas, renales o hematológicas. La artritis psoriásica es asimétrica y se asocia a psoriasis o dactilitis. La osteoartritis no presenta sinovitis simétrica persistente ni anti-CCP positivo."
+  },
+  {
+    "numero": 811,
+    "enunciado": "Mujer de 45 años, sin antecedentes de importancia, refiere dolor simétrico en manos y muñecas de tres meses de evolución, con rigidez matutina de más de una hora. Examen físico: PA 110/70 mmHg, FC 80 lpm, FR 18 rpm, T 36.8 °C, SatO2 98%. Se evidencia tumefacción en articulaciones metacarpofalángicas e interfalángicas proximales de ambas manos. Laboratorio: VSG 45 mm/h, PCR 12 mg/L, factor reumatoideo positivo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Artritis reumatoide",
+      "B": "Osteoartritis",
+      "C": "Lupus eritematoso sistémico",
+      "D": "Gota"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro de poliartritis simétrica de pequeñas articulaciones, rigidez matutina prolongada, tumefacción de metacarpofalángicas e interfalángicas proximales y elevación de reactantes de fase aguda configura artritis reumatoide, según criterios de la Sociedad Peruana de Reumatología y la norma técnica del MINSA. La osteoartritis afecta típicamente interfalángicas distales y la primera carpometacarpiana, sin rigidez matutina prolongada ni elevación marcada de VSG; el lupus eritematoso sistémico suele acompañarse de manifestaciones cutáneas, renales o hematológicas y artritis no erosiva; la gota produce monoartritis aguda de inicio nocturno, con hiperuricemia y cristales de urato, no poliartritis simétrica crónica. El factor reumatoideo positivo apoya el diagnóstico, aunque no es patognomónico."
+  },
+  {
+    "numero": 812,
+    "enunciado": "Varón de 50 años consulta por dolor e inflamación simétrica de manos de cuatro meses, con rigidez matutina de dos horas. Examen físico: PA 120/80 mmHg, FC 76 lpm, FR 16 rpm, T 36.5 °C, SatO2 98%. Presenta tumefacción en metacarpofalángicas e interfalángicas proximales. VSG 40 mm/h, PCR 15 mg/L. ¿Cuál es el examen diagnóstico de elección para confirmar la enfermedad?",
+    "opciones": {
+      "A": "Factor reumatoideo",
+      "B": "Anti-CCP",
+      "C": "Radiografía de manos",
+      "D": "Ácido úrico"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El anti-CCP es el examen de elección para confirmar artritis reumatoide por su alta especificidad, superior al factor reumatoideo, y permite identificar formas seropositivas incluso antes de erosiones, conforme a guías de la Sociedad Peruana de Reumatología y del MINSA. El factor reumatoideo es sensible pero menos específico, pues puede positivar en lupus, hepatitis C y ancianos sanos. La radiografía de manos evalúa daño estructural erosivo, pero no confirma el diagnóstico en fases iniciales. El ácido úrico se solicita ante sospecha de gota, que cursa con monoartritis aguda y no con poliartritis simétrica crónica. El anti-CCP, junto con la clínica, sustenta el diagnóstico temprano."
+  },
+  {
+    "numero": 813,
+    "enunciado": "Paciente con diagnóstico de artritis reumatoide de cinco años de evolución, en tratamiento con metotrexato, acude por control. Examen físico: PA 130/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.7 °C, SatO2 98%. Presenta deformidad en cuello de cisne y desviación cubital. ¿Cuál es la complicación extraarticular más frecuente en esta enfermedad?",
+    "opciones": {
+      "A": "Amiloidosis renal",
+      "B": "Fibrosis pulmonar",
+      "C": "Nódulos reumatoides",
+      "D": "Neuropatía periférica"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Los nódulos reumatoides son la manifestación extraarticular más frecuente de la artritis reumatoide, localizados en superficies extensoras como codos y antebrazos, y se asocian a enfermedad seropositiva y erosiva, según la Sociedad Peruana de Reumatología. La amiloidosis renal es una complicación infrecuente y tardía, propia de enfermedad inflamatoria crónica no controlada. La fibrosis pulmonar puede ocurrir, pero no es la extraarticular más habitual. La neuropatía periférica por vasculitis reumatoide es menos común y suele acompañar a enfermedad de larga data mal controlada. El enunciado ya revela el diagnóstico, por lo que la pregunta apunta a la complicación más frecuente."
+  },
+  {
+    "numero": 814,
+    "enunciado": "Mujer de 48 años con poliartritis simétrica de manos y rigidez matutina. Examen físico: PA 115/75 mmHg, FC 78 lpm, FR 17 rpm, T 36.6 °C, SatO2 98%. Se solicita radiografía de manos. El informe describe osteopenia yuxtaarticular, disminución del espacio articular y erosiones marginales en metacarpofalángicas. ¿Cuál es la interpretación más probable del estudio?",
+    "opciones": {
+      "A": "Osteofitos",
+      "B": "Condrocalcinosis",
+      "C": "Aumento espacio articular",
+      "D": "Erosiones marginales"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La radiografía descrita muestra erosiones marginales, que son el hallazgo característico de la artritis reumatoide y reflejan proliferación sinovial erosiva, según criterios radiológicos de la Sociedad Peruana de Reumatología. Los osteofitos corresponden a osteoartritis y no a erosiones marginales. La condrocalcinosis se observa en la artropatía por pirofosfato cálcico y se manifiesta como calcificaciones del cartílago. El aumento del espacio articular es propio de fases iniciales o de otras artropatías, no de la artritis reumatoide establecida, donde el espacio se reduce. La osteopenia yuxtaarticular y la disminución del espacio acompañan a las erosiones, pero el hallazgo que mejor define el daño estructural reumatoide es la erosión marginal."
+  },
+  {
+    "numero": 815,
+    "enunciado": "Varón de 55 años refiere dolor y tumefacción simétrica en muñecas y manos de seis meses, con rigidez matutina de una hora. Examen físico: PA 125/80 mmHg, FC 74 lpm, FR 16 rpm, T 36.4 °C, SatO2 98%. Se observan nódulos subcutáneos en codos y desviación cubital de dedos. Laboratorio: factor reumatoideo positivo, VSG 50 mm/h. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Artritis reumatoide",
+      "B": "Gota tofácea",
+      "C": "Osteoartritis",
+      "D": "Lupus eritematoso sistémico"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La poliartritis simétrica de muñecas y manos, rigidez matutina prolongada, nódulos subcutáneos en codos, desviación cubital y factor reumatoideo positivo configuran artritis reumatoide, de acuerdo con criterios de la Sociedad Peruana de Reumatología y la norma técnica del MINSA. La gota tofácea produce monoartritis aguda con tofos y cristales de urato, no poliartritis simétrica con nódulos en codos. La osteoartritis afecta articulaciones de carga e interfalángicas distales, sin nódulos reumatoides ni factor reumatoideo positivo. El lupus eritematoso sistémico puede causar artritis, pero no suele presentar erosiones, nódulos reumatoides ni desviación cubital. La combinación clínica y serológica hace probable el diagnóstico de artritis reumatoide."
+  },
+  {
+    "numero": 816,
+    "enunciado": "Mujer de 42 años con poliartritis simétrica de manos de tres meses, rigidez matutina de 90 minutos y tumefacción metacarpofalángica. Examen físico: PA 110/70 mmHg, FC 80 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. VSG 38 mm/h, PCR 10 mg/L, anti-CCP positivo. ¿Cuál es el tratamiento de primera línea?",
+    "opciones": {
+      "A": "Prednisona",
+      "B": "Metotrexato",
+      "C": "Ibuprofeno",
+      "D": "Hidroxicloroquina"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El metotrexato es el fármaco antirreumático modificador de enfermedad de primera línea para la artritis reumatoide, por su eficacia en controlar inflamación, prevenir erosiones y mejorar función, según guías de la Sociedad Peruana de Reumatología y del MINSA. La prednisona se usa como puente o en crisis, pero no es tratamiento de primera línea de mantenimiento por sus efectos adversos. El ibuprofeno solo alivia síntomas y no modifica el curso de la enfermedad. La hidroxicloroquina es alternativa en enfermedad leve, pero menos efectiva que metotrexato en formas poliarticulares. El inicio temprano de metotrexato con ácido fólico es la conducta estándar en el paciente con artritis reumatoide activa."
+  },
+  {
+    "numero": 817,
+    "enunciado": "Paciente con diagnóstico de artritis reumatoide en tratamiento con metotrexato acude a control. Examen físico: PA 120/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Presenta dolor e inflamación en tres articulaciones metacarpofalángicas. ¿Cuál es el examen más útil para monitorizar la actividad inflamatoria?",
+    "opciones": {
+      "A": "Factor reumatoideo",
+      "B": "Anticuerpos anti-CCP",
+      "C": "Proteína C reactiva",
+      "D": "Radiografía de ambas manos"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La proteína C reactiva es un reactante de fase aguda que refleja actividad inflamatoria y se modifica rápidamente con el tratamiento, por lo que es útil para monitorizar la actividad de la artritis reumatoide, según guías de la Sociedad Peruana de Reumatología. El factor reumatoideo y los anticuerpos anti-CCP son marcadores diagnósticos y pronósticos, pero no varían de forma fiable con la actividad clínica. La radiografía de ambas manos evalúa daño estructural acumulado, no actividad inflamatoria actual. La velocidad de sedimentación también puede usarse, pero la proteína C reactiva tiene mejor correlación con inflamación aguda. En este paciente con articulaciones inflamadas, la proteína C reactiva es el examen más útil para monitorizar actividad."
+  },
+  {
+    "numero": 818,
+    "enunciado": "Varón de 50 años con poliartritis simétrica de rodillas y manos. Examen físico: PA 118/76 mmHg, FC 82 lpm, FR 18 rpm, T 36.8 °C, SatO2 98%. Se realiza artrocentesis de rodilla. El líquido sinovial es turbio, con leucocitos 15 000/mm3, 60% polimorfonucleares y ausencia de cristales. ¿Cuál es la interpretación más probable del líquido sinovial?",
+    "opciones": {
+      "A": "No inflamatorio",
+      "B": "Séptico",
+      "C": "Hemorrágico",
+      "D": "Inflamatorio"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El líquido sinovial con aspecto turbio, leucocitos entre 2 000 y 50 000/mm3 y predominio de polimorfonucleares sin cristales corresponde a un líquido inflamatorio no cristalino, propio de artritis reumatoide y otras artritis inflamatorias, según criterios de la Sociedad Peruana de Reumatología. El líquido no inflamatorio tiene menos de 2 000 leucocitos y aspecto claro, como en osteoartritis. El líquido séptico suele superar 50 000 leucocitos, con aspecto purulento y gérmenes en cultivo. El líquido hemorrágico presenta hematíes abundantes y se asocia a trauma o coagulopatía. La ausencia de cristales descarta gota y pseudogota, mientras el recuento y predominio celular confirman inflamación."
+  },
+  {
+    "numero": 819,
+    "enunciado": "Mujer de 60 años con poliartritis crónica deformante de larga data refiere fiebre, dolor abdominal y pérdida de peso. Examen físico: PA 100/60 mmHg, FC 96 lpm, FR 20 rpm, T 38.2 °C, SatO2 96%. Se palpa esplenomegalia. Laboratorio: neutropenia severa, anemia, factor reumatoideo positivo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Síndrome de Felty",
+      "B": "Lupus eritematoso sistémico diseminado",
+      "C": "Leucemia linfocítica crónica",
+      "D": "Artritis psoriásica"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La tríada de artritis reumatoide de larga data, esplenomegalia y neutropenia define el síndrome de Felty, complicación extraarticular poco frecuente pero clásica, descrita en la literatura reumatológica y en guías del MINSA. El lupus eritematoso sistémico puede causar citopenias, pero no se acompaña típicamente de esplenomegalia con neutropenia en un paciente con artritis reumatoide establecida. La leucemia linfocítica crónica produce linfocitosis y alteraciones hematológicas medulares, no la tríada descrita. La artritis psoriásica cursa con lesiones cutáneas y artritis asimétrica, sin esplenomegalia ni neutropenia. El síndrome de Felty explica mejor la fiebre, esplenomegalia y neutropenia en esta paciente."
+  },
+  {
+    "numero": 820,
+    "enunciado": "Mujer de 46 años con poliartritis simétrica de manos de cinco meses, rigidez matutina de una hora y tumefacción metacarpofalángica. Examen físico: PA 120/80 mmHg, FC 78 lpm, FR 17 rpm, T 36.6 °C, SatO2 98%. VSG 42 mm/h, PCR 14 mg/L. ¿Cuál es el estudio inicial para evaluar daño articular estructural?",
+    "opciones": {
+      "A": "Resonancia magnética",
+      "B": "Radiografía",
+      "C": "Tomografía computarizada",
+      "D": "Ecografía articular"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La radiografía simple de manos y pies es el estudio inicial recomendado para evaluar daño estructural en artritis reumatoide, pues detecta erosiones, disminución del espacio articular y osteopenia yuxtaarticular, según guías de la Sociedad Peruana de Reumatología y del MINSA. La resonancia magnética es más sensible para erosiones tempranas y sinovitis, pero no es el estudio inicial de rutina por costo y disponibilidad. La tomografía computarizada no se usa de forma habitual para evaluar articulaciones periféricas en esta enfermedad. La ecografía articular detecta sinovitis y tenosinovitis, pero no es el estudio inicial para daño estructural óseo. En un paciente con sospecha de artritis reumatoide, la radiografía de manos es el estudio inicial apropiado."
+  },
+  {
+    "numero": 821,
+    "enunciado": "Mujer de 58 años, con diabetes mellitus tipo 2 e hipertensión arterial en tratamiento con metformina y enalapril, acude por dolor simétrico en manos y pies de seis meses de evolución, acompañado de rigidez matutina de más de una hora. Examen físico: PA 140/85 mmHg, FC 82 lpm, FR 18 rpm, T 36.7 °C, SatO2 98%. Se observa tumefacción en articulaciones metacarpofalángicas e interfalángicas proximales de ambas manos, así como en metatarsofalángicas, y nódulos subcutáneos en codos. Refiere además fatiga y sequedad ocular leve. Laboratorio: hemoglobina 10.8 g/dL, VSG 65 mm/h, PCR 28 mg/L, factor reumatoideo positivo, anti-CCP positivo. Radiografía de manos: osteopenia yuxtaarticular y erosiones marginales. No presenta lesiones cutáneas psoriásicas ni antecedente de gota. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Artritis reumatoide",
+      "B": "Artritis psoriásica",
+      "C": "Lupus eritematoso sistémico",
+      "D": "Osteoartritis erosiva"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro de poliartritis simétrica de manos y pies, rigidez matutina prolongada, nódulos subcutáneos, factor reumatoideo y anti-CCP positivos, con erosiones marginales, configura artritis reumatoide, según criterios de la Sociedad Peruana de Reumatología y la norma técnica del MINSA. La artritis psoriásica suele ser asimétrica, con afectación de interfalángicas distales, dactilitis y lesiones cutáneas; el lupus eritematoso sistémico puede causar artritis no erosiva y se acompaña de manifestaciones sistémicas; la osteoartritis erosiva afecta interfalángicas distales y respeta metacarpofalángicas, sin anti-CCP ni nódulos reumatoides. La diabetes y la hipertensión no explican el cuadro articular."
+  },
+  {
+    "numero": 822,
+    "enunciado": "Mujer de 45 años, con diabetes mellitus tipo 2 controlada con metformina, sin antecedentes de tuberculosis ni hepatitis, acude por poliartritis simétrica de muñecas, metacarpofalángicas e interfalángicas proximales de cuatro meses de evolución, con rigidez matutina de 90 minutos. Examen físico: PA 120/75 mmHg, FC 78 lpm, FR 16 rpm, T 36.5 °C, SatO2 98%. Se evidencia tumefacción y dolor a la presión en dichas articulaciones. Laboratorio: VSG 52 mm/h, PCR 22 mg/L, factor reumatoideo positivo, anti-CCP positivo, función hepática normal, serología viral negativa. Radiografía de manos sin erosiones. No refiere consumo de alcohol. Se descarta embarazo. ¿Cuál es el tratamiento inicial de elección?",
+    "opciones": {
+      "A": "Metotrexato",
+      "B": "Prednisona",
+      "C": "Hidroxicloroquina",
+      "D": "Etanercept"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El metotrexato es el fármaco antirreumático modificador de enfermedad de primera línea en artritis reumatoide activa sin contraindicaciones, por su eficacia para controlar inflamación y prevenir erosiones, según la Sociedad Peruana de Reumatología y el MINSA. La prednisona se reserva como puente o en crisis, pero no es tratamiento de mantenimiento por sus efectos adversos; la hidroxicloroquina es útil en enfermedad leve, pero insuficiente en poliartritis seropositiva; el etanercept es un biológico de segunda línea, indicado tras falla a metotrexato. En esta paciente con función hepática normal, serología viral negativa y sin embarazo, el metotrexato con ácido fólico es la conducta inicial apropiada."
+  },
+  {
+    "numero": 823,
+    "enunciado": "Paciente con diagnóstico de artritis reumatoide de 12 años de evolución, en tratamiento con metotrexato y leflunomida, acude por disnea progresiva de tres meses, tos seca y fatigabilidad. Examen físico: PA 115/70 mmHg, FC 88 lpm, FR 22 rpm, T 36.8 °C, SatO2 92%. Se auscultan crepitantes bibasales en tercio inferior. Laboratorio: VSG 45 mm/h, PCR 18 mg/L, factor reumatoideo positivo. Tomografía de tórax: patrón intersticial reticular basal bilateral con vidrio deslustrado. Espirometría: patrón restrictivo leve. No fiebre ni expectoración purulenta. ¿Cuál es la complicación pulmonar más probable?",
+    "opciones": {
+      "A": "Enfermedad pulmonar intersticial",
+      "B": "Neumonía bacteriana aguda",
+      "C": "Tuberculosis pulmonar activa",
+      "D": "Nódulos reumatoides pulmonares"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La enfermedad pulmonar intersticial es una complicación extraarticular frecuente de la artritis reumatoide de larga data y se manifiesta con disnea, tos seca, crepitantes bibasales y patrón restrictivo con vidrio deslustrado, según la Sociedad Peruana de Reumatología. La neumonía bacteriana cursa con fiebre, expectoración purulenta y consolidación, no con patrón reticular basal crónico; la tuberculosis pulmonar muestra infiltrados apicales, cavitación y síntomas constitucionales; los nódulos reumatoides pulmonares son lesiones nodulares, no un patrón intersticial difuso. La exposición a metotrexato y leflunomida puede contribuir, pero el cuadro clínico y tomográfico es característico de enfermedad intersticial asociada a artritis reumatoide."
+  },
+  {
+    "numero": 824,
+    "enunciado": "Mujer de 60 años con artritis reumatoide de larga data, en tratamiento con metotrexato, acude por palidez y fatigabilidad. Examen físico: PA 130/80 mmHg, FC 90 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Mucosas pálidas. Examen abdominal sin visceromegalias. Laboratorio: hemoglobina 9.8 g/dL, VCM 88 fL, HCM 29 pg, leucocitos 7 200/mm3, plaquetas 250 000/mm3, ferritina 180 ng/mL, transferrina 180 mg/dL, saturación de transferrina 18%, reticulocitos 1.2%. Heces negativas para sangre oculta. No refiere sangrado digestivo ni menorragia. ¿Cuál es la interpretación más probable del hemograma?",
+    "opciones": {
+      "A": "Anemia de enfermedad crónica",
+      "B": "Anemia ferropénica microcítica hipocrómica",
+      "C": "Anemia megaloblástica por déficit vitamínico",
+      "D": "Anemia hemolítica autoinmune compensada"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El hemograma muestra anemia normocítica normocrómica con ferritina normal-alta, transferrina baja, saturación de transferrina disminuida y reticulocitos normales, hallazgos compatibles con anemia de enfermedad crónica, propia de la inflamación persistente de la artritis reumatoide, según la Sociedad Peruana de Reumatología. La anemia ferropénica presenta ferritina baja y transferrina elevada; la megaloblástica cursa con VCM elevado y déficit de vitamina B12 o folato; la hemolítica muestra reticulocitosis, bilirrubina indirecta elevada y haptoglobina baja. La ausencia de sangrado digestivo y la ferritina normal-alta descartan ferropenia. La inflamación crónica eleva la hepcidina y secuestra el hierro, generando esta anemia."
+  },
+  {
+    "numero": 825,
+    "enunciado": "Mujer de 35 años, sin antecedentes de importancia, acude por poliartritis simétrica de pequeñas articulaciones de manos de cinco meses de evolución, con rigidez matutina de una hora. Examen físico: PA 110/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.5 °C, SatO2 98%. Se observa tumefacción en articulaciones metacarpofalángicas e interfalángicas proximales. Laboratorio: VSG 48 mm/h, PCR 20 mg/L, factor reumatoideo negativo, anti-CCP positivo, ANA 1/80. Radiografía de manos: erosiones marginales. No presenta lesiones cutáneas ni síntomas sicca. No refiere fotosensibilidad ni úlceras orales. Sin antecedente de psoriasis. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Artritis reumatoide",
+      "B": "Lupus eritematoso sistémico",
+      "C": "Síndrome de Sjögren",
+      "D": "Artritis psoriásica"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La poliartritis simétrica de pequeñas articulaciones, rigidez matutina prolongada, anti-CCP positivo, ANA a título bajo y erosiones marginales configura artritis reumatoide seronegativa para factor reumatoideo, según criterios de la Sociedad Peruana de Reumatología y el MINSA. El lupus eritematoso sistémico puede presentar artritis, pero no erosiones marginales y suele acompañarse de fotosensibilidad, úlceras orales o compromiso renal; el síndrome de Sjögren causa artralgias no erosivas y sequedad mucosal; la artritis psoriásica es asimétrica, con dactilitis y lesiones cutáneas. La negatividad del factor reumatoideo no descarta artritis reumatoide, pues el anti-CCP es más específico."
+  },
+  {
+    "numero": 826,
+    "enunciado": "Mujer de 60 años con poliartritis crónica deformante de 15 años de evolución, en tratamiento irregular con metotrexato, acude por parestesias en manos, torpeza para la marcha y dolor cervical. Examen físico: PA 140/80 mmHg, FC 84 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Reflejos osteotendinosos exaltados en miembros inferiores y disminución de fuerza en manos. Radiografía cervical: subluxación atlantoaxial con desplazamiento de 5 mm. No presenta fiebre ni trauma cervical reciente. Se descarta infección intercurrente. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Inmovilización cervical",
+      "B": "Ejercicios de fortalecimiento",
+      "C": "AINE oral",
+      "D": "Metotrexato en dosis alta"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La subluxación atlantoaxial con compromiso neurológico en una paciente con poliartritis crónica deformante obliga a inmovilización cervical inmediata y evaluación por neurocirugía, según la Sociedad Peruana de Reumatología y el MINSA. Los ejercicios de fortalecimiento pueden agravar la inestabilidad; los AINE alivian el dolor pero no estabilizan la columna; el metotrexato en dosis alta no revierte la compresión medular y su inicio es tardío. La artritis reumatoide afecta la articulación atlantoaxial por sinovitis erosiva, con riesgo de mielopatía. Ante signos de compromiso neurológico, la prioridad es proteger la médula espinal y evitar maniobras que desplacen la columna."
+  },
+  {
+    "numero": 827,
+    "enunciado": "Mujer de 55 años con artritis reumatoide seropositiva de 10 años, en tratamiento con metotrexato, acude por fiebre, dolor abdominal y pérdida de peso. Examen físico: PA 100/60 mmHg, FC 96 lpm, FR 20 rpm, T 38.3 °C, SatO2 97%. Se palpa esplenomegalia a 3 cm bajo reborde costal. Laboratorio: leucocitos 2 500/mm3, neutrófilos 800/mm3, hemoglobina 9.5 g/dL, plaquetas 150 000/mm3, VSG 60 mm/h. No adenopatías periféricas. Frotis sin blastos. No refiere viajes recientes ni contacto tuberculoso. Serología viral negativa. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Síndrome de Felty",
+      "B": "Leucemia linfocítica crónica",
+      "C": "Linfoma no Hodgkin",
+      "D": "Lupus eritematoso sistémico"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La tríada de artritis reumatoide seropositiva de larga data, esplenomegalia y neutropenia define el síndrome de Felty, complicación extraarticular grave, descrita por la Sociedad Peruana de Reumatología. La leucemia linfocítica crónica produce linfocitosis y adenopatías, no neutropenia con esplenomegalia en este contexto; el linfoma no Hodgkin puede causar fiebre y esplenomegalia, pero el frotis sin blastos y la neutropenia aislada no lo sustentan; el lupus eritematoso sistémico presenta citopenias, pero no esplenomegalia con neutropenia en una paciente con artritis reumatoide establecida. La fiebre y el dolor abdominal pueden reflejar infección secundaria a neutropenia, pero la complicación de base es el síndrome de Felty."
+  },
+  {
+    "numero": 828,
+    "enunciado": "Paciente con artritis reumatoide de 8 años de evolución, en tratamiento con metotrexato, acude por disnea de esfuerzo progresiva. Examen físico: PA 120/70 mmHg, FC 80 lpm, FR 20 rpm, T 36.5 °C, SatO2 94%. Se auscultan crepitantes bibasales. Espirometría: CVF 65% del predicho, VEF1/CVF 82%, DLCO 55% del predicho. Radiografía de tórax: patrón intersticial basal bilateral. No fiebre ni expectoración. Ecocardiografía sin hipertensión pulmonar. Se descarta anemia significativa. Tomografía de tórax: vidrio deslustrado basal. ¿Cuál es la interpretación más probable de la espirometría?",
+    "opciones": {
+      "A": "Patrón restrictivo",
+      "B": "Patrón obstructivo",
+      "C": "Patrón mixto",
+      "D": "Espirometría normal"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La espirometría muestra CVF reducida con VEF1/CVF conservado y DLCO disminuida, patrón restrictivo típico de enfermedad pulmonar intersticial asociada a artritis reumatoide, según la Sociedad Peruana de Reumatología. El patrón obstructivo se define por VEF1/CVF menor de 70%, ausente en este caso; el patrón mixto combina obstrucción y restricción, no observado; la espirometría normal no explicaría la disnea, crepitantes ni DLCO baja. La tomografía con vidrio deslustrado basal refuerza el diagnóstico. La restricción con DLCO disminuida refleja afectación del intersticio pulmonar y es característica de la complicación intersticial de la artritis reumatoide."
+  },
+  {
+    "numero": 829,
+    "enunciado": "Varón de 50 años, sin antecedentes de psoriasis ni gota, acude por dolor e inflamación simétrica en manos y pies de seis meses de evolución, con rigidez matutina de una hora. Examen físico: PA 110/70 mmHg, FC 78 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Se observa tumefacción en articulaciones metacarpofalángicas e interfalángicas proximales, y nódulos subcutáneos en codos. Laboratorio: VSG 68 mm/h, PCR 30 mg/L, factor reumatoideo positivo, anti-CCP positivo. Radiografía de manos: erosiones marginales y osteopenia yuxtaarticular. No presenta lesiones cutáneas ni uveítis. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Artritis reumatoide",
+      "B": "Lupus eritematoso sistémico",
+      "C": "Sarcoidosis articular",
+      "D": "Artritis reactiva"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro de poliartritis simétrica de manos y pies, rigidez matutina prolongada, nódulos subcutáneos, factor reumatoideo y anti-CCP positivos con erosiones marginales configura artritis reumatoide, según la Sociedad Peruana de Reumatología y el MINSA. El lupus eritematoso sistémico puede causar artritis no erosiva y se acompaña de manifestaciones sistémicas; la sarcoidosis articular es infrecuente y cursa con adenopatías hiliares y afectación pulmonar; la artritis reactiva es asimétrica, oligoarticular y sigue a infección genitourinaria o gastrointestinal. La ausencia de psoriasis y gota descarta otros diagnósticos. La combinación de anti-CCP positivo y erosiones marginales es altamente específica de artritis reumatoide."
+  },
+  {
+    "numero": 830,
+    "enunciado": "Mujer de 52 años con poliartritis simétrica de manos de cinco meses de evolución, rigidez matutina de dos horas, anti-CCP positivo, VSG 60 mm/h. Examen físico: PA 130/80 mmHg, FC 82 lpm, FR 18 rpm, T 36.7 °C, SatO2 98%. Presenta tumefacción en articulaciones metacarpofalángicas. Antecedente de úlcera gástrica activa hace un mes. No refiere embarazo ni deseo de gestación. Función hepática y renal normales. Serología viral negativa. Radiografía de manos sin erosiones. No antecedente de tuberculosis. ¿Cuál es el tratamiento inicial de elección?",
+    "opciones": {
+      "A": "Metotrexato",
+      "B": "Prednisona",
+      "C": "Ibuprofeno",
+      "D": "Hidroxicloroquina"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "artritis reumatoide",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El metotrexato es el tratamiento inicial de elección en artritis reumatoide activa, incluso con antecedente de úlcera gástrica, pues no agrava la lesión mucosal, según la Sociedad Peruana de Reumatología y el MINSA. La prednisona puede usarse como puente, pero no es primera línea de mantenimiento; el ibuprofeno está contraindicado en úlcera gástrica activa y solo alivia síntomas; la hidroxicloroquina es alternativa en enfermedad leve, insuficiente en poliartritis seropositiva. En esta paciente con función hepática normal y sin embarazo, el metotrexato con ácido fólico es la conducta apropiada. La úlcera gástrica obliga a evitar AINE, pero no contraindica metotrexato."
+  },
+  {
+    "numero": 831,
+    "enunciado": "Mujer de 28 años acude por eritema malar, fotosensibilidad y úlceras orales indoloras de tres meses. Examen físico: PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.8 °C, SatO2 98%. Se observa rash malar y artralgias en manos. Laboratorio: ANA 1/640, anti-dsDNA positivo, C3 y C4 disminuidos. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus sistémico",
+      "B": "Dermatomiositis",
+      "C": "Artritis reumatoide",
+      "D": "Psoriasis"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro de eritema malar, fotosensibilidad, úlceras orales, artralgias, ANA positivo, anti-dsDNA positivo y complemento bajo configura lupus eritematoso sistémico, según criterios de la Sociedad Peruana de Reumatología y la norma técnica del MINSA. La dermatomiositis produce pápulas de Gottron, debilidad muscular proximal y elevación de enzimas musculares, no úlceras orales ni anti-dsDNA. La artritis reumatoide causa poliartritis simétrica erosiva, sin rash malar ni fotosensibilidad. La psoriasis presenta placas escamosas cutáneas y artritis asimétrica, sin anti-dsDNA ni consumo de complemento. El anti-dsDNA y la hipocomplementemia reflejan actividad inmunológica característica de lupus."
+  },
+  {
+    "numero": 832,
+    "enunciado": "Mujer de 25 años con artralgias simétricas, eritema malar y fotosensibilidad. Examen físico: PA 100/60 mmHg, FC 80 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. ANA positivo. No edema ni oliguria. ¿Cuál es el examen inicial para evaluar compromiso renal?",
+    "opciones": {
+      "A": "Biopsia renal",
+      "B": "Urianálisis",
+      "C": "Ecografía renal",
+      "D": "Creatinina sérica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El urianálisis es el examen inicial para evaluar compromiso renal en lupus, pues detecta proteinuria, hematuria y cilindros, según la Sociedad Peruana de Reumatología y el MINSA. La biopsia renal se reserva para confirmar nefritis lúpica y clasificar su tipo, no es el primer paso. La ecografía renal evalúa tamaño y estructura, pero no detecta actividad inflamatoria glomerular. La creatinina sérica puede ser normal pese a nefritis activa, por lo que no descarta compromiso renal. En una paciente con ANA positivo y manifestaciones cutáneas, el urianálisis permite tamizar nefritis de forma temprana y accesible."
+  },
+  {
+    "numero": 833,
+    "enunciado": "Paciente con diagnóstico de lupus eritematoso sistémico acude a control. Examen físico: PA 120/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Presenta lesiones cutáneas activas y artralgias leves. ¿Cuál es la medida inicial más importante para prevenir exacerbaciones?",
+    "opciones": {
+      "A": "AINE",
+      "B": "Corticoides",
+      "C": "Fotoprotección",
+      "D": "Antibióticos"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La fotoprotección es la medida inicial más importante para prevenir exacerbaciones cutáneas y sistémicas en lupus, ya que la radiación ultravioleta induce apoptosis celular y liberación de autoantígenos, según la Sociedad Peruana de Reumatología. Los AINE alivian artralgias pero no previenen brotes y pueden afectar función renal. Los corticoides controlan actividad pero no son medida preventiva inicial y conllevan efectos adversos. Los antibióticos no tienen indicación en lupus sin infección. En esta paciente con lesiones cutáneas activas y artralgias leves, la educación sobre fotoprotección, junto con hidroxicloroquina, constituye la base del manejo preventivo."
+  },
+  {
+    "numero": 834,
+    "enunciado": "Mujer de 30 años con lupus eritematoso sistémico presenta proteinuria. Examen físico: PA 130/80 mmHg, FC 84 lpm, FR 18 rpm, T 36.7 °C, SatO2 98%. Laboratorio: proteinuria 1.2 g/24 h, cilindros hemáticos, anti-dsDNA elevado, C3 y C4 bajos. ¿Cuál es la interpretación más probable?",
+    "opciones": {
+      "A": "Infección urinaria",
+      "B": "Síndrome nefrótico",
+      "C": "Pielonefritis",
+      "D": "Nefritis lúpica"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La proteinuria, cilindros hemáticos, anti-dsDNA elevado e hipocomplementemia en una paciente con lupus indican nefritis lúpica activa, según la Sociedad Peruana de Reumatología y el MINSA. La infección urinaria cursa con leucocituria, nitritos y urocultivo positivo, sin cilindros hemáticos ni consumo de complemento. El síndrome nefrótico puro se define por proteinuria mayor de 3.5 g, hypoalbuminemia y edema, y no explica los cilindros hemáticos ni la serología lúpica activa. La pielonefritis produce fiebre, dolor lumbar y leucocituria, no cilindros hemáticos. La combinación de proteinuria, sedimento activo y serología positiva sustenta nefritis lúpica."
+  },
+  {
+    "numero": 835,
+    "enunciado": "Mujer de 32 años refiere artralgias, dolor pleurítico y fotosensibilidad de dos meses. Examen físico: PA 115/75 mmHg, FC 88 lpm, FR 22 rpm, T 37.2 °C, SatO2 96%. Se ausculta roce pleural bilateral. Laboratorio: ANA positivo, anti-Sm positivo. Radiografía de tórax: derrame pleural bilateral leve. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus sistémico",
+      "B": "Artritis reumatoide",
+      "C": "Tuberculosis pleural",
+      "D": "Derrame pleural maligno"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El cuadro de artralgias, pleuritis, fotosensibilidad, ANA positivo y anti-Sm positivo configura lupus eritematoso sistémico, según la Sociedad Peruana de Reumatología. La artritis reumatoide produce poliartritis erosiva y derrame pleural con glucosa baja, pero no anti-Sm ni fotosensibilidad. La tuberculosis pleural cursa con fiebre vespertina, sudoración nocturna y ADA elevada, sin anti-Sm. El derrame pleural maligno se asocia a citología positiva, pérdida ponderal y masa pulmonar, no a autoanticuerpos. El anti-Sm es altamente específico de lupus y, junto con la pleuritis y las manifestaciones mucocutáneas, sustenta el diagnóstico."
+  },
+  {
+    "numero": 836,
+    "enunciado": "Mujer de 28 años con eritema malar, úlceras orales y artralgias leves. Examen físico: PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.5 °C, SatO2 98%. ANA positivo, anti-dsDNA negativo, función renal normal. ¿Cuál es el tratamiento de primera línea para las manifestaciones cutáneas y articulares?",
+    "opciones": {
+      "A": "Ciclofosfamida",
+      "B": "Hidroxicloroquina",
+      "C": "Rituximab",
+      "D": "Metotrexato"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La hidroxicloroquina es el tratamiento de primera línea para manifestaciones cutáneas y articulares leves de lupus, por su eficacia en reducir brotes y mejorar lesiones, según la Sociedad Peruana de Reumatología y el MINSA. La ciclofosfamida se reserva para nefritis grave o compromiso del sistema nervioso central. El rituximab se indica en lupus refractario a tratamientos convencionales. El metotrexato es alternativa en artritis persistente, pero no es el inicial de elección para manifestaciones leves. En esta paciente con anti-dsDNA negativo y función renal normal, la hidroxicloroquina con fotoprotección es la conducta apropiada."
+  },
+  {
+    "numero": 837,
+    "enunciado": "Paciente con diagnóstico de lupus eritematoso sistémico en tratamiento con hidroxicloroquina acude a control. Examen físico: PA 120/80 mmHg, FC 80 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Refiere visión borrosa ocasional. ¿Cuál es el efecto adverso ocular que requiere control oftalmológico?",
+    "opciones": {
+      "A": "Catarata",
+      "B": "Glaucoma",
+      "C": "Retinopatía",
+      "D": "Conjuntivitis"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La retinopatía por hidroxicloroquina es el efecto adverso ocular que requiere control oftalmológico periódico, pues puede causar pérdida visual irreversible si no se detecta precozmente, según la Sociedad Peruana de Reumatología. La catarata se asocia a corticoides sistémicos, no a hidroxicloroquina. El glaucoma no es una complicación característica del fármaco. La conjuntivitis es una molestia ocular inespecífica y no la toxicidad retiniana buscada. En pacientes con uso prolongado de hidroxicloroquina, se recomienda evaluación oftalmológica anual con campo visual y tomografía de coherencia óptica para detectar retinopatía antes de que sea sintomática."
+  },
+  {
+    "numero": 838,
+    "enunciado": "Mujer de 25 años con lupus eritematoso sistémico presenta fatiga y palidez. Examen físico: PA 100/60 mmHg, FC 92 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Laboratorio: hemoglobina 9.5 g/dL, leucocitos 3 200/mm3, plaquetas 110 000/mm3, reticulocitos 4%, Coombs directo positivo. ¿Cuál es la interpretación más probable?",
+    "opciones": {
+      "A": "Ferropenia crónica",
+      "B": "Déficit de folato",
+      "C": "Aplasia medular",
+      "D": "Hemólisis autoinmune"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "La anemia con reticulocitosis y Coombs directo positivo en una paciente con lupus indica hemólisis autoinmune, complicación hematológica frecuente, según la Sociedad Peruana de Reumatología. La ferropenia crónica cursa con ferritina baja, reticulocitos normales o bajos y Coombs negativo. El déficit de folato produce anemia macrocítica con reticulocitos bajos y sin Coombs positivo. La aplasia medular causa pancitopenia con reticulocitopenia, no reticulocitosis. La presencia de reticulocitos elevados y prueba de Coombs positiva confirma destrucción inmune de eritrocitos, característica del lupus y de otras enfermedades autoinmunes."
+  },
+  {
+    "numero": 839,
+    "enunciado": "Mujer de 40 años acude por úlceras orales indoloras, fotosensibilidad y artritis de manos. Examen físico: PA 120/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.7 °C, SatO2 98%. Laboratorio: ANA positivo, anti-dsDNA negativo, anti-Ro positivo. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus sistémico",
+      "B": "Síndrome de Sjögren",
+      "C": "Artritis reumatoide",
+      "D": "Dermatomiositis"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "Las úlceras orales indoloras, fotosensibilidad, artritis, ANA positivo y anti-Ro positivo configuran lupus eritematoso sistémico, según la Sociedad Peruana de Reumatología. El síndrome de Sjögren cursa con sequedad ocular y bucal, artralgias no erosivas y anti-Ro, pero no fotosensibilidad ni úlceras orales típicas. La artritis reumatoide produce poliartritis erosiva, sin úlceras orales ni fotosensibilidad. La dermatomiositis se manifiesta con debilidad muscular proximal y lesiones cutáneas, no úlceras orales ni anti-Ro. El anti-Ro puede aparecer en lupus y Sjögren, pero el cuadro mucocutáneo y la fotosensibilidad orientan a lupus."
+  },
+  {
+    "numero": 840,
+    "enunciado": "Mujer de 30 años con eritema malar y artritis simétrica. Examen físico: PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. ANA positivo, anti-dsDNA negativo, función renal normal. ¿Cuál es el examen serológico más específico para actividad de la enfermedad?",
+    "opciones": {
+      "A": "ANA",
+      "B": "Anti-dsDNA",
+      "C": "Anti-Ro",
+      "D": "Factor reumatoideo"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Baja",
+    "estado": "activa",
+    "explicacion": "El anti-dsDNA es el examen serológico más específico para actividad de lupus, pues se correlaciona con nefritis y brotes sistémicos, según la Sociedad Peruana de Reumatología y el MINSA. El ANA es sensible pero inespecífico y puede persistir positivo sin actividad. El anti-Ro se asocia a lupus cutáneo y neonatal, pero no es marcador de actividad global. El factor reumatoideo es positivo en artritis reumatoide y otras enfermedades, no específico de lupus. En esta paciente con ANA positivo y anti-dsDNA negativo, la determinación de anti-dsDNA y complemento ayuda a monitorizar actividad, aunque el anti-dsDNA puede ser negativo en algunos casos."
+  },
+  {
+    "numero": 841,
+    "enunciado": "Mujer de 24 años acude por artralgias simétricas, eritema malar, fotosensibilidad y úlceras orales indoloras de tres meses. Refiere fatiga y pérdida de apetito. Examen físico: PA 110/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.8 °C, SatO2 98%. Se observa rash malar y tumefacción leve en metacarpofalángicas. Laboratorio: ANA 1/640, anti-dsDNA positivo, C3 45 mg/dL, C4 8 mg/dL. No fiebre ni síntomas urinarios. Función renal normal. No viajes recientes ni contacto tuberculoso. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus eritematoso sistémico",
+      "B": "Dermatomiositis",
+      "C": "Artritis reumatoide",
+      "D": "Síndrome de Sjögren"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cuadro de eritema malar, fotosensibilidad, úlceras orales, artralgias, ANA positivo, anti-dsDNA positivo y complemento bajo configura lupus eritematoso sistémico, según la Sociedad Peruana de Reumatología y la norma técnica del MINSA. La dermatomiositis produce pápulas de Gottron y debilidad muscular proximal, no úlceras orales ni anti-dsDNA. La artritis reumatoide causa poliartritis erosiva simétrica sin rash malar ni fotosensibilidad. El síndrome de Sjögren cursa con sequedad ocular y bucal, artralgias no erosivas y anti-Ro, sin consumo de complemento ni anti-dsDNA. La combinación de manifestaciones mucocutáneas, serología específica e hipocomplementemia sustenta el diagnóstico de lupus."
+  },
+  {
+    "numero": 842,
+    "enunciado": "Mujer de 28 años con artralgias, eritema malar y fotosensibilidad de cuatro meses. Refiere úlceras orales indoloras. Examen físico: PA 100/60 mmHg, FC 82 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Presenta proteinuria en tira reactiva, cilindros hemáticos en sedimento urinario, creatinina 0.9 mg/dL. ANA positivo, anti-dsDNA positivo, C3 y C4 disminuidos. No oliguria ni edema. No antecedente de diabetes ni hipertensión. ¿Cuál es el examen de elección para confirmar compromiso renal?",
+    "opciones": {
+      "A": "Urianálisis",
+      "B": "Biopsia renal",
+      "C": "Ecografía renal",
+      "D": "Creatinina sérica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La biopsia renal es el examen de elección para confirmar nefritis lúpica y clasificar su tipo histológico, lo que define el tratamiento y pronóstico, según la Sociedad Peruana de Reumatología y el MINSA. El urianálisis es un tamiz inicial útil, pero no confirma el diagnóstico ni la clase de nefritis. La ecografía renal evalúa tamaño y estructura, pero no detecta actividad inflamatoria glomerular. La creatinina sérica puede ser normal pese a nefritis activa y no reemplaza el estudio histológico. En esta paciente con proteinuria, cilindros hemáticos y serología lúpica activa, la biopsia renal permite establecer la conducta terapéutica apropiada."
+  },
+  {
+    "numero": 843,
+    "enunciado": "Mujer de 26 años con diagnóstico de lupus eritematoso sistémico y anticuerpos antifosfolípidos positivos acude por dolor, edema y calor en pierna izquierda de 24 horas. Antecedente de aborto espontáneo hace dos años. Examen físico: PA 120/70 mmHg, FC 88 lpm, FR 18 rpm, T 37.2 °C, SatO2 98%. Se evidencia edema unilateral con empastamiento y dolor a la palpación en pantorrilla. Ecografía Doppler venoso pendiente. No fiebre alta ni eritema cutáneo. ¿Cuál es la complicación más probable?",
+    "opciones": {
+      "A": "Celulitis de pierna",
+      "B": "Insuficiencia venosa crónica",
+      "C": "Trombosis venosa profunda",
+      "D": "Linfedema de pierna"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La trombosis venosa profunda es la complicación más probable en una paciente con lupus y anticuerpos antifosfolípidos, que configuran síndrome antifosfolípido y aumentan el riesgo trombótico, según la Sociedad Peruana de Reumatología. La celulitis cursa con fiebre, eritema y dolor difuso, sin empastamiento localizado ni antecedente trombótico. La insuficiencia venosa crónica produce edema bilateral, pigmentación y úlceras, no dolor agudo unilateral. El linfedema es indoloro, progresivo y no se asocia a calor local. El antecedente de aborto espontáneo refuerza el diagnóstico de síndrome antifosfolípido. La ecografía Doppler confirmará la trombosis y guiará la anticoagulación."
+  },
+  {
+    "numero": 844,
+    "enunciado": "Varón de 35 años con lupus eritematoso sistémico en tratamiento con hidroxicloroquina acude por equimosis y sangrado gingival. No hepatopatía ni sangrado digestivo. Examen físico: PA 130/80 mmHg, FC 76 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Laboratorio: TP 18 segundos, TTPa 55 segundos, plaquetas 180 000/mm3, fibrinógeno normal. Prueba de anticoagulante lúpico positiva. ¿Cuál es la interpretación más probable del estudio de coagulación?",
+    "opciones": {
+      "A": "Déficit de factor VIII",
+      "B": "Coagulación intravascular diseminada",
+      "C": "Hepatopatía crónica",
+      "D": "Anticoagulante lúpico"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La prolongación de TP y TTPa con plaquetas y fibrinógeno normales, junto con la prueba de anticoagulante lúpico positiva, indica la presencia de anticoagulante lúpico, un autoanticuerpo que interfiere in vitro con pruebas de coagulación dependientes de fosfolípidos, según la Sociedad Peruana de Reumatología. El déficit de factor VIII prolonga el TTPa pero no el TP y no da anticoagulante lúpico positivo. La coagulación intravascular diseminada consume plaquetas y fibrinógeno, que aquí son normales. La hepatopatía crónica alteraría TP y TTPa, pero no explicaría la prueba de anticoagulante lúpico positiva. El anticoagulante lúpico se asocia a trombosis y se debe buscar síndrome antifosfolípido."
+  },
+  {
+    "numero": 845,
+    "enunciado": "Mujer de 30 años con antecedente de artralgias y fotosensibilidad de seis meses acude por convulsión tónico-clónica generalizada y episodio de desorientación. Examen físico: PA 115/75 mmHg, FC 90 lpm, FR 20 rpm, T 37.0 °C, SatO2 97%. Laboratorio: ANA positivo, anti-dsDNA positivo, C3 y C4 bajos. Punción lumbar sin gérmenes, TC cerebral sin lesión estructural. Descartada infección del sistema nervioso central. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus neuropsiquiátrico",
+      "B": "Epilepsia idiopática",
+      "C": "Meningitis tuberculosa",
+      "D": "Esquizofrenia"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La presencia de convulsiones y desorientación en una paciente con artralgias, fotosensibilidad, ANA positivo, anti-dsDNA positivo e hipocomplementemia, sin infección ni lesión estructural, configura lupus neuropsiquiátrico, según la Sociedad Peruana de Reumatología y el MINSA. La epilepsia idiopática no se asocia a autoanticuerpos ni consumo de complemento. La meningitis tuberculosa produce fiebre, rigidez de nuca y pleocitosis linfocitaria, ausentes aquí. La esquizofrenia cursa con síntomas psicóticos crónicos sin marcadores inmunológicos. La afectación del sistema nervioso central en lupus es una manifestación grave que requiere tratamiento inmunosupresor oportuno."
+  },
+  {
+    "numero": 846,
+    "enunciado": "Mujer de 25 años con artralgias, fiebre y eritema malar de tres meses. No infección urinaria ni obstrucción. Examen físico: PA 105/65 mmHg, FC 84 lpm, FR 18 rpm, T 37.8 °C, SatO2 98%. Laboratorio: creatinina 1.6 mg/dL, proteinuria 2.5 g/24 h, cilindros hemáticos, anti-dsDNA positivo, C3 y C4 bajos. Biopsia renal pendiente. ¿Cuál es el tratamiento de inducción de elección para este compromiso renal grave?",
+    "opciones": {
+      "A": "Hidroxicloroquina",
+      "B": "Ciclofosfamida",
+      "C": "Metotrexato",
+      "D": "Azatioprina"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La ciclofosfamida es el tratamiento de inducción de elección para nefritis lúpica grave, junto con corticoides, por su eficacia en inducir remisión renal, según la Sociedad Peruana de Reumatología y el MINSA. La hidroxicloroquina es útil en manifestaciones leves y como base del tratamiento, pero no induce remisión en nefritis grave. El metotrexato es alternativa en artritis persistente, no en compromiso renal severo. La azatioprina se emplea como mantenimiento, no como inducción. En esta paciente con proteinuria, cilindros hemáticos, anti-dsDNA positivo e hipocomplementemia, el compromiso renal grave requiere ciclofosfamida para preservar la función renal."
+  },
+  {
+    "numero": 847,
+    "enunciado": "Mujer de 28 años con diagnóstico de lupus eritematoso sistémico y anti-Ro positivo cursa embarazo de 20 semanas. Antecedente de hijo previo sano. Examen físico: PA 110/70 mmHg, FC 80 lpm, FR 16 rpm, T 36.5 °C, SatO2 98%. Ecografía obstétrica sin malformaciones estructurales. Refiere movimientos fetales presentes. ¿Cuál es la complicación fetal más probable?",
+    "opciones": {
+      "A": "Lupus neonatal",
+      "B": "Síndrome de Down",
+      "C": "Toxoplasmosis congénita",
+      "D": "Eritroblastosis fetal"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El anti-Ro positivo en una gestante con lupus se asocia a lupus neonatal, que puede manifestarse con rash cutáneo, citopenias y bloqueo cardíaco congénito, según la Sociedad Peruana de Reumatología. El síndrome de Down es una anomalía cromosómica no relacionada con autoanticuerpos. La toxoplasmosis congénita se debe a infección por Toxoplasma y no guarda relación con anti-Ro. La eritroblastosis fetal ocurre por incompatibilidad Rh, no por autoanticuerpos anti-Ro. La ecografía sin malformaciones no descarta lupus neonatal, que puede aparecer después del nacimiento. El control fetal con ecocardiografía es fundamental para detectar bloqueo cardíaco."
+  },
+  {
+    "numero": 848,
+    "enunciado": "Mujer de 32 años con lupus eritematoso sistémico y proteinuria de 3 g/24 h. Examen físico: PA 140/90 mmHg, FC 82 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Creatinina 1.4 mg/dL. Se realiza biopsia renal. El informe describe glomerulonefritis proliferativa difusa con depósitos subendoteliales, proliferación endocapilar y depósitos de inmunocomplejos full house. ¿Cuál es la interpretación más probable de la biopsia?",
+    "opciones": {
+      "A": "Nefropatía por IgA",
+      "B": "Glomerulonefritis postinfecciosa aguda",
+      "C": "Nefropatía diabética avanzada",
+      "D": "Nefritis lúpica proliferativa"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El patrón de glomerulonefritis proliferativa difusa con depósitos subendoteliales, proliferación endocapilar y depósitos full house es característico de nefritis lúpica proliferativa, clase IV, según la Sociedad Peruana de Reumatología. La nefropatía por IgA muestra depósitos mesangiales de IgA, sin full house. La glomerulonefritis postinfecciosa aguda presenta depósitos subepiteliales en joroba y no full house. La nefropatía diabética cursa con engrosamiento de membrana basal y nodulos de Kimmelstiel-Wilson, sin inmunocomplejos. La biopsia confirma nefritis lúpica proliferativa, que requiere tratamiento inmunosupresor intensivo."
+  },
+  {
+    "numero": 849,
+    "enunciado": "Varón de 55 años con hipertensión arterial en tratamiento con hidralazina desde hace ocho meses acude por artralgias, mialgias y fiebre baja. No síntomas urinarios. Examen físico: PA 140/85 mmHg, FC 80 lpm, FR 16 rpm, T 37.5 °C, SatO2 98%. Laboratorio: ANA positivo, anti-histonas positivo, anti-dsDNA negativo, C3 y C4 normales. No eritema malar ni úlceras orales. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus por hidralazina",
+      "B": "Lupus sistémico idiopático",
+      "C": "Artritis reumatoide seropositiva",
+      "D": "Polimialgia reumática craneal"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "El cuadro de artralgias, mialgias, fiebre baja, ANA positivo, anti-histonas positivo y anti-dsDNA negativo en un paciente que recibe hidralazina configura lupus inducido por fármacos, según la Sociedad Peruana de Reumatología. El lupus sistémico idiopático suele presentar anti-dsDNA positivo, hipocomplementemia y manifestaciones cutáneas o renales. La artritis reumatoide causa poliartritis erosiva con factor reumatoideo y anti-CCP, no anti-histonas. La polimialgia reumática afecta a mayores de 50 años con dolor en cinturas, VSG elevada y respuesta a corticoides, sin autoanticuerpos nucleares. La retirada del fármaco desencadenante es la medida inicial."
+  },
+  {
+    "numero": 850,
+    "enunciado": "Mujer de 30 años con artralgias, trombosis venosa profunda previa y dos abortos espontáneos. No embarazo actual. Examen físico: PA 120/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Laboratorio: anticoagulante lúpico positivo, anti-cardiolipina positivo, ANA positivo. No trombocitopenia. ¿Cuál es el tratamiento de elección para prevención de nuevas trombosis?",
+    "opciones": {
+      "A": "Aspirina",
+      "B": "Warfarina",
+      "C": "Hidroxicloroquina",
+      "D": "Prednisona"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Media",
+    "estado": "activa",
+    "explicacion": "La warfarina es el tratamiento de elección para prevención de nuevas trombosis en pacientes con síndrome antifosfolípido y antecedente trombótico, según la Sociedad Peruana de Reumatología y el MINSA. La aspirina se usa en prevención primaria en algunos casos, pero no es suficiente tras un evento trombótico. La hidroxicloroquina es parte del tratamiento del lupus, pero no reemplaza la anticoagulación en el síndrome antifosfolípido trombótico. La prednisona no previene trombosis y sus efectos adversos son significativos. En esta paciente con anticoagulante lúpico, anti-cardiolipina, trombosis previa y abortos recurrentes, la anticoagulación con warfarina es la conducta apropiada."
+  },
+  {
+    "numero": 851,
+    "enunciado": "Mujer de 32 años con artralgias, fotosensibilidad y úlceras orales de cuatro meses acude por convulsión tónico-clónica generalizada y desorientación. Examen físico: PA 115/75 mmHg, FC 90 lpm, FR 20 rpm, T 37.0 °C, SatO2 97%. Laboratorio: ANA positivo, anti-dsDNA positivo, C3 y C4 disminuidos. Punción lumbar sin gérmenes, TC cerebral sin lesión estructural. Descartada infección del sistema nervioso central. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus neuropsiquiátrico",
+      "B": "Epilepsia idiopática",
+      "C": "Meningitis tuberculosa",
+      "D": "Esquizofrenia"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La presencia de convulsiones y desorientación en una paciente con artralgias, fotosensibilidad, úlceras orales, ANA positivo, anti-dsDNA positivo e hipocomplementemia, sin infección ni lesión estructural, configura lupus neuropsiquiátrico, según la Sociedad Peruana de Reumatología y el MINSA. La epilepsia idiopática no se asocia a autoanticuerpos ni consumo de complemento. La meningitis tuberculosa produce fiebre, rigidez de nuca y pleocitosis linfocitaria, ausentes aquí. La esquizofrenia cursa con síntomas psicóticos crónicos sin marcadores inmunológicos. La afectación del sistema nervioso central en lupus es una manifestación grave que requiere tratamiento inmunosupresor oportuno."
+  },
+  {
+    "numero": 852,
+    "enunciado": "Mujer de 28 años con artralgias, eritema malar y fotosensibilidad de cuatro meses. Examen físico: PA 100/60 mmHg, FC 82 lpm, FR 18 rpm, T 36.5 °C, SatO2 98%. Presenta proteinuria en tira reactiva, cilindros hemáticos en sedimento urinario, creatinina 0.9 mg/dL. ANA positivo, anti-dsDNA positivo, C3 y C4 disminuidos. No oliguria ni edema. No antecedente de diabetes ni hipertensión. ¿Cuál es el examen de elección para confirmar compromiso renal?",
+    "opciones": {
+      "A": "Urianálisis",
+      "B": "Biopsia renal",
+      "C": "Ecografía renal",
+      "D": "Creatinina sérica"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La biopsia renal es el examen de elección para confirmar nefritis lúpica y clasificar su tipo histológico, lo que define el tratamiento y pronóstico, según la Sociedad Peruana de Reumatología y el MINSA. El urianálisis es un tamiz inicial útil, pero no confirma el diagnóstico ni la clase de nefritis. La ecografía renal evalúa tamaño y estructura, pero no detecta actividad inflamatoria glomerular. La creatinina sérica puede ser normal pese a nefritis activa y no reemplaza el estudio histológico. En esta paciente con proteinuria, cilindros hemáticos y serología lúpica activa, la biopsia renal permite establecer la conducta terapéutica apropiada."
+  },
+  {
+    "numero": 853,
+    "enunciado": "Mujer de 40 años con diagnóstico de lupus eritematoso sistémico en tratamiento con hidroxicloroquina por cinco años acude a control. Examen físico: PA 120/70 mmHg, FC 76 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Refiere visión borrosa ocasional. Función renal normal. No antecedente de diabetes ni hipertensión. ¿Cuál es el efecto adverso ocular que requiere control oftalmológico?",
+    "opciones": {
+      "A": "Catarata",
+      "B": "Glaucoma",
+      "C": "Retinopatía",
+      "D": "Conjuntivitis"
+    },
+    "respuesta": "C",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La retinopatía por hidroxicloroquina es el efecto adverso ocular que requiere control oftalmológico periódico, pues puede causar pérdida visual irreversible si no se detecta precozmente, según la Sociedad Peruana de Reumatología. La catarata se asocia a corticoides sistémicos, no a hidroxicloroquina. El glaucoma no es una complicación característica del fármaco. La conjuntivitis es una molestia ocular inespecífica y no la toxicidad retiniana buscada. En pacientes con uso prolongado de hidroxicloroquina, se recomienda evaluación oftalmológica anual con campo visual y tomografía de coherencia óptica para detectar retinopatía antes de que sea sintomática."
+  },
+  {
+    "numero": 854,
+    "enunciado": "Mujer de 30 años con lupus eritematoso sistémico y proteinuria de 3 g/24 h. Examen físico: PA 140/90 mmHg, FC 82 lpm, FR 18 rpm, T 36.6 °C, SatO2 98%. Creatinina 1.4 mg/dL. Se realiza biopsia renal. El informe describe glomerulonefritis proliferativa difusa con depósitos subendoteliales, proliferación endocapilar y depósitos de inmunocomplejos full house. ¿Cuál es la interpretación más probable de la biopsia?",
+    "opciones": {
+      "A": "Nefropatía IgA",
+      "B": "Glomerulonefritis postinfecciosa",
+      "C": "Nefropatía diabética",
+      "D": "Nefritis lúpica proliferativa"
+    },
+    "respuesta": "D",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El patrón de glomerulonefritis proliferativa difusa con depósitos subendoteliales, proliferación endocapilar y depósitos full house es característico de nefritis lúpica proliferativa, clase IV, según la Sociedad Peruana de Reumatología. La nefropatía por IgA muestra depósitos mesangiales de IgA, sin full house. La glomerulonefritis postinfecciosa aguda presenta depósitos subepiteliales en joroba y no full house. La nefropatía diabética cursa con engrosamiento de membrana basal y nódulos de Kimmelstiel-Wilson, sin inmunocomplejos. La biopsia confirma nefritis lúpica proliferativa, que requiere tratamiento inmunosupresor intensivo."
+  },
+  {
+    "numero": 855,
+    "enunciado": "Mujer de 26 años con artralgias, eritema malar y fotosensibilidad de cinco meses acude por edema y proteinuria. Examen físico: PA 130/80 mmHg, FC 84 lpm, FR 18 rpm, T 36.7 °C, SatO2 98%. Laboratorio: creatinina 1.5 mg/dL, proteinuria 2.8 g/24 h, cilindros hemáticos, anti-dsDNA positivo, C3 y C4 bajos. Biopsia renal pendiente. No infección urinaria ni obstrucción. ¿Cuál es el tratamiento de inducción de elección para este compromiso renal grave?",
+    "opciones": {
+      "A": "Hidroxicloroquina",
+      "B": "Ciclofosfamida",
+      "C": "Metotrexato",
+      "D": "Azatioprina"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La ciclofosfamida es el tratamiento de inducción de elección para nefritis lúpica grave, junto con corticoides, por su eficacia en inducir remisión renal, según la Sociedad Peruana de Reumatología y el MINSA. La hidroxicloroquina es útil en manifestaciones leves y como base del tratamiento, pero no induce remisión en nefritis grave. El metotrexato es alternativa en artritis persistente, no en compromiso renal severo. La azatioprina se emplea como mantenimiento, no como inducción. En esta paciente con proteinuria, cilindros hemáticos, anti-dsDNA positivo e hipocomplementemia, el compromiso renal grave requiere ciclofosfamida para preservar la función renal."
+  },
+  {
+    "numero": 856,
+    "enunciado": "Mujer de 30 años con artralgias, fotosensibilidad, trombosis venosa profunda previa y dos abortos espontáneos. No embarazo actual. Examen físico: PA 120/70 mmHg, FC 78 lpm, FR 16 rpm, T 36.6 °C, SatO2 98%. Laboratorio: anticoagulante lúpico positivo, anti-cardiolipina positivo, ANA positivo. No trombocitopenia. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus con síndrome antifosfolípido",
+      "B": "Lupus sin síndrome antifosfolípido",
+      "C": "Artritis reumatoide",
+      "D": "Trombofilia hereditaria"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La presencia de artralgias, fotosensibilidad, ANA positivo, anticoagulante lúpico y anti-cardiolipina positivos, junto con trombosis venosa y abortos recurrentes, configura lupus eritematoso sistémico con síndrome antifosfolípido secundario, según la Sociedad Peruana de Reumatología. El lupus sin síndrome antifosfolípido no explicaría las trombosis ni los abortos. La artritis reumatoide no se asocia a anticoagulante lúpico ni a abortos recurrentes. La trombofilia hereditaria no cursa con ANA positivo ni manifestaciones cutáneas lúpicas. La asociación de lupus y síndrome antifosfolípido tiene implicancias terapéuticas, pues requiere anticoagulación además del tratamiento inmunosupresor."
+  },
+  {
+    "numero": 857,
+    "enunciado": "Mujer de 24 años con artralgias, eritema malar y fotosensibilidad de tres meses acude por convulsión tónico-clónica generalizada. Examen físico: PA 110/70 mmHg, FC 88 lpm, FR 18 rpm, T 37.2 °C, SatO2 98%. Laboratorio: ANA positivo, anti-dsDNA positivo, C3 y C4 disminuidos. TC cerebral sin lesión estructural. Se sospecha compromiso del sistema nervioso central por lupus. ¿Cuál es el examen diagnóstico de elección para descartar infección del sistema nervioso central?",
+    "opciones": {
+      "A": "Tomografía cerebral",
+      "B": "Punción lumbar",
+      "C": "Resonancia magnética",
+      "D": "Electroencefalograma"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La punción lumbar es el examen de elección para descartar infección del sistema nervioso central en una paciente con lupus y convulsión, pues permite analizar citoquímico, cultivo y PCR, según la Sociedad Peruana de Reumatología y el MINSA. La tomografía cerebral ya se realizó y descartó lesión estructural, pero no excluye infección. La resonancia magnética es más sensible para lesiones inflamatorias, pero no reemplaza el estudio del líquido cefalorraquídeo. El electroencefalograma evalúa actividad eléctrica, no infección. Ante sospecha de lupus neuropsiquiátrico, es obligatorio descartar infección antes de iniciar inmunosupresión, y la punción lumbar es el paso inicial."
+  },
+  {
+    "numero": 858,
+    "enunciado": "Mujer de 30 años con artralgias, fiebre y dolor pleurítico de dos semanas. Examen físico: PA 105/65 mmHg, FC 96 lpm, FR 22 rpm, T 38.0 °C, SatO2 95%. Se ausculta roce pericárdico. Laboratorio: ANA positivo, anti-dsDNA positivo, C3 y C4 disminuidos. Ecocardiograma: derrame pericárdico leve sin vegetaciones. No antecedente de tuberculosis ni infección viral reciente. ¿Cuál es el diagnóstico más probable?",
+    "opciones": {
+      "A": "Lupus sistémico",
+      "B": "Pericarditis viral",
+      "C": "Pericarditis tuberculosa",
+      "D": "Endocarditis infecciosa"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "El cuadro de fiebre, dolor pleurítico, roce pericárdico, derrame pericárdico leve, artralgias, ANA positivo, anti-dsDNA positivo e hipocomplementemia configura lupus sistémico con serositis pericárdica, según la Sociedad Peruana de Reumatología y el MINSA. La pericarditis viral no cursa con anti-dsDNA ni consumo de complemento. La pericarditis tuberculosa produce derrame crónico, ADA elevada y síntomas constitucionales prolongados, sin autoanticuerpos. La endocarditis infecciosa muestra vegetaciones con destrucción valvular, hemocultivos positivos y fiebre alta, ausentes aquí. El anti-dsDNA y la hipocomplementemia reflejan actividad inmunológica lúpica."
+  },
+  {
+    "numero": 859,
+    "enunciado": "Mujer de 27 años con diagnóstico de lupus eritematoso sistémico acude por petequias y sangrado gingival de 48 horas. Examen físico: PA 120/70 mmHg, FC 88 lpm, FR 18 rpm, T 36.8 °C, SatO2 98%. Se observan equimosis en miembros inferiores. Laboratorio: plaquetas 15 000/mm3, leucocitos 6 500/mm3, hemoglobina 11.2 g/dL. Frotis sin blastos. No esplenomegalia. No infección intercurrente. ¿Cuál es la conducta inicial más apropiada?",
+    "opciones": {
+      "A": "Corticoides sistémicos",
+      "B": "Inmunoglobulina intravenosa",
+      "C": "Esplenectomía terapéutica",
+      "D": "Rituximab intravenoso"
+    },
+    "respuesta": "A",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La trombocitopenia grave inmunomediada en lupus con plaquetas de 15 000/mm3 y sangrado mucocutáneo requiere corticoides sistémicos como conducta inicial, según la Sociedad Peruana de Reumatología. La inmunoglobulina intravenosa se reserva para sangrado grave o refractariedad. La esplenectomía terapéutica es de segunda línea y no se indica en crisis. El rituximab intravenoso se usa en casos refractarios, no como primera medida. La transfusión de plaquetas solo se indica ante hemorragia potencialmente fatal y no corrige el mecanismo inmune. Los corticoides reducen la destrucción esplénica de plaquetas y son el paso inicial."
+  },
+  {
+    "numero": 860,
+    "enunciado": "Varón de 35 años con lupus eritematoso sistémico de cinco años de evolución acude por fiebre y soplo nuevo. Examen físico: PA 110/70 mmHg, FC 100 lpm, FR 20 rpm, T 38.2 °C, SatO2 96%. Se ausculta soplo sistólico en foco mitral. Ecocardiograma: vegetación mitral, insuficiencia mitral leve, sin destrucción valvular. Hemocultivos negativos. ANA positivo, anti-dsDNA positivo. ¿Cuál es la interpretación más probable del ecocardiograma?",
+    "opciones": {
+      "A": "Endocarditis infecciosa",
+      "B": "Libman-Sacks valvular",
+      "C": "Fiebre reumática",
+      "D": "Mixoma auricular"
+    },
+    "respuesta": "B",
+    "area": "Medicina",
+    "especialidad": "Reumatología",
+    "tema": "lupus eritematoso sistemico",
+    "dificultad": "Alta",
+    "estado": "activa",
+    "explicacion": "La vegetación mitral con insuficiencia leve, sin destrucción valvular, en paciente con lupus, fiebre y hemocultivos negativos corresponde a endocarditis de Libman-Sacks, según la Sociedad Peruana de Reumatología. La endocarditis infecciosa produce hemocultivos positivos, destrucción valvular y vegetaciones grandes. La fiebre reumática causa valvulitis con nódulos de Aschoff y antecedente de faringitis estreptocócica. El mixoma auricular es una masa en aurícula izquierda con prolapso y embolias. La ausencia de microorganismos y el contexto lúpico activo sustentan Libman-Sacks."
   }
 ]

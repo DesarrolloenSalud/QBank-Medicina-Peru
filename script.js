@@ -309,7 +309,73 @@
 
     function getPreguntaId(p) {
         const srcId = p._sourceId || 'default';
+
+        // 1) Si el JSON trae un id explícito, mandatorio
+        if (p.id != null && p.id !== '') {
+            return `${srcId}:${p.id}`;
+        }
+
+        // 2) Índice dentro del archivo fuente: garantiza unicidad
+        //    incluso si 'numero' se repite entre exámenes del mismo banco.
+        if (p._sourceIdx != null) {
+            return `${srcId}:i${p._sourceIdx}`;
+        }
+
+        // 3) Fallback (solo si aún no se aplicó el tagging)
         return `${srcId}:${p.numero}`;
+    }
+
+    // ------------------------------------------------------------
+    // Migración: "srcId:numero" (legacy) → "srcId:iN" (nuevo).
+    // Replica cada registro a TODAS las preguntas que compartían
+    // la clave legacy, para no perder progreso.
+    // Idempotente: si ya migró, no hace nada.
+    // ------------------------------------------------------------
+    function migrarIdsSRS() {
+        if (!window.Dominio) return;
+
+        const perfil = window.Dominio.getPerfil();
+
+        const validos = new Set();
+        const mapa = {};   // legacyKey → Set(nuevasKeys)
+
+        preguntas.forEach(p => {
+            const nuevo  = getPreguntaId(p);
+            const legacy = `${p._sourceId || 'default'}:${p.numero}`;
+            validos.add(nuevo);
+            if (!mapa[legacy]) mapa[legacy] = new Set();
+            mapa[legacy].add(nuevo);
+        });
+
+        const clavesLegacy = Object.keys(perfil).filter(k => !validos.has(k));
+        if (clavesLegacy.length === 0) return;
+
+        window.Dominio.beginBatch();
+        let replicadas = 0, eliminadas = 0;
+        try {
+            clavesLegacy.forEach(legacy => {
+                const registro = perfil[legacy];
+                const nuevosIds = mapa[legacy];
+
+                if (!nuevosIds) {
+                    // Huérfano (banco que ya no está cargado): eliminar
+                    if (window.Dominio.eliminarRegistro(legacy)) eliminadas++;
+                    return;
+                }
+                nuevosIds.forEach(nuevoId => {
+                    if (nuevoId === legacy) return;
+                    if (window.Dominio.importarRegistro(nuevoId, registro)) replicadas++;
+                });
+                if (window.Dominio.eliminarRegistro(legacy)) eliminadas++;
+            });
+        } finally {
+            window.Dominio.endBatch();
+        }
+
+        console.log(
+            `[Migración SRS] ${replicadas} registros replicados, ` +
+            `${eliminadas} claves legacy eliminadas.`
+        );
     }
 
     function getCantidadResolver() {
@@ -746,7 +812,11 @@
 
             results.forEach(res => {
                 if (res.ok && Array.isArray(res.data)) {
-                    const tagged = res.data.map(p => ({ ...p, _sourceId: res.src.id }));
+                    const tagged = res.data.map((p, i)=> ({ 
+                        ...p, 
+                        _sourceId: res.src.id,
+                        _sourceIdx: i
+                    }));
                     preguntas = preguntas.concat(tagged);
                     exitosos.push({ name: res.src.name, count: tagged.length });
                 } else {
@@ -760,6 +830,7 @@
                 console.warn(`⚠️ Bancos con error: ${fallidos.join(', ')}`);
             }
 
+            migrarIdsSRS();
             totalSpan.textContent = preguntas.length;
         });
     }

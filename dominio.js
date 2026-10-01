@@ -539,7 +539,29 @@
         isFsrsReady() { return fsrsReady; },
 
         getPerfil() { return { ...cargar() }; },
+     
+        importarRegistro(id, registro) {
+            const k = clave(id);
+            const db = cargar();
+            if (db[k]) return false;
+            db[k] = { ...registro };
+            cache = db;
+            dirty = true;
+            if (!batching) guardar();
+            return true;
+        },
 
+        eliminarRegistro(id) {
+            const k = clave(id);
+            const db = cargar();
+            if (!db[k]) return false;
+            delete db[k];
+            cache = db;
+            dirty = true;
+            if (!batching) guardar();
+            return true;
+        }, 
+        
         resetear() {
             cache = {};
             dirty = true;
